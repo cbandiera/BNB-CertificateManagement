@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_scope" table="sn_disco_certmgmt_ca" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_scope</element>
+            <name>sn_disco_certmgmt_ca</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-01-12 19:08:43</sys_created_on>
+            <sys_id>1e2fa01f871afa50fa4042630cbb3511</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_scope</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_choice_sn_disco_certmgmt_ca_u_scope</sys_update_name>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-01-12 19:08:43</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scope</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Internal</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_ca</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-01-12 19:08:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>391fac9b871afa50fa4042630cbb35b5</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-01-12 19:09:43</sys_updated_on>
+            <value>internal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scope</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>External</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_ca</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-01-12 19:08:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>122f601f871afa50fa4042630cbb35ad</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-01-12 19:09:48</sys_updated_on>
+            <value>external</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scope</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hybrid</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_ca</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-01-12 19:09:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f2fa01f871afa50fa4042630cbb353c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-01-12 19:09:53</sys_updated_on>
+            <value>hybrid</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

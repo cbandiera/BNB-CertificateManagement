@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="u_ca_issuer_mapping">9104228487aebe90fa4042630cbb352b</application>
+        <filter/>
+        <name>u_ca_issuer_mappings</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>sn_disco_certmgmt.u_ca_issuer_mapping_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-15 11:34:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5504228487aebe90fa4042630cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_ca_issuer_mappings</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ui_module_5504228487aebe90fa4042630cbb3530</sys_update_name>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-15 11:34:44</sys_updated_on>
+        <table>sn_disco_certmgmt_u_ca_issuer_mapping</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

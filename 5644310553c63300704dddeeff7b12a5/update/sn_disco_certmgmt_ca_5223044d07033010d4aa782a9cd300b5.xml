@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_disco_certmgmt_ca">
+    <sn_disco_certmgmt_ca action="INSERT_OR_UPDATE">
+        <acme>false</acme>
+        <name>Entrust CA GW</name>
+        <sys_class_name>sn_disco_certmgmt_ca</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-05 05:29:15</sys_created_on>
+        <sys_id>5223044d07033010d4aa782a9cd300b5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Entrust CA GW</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sn_disco_certmgmt_ca_5223044d07033010d4aa782a9cd300b5</sys_update_name>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-12 19:13:08</sys_updated_on>
+        <u_origin>native</u_origin>
+        <u_scope>external</u_scope>
+        <url>https://cagw.pkiaas.entrust.com/cagw/v1/certificate-authorities/</url>
+    </sn_disco_certmgmt_ca>
+</record_update>

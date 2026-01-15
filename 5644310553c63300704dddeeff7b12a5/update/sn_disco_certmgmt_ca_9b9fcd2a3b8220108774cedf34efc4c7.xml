@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_disco_certmgmt_ca">
+    <sn_disco_certmgmt_ca action="INSERT_OR_UPDATE">
+        <acme>false</acme>
+        <name>Microsoft CA</name>
+        <sys_class_name>sn_disco_certmgmt_ca</sys_class_name>
+        <sys_created_by>narasinga.perumal</sys_created_by>
+        <sys_created_on>2021-02-03 13:39:01</sys_created_on>
+        <sys_id>9b9fcd2a3b8220108774cedf34efc4c7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Microsoft CA</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sn_disco_certmgmt_ca_9b9fcd2a3b8220108774cedf34efc4c7</sys_update_name>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-12 19:15:32</sys_updated_on>
+        <u_origin>native</u_origin>
+        <u_scope>internal</u_scope>
+        <url/>
+    </sn_disco_certmgmt_ca>
+</record_update>
