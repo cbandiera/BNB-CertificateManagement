@@ -166,7 +166,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>42c272d8873e2110fc5febd73cbb356a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Inventory</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -174,7 +174,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_ux_screen_42c272d8873e2110fc5febd73cbb356a</sys_update_name>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-01-20 14:03:57</sys_updated_on>
+        <sys_updated_on>2026-01-22 20:33:24</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=42c272d8873e2110fc5febd73cbb356a"/>
 </record_update>
