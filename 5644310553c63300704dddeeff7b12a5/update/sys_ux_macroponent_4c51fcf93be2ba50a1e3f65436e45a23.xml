@@ -1053,11 +1053,11 @@
                                                                             },
                                                                             "filterQuery": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "valid_to&gt;=javascript:gs.beginningOfToday()^valid_to&lt;=javascript:gs.endOfNextMonth()^u_ca_scopeINinternal,external"
+                                                                                "value": "certificate.valid_to&gt;=javascript:gs.beginningOfToday()^certificate.valid_to&lt;=javascript:gs.endOfNextMonth()"
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNTUzMDgzNjA="
                                                                             },
                                                                             "isDatabaseView": {
                                                                                 "type": "JSON_LITERAL",
@@ -1068,7 +1068,7 @@
                                                                                 "value": {
                                                                                     "code": null,
                                                                                     "comment": "",
-                                                                                    "message": "Unique Certificate"
+                                                                                    "message": "Installed Certificate"
                                                                                 }
                                                                             },
                                                                             "preferredVisualizations": {
@@ -1086,7 +1086,7 @@
                                                                             },
                                                                             "tableOrViewName": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "cmdb_ci_certificate"
+                                                                                "value": "sn_disco_certmgmt_cmdb_installed_certificate"
                                                                             }
                                                                         },
                                                                         "type": "MAP_CONTAINER"
@@ -1232,19 +1232,11 @@
                                                                             },
                                                                             "dataSource": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNTUzMDgzNjA="
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "ZEdGaWJHVmpiV1JpWDJOcFgyTmxjblJwWm1sallYUmxNVGMyT0Rrd09URTVOelF5T1E9PTE3Njg5MDkyMDAyNTk="
-                                                                            },
-                                                                            "label": {
-                                                                                "type": "TRANSLATION_LITERAL",
-                                                                                "value": {
-                                                                                    "code": null,
-                                                                                    "comment": "",
-                                                                                    "message": "Certificados expirando em 30 dias"
-                                                                                }
+                                                                                "value": "ZEdGaWJHVnpibDlrYVhOamIxOWpaWEowYldkdGRGOWpiV1JpWDJsdWMzUmhiR3hsWkY5alpYSjBhV1pwWTJGMFpURTNOekF3TlRVek1EZ3pOakE9MTc3MDA1NTMwOTY4MQ=="
                                                                             },
                                                                             "numberFormat": {
                                                                                 "type": "JSON_LITERAL",
@@ -1812,11 +1804,11 @@
                                                                             },
                                                                             "filterQuery": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "valid_to&lt;javascript:gs.beginningOfToday()^u_ca_scopeINinternal,external"
+                                                                                "value": "certificate.valid_to&lt;javascript:gs.beginningOfToday()"
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNTk2NjAyOTk="
                                                                             },
                                                                             "isDatabaseView": {
                                                                                 "type": "JSON_LITERAL",
@@ -1827,7 +1819,7 @@
                                                                                 "value": {
                                                                                     "code": null,
                                                                                     "comment": "",
-                                                                                    "message": "Unique Certificate"
+                                                                                    "message": "Installed Certificate"
                                                                                 }
                                                                             },
                                                                             "preferredVisualizations": {
@@ -1845,7 +1837,7 @@
                                                                             },
                                                                             "tableOrViewName": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "cmdb_ci_certificate"
+                                                                                "value": "sn_disco_certmgmt_cmdb_installed_certificate"
                                                                             }
                                                                         },
                                                                         "type": "MAP_CONTAINER"
@@ -1911,7 +1903,7 @@
                                                             },
                                                             "enableRealTimeUpdate": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": false
                                                             },
                                                             "endTime": {
                                                                 "type": "JSON_LITERAL",
@@ -2055,19 +2047,11 @@
                                                                             },
                                                                             "dataSource": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNTk2NjAyOTk="
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "ZEdGaWJHVmpiV1JpWDJOcFgyTmxjblJwWm1sallYUmxNVGMyT0Rrd09URTVOelF5T1E9PTE3Njg5MDkyMDAyNTk="
-                                                                            },
-                                                                            "label": {
-                                                                                "type": "TRANSLATION_LITERAL",
-                                                                                "value": {
-                                                                                    "code": null,
-                                                                                    "comment": "",
-                                                                                    "message": "Certificados expirando em 30 dias"
-                                                                                }
+                                                                                "value": "ZEdGaWJHVnpibDlrYVhOamIxOWpaWEowYldkdGRGOWpiV1JpWDJsdWMzUmhiR3hsWkY5alpYSjBhV1pwWTJGMFpURTNOekF3TlRrMk5qQXlPVGs9MTc3MDA1OTY2MTQyNw=="
                                                                             },
                                                                             "numberFormat": {
                                                                                 "type": "JSON_LITERAL",
@@ -2782,11 +2766,11 @@
                                                                             },
                                                                             "filterQuery": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "valid_to&gt;=javascript:gs.beginningOfToday()^valid_to&lt;=javascript:gs.endOfNextMonth()^u_ca_scope=internal"
+                                                                                "value": "certificate.valid_to&gt;=javascript:gs.beginningOfToday()^certificate.valid_to&lt;=javascript:gs.endOfNextMonth()^certificate.u_ca_scope=internal"
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNjE1OTk3MjA="
                                                                             },
                                                                             "isDatabaseView": {
                                                                                 "type": "JSON_LITERAL",
@@ -2797,7 +2781,7 @@
                                                                                 "value": {
                                                                                     "code": null,
                                                                                     "comment": "",
-                                                                                    "message": "Unique Certificate"
+                                                                                    "message": "Installed Certificate"
                                                                                 }
                                                                             },
                                                                             "preferredVisualizations": {
@@ -2815,7 +2799,7 @@
                                                                             },
                                                                             "tableOrViewName": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "cmdb_ci_certificate"
+                                                                                "value": "sn_disco_certmgmt_cmdb_installed_certificate"
                                                                             }
                                                                         },
                                                                         "type": "MAP_CONTAINER"
@@ -2961,19 +2945,11 @@
                                                                             },
                                                                             "dataSource": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNjE1OTk3MjA="
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "ZEdGaWJHVmpiV1JpWDJOcFgyTmxjblJwWm1sallYUmxNVGMyT0Rrd09URTVOelF5T1E9PTE3Njg5MDkyMDAyNTk="
-                                                                            },
-                                                                            "label": {
-                                                                                "type": "TRANSLATION_LITERAL",
-                                                                                "value": {
-                                                                                    "code": null,
-                                                                                    "comment": "",
-                                                                                    "message": "Certificados expirando em 30 dias"
-                                                                                }
+                                                                                "value": "ZEdGaWJHVnpibDlrYVhOamIxOWpaWEowYldkdGRGOWpiV1JpWDJsdWMzUmhiR3hsWkY5alpYSjBhV1pwWTJGMFpURTNOekF3TmpFMU9UazNNakE9MTc3MDA2MTYwMjkxMQ=="
                                                                             },
                                                                             "numberFormat": {
                                                                                 "type": "JSON_LITERAL",
@@ -3530,11 +3506,11 @@
                                                                             },
                                                                             "filterQuery": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "valid_to&gt;=javascript:gs.beginningOfToday()^valid_to&lt;=javascript:gs.endOfNextWeek()^u_ca_scope=external"
+                                                                                "value": "certificate.valid_to&gt;=javascript:gs.beginningOfToday()^certificate.valid_to&lt;=javascript:gs.endOfNextMonth()^certificate.u_ca_scope=external"
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNjE4MjA2MDA="
                                                                             },
                                                                             "isDatabaseView": {
                                                                                 "type": "JSON_LITERAL",
@@ -3545,7 +3521,7 @@
                                                                                 "value": {
                                                                                     "code": null,
                                                                                     "comment": "",
-                                                                                    "message": "Unique Certificate"
+                                                                                    "message": "Installed Certificate"
                                                                                 }
                                                                             },
                                                                             "preferredVisualizations": {
@@ -3563,7 +3539,7 @@
                                                                             },
                                                                             "tableOrViewName": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "cmdb_ci_certificate"
+                                                                                "value": "sn_disco_certmgmt_cmdb_installed_certificate"
                                                                             }
                                                                         },
                                                                         "type": "MAP_CONTAINER"
@@ -3709,19 +3685,11 @@
                                                                             },
                                                                             "dataSource": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "dGFibGVjbWRiX2NpX2NlcnRpZmljYXRlMTc2ODkwOTE5NzQyOQ=="
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jbWRiX2luc3RhbGxlZF9jZXJ0aWZpY2F0ZTE3NzAwNjE4MjA2MDA="
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "ZEdGaWJHVmpiV1JpWDJOcFgyTmxjblJwWm1sallYUmxNVGMyT0Rrd09URTVOelF5T1E9PTE3Njg5MDkyMDAyNTk="
-                                                                            },
-                                                                            "label": {
-                                                                                "type": "TRANSLATION_LITERAL",
-                                                                                "value": {
-                                                                                    "code": null,
-                                                                                    "comment": "",
-                                                                                    "message": "Certificados expirando em 30 dias"
-                                                                                }
+                                                                                "value": "ZEdGaWJHVnpibDlrYVhOamIxOWpaWEowYldkdGRGOWpiV1JpWDJsdWMzUmhiR3hsWkY5alpYSjBhV1pwWTJGMFpURTNOekF3TmpFNE1qQTJNREE9MTc3MDA2MTgyMjMwNw=="
                                                                             },
                                                                             "numberFormat": {
                                                                                 "type": "JSON_LITERAL",
@@ -4987,7 +4955,7 @@
                                                             "type": "MACROPONENT"
                                                         },
                                                         "elementId": "single_score_10",
-                                                        "elementLabel": "Single score 10",
+                                                        "elementLabel": "Single score (certificate_incidentes)",
                                                         "eventMappings": [],
                                                         "isHidden": {
                                                             "type": "JSON_LITERAL",
@@ -5087,7 +5055,7 @@
                                                                             },
                                                                             "filterQuery": {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "cmdb_ci.ref_cmdb_ci_certificate.u_ca_scopeINinternal,external"
+                                                                                "value": "cmdb_ci.ref_cmdb_ci_certificate.install_status=1"
                                                                             },
                                                                             "id": {
                                                                                 "type": "JSON_LITERAL",
@@ -5426,15 +5394,15 @@
                                                             },
                                                             "showChange": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": false
                                                             },
                                                             "showChangeFrom": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": false
                                                             },
                                                             "showChangePercentage": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": false
                                                             },
                                                             "showClosestSeriesOnHover": {
                                                                 "type": "JSON_LITERAL",
@@ -5494,7 +5462,7 @@
                                                             },
                                                             "showGapPercentage": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": false
                                                             },
                                                             "showHeader": {
                                                                 "type": "JSON_LITERAL",
@@ -5775,6 +5743,7 @@
                                                             "align-items": "stretch",
                                                             "display": "contents",
                                                             "flex-direction": "row",
+                                                            "gap": "0",
                                                             "justify-content": "space-evenly"
                                                         },
                                                         "type": "flex"
@@ -5812,6 +5781,747 @@
                                             },
                                             "slot": null,
                                             "styles": null
+                                        },
+                                        {
+                                            "definition": {
+                                                "id": "d356d14b6e293a3020a244b63d278d8f",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "__xKQHCeehhfaDEeehheejjhhsEOGHggGdjc__column",
+                                            "elementLabel": "Column 2",
+                                            "eventMappings": [],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "overrides": {
+                                                "composition": [
+                                                    {
+                                                        "definition": {
+                                                            "id": "d24d53f60350de7a652caf3188a46ed2",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "single_score_12",
+                                                        "elementLabel": "Single score (certificate_tasks)",
+                                                        "eventMappings": [
+                                                            {
+                                                                "eventMappingId": "IcqiuPXCCkhWjjReeLlbbVffOaaLbb",
+                                                                "isConfiguration": false,
+                                                                "offRowStorageId": null,
+                                                                "sourceEventApiName": "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+                                                                "sourceEventCorrelationId": null,
+                                                                "sourceEventDefinition": {
+                                                                    "apiName": "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+                                                                    "id": null,
+                                                                    "type": "UXEVENT"
+                                                                },
+                                                                "sourceEventSysId": null,
+                                                                "targets": [
+                                                                    {
+                                                                        "broker": null,
+                                                                        "clientScript": null,
+                                                                        "clientTransformScript": "",
+                                                                        "conditional": null,
+                                                                        "declarativeAction": null,
+                                                                        "event": {
+                                                                            "apiName": "sn_disco_certmgmt.NAV_ITEM_SELECTED_RELAY_4c51fcf93be2ba50a1e3f65436e45a23",
+                                                                            "payload": {
+                                                                                "container": {
+                                                                                    "external": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "fields": {
+                                                                                        "container": {
+                                                                                            "table": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "params",
+                                                                                                        "table"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "EVENT_PAYLOAD_BINDING"
+                                                                                            }
+                                                                                        },
+                                                                                        "type": "MAP_CONTAINER"
+                                                                                    },
+                                                                                    "multiInstField": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "navigationOptions": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "params": {
+                                                                                        "container": {
+                                                                                            "columns": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "certificateFilterTask"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "STATE_BINDING"
+                                                                                            },
+                                                                                            "fixedFilter": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "params",
+                                                                                                        "query"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "EVENT_PAYLOAD_BINDING"
+                                                                                            },
+                                                                                            "listTitle": {
+                                                                                                "binding": {
+                                                                                                    "address": [
+                                                                                                        "params",
+                                                                                                        "listTitle"
+                                                                                                    ]
+                                                                                                },
+                                                                                                "type": "EVENT_PAYLOAD_BINDING"
+                                                                                            },
+                                                                                            "maxRows": {
+                                                                                                "type": "JSON_LITERAL",
+                                                                                                "value": "20"
+                                                                                            }
+                                                                                        },
+                                                                                        "type": "MAP_CONTAINER"
+                                                                                    },
+                                                                                    "passiveNavigation": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "redirect": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "route": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": "list"
+                                                                                    },
+                                                                                    "targetRoute": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    },
+                                                                                    "title": {
+                                                                                        "type": "JSON_LITERAL",
+                                                                                        "value": null
+                                                                                    }
+                                                                                },
+                                                                                "type": "MAP_CONTAINER"
+                                                                            },
+                                                                            "sysId": "9451f03d3be2ba50a1e3f65436e45a73"
+                                                                        },
+                                                                        "operation": null,
+                                                                        "targetId": "UTqBlfqaaBkaahhjjffgPANhsejjuu",
+                                                                        "type": "EVENT"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "additionalGroupByConfig": {
+                                                                "container": [],
+                                                                "type": "LIST_CONTAINER"
+                                                            },
+                                                            "allowAdditionalGroupByPerMetric": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "allowChangeDateRange": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "applyDateRange": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "backgroundRefreshInterval": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "bareBorder": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "cacheExpirationTime": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 0
+                                                            },
+                                                            "chartExtraConfig": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "chartSize": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "colorConfig": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {
+                                                                    "type": "default"
+                                                                }
+                                                            },
+                                                            "colors": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "componentId": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "fn9x9ybf"
+                                                            },
+                                                            "configPropModifiers": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "configVersion": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "23.0.0-ci-SNAPSHOT"
+                                                            },
+                                                            "contextMenuActions": {
+                                                                "container": [],
+                                                                "type": "LIST_CONTAINER"
+                                                            },
+                                                            "dataCategory": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "dataPassthrough": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "dataSources": {
+                                                                "container": [
+                                                                    {
+                                                                        "container": {
+                                                                            "allowRealTime": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": true
+                                                                            },
+                                                                            "dataCategories": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": [
+                                                                                    "trend",
+                                                                                    "group",
+                                                                                    "simple"
+                                                                                ]
+                                                                            },
+                                                                            "filterQuery": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "active=true^stateIN-5,1,2^priorityIN1,3^parentISNOTEMPTY"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jZXJ0aWZpY2F0ZV90YXNrMTc3MDA2NDcwNTUwOQ=="
+                                                                            },
+                                                                            "isDatabaseView": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": false
+                                                                            },
+                                                                            "label": {
+                                                                                "type": "TRANSLATION_LITERAL",
+                                                                                "value": {
+                                                                                    "code": null,
+                                                                                    "comment": "",
+                                                                                    "message": "Certificate task(Manual Flow)"
+                                                                                }
+                                                                            },
+                                                                            "preferredVisualizations": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": [
+                                                                                    "d24d53f60350de7a652caf3188a46ed2"
+                                                                                ]
+                                                                            },
+                                                                            "reportSourceSysId": {
+                                                                                "type": "JSON_LITERAL"
+                                                                            },
+                                                                            "sourceType": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "table"
+                                                                            },
+                                                                            "tableOrViewName": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "sn_disco_certmgmt_certificate_task"
+                                                                            }
+                                                                        },
+                                                                        "type": "MAP_CONTAINER"
+                                                                    }
+                                                                ],
+                                                                "type": "LIST_CONTAINER"
+                                                            },
+                                                            "dateFormat": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "default"
+                                                            },
+                                                            "description": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "emptyStateAlignment": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "vertical-centered"
+                                                            },
+                                                            "emptyStateContent": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "There are no scores available for the selected criteria. Contact your admin for more info."
+                                                            },
+                                                            "emptyStateHeading": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "No data available."
+                                                                }
+                                                            },
+                                                            "emptyStateHeadingLevel": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 3
+                                                            },
+                                                            "emptyStateIllustration": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "no-data"
+                                                            },
+                                                            "enableAddZerosAtApi": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "enableClickAndStay": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "enableCustomEmptyState": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "enableDrilldown": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "enableRealTimeUpdate": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "endTime": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "filterConfigurations": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "parFilters"
+                                                                    ]
+                                                                },
+                                                                "type": "STATE_BINDING"
+                                                            },
+                                                            "filterPerMetric": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": []
+                                                            },
+                                                            "followFilters": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "forecastConfig": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "formats": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "groupBy": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "groupByConfig": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "headerColor": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "headerTitle": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Pending Certificate Renewal Tasks"
+                                                                }
+                                                            },
+                                                            "headingLevel": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 2
+                                                            },
+                                                            "headingPosition": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "top"
+                                                            },
+                                                            "hideDevSettings": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "hideMatrixAggregate": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "iconStyle": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "background"
+                                                            },
+                                                            "isComponentInView": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "metrics": {
+                                                                "container": [
+                                                                    {
+                                                                        "container": {
+                                                                            "aggregateFunction": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "COUNT"
+                                                                            },
+                                                                            "axisId": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "primary"
+                                                                            },
+                                                                            "dataSource": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "dGFibGVzbl9kaXNjb19jZXJ0bWdtdF9jZXJ0aWZpY2F0ZV90YXNrMTc3MDA2NDcwNTUwOQ=="
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "ZEdGaWJHVnpibDlrYVhOamIxOWpaWEowYldkdGRGOWpaWEowYVdacFkyRjBaVjkwWVhOck1UYzNNREEyTkRjd05UVXdPUT09MTc3MDA2NDcwNzExMA=="
+                                                                            },
+                                                                            "numberFormat": {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": {
+                                                                                    "customFormat": false
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "type": "MAP_CONTAINER"
+                                                                    }
+                                                                ],
+                                                                "type": "LIST_CONTAINER"
+                                                            },
+                                                            "newReporting": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "numberOfPeriods": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": 3
+                                                            },
+                                                            "pageId": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "period": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "M"
+                                                            },
+                                                            "rangesConfig": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "refreshFrequency": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "refreshRequest": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            },
+                                                            "scoreIcon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            },
+                                                            "scoreSize": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "lg"
+                                                            },
+                                                            "scoreType": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "sharedContext": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": {}
+                                                            },
+                                                            "showAbsolutePeriod": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showAdditionalGroupBySelector": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showBorder": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "showCacheTime": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "showChange": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showChangeFrom": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showChangePercentage": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showComment": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showConfidenceBand": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showDataPassthrough": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showDataTable": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showDateRangeByDefault": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showExtendedErrorMessages": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "showFilterAsSeparateSeries": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showFilterIcon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "showFirstGroupAggregate": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showForecast": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showForecastRange": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showGapPercentage": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showHeader": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "showHeaderSeparator": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showLoadingIndicator": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showMaximumRange": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showMetricLabel": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showRefresh": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "showScoreDate": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showScoreUpdateTime": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "showSecondGroupAggregate": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showSparkline": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showSubAggregate": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showTarget": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showThreshold": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showTotalAggregate": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showTotalValue": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "showTrend": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "showZero": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": true
+                                                            },
+                                                            "sortBy": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "value"
+                                                            },
+                                                            "sortByOrder": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "desc"
+                                                            },
+                                                            "sparklineStyle": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "area"
+                                                            },
+                                                            "standardFormatData": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "startTime": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "telemetry": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "titleColor": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "trendBy": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "useCurrentDateForEnd": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "useDataCache": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "useRelativeScoreTime": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "userInfo": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "user"
+                                                                    ],
+                                                                    "category": "session"
+                                                                },
+                                                                "type": "CONTEXT_BINDING"
+                                                            },
+                                                            "wrapTitle": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": {}
+                                                    }
+                                                ],
+                                                "layout": {
+                                                    "default": {
+                                                        "children": null,
+                                                        "items": [
+                                                            {
+                                                                "element_id": "single_score_12",
+                                                                "styles": {
+                                                                    "align-self": "stretch",
+                                                                    "flex": "0 1 auto"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "root": null,
+                                                        "styles": {
+                                                            "align-items": "stretch",
+                                                            "box-sizing": "border-box",
+                                                            "display": "flex",
+                                                            "flex-direction": "row",
+                                                            "height": "100%",
+                                                            "justify-content": "space-evenly",
+                                                            "overflow": "auto"
+                                                        },
+                                                        "type": "flex"
+                                                    },
+                                                    "disableAutoReflow": true,
+                                                    "version": "3.0.0"
+                                                }
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "hideEmptyStateUi": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": true
+                                                },
+                                                "slotWrapperBehavior": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "contents"
+                                                }
+                                            },
+                                            "scratchPad": {
+                                                "uib": {
+                                                    "layout": {
+                                                        "column": {
+                                                            "columnNumber": 2,
+                                                            "id": "default",
+                                                            "styleConfig": {
+                                                                "external": {},
+                                                                "internal": {}
+                                                            }
+                                                        },
+                                                        "type": "column"
+                                                    },
+                                                    "version": "1.0.0"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
                                         }
                                     ],
                                     "layout": {
@@ -5822,14 +6532,20 @@
                                                 {
                                                     "element_id": "__onqKreehhqbbDkNAjjlEONSffaxfCO__column_1",
                                                     "styles": {}
+                                                },
+                                                {
+                                                    "element_id": "__xKQHCeehhfaDEeehheejjhhsEOGHggGdjc__column",
+                                                    "styles": {
+                                                        "display": "contents"
+                                                    }
                                                 }
                                             ],
                                             "root": null,
                                             "rules": null,
                                             "styles": {
-                                                "column-gap": "var(--now-scalable-space--lg)",
+                                                "column-gap": "0",
                                                 "display": "contents",
-                                                "grid-template-columns": "100fr"
+                                                "grid-template-columns": "50fr 50fr"
                                             },
                                             "type": "grid"
                                         },
@@ -5889,7 +6605,12 @@
                                                     {
                                                         "columnNumber": 1,
                                                         "unit": "%",
-                                                        "width": 100
+                                                        "width": 50
+                                                    },
+                                                    {
+                                                        "columnNumber": 2,
+                                                        "unit": "%",
+                                                        "width": 50
                                                     }
                                                 ],
                                                 "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
@@ -5920,9 +6641,11 @@
                                 "styles": {
                                     "align-items": "stretch",
                                     "box-sizing": "border-box",
+                                    "display": "flex",
                                     "flex-direction": "column",
+                                    "gap": "0",
                                     "height": "100%",
-                                    "justify-content": "flex-start",
+                                    "justify-content": "space-around",
                                     "overflow": "auto"
                                 },
                                 "type": "flex"
@@ -7880,7 +8603,7 @@
             },
             "columnLimit": {
                 "type": "JSON_LITERAL",
-                "value": 0
+                "value": 12
             },
             "columnPreferenceKey": {
                 "type": "JSON_LITERAL",
@@ -7960,7 +8683,7 @@
             },
             "fixedFilter": {
                 "type": "JSON_LITERAL",
-                "value": "cmdb_ci.ref_cmdb_ci_certificate.u_ca_scopeINinternal,external"
+                "value": "cmdb_ci.ref_cmdb_ci_certificate.install_status=1"
             },
             "groupBy": {
                 "type": "JSON_LITERAL",
@@ -8163,7 +8886,7 @@
   "code" : "",
   "comment" : ""
 }, {
-  "message" : "Certificados expirando em 30 dias",
+  "message" : "Certificate task(Manual Flow)",
   "code" : "",
   "comment" : ""
 }, {
@@ -8187,7 +8910,15 @@
   "code" : "",
   "comment" : ""
 }, {
+  "message" : "Installed Certificate",
+  "code" : "",
+  "comment" : ""
+}, {
   "message" : "No data available.",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Pending Certificate Renewal Tasks",
   "code" : "",
   "comment" : ""
 }, {
@@ -8210,10 +8941,22 @@
         "fieldType": "string",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "subject_common_name,ca_scope,valid_to,serial_number,signature_algorithm,fingerprint_algorithm,renewal_tracking,first_discovered,last_discovered, state"
+            "value": "source,certificate.subject_common_name,certificate.root_issuer,port,certificate.ca_scope,certificate.valid_to,certificate.serial_number,install_status,discovery_method"
         },
         "label": "newClientStateParam1",
         "name": "certificateFilter",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "description": null,
+        "fieldType": "string",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "number,parent,priority,state,cmdb_ci,short_description,approval,certificate_expiration_date"
+        },
+        "label": "newClientStateParam1",
+        "name": "certificateFilterTask",
         "shape": "",
         "valueType": "string"
     }
@@ -8223,14 +8966,14 @@
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-01-20 13:42:56</sys_created_on>
         <sys_id>4c51fcf93be2ba50a1e3f65436e45a23</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name>Certificate Indicators</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_ux_macroponent_4c51fcf93be2ba50a1e3f65436e45a23</sys_update_name>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-01-26 12:14:52</sys_updated_on>
+        <sys_updated_on>2026-02-03 17:39:37</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=4c51fcf93be2ba50a1e3f65436e45a23"/>
 </record_update>
