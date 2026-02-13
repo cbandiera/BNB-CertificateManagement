@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Copy of Request New Certificate (Automated)">d15701e53bcf3610be82c237f4e45ac0</cat_item>
+        <cat_variable>IO:b55781e53bcf3610be82c237f4e45ad8</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>getSubjectAttributesFromCSR</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading)
+        return;
+
+    if(!(g_user.hasRole('sn_disco_certmgmt.pki_admin') || g_user.hasRole('sn_disco_certmgmt.pki_user') || g_user.hasRole('sn_disco_certmgmt.certificate_requester'))) {
+		g_form.addErrorMessage("User is not authorized. User doesn't contain proper roles (pki_admin, pki_user, certificate_requester)");
+		return;
+	}
+	
+	var csrAttributeNameList = ["subject_common_name", "subject_alternative_name", "organization", "organizational_unit", "locality", "province", "country", "email"];
+    if (newValue == '') {
+        setCSRAttributesValue();
+        return;
+    }
+
+    var ga = new GlideAjax("global.CSRDecodeCertificateAjax");
+    ga.addParam("sysparm_name", "getSubjectAttributesFromCSR");
+    ga.addParam('sysparm_CSRString', newValue);
+    ga.getXML(csrAttributes);
+
+
+    function csrAttributes(response) {
+        var csrAttributes = response.responseXML.documentElement.getAttribute("answer");
+        var csrAttrsObj = (csrAttributes) ? JSON.parse(csrAttributes) : '';
+        setCSRAttributesValue(csrAttrsObj);
+		if (!csrAttrsObj)
+			g_form.showFieldMsg('csr', getMessage('Invalid CSR'), 'error');
+    }
+
+    function hexToIPv4(hex) {
+        var parts = [];
+        for (var i = 0; i < 8; i += 2) {
+            parts.push(parseInt(hex.substring(i, i + 2), 16));
+        }
+        return parts.join('.');
+    }
+
+    function hexToIPv6(hex) {
+        var parts = [];
+        for (var i = 0; i < 32; i += 4) {
+            var group = hex.substring(i, i + 4).toLowerCase();
+            group = group.replace(/^0+/, '');
+            parts.push(group === '' ? '0' : group);
+        }
+        return parts.join(':');
+    }
+
+    function setCSRAttributesValue(csrAttrsObj) {
+        csrAttributeNameList.forEach(function(csrAttr) {
+            if(csrAttr == 'subject_alternative_name' && csrAttrsObj && csrAttrsObj['subject_alternative_name'])
+            {
+                var newSAN = csrAttrsObj['subject_alternative_name'];
+                var regex = /(?:\d+:\s+)?#([a-fA-F0-9\s]{8,})/g;
+                newSAN = newSAN.replace(regex, function(match, hexWithSpaces) {
+                    var hex = (hexWithSpaces || '').replace(/\s+/g, '');
+                    if (hex.length === 8) {
+                        return hexToIPv4(hex);
+                    } else if (hex.length === 32) {
+                        return hexToIPv6(hex);
+                    }
+                    return match;
+                });
+                csrAttrsObj['subject_alternative_name'] = newSAN;
+            }
+            g_form.setValue(csrAttr, (csrAttrsObj && csrAttrsObj[csrAttr]) ? csrAttrsObj[csrAttr] : '');
+        });
+    }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 17:12:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1f5709e53bcf3610be82c237f4e45a9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getSubjectAttributesFromCSR</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>catalog_script_client_1f5709e53bcf3610be82c237f4e45a9c</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 17:12:11</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>
