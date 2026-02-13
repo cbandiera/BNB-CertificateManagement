@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes>ef_auto_completer=AJAXTableCompleter, ref_ac_columns=name,valid_to, ref_ac_columns_search=true, ref_ac_order_by=name</attributes>
-        <cat_item display_value="Revoke Certificate (Automated)">f707bb4c3b2220108774cedf34efc49b</cat_item>
+        <cat_item display_value="Revoke Certificate (Automated) teste">f707bb4c3b2220108774cedf34efc49b</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>

@@ -32,7 +32,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Revoke Certificate (Automated) teste</name>
+        <name>Revoke Certificate (Automated) </name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -87,14 +87,14 @@ else
         <sys_created_by>narasinga.perumal</sys_created_by>
         <sys_created_on>2021-02-21 04:01:24</sys_created_on>
         <sys_id>f707bb4c3b2220108774cedf34efc49b</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Revoke Certificate (Automated) teste</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Revoke Certificate (Automated) </sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sc_cat_item_producer_f707bb4c3b2220108774cedf34efc49b</sys_update_name>
         <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-02-13 14:20:42</sys_updated_on>
+        <sys_updated_on>2026-02-13 14:22:31</sys_updated_on>
         <table_name>sn_disco_certmgmt_revoke_task</table_name>
         <taxonomy_topic display_value="Automated">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
         <template/>
@@ -102,7 +102,7 @@ else
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>1</version>
+        <version>2</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

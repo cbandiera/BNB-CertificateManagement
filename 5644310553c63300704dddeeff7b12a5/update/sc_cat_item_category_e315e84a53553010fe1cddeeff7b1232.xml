@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Revoke Certificate (Automated)">f707bb4c3b2220108774cedf34efc49b</sc_cat_item>
+        <sc_cat_item display_value="Revoke Certificate (Automated) teste">f707bb4c3b2220108774cedf34efc49b</sc_cat_item>
         <sc_category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>narasinga.perumal</sys_created_by>
