@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Revoke Certificate (Automated)">f707bb4c3b2220108774cedf34efc49b</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>narasinga.perumal</sys_created_by>
+        <sys_created_on>2021-02-21 04:03:03</sys_created_on>
+        <sys_id>5e68f3cc3b2220108774cedf34efc491</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Revoked Certificate - Automated Flow</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_5e68f3cc3b2220108774cedf34efc491</sys_update_name>
+        <sys_updated_by>narasinga.perumal</sys_updated_by>
+        <sys_updated_on>2021-02-21 04:03:03</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

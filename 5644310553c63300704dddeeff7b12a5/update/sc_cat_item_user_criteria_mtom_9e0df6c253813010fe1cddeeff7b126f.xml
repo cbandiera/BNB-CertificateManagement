@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Revoke Certificate (Automated)">f707bb4c3b2220108774cedf34efc49b</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>narasinga.perumal</sys_created_by>
+        <sys_created_on>2021-07-01 11:28:27</sys_created_on>
+        <sys_id>9e0df6c253813010fe1cddeeff7b126f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Revoke Certificate - Automated Flow.PKI_ADMIN and above role - Can access the Revoke Certificate</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_9e0df6c253813010fe1cddeeff7b126f</sys_update_name>
+        <sys_updated_by>narasinga.perumal</sys_updated_by>
+        <sys_updated_on>2021-07-01 11:28:27</sys_updated_on>
+        <user_criteria display_value="PKI_ADMIN and above role - Can access the Revoke Certificate">378cb2c253813010fe1cddeeff7b12d2</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+</record_update>
