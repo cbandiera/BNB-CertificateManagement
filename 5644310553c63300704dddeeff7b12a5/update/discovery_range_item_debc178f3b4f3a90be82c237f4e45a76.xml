@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_range_item">
+    <discovery_range_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <attributes/>
+        <end_ip_address/>
+        <name>Rede 10.6.0.0/17</name>
+        <netmask>17</netmask>
+        <network_ip>10.6.0.0</network_ip>
+        <parent display_value="IPs para obter Certificados externos">8f9c1f0f3b4f3a90be82c237f4e45ae5</parent>
+        <schedule/>
+        <start_ip_address/>
+        <summary>10.6.9.100, 10.6.64.213, 10.6.11.98...</summary>
+        <sys_class_name>discovery_range_item</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-18 19:57:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>debc178f3b4f3a90be82c237f4e45a76</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Rede 10.6.0.0/17</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_range_item_debc178f3b4f3a90be82c237f4e45a76</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-19 11:53:45</sys_updated_on>
+        <type>IP Address List</type>
+    </discovery_range_item>
+</record_update>

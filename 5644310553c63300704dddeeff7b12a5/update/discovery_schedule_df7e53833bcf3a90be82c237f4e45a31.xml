@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_schedule">
+    <discovery_schedule action="INSERT_OR_UPDATE">
+        <accel_config/>
+        <active>true</active>
+        <advanced>false</advanced>
+        <behavior/>
+        <business_calendar/>
+        <cert_discovery_type>import</cert_discovery_type>
+        <cert_discovery_url_batch_size>1000</cert_discovery_url_batch_size>
+        <ci_id/>
+        <ci_type/>
+        <condition/>
+        <conditional>false</conditional>
+        <credential_aliases/>
+        <disco_run_type>on_demand</disco_run_type>
+        <discover>Certificates</discover>
+        <discovery_agent>mid</discovery_agent>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time/>
+        <even_if_canceled>true</even_if_canceled>
+        <include_alive>false</include_alive>
+        <include_endpoint_https_urls>false</include_endpoint_https_urls>
+        <location/>
+        <log_state_changes>false</log_state_changes>
+        <max_drift/>
+        <max_idle/>
+        <max_run/>
+        <mid_cluster/>
+        <mid_select_method>specific_mid</mid_select_method>
+        <mid_server display_value="mid_capgv_com_dev_01">21c31c7a3b827210a1e3f65436e45abb</mid_server>
+        <name>BNB Certificados Externos - Remote</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <quick_start>false</quick_start>
+        <repeat_every/>
+        <run_after/>
+        <run_as display_value="Carlos Bandiera Paiva">6f4c121e87e97210fa4042630cbb3525</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month/>
+        <run_period/>
+        <run_start>2026-02-18 20:03:21</run_start>
+        <run_time>1970-01-01 03:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <run_weekinmonth/>
+        <script><![CDATA[var rt = new global.DiscoveryScheduleRunType(current.disco_run_type + ''); if (rt.match() || new global.DiscoveryJob(job).isRunOnce()) { var dd = new global.Discovery(); dd.discoveryStartJob(); }]]></script>
+        <service_attributes/>
+        <service_discovery>ci_type</service_discovery>
+        <service_group_attributes/>
+        <service_group_table>cmdb_ci_service_group</service_group_table>
+        <service_table>cmdb_ci_service_discovered</service_table>
+        <shazzam_batch_size>1000</shazzam_batch_size>
+        <shazzam_cluster_support>true</shazzam_cluster_support>
+        <sys_class_name>discovery_schedule</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-18 20:04:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>df7e53833bcf3a90be82c237f4e45a31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BNB Certificados Externos - Remote</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_schedule_df7e53833bcf3a90be82c237f4e45a31</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-18 20:04:22</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <use_snmp_version>all</use_snmp_version>
+        <vm_run/>
+        <was_created_by_system>false</was_created_by_system>
+    </discovery_schedule>
+</record_update>
