@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_disco_certmgmt.GenerateCSRProbeInvoker</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GenerateCSRProbeInvoker</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GenerateCSRProbeInvoker = Class.create();
+GenerateCSRProbeInvoker.prototype = {
+    initialize: function() {
+        this.certificateRequestAutomatedFlow = new CertificateRequestAutomatedFlow();
+    },
+
+	sendProbe: function(parameterMap) {
+		parameterMap["used_by_runbook"] = "true";
+		parameterMap["keySize"] = gs.getProperty('sn_disco_certmgmt.private_key_size', 2048);
+
+		parameterMap["skip_sensor"] = "false";
+		parameterMap["probe"] = "a31575e4ff6d2210ef03fa54fc4fd9d6";
+		parameterMap["used_by_discovery"] = "true";
+		parameterMap["probe_name"] = "Probe - Generate CSR";
+		parameterMap["certificate_request_type"] = "renew";
+
+		var midId = this.getMid("Certificate Inventory and Management", "GenerateCSR", parameterMap['sys_domain']);
+		if(midId == null) {
+            this.addWorkNoteAndUpdateTask(parameterMap["renewal_task_id"]);
+		} else {
+            var probe = new ProbeInvoker();
+            probe.sendProbe(midId, 'GenerateCSRProbe', parameterMap);
+            this.certificateRequestAutomatedFlow.updateCertTaskWorkNotes(parameterMap["renewal_task_id"], gs.getMessage('starting_csr_generation', midId));
+		}
+	},
+
+	addWorkNoteAndUpdateTask: function(taskId) {
+		var error = gs.getMessage("unable_to_find_mid_to_generate_csr");
+		var renewTaskgr = new GlideRecord('sn_disco_certmgmt_renew_task');
+		renewTaskgr.get(taskId);
+        this.certificateRequestAutomatedFlow.updateCertTaskWorkNotes(taskId, error);
+		renewTaskgr.setValue('state', 3);
+		renewTaskgr.update();
+		throw new Error(error);
+	},
+
+	invokeDeletePrivateKeyProbe: function(privateKeyReferenceMap) {
+		var parameters = {};
+		parameters["used_by_runbook"] = "true";
+		parameters["skip_sensor"] = "false";
+		parameters["probe"] = "1f7d2b4c47d6a21032939b40706d4394";
+		parameters["used_by_discovery"] = "true";
+		parameters["probe_name"] = "DeletePrivateKeysProbe";
+		parameters["private_key_reference_map"] = JSON.stringify(privateKeyReferenceMap);
+		var midId = this.getMid("Certificate Inventory and Management", "GenerateCSR");
+		if(midId == null) {
+			gs.error("Unable to find a mid server to invoke DeletePrivateKeysProbe");
+		} else {
+            var probe = new ProbeInvoker();
+            probe.sendProbe(midId, 'DeletePrivateKeysProbe', parameters);
+		}
+	},
+
+	getMid: function(app, capability, sysDomain) {
+        new global.CSRDecodeCertificateAjax().setDomainId(sysDomain);
+        var eccApp = new GlideRecord("ecc_agent_application");
+        eccApp.get("name", app);
+        if(gs.nil(eccApp)) {
+            return null;
+        }
+
+        var eccCapability = new GlideRecord("ecc_agent_capability");
+        eccCapability.get("capability", capability);
+        if(gs.nil(eccCapability)) {
+            return null;
+        }
+
+        var appM2m = new GlideRecord("ecc_agent_application_m2m");
+        appM2m.addQuery("application", eccApp.getValue('sys_id'));
+        appM2m.query();
+        var eligibleAppMids = [];
+        while(appM2m.next()) {
+            eligibleAppMids.push(appM2m.getValue('agent'));
+        }
+        if(eligibleAppMids.length == 0) {
+            return null;
+        }
+
+        var capabilityM2m = new GlideRecord("ecc_agent_capability_m2m");
+        capabilityM2m.addQuery("capability", eccCapability.getValue('sys_id'));
+        capabilityM2m.query();
+        var eligibleCapMids = [];
+        while(capabilityM2m.next()) {
+            eligibleCapMids.push(capabilityM2m.getValue('agent'));
+        }
+        if(eligibleCapMids.length == 0) {
+            return null;
+        }
+
+        var eligibleMids = eligibleAppMids.filter((value) => eligibleCapMids.includes(value));
+        if(eligibleMids.length == 0) {
+            return null;
+        }
+
+        var availableMids = [];
+        var eccAgentGr = new GlideRecord("ecc_agent");
+        eccAgentGr.addQuery('status', 'up');
+        eccAgentGr.addQuery('validated', true);
+        eccAgentGr.addQuery('sys_id', 'IN', eligibleMids.join(','));
+        eccAgentGr.query();
+        while(eccAgentGr.next()) {
+            if(eccAgentGr.getValue('sys_domain') == sysDomain) {
+                return "mid.server."+eccAgentGr.getValue('name');
+            }
+            availableMids.push(eccAgentGr);
+        }
+
+        gs.info("GenerateCSRProbeInvoker : available and eligible mid " + availableMids[0].getValue('name'));
+        return "mid.server." + availableMids[0].getValue('name');
+	},
+
+    type: 'GenerateCSRProbeInvoker'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-23 23:51:04</sys_created_on>
+        <sys_id>c8920af43bd3b254be82c237f4e45a02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GenerateCSRProbeInvoker</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_include_c8920af43bd3b254be82c237f4e45a02</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-23 23:51:04</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_script_include_c8920af43bd3b254be82c237f4e45a02</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;sn_disco_certmgmt.GenerateCSRProbeInvoker&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GenerateCSRProbeInvoker&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GenerateCSRProbeInvoker = Class.create();
+GenerateCSRProbeInvoker.prototype = {
+    initialize: function() {
+        this.certificateRequestAutomatedFlow = new CertificateRequestAutomatedFlow();
+    },
+
+	sendProbe: function(parameterMap) {
+		parameterMap["used_by_runbook"] = "true";
+		parameterMap["keySize"] = gs.getProperty('sn_disco_certmgmt.private_key_size', 2048);
+
+		parameterMap["skip_sensor"] = "false";
+		parameterMap["probe"] = "a31575e4ff6d2210ef03fa54fc4fd9d6";
+		parameterMap["used_by_discovery"] = "true";
+		parameterMap["probe_name"] = "Probe - Generate CSR";
+		parameterMap["certificate_request_type"] = "renew";
+
+		var midId = this.getMid("Certificate Inventory and Management", "GenerateCSR", parameterMap['sys_domain']);
+		if(midId == null) {
+            this.addWorkNoteAndUpdateTask(parameterMap["renewal_task_id"]);
+		} else {
+            var probe = new ProbeInvoker();
+            probe.sendProbe(midId, 'GenerateCSRProbe', parameterMap);
+            this.certificateRequestAutomatedFlow.updateCertTaskWorkNotes(parameterMap["renewal_task_id"], gs.getMessage('starting_csr_generation', midId));
+		}
+	},
+
+	addWorkNoteAndUpdateTask: function(taskId) {
+		var error = gs.getMessage("unable_to_find_mid_to_generate_csr");
+		var renewTaskgr = new GlideRecord('sn_disco_certmgmt_renew_task');
+		renewTaskgr.get(taskId);
+        this.certificateRequestAutomatedFlow.updateCertTaskWorkNotes(taskId, error);
+		renewTaskgr.setValue('state', 3);
+		renewTaskgr.update();
+		throw new Error(error);
+	},
+
+	invokeDeletePrivateKeyProbe: function(privateKeyReferenceMap) {
+		var parameters = {};
+		parameters["used_by_runbook"] = "true";
+		parameters["skip_sensor"] = "false";
+		parameters["probe"] = "1f7d2b4c47d6a21032939b40706d4394";
+		parameters["used_by_discovery"] = "true";
+		parameters["probe_name"] = "DeletePrivateKeysProbe";
+		parameters["private_key_reference_map"] = JSON.stringify(privateKeyReferenceMap);
+		var midId = this.getMid("Certificate Inventory and Management", "GenerateCSR");
+		if(midId == null) {
+			gs.error("Unable to find a mid server to invoke DeletePrivateKeysProbe");
+		} else {
+            var probe = new ProbeInvoker();
+            probe.sendProbe(midId, 'DeletePrivateKeysProbe', parameters);
+		}
+	},
+
+	getMid: function(app, capability, sysDomain) {
+        new global.CSRDecodeCertificateAjax().setDomainId(sysDomain);
+        var eccApp = new GlideRecord("ecc_agent_application");
+        eccApp.get("name", app);
+        if(gs.nil(eccApp)) {
+            return null;
+        }
+
+        var eccCapability = new GlideRecord("ecc_agent_capability");
+        eccCapability.get("capability", capability);
+        if(gs.nil(eccCapability)) {
+            return null;
+        }
+
+        var appM2m = new GlideRecord("ecc_agent_application_m2m");
+        appM2m.addQuery("application", eccApp.getValue('sys_id'));
+        appM2m.query();
+        var eligibleAppMids = [];
+        while(appM2m.next()) {
+            eligibleAppMids.push(appM2m.getValue('agent'));
+        }
+        if(eligibleAppMids.length == 0) {
+            return null;
+        }
+
+        var capabilityM2m = new GlideRecord("ecc_agent_capability_m2m");
+        capabilityM2m.addQuery("capability", eccCapability.getValue('sys_id'));
+        capabilityM2m.query();
+        var eligibleCapMids = [];
+        while(capabilityM2m.next()) {
+            eligibleCapMids.push(capabilityM2m.getValue('agent'));
+        }
+        if(eligibleCapMids.length == 0) {
+            return null;
+        }
+
+        var eligibleMids = eligibleAppMids.filter((value) =&gt; eligibleCapMids.includes(value));
+        if(eligibleMids.length == 0) {
+            return null;
+        }
+
+        var availableMids = [];
+        var eccAgentGr = new GlideRecord("ecc_agent");
+        eccAgentGr.addQuery('status', 'up');
+        eccAgentGr.addQuery('validated', true);
+        eccAgentGr.addQuery('sys_id', 'IN', eligibleMids.join(','));
+        eccAgentGr.query();
+        while(eccAgentGr.next()) {
+            if(eccAgentGr.getValue('sys_domain') == sysDomain) {
+                return "mid.server."+eccAgentGr.getValue('name');
+            }
+            availableMids.push(eccAgentGr);
+        }
+
+        gs.info("GenerateCSRProbeInvoker : available and eligible mid " + availableMids[0].getValue('name'));
+        return "mid.server." + availableMids[0].getValue('name');
+	},
+
+    type: 'GenerateCSRProbeInvoker'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carlos.paiva@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-23 23:51:04&lt;/sys_created_on&gt;&lt;sys_id&gt;c8920af43bd3b254be82c237f4e45a02&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;GenerateCSRProbeInvoker&lt;/sys_name&gt;&lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c8920af43bd3b254be82c237f4e45a02&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;carlos.paiva@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-23 23:51:04&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2128991614</payload_hash>
+        <record_name>GenerateCSRProbeInvoker</record_name>
+        <reverted_from display_value="sys_script_include_c8920af43bd3b254be82c237f4e45a02">00920af43bd3b254be82c237f4e45aab</reverted_from>
+        <source>95c6cda13bcf3610be82c237f4e45a18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-25 13:25:26</sys_created_on>
+        <sys_id>f68646593b1bbe54be82c237f4e45a26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c94f9d24e0000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-25 13:25:26</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>fe8646595e1bbe54826bc0ebe11c1a23</update_guid>
+        <update_guid_history>fe8646595e1bbe54826bc0ebe11c1a23:-2128991614,b0f122c58853ba5457556e76006be3f9:-134561994,be779e4d2bdb7a5433b1de0a318e8ab1:1077353909,3cb28238f4d3b25402bc62e10409eed3:1787418455,04920af41cd3b25444ed4f178e926a08:-2128991614</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-03 19:51:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0e72d52c87d54b4c81696559f818e4a4</sys_id>
+        <sys_metadata>c8920af43bd3b254be82c237f4e45a02</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GenerateCSRProbeInvoker</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_script_include_c8920af43bd3b254be82c237f4e45a02</sys_update_name>
+        <sys_update_version display_value="sys_script_include_c8920af43bd3b254be82c237f4e45a02">f68646593b1bbe54be82c237f4e45a26</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-03 19:51:31</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683e0e90000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_c8920af43bd3b254be82c237f4e45a02</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:19</sys_created_on>
+        <sys_id>e309ab9033f37e906c8432a19e5c7b5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:19</sys_updated_on>
+    </sys_claim>
+</record_update>

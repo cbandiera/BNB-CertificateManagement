@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="2477790387eba210fa4042630cbb3585" extends="task" label="Certificate task(Manual Flow)" max_length="40" name="sn_disco_certmgmt_certificate_task" text_index="true" type="collection">
+        <element label="Target CI" max_length="32" name="u_target_ci" reference="cmdb_ci" type="reference"/>
+        <element choice="1" display="true" label="Renewal Flow" max_length="40" name="u_renewal_flow" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Fluxo C - CA Interna / Instalação Manual" sequence="3" value="flow_c"/>
+                <element inactive_on_update="false" label="Fluxo B - CA Interna / Instalação Automática" sequence="2" value="flow_b"/>
+                <element inactive_on_update="false" label="Fluxo A - CA Externa" sequence="1" value="flow_a"/>
+            </choice>
+        </element>
+    </element>
+</database>

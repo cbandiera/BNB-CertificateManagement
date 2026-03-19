@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Revoke Certificate (Automated) teste">f707bb4c3b2220108774cedf34efc49b</cat_item>
+        <cat_item display_value="Revoke Certificate (Automated) ">f707bb4c3b2220108774cedf34efc49b</cat_item>
         <cat_variable>IO:48cdf3803b6220108774cedf34efc467</cat_variable>
         <condition/>
         <description/>
@@ -68,4 +68,18 @@
         <variable_set/>
         <view/>
     </catalog_script_client>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683df230000001</claim_timestamp>
+        <metadata_update_name>catalog_script_client_2a18a85c3ba220108774cedf34efc4b7</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:18</sys_created_on>
+        <sys_id>e3096b9033f37e906c8432a19e5c7bfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:18</sys_updated_on>
+    </sys_claim>
 </record_update>

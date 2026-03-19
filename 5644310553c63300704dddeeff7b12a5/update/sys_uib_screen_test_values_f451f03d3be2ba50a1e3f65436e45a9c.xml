@@ -8,7 +8,7 @@
     "edit": null,
     "element": null
 }</macroponent_config>
-        <screen display_value="Certificate Alerts copy">fc51f03d3be2ba50a1e3f65436e45a95</screen>
+        <screen display_value="Certificate Indicators">fc51f03d3be2ba50a1e3f65436e45a95</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-01-20 13:42:58</sys_created_on>
@@ -22,4 +22,18 @@
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-01-20 13:42:58</sys_updated_on>
     </sys_uib_screen_test_values>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d8920000001</claim_timestamp>
+        <metadata_update_name>sys_uib_screen_test_values_f451f03d3be2ba50a1e3f65436e45a9c</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>cb092b9033f37e906c8432a19e5c7b62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
 </record_update>

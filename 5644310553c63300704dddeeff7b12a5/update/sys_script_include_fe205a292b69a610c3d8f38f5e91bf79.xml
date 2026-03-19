@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
-        <active>false</active>
+        <active>true</active>
         <api_name>sn_disco_certmgmt.GenerateCSRProbeInvoker</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
@@ -25,7 +25,7 @@ GenerateCSRProbeInvoker.prototype = {
 		parameterMap["probe_name"] = "Probe - Generate CSR";
 		parameterMap["certificate_request_type"] = "renew";
 
-		var midId = this.getMid("Certificate Inventory and Management", "GenerateCSR", parameterMap['sys_domain']);
+		var midId = this.getMid("d07c46e52b69a610c3d8f38f5e91bf02", "52bccae52b69a610c3d8f38f5e91bf66", parameterMap['sys_domain']);
 		if(midId == null) {
             this.addWorkNoteAndUpdateTask(parameterMap["renewal_task_id"]);
 		} else {
@@ -53,7 +53,7 @@ GenerateCSRProbeInvoker.prototype = {
 		parameters["used_by_discovery"] = "true";
 		parameters["probe_name"] = "DeletePrivateKeysProbe";
 		parameters["private_key_reference_map"] = JSON.stringify(privateKeyReferenceMap);
-		var midId = this.getMid("Certificate Inventory and Management", "GenerateCSR");
+		var midId = this.getMid("d07c46e52b69a610c3d8f38f5e91bf02", "52bccae52b69a610c3d8f38f5e91bf66");
 		if(midId == null) {
 			gs.error("Unable to find a mid server to invoke DeletePrivateKeysProbe");
 		} else {
@@ -64,20 +64,8 @@ GenerateCSRProbeInvoker.prototype = {
 
 	getMid: function(app, capability, sysDomain) {
         new global.CSRDecodeCertificateAjax().setDomainId(sysDomain);
-        var eccApp = new GlideRecord("ecc_agent_application");
-        eccApp.get("name", app);
-        if(gs.nil(eccApp)) {
-            return null;
-        }
-
-        var eccCapability = new GlideRecord("ecc_agent_capability");
-        eccCapability.get("capability", capability);
-        if(gs.nil(eccCapability)) {
-            return null;
-        }
-
         var appM2m = new GlideRecord("ecc_agent_application_m2m");
-        appM2m.addQuery("application", eccApp.getValue('sys_id'));
+        appM2m.addQuery("application", app);
         appM2m.query();
         var eligibleAppMids = [];
         while(appM2m.next()) {
@@ -88,7 +76,7 @@ GenerateCSRProbeInvoker.prototype = {
         }
 
         var capabilityM2m = new GlideRecord("ecc_agent_capability_m2m");
-        capabilityM2m.addQuery("capability", eccCapability.getValue('sys_id'));
+        capabilityM2m.addQuery("capability", capability);
         capabilityM2m.query();
         var eligibleCapMids = [];
         while(capabilityM2m.next()) {
@@ -116,9 +104,13 @@ GenerateCSRProbeInvoker.prototype = {
             availableMids.push(eccAgentGr);
         }
 
-        gs.info("GenerateCSRProbeInvoker : available and eligible mid " + availableMids[0].getValue('name'));
-        return "mid.server." + availableMids[0].getValue('name');
-	},
+        if (availableMids.length > 0) {
+            gs.info("GenerateCSRProbeInvoker : available and eligible mid " + availableMids[0].getValue('name'));
+            return "mid.server." + availableMids[0].getValue('name');
+        }
+        gs.info("GenerateCSRProbeInvoker : No eligible mid found");
+        return null;
+    },
 
     type: 'GenerateCSRProbeInvoker'
 };]]></script>
@@ -126,13 +118,27 @@ GenerateCSRProbeInvoker.prototype = {
         <sys_created_by>now.discovery.content</sys_created_by>
         <sys_created_on>2025-05-16 12:46:58</sys_created_on>
         <sys_id>fe205a292b69a610c3d8f38f5e91bf79</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>GenerateCSRProbeInvoker</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_fe205a292b69a610c3d8f38f5e91bf79</sys_update_name>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-02-23 23:52:14</sys_updated_on>
+        <sys_updated_by>now.discovery.content</sys_updated_by>
+        <sys_updated_on>2025-12-30 10:28:22</sys_updated_on>
     </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d9220000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_fe205a292b69a610c3d8f38f5e91bf79</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>0b092b9033f37e906c8432a19e5c7b7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
 </record_update>

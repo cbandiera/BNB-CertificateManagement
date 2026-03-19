@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="a067350387eba210fa4042630cbb353d" extends="sys_metadata" label="Autoridade certificadora" max_length="40" name="sn_disco_certmgmt_ca" type="collection">
+        <element choice="1" label="origin" max_length="40" name="u_origin" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Native" sequence="1" value="native"/>
+                <element inactive_on_update="false" label="Manual" sequence="2" value="manual"/>
+            </choice>
+        </element>
+        <element choice="1" label="Scope" max_length="40" name="u_scope" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="External" sequence="2" value="external"/>
+                <element inactive_on_update="false" label="Internal" sequence="1" value="internal"/>
+                <element inactive_on_update="false" label="Hybrid" sequence="3" value="hybrid"/>
+            </choice>
+        </element>
+    </element>
+</database>

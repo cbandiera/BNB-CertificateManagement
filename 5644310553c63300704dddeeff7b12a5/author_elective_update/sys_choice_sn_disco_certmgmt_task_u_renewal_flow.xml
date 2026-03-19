@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_renewal_flow" table="sn_disco_certmgmt_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_renewal_flow</element>
+            <name>sn_disco_certmgmt_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-13 20:05:30</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_renewal_flow</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_choice_sn_disco_certmgmt_task_u_renewal_flow</sys_update_name>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-13 20:05:30</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_renewal_flow</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fluxo A - CA Externa</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-13 20:06:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-13 20:06:41</sys_updated_on>
+            <value>flow_a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_renewal_flow</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fluxo B - CA Interna / Instalação Automática</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-13 20:05:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-13 20:06:37</sys_updated_on>
+            <value>flow_b</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_renewal_flow</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fluxo C - CA Interna / Instalação Manual</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-13 20:05:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-13 20:06:35</sys_updated_on>
+            <value>flow_c</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d4e80000001</claim_timestamp>
+        <metadata_update_name>sys_choice_sn_disco_certmgmt_task_u_renewal_flow</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
+        <sys_id>b609e79033f37e906c8432a19e5c7b7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+    </sys_claim>
+</record_update>

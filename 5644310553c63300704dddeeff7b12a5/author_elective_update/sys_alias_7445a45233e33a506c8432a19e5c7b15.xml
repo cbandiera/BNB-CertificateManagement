@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>sn_disco_certmgmt.AWX_Linux_PRD_Token</id>
+        <is_internal>false</is_internal>
+        <multiple_connections>false</multiple_connections>
+        <name>AWX Linux PRD Token</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-12 19:10:27</sys_created_on>
+        <sys_id>7445a45233e33a506c8432a19e5c7b15</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sn_disco_certmgmt.AWX_Linux_PRD_Token</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_alias_7445a45233e33a506c8432a19e5c7b15</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-12 20:57:56</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_alias_7445a45233e33a506c8432a19e5c7b15</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>sn_disco_certmgmt.AWX_Linux_PRD_Token</id><is_internal>false</is_internal><multiple_connections>false</multiple_connections><name>AWX Linux PRD Token</name><parent/><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-03-12 19:10:27</sys_created_on><sys_id>7445a45233e33a506c8432a19e5c7b15</sys_id><sys_mod_count>2</sys_mod_count><sys_name>sn_disco_certmgmt.AWX_Linux_PRD_Token</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sys_alias_7445a45233e33a506c8432a19e5c7b15</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-03-12 20:57:56</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>20024729</payload_hash>
+        <record_name>sn_disco_certmgmt.AWX_Linux_PRD_Token</record_name>
+        <reverted_from/>
+        <source>17f52a9b3b93721cbe82c237f4e45a36</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-12 20:57:56</sys_created_on>
+        <sys_id>29fdf89e33e37a506c8432a19e5c7b55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ce3d77f850000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-12 20:57:56</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>65fdf89e63e37a50cae9f291d5dac654</update_guid>
+        <update_guid_history>65fdf89e63e37a50cae9f291d5dac654:20024729,cd786cda5d273a50ec076d1a7bbcf805:-2056277175,0f55a092d9e33a50b036ae4ea2e6da2e:-1976995098</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-18 14:11:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>429cd8d3bd164fa8b02c5091d17a7590</sys_id>
+        <sys_metadata>7445a45233e33a506c8432a19e5c7b15</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_disco_certmgmt.AWX_Linux_PRD_Token</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_alias_7445a45233e33a506c8432a19e5c7b15</sys_update_name>
+        <sys_update_version display_value="sys_alias_7445a45233e33a506c8432a19e5c7b15">29fdf89e33e37a506c8432a19e5c7b55</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-18 14:11:26</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dff80000001</claim_timestamp>
+        <metadata_update_name>sys_alias_7445a45233e33a506c8432a19e5c7b15</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:19</sys_created_on>
+        <sys_id>ef09ab9033f37e906c8432a19e5c7b2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:19</sys_updated_on>
+    </sys_claim>
+</record_update>

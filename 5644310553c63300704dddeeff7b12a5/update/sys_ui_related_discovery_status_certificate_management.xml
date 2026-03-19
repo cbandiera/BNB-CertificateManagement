@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="discovery_status" version="2" view="certificate_management">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Discovery Status - Certificate Management" name="discovery_status" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">5a6d24153bcffa10a1e3f65436e45ae8</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:aa9f74ba4701010007936f2ccee490e8</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-02-12 20:40:19</sys_created_on>
+            <sys_id>966d24153bcffa10a1e3f65436e45aea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-02-12 20:40:19</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Discovery Status - Certificate Management" name="discovery_status" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">5a6d24153bcffa10a1e3f65436e45ae8</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>discovery_device_history.status</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-02-12 20:40:19</sys_created_on>
+            <sys_id>926d24153bcffa10a1e3f65436e45aeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-02-12 20:40:19</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Discovery Status - Certificate Management" name="discovery_status" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">5a6d24153bcffa10a1e3f65436e45ae8</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:897b216d0a0a0b7300d9c0927455f8eb</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-02-12 20:40:19</sys_created_on>
+            <sys_id>1a6d24153bcffa10a1e3f65436e45aeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-02-12 20:40:19</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Discovery Status - Certificate Management" name="discovery_status" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">5a6d24153bcffa10a1e3f65436e45ae8</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:7078c3a7c75e33005b31824d5ec2602c</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-02-12 20:40:19</sys_created_on>
+            <sys_id>9e6d24153bcffa10a1e3f65436e45aeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-02-12 20:40:19</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Discovery Status - Certificate Management" name="discovery_status" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">5a6d24153bcffa10a1e3f65436e45ae8</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:9f0d0c989312ce102b3fbfca2bba1020</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-02-12 20:40:19</sys_created_on>
+            <sys_id>166d24153bcffa10a1e3f65436e45aec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-02-12 20:40:19</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Discovery Status - Certificate Management</calculated_name>
+            <filter/>
+            <name>discovery_status</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-02-12 20:40:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a6d24153bcffa10a1e3f65436e45ae8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Discovery Status - Certificate Management</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_ui_related_discovery_status_certificate_management</sys_update_name>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-02-12 20:40:19</sys_updated_on>
+            <sys_user/>
+            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dae00000001</claim_timestamp>
+        <metadata_update_name>sys_ui_related_discovery_status_certificate_management</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>9f092b9033f37e906c8432a19e5c7bb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
+</record_update>

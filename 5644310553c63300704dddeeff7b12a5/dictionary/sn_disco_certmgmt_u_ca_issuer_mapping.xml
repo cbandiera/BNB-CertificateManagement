@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f2c3a24487aebe90fa4042630cbb3582" label="u_ca_issuer_mapping" max_length="40" name="sn_disco_certmgmt_u_ca_issuer_mapping" type="collection">
+        <element label="u_issuer_contains" max_length="400" name="u_u_issuer_contains" type="string"/>
+        <element label="u_ca" max_length="32" name="u_u_ca" reference="sn_disco_certmgmt_ca" type="reference"/>
+        <element label="u_active" max_length="40" name="u_u_active" type="boolean"/>
+        <index name="index">
+            <element name="u_u_ca"/>
+        </index>
+    </element>
+</database>

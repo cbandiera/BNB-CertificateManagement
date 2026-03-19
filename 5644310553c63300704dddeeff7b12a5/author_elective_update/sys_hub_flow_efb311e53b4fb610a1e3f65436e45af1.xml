@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3611000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>44a9b0d03bc37e10a1e3f65436e45a6a</copied_from>
+        <copied_from_name>Enable Certificate Auto Renewal</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>enable_certificate_auto_renewa_2</internal_name>
+        <label_cache>[{"name":"subflow.days_before_expiry","label":"Input➛days_before_expiry","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a41beb4d-5b68-4aee-9f88-97fe0847778d":["auto_renew_days_before_expiry"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"af3b3d80-c612-479a-a6b9-223d1e4064e7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.certificate","label":"Input➛certificate","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a9c4c744-a275-4b95-8785-6a8f6481998c":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bd1eb74c-6d80-49aa-bf06-d5441eac222f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.certificate.sys_id","label":"Input➛certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"6f28a233-243e-4310-bd8a-a3aa72cc20b6":["conditions"],"e641871c-1adf-4867-825a-fb76173ef192":["conditions"]}},{"name":"e641871c-1adf-4867-825a-fb76173ef192.Records","label":"1 - Look Up Records➛Unique Certificate Records","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate Records","type":"records","base_type":"records","usedInstances":{"31eee524-7337-4eb2-a2e5-ae7d610476c3":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"31eee524-7337-4eb2-a2e5-ae7d610476c3.Records","label":"2 - Look Up Records➛Certificate metadata Records","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata Records","type":"records","base_type":"records","usedInstances":{"a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8":["condition"],"cbbea16a-5644-43a8-871e-518c1fec7e84":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cbbea16a-5644-43a8-871e-518c1fec7e84.item","label":"4 - For Each➛Certificate metadata Record","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata Record","type":"reference","base_type":"reference","usedInstances":{"37b4940c-4456-4fa3-831c-0bf6656d11d5":["certificate"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>b0b4dded3b4fb610a1e3f65436e45ae7</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Enable Certificate Auto Renewal _ teste</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:06:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>efb311e53b4fb610a1e3f65436e45af1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Enable Certificate Auto Renewal _ teste</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_hub_flow_efb311e53b4fb610a1e3f65436e45af1</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:36:34</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>4a81692d3b8bf610a1e3f65436e45a55</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_variable_value action="DELETE" query="document_key=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT INefb311e53b4fb610a1e3f65436e45af2"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>efb311e53b4fb610a1e3f65436e45af1</id>
+        <name>Enable Certificate Auto Renewa 2</name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:06:16</sys_created_on>
+        <sys_id>efb311e53b4fb610a1e3f65436e45af2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:06:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=efb311e53b4fb610a1e3f65436e45af2"/>
+    <sys_hub_flow_input action="DELETE" query="model=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT IN2bb351e53b4fb610a1e3f65436e45a14"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bd1eb74c-6d80-49aa-bf06-d5441eac222f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_certificate</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>certificate</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>certificate</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</model>
+        <model_id>efb311e53b4fb610a1e3f65436e45af1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_efb311e53b4fb610a1e3f65436e45af1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_certificate">cmdb_ci_certificate</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:06:16</sys_created_on>
+        <sys_id>2bb351e53b4fb610a1e3f65436e45a14</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:06:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=2bb351e53b4fb610a1e3f65436e45a14"/>
+    <sys_hub_flow_output action="DELETE" query="model=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT IN81a495ed3b4fb610a1e3f65436e45a02,8da495ed3b4fb610a1e3f65436e45a02,73b351e53b4fb610a1e3f65436e45a94"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:11</sys_created_on>
+        <sys_id>81a495ed3b4fb610a1e3f65436e45a02</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:03:24</sys_updated_on>
+        <ui_id>e641871c-1adf-4867-825a-fb76173ef192</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VX30/bMBD+V6o8V1FCSmG8TSCkPQASsL0wZDm201pznGA7LaXq/75znKRpG6Dtug0efT+/O393cR7mHqfemXeaDIIAh8enJ0EQRUEwHEYEh3EcDUkcxIPY63sSpwwsDY4Fg+MEi8KeSUpjRDgiTBmecIKN1VKuc4FnPyqj75I/Fax3vmJDxlxQxaR39vDY93KsIIFhyjubr6nMLGdI4JgJCHVv8/euLZj+1thXnDdrsQnqI5IudKaoxRL0PfZsmKQMUiVYaNb3UiwpNpmaNRLFML2RYikYc2kgomeNnzV/gfCngbVLGJRFmNM1R1T1y4nJOOOE3eSGZ9JJHFCnzESRymtXgO00S3AhTN1pkBQa4rHcYrYgKkTJ3Tib3tYJL7ksy6uUIiNYNCdsjOJxYZi2d8EESyEQSnGeczlCucomvHQGLKk/EnDwE5FNIanmI+ljYoH70CLsX4L8ohT/wIrbKq4gDDgDIC7gtpFrus4KVXZlgogodKlQWGoXy1uUvUJPhUXpqq7qQ65FYKCJ4rn5Cg4TVpWy6G9F7+NgSQmSScptTt3iuJ5pxOnPApzpfK6L2JbrtxjvO4vFYpP6O/nuNxLnbczb1tvp3NWEajhWZNVwhAcbDoD7n8bDqOLjTcd7fHcFv0N6cvImCY6X960zZZDrXIv1m1zem6GXnAm6srS3AFc731iy9eLZa3grgiY2x9r2Pvr02/tD0hMAUeT6zaXgsvx4AtDD8DZ4e3l9WeNBef2tXW1lWJNN9uKeyXov+2/Z8l5r/m4Bsna8A0S9e4eyA3i9X+vwFXWjg1E3OtqNukCch3mDvulaR4PrN5K9utr+xdrjdXtgV8shXDw21D/fL2e4a84jm3NtNqOdhrPNLKe5eIVgB36BvTJs/b853WNwrfIhN6xoyumImWX22opmZorFry59xa5mhsry/vg1N3hz9obhcs5gBpBiGq6q/ZwL4bGxuR5C34n32w7fpGGjsnnbQqw9r/Bz77bB2Am8WhG8yVFxenDA99e/+LzVje+cnrr/n+L3ZV8KP/4GSuN9nnEPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=81a495ed3b4fb610a1e3f65436e45a02"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:11</sys_created_on>
+        <sys_id>8da495ed3b4fb610a1e3f65436e45a02</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:03:24</sys_updated_on>
+        <ui_id>31eee524-7337-4eb2-a2e5-ae7d610476c3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXTU/jMBD9K1XObZU0/YLbCoS0B0ACxIVFluM4rbWOnbWdllL1v+84TtLQFijd7i7c6vF8vBm/57gPS4/F3qk3Tvq+j4PBeOT7Yej7w2FIcBBF4ZBEftSPvLYncErB0+CIU1jOMM/tWgsUM00kIlSZdJKa4gdLGMGGopQaHGODIQC8Mo4X92Xc2dqr1fAiU8ZjRYV3+vDY9jKsoKqhyjtdbmyZRUYRxxHlkOzOgmpdWYTtvRt6EbzdoC1QLZFwqaWKLRa/7dEnQ0VMoVSCuaZtL8UCWpBqUVsUxfG14GvDlAkDGT3r/KTZM6Qf+9YvodAWoW6vXqJyYs5MppIRep0ZJoWzOKBuU/I8FVeuATtrmuCcm2rWYMk15KOZxWxBlIiS26mc31QFL5go2is3uSSY1ytsjGJRbqi2Z0E5TSERSnGWMTFBmZIzVgQDlrQ74bDoJlzOoahmE9HFxALv2lPuXoD9vDDfY8VsF5eQBoIBEONw2sgNXctcFVOZIcJzXWwoLLTL5a2KWaFfuUXpui77Q25E4KCJYpn5BgEzWrayau/F+YG/pgSRIma2pm4Qv0HzHzlkiJdLOuwH41FAOgGOk05/PBx1xr0B7iTRaBiMQpoEJ73uDSVAI71abWviGCkPE9BZs8N9p7MzeNfISim9sJVSCo4mJYD7n8RkVP75tPSeOlzD70iEjN4kwWB93loquPmLyTU0sk3xgxl6wSiPX1zxe4Crgq8t2VrR4jW8JUETW2Pjru99+bv+U9ITAMXIzZsJzkTxqQWgx+Gt//bldbLBg+L4G08aa8OabLMXt4xsPR9+yxbnWvF3D5BV4C0gat05lDuAV/drlb6kbng06oa9j1EXiPOwrNHXU9sx4OpFZY+u8n+2/njTH9jVCAhWjzX1zw6rGXy0Zs/W3NBm+CFxNpnlds5fIdiR32uviK39N9U9hdCyHnJiRXMWT6hZV6+8YmnmmP/ctV+yq9ZQ0d4fv/36b2pvGKx1BhpAimo4qubjL4DHxvb1EHSd+bDb4bswdFIMb1+IVeQlfmrd1Bh3Ai+vCFbXKDndP+L761983qrB71RPNf8v8WfnUAo//gaFgna+tA8AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=8da495ed3b4fb610a1e3f65436e45a02"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>cbbea16a-5644-43a8-871e-518c1fec7e84</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:06:17</sys_created_on>
+        <sys_id>73b351e53b4fb610a1e3f65436e45a94</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:03:24</sys_updated_on>
+        <ui_id>37b4940c-4456-4fa3-831c-0bf6656d11d5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/8VUwY7aMBD9lZXPIQqQAOJWteLU7krtai/bXWtiT8CS46SJA0tR/r3jOAFEUbuqVt0bfp7Me288j8cDU5It2WSezBPASTJNp5NpFE1jMZMSMcvm6XiSxSxgBnKkSgupRt4dArYF3TiwNlyqWhRcYGXzdW67HypTAizyHC1IsEAfUFWpYf/Qf/fxVHVzViU2SssKDVs+PgWshIrYLFZsebi4svsSuYYUNTW7d8pubr2y17q6+vE1q47qEisq6VRFAcMXi0YikWagawxYDobMFNWeLW3VEFAhyDuj98eKjTKWGjJX+1Krn9R9Ebm6DMmfQH93PPJ+dB4Wm0IJvCutKoxHOmH9ZaGb3Nx6E27omEGj7TB0Qpqa+mHpJDsRvaLs26bYfR0IV8p07vpLXQjQxxNYW6m0sVi7R2nU/ZXpePRzP2A3BQJRY06cPIeyVGbNy6rYqo6HZOfhWtMhzHSxI321WpsQhPMYus0IV4R/6uAHqJTj+kJt6OO2GxT/0TiJ3nJvjvv5UEEtKlXaD9Rui72PNhjWP/3josBpJzKFWtZnqw+NLTgNDHccjZMkvzfUQDq/z2cp8OjhINIUYTyDUTKL41E8hcVoMR/jKBkvxDhDMcdFHCqLeds+n3qD5rU9dnG7tP89Te8p5R8jizkZoPB7C8GrX2NosBqe4/J5hrj2BHzbE/SRHb9VZGdJFL1Tar3INwjt5Yz+Y3CJrKxpM7mvHuj+luez/5nryR5AMtq2T78AG7UCf+YGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=73b351e53b4fb610a1e3f65436e45a94"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT INc9a495ed3b4fb610a1e3f65436e45a0b,bbb351e53b4fb610a1e3f65436e45a74,49a495ed3b4fb610a1e3f65436e45a08"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">41a495ed3b4fb610a1e3f65436e45a0b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>cbbea16a-5644-43a8-871e-518c1fec7e84</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:11</sys_created_on>
+        <sys_id>c9a495ed3b4fb610a1e3f65436e45a0b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:36:34</sys_updated_on>
+        <ui_id>a1595ea3-311f-48f6-9d41-fd9e55583b47</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">0aaa9c953b43fa10a1e3f65436e45a98</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:06:17</sys_created_on>
+        <sys_id>bbb351e53b4fb610a1e3f65436e45a74</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:36:34</sys_updated_on>
+        <ui_id>a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U22rbQBD9FaNnWehi2Y3fQptAoG5KbAKlBDFajeyl6111d+VLjf+9s7o4pnHaEvrYN82Z2zmzBx08Vduqtmahro3hS+lNvz75HpcOo++DJ2GN3tRjShbcciWzBvC9DYjaJWZooQALA6ns4GbHDfX5XsFNJWD/+NsituKi0NjtrEDTZIvamx5+Sdl9hZmAHAXNmlvN5ZLaeUFRGUIZXbGIJfE4icMwfjeK8nGSR3GRAEJCdX3j+17C4GOD+K9qc/sIN/0mpQtHKwp9D3cWZYG0ugRh0PfWIEmZ0vsTohGKeymegRWXlsZ5rnhn+A+aHaepKyyRNDJsk6cw667XwmylOMP7yhFsEQu56HqYEvVafmp1uLtjCbWw/d0JqQ3Nw8qRdiw6SuV8pbYP/cJbLhuBXVIoBuIUgaUz5LVF4x4GBa5pULaGqqLjZJVWG940E5d1sBQUBKVQW1rq/BQAc8QD9/rBLeEfGvgRNHcqZjSGmluaORjOssZ7NM5qknBszpJ9rx2hVmAnJWuvQQWGaV7Za9qzwY710X9p3DPPHg5JhIhpPBpOkmQyHGEeDyHGdAg4KcZROJqMWRI8IKOXN8fj3fxm9nnx5aWv3z7oX3j/CtIyjcL0svdH40vev+D61w0f/8Hw7on+0u9hGP43/Lnhucla43bamuVv9vuTM3e7wbS+KZBxQ0QWDrvr/+cusScDcHYObZX+5iQ8Y8ef9IYAlBkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">cda495ed3b4fb610a1e3f65436e45a07</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:11</sys_created_on>
+        <sys_id>49a495ed3b4fb610a1e3f65436e45a08</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:36:34</sys_updated_on>
+        <ui_id>cbbea16a-5644-43a8-871e-518c1fec7e84</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj9SZ8mtwFCgh61AV/QyFAYt0YkwWdL0kdQz/N9HxU469LiTzUfy8T2RIzMx2Bj8i7n3Xh402/98WzGpE0b/I9PQI9szGbD3bMVOoGKKx7EqEPGu3Ky3VbVdb7At11Di3RpwK+oi32xrXmXPyI0TfpqoVUhvFQyv/8/Aj1IJh4tIC460BXRsP35KhcFio6BFRYMWBuqXgsJiJ7pdke94VdZVmefll03R1lVblKICFDXVXTsfF9Of3iCxU+huvPRJKsp8xfA9oBZIgzpQHlesBy0gGDewfXCRAIcgnrQabhVHqQPRsVT77uUf4i7yPBV2SI44zslb2CwPOcP8aCTHJxuk0TMSoFVLDzcq9vr7LD+tADuIKlxXQEj0xIc2aU4qFkndj6M5P18HPkh98bckleGgbhGE4GQbA/q0BlTYE1HTg7VSHxrrzElemklLnx0UBVmnzJmGpnPLgCfhGT0RZA+Ef73Ar+BkcvGNaKh5urhvfsc0d/axKG5m01TguZM23BPdCRdx01u615nJz4chkEtPA18S9ni98pQYaMmS/wudjfuVpH5g018vV6LhLwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_hub_flow_variable action="DELETE" query="model=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_documentation action="DELETE">
+        <element>certificate</element>
+        <help/>
+        <hint/>
+        <label>certificate</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_efb311e53b4fb610a1e3f65436e45af1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:06:16</sys_created_on>
+        <sys_id>bbb351e53b4fb610a1e3f65436e45a1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:06:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=342245000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>44a9b0d03bc37e10a1e3f65436e45a6a</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>enable_certificate_auto_renewa_2</internal_name>
+        <label_cache>[{"name":"cbbea16a-5644-43a8-871e-518c1fec7e84.item","label":"4 - For Each➛Certificate metadata Record","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata","type":"reference","base_type":"reference","usedInstances":{"37b4940c-4456-4fa3-831c-0bf6656d11d5":["certificate"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"31eee524-7337-4eb2-a2e5-ae7d610476c3.Records","label":"2 - Look Up Records➛Certificate metadata Records","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata","type":"records","base_type":"records","usedInstances":{"a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8":["condition"],"cbbea16a-5644-43a8-871e-518c1fec7e84":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e641871c-1adf-4867-825a-fb76173ef192.Records","label":"1 - Look Up Records➛Unique Certificate Records","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate","type":"records","base_type":"records","usedInstances":{"31eee524-7337-4eb2-a2e5-ae7d610476c3":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.certificate.sys_id","label":"Input➛certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"6f28a233-243e-4310-bd8a-a3aa72cc20b6":["conditions"],"e641871c-1adf-4867-825a-fb76173ef192":["conditions"]}},{"name":"subflow.certificate","label":"Input➛certificate","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a9c4c744-a275-4b95-8785-6a8f6481998c":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bd1eb74c-6d80-49aa-bf06-d5441eac222f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.days_before_expiry","label":"Input➛days_before_expiry","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a41beb4d-5b68-4aee-9f88-97fe0847778d":["auto_renew_days_before_expiry"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"af3b3d80-c612-479a-a6b9-223d1e4064e7","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>Enable Certificate Auto Renewal</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b0b4dded3b4fb610a1e3f65436e45ae7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:06:29</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_variable_value action="DELETE" query="document_key=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT IN34b4dded3b4fb610a1e3f65436e45ae8"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>b0b4dded3b4fb610a1e3f65436e45ae7</id>
+        <name>Enable Certificate Auto Renewa 2</name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>34b4dded3b4fb610a1e3f65436e45ae8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:10:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=34b4dded3b4fb610a1e3f65436e45ae8"/>
+    <sys_hub_flow_input action="DELETE" query="model=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT INb4b411213b8fb610a1e3f65436e45a03"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bd1eb74c-6d80-49aa-bf06-d5441eac222f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_certificate</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>certificate</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>certificate</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Enable Certificate Auto Renewal">b0b4dded3b4fb610a1e3f65436e45ae7</model>
+        <model_id>b0b4dded3b4fb610a1e3f65436e45ae7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b0b4dded3b4fb610a1e3f65436e45ae7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_certificate">cmdb_ci_certificate</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>b4b411213b8fb610a1e3f65436e45a03</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:10:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=b4b411213b8fb610a1e3f65436e45a03"/>
+    <sys_hub_flow_output action="DELETE" query="model=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT IN34b411213b8fb610a1e3f65436e45a7d,bcb411213b8fb610a1e3f65436e45abc,38b411213b8fb610a1e3f65436e45a7c"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal">b0b4dded3b4fb610a1e3f65436e45ae7</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>34b411213b8fb610a1e3f65436e45a7d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:10:27</sys_updated_on>
+        <ui_id>31eee524-7337-4eb2-a2e5-ae7d610476c3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX227iMBD9FZRnQAnh1r6tqCqt1IvUVn3pVpbjOGCt42Rth5Yi/n3HsRMiSLsgUanVvuHxzPjMzDmOeVp7LPbOvWky9H0cjKYT3w9D3x+PQ4KDKArHJPKjYeR1PYFTCp4aR5zCcol5YdZKoJgpkiFCpU7nqS5/sIQRrClKqcYx1hgCwCvnePXo4mZbr07DiywYjyUV3vnTc9fLsYRTNZXe+Xpn61DYHEeUg+uDw71Thl7l9RKVe9Z21Qzr3NiNTMYGit/16KumIqaAIcFc0a6XYgEVZHJVWyTF8a3gW8OCCQ0ZPeP8qtgbnDv1jV9CoSpC7V69RK5h1pxcQH/utSyILqRzJYuMEapsP2Ka4ILrWdNmHW5zzTJhQ2zZNjrjRSpubDu8OkE1H7AUCkDQ3BRqkLsykvtF9nJXobxkouyJ2+QZwbxeYa0liwpt8Kw9ymkKiVCK85yJOcpltmRlMGBJ+3MOi37Csxc4VLG56GNigPcNM/qXYL8ozY9YMlPFNaSBYADEODAE2RGqrJBlK5eI8EKVGxILZXN5m66nVmrGsVLbyqHl6E9hcNs+uIqRbZoJIZLl+gekWFJX3KZ7kHJG/pZyJBMxMyhUQz4NsfwqIEO8XtPxMJhOAtILcJz0htPxpDcdjHAviSbjYBLSJDgb9O8oATaqzWZfWadIeUoZlj2oZDhrNqGtMU6Qe7artgROkMHJBAl1fCdJwuFfT5HHa8y24B9CI5MPSTba8kllEr5CZS8bStsXytE8PwBCxfNbw8xOtHoPlaN5wiiP2747l2Zj57sz+D+/O1+S5AAoRnZ6THAmykcEAP0s9vsfX7FnOzwr6dV4pBkbVmRfA7ijs87b0Uo4AE6lhHs4u/Ng8bRArO77kjK7d31ldAIITyaAcHAaAazrMutGtvS8ejeaaVb+b8Yf7/oDBRsBwaZNYEedGRx75mCzL+DwKAU3yWZ3Lt7h3IkfmO8osvuZV8ACQt15yOoXvbB4TvX29MorzvQL5r/b9h3jUDWosrxPeKwOP5TtONhKFJSCJFUwvOZrNYDn0f4dEvSt+bgr5AAsVTuu8WvnrgbTitBdI6B0Oi9n07xHftZWR/LhCR+MX/ZLWg2rVYPVzL7Ff7zTCeH5L9L5we/xEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=34b411213b8fb610a1e3f65436e45a7d"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal">b0b4dded3b4fb610a1e3f65436e45ae7</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>cbbea16a-5644-43a8-871e-518c1fec7e84</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>bcb411213b8fb610a1e3f65436e45abc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:10:27</sys_updated_on>
+        <ui_id>37b4940c-4456-4fa3-831c-0bf6656d11d5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUXW8aMRD8K5GfD8Q3iLeIiKc2kZqIlzSx9uw9sOTzXW0fhCL+e9f4DhBFbSNFrfp2Hq93Z+Y8ft4xJdmU9cbD8RCwN+yn/V6/0+kPxEhKxCwbp91eNmAJM5AjVXpINfLDImFr0FUAneFSOVFwgdbny9wfPlSmBHjkOXqQ4IEOUFWpYbuoz81OVTdnVWKltLRo2PT5JWElWJrm0bLp7mLrT7lrSFFT6VMgf3MfyV8T5LflVezTtQaFlYFUJ2H45tFIJDYZaIcJy8GQlsJu2dTbigCLIB+M3h4rVsp4ashC7ZtT32nspBPqMiR5AuPecclr5yKc3ZFRj9RZ+MrWpWJVKIEuGiMxg0r72TkWCx5KrwoTjxxk1qcLXeXmPlrCjg2aH0VI5YgElkFnYF7LyB5XxeZLw3KuzMGSelMXAvRxBd5blVY+8NmxSj1d8TqijdvBOgJRY04zeQ5lqcySl7ZYq8Mcop23l5oW7UwXG+Ln1NK0QQSN7XCb2nPC7w7wAqwKsz5TGzq8T5jbupkG506yyW/+rQqkowm1XB4dC0eEVaW/pQFrrJXtkyZE6S8vIpzuXKZQS3cWIKh8wclC3HA0gaT8WlEDGRx4PctSRHc7kaYI3RG0hqPBoDXow6Q1GXexNexORDdDMcbJoK085vv966k3aO78sUu4ktufM/kvqbwz+L/3uwn+vDH88gc0gcecPKC3Kv6Qi9DXmzeLerMOfvejgj8adjr/U/ajsg+I/qXrfzH+NKx0dJt5rG7Gvf9VOHu/rr8PDUjS9/uXHyKALkByBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=bcb411213b8fb610a1e3f65436e45abc"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal">b0b4dded3b4fb610a1e3f65436e45ae7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>38b411213b8fb610a1e3f65436e45a7c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:10:27</sys_updated_on>
+        <ui_id>e641871c-1adf-4867-825a-fb76173ef192</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXXU/bMBT9K1WeqyihpTDepiKkSXxIwHhhyHJsp7XmOsF2WkrV/77r2EmzNrBGKhJoj74f9rn3nuM4j6uA0+AsOE2HUYTj49OTKBoMomg0GhAcJ8lgRJIoGSZBP5B4xiDS4EQwWM6xKOyazGiCCEeEKcNTTrCxXsp1LvDywQf9lPy5YL3xXzFkygVVTAZnj0/9IMcKDjBMBWerLde+CAVOmIDQew9xC7FZ5vUSlT5nu2ym9a6dI1PUQon6AXsxTFIGGFIsNOsHMywpNpla1hbFML2RYmOYcmlgx8AGv2j+CueeRjYuZVAVYc5XL5FvlzOn59jgO6MKYgrlQ8k044Rp1w/KUlwIM27aXMBNbngmXYor22VnopjJa9eOoN6gmg5YCg0gWG4Ltch9GendNFvcVigvuCx74p0iI1jUK2yM4klhLJ5VwASbwUZohvOcywnKVTbnZTJgmYUTAYswFdkCDtV8IkNMLPAQ+orDC7Cfl+YHrLit4gq2gWQAxAUwBLkR6qxQZSvniIhClw6FpXZ7Bet+oJd6LLDWm8qh5ei5sLhdH3zFyDXNphDFc/MdtpgzX9y6v5dIjqMN5UgmKbcodEMpgAZx+quAZLpa6SKxDQgbugldxHq9K6BOuYcUVllVJaxxs6y2Ur3EdmyXbRt4icUHkxjU8ZVEBod/Po11V41rwT+kQ07eJdnxhk86Uwa5Xja0s6uIzjzfA0LF8xvLzF6yfAuVp3nKmaBtX5IL69j6khz9n1+ST0lyAESRmx6XgsvyWQBAP4r90ftX7LctnpX0anw3rA1rsqsB3DNZ77WzEvaAUynhDs7u3Ts8LRCr+76kzPZdXxm9AAYHE8Dg6DACWNVl1o1s6Xn1ErTTrOJfbTzejgcKNhLidZvAOp0Zdz3zaL0r4EEnBTfJ5jznb3DuwE/GNxTZ/8grYAqp/jzk9IsWnE6Y2ZxeRdHMLLD43eb3jEPVoMryPuD5OXxXtqN4I1FQClJMw/Ca788Ynke7d0gcOnO3K2QPLFU7rvBL77YG04rQXyOgdDYpZ9O8R37UVk/y4QEfjJ/2S1oNq1WD1cy+xF/b4YTw9Ad4/Z7LrhAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=38b411213b8fb610a1e3f65436e45a7c"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT INf0b411213b8fb610a1e3f65436e45a7b,f0b411213b8fb610a1e3f65436e45a77,34b411213b8fb610a1e3f65436e45a79"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">41a495ed3b4fb610a1e3f65436e45a0b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal">b0b4dded3b4fb610a1e3f65436e45ae7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>cbbea16a-5644-43a8-871e-518c1fec7e84</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>f0b411213b8fb610a1e3f65436e45a7b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:06:29</sys_updated_on>
+        <ui_id>a1595ea3-311f-48f6-9d41-fd9e55583b47</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">0aaa9c953b43fa10a1e3f65436e45a98</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal">b0b4dded3b4fb610a1e3f65436e45ae7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>f0b411213b8fb610a1e3f65436e45a77</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:06:29</sys_updated_on>
+        <ui_id>a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V227aQBD9FbTPBvmCoeEtIokUKTRVQJGqKrLG6zGsuuy63jWXIv69s7a5qKGXtH3sG3vmds54jtgxXdmismamr40Rc8VGn148JpTD6PeOKVgiGzGuVSas0CqpAY+tQFYuMEELGVjoKG07txthqM5jmTCFhO3zT5P4QsisxHZmASV1tliy0e67kMioR+5DHlzxgEfhIAp9P3zXD9JBlAZhFgFCRA0lpCgpdXwg23moEe+HKuy2cLixpVDz9v3QdpkeQF1mjlXgeww3FlWGxCcHadBjS1AkTJfbI1IiZI9KnoCFUJbaMZe8MeIrDQzj2CXmSBI5NsHjM2mX18D5De2NqFTcVmWbyhdacDTNcjLMoZJ2fI41CY+Fk9qUWEjloVrLaqneNxthxwaHb0VIZYgEFk6po97qyKcLvX46sLwTqt5KG5Sagzy+wNLu0so6PjuGEpfUKFlCUdBGk6LUK1EXE5dlby7p0culXtNQd4M94I54z11M747wmxp+hlI4FRNqQ8UNzRSM4El9r9SO1oRs7zGzNWMJxpxE0naTL5Wj2EhuxSXNflwJL0Vhr2nyClsde+/1+Z9d/m4XBYgYh/3uMIqG3T6mYRdCjLuAw2wQ+P3hgEe9J+R0QGa/v5/eTj7MPr52x583epuDriDO48CPLzuoP7jkoAveeaNtwl/Yxn2z33SN7/v/bfPXthEmaY691VYP/4eueXEWaWYed82FIWozh90f/ltcYEvHJfg5tNblZyfqhO2/AXKQ47ylBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">cda495ed3b4fb610a1e3f65436e45a07</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enable Certificate Auto Renewal">b0b4dded3b4fb610a1e3f65436e45ae7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>34b411213b8fb610a1e3f65436e45a79</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:06:29</sys_updated_on>
+        <ui_id>cbbea16a-5644-43a8-871e-518c1fec7e84</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI+UXPJWtapU6e4qpVVfThVa7CWxzticbZJyiP9+60Bo1cd7gh3vzs4MZmCm823n3Yu5dU4eNNv9eouY1AGj94FpaJDtmPTYOBaxE6gu1MOQp4h4k61XmzzfrNZYZSvI8GYFuBFFmqw3Bc/jPXJjhRtHGhXStQr61/9n4EephMVZZAuWtHm0bDd8OZKCFqRbUW/TZMvzrMizJMm+rdOqyKs0EzmgKIhQQYWKWh9nd1/M+r4NpZ0kzMD3eWa/oPQIIrIkYvjuUQuk9TUohxFrQAvwxvZs521HgEUQT1r1S8dRak90LPS+O/mXNqZJEhprJEMcp8OlLOccJ7i+Bw/PRM19Z+dWfjSSo5uiEFhDp/zdZ2xqeGq9NHoa8VCp67RRXaN/TkmwheD62QjpHInANhgN0mcf9fPRnPdXlQ9SX0KZD5XhoJYKvLey6nzQMzBU2BBR2UDbSn0oW2tO8jJMWpr4oKiIa2XOtDRc0Rh4EB5TrhA/EH5/gV/ByuDiB9HQ8Bgx17s7Bc59eKEQyz9dUDI5mz2UUwxhhFvZ+ltacMJZ7vgWbv3EvWTKpSMJLwF7vP4r4aCnGyT5Z+hs7O8g/gMb/wFINXEsdQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_hub_flow_variable action="DELETE" query="model=b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_documentation action="DELETE">
+        <element>certificate</element>
+        <help/>
+        <hint/>
+        <label>certificate</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b0b4dded3b4fb610a1e3f65436e45ae7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:27</sys_created_on>
+        <sys_id>f4b411213b8fb610a1e3f65436e45a22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 18:10:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_b0b4dded3b4fb610a1e3f65436e45ae7"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>efb311e53b4fb610a1e3f65436e45af1</sys_id>
+        <latest_snapshot>b0b4dded3b4fb610a1e3f65436e45ae7</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-hotfix1-02-05-2026_02-09-2026_1234.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=efb311e53b4fb610a1e3f65436e45af1"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT IN85b411213b8fb610a1e3f65436e45afe"/>
+    <sys_flow_subflow_plan action="DELETE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@6b7f2ebc</plan>
+        <plan_id display_value="Enable Certificate Auto Renewal _ teste">efb311e53b4fb610a1e3f65436e45af1</plan_id>
+        <snapshot>b0b4dded3b4fb610a1e3f65436e45ae7</snapshot>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 18:10:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85b411213b8fb610a1e3f65436e45afe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:06:30</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_hub_flow_efb311e53b4fb610a1e3f65436e45af1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3611000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;44a9b0d03bc37e10a1e3f65436e45a6a&lt;/copied_from&gt;&lt;copied_from_name&gt;Enable Certificate Auto Renewal&lt;/copied_from_name&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;enable_certificate_auto_renewa_2&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"subflow.days_before_expiry","label":"Input➛days_before_expiry","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a41beb4d-5b68-4aee-9f88-97fe0847778d":["auto_renew_days_before_expiry"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"af3b3d80-c612-479a-a6b9-223d1e4064e7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.certificate","label":"Input➛certificate","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a9c4c744-a275-4b95-8785-6a8f6481998c":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bd1eb74c-6d80-49aa-bf06-d5441eac222f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.certificate.sys_id","label":"Input➛certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"6f28a233-243e-4310-bd8a-a3aa72cc20b6":["conditions"],"e641871c-1adf-4867-825a-fb76173ef192":["conditions"]}},{"name":"e641871c-1adf-4867-825a-fb76173ef192.Records","label":"1 - Look Up Records➛Unique Certificate Records","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate Records","type":"records","base_type":"records","usedInstances":{"31eee524-7337-4eb2-a2e5-ae7d610476c3":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"31eee524-7337-4eb2-a2e5-ae7d610476c3.Records","label":"2 - Look Up Records➛Certificate metadata Records","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata Records","type":"records","base_type":"records","usedInstances":{"a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8":["condition"],"cbbea16a-5644-43a8-871e-518c1fec7e84":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cbbea16a-5644-43a8-871e-518c1fec7e84.item","label":"4 - For Each➛Certificate metadata Record","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata Record","type":"reference","base_type":"reference","usedInstances":{"37b4940c-4456-4fa3-831c-0bf6656d11d5":["certificate"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Enable Certificate Auto Renewal _ teste&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:06:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Enable Certificate Auto Renewal _ teste&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_efb311e53b4fb610a1e3f65436e45af1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:36:34&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record&gt;4a81692d3b8bf610a1e3f65436e45a55&lt;/version_record&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT INefb311e53b4fb610a1e3f65436e45af2"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/id&gt;&lt;name&gt;Enable Certificate Auto Renewa 2&lt;/name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:06:16&lt;/sys_created_on&gt;&lt;sys_id&gt;efb311e53b4fb610a1e3f65436e45af2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:06:16&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=efb311e53b4fb610a1e3f65436e45af2"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT IN2bb351e53b4fb610a1e3f65436e45a14"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bd1eb74c-6d80-49aa-bf06-d5441eac222f&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;cmdb_ci_certificate&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;certificate&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;certificate&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/model&gt;&lt;model_id&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_efb311e53b4fb610a1e3f65436e45af1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="cmdb_ci_certificate"&gt;cmdb_ci_certificate&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:06:16&lt;/sys_created_on&gt;&lt;sys_id&gt;2bb351e53b4fb610a1e3f65436e45a14&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:06:16&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2bb351e53b4fb610a1e3f65436e45a14"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT IN81a495ed3b4fb610a1e3f65436e45a02,8da495ed3b4fb610a1e3f65436e45a02,73b351e53b4fb610a1e3f65436e45a94"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:11&lt;/sys_created_on&gt;&lt;sys_id&gt;81a495ed3b4fb610a1e3f65436e45a02&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:03:24&lt;/sys_updated_on&gt;&lt;ui_id&gt;e641871c-1adf-4867-825a-fb76173ef192&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VX30/bMBD+V6o8V1FCSmG8TSCkPQASsL0wZDm201pznGA7LaXq/75znKRpG6Dtug0efT+/O393cR7mHqfemXeaDIIAh8enJ0EQRUEwHEYEh3EcDUkcxIPY63sSpwwsDY4Fg+MEi8KeSUpjRDgiTBmecIKN1VKuc4FnPyqj75I/Fax3vmJDxlxQxaR39vDY93KsIIFhyjubr6nMLGdI4JgJCHVv8/euLZj+1thXnDdrsQnqI5IudKaoxRL0PfZsmKQMUiVYaNb3UiwpNpmaNRLFML2RYikYc2kgomeNnzV/gfCngbVLGJRFmNM1R1T1y4nJOOOE3eSGZ9JJHFCnzESRymtXgO00S3AhTN1pkBQa4rHcYrYgKkTJ3Tib3tYJL7ksy6uUIiNYNCdsjOJxYZi2d8EESyEQSnGeczlCucomvHQGLKk/EnDwE5FNIanmI+ljYoH70CLsX4L8ohT/wIrbKq4gDDgDIC7gtpFrus4KVXZlgogodKlQWGoXy1uUvUJPhUXpqq7qQ65FYKCJ4rn5Cg4TVpWy6G9F7+NgSQmSScptTt3iuJ5pxOnPApzpfK6L2JbrtxjvO4vFYpP6O/nuNxLnbczb1tvp3NWEajhWZNVwhAcbDoD7n8bDqOLjTcd7fHcFv0N6cvImCY6X960zZZDrXIv1m1zem6GXnAm6srS3AFc731iy9eLZa3grgiY2x9r2Pvr02/tD0hMAUeT6zaXgsvx4AtDD8DZ4e3l9WeNBef2tXW1lWJNN9uKeyXov+2/Z8l5r/m4Bsna8A0S9e4eyA3i9X+vwFXWjg1E3OtqNukCch3mDvulaR4PrN5K9utr+xdrjdXtgV8shXDw21D/fL2e4a84jm3NtNqOdhrPNLKe5eIVgB36BvTJs/b853WNwrfIhN6xoyumImWX22opmZorFry59xa5mhsry/vg1N3hz9obhcs5gBpBiGq6q/ZwL4bGxuR5C34n32w7fpGGjsnnbQqw9r/Bz77bB2Am8WhG8yVFxenDA99e/+LzVje+cnrr/n+L3ZV8KP/4GSuN9nnEPAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=81a495ed3b4fb610a1e3f65436e45a02"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:11&lt;/sys_created_on&gt;&lt;sys_id&gt;8da495ed3b4fb610a1e3f65436e45a02&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:03:24&lt;/sys_updated_on&gt;&lt;ui_id&gt;31eee524-7337-4eb2-a2e5-ae7d610476c3&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VXTU/jMBD9K1XObZU0/YLbCoS0B0ACxIVFluM4rbWOnbWdllL1v+84TtLQFijd7i7c6vF8vBm/57gPS4/F3qk3Tvq+j4PBeOT7Yej7w2FIcBBF4ZBEftSPvLYncErB0+CIU1jOMM/tWgsUM00kIlSZdJKa4gdLGMGGopQaHGODIQC8Mo4X92Xc2dqr1fAiU8ZjRYV3+vDY9jKsoKqhyjtdbmyZRUYRxxHlkOzOgmpdWYTtvRt6EbzdoC1QLZFwqaWKLRa/7dEnQ0VMoVSCuaZtL8UCWpBqUVsUxfG14GvDlAkDGT3r/KTZM6Qf+9YvodAWoW6vXqJyYs5MppIRep0ZJoWzOKBuU/I8FVeuATtrmuCcm2rWYMk15KOZxWxBlIiS26mc31QFL5go2is3uSSY1ytsjGJRbqi2Z0E5TSERSnGWMTFBmZIzVgQDlrQ74bDoJlzOoahmE9HFxALv2lPuXoD9vDDfY8VsF5eQBoIBEONw2sgNXctcFVOZIcJzXWwoLLTL5a2KWaFfuUXpui77Q25E4KCJYpn5BgEzWrayau/F+YG/pgSRIma2pm4Qv0HzHzlkiJdLOuwH41FAOgGOk05/PBx1xr0B7iTRaBiMQpoEJ73uDSVAI71abWviGCkPE9BZs8N9p7MzeNfISim9sJVSCo4mJYD7n8RkVP75tPSeOlzD70iEjN4kwWB93loquPmLyTU0sk3xgxl6wSiPX1zxe4Crgq8t2VrR4jW8JUETW2Pjru99+bv+U9ITAMXIzZsJzkTxqQWgx+Gt//bldbLBg+L4G08aa8OabLMXt4xsPR9+yxbnWvF3D5BV4C0gat05lDuAV/drlb6kbng06oa9j1EXiPOwrNHXU9sx4OpFZY+u8n+2/njTH9jVCAhWjzX1zw6rGXy0Zs/W3NBm+CFxNpnlds5fIdiR32uviK39N9U9hdCyHnJiRXMWT6hZV6+8YmnmmP/ctV+yq9ZQ0d4fv/36b2pvGKx1BhpAimo4qubjL4DHxvb1EHSd+bDb4bswdFIMb1+IVeQlfmrd1Bh3Ai+vCFbXKDndP+L761983qrB71RPNf8v8WfnUAo//gaFgna+tA8AAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=8da495ed3b4fb610a1e3f65436e45a02"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;cbbea16a-5644-43a8-871e-518c1fec7e84&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:06:17&lt;/sys_created_on&gt;&lt;sys_id&gt;73b351e53b4fb610a1e3f65436e45a94&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:03:24&lt;/sys_updated_on&gt;&lt;ui_id&gt;37b4940c-4456-4fa3-831c-0bf6656d11d5&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/8VUwY7aMBD9lZXPIQqQAOJWteLU7krtai/bXWtiT8CS46SJA0tR/r3jOAFEUbuqVt0bfp7Me288j8cDU5It2WSezBPASTJNp5NpFE1jMZMSMcvm6XiSxSxgBnKkSgupRt4dArYF3TiwNlyqWhRcYGXzdW67HypTAizyHC1IsEAfUFWpYf/Qf/fxVHVzViU2SssKDVs+PgWshIrYLFZsebi4svsSuYYUNTW7d8pubr2y17q6+vE1q47qEisq6VRFAcMXi0YikWagawxYDobMFNWeLW3VEFAhyDuj98eKjTKWGjJX+1Krn9R9Ebm6DMmfQH93PPJ+dB4Wm0IJvCutKoxHOmH9ZaGb3Nx6E27omEGj7TB0Qpqa+mHpJDsRvaLs26bYfR0IV8p07vpLXQjQxxNYW6m0sVi7R2nU/ZXpePRzP2A3BQJRY06cPIeyVGbNy6rYqo6HZOfhWtMhzHSxI321WpsQhPMYus0IV4R/6uAHqJTj+kJt6OO2GxT/0TiJ3nJvjvv5UEEtKlXaD9Rui72PNhjWP/3josBpJzKFWtZnqw+NLTgNDHccjZMkvzfUQDq/z2cp8OjhINIUYTyDUTKL41E8hcVoMR/jKBkvxDhDMcdFHCqLeds+n3qD5rU9dnG7tP89Te8p5R8jizkZoPB7C8GrX2NosBqe4/J5hrj2BHzbE/SRHb9VZGdJFL1Tar3INwjt5Yz+Y3CJrKxpM7mvHuj+luez/5nryR5AMtq2T78AG7UCf+YGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=73b351e53b4fb610a1e3f65436e45a94"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT INc9a495ed3b4fb610a1e3f65436e45a0b,bbb351e53b4fb610a1e3f65436e45a74,49a495ed3b4fb610a1e3f65436e45a08"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;41a495ed3b4fb610a1e3f65436e45a0b&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;cbbea16a-5644-43a8-871e-518c1fec7e84&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:11&lt;/sys_created_on&gt;&lt;sys_id&gt;c9a495ed3b4fb610a1e3f65436e45a0b&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:36:34&lt;/sys_updated_on&gt;&lt;ui_id&gt;a1595ea3-311f-48f6-9d41-fd9e55583b47&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;0aaa9c953b43fa10a1e3f65436e45a98&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:06:17&lt;/sys_created_on&gt;&lt;sys_id&gt;bbb351e53b4fb610a1e3f65436e45a74&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:36:34&lt;/sys_updated_on&gt;&lt;ui_id&gt;a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1U22rbQBD9FaNnWehi2Y3fQptAoG5KbAKlBDFajeyl6111d+VLjf+9s7o4pnHaEvrYN82Z2zmzBx08Vduqtmahro3hS+lNvz75HpcOo++DJ2GN3tRjShbcciWzBvC9DYjaJWZooQALA6ns4GbHDfX5XsFNJWD/+NsituKi0NjtrEDTZIvamx5+Sdl9hZmAHAXNmlvN5ZLaeUFRGUIZXbGIJfE4icMwfjeK8nGSR3GRAEJCdX3j+17C4GOD+K9qc/sIN/0mpQtHKwp9D3cWZYG0ugRh0PfWIEmZ0vsTohGKeymegRWXlsZ5rnhn+A+aHaepKyyRNDJsk6cw667XwmylOMP7yhFsEQu56HqYEvVafmp1uLtjCbWw/d0JqQ3Nw8qRdiw6SuV8pbYP/cJbLhuBXVIoBuIUgaUz5LVF4x4GBa5pULaGqqLjZJVWG940E5d1sBQUBKVQW1rq/BQAc8QD9/rBLeEfGvgRNHcqZjSGmluaORjOssZ7NM5qknBszpJ9rx2hVmAnJWuvQQWGaV7Za9qzwY710X9p3DPPHg5JhIhpPBpOkmQyHGEeDyHGdAg4KcZROJqMWRI8IKOXN8fj3fxm9nnx5aWv3z7oX3j/CtIyjcL0svdH40vev+D61w0f/8Hw7on+0u9hGP43/Lnhucla43bamuVv9vuTM3e7wbS+KZBxQ0QWDrvr/+cusScDcHYObZX+5iQ8Y8ef9IYAlBkGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;cda495ed3b4fb610a1e3f65436e45a07&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:11&lt;/sys_created_on&gt;&lt;sys_id&gt;49a495ed3b4fb610a1e3f65436e45a08&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:36:34&lt;/sys_updated_on&gt;&lt;ui_id&gt;cbbea16a-5644-43a8-871e-518c1fec7e84&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/51STW/bMAz9Lzonhj9SZ8mtwFCgh61AV/QyFAYt0YkwWdL0kdQz/N9HxU469LiTzUfy8T2RIzMx2Bj8i7n3Xh402/98WzGpE0b/I9PQI9szGbD3bMVOoGKKx7EqEPGu3Ky3VbVdb7At11Di3RpwK+oi32xrXmXPyI0TfpqoVUhvFQyv/8/Aj1IJh4tIC460BXRsP35KhcFio6BFRYMWBuqXgsJiJ7pdke94VdZVmefll03R1lVblKICFDXVXTsfF9Of3iCxU+huvPRJKsp8xfA9oBZIgzpQHlesBy0gGDewfXCRAIcgnrQabhVHqQPRsVT77uUf4i7yPBV2SI44zslb2CwPOcP8aCTHJxuk0TMSoFVLDzcq9vr7LD+tADuIKlxXQEj0xIc2aU4qFkndj6M5P18HPkh98bckleGgbhGE4GQbA/q0BlTYE1HTg7VSHxrrzElemklLnx0UBVmnzJmGpnPLgCfhGT0RZA+Ef73Ar+BkcvGNaKh5urhvfsc0d/axKG5m01TguZM23BPdCRdx01u615nJz4chkEtPA18S9ni98pQYaMmS/wudjfuVpH5g018vV6LhLwMAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;certificate&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;certificate&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_efb311e53b4fb610a1e3f65436e45af1&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:06:16&lt;/sys_created_on&gt;&lt;sys_id&gt;bbb351e53b4fb610a1e3f65436e45a1a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:06:16&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=342245000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;44a9b0d03bc37e10a1e3f65436e45a6a&lt;/copied_from&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;enable_certificate_auto_renewa_2&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"cbbea16a-5644-43a8-871e-518c1fec7e84.item","label":"4 - For Each➛Certificate metadata Record","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata","type":"reference","base_type":"reference","usedInstances":{"37b4940c-4456-4fa3-831c-0bf6656d11d5":["certificate"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"31eee524-7337-4eb2-a2e5-ae7d610476c3.Records","label":"2 - Look Up Records➛Certificate metadata Records","reference":"sn_disco_certmgmt_certificate_metadata","reference_display":"Certificate metadata","type":"records","base_type":"records","usedInstances":{"a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8":["condition"],"cbbea16a-5644-43a8-871e-518c1fec7e84":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e641871c-1adf-4867-825a-fb76173ef192.Records","label":"1 - Look Up Records➛Unique Certificate Records","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate","type":"records","base_type":"records","usedInstances":{"31eee524-7337-4eb2-a2e5-ae7d610476c3":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.certificate.sys_id","label":"Input➛certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"6f28a233-243e-4310-bd8a-a3aa72cc20b6":["conditions"],"e641871c-1adf-4867-825a-fb76173ef192":["conditions"]}},{"name":"subflow.certificate","label":"Input➛certificate","reference":"cmdb_ci_certificate","reference_display":"Unique Certificate","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a9c4c744-a275-4b95-8785-6a8f6481998c":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bd1eb74c-6d80-49aa-bf06-d5441eac222f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.days_before_expiry","label":"Input➛days_before_expiry","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a41beb4d-5b68-4aee-9f88-97fe0847778d":["auto_renew_days_before_expiry"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"af3b3d80-c612-479a-a6b9-223d1e4064e7","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Enable Certificate Auto Renewal&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:06:29&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT IN34b4dded3b4fb610a1e3f65436e45ae8"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/id&gt;&lt;name&gt;Enable Certificate Auto Renewa 2&lt;/name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;34b4dded3b4fb610a1e3f65436e45ae8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:10:27&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=34b4dded3b4fb610a1e3f65436e45ae8"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT INb4b411213b8fb610a1e3f65436e45a03"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bd1eb74c-6d80-49aa-bf06-d5441eac222f&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;cmdb_ci_certificate&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;certificate&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;certificate&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Enable Certificate Auto Renewal"&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/model&gt;&lt;model_id&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_b0b4dded3b4fb610a1e3f65436e45ae7&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="cmdb_ci_certificate"&gt;cmdb_ci_certificate&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;b4b411213b8fb610a1e3f65436e45a03&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:10:27&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b4b411213b8fb610a1e3f65436e45a03"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT IN34b411213b8fb610a1e3f65436e45a7d,bcb411213b8fb610a1e3f65436e45abc,38b411213b8fb610a1e3f65436e45a7c"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal"&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;34b411213b8fb610a1e3f65436e45a7d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:10:27&lt;/sys_updated_on&gt;&lt;ui_id&gt;31eee524-7337-4eb2-a2e5-ae7d610476c3&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VX227iMBD9FZRnQAnh1r6tqCqt1IvUVn3pVpbjOGCt42Rth5Yi/n3HsRMiSLsgUanVvuHxzPjMzDmOeVp7LPbOvWky9H0cjKYT3w9D3x+PQ4KDKArHJPKjYeR1PYFTCp4aR5zCcol5YdZKoJgpkiFCpU7nqS5/sIQRrClKqcYx1hgCwCvnePXo4mZbr07DiywYjyUV3vnTc9fLsYRTNZXe+Xpn61DYHEeUg+uDw71Thl7l9RKVe9Z21Qzr3NiNTMYGit/16KumIqaAIcFc0a6XYgEVZHJVWyTF8a3gW8OCCQ0ZPeP8qtgbnDv1jV9CoSpC7V69RK5h1pxcQH/utSyILqRzJYuMEapsP2Ka4ILrWdNmHW5zzTJhQ2zZNjrjRSpubDu8OkE1H7AUCkDQ3BRqkLsykvtF9nJXobxkouyJ2+QZwbxeYa0liwpt8Kw9ymkKiVCK85yJOcpltmRlMGBJ+3MOi37Csxc4VLG56GNigPcNM/qXYL8ozY9YMlPFNaSBYADEODAE2RGqrJBlK5eI8EKVGxILZXN5m66nVmrGsVLbyqHl6E9hcNs+uIqRbZoJIZLl+gekWFJX3KZ7kHJG/pZyJBMxMyhUQz4NsfwqIEO8XtPxMJhOAtILcJz0htPxpDcdjHAviSbjYBLSJDgb9O8oATaqzWZfWadIeUoZlj2oZDhrNqGtMU6Qe7artgROkMHJBAl1fCdJwuFfT5HHa8y24B9CI5MPSTba8kllEr5CZS8bStsXytE8PwBCxfNbw8xOtHoPlaN5wiiP2747l2Zj57sz+D+/O1+S5AAoRnZ6THAmykcEAP0s9vsfX7FnOzwr6dV4pBkbVmRfA7ijs87b0Uo4AE6lhHs4u/Ng8bRArO77kjK7d31ldAIITyaAcHAaAazrMutGtvS8ejeaaVb+b8Yf7/oDBRsBwaZNYEedGRx75mCzL+DwKAU3yWZ3Lt7h3IkfmO8osvuZV8ACQt15yOoXvbB4TvX29MorzvQL5r/b9h3jUDWosrxPeKwOP5TtONhKFJSCJFUwvOZrNYDn0f4dEvSt+bgr5AAsVTuu8WvnrgbTitBdI6B0Oi9n07xHftZWR/LhCR+MX/ZLWg2rVYPVzL7Ff7zTCeH5L9L5we/xEAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=34b411213b8fb610a1e3f65436e45a7d"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal"&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;cbbea16a-5644-43a8-871e-518c1fec7e84&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;bcb411213b8fb610a1e3f65436e45abc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:10:27&lt;/sys_updated_on&gt;&lt;ui_id&gt;37b4940c-4456-4fa3-831c-0bf6656d11d5&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VUXW8aMRD8K5GfD8Q3iLeIiKc2kZqIlzSx9uw9sOTzXW0fhCL+e9f4DhBFbSNFrfp2Hq93Z+Y8ft4xJdmU9cbD8RCwN+yn/V6/0+kPxEhKxCwbp91eNmAJM5AjVXpINfLDImFr0FUAneFSOVFwgdbny9wfPlSmBHjkOXqQ4IEOUFWpYbuoz81OVTdnVWKltLRo2PT5JWElWJrm0bLp7mLrT7lrSFFT6VMgf3MfyV8T5LflVezTtQaFlYFUJ2H45tFIJDYZaIcJy8GQlsJu2dTbigCLIB+M3h4rVsp4ashC7ZtT32nspBPqMiR5AuPecclr5yKc3ZFRj9RZ+MrWpWJVKIEuGiMxg0r72TkWCx5KrwoTjxxk1qcLXeXmPlrCjg2aH0VI5YgElkFnYF7LyB5XxeZLw3KuzMGSelMXAvRxBd5blVY+8NmxSj1d8TqijdvBOgJRY04zeQ5lqcySl7ZYq8Mcop23l5oW7UwXG+Ln1NK0QQSN7XCb2nPC7w7wAqwKsz5TGzq8T5jbupkG506yyW/+rQqkowm1XB4dC0eEVaW/pQFrrJXtkyZE6S8vIpzuXKZQS3cWIKh8wclC3HA0gaT8WlEDGRx4PctSRHc7kaYI3RG0hqPBoDXow6Q1GXexNexORDdDMcbJoK085vv966k3aO78sUu4ktufM/kvqbwz+L/3uwn+vDH88gc0gcecPKC3Kv6Qi9DXmzeLerMOfvejgj8adjr/U/ajsg+I/qXrfzH+NKx0dJt5rG7Gvf9VOHu/rr8PDUjS9/uXHyKALkByBwAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=bcb411213b8fb610a1e3f65436e45abc"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal"&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;38b411213b8fb610a1e3f65436e45a7c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:10:27&lt;/sys_updated_on&gt;&lt;ui_id&gt;e641871c-1adf-4867-825a-fb76173ef192&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VXXU/bMBT9K1WeqyihpTDepiKkSXxIwHhhyHJsp7XmOsF2WkrV/77r2EmzNrBGKhJoj74f9rn3nuM4j6uA0+AsOE2HUYTj49OTKBoMomg0GhAcJ8lgRJIoGSZBP5B4xiDS4EQwWM6xKOyazGiCCEeEKcNTTrCxXsp1LvDywQf9lPy5YL3xXzFkygVVTAZnj0/9IMcKDjBMBWerLde+CAVOmIDQew9xC7FZ5vUSlT5nu2ym9a6dI1PUQon6AXsxTFIGGFIsNOsHMywpNpla1hbFML2RYmOYcmlgx8AGv2j+CueeRjYuZVAVYc5XL5FvlzOn59jgO6MKYgrlQ8k044Rp1w/KUlwIM27aXMBNbngmXYor22VnopjJa9eOoN6gmg5YCg0gWG4Ltch9GendNFvcVigvuCx74p0iI1jUK2yM4klhLJ5VwASbwUZohvOcywnKVTbnZTJgmYUTAYswFdkCDtV8IkNMLPAQ+orDC7Cfl+YHrLit4gq2gWQAxAUwBLkR6qxQZSvniIhClw6FpXZ7Bet+oJd6LLDWm8qh5ei5sLhdH3zFyDXNphDFc/MdtpgzX9y6v5dIjqMN5UgmKbcodEMpgAZx+quAZLpa6SKxDQgbugldxHq9K6BOuYcUVllVJaxxs6y2Ur3EdmyXbRt4icUHkxjU8ZVEBod/Po11V41rwT+kQ07eJdnxhk86Uwa5Xja0s6uIzjzfA0LF8xvLzF6yfAuVp3nKmaBtX5IL69j6khz9n1+ST0lyAESRmx6XgsvyWQBAP4r90ftX7LctnpX0anw3rA1rsqsB3DNZ77WzEvaAUynhDs7u3Ts8LRCr+76kzPZdXxm9AAYHE8Dg6DACWNVl1o1s6Xn1ErTTrOJfbTzejgcKNhLidZvAOp0Zdz3zaL0r4EEnBTfJ5jznb3DuwE/GNxTZ/8grYAqp/jzk9IsWnE6Y2ZxeRdHMLLD43eb3jEPVoMryPuD5OXxXtqN4I1FQClJMw/Ca788Ynke7d0gcOnO3K2QPLFU7rvBL77YG04rQXyOgdDYpZ9O8R37UVk/y4QEfjJ/2S1oNq1WD1cy+xF/b4YTw9Ad4/Z7LrhAAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=38b411213b8fb610a1e3f65436e45a7c"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b0b4dded3b4fb610a1e3f65436e45ae7^sys_idNOT INf0b411213b8fb610a1e3f65436e45a7b,f0b411213b8fb610a1e3f65436e45a77,34b411213b8fb610a1e3f65436e45a79"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;41a495ed3b4fb610a1e3f65436e45a0b&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal"&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;cbbea16a-5644-43a8-871e-518c1fec7e84&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;f0b411213b8fb610a1e3f65436e45a7b&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:06:29&lt;/sys_updated_on&gt;&lt;ui_id&gt;a1595ea3-311f-48f6-9d41-fd9e55583b47&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;0aaa9c953b43fa10a1e3f65436e45a98&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal"&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;f0b411213b8fb610a1e3f65436e45a77&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:06:29&lt;/sys_updated_on&gt;&lt;ui_id&gt;a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1V227aQBD9FbTPBvmCoeEtIokUKTRVQJGqKrLG6zGsuuy63jWXIv69s7a5qKGXtH3sG3vmds54jtgxXdmismamr40Rc8VGn148JpTD6PeOKVgiGzGuVSas0CqpAY+tQFYuMEELGVjoKG07txthqM5jmTCFhO3zT5P4QsisxHZmASV1tliy0e67kMioR+5DHlzxgEfhIAp9P3zXD9JBlAZhFgFCRA0lpCgpdXwg23moEe+HKuy2cLixpVDz9v3QdpkeQF1mjlXgeww3FlWGxCcHadBjS1AkTJfbI1IiZI9KnoCFUJbaMZe8MeIrDQzj2CXmSBI5NsHjM2mX18D5De2NqFTcVmWbyhdacDTNcjLMoZJ2fI41CY+Fk9qUWEjloVrLaqneNxthxwaHb0VIZYgEFk6po97qyKcLvX46sLwTqt5KG5Sagzy+wNLu0so6PjuGEpfUKFlCUdBGk6LUK1EXE5dlby7p0culXtNQd4M94I54z11M747wmxp+hlI4FRNqQ8UNzRSM4El9r9SO1oRs7zGzNWMJxpxE0naTL5Wj2EhuxSXNflwJL0Vhr2nyClsde+/1+Z9d/m4XBYgYh/3uMIqG3T6mYRdCjLuAw2wQ+P3hgEe9J+R0QGa/v5/eTj7MPr52x583epuDriDO48CPLzuoP7jkoAveeaNtwl/Yxn2z33SN7/v/bfPXthEmaY691VYP/4eueXEWaWYed82FIWozh90f/ltcYEvHJfg5tNblZyfqhO2/AXKQ47ylBgAA&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;cda495ed3b4fb610a1e3f65436e45a07&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Enable Certificate Auto Renewal"&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;a2351e5b-47d5-41cb-bd1c-12e4a2a7d7a8&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;34b411213b8fb610a1e3f65436e45a79&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:06:29&lt;/sys_updated_on&gt;&lt;ui_id&gt;cbbea16a-5644-43a8-871e-518c1fec7e84&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/51TXW+jMBD8L34miI+UXPJWtapU6e4qpVVfThVa7CWxzticbZJyiP9+60Bo1cd7gh3vzs4MZmCm823n3Yu5dU4eNNv9eouY1AGj94FpaJDtmPTYOBaxE6gu1MOQp4h4k61XmzzfrNZYZSvI8GYFuBFFmqw3Bc/jPXJjhRtHGhXStQr61/9n4EephMVZZAuWtHm0bDd8OZKCFqRbUW/TZMvzrMizJMm+rdOqyKs0EzmgKIhQQYWKWh9nd1/M+r4NpZ0kzMD3eWa/oPQIIrIkYvjuUQuk9TUohxFrQAvwxvZs521HgEUQT1r1S8dRak90LPS+O/mXNqZJEhprJEMcp8OlLOccJ7i+Bw/PRM19Z+dWfjSSo5uiEFhDp/zdZ2xqeGq9NHoa8VCp67RRXaN/TkmwheD62QjpHInANhgN0mcf9fPRnPdXlQ9SX0KZD5XhoJYKvLey6nzQMzBU2BBR2UDbSn0oW2tO8jJMWpr4oKiIa2XOtDRc0Rh4EB5TrhA/EH5/gV/ByuDiB9HQ8Bgx17s7Bc59eKEQyz9dUDI5mz2UUwxhhFvZ+ltacMJZ7vgWbv3EvWTKpSMJLwF7vP4r4aCnGyT5Z+hs7O8g/gMb/wFINXEsdQMAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;certificate&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;certificate&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_b0b4dded3b4fb610a1e3f65436e45ae7&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:27&lt;/sys_created_on&gt;&lt;sys_id&gt;f4b411213b8fb610a1e3f65436e45a22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 18:10:27&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b0b4dded3b4fb610a1e3f65436e45ae7"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/sys_id&gt;&lt;latest_snapshot&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-zurich-07-01-2025__patch6-hotfix1-02-05-2026_02-09-2026_1234.zip&lt;/compiler_build&gt;&lt;version_record/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=efb311e53b4fb610a1e3f65436e45af1"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=efb311e53b4fb610a1e3f65436e45af1^sys_idNOT IN85b411213b8fb610a1e3f65436e45afe"/&gt;&lt;sys_flow_subflow_plan action="INSERT_OR_UPDATE"&gt;&lt;plan&gt;com.snc.process_flow.engine.ProcessPlan@6b7f2ebc&lt;/plan&gt;&lt;plan_id display_value="Enable Certificate Auto Renewal _ teste"&gt;efb311e53b4fb610a1e3f65436e45af1&lt;/plan_id&gt;&lt;snapshot&gt;b0b4dded3b4fb610a1e3f65436e45ae7&lt;/snapshot&gt;&lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-02-13 18:10:28&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;85b411213b8fb610a1e3f65436e45afe&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-02-13 19:06:30&lt;/sys_updated_on&gt;&lt;/sys_flow_subflow_plan&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1795403245</payload_hash>
+        <record_name>Enable Certificate Auto Renewal _ teste</record_name>
+        <reverted_from/>
+        <source>986158cb87b67610fa4042630cbb3511</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 19:36:34</sys_created_on>
+        <sys_id>5268ede53b033a10a1e3f65436e45a4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c58814ccf0000001</sys_recorded_at>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 19:36:34</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>9668ede500033a100522698caa633149</update_guid>
+        <update_guid_history>9668ede500033a100522698caa633149:-1795403245,8681292d838bf6104297ade4bc13e303:846240140,5d81652d8f8bf61000deb429e2efd4ff:1553574987,20d065e1778bf610cc1d353065771f7a:137592849,c9b45121848fb6106383c8c9503d9e3d:1826265281,e8b4dded784fb610a3ffa644f6294285:-292696068,4da495ed9c4fb610403e161a82d4c61a:-2071232254,b3b351e5ea4fb6107725207912fd06a4:-1587592508,6fb311e5a14fb610fdf0ce45dae836f7:341001535</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-23 13:27:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>375434a0a9aa44709c8082109a94f240</sys_id>
+        <sys_metadata>efb311e53b4fb610a1e3f65436e45af1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enable Certificate Auto Renewal _ teste</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_efb311e53b4fb610a1e3f65436e45af1</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_efb311e53b4fb610a1e3f65436e45af1">5268ede53b033a10a1e3f65436e45a4a</sys_update_version>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-23 13:27:13</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dc8c0000001</claim_timestamp>
+        <metadata_update_name>sys_hub_flow_efb311e53b4fb610a1e3f65436e45af1</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:18</sys_created_on>
+        <sys_id>13096b9033f37e906c8432a19e5c7b17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:18</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -87,14 +87,14 @@ else
         <sys_created_by>narasinga.perumal</sys_created_by>
         <sys_created_on>2021-02-21 04:01:24</sys_created_on>
         <sys_id>f707bb4c3b2220108774cedf34efc49b</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Revoke Certificate (Automated) </sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sc_cat_item_producer_f707bb4c3b2220108774cedf34efc49b</sys_update_name>
-        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-02-13 14:22:31</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-02-13 14:30:45</sys_updated_on>
         <table_name>sn_disco_certmgmt_revoke_task</table_name>
         <taxonomy_topic display_value="Automated">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
         <template/>
@@ -102,7 +102,7 @@ else
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>2</version>
+        <version>3</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
@@ -167,4 +167,18 @@ else
         <table>sc_cat_item_producer</table>
         <type>calculated</type>
     </fx_price>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d5730000001</claim_timestamp>
+        <metadata_update_name>sc_cat_item_producer_f707bb4c3b2220108774cedf34efc49b</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
+        <sys_id>b609e79033f37e906c8432a19e5c7ba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+    </sys_claim>
 </record_update>

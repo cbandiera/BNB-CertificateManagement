@@ -29,7 +29,7 @@
         <mid_cluster/>
         <mid_select_method>specific_mid</mid_select_method>
         <mid_server display_value="mid_capgv_com_dev_01">21c31c7a3b827210a1e3f65436e45abb</mid_server>
-        <name>BNB_HTTPS_CERTIFICATES</name>
+        <name>BNB External Certificates</name>
         <offset/>
         <offset_type>0</offset_type>
         <quick_start>false</quick_start>
@@ -60,18 +60,32 @@
         <sys_created_on>2026-02-18 20:09:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e5bf9bcf3bcf3a90be82c237f4e45a61</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>BNB_HTTPS_CERTIFICATES</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BNB External Certificates</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>discovery_schedule_e5bf9bcf3bcf3a90be82c237f4e45a61</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-02-18 20:09:26</sys_updated_on>
+        <sys_updated_on>2026-03-12 17:33:48</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_snmp_version>all</use_snmp_version>
         <vm_run/>
         <was_created_by_system>false</was_created_by_system>
     </discovery_schedule>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d6d10000001</claim_timestamp>
+        <metadata_update_name>discovery_schedule_e5bf9bcf3bcf3a90be82c237f4e45a61</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
+        <sys_id>8309e79033f37e906c8432a19e5c7bdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+    </sys_claim>
 </record_update>

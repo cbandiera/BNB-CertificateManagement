@@ -52,7 +52,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="cmdb_ci_certificate" name="cmdb_ci_certificate" sys_domain="global" view="3cbbb3d77f6312105872e83f4d86659e">8a412bb73b973e50a1e3f65436e45ab8</sys_ui_form>
-            <sys_ui_section caption="New section 1" display_value="New section 1" name="cmdb_ci_certificate" sys_domain="global" view="3cbbb3d77f6312105872e83f4d86659e">83026ffb3b973e50a1e3f65436e45ab0</sys_ui_section>
+            <sys_ui_section caption="Detalhes" display_value="Detalhes" name="cmdb_ci_certificate" sys_domain="global" view="3cbbb3d77f6312105872e83f4d86659e">83026ffb3b973e50a1e3f65436e45ab0</sys_ui_section>
             <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
             <sys_updated_on>2026-03-05 14:30:03</sys_updated_on>
         </sys_ui_form_section>
@@ -79,4 +79,18 @@
             <view_name/>
         </sys_ui_form>
     </sys_ui_form_sections>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d85b0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_form_sections_8a412bb73b973e50a1e3f65436e45ab8</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>43092b9033f37e906c8432a19e5c7b5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
 </record_update>

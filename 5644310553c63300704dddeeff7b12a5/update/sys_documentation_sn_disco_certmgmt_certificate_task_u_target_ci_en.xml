@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_target_ci" label="Target CI" language="en" table="sn_disco_certmgmt_certificate_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_target_ci</element>
+            <help/>
+            <hint/>
+            <label>Target CI</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_certificate_task</name>
+            <plural>Target CIs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 19:12:14</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Target CI</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_documentation_sn_disco_certmgmt_certificate_task_u_target_ci_en</sys_update_name>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 19:12:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d5790000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_sn_disco_certmgmt_certificate_task_u_target_ci_en</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
+        <sys_id>7209e79033f37e906c8432a19e5c7ba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+    </sys_claim>
+</record_update>

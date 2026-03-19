@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="cmdb_ci_certificate" version="2" view="certificate_management">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>sn_disco_certmgmt_cmdb_installed_certificate.certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>955814da336bf6506c8432a19e5c7b8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>sn_disco_certmgmt_certificate_task.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>915814da336bf6506c8432a19e5c7b8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:4e6fcad553513010fe1cddeeff7b1274</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>195814da336bf6506c8432a19e5c7b8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>sn_disco_certmgmt_cert_url.certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>9d5814da336bf6506c8432a19e5c7b8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:ba1a099007211110d4aa782a9cd3008c</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>155814da336bf6506c8432a19e5c7b90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>5</position>
+            <related_list>sn_disco_certmgmt_certificate_metadata.certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>995814da336bf6506c8432a19e5c7b90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>6</position>
+            <related_list>cmdb_rel_ci.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>115814da336bf6506c8432a19e5c7b91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>7</position>
+            <related_list>sn_disco_certmgmt_certificate_history.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>955814da336bf6506c8432a19e5c7b91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>8</position>
+            <related_list>sn_disco_certmgmt_certificate_history.server_certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>1d5814da336bf6506c8432a19e5c7b91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d5814da336bf6506c8432a19e5c7b8c</list_id>
+            <order_by/>
+            <position>9</position>
+            <related_list>sn_ci_schedule_discovery_data.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_id>915814da336bf6506c8432a19e5c7b92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Unique Certificate - Certificate Management</calculated_name>
+            <filter/>
+            <name>cmdb_ci_certificate</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-12 18:13:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d5814da336bf6506c8432a19e5c7b8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Unique Certificate - Certificate Management</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_ui_related_cmdb_ci_certificate_certificate_management</sys_update_name>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-12 18:13:32</sys_updated_on>
+            <sys_user/>
+            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d7490000001</claim_timestamp>
+        <metadata_update_name>sys_ui_related_cmdb_ci_certificate_certificate_management</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
+        <sys_id>0b092b9033f37e906c8432a19e5c7b04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+    </sys_claim>
+</record_update>

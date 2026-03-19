@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>cmdb_ci_certificate</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>EDX - Definition of  int/ext Certificate</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	gs.info('EDX-BR Unique Certificate: ' + current.sys_id + ' - ' + current.root_issuer);
+	if (current.subject_common_name.endsWith('bnb.gov.br')) {
+		current.u_ca_scope = 'external';
+	} else {
+		if (current.subject_common_name.endsWith('intra.bnb')
+			|| current.subject_common_name.endsWith('dmz.bnb')
+			|| current.subject_common_name.endsWith('dreads.bnb')) {
+			current.u_ca_scope = 'internal';
+			if(current.is_self_signed || current.is_ca || current.root_issuer == null || current.root_issuer == current.sys_id)
+				current.setAbortAction(true);
+		} else {
+			current.u_ca_scope = null;
+			return;
+		}
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-05 14:09:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a79c5bb33b173e50a1e3f65436e45af8</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>EDX - Definition of  int/ext Certificate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_a79c5bb33b173e50a1e3f65436e45af8</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-10 18:45:14</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=a79c5bb33b173e50a1e3f65436e45af8"/>
+    <sys_es_latest_script action="DELETE">
+        <id>a79c5bb33b173e50a1e3f65436e45af8</id>
+        <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-05 14:09:58</sys_created_on>
+        <sys_id>8d7dd7f73b173e50a1e3f65436e45a1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-05 14:09:58</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_script_a79c5bb33b173e50a1e3f65436e45af8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;cmdb_ci_certificate&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;EDX - Definition of  int/ext Certificate&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	gs.info('EDX-BR Unique Certificate: ' + current.sys_id + ' - ' + current.root_issuer);
+	if (current.subject_common_name.endsWith('bnb.gov.br')) {
+		current.u_ca_scope = 'external';
+	} else {
+		if (current.subject_common_name.endsWith('intra.bnb')
+			|| current.subject_common_name.endsWith('dmz.bnb')
+			|| current.subject_common_name.endsWith('dreads.bnb')) {
+			current.u_ca_scope = 'internal';
+			if(current.is_self_signed || current.is_ca || current.root_issuer == null || current.root_issuer == current.sys_id)
+				current.setAbortAction(true);
+		} else {
+			current.u_ca_scope = null;
+			return;
+		}
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;lucas.ferreira@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-05 14:09:58&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a79c5bb33b173e50a1e3f65436e45af8&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;EDX - Definition of  int/ext Certificate&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_a79c5bb33b173e50a1e3f65436e45af8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;carlos.paiva@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-10 18:45:14&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a79c5bb33b173e50a1e3f65436e45af8"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a79c5bb33b173e50a1e3f65436e45af8&lt;/id&gt;&lt;sys_created_by&gt;lucas.ferreira@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-05 14:09:58&lt;/sys_created_on&gt;&lt;sys_id&gt;8d7dd7f73b173e50a1e3f65436e45a1c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;lucas.ferreira@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-05 14:09:58&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-176320836</payload_hash>
+        <record_name>EDX - Definition of  int/ext Certificate</record_name>
+        <reverted_from/>
+        <source>17f52a9b3b93721cbe82c237f4e45a36</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-10 18:45:14</sys_created_on>
+        <sys_id>0a6c4aad3ba3b254be82c237f4e45a67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cd91149f60000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-10 18:45:14</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>c26c4aad5fa3b254e80ffb5bb3ecaa66</update_guid>
+        <update_guid_history>c26c4aad5fa3b254e80ffb5bb3ecaa66:-176320836,31db0ee59ca3b254841397994e86d9e3:-865417116,e89b0ea5d3a3b25479b3d21ddf62931c:-499741835,e10b8e6deb63b2549ce2d4ce11201747:-424566675,609ee78931e3bed00cd5dbe321326ea9:242679711,dbc9678ded23bed0cfede2adfbe18620:-2082744265,9b46638d02af7ed0b69b19d5c6f6d58f:-531370780,cf432f8d292f7ed01a337434eaf7746b:173977674,33e39ad493abfad0b906a9d18a52389d:-704295900,56c31ed038abfad0357869793fab46b0:1938052835,81b19614376bfad0049d34deb092bc85:-2122615517,f8511250ae6bfad0d402df8963043a2b:-1168767103,727c7c9c22e376d0bd884cd11131905f:2101325760,817d573b90173e50ccfb293f4b5bc77b:725093250</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-10 19:44:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>3dc74a8b4c174ab98b94fea7c1d6b9c1</sys_id>
+        <sys_metadata>a79c5bb33b173e50a1e3f65436e45af8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EDX - Definition of  int/ext Certificate</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent display_value="Unique Certificate">fb29d5883bdfee50a1e3f65436e45a26</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_script_a79c5bb33b173e50a1e3f65436e45af8</sys_update_name>
+        <sys_update_version display_value="sys_script_a79c5bb33b173e50a1e3f65436e45af8">0a6c4aad3ba3b254be82c237f4e45a67</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-10 19:44:03</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dfc20000001</claim_timestamp>
+        <metadata_update_name>sys_script_a79c5bb33b173e50a1e3f65436e45af8</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:19</sys_created_on>
+        <sys_id>af09ab9033f37e906c8432a19e5c7b18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:19</sys_updated_on>
+    </sys_claim>
+</record_update>

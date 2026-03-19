@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="cafc807affbe3300ce4d81b49694fab0" sys_domain="global" table="cmdb_ci_certificate" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-25 21:39:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0afc807affbe3300ce4d81b49694fab2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_certificate" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">cafc807affbe3300ce4d81b49694fab0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-25 22:39:24</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-10-24 18:14:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9fa3a0653b78be10a1e3f65436e45a6a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_certificate" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">cafc807affbe3300ce4d81b49694fab0</sys_ui_form>
+            <sys_ui_section caption="Status" display_value="Status" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">dba360653b78be10a1e3f65436e45ac6</sys_ui_section>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-10-24 18:15:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-25 21:39:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cafc807affbe3300ce4d81b49694fab1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_certificate" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">cafc807affbe3300ce4d81b49694fab0</sys_ui_form>
+            <sys_ui_section caption="Additional certificate details" display_value="Additional certificate details" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d0a9f0cfffe3300ce4d81b49694fa18</sys_ui_section>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-10-24 18:15:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-19 13:42:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>775ddbd0337f3e906c8432a19e5c7b8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_certificate" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">cafc807affbe3300ce4d81b49694fab0</sys_ui_form>
+            <sys_ui_section caption="Attestation details" display_value="Attestation details" name="cmdb_ci_certificate" sys_domain="global" view="&#10;&#9;&#9;&#9;&#9;3459534cfffe3300ce4d81b4969">3b3bee913b6afa50039b53e643e45a75</sys_ui_section>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-19 13:42:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>cmdb_ci_certificate</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-25 21:39:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cafc807affbe3300ce4d81b49694fab0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_certificate</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_cafc807affbe3300ce4d81b49694fab0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-25 21:39:56</sys_updated_on>
+            <sys_user/>
+            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683e07c0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_form_sections_cafc807affbe3300ce4d81b49694fab0</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:19</sys_created_on>
+        <sys_id>6309ab9033f37e906c8432a19e5c7b38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:19</sys_updated_on>
+    </sys_claim>
+</record_update>

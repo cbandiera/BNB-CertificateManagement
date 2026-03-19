@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_renewal_flow" label="Fluxo de Renovação" language="pt" table="sn_disco_certmgmt_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_renewal_flow</element>
+            <help/>
+            <hint/>
+            <label>Fluxo de Renovação</label>
+            <language>pt</language>
+            <name>sn_disco_certmgmt_task</name>
+            <plural>Fluxos de Renovação</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-18 19:35:57</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Fluxo de Renovação</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_documentation_sn_disco_certmgmt_task_u_renewal_flow_pt</sys_update_name>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-18 19:35:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d51a0000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_sn_disco_certmgmt_task_u_renewal_flow_pt</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
+        <sys_id>be09e79033f37e906c8432a19e5c7b80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+    </sys_claim>
+</record_update>
