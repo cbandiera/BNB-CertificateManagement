@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
+    <sys_declarative_action_assignment action="INSERT_OR_UPDATE">
+        <action/>
+        <action_attributes/>
+        <action_name>request _installation</action_name>
+        <action_payload/>
+        <action_type>type</action_type>
+        <active>true</active>
+        <animate_icon>false</animate_icon>
+        <button_position>right</button_position>
+        <button_type>primary</button_type>
+        <client_action/>
+        <client_conditions/>
+        <client_conditions_on_fields/>
+        <client_script><![CDATA[function onClick() { }]]></client_script>
+        <confirmation_message/>
+        <confirmation_required>false</confirmation_required>
+        <create_access>false</create_access>
+        <declarative_action_render_mode/>
+        <declarative_action_type>server_script</declarative_action_type>
+        <delete_access>false</delete_access>
+        <dependency/>
+        <description/>
+        <design_icon/>
+        <dynamic_record_condition/>
+        <dynamic_script_condition/>
+        <enable_dynamic_evaluation>false</enable_dynamic_evaluation>
+        <enable_for_all_experiences>true</enable_for_all_experiences>
+        <enabled>true</enabled>
+        <experience_restricted>false</experience_restricted>
+        <field_name/>
+        <field_type>glide_date</field_type>
+        <form_fields_required>false</form_fields_required>
+        <form_position>action_bar</form_position>
+        <group/>
+        <group_by>false</group_by>
+        <icon/>
+        <label>Request Installation</label>
+        <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
+        <model_conditions/>
+        <model_field_required/>
+        <order>1</order>
+        <payload_map/>
+        <read_access>false</read_access>
+        <record_conditions/>
+        <record_selection_required>false</record_selection_required>
+        <required_roles/>
+        <required_translations/>
+        <required_user_role_names/>
+        <requires_value>false</requires_value>
+        <script_condition>current.state == 1  &amp;&amp; current.assignment_group == "e5eaaa408722fe90fa4042630cbb358b"</script_condition>
+        <scripted_client_condition/>
+        <server_script><![CDATA[(function() {
+    try {
+        var result = sn_fd.FlowAPI.getRunner()
+            .action('sn_disco_certmgmt.bnb__obtem_grupos_a_partir_de_propriedades')
+            .inForeground()
+            .run();
+
+        var outputs = result.getOutputs();
+        var grupoExternos = outputs['certificados_externos'];
+        var grupoInstalacao = outputs['instalacao_de_certificados'];
+
+        if (current.state != '1' || current.assignment_group != grupoExternos) {
+            gs.addErrorMessage('Ação não permitida.');
+            return;
+        }
+		
+        var att = new GlideRecord('sys_attachment');
+        att.addQuery('table_name', 'sn_disco_certmgmt_renew_task');
+        att.addQuery('table_sys_id', current.sys_id);
+        att.query();
+
+        if (!att.hasNext()) {
+            gs.addErrorMessage('Anexe o certificado antes de solicitar a instalação.');
+            return;
+        }
+
+        var usuario = gs.getUserDisplayName();
+        var grupoOrigem = current.assignment_group.getDisplayValue();
+
+        current.assignment_group = grupoInstalacao;
+
+        current.comments =
+            'Ação executada: Solicitação de instalação de certificado\n' +
+            'Usuário: ' + usuario + '\n' +
+            'Grupo origem: ' + grupoOrigem + '\n' +
+            'Grupo destino: ' + current.assignment_group.getDisplayValue() + '\n' +
+            'Anexo verificado: Sim\n' +
+            'Resultado: Solicitação enviada com sucesso';
+
+        current.update();
+
+        gs.addInfoMessage('Solicitação de instalação enviada com sucesso.');
+
+    } catch (ex) {
+        gs.addErrorMessage('Erro ao processar solicitação.');
+    }
+})();]]></server_script>
+        <specificity>31</specificity>
+        <sys_class_name>sys_declarative_action_assignment</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 15:09:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e210735c3b77b690a1e3f65436e45a90</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>request _installation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_declarative_action_assignment_e210735c3b77b690a1e3f65436e45a90</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-23 15:56:22</sys_updated_on>
+        <table>sn_disco_certmgmt_renew_task</table>
+        <tooltip/>
+        <ui_component/>
+        <view/>
+        <workspace/>
+        <write_access>false</write_access>
+    </sys_declarative_action_assignment>
+    <sys_translated_text action="delete_multiple" query="documentkey=e210735c3b77b690a1e3f65436e45a90"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d26a1006e0000001</claim_timestamp>
+        <metadata_update_name>sys_declarative_action_assignment_e210735c3b77b690a1e3f65436e45a90</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 20:12:58</sys_created_on>
+        <sys_id>2950bb9e3b333210a1e3f65436e45a3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 20:12:58</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e210735c3b77b690a1e3f65436e45a90</id>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 15:09:07</sys_created_on>
+        <sys_id>08413b903bb7b690a1e3f65436e45a64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 15:09:07</sys_updated_on>
+        <table>sys_declarative_action_assignment</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
