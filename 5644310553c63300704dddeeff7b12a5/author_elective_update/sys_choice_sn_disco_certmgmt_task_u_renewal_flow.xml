@@ -39,7 +39,7 @@
             <element>u_renewal_flow</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Fluxo B - CA Interna / Instalação Automática</label>
+            <label>Fluxo B - CA Interna / Instalação Manual</label>
             <language>en</language>
             <name>sn_disco_certmgmt_task</name>
             <sequence>2</sequence>
@@ -48,9 +48,9 @@
             <sys_created_on>2026-03-13 20:05:50</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-03-13 20:06:37</sys_updated_on>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-20 19:16:30</sys_updated_on>
             <value>flow_b</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -58,7 +58,7 @@
             <element>u_renewal_flow</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Fluxo C - CA Interna / Instalação Manual</label>
+            <label>Fluxo C - CA Interna / Instalação Automática</label>
             <language>en</language>
             <name>sn_disco_certmgmt_task</name>
             <sequence>3</sequence>
@@ -67,9 +67,9 @@
             <sys_created_on>2026-03-13 20:05:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-03-13 20:06:35</sys_updated_on>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-20 19:16:50</sys_updated_on>
             <value>flow_c</value>
         </sys_choice>
     </sys_choice>

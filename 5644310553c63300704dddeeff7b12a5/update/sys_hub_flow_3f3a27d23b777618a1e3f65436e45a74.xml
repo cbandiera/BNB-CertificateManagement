@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=195000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Acionado por gatilho na criação te registros na tabela de tarefas automaticas de certificado</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>bnb_dispara_automao_de_certificados</internal_name>
+        <label_cache>[{"name":"Criação em_1.current","label":"Gatilho - Record Criação em➛Tarefa de certificação (fluxo automatizado) Record","reference":"sn_disco_certmgmt_task","reference_display":"Tarefa de certificação (fluxo automatizado)","type":"reference","base_type":"reference","usedInstances":{"5f20a787-581d-4a2c-b9b4-11eadb953747":["automated_task"]},"attributes":{}}]</label_cache>
+        <master_snapshot>77faeb1e3b777618a1e3f65436e45a1b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>BNB Dispara Automação de Certificados</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>ace32ad23b733218a1e3f65436e45acd</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:46:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f3a27d23b777618a1e3f65436e45a74</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BNB Dispara Automação de Certificados</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_hub_flow_3f3a27d23b777618a1e3f65436e45a74</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:39</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>ac0baf1e3b777618a1e3f65436e45a3e</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>3f3a27d23b777618a1e3f65436e45a74</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:46:22</sys_created_on>
+        <sys_id>3b3a27d23b777618a1e3f65436e45a75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:46:22</sys_updated_on>
+        <tablename>sys_hub_flow</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d269e104a0000001</claim_timestamp>
+        <metadata_update_name>sys_hub_flow_3f3a27d23b777618a1e3f65436e45a74</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 20:09:46</sys_created_on>
+        <sys_id>2a9f6b123337fe106c8432a19e5c7bef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 20:09:46</sys_updated_on>
+    </sys_claim>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sn_disco_certmgmt_task">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>true</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 14:38:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ace32ad23b733218a1e3f65436e45acd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 14:38:56</sys_updated_on>
+        <table>sn_disco_certmgmt_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"true"}</data>
+        <identifier>3f3a27d23b777618a1e3f65436e45a74</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:39</sys_created_on>
+        <sys_id>000b2f1e3b777618a1e3f65436e45a22</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:39</sys_updated_on>
+        <trigger display_value="">ace32ad23b733218a1e3f65436e45acd</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT IN000b2f1e3b777618a1e3f65436e45a22"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT IN333a27d23b777618a1e3f65436e45a7c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3f3a27d23b777618a1e3f65436e45a74</id>
+        <name>BNB Dispara Automação de Certificados</name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:46:22</sys_created_on>
+        <sys_id>333a27d23b777618a1e3f65436e45a7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:46:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=333a27d23b777618a1e3f65436e45a7c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT IN53fa6b1e3b777618a1e3f65436e45ad0,97fa6b1e3b777618a1e3f65436e45a8c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Nome da tabela</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB Dispara Automação de Certificados">3f3a27d23b777618a1e3f65436e45a74</model>
+        <model_id>3f3a27d23b777618a1e3f65436e45a74</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3f3a27d23b777618a1e3f65436e45a74</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:36</sys_created_on>
+        <sys_id>53fa6b1e3b777618a1e3f65436e45ad0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=53fa6b1e3b777618a1e3f65436e45ad0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Registro</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB Dispara Automação de Certificados">3f3a27d23b777618a1e3f65436e45a74</model>
+        <model_id>3f3a27d23b777618a1e3f65436e45a74</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3f3a27d23b777618a1e3f65436e45a74</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:36</sys_created_on>
+        <sys_id>97fa6b1e3b777618a1e3f65436e45a8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97fa6b1e3b777618a1e3f65436e45a8c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT IN9bfaab1e3b777618a1e3f65436e45a62"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB Dispara Automação de Certificados">3f3a27d23b777618a1e3f65436e45a74</flow>
+        <generation_source/>
+        <name>Criação em</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:37</sys_created_on>
+        <sys_id>9bfaab1e3b777618a1e3f65436e45a62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:37</sys_updated_on>
+        <trigger_definition display_value="Criação em">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYzW7jNhB+FUGnLpCDfuI4zm3hZNEAaYIm3vYQpMJIGjrESqSXpJR4F3mYRQ99gj5BXqykJNuyLDu2Y2+TkyGSor75+M03Q99+txMIMbFP7IH5BfvApkyhYJAMxiPU4wrCBAMGKeq5FFgMiouxfaJEhgc2ETwdYDpKQOnFBBKpB7mIUdgn7oGdQ5LhzViex3on/X6xTbWnXU3rZ8mCmMqIBxEKlQ5TFSiQX/QCPaq3Hv9RrRuAQAJWjJZZSAmN4Pmf57+59QtJskduQaZ4Cop+g5h/0K9H9zSJBTL75PbuwB6B0J9XBtr3xpTSsQY1JhK0LsuIqUEekQh6HjqR7/qe5zje8aEbHvmh68U+oOPodQs0NkJVLWzOeMJHhSzGeErhAtECIb5iyXi64l6fU0lqCo+SftO7HztmHUEdVoTl3PQxqKgsh6N7TiO8GinKWTlS4iwneZKl7LLEbw5Bc54lanIIeiSTej8cGcgGRIWI3Nzzh+vJBz9RVkRXTSY8gmT6BEoJGmYKpTkLQhN9KkHJjeSZKNBfn/Wvrk+DPz8O+r+eXQfXZzeD6/P+4OzUfiriCr5mZscSYYUlKMN5mirnE8XEnCDL0lCjObBlJOhIfYwUzSeCfTqYZUGfs5gWmlrMhMjMGcbkfCZMwl+VCo6zNBmm29YS4q+z3xfVXw5up+l+HXuh6aMjgBhhiaZDUtP0HCktqFULP/XAV6m7GllH3oeO8z8JvPK6bfWd8hiT09l2tp4cDrXiKRtlyrD1AEzJQPEA4jio8WiWakwvCb6M7elFdYuM6ReC6XksSrygbcrfBZUa7q3O0Ak3xZZ6nlxUW549YpQpEJbkqcaDFgNLFR5ogTJ49drzFIYVseQGE4xUTQvks6w//UalpGxYAz/9dkFF26cZyOqbsvgolRZaKE2QNAb5Sgh3u0z2xRPI56PbMr0n51aktusSEiLxnK5JbNfxQ+I6XacDJPYdJ/Jqqb2IZylQ1ZDIXjJ8s/yWhTiT9aWYN2RcxeDUk2QDWTXObsKIkUzlKf2d4nR3itMzOBtG6W/klBN41fDpfL1aI84dNxIQ56DfiNf1zZZG4eUWwWQGSfiDdu8tDDSE6MtQ8IzFrVZW9rGYWhKHeg23NDam+9sRxELX3w87tFPCBa6DZCRoilRUUN6amc5OYiJyYOPF3mlHzuoTN+zhITraUH3tpWGn1wsj8AjpHnXRcxvOOgPXivj9OOoasszbBL7SX5crLG+T6Kbu+krM7V67HebXO20l6lafLefegJWuYZwP98gCDVUEibHGBf8cJjTGydxunWLh0/nMG3blFhdVUObr5LgXddxuN+rqy5X2CnKIIbiHXgd63SP/uNPwigV4q6CrFrZ+yo1LjmUBZImPfJbZ8w9BuaXTTWpYmMKb+7dhn8qWqJSpdlv0BVzdt9ZhIz1tYVI+/4vSKrYFDQNMk8fMf1+1oR12B+WuZcCrrnszeHNQjACySgw7RMX0lWQrZA2m3loX0xBPPi+K/fQyLh4ed3rEb/cn0mvzpxnE5eDfT1ezYWo1TmVlb7NZeuStSbeyEVlT5fnSxKm3Juu0Uzsha4NYtiPL2ytZ/qv7uElGr74wb8j1OyqQRROzfZUsW90lRdIA/Jqh2Efh4QwDTlbWG4kWRFoTYK4amHA5xSEtKC4hVOy0FBr6m6gujTpwCm3/kPZTChsy+RlXe4y70On4S9r1XvNq3wbzhSjeWWFsS6f5g1irAq6pwbyZaG0VYyt1520Js1X1W5uR1WXulYx4e2Xk9SVu1V8VL/P5RmvZ3X+h2ZDSKiEAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT INe7faab1e3b777618a1e3f65436e45a65"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB Dispara Automação de Certificados">3f3a27d23b777618a1e3f65436e45a74</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <show_stages>false</show_stages>
+        <subflow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+VW227bRhD9FYJPCSAK4lWS31QFLgykSRC7boEoIGZ3Z62FectyaUsR9DV96Ifkx7rLi8TKku06vTwUEATtcC7nzM4Z6tPGFsw+s4MoRM495hPCfQwDcNHnURj4EQYhjKk9sDNIUXvyXFKMeZLfa9sdJJUxOo71DrNllb6C15Y+6EdMlEUC6+vTHnQpEiYxs88+fR7YBUhdQKG0zzYHj9S6wDgBgolONF/mgqIOfy7uLvDcALfOG+DHyJgy2ka7ArlkBo07sHGlMGOoC3JIShzYKWQMVC7XO4tEYO+zZG9YikzpbLZxXpXiq07te8aPoyZGsXm2O8Ztvxpzg6HU9Dc7/Jd5iplC6wYlSGt++bHXf8Mghh7m7WAf+KMOMP4WWrOyFJk+oFSH0WQf7R2NbmPRushKBQkcJqD7BP5W3xpDDlWi5keoHBmGLtUJDn+F/HH4zyXvfy/5wJBvLvB9oUSuh9h2zXgBSVqGNE+qNHvXzKC9a9X1vgdVqScCCzN1ZozameKXy/z+Yzcy5yKrC7YPk5xCsjuBUlKQSpnOb+xKXB0Md2N5eygqTNA0Ok6hKER2ExcyvxN1FQ06Hd4k+jCsGTMsxU02BGooDrUaYGi09aY2X4MUhu5POo0ONuV+zsSXCi+MaEceBm5EuTMmUegEOAVnOqFTJ9DynVASkZBze1uLI/5SGVJNk9p2xHVLjUNJpSjUTEO4w5a5ub16M3hjnS2IJr5eDQSno4hOAt8Dd4ohHRN/vF8CUKk8BYUsVlDe9m52s5lrGt9+//ZbbmEau0NaSd15td0+3G8v3me76+xW2jOAd7GzDrl11SA/xahdbbJXqxPL49tNyeqFy63MzEqjeUy13tKbVHVYjq28K9BWsBhaxltwQdu2v+JJtcqtlpD4Cix/bT+QV09dJ8v+d5rrd/3Psuvf/b+iPD/gjEzckRNyFjmB63JnCiF3+JSw0KMEPBJ+v/LIYwPMoDen96uYSjSphS62V144HvvRKPR8H/QnPEgxnTzU3+yXX623IqtW1geZM+sH1BMlrav8Vovu75Pm08x20tR45n1qpyiflqb/j/3xgELEt7juASlPCLOhQAWIslbnEu7Q/Jh9uHhUhscrPKHBzaK71YV9tnjsShf2YNEMS+351LjU7jW02v0IuNqjXJexYM/MuN3jf/PgVfA/WCXhaMSIN2YOJRydAPQXRMx1OI71Gx3pyA/Ji1fJ5z8Atjfq3pgMAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:37</sys_created_on>
+        <sys_id>e7faab1e3b777618a1e3f65436e45a65</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:37</sys_updated_on>
+        <ui_id>5f20a787-581d-4a2c-b9b4-11eadb953747</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Registro</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_3f3a27d23b777618a1e3f65436e45a74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:36</sys_created_on>
+        <sys_id>1ffa6b1e3b777618a1e3f65436e45ace</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Nome da tabela</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_3f3a27d23b777618a1e3f65436e45a74</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:36</sys_created_on>
+        <sys_id>97fa6b1e3b777618a1e3f65436e45ad3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Acionado por gatilho na criação te registros na tabela de tarefas automaticas de certificado</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>bnb_dispara_automao_de_certificados</internal_name>
+        <label_cache>[{"name":"Criação em_1.current","label":"Gatilho - Record Criação em➛Tarefa de certificação (fluxo automatizado) Record","reference":"sn_disco_certmgmt_task","reference_display":"Tarefa de certificação (fluxo automatizado)","type":"reference","base_type":"reference","usedInstances":{"5f20a787-581d-4a2c-b9b4-11eadb953747":["automated_task"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>BNB Dispara Automação de Certificados</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="BNB Dispara Automação de Certificados">3f3a27d23b777618a1e3f65436e45a74</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77faeb1e3b777618a1e3f65436e45a1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>77faeb1e3b777618a1e3f65436e45a1b</documentkey>
+        <fieldname>annotation</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>73faeb1e3b777618a1e3f65436e45a1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <tablename>sys_hub_flow_snapshot</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_variable_value action="delete_multiple" query="document_key=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=77faeb1e3b777618a1e3f65436e45a1b^sys_idNOT INfbfaeb1e3b777618a1e3f65436e45a67"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>77faeb1e3b777618a1e3f65436e45a1b</id>
+        <name>BNB Dispara Automação de Certificados</name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>fbfaeb1e3b777618a1e3f65436e45a67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=fbfaeb1e3b777618a1e3f65436e45a67"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=77faeb1e3b777618a1e3f65436e45a1b^sys_idNOT IN37faeb1e3b777618a1e3f65436e45ab6,fffaeb1e3b777618a1e3f65436e45a69"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Nome da tabela</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB Dispara Automação de Certificados">77faeb1e3b777618a1e3f65436e45a1b</model>
+        <model_id>77faeb1e3b777618a1e3f65436e45a1b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_77faeb1e3b777618a1e3f65436e45a1b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>37faeb1e3b777618a1e3f65436e45ab6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=37faeb1e3b777618a1e3f65436e45ab6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Registro</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB Dispara Automação de Certificados">77faeb1e3b777618a1e3f65436e45a1b</model>
+        <model_id>77faeb1e3b777618a1e3f65436e45a1b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_77faeb1e3b777618a1e3f65436e45a1b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>fffaeb1e3b777618a1e3f65436e45a69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fffaeb1e3b777618a1e3f65436e45a69"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=77faeb1e3b777618a1e3f65436e45a1b^sys_idNOT IN73faeb1e3b777618a1e3f65436e45ad3"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB Dispara Automação de Certificados">77faeb1e3b777618a1e3f65436e45a1b</flow>
+        <generation_source/>
+        <name>Criação em</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>73faeb1e3b777618a1e3f65436e45ad3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <trigger_definition display_value="Criação em">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYzW7jNhB+FUGnLpCDfuI4zm3hZNEAaYIm3vYQpMJIGjrESqSXpJR4F3mYRQ99gj5BXqykJNuyLDu2Y2+TkyGSor75+M03Q99+txMIMbFP7IH5BfvApkyhYJAMxiPU4wrCBAMGKeq5FFgMiouxfaJEhgc2ETwdYDpKQOnFBBKpB7mIUdgn7oGdQ5LhzViex3on/X6xTbWnXU3rZ8mCmMqIBxEKlQ5TFSiQX/QCPaq3Hv9RrRuAQAJWjJZZSAmN4Pmf57+59QtJskduQaZ4Cop+g5h/0K9H9zSJBTL75PbuwB6B0J9XBtr3xpTSsQY1JhK0LsuIqUEekQh6HjqR7/qe5zje8aEbHvmh68U+oOPodQs0NkJVLWzOeMJHhSzGeErhAtECIb5iyXi64l6fU0lqCo+SftO7HztmHUEdVoTl3PQxqKgsh6N7TiO8GinKWTlS4iwneZKl7LLEbw5Bc54lanIIeiSTej8cGcgGRIWI3Nzzh+vJBz9RVkRXTSY8gmT6BEoJGmYKpTkLQhN9KkHJjeSZKNBfn/Wvrk+DPz8O+r+eXQfXZzeD6/P+4OzUfiriCr5mZscSYYUlKMN5mirnE8XEnCDL0lCjObBlJOhIfYwUzSeCfTqYZUGfs5gWmlrMhMjMGcbkfCZMwl+VCo6zNBmm29YS4q+z3xfVXw5up+l+HXuh6aMjgBhhiaZDUtP0HCktqFULP/XAV6m7GllH3oeO8z8JvPK6bfWd8hiT09l2tp4cDrXiKRtlyrD1AEzJQPEA4jio8WiWakwvCb6M7elFdYuM6ReC6XksSrygbcrfBZUa7q3O0Ak3xZZ6nlxUW549YpQpEJbkqcaDFgNLFR5ogTJ49drzFIYVseQGE4xUTQvks6w//UalpGxYAz/9dkFF26cZyOqbsvgolRZaKE2QNAb5Sgh3u0z2xRPI56PbMr0n51aktusSEiLxnK5JbNfxQ+I6XacDJPYdJ/Jqqb2IZylQ1ZDIXjJ8s/yWhTiT9aWYN2RcxeDUk2QDWTXObsKIkUzlKf2d4nR3itMzOBtG6W/klBN41fDpfL1aI84dNxIQ56DfiNf1zZZG4eUWwWQGSfiDdu8tDDSE6MtQ8IzFrVZW9rGYWhKHeg23NDam+9sRxELX3w87tFPCBa6DZCRoilRUUN6amc5OYiJyYOPF3mlHzuoTN+zhITraUH3tpWGn1wsj8AjpHnXRcxvOOgPXivj9OOoasszbBL7SX5crLG+T6Kbu+krM7V67HebXO20l6lafLefegJWuYZwP98gCDVUEibHGBf8cJjTGydxunWLh0/nMG3blFhdVUObr5LgXddxuN+rqy5X2CnKIIbiHXgd63SP/uNPwigV4q6CrFrZ+yo1LjmUBZImPfJbZ8w9BuaXTTWpYmMKb+7dhn8qWqJSpdlv0BVzdt9ZhIz1tYVI+/4vSKrYFDQNMk8fMf1+1oR12B+WuZcCrrnszeHNQjACySgw7RMX0lWQrZA2m3loX0xBPPi+K/fQyLh4ed3rEb/cn0mvzpxnE5eDfT1ezYWo1TmVlb7NZeuStSbeyEVlT5fnSxKm3Juu0Uzsha4NYtiPL2ytZ/qv7uElGr74wb8j1OyqQRROzfZUsW90lRdIA/Jqh2Efh4QwDTlbWG4kWRFoTYK4amHA5xSEtKC4hVOy0FBr6m6gujTpwCm3/kPZTChsy+RlXe4y70On4S9r1XvNq3wbzhSjeWWFsS6f5g1irAq6pwbyZaG0VYyt1520Js1X1W5uR1WXulYx4e2Xk9SVu1V8VL/P5RmvZ3X+h2ZDSKiEAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=77faeb1e3b777618a1e3f65436e45a1b^sys_idNOT INb3faeb1e3b777618a1e3f65436e45ad4"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB Dispara Automação de Certificados">77faeb1e3b777618a1e3f65436e45a1b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <show_stages>false</show_stages>
+        <subflow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+VW227bRhD9FYJPCSAK4lWS31QZLgykSWC5boEoIIa7s9bCvGW5tKUI+po+9EPyY90lKZHRxZfCCVAUEATtcGb2zOUc8dPa5NQ8M73AR8Yc6kYRc9H3wEaXBb7nBuj5MCRmz0whQeXJMkEwZHH2oGz3EJfaaFnGe0wXZfIG3hrqoB5RXuQxrG5Oe5AFj6nA1Dz79Lln5iDUBRKFebbee/RchDFEGCvXCw3RuKghHoMtV7m2kUXGCTbnd03wdGvMBNVg7J6JS4kpRYWCQVxgz0wgpSAzsdpZBAL9kMatYcFTqbKZ2nlZ8K/qPtfRfgxVXQTrZ7tj2LSrNrNzkDCToiSyFI1rDbZQHVnvCj3S1O1EOgVsem3ELEswlWjcogBhTGdXnRDdnBDaQKcb+KsK0P4GGpOi4Kk6oJD70VEb7R6NbmLRuEwLCTHsJyBtAm+jRk+RQRnL6f+y+HrkH3LJM8UE09abClG8XYgsLpP0fb3e5q5VN20PykLtFeZ6d/UyNpvJZovs4Wq7eBc8rS5sHsYZgXh3AikFj0qpO782S369x5vacsAcjFE3Okwgz3l6G+Yiu+fVLQp00r+N1aFfVUyx4LdpH4gusa84BX1N2/PKfAOC63J/U2lUsL7u95R/KfFS68HAQc8OCLOGUeBbHo7BGo/I2PKUMoxIFEQ+Y+amZxarYhpDUbSNUqQLv5S6zLptTYPCqslVCBE8lxMF6h6bXuh5VjLkDFV+Lxi5SociHA8CMvJcB+wx+mQYucNWcaCUWQISaSihuOvMer2eqsK+/f3tr8zAJLT7pBRqFnKzOZTNF8vkM/Bt93KyBWhc1wBPAW/kstWu7xXzqmPfsudx0VTK9i81s0i1UpIsJIqAyW0itxiPKek1KCsYFA3tzRknTdffsLhcZkZTKP8KNHv7pOweU6NDknY4ehLrT2AumyEIsrjgGOutSMskqih0gtHd0X5P6u5wfwqvXY/RaGQPLJ/RwPJsm1lj8JnFxhH1HRKBE/k/gtfRY7yh0KHHwzIkAnVqri5ree0Ph24w8B3XBfXx91KMR4fsnvzxp/GOp+XS+CgyavyiZobCuM7uFKVfTPynC9gRX1077VZwqrKXE9/9YW9LkPPwDlcdgMUJ2telEQ68qLi/gHvUPyYfL1+f5MdhPcHw9Xy7CXPzbP7YGszN3rxesMrzqRWr3CtolfsRcJWH4k7I6TMzblr85wd/Tq8uVLpl/wWZ8gcDGjlDapGIoeWB+oKA2hbDoXoXQTJw/egVZerzP6utbempDQAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>b3faeb1e3b777618a1e3f65436e45ad4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <ui_id>5f20a787-581d-4a2c-b9b4-11eadb953747</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Nome da tabela</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_77faeb1e3b777618a1e3f65436e45a1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>37faeb1e3b777618a1e3f65436e45abc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Registro</label>
+        <language>pb</language>
+        <name>var__m_sys_hub_flow_input_77faeb1e3b777618a1e3f65436e45a1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:38</sys_created_on>
+        <sys_id>7bfaeb1e3b777618a1e3f65436e45ab2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3f3a27d23b777618a1e3f65436e45a74</sys_id>
+        <latest_snapshot>77faeb1e3b777618a1e3f65436e45a1b</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT IN480b2f1e3b777618a1e3f65436e45a23"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>3f3a27d23b777618a1e3f65436e45a74</plan_id>
+        <snapshot>77faeb1e3b777618a1e3f65436e45a1b</snapshot>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 19:49:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>480b2f1e3b777618a1e3f65436e45a23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 19:49:39</sys_updated_on>
+        <trigger display_value="">ace32ad23b733218a1e3f65436e45acd</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3f3a27d23b777618a1e3f65436e45a74"/>
+</record_update>
