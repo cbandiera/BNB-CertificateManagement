@@ -12258,7 +12258,7 @@
             },
             "columns": {
                 "type": "JSON_LITERAL",
-                "value": "number,certificate,state,priority,credential_alias,routing_policy,sys_class_name,u_target_ci,assignment_group,assigned_to,parent,sys_created_on,sys_updated_on"
+                "value": "number,subject_common_name,certificate_purpose,sys_class_name,assignment_group,state,priority,sys_created_on,sys_updated_on"
             },
             "currentPage": {
                 "type": "JSON_LITERAL",
@@ -12593,14 +12593,14 @@
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 17:44:16</sys_created_on>
         <sys_id>c72b87043bfff650a1e3f65436e45a2d</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Tasks copy</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_ux_macroponent_c72b87043bfff650a1e3f65436e45a2d</sys_update_name>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-18 20:59:49</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 14:21:59</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=c72b87043bfff650a1e3f65436e45a2d"/>
     <sys_claim action="INSERT_OR_UPDATE">

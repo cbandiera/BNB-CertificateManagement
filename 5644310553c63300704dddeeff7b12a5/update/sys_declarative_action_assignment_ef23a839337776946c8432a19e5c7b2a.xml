@@ -65,9 +65,9 @@
             gs.addErrorMessage('Ação não permitida.');
             return;
         }
-		
+
         var att = new GlideRecord('sys_attachment');
-        att.addQuery('table_name', 'sn_disco_certmgmt_renew_task');
+        att.addQuery('table_name', current.getTableName());
         att.addQuery('table_sys_id', current.sys_id);
         att.query();
 
@@ -86,6 +86,7 @@
             'Usuário: ' + usuario + '\n' +
             'Grupo origem: ' + grupoOrigem + '\n' +
             'Grupo destino: ' + current.assignment_group.getDisplayValue() + '\n' +
+            'Tipo de task: ' + current.getTableName() + '\n' +
             'Anexo verificado: Sim\n' +
             'Resultado: Solicitação enviada com sucesso';
 
@@ -97,14 +98,14 @@
         gs.addErrorMessage('Erro ao processar solicitação.');
     }
 })();]]></server_script>
-        <specificity>31</specificity>
+        <specificity>21</specificity>
         <sys_class_name>sys_declarative_action_assignment</sys_class_name>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-23 15:59:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef23a839337776946c8432a19e5c7b2a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>request _installation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -112,8 +113,8 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_ef23a839337776946c8432a19e5c7b2a</sys_update_name>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-23 15:59:40</sys_updated_on>
-        <table>sn_disco_certmgmt_renew_task</table>
+        <sys_updated_on>2026-03-27 14:43:51</sys_updated_on>
+        <table>sn_disco_certmgmt_task</table>
         <tooltip/>
         <ui_component/>
         <view/>

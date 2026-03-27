@@ -58,12 +58,12 @@ BNBCertificateMangementUtils.prototype = {
 	},
 
 	getCAScopeFromCN(commonName) {
-		if (cert.subject_common_name.endsWith('bnb.gov.br')) {
+		if (commonName.endsWith('bnb.gov.br')) {
 			return 'external';
 		} else {
-			if (cert.subject_common_name.endsWith('intra.bnb') ||
-				cert.subject_common_name.endsWith('dmz.bnb') ||
-				cert.subject_common_name.endsWith('dreads.bnb')) {
+			if (commonName.endsWith('intra.bnb') ||
+				commonName.endsWith('dmz.bnb') ||
+				commonName.endsWith('dreads.bnb')) {
 				return 'internal';
 			}
 		}
@@ -143,14 +143,14 @@ BNBCertificateMangementUtils.prototype = {
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-23 14:52:25</sys_created_on>
         <sys_id>f74f00713bf77e54a1e3f65436e45a6a</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>BNBCertificateMangementUtils</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_f74f00713bf77e54a1e3f65436e45a6a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-25 18:41:38</sys_updated_on>
+        <sys_updated_on>2026-03-26 14:22:17</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>

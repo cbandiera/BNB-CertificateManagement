@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_disco_certmgmt_task" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>0ef93ccb33f3ba106c8432a19e5c7b79</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>subject_common_name</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>86f93ccb33f3ba106c8432a19e5c7b7a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>certificate_purpose</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>0ef93ccb33f3ba106c8432a19e5c7b7a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_class_name</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>82f93ccb33f3ba106c8432a19e5c7b7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>0af93ccb33f3ba106c8432a19e5c7b7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>8ef93ccb33f3ba106c8432a19e5c7b7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>priority</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>06f93ccb33f3ba106c8432a19e5c7b7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>8af93ccb33f3ba106c8432a19e5c7b7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="sn_disco_certmgmt_task" element="NULL" name="sn_disco_certmgmt_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">caf93ccb33f3ba106c8432a19e5c7b78</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_id>02f93ccb33f3ba106c8432a19e5c7b7d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sn_disco_certmgmt_task</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+            <sys_created_on>2026-03-27 14:51:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>caf93ccb33f3ba106c8432a19e5c7b78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_disco_certmgmt_task</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_ui_list_sn_disco_certmgmt_task_null</sys_update_name>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-03-27 14:51:38</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d2fddeb990000001</claim_timestamp>
+        <metadata_update_name>sys_ui_list_sn_disco_certmgmt_task_null</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 15:16:06</sys_created_on>
+        <sys_id>589f7ccb33f7ba106c8432a19e5c7b5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 15:16:06</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
     <sc_cat_item_producer action="INSERT_OR_UPDATE">
         <access_type>restricted</access_type>
-        <active>true</active>
+        <active>false</active>
         <allow_edit>false</allow_edit>
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category display_value="Fluxo automatizado">ea54604a53553010fe1cddeeff7b12c9</category>
+        <category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</category>
         <cc_render_type/>
         <checked_out/>
         <cost>0</cost>
@@ -73,22 +73,22 @@
         <sys_created_by>pooja.chugwani</sys_created_by>
         <sys_created_on>2021-01-20 20:52:46</sys_created_on>
         <sys_id>897e9a865331201046dfddeeff7b12f5</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Renew Certificate (Automated)</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sc_cat_item_producer_897e9a865331201046dfddeeff7b12f5</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-03-23 21:38:13</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-26 22:50:36</sys_updated_on>
         <table_name>sn_disco_certmgmt_renew_task</table_name>
-        <taxonomy_topic display_value="Automatizado">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
+        <taxonomy_topic display_value="Automated">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>4</version>
+        <version>5</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
