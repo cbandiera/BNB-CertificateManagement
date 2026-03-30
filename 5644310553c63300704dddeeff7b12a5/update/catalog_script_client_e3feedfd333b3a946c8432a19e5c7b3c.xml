@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Copy of Renew Certificate (Automated)">8efe69fd333b3a946c8432a19e5c7bbc</cat_item>
+        <cat_item/>
         <cat_variable>IO:87fe6dfd333b3a946c8432a19e5c7b99</cat_variable>
         <condition/>
         <description/>

@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="Certificate Indicators">48f246f73b6ff610a1e3f65436e45a1a</macroponent>
+        <macroponent display_value="BNB Certificate Indicators">48f246f73b6ff610a1e3f65436e45a1a</macroponent>
         <name>Redirect to dashboard list</name>
         <preset/>
         <required_translations>[]</required_translations>

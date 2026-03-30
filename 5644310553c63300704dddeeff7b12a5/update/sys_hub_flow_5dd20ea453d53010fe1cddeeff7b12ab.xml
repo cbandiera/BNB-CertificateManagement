@@ -117,7 +117,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Short Description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -201,7 +201,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -285,7 +285,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Opened by</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -369,7 +369,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Certificate Owner</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -453,7 +453,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Implementation Plan</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -537,7 +537,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Priority</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -621,7 +621,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Certificate</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -705,7 +705,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Certificate Owner Group</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -789,7 +789,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Task Id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -873,7 +873,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Requested by</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -926,7 +926,7 @@
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5dd20ea453d53010fe1cddeeff7b12ab"/>
     <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5dd20ea453d53010fe1cddeeff7b12ab^sys_idNOT IN0af1894a33fb3e946c8432a19e5c7b4b,caf1894a33fb3e946c8432a19e5c7b51,8af1894a33fb3e946c8432a19e5c7b52,f9f1894a33fb3e946c8432a19e5c7b42,c2f1894a33fb3e946c8432a19e5c7b65"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Pesquisar registros">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
         <attributes/>
         <comment>Look up Change request (change_request) table to see if any request(s) raised already for the current Certificate Task</comment>
@@ -950,7 +950,7 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0af1894a33fb3e946c8432a19e5c7b4b"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Criar registro">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
         <action_type_parent/>
         <attributes/>
         <comment/>
@@ -974,7 +974,7 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=caf1894a33fb3e946c8432a19e5c7b51"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
         <attributes/>
         <comment/>
@@ -998,7 +998,7 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=8af1894a33fb3e946c8432a19e5c7b52"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
         <attributes/>
         <comment>Look up System plugin (v_plugin) table for the plugin whose name is "Change Management - Core" and ID is "com.snc.change_management"</comment>
@@ -1022,7 +1022,7 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f9f1894a33fb3e946c8432a19e5c7b42"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <attributes/>
         <comment/>
@@ -1057,7 +1057,7 @@
         <flow display_value="Change Management Request for Automated Cert Task">5dd20ea453d53010fe1cddeeff7b12ab</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>2</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -1084,7 +1084,7 @@
         <flow display_value="Change Management Request for Automated Cert Task">5dd20ea453d53010fe1cddeeff7b12ab</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>4</order>
         <outputs_assigned/>
         <parent_ui_id>05043b63-3ac3-4774-945c-f389a6b9d78f</parent_ui_id>
@@ -1111,7 +1111,7 @@
         <flow display_value="Change Management Request for Automated Cert Task">5dd20ea453d53010fe1cddeeff7b12ab</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>7</order>
         <outputs_assigned/>
         <parent_ui_id>b0eb5559-fb2b-4d21-bdf2-bc18667aab2e</parent_ui_id>
@@ -1688,7 +1688,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Requested by</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1772,7 +1772,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Implementation Plan</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1856,7 +1856,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Priority</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1940,7 +1940,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Certificate</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2024,7 +2024,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Task Id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2108,7 +2108,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2192,7 +2192,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Opened by</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2276,7 +2276,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Short Description</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2360,7 +2360,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Certificate Owner</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2444,7 +2444,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Cadeia de caracteres">string</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>Certificate Owner Group</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2497,8 +2497,8 @@
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a012d3ac53913010fe1cddeeff7b1231"/>
     <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a012d3ac53913010fe1cddeeff7b1231^sys_idNOT IN03f10d4a33fb3e946c8432a19e5c7b0c,93f10d4a33fb3e946c8432a19e5c7b12,d3f10d4a33fb3e946c8432a19e5c7b17,dff10d4a33fb3e946c8432a19e5c7b17,13f10d4a33fb3e946c8432a19e5c7b1d"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment>Look up System plugin (v_plugin) table for the plugin whose name is "Change Management - Core" and ID is "com.snc.change_management"</comment>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
@@ -2521,8 +2521,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=03f10d4a33fb3e946c8432a19e5c7b0c"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Pesquisar registros">43400a1587003300663ca1bb36cb0b4b</action_type>
-        <action_type_parent display_value="Pesquisar registros">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <attributes/>
         <comment>Look up Change request (change_request) table to see if any request(s) raised already for the current Certificate Task</comment>
         <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
@@ -2545,8 +2545,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=93f10d4a33fb3e946c8432a19e5c7b12"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Criar registro">2de05916c31332002841b63b12d3aee1</action_type>
-        <action_type_parent display_value="Criar registro">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
@@ -2569,8 +2569,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d3f10d4a33fb3e946c8432a19e5c7b17"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
@@ -2593,8 +2593,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=dff10d4a33fb3e946c8432a19e5c7b17"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -2628,7 +2628,7 @@
         <flow display_value="Change Management Request for Automated Cert Task">a012d3ac53913010fe1cddeeff7b1231</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>2</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -2655,7 +2655,7 @@
         <flow display_value="Change Management Request for Automated Cert Task">a012d3ac53913010fe1cddeeff7b1231</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>4</order>
         <outputs_assigned/>
         <parent_ui_id>05043b63-3ac3-4774-945c-f389a6b9d78f</parent_ui_id>
@@ -2682,7 +2682,7 @@
         <flow display_value="Change Management Request for Automated Cert Task">a012d3ac53913010fe1cddeeff7b1231</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>7</order>
         <outputs_assigned/>
         <parent_ui_id>b0eb5559-fb2b-4d21-bdf2-bc18667aab2e</parent_ui_id>
