@@ -35,11 +35,11 @@
         <group/>
         <group_by>false</group_by>
         <icon/>
-        <label>Request Installation</label>
+        <label>Request Installations</label>
         <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
         <model_conditions/>
         <model_field_required/>
-        <order>1</order>
+        <order>2</order>
         <payload_map/>
         <read_access>false</read_access>
         <record_conditions/>
@@ -48,7 +48,7 @@
         <required_translations/>
         <required_user_role_names/>
         <requires_value>false</requires_value>
-        <script_condition>current.state == 1  &amp;&amp; current.assignment_group == "e5eaaa408722fe90fa4042630cbb358b"</script_condition>
+        <script_condition>current.state == 1 &amp;&amp;  current.assignment_group == "e5eaaa408722fe90fa4042630cbb358b"</script_condition>
         <scripted_client_condition/>
         <server_script><![CDATA[(function() {
     try {
@@ -105,15 +105,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef23a839337776946c8432a19e5c7b2a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>request _installation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_ef23a839337776946c8432a19e5c7b2a</sys_update_name>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 14:43:51</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 12:21:58</sys_updated_on>
         <table>sn_disco_certmgmt_task</table>
         <tooltip/>
         <ui_component/>

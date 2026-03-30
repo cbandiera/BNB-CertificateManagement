@@ -5149,7 +5149,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Certificados Externos Expirados"
+                                            "message": "Certificados Internos Expirados"
                                         }
                                     },
                                     "headingLevel": {
@@ -10015,6 +10015,10 @@
   "code" : "",
   "comment" : ""
 }, {
+  "message" : "Certificados Internos Expirados",
+  "code" : "",
+  "comment" : ""
+}, {
   "message" : "Certificados Internos Expirando em Breve",
   "code" : "",
   "comment" : ""
@@ -10103,14 +10107,14 @@
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 17:50:11</sys_created_on>
         <sys_id>48f246f73b6ff610a1e3f65436e45a1a</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>BNB Certificate Indicators</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_ux_macroponent_48f246f73b6ff610a1e3f65436e45a1a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-28 13:06:18</sys_updated_on>
+        <sys_updated_on>2026-03-28 22:00:46</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=48f246f73b6ff610a1e3f65436e45a1a"/>
     <sys_translated_text action="INSERT_OR_UPDATE">

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="DELETE">
+        <action_type>declarative_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Request Installation</name>
+        <specificity>30</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 15:28:43</sys_created_on>
+        <sys_id>4572c10b33bbba106c8432a19e5c7b17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Installation</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_form_action_4572c10b33bbba106c8432a19e5c7b17</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 15:28:43</sys_updated_on>
+        <table>sn_disco_certmgmt_new_task</table>
+        <ui_action/>
+    </sys_ux_form_action>
+    <sys_translated_text action="DELETE" query="documentkey=4572c10b33bbba106c8432a19e5c7b17"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_ux_form_action_4572c10b33bbba106c8432a19e5c7b17</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action"><sys_ux_form_action action="INSERT_OR_UPDATE"><action_type>declarative_action</action_type><active>true</active><declarative_action/><description/><name>Request Installation</name><specificity>30</specificity><sys_class_name>sys_ux_form_action</sys_class_name><sys_created_by>suzana.hessel@extreme.digital</sys_created_by><sys_created_on>2026-03-27 15:28:43</sys_created_on><sys_id>4572c10b33bbba106c8432a19e5c7b17</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Request Installation</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sys_ux_form_action_4572c10b33bbba106c8432a19e5c7b17</sys_update_name><sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by><sys_updated_on>2026-03-27 15:28:43</sys_updated_on><table>sn_disco_certmgmt_new_task</table><ui_action/></sys_ux_form_action><sys_translated_text action="delete_multiple" query="documentkey=4572c10b33bbba106c8432a19e5c7b17"/></record_update>]]></payload>
+        <payload_hash>586784633</payload_hash>
+        <record_name>Request Installation</record_name>
+        <reverted_from/>
+        <source>87a0c58b333bba106c8432a19e5c7b85</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-30 11:58:27</sys_created_on>
+        <sys_id>d61fa3b7333b36d06c8432a19e5c7bf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d3e9c0cb40000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 11:58:27</sys_updated_on>
+        <type>UX Form Actions</type>
+        <update_guid>c972c10bd9bbba10cd317ee82bbfd319</update_guid>
+        <update_guid_history>c972c10bd9bbba10cd317ee82bbfd319:642871131,c972c10bd9bbba10cd317ee82bbfd319:642871131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-30 12:57:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_form_action">sys_ux_form_action</sys_db_object>
+        <sys_id>85cda9b2d4064073a01f18bafd6c0719</sys_id>
+        <sys_metadata>4572c10b33bbba106c8432a19e5c7b17</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Installation</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_ux_form_action_4572c10b33bbba106c8432a19e5c7b17</sys_update_name>
+        <sys_update_version display_value="sys_ux_form_action_4572c10b33bbba106c8432a19e5c7b17">d61fa3b7333b36d06c8432a19e5c7bf1</sys_update_version>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 12:57:56</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d3ef366000000001</claim_timestamp>
+        <metadata_update_name>sys_ux_form_action_4572c10b33bbba106c8432a19e5c7b17</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-30 13:33:52</sys_created_on>
+        <sys_id>c4f44cc0330c47d06c8432a19e5c7bf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 13:33:52</sys_updated_on>
+    </sys_claim>
+</record_update>
