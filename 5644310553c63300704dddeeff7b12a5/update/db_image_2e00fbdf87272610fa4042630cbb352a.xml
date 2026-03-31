@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image/>
+        <name>sn_disco_certmgmt.ci_class_iconsCertificate.svg</name>
+        <size_bytes>1745</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>C022791@bnb.gov.br</sys_created_by>
+        <sys_created_on>2025-08-29 16:19:03</sys_created_on>
+        <sys_id>2e00fbdf87272610fa4042630cbb352a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>sn_disco_certmgmt.ci_class_iconsCertificate.svg</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>db_image_2e00fbdf87272610fa4042630cbb352a</sys_update_name>
+        <sys_updated_by>C022791@bnb.gov.br</sys_updated_by>
+        <sys_updated_on>2025-08-29 16:19:56</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683db910000001</claim_timestamp>
+        <metadata_update_name>db_image_2e00fbdf87272610fa4042630cbb352a</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>db092b9033f37e906c8432a19e5c7bd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
+</record_update>

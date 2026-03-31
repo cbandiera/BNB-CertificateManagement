@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url_sched_m2m">
+    <sn_disco_certmgmt_cert_url_sched_m2m action="DELETE">
+        <cert_url display_value="https://200.164.107.160:7443">c991ca0c877a3e50fa4042630cbb35a6</cert_url>
+        <last_successful>2026-01-27 19:41:31</last_successful>
+        <schedule display_value="BNB_HTTPS_CERTIFICATES">dbee3eb23b39fa50a1e3f65436e45a16</schedule>
+        <status>true</status>
+        <sys_class_name>sn_disco_certmgmt_cert_url_sched_m2m</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-27 19:19:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4191ca0c877a3e50fa4042630cbb35a9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BNB_HTTPS_CERTIFICATES.https://200.164.107.160:7443</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sn_disco_certmgmt_cert_url_sched_m2m_4191ca0c877a3e50fa4042630cbb35a9</sys_update_name>
+        <sys_updated_by>mid_capgv_com_dev_01</sys_updated_by>
+        <sys_updated_on>2026-01-27 19:41:34</sys_updated_on>
+    </sn_disco_certmgmt_cert_url_sched_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sn_disco_certmgmt_cert_url_sched_m2m_4191ca0c877a3e50fa4042630cbb35a9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url_sched_m2m"><sn_disco_certmgmt_cert_url_sched_m2m action="INSERT_OR_UPDATE"><cert_url display_value="https://200.164.107.160:7443">c991ca0c877a3e50fa4042630cbb35a6</cert_url><last_successful>2026-01-27 19:41:31</last_successful><schedule display_value="BNB_HTTPS_CERTIFICATES">dbee3eb23b39fa50a1e3f65436e45a16</schedule><status>true</status><sys_class_name>sn_disco_certmgmt_cert_url_sched_m2m</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-01-27 19:19:57</sys_created_on><sys_domain>global</sys_domain><sys_id>4191ca0c877a3e50fa4042630cbb35a9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>BNB_HTTPS_CERTIFICATES.https://200.164.107.160:7443</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sn_disco_certmgmt_cert_url_sched_m2m_4191ca0c877a3e50fa4042630cbb35a9</sys_update_name><sys_updated_by>mid_capgv_com_dev_01</sys_updated_by><sys_updated_on>2026-01-27 19:41:34</sys_updated_on></sn_disco_certmgmt_cert_url_sched_m2m></record_update>]]></payload>
+        <payload_hash>-138288279</payload_hash>
+        <record_name>BNB_HTTPS_CERTIFICATES.https://200.164.107.160:7443</record_name>
+        <reverted_from/>
+        <source>4d43333f87522210fa4042630cbb3574</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mid_capgv_com_dev_01</sys_created_by>
+        <sys_created_on>2026-01-27 19:41:34</sys_created_on>
+        <sys_id>3186c2c83bbaba50a1e3f65436e45a01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c00f9c3c50000001</sys_recorded_at>
+        <sys_updated_by>mid_capgv_com_dev_01</sys_updated_by>
+        <sys_updated_on>2026-01-27 19:41:34</sys_updated_on>
+        <type>Scheduled Certificate URL</type>
+        <update_guid>7586c2c8ccbaba50fd76f1640240b100</update_guid>
+        <update_guid_history>7586c2c8ccbaba50fd76f1640240b100:-138288279,5e9182083af6ba5074649afb210eea74:1504112359,0991ca0c637a3e502a60ef90e35c1baa:-507866338</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3bdfda513b763650a1e3f65436e45a3e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mid_capgv_com_dev_01</sys_created_by>
+        <sys_created_on>2026-01-31 18:44:42</sys_created_on>
+        <sys_db_object display_value="" name="sn_disco_certmgmt_cert_url_sched_m2m">sn_disco_certmgmt_cert_url_sched_m2m</sys_db_object>
+        <sys_id>459b150e60ec48d8a26514d702f94710</sys_id>
+        <sys_metadata>4191ca0c877a3e50fa4042630cbb35a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BNB_HTTPS_CERTIFICATES.https://200.164.107.160:7443</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sn_disco_certmgmt_cert_url_sched_m2m_4191ca0c877a3e50fa4042630cbb35a9</sys_update_name>
+        <sys_update_version display_value="sn_disco_certmgmt_cert_url_sched_m2m_4191ca0c877a3e50fa4042630cbb35a9">3186c2c83bbaba50a1e3f65436e45a01</sys_update_version>
+        <sys_updated_by>mid_capgv_com_dev_01</sys_updated_by>
+        <sys_updated_on>2026-01-31 18:44:42</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d6410000001</claim_timestamp>
+        <metadata_update_name>sn_disco_certmgmt_cert_url_sched_m2m_4191ca0c877a3e50fa4042630cbb35a9</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
+        <sys_id>fe09e79033f37e906c8432a19e5c7bc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Copy of Request New Certificate (Automated)">8f0295213bc37610be82c237f4e45a2c</sc_cat_item>
+        <sc_category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 17:58:52</sys_created_on>
+        <sys_id>4f0251253bc37610be82c237f4e45abc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Automated Flow.Copy of Request New Certificate (Automated)</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sc_cat_item_category_4f0251253bc37610be82c237f4e45abc</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 17:58:52</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sc_cat_item_category_4f0251253bc37610be82c237f4e45abc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Request New Certificate (Automated)">8f0295213bc37610be82c237f4e45a2c</sc_cat_item><sc_category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-02-13 17:58:52</sys_created_on><sys_id>4f0251253bc37610be82c237f4e45abc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Automated Flow.Copy of Request New Certificate (Automated)</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sc_cat_item_category_4f0251253bc37610be82c237f4e45abc</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-02-13 17:58:52</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1710268451</payload_hash>
+        <record_name>Automated Flow.Copy of Request New Certificate (Automated)</record_name>
+        <reverted_from/>
+        <source>95c6cda13bcf3610be82c237f4e45a18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-13 17:58:52</sys_created_on>
+        <sys_id>d30251253bc37610be82c237f4e45ada</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c5827da020000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-13 17:58:52</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>57025125bfc376109160de13d87554d9</update_guid>
+        <update_guid_history>57025125bfc376109160de13d87554d9:-1710268451</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b7299adb3b1f321cbe82c237f4e45ad3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-03 19:54:43</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>2078f13e73d44a38960be9cf0e0c2b10</sys_id>
+        <sys_metadata>4f0251253bc37610be82c237f4e45abc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Automated Flow.Copy of Request New Certificate (Automated)</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_4f0251253bc37610be82c237f4e45abc</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_4f0251253bc37610be82c237f4e45abc">d30251253bc37610be82c237f4e45ada</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-03 19:54:43</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dd4c0000001</claim_timestamp>
+        <metadata_update_name>sc_cat_item_category_4f0251253bc37610be82c237f4e45abc</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:18</sys_created_on>
+        <sys_id>17096b9033f37e906c8432a19e5c7b43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:18</sys_updated_on>
+    </sys_claim>
+</record_update>

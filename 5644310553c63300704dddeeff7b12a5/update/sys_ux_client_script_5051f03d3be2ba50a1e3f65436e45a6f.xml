@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Certificate Indicators">4c51fcf93be2ba50a1e3f65436e45a23</macroponent>
+        <name>Navigate to dashboard scheduled export</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.emit('NAV_ITEM_SELECTED', {
+        route: 'scheduled-export',
+        icon: 'calendar-days-clock-outline',
+        title: 'Scheduled Export',
+         fields: {
+            sysId:'new' + Date.now(),
+        },
+        params: {
+            dashboardId: event.payload.dashboardSysId,
+        }
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-20 13:42:57</sys_created_on>
+        <sys_id>5051f03d3be2ba50a1e3f65436e45a6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Navigate to dashboard scheduled export</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_client_script_5051f03d3be2ba50a1e3f65436e45a6f</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-20 13:42:57</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dfda0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_5051f03d3be2ba50a1e3f65436e45a6f</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:19</sys_created_on>
+        <sys_id>6f09ab9033f37e906c8432a19e5c7b27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:19</sys_updated_on>
+    </sys_claim>
+</record_update>

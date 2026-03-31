@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Copy of Renew Certificate (Automated)">8efe69fd333b3a946c8432a19e5c7bbc</sc_cat_item>
+        <sc_category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-23 21:30:48</sys_created_on>
+        <sys_id>46fee9fd333b3a946c8432a19e5c7b60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Automated Flow.Copy of Renew Certificate (Automated)</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sc_cat_item_category_46fee9fd333b3a946c8432a19e5c7b60</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-23 21:30:48</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sc_cat_item_category_46fee9fd333b3a946c8432a19e5c7b60</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Renew Certificate (Automated)">8efe69fd333b3a946c8432a19e5c7bbc</sc_cat_item><sc_category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>suzana.hessel@extreme.digital</sys_created_by><sys_created_on>2026-03-23 21:30:48</sys_created_on><sys_id>46fee9fd333b3a946c8432a19e5c7b60</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Automated Flow.Copy of Renew Certificate (Automated)</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sc_cat_item_category_46fee9fd333b3a946c8432a19e5c7b60</sys_update_name><sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by><sys_updated_on>2026-03-23 21:30:48</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1227196270</payload_hash>
+        <record_name>Automated Flow.Copy of Renew Certificate (Automated)</record_name>
+        <reverted_from/>
+        <source>5aa96fd43bf3b690a1e3f65436e45a1b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-23 21:30:48</sys_created_on>
+        <sys_id>46fee9fd333b3a946c8432a19e5c7b66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d1c9b88100000001</sys_recorded_at>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-23 21:30:48</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>06fee9fd723b3a945837b79a8b943e65</update_guid>
+        <update_guid_history>06fee9fd723b3a945837b79a8b943e65:1227196270</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">137959b23333fa106c8432a19e5c7bdf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-26 22:30:52</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>08967bc076a14f5eb393e87a6430af29</sys_id>
+        <sys_metadata>46fee9fd333b3a946c8432a19e5c7b60</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Automated Flow.Copy of Renew Certificate (Automated)</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_46fee9fd333b3a946c8432a19e5c7b60</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_46fee9fd333b3a946c8432a19e5c7b60">46fee9fd333b3a946c8432a19e5c7b66</sys_update_version>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-26 22:30:52</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d26a0fee70000001</claim_timestamp>
+        <metadata_update_name>sc_cat_item_category_46fee9fd333b3a946c8432a19e5c7b60</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-25 20:12:58</sys_created_on>
+        <sys_id>1950779e3b333210a1e3f65436e45ad5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-25 20:12:58</sys_updated_on>
+    </sys_claim>
+</record_update>

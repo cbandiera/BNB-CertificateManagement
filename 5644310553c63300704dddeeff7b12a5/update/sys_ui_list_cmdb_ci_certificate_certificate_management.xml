@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_certificate" version="2" view="certificate_management">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>subject_common_name</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f89e4d463be13ed0a1e3f65436e45a38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>root_issuer</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>fc9e4d463be13ed0a1e3f65436e45a38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f09e4d463be13ed0a1e3f65436e45a39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>valid_to</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f49e4d463be13ed0a1e3f65436e45a39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>valid_from</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f89e4d463be13ed0a1e3f65436e45a39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>fc9e4d463be13ed0a1e3f65436e45a39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>renewal_tracking</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f09e4d463be13ed0a1e3f65436e45a3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f49e4d463be13ed0a1e3f65436e45a3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>environment</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f89e4d463be13ed0a1e3f65436e45a3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>fingerprint</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>fc9e4d463be13ed0a1e3f65436e45a3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>install_status</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f09e4d463be13ed0a1e3f65436e45a3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>operational_status</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f49e4d463be13ed0a1e3f65436e45a3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>serial_number</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f89e4d463be13ed0a1e3f65436e45a3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>fc9e4d463be13ed0a1e3f65436e45a3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>support_group</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f09e4d463be13ed0a1e3f65436e45a3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>managed_by_group</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f49e4d463be13ed0a1e3f65436e45a3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>issuer</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f89e4d463be13ed0a1e3f65436e45a3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>life_cycle_stage</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>17</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>fc9e4d463be13ed0a1e3f65436e45a3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>life_cycle_stage_status</element>
+            <list_id display_value="cmdb_ci_certificate" element="NULL" name="cmdb_ci_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">349e4d463be13ed0a1e3f65436e45a38</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>18</position>
+            <sum>false</sum>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_id>f09e4d463be13ed0a1e3f65436e45a3d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_certificate</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2025-12-02 17:26:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>349e4d463be13ed0a1e3f65436e45a38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_certificate</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_certificate_certificate_management</sys_update_name>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-12-02 17:26:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dacf0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_list_cmdb_ci_certificate_certificate_management</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>13092b9033f37e906c8432a19e5c7bb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
+</record_update>

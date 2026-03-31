@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=251094000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>bnb__trigger_close_change_from_renew_task</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Renew certificate task Record","reference":"sn_disco_certmgmt_renew_task","reference_display":"Renew certificate task","type":"reference","base_type":"reference","usedInstances":{"a9709b77-aa8d-4767-908a-d0c1a06e9076":["renewtask"]},"attributes":{}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛Renew certificate task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"sys_id","usedInstances":{"a9709b77-aa8d-4767-908a-d0c1a06e9076":["renewtask"]}}]</label_cache>
+        <master_snapshot>2ef75d4f33733e106c8432a19e5c7b3a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>BNB - Trigger Close Change from Renew Task</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>f5801448330487d06c8432a19e5c7be2</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles name="sn_disco_certmgmt.pki_admin">570ded3a0b1233001286836266673ad0,ef4d1b623b6320108774cedf34efc4ee,292d217a0b1233001286836266673a83</run_with_roles>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 16:39:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4fa2dd0333fbfa106c8432a19e5c7be1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BNB - Trigger Close Change from Renew Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_hub_flow_4fa2dd0333fbfa106c8432a19e5c7be1</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 18:48:26</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d3ef366290000001</claim_timestamp>
+        <metadata_update_name>sys_hub_flow_4fa2dd0333fbfa106c8432a19e5c7be1</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-30 13:33:52</sys_created_on>
+        <sys_id>44f44cc0330c47d06c8432a19e5c7bf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 13:33:52</sys_updated_on>
+    </sys_claim>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sn_disco_certmgmt_renew_task">stateCHANGESTO2<item display_value="Completed" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-30 14:24:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f5801448330487d06c8432a19e5c7be2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 14:24:30</sys_updated_on>
+        <table>sn_disco_certmgmt_renew_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>4fa2dd0333fbfa106c8432a19e5c7be1</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-30 14:24:30</sys_created_on>
+        <sys_id>b9801448330487d06c8432a19e5c7be3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 14:24:30</sys_updated_on>
+        <trigger display_value="">f5801448330487d06c8432a19e5c7be2</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT INb9801448330487d06c8432a19e5c7be3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT INe2c7dd4b33733e106c8432a19e5c7bf6"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</flow>
+        <label>BNB - Close Change Request</label>
+        <order>0</order>
+        <stage_id>d8b5dd8f33bffa106c8432a19e5c7bb8</stage_id>
+        <states>{}</states>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:56</sys_created_on>
+        <sys_id>e2c7dd4b33733e106c8432a19e5c7bf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:01:56</sys_updated_on>
+        <type>subflow</type>
+        <value>a9709b77-aa8d-4767-908a-d0c1a06e9076</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT IN4fa2dd0333fbfa106c8432a19e5c7be2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4fa2dd0333fbfa106c8432a19e5c7be1</id>
+        <name>BNB - Trigger Close Change from Renew Task</name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 16:39:34</sys_created_on>
+        <sys_id>4fa2dd0333fbfa106c8432a19e5c7be2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 16:39:34</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4fa2dd0333fbfa106c8432a19e5c7be2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT IN66c7dd4b33733e106c8432a19e5c7b0e,6ac7dd4b33733e106c8432a19e5c7b08,6ac7dd4b33733e106c8432a19e5c7b13"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</model>
+        <model_id>4fa2dd0333fbfa106c8432a19e5c7be1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:55</sys_created_on>
+        <sys_id>66c7dd4b33733e106c8432a19e5c7b0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:01:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=66c7dd4b33733e106c8432a19e5c7b0e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</model>
+        <model_id>4fa2dd0333fbfa106c8432a19e5c7be1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:55</sys_created_on>
+        <sys_id>6ac7dd4b33733e106c8432a19e5c7b08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:01:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6ac7dd4b33733e106c8432a19e5c7b08"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</model>
+        <model_id>4fa2dd0333fbfa106c8432a19e5c7be1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:55</sys_created_on>
+        <sys_id>6ac7dd4b33733e106c8432a19e5c7b13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:01:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6ac7dd4b33733e106c8432a19e5c7b13"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT INaac7dd4b33733e106c8432a19e5c7bcb"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:56</sys_created_on>
+        <sys_id>aac7dd4b33733e106c8432a19e5c7bcb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 22:52:45</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT IN6ec7dd4b33733e106c8432a19e5c7bcd"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <show_stages>true</show_stages>
+        <subflow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/41SXW+bMBT9K5WfCRo4GZC3SVOlStsqbWtfqsq62NeJVWOoMUmzKP9910DTaOtDHzn3+J6Py8ORGcXWrCrrlVKl5rzWGrJPn2W55DlkFa5kUdeSJcxBg8T06HAfoH8iaAd2iNjxeNcpCKhElsrBEyWcTjRXpu8sHO5nGiFya6yiOVs/PCasA09LA3q2Pv4zCocOhYUaLT38iRppIpE2fNTu69tLv+9EiDoj9KbQehUdZQnDl4BOISlqsD0mrAFHOVt/OCMeQd06+wZsjQtT1gZeevOHtvM8uRBYs94Jaka2QqIPzaYJYnQkZktnqpj7GxsgwlXkG20kVX01k+W2NRJvu2BaN8kGqO0HVGRrh8b9mBqJt0INgw0Xtxp6coBdbCBGmvPpX9t2fz7ItXFjWfPQthLs+QtC8KYeAvbxvoP5/X/XE/jtnTujxYZ0RQNdZ9xGdL7dmVGLrDfpxtJHqm27J4+92bgUZOwgpftAek341xG+B29iId9pDT2OinfOPA94E/8jXpRVttR8wcsiXyx5nS+A82IhK6VWWaGrHIGdxpOI5yFGm6qaSxFT50TopTdd+EIWdjjnPz3+BeRElIpdAwAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:56</sys_created_on>
+        <sys_id>6ec7dd4b33733e106c8432a19e5c7bcd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 23:16:54</sys_updated_on>
+        <ui_id>a9709b77-aa8d-4767-908a-d0c1a06e9076</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:55</sys_created_on>
+        <sys_id>22c7dd4b33733e106c8432a19e5c7b0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1_current_en</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:01:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:55</sys_created_on>
+        <sys_id>26c7dd4b33733e106c8432a19e5c7b12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1_changed_fields_en</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:01:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:01:55</sys_created_on>
+        <sys_id>eec7dd4b33733e106c8432a19e5c7b6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1_table_name_en</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:01:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4fa2dd0333fbfa106c8432a19e5c7be1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>bnb__trigger_close_change_from_renew_task</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Renew certificate task Record","reference":"sn_disco_certmgmt_renew_task","reference_display":"Renew certificate task","type":"reference","base_type":"reference","usedInstances":{"a9709b77-aa8d-4767-908a-d0c1a06e9076":["renewtask"]},"attributes":{}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛Renew certificate task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"sys_id","usedInstances":{"a9709b77-aa8d-4767-908a-d0c1a06e9076":["renewtask"]}}]</label_cache>
+        <master>true</master>
+        <name>BNB - Trigger Close Change from Renew Task</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles name="sn_disco_certmgmt.pki_admin">570ded3a0b1233001286836266673ad0,ef4d1b623b6320108774cedf34efc4ee,292d217a0b1233001286836266673a83</run_with_roles>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2ef75d4f33733e106c8432a19e5c7b3a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 14:24:30</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2ef75d4f33733e106c8432a19e5c7b3a^sys_idNOT IN76f79d4f33733e106c8432a19e5c7b56"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="BNB - Trigger Close Change from Renew Task">2ef75d4f33733e106c8432a19e5c7b3a</flow>
+        <label>BNB - Close Change Request</label>
+        <order>0</order>
+        <stage_id>d8b5dd8f33bffa106c8432a19e5c7bb8</stage_id>
+        <states>{}</states>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>76f79d4f33733e106c8432a19e5c7b56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:02:45</sys_updated_on>
+        <type>subflow</type>
+        <value>a9709b77-aa8d-4767-908a-d0c1a06e9076</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2ef75d4f33733e106c8432a19e5c7b3a^sys_idNOT INeaf75d4f33733e106c8432a19e5c7b3b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2ef75d4f33733e106c8432a19e5c7b3a</id>
+        <name>BNB - Trigger Close Change from Renew Task</name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:44</sys_created_on>
+        <sys_id>eaf75d4f33733e106c8432a19e5c7b3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:02:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=eaf75d4f33733e106c8432a19e5c7b3b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2ef75d4f33733e106c8432a19e5c7b3a^sys_idNOT IN22f75d4f33733e106c8432a19e5c7b3e,6ef75d4f33733e106c8432a19e5c7b8a,a6f75d4f33733e106c8432a19e5c7bec"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB - Trigger Close Change from Renew Task">2ef75d4f33733e106c8432a19e5c7b3a</model>
+        <model_id>2ef75d4f33733e106c8432a19e5c7b3a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:44</sys_created_on>
+        <sys_id>22f75d4f33733e106c8432a19e5c7b3e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 14:24:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=22f75d4f33733e106c8432a19e5c7b3e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="BNB - Trigger Close Change from Renew Task">2ef75d4f33733e106c8432a19e5c7b3a</model>
+        <model_id>2ef75d4f33733e106c8432a19e5c7b3a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>6ef75d4f33733e106c8432a19e5c7b8a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 22:43:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6ef75d4f33733e106c8432a19e5c7b8a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BNB - Trigger Close Change from Renew Task">2ef75d4f33733e106c8432a19e5c7b3a</model>
+        <model_id>2ef75d4f33733e106c8432a19e5c7b3a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>a6f75d4f33733e106c8432a19e5c7bec</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 14:24:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a6f75d4f33733e106c8432a19e5c7bec"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2ef75d4f33733e106c8432a19e5c7b3a^sys_idNOT INf2f79d4f33733e106c8432a19e5c7b54"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB - Trigger Close Change from Renew Task">2ef75d4f33733e106c8432a19e5c7b3a</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>f2f79d4f33733e106c8432a19e5c7b54</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 22:52:46</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2ef75d4f33733e106c8432a19e5c7b3a^sys_idNOT INb6f79d4f33733e106c8432a19e5c7b55"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="BNB - Trigger Close Change from Renew Task">2ef75d4f33733e106c8432a19e5c7b3a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <show_stages>true</show_stages>
+        <subflow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/42Sy27bMBBFfyXgWhYqya4fuyKBgQJtAzRNNkEgjMihTZSiFD7suIb/vUNJUIQkiyx9eUmdOePHM1OCbdh6VS2EWMmiqKSE7MtXvpoXOWRrXPBlVXGWMAM1UtOiwaMH95eiA+gQs/P5vhXgUZRZyoOlir9c6Fwo12o4PQw1SvheaUHnbPP4lLAWLD3q0bLN+c3RZ6k0VKjfYH1A6k9tH0mkmOMQ/Rhu/57kjRURKEsYvng0AolEgnaYsBoMjdnY05hYBHFr9GuwV8b3o9bw4tQ/+mqRJ5MPb5gzJYnhTcnR+npX+7IjLQfUsVoO+jo+KlzFvpKKk+mroSxvwMOdt4H7YEfHjeLoeo8CJQTtr6dZX7htvWpMf8VDpT+BxhsdavOr18vGxyf7DY6wsY3aoodBirzbN8fR8VaZzvBwqBsOelJFsHy/VajjP8CEuqJuwsB7q6rg4wxnFtSf9wvtw49Wihpr4ilraFtldmVrm4PqGGikOt1p+pFK3RyJ3amdSYFHNyktG9It5Tdd/ABWRVE/6ZkOKqh7o54Dfo+oxXK1zuaymBWrZT6bF1U+g6JYzvhaiEW2lOscgV0S5k7uWoNzrxppiPI5RAm91EFf2W8nXuFWtf4bQR1wMHV5+g9F3BMIuwMAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>b6f79d4f33733e106c8432a19e5c7b55</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 23:16:56</sys_updated_on>
+        <ui_id>a9709b77-aa8d-4767-908a-d0c1a06e9076</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>6af75d4f33733e106c8432a19e5c7bf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a_table_name_en</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:02:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>a2f75d4f33733e106c8432a19e5c7b87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a_current_en</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:02:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:45</sys_created_on>
+        <sys_id>eaf75d4f33733e106c8432a19e5c7be8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a_changed_fields_en</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 17:02:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2ef75d4f33733e106c8432a19e5c7b3a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>4fa2dd0333fbfa106c8432a19e5c7be1</sys_id>
+        <latest_snapshot>2ef75d4f33733e106c8432a19e5c7b3a</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-hotfix1-02-05-2026_02-09-2026_1234.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT IN3ef79d4f33733e106c8432a19e5c7be1"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3ef79d4f33733e106c8432a19e5c7be1","name":"plan","plan_signature":null}}</plan>
+        <plan_id>4fa2dd0333fbfa106c8432a19e5c7be1</plan_id>
+        <snapshot>33f2dc4c338487d06c8432a19e5c7bb0</snapshot>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 17:02:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3ef79d4f33733e106c8432a19e5c7be1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 14:24:30</sys_updated_on>
+        <trigger display_value="">f5801448330487d06c8432a19e5c7be2</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4fa2dd0333fbfa106c8432a19e5c7be1"/>
+</record_update>

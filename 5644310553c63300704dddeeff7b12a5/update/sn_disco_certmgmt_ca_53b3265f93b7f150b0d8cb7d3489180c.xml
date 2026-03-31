@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_disco_certmgmt_ca">
+    <sn_disco_certmgmt_ca action="INSERT_OR_UPDATE">
+        <acme>true</acme>
+        <name>Entrust ACME</name>
+        <sys_class_name>sn_disco_certmgmt_ca</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-23 08:27:54</sys_created_on>
+        <sys_id>53b3265f93b7f150b0d8cb7d3489180c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Entrust ACME</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sn_disco_certmgmt_ca_53b3265f93b7f150b0d8cb7d3489180c</sys_update_name>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-12 19:13:02</sys_updated_on>
+        <u_origin>native</u_origin>
+        <u_scope>external</u_scope>
+        <url>https://acme.entrust.net/acme2/directory</url>
+    </sn_disco_certmgmt_ca>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dc6e0000001</claim_timestamp>
+        <metadata_update_name>sn_disco_certmgmt_ca_53b3265f93b7f150b0d8cb7d3489180c</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:18</sys_created_on>
+        <sys_id>5b092b9033f37e906c8432a19e5c7bee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:18</sys_updated_on>
+    </sys_claim>
+</record_update>

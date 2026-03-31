@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings>[]</event_mappings>
+        <macroponent display_value="Certificate Alerts">299078753be2ba50a1e3f65436e45a6b</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Certificate Alerts </name>
+        <order>1</order>
+        <parent_macroponent display_value="Breadcrumb App Shell">e341e22cc32e2010ea04a5a1d840dd02</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Inventory">fdc2b298873e2110fc5febd73cbb3585</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-20 13:39:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2903c753be2ba50a1e3f65436e45ab0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Certificate Alerts </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_screen_c2903c753be2ba50a1e3f65436e45ab0</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-20 13:39:47</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=c2903c753be2ba50a1e3f65436e45ab0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_ux_screen_c2903c753be2ba50a1e3f65436e45ab0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</app_config><description/><disable_auto_reflow>false</disable_auto_reflow><disable_interoperable>false</disable_interoperable><event_mappings>[]</event_mappings><macroponent display_value="Certificate Alerts">299078753be2ba50a1e3f65436e45a6b</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Certificate Alerts </name><order>1</order><parent_macroponent display_value="Breadcrumb App Shell">e341e22cc32e2010ea04a5a1d840dd02</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Inventory">fdc2b298873e2110fc5febd73cbb3585</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>suzana.hessel@extreme.digital</sys_created_by><sys_created_on>2026-01-20 13:39:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c2903c753be2ba50a1e3f65436e45ab0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Certificate Alerts </sys_name><sys_overrides/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sys_ux_screen_c2903c753be2ba50a1e3f65436e45ab0</sys_update_name><sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by><sys_updated_on>2026-01-20 13:39:47</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=c2903c753be2ba50a1e3f65436e45ab0"/></record_update>]]></payload>
+        <payload_hash>599697759</payload_hash>
+        <record_name>Certificate Alerts </record_name>
+        <reverted_from/>
+        <source>6e7828e1872ebe10fa4042630cbb35ab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-20 13:39:47</sys_created_on>
+        <sys_id>86903c753be2ba50a1e3f65436e45ab4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdba207210000001</sys_recorded_at>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-20 13:39:47</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>4a903c750de2ba5006150db5987e61b3</update_guid>
+        <update_guid_history>4a903c750de2ba5006150db5987e61b3:599697759</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-20 13:40:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>06b9f85b17234ea09cf31e98fa611a31</sys_id>
+        <sys_metadata>c2903c753be2ba50a1e3f65436e45ab0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Certificate Alerts </sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_c2903c753be2ba50a1e3f65436e45ab0</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_c2903c753be2ba50a1e3f65436e45ab0">86903c753be2ba50a1e3f65436e45ab4</sys_update_version>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-20 13:40:45</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dabd0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_c2903c753be2ba50a1e3f65436e45ab0</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>93092b9033f37e906c8432a19e5c7bb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
+</record_update>

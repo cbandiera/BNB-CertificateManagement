@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_disco_certmgmt.CertificateRenewalTaskUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Versão para atender ao BNB, onde a Geração do CSR e a guarda da PK será feita através de chamada RESTFUL para API Ansible</description>
+        <mobile_callable>false</mobile_callable>
+        <name>CertificateRenewalTaskUtil</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CertificateRenewalTaskUtil = Class.create();
+CertificateRenewalTaskUtil.prototype = {
+    initialize: function() {},
+    renewCertificate: function(certificateSysId, certMeta, openedThrough) {
+        return this.triggerRenewal(certificateSysId, certMeta, null, openedThrough);
+    },
+    renewCertificateWithAttrs: function(certificateSysId, subjectCommonAttrs, openedThrough) {
+        return this.triggerRenewal(certificateSysId, null, subjectCommonAttrs, openedThrough);
+    },
+    renewCertificates: function(certificateSysIdList, openedThrough) {
+        if (certificateSysIdList && !certificateSysIdList.length) {
+            return [{
+                "error": gs.getMessage("Certificate List is empty.")
+            }];
+        }
+        var retArr = [];
+        certificateSysIdList.forEach(function(certificateSysId) {
+            var resp = this.triggerRenewal(certificateSysId, null, null, openedThrough);
+            retArr.push(resp);
+        }, this);
+        return retArr;
+    },
+
+	renewCertificatesAsync: function(certificateSysIdList, openedThrough) {
+		if (certificateSysIdList && !certificateSysIdList.length) {
+            return [{
+                "error": gs.getMessage("Certificate List is empty.")
+            }];
+        }
+
+		var length = certificateSysIdList.length;
+		var triggerId = gs.generateGUID();
+		// Upper limit for event.parm1 is 4000 characters. 
+		// So the input is split into batch of 100s and pushed into the event. 
+		for(var i = 0; i < Math.ceil(length/100); i++) {
+			var startIndex = 100 * i;
+			var endIndex = length - 1 > (startIndex + 99) ? (startIndex + 99) : length - 1;
+			var tempList = certificateSysIdList.slice(startIndex, endIndex+1);
+			var payload = {
+				'certificate_ids': tempList,
+				'opened_through': openedThrough,
+				'trigger_id': triggerId
+			};
+			
+			gs.eventQueue('sn_disco_certmgmt.renewal.initiated', null, JSON.stringify(payload), "");
+		}
+        return { "trigger_id": triggerId };
+	},
+
+    triggerRenewal: function(certificateSysId, certMeta, subjectCommonAttrs, openedThrough, triggerId) {
+        var certGr = new GlideRecord("cmdb_ci_certificate");
+        if (!certGr.get(certificateSysId)) {
+            return {
+                "certificate_sys_id": certificateSysId,
+                "error": gs.getMessage("Certificate not found for the given certificate sys_id.")
+            };
+        }
+
+        var taskGr = this.getRenewalTaskForCertificate(certificateSysId);
+        if (!gs.nil(taskGr)) {
+            return {
+                "certificate_sys_id": certificateSysId,
+                "renewal_task_id": taskGr.getValue("sys_id")
+            };
+        }
+        var certMetadataGr = gs.nil(certMeta) ? this.getCertMetadataGr(certGr) : certMeta;
+        if (certMetadataGr.getValue("auto_renewal_state") != "ready"
+				&& certMetadataGr.getValue("auto_renewal_state") != "error") { // Allow retry when it is in error state
+			var taskId = certMetadataGr.getValue("renew_certificate_task");
+            if (!gs.nil(taskId)) {
+				taskGr = new GlideRecord('sn_disco_certmgmt_renew_task');
+				taskGr.get(taskId);
+				if(taskGr.getValue('state') != 3) // Ignore tasks in failed state and allow retry
+					return {
+						"certificate_sys_id": certificateSysId,
+						"renewal_task_id": certMetadataGr.getValue("renew_certificate_task")
+					};
+            } else {
+				if (certMetadataGr.getValue("auto_renewal_state") == "processing") {
+					return {
+						"certificate_sys_id": certificateSysId,
+						"error": gs.getMessage("Renewal already in progress!")
+					};
+				}
+				return {
+					"certificate_sys_id": certificateSysId,
+					"error": gs.getMessage("Error while renewing certificate. Please try manually")
+				};
+			}
+        }
+        this.updateStateToProcessing(certMetadataGr);
+        try {
+
+            var certData = this.getParameterMap(certGr, subjectCommonAttrs);
+            var renewalTaskId = this.createRenewTask(certGr, certData, certMetadataGr, openedThrough, triggerId);
+            // new GenerateCSRProbeInvoker().sendProbe(certData); // EDX Bandiera: Esse processo será feito pelo playbook Ansible
+            this.updateStateToProcessed(certMetadataGr, renewalTaskId);
+            return {
+                "renewal_task_id": renewalTaskId,
+                "certificate_sys_id": certificateSysId,
+            };
+        } catch (err) {
+            this.updateStateToError(certMetadataGr);
+            gs.error("CertificateRenewalTaskUtil | Failure while initiating renewal process for certificate " + certMetadataGr.certificate + " \n" + err);
+			return {
+                "certificate_sys_id": certificateSysId,
+                "error": gs.getMessage("Error while renewing certificate. Please try manually")
+            };
+        }
+    },
+
+    getCertMetadataGr: function(certGr) {
+        var certificateSysId = certGr.getValue("sys_id");
+        var certMetadataGr = new GlideRecord("sn_disco_certmgmt_certificate_metadata");
+        certMetadataGr.get("certificate", certificateSysId);
+        if (gs.nil(certMetadataGr)) {
+            certMetadataGr.initialize();
+            certMetadataGr.setValue("auto_renewal_state", "ready");
+            certMetadataGr.setValue("certificate", certificateSysId);
+            certMetadataGr.setValue("auto_renew_days_before_expiry", 30);
+            certMetadataGr.setValue("auto_renew_enabled", "false");
+            certMetadataGr.insert();
+        }
+        return certMetadataGr;
+    },
+
+    getRenewalTaskForCertificate: function(certificateSysId) {
+        var taskGr = new GlideRecord("sn_disco_certmgmt_renew_task");
+        taskGr.addQuery("certificate", certificateSysId);
+		taskGr.addQuery('state', 'NOT IN', [3]); // Exclude failed task and allow retry for failed tasks
+        taskGr.query();
+        if (taskGr.next())
+            return taskGr;
+        return null;
+    },
+
+    updateStateToProcessing: function(certMetadataGr) {
+        certMetadataGr.setValue("auto_renewal_state", "processing");
+        certMetadataGr.update();
+    },
+
+    updateStateToProcessed: function(certMetadataGr, renewalTaskId) {
+        certMetadataGr.setValue("auto_renewal_state", "processed");
+        certMetadataGr.setValue("renew_certificate_task", renewalTaskId);
+        certMetadataGr.update();
+    },
+
+    updateStateToError: function(certMetadataGr) {
+        certMetadataGr.setValue("auto_renewal_state", "error");
+        certMetadataGr.update();
+    },
+
+    createRenewTask: function(certGr, certdata, certMetadataGr, openedThrough, triggerId) {
+        var renewTaskgr = new GlideRecord('sn_disco_certmgmt_renew_task');
+        renewTaskgr.initialize();
+        renewTaskgr.setValue('sys_domain', certdata.sys_domain);
+        renewTaskgr.setValue('subject_common_name', certdata.subject_common_name);
+		var san = gs.nil(certdata.subject_alternative_name)
+			? certdata.subject_common_name
+			: certdata.subject_common_name + "," +certdata.subject_alternative_name;
+        renewTaskgr.setValue('subject_alternative_name', san);
+        renewTaskgr.setValue('organization', certdata.organization);
+        renewTaskgr.setValue('organizational_unit', certdata.organization_unit);
+        renewTaskgr.setValue('locality', certdata.locality);
+        renewTaskgr.setValue('province', certdata.province);
+        renewTaskgr.setValue('country', certdata.country);
+        renewTaskgr.setValue('email', certdata.email);
+        renewTaskgr.setValue('state', 1);
+        renewTaskgr.setValue('certificate', certdata.certificate_sys_id);
+        renewTaskgr.setValue('certificate_purpose', certdata.certificate_purpose);
+        renewTaskgr.setValue('environment', certdata.environment);
+        renewTaskgr.setValue('validity_period', certdata.validity_period);
+		renewTaskgr.setValue('certificate_owner_group', certGr.getValue('assignment_group'));
+		renewTaskgr.setValue('certificate_owner', certGr.getValue('assigned_to'));
+		renewTaskgr.setValue('renewal_tracking', certGr.getValue('renewal_tracking'));
+        renewTaskgr.setValue('active', true);
+		renewTaskgr.setValue('opened_through', openedThrough);
+		renewTaskgr.setValue('priority', 3);
+		renewTaskgr.setValue('trigger_id', triggerId);
+
+        if (!gs.nil(certMetadataGr)) {
+            renewTaskgr.setValue("auto_renew_enabled", certMetadataGr.getValue("auto_renew_enabled"));
+            renewTaskgr.setValue("auto_renew_days_before_expiry", certMetadataGr.getValue("auto_renew_days_before_expiry"));
+        }
+        var taskId = renewTaskgr.insert();
+        new CertificateRequestAutomatedFlow().updateCertTaskWorkNotes(taskId, gs.getMessage('starting_auto_renewal_process'));
+
+        certdata['renewal_task_id'] = taskId;
+        return taskId;
+    },
+    getCertValiditySpan: function(certGr) {
+        var validFrom = certGr.getValue('valid_from');
+        var validTo = certGr.getValue('valid_to');
+
+        var fromDate = new GlideDateTime(validFrom);
+        var toDate = new GlideDateTime(validTo);
+
+        var days = GlideDateTime.subtract(fromDate, toDate).getRoundedDayPart();
+        return days;
+    },
+    getParameterMap: function(certGr, subjectCommonAttrs) {
+        var parameterMap = {};
+        parameterMap["certificate_sys_id"] = certGr.getValue("sys_id");
+		var domain = gs.getSession().getCurrentDomainID();
+        parameterMap["sys_domain"] = domain != null ? domain : certGr.getValue('sys_domain');
+
+        parameterMap["subject_common_name"] = this.getAttributes("subject_common_name", subjectCommonAttrs, certGr);
+
+        parameterMap["subject_alternative_name"] = this.getSAN("subject_alternative_name", subjectCommonAttrs, certGr);
+        parameterMap["organization"] = this.getAttributes("subject_organization", subjectCommonAttrs, certGr);
+        parameterMap["organization_unit"] = this.getAttributes("subject_organizational_unit", subjectCommonAttrs, certGr);
+        parameterMap["locality"] = this.getAttributes("subject_locality", subjectCommonAttrs, certGr);
+        parameterMap["province"] = this.getAttributes("subject_state", subjectCommonAttrs, certGr);
+        parameterMap["country"] = this.getAttributes("subject_country", subjectCommonAttrs, certGr);
+        parameterMap["email"] = this.getAttributes("subject_email", subjectCommonAttrs, certGr);
+        parameterMap["certificate_purpose"] = this.getAttributes("service_type", subjectCommonAttrs, certGr);
+        parameterMap["environment"] = this.getAttributes("environment", subjectCommonAttrs, certGr);
+        parameterMap["validity_period"] = (subjectCommonAttrs && subjectCommonAttrs['validity_period']) || this.getCertValiditySpan(certGr);
+
+        return parameterMap;
+    },
+    getAttributes: function(key, subjectCommonAttrs, certGr) {
+        return (subjectCommonAttrs && subjectCommonAttrs[key]) || certGr.getValue(key);
+    },
+
+	getSAN: function(key, subjectCommonAttrs, certGr) {
+		if (subjectCommonAttrs && subjectCommonAttrs[key]) {
+			return subjectCommonAttrs[key];
+		}
+		var certDomainGr = new GlideRecord('certificate_domain');
+		var sanIds = certGr.getValue('subject_alternative_name').split(',');
+		certDomainGr.addQuery('sys_id', 'IN', sanIds);
+		certDomainGr.query();
+		var subjectAlternativeNames = [];
+		while(certDomainGr.next()) {
+			subjectAlternativeNames.push(certDomainGr.getValue('domain'));
+		}
+		subjectAlternativeNames.splice(subjectAlternativeNames.indexOf(certGr.getValue('subject_common_name')), 1);
+		return subjectAlternativeNames.join(',');
+	},
+
+	deletePrivateKeys: function(privateKeyReferenceMap) {
+		new GenerateCSRProbeInvoker().invokeDeletePrivateKeyProbe(privateKeyReferenceMap);
+	},
+
+    type: 'CertificateRenewalTaskUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-05 15:04:38</sys_created_on>
+        <sys_id>7df9ebb73b9b3e50a1e3f65436e45a90</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CertificateRenewalTaskUtil</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_include_7df9ebb73b9b3e50a1e3f65436e45a90</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-05 15:06:21</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683e0c40000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_7df9ebb73b9b3e50a1e3f65436e45a90</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:19</sys_created_on>
+        <sys_id>e709ab9033f37e906c8432a19e5c7b58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:19</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dfc54ac03bbaba50a1e3f65436e45afd" extends="sys_import_set_row" label="Imp Tmpl Sn Disco Certmgmt Cert URL" max_length="40" name="u_imp_tmpl_sn_disco_certmgmt_cert_url" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=URL" label="URL" max_length="255" name="u_url" type="string"/>
+    </element>
+</database>

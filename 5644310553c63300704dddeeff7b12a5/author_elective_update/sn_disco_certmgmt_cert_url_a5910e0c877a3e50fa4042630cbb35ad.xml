@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url">
+    <sn_disco_certmgmt_cert_url action="DELETE">
+        <certificate/>
+        <sys_class_name>sn_disco_certmgmt_cert_url</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-27 19:19:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a5910e0c877a3e50fa4042630cbb35ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>https://www.bnb.gov.br:8443/</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sn_disco_certmgmt_cert_url_a5910e0c877a3e50fa4042630cbb35ad</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-27 19:19:59</sys_updated_on>
+        <url>https://www.bnb.gov.br:8443/</url>
+    </sn_disco_certmgmt_cert_url>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sn_disco_certmgmt_cert_url_a5910e0c877a3e50fa4042630cbb35ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url"><sn_disco_certmgmt_cert_url action="INSERT_OR_UPDATE"><certificate/><sys_class_name>sn_disco_certmgmt_cert_url</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-01-27 19:19:59</sys_created_on><sys_domain>global</sys_domain><sys_id>a5910e0c877a3e50fa4042630cbb35ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>https://www.bnb.gov.br:8443/</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sn_disco_certmgmt_cert_url_a5910e0c877a3e50fa4042630cbb35ad</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-01-27 19:19:59</sys_updated_on><url>https://www.bnb.gov.br:8443/</url></sn_disco_certmgmt_cert_url></record_update>]]></payload>
+        <payload_hash>1014012181</payload_hash>
+        <record_name>https://www.bnb.gov.br:8443/</record_name>
+        <reverted_from/>
+        <source>b527bec38723e210fa4042630cbb35d3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-27 19:19:59</sys_created_on>
+        <sys_id>65910e0c877a3e50fa4042630cbb35af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c00e5ff790000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-27 19:19:59</sys_updated_on>
+        <type>Certificate URL</type>
+        <update_guid>69910e0c807a3e50aa7c954d3aa9f5ae</update_guid>
+        <update_guid_history>69910e0c807a3e50aa7c954d3aa9f5ae:1014012181</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">dbdf1a513b763650a1e3f65436e45a9a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-31 18:44:40</sys_created_on>
+        <sys_db_object display_value="" name="sn_disco_certmgmt_cert_url">sn_disco_certmgmt_cert_url</sys_db_object>
+        <sys_id>1c26c04469204614893f44335f1d06c1</sys_id>
+        <sys_metadata>a5910e0c877a3e50fa4042630cbb35ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>https://www.bnb.gov.br:8443/</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sn_disco_certmgmt_cert_url_a5910e0c877a3e50fa4042630cbb35ad</sys_update_name>
+        <sys_update_version display_value="sn_disco_certmgmt_cert_url_a5910e0c877a3e50fa4042630cbb35ad">65910e0c877a3e50fa4042630cbb35af</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-31 18:44:40</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683dbe10000001</claim_timestamp>
+        <metadata_update_name>sn_disco_certmgmt_cert_url_a5910e0c877a3e50fa4042630cbb35ad</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:18</sys_created_on>
+        <sys_id>5f092b9033f37e906c8432a19e5c7be0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:18</sys_updated_on>
+    </sys_claim>
+</record_update>

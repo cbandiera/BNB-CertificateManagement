@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="discovery_port_probe">
+    <discovery_port_probe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <active_discover_cis>true</active_discover_cis>
+        <active_discover_ips>true</active_discover_ips>
+        <classification_priority/>
+        <classy/>
+        <conditional>true</conditional>
+        <description>Discovers TLS/SSL Certificates</description>
+        <name>tls_ssl_certs</name>
+        <scanner>CertificateCapture</scanner>
+        <script><![CDATA[ function(cidata, result, scanner, status, midServer, sensor) {
+		var logger = new global.DiscoveryLogger(status);
+
+		var certificateIngestion = new sn_disco_certmgmt.CertificateDiscoveryIngestion();
+
+		var encodedPayload = scanner.contents.certificate_payload;
+		if (encodedPayload == null) {
+			logger.warn("Could not receive certificate chain on " + result.ip + ":" + scanner.port, 'Shazzam', sensor.getEccQueueId());
+			return;
+		}
+
+		var decodedPayload = SNC.ProbePayloadTransportHelper.unpackTransportToStructured(encodedPayload, true, "UTF-8");
+		if (decodedPayload == null) {
+			logger.warn("Could not decode certificate chain on " + result.ip + ":" + scanner.port, 'Shazzam', sensor.getEccQueueId());
+			return;
+		}
+
+		var insertedID = certificateIngestion.ingestCertificatesFromPortScan(
+			status.sysID,
+			result.ip,
+			scanner.port,
+			scanner.contents.dns_name,
+			decodedPayload
+		);
+
+		if (gs.nil(insertedID))
+			logger.warn("Was not able to insert a certificate history record on " + result.ip + ":" + scanner.port, 'Shazzam', sensor.getEccQueueId());
+
+		var link = new global.RecordToHTML('sn_disco_certmgmt_certificate_history', insertedID, '${source}:${port}',  true);
+		logger.info('[code]Captured certificate chain for ' + link.toString() + '[/code]', 'Shazzam', sensor.getEccQueueId());
+
+ }]]></script>
+        <services>e4399630c0a801640174a61524c3288f,91505ebc7782330099808d1168106171,e6215690c0a80207006c82559e72d9ed,e584e7e2c0a80164005e67f1387d2b0c,d48cf3b90a0a0b2e0060c1e2d5e38507,c9505ebc7782330099808d1168106114,c9505ebc7782330099808d116810610a,c9505ebc7782330099808d116810610c,e434e9e6c0a8016400c0335d1ca6cdc7,e43a008dc0a801640178f2b21486df57,b8501ebc7782330099808d116810618d,e5845e43c0a8016400f895927025e0f7,e434b585c0a801640052fbe5e4de896a,7c501ebc7782330099808d11681061db</services>
+        <supplementary>false</supplementary>
+        <sys_class_name>discovery_port_probe</sys_class_name>
+        <sys_created_by>gary.stentiford</sys_created_by>
+        <sys_created_on>2019-06-26 19:37:19</sys_created_on>
+        <sys_id>1e699a597752330099808d116810612c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>tls_ssl_certs</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_port_probe_1e699a597752330099808d116810612c</sys_update_name>
+        <sys_updated_by>C022791@bnb.gov.br</sys_updated_by>
+        <sys_updated_on>2025-08-28 17:31:43</sys_updated_on>
+        <triggers_probe/>
+    </discovery_port_probe>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683db970000001</claim_timestamp>
+        <metadata_update_name>discovery_port_probe_1e699a597752330099808d116810612c</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>57092b9033f37e906c8432a19e5c7bd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
+</record_update>

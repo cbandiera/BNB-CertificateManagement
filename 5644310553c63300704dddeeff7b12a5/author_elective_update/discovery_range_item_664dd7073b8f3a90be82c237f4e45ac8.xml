@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_range_item">
+    <discovery_range_item action="DELETE">
+        <active>true</active>
+        <attributes/>
+        <end_ip_address/>
+        <name>Rede 170.82.172.0/23</name>
+        <netmask>23</netmask>
+        <network_ip>170.82.172.0</network_ip>
+        <parent display_value="IPs para obter Certificados externos">8f9c1f0f3b4f3a90be82c237f4e45ae5</parent>
+        <schedule/>
+        <start_ip_address/>
+        <summary>170.82.172.0/23</summary>
+        <sys_class_name>discovery_range_item</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-18 19:58:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>664dd7073b8f3a90be82c237f4e45ac8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rede 170.82.172.0/23</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_range_item_664dd7073b8f3a90be82c237f4e45ac8</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-18 19:58:29</sys_updated_on>
+        <type>IP Network</type>
+    </discovery_range_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>discovery_range_item_664dd7073b8f3a90be82c237f4e45ac8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_range_item"><discovery_range_item action="INSERT_OR_UPDATE"><active>true</active><attributes/><end_ip_address/><name>Rede 170.82.172.0/23</name><netmask>23</netmask><network_ip>170.82.172.0</network_ip><parent display_value="IPs para obter Certificados externos">8f9c1f0f3b4f3a90be82c237f4e45ae5</parent><schedule/><start_ip_address/><summary>170.82.172.0/23</summary><sys_class_name>discovery_range_item</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-02-18 19:58:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>664dd7073b8f3a90be82c237f4e45ac8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Rede 170.82.172.0/23</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>discovery_range_item_664dd7073b8f3a90be82c237f4e45ac8</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-02-18 19:58:29</sys_updated_on><type>IP Network</type></discovery_range_item></record_update>]]></payload>
+        <payload_hash>546307547</payload_hash>
+        <record_name>Rede 170.82.172.0/23</record_name>
+        <reverted_from/>
+        <source>95c6cda13bcf3610be82c237f4e45a18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-02-18 19:58:29</sys_created_on>
+        <sys_id>dc6dd7473b8f3a90be82c237f4e45aa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c725529e70000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-02-18 19:58:29</sys_updated_on>
+        <type>Discovery IP Range</type>
+        <update_guid>906dd747628f3a90a9a17e8c7806fca9</update_guid>
+        <update_guid_history>906dd747628f3a90a9a17e8c7806fca9:546307547</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5bdd304733b7ba106c8432a19e5c7b74</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 15:08:39</sys_created_on>
+        <sys_db_object display_value="" name="discovery_range_item">discovery_range_item</sys_db_object>
+        <sys_id>4ca70c0fad5e46dfa065305ab0e07ab1</sys_id>
+        <sys_metadata>664dd7073b8f3a90be82c237f4e45ac8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rede 170.82.172.0/23</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>discovery_range_item_664dd7073b8f3a90be82c237f4e45ac8</sys_update_name>
+        <sys_update_version display_value="discovery_range_item_664dd7073b8f3a90be82c237f4e45ac8">dc6dd7473b8f3a90be82c237f4e45aa9</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 15:08:39</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683ddce0000001</claim_timestamp>
+        <metadata_update_name>discovery_range_item_664dd7073b8f3a90be82c237f4e45ac8</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:18</sys_created_on>
+        <sys_id>db096b9033f37e906c8432a19e5c7b75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:18</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2">
+    <sys_data_policy2 action="DELETE">
+        <active>true</active>
+        <apply_import_set>false</apply_import_set>
+        <apply_soap>false</apply_soap>
+        <conditions/>
+        <description/>
+        <enforce_ui>true</enforce_ui>
+        <inherit>true</inherit>
+        <model_id/>
+        <model_table>sn_disco_certmgmt_task</model_table>
+        <reverse_if_false>false</reverse_if_false>
+        <short_description>Bloqueia alteração de Scope pelo usuário</short_description>
+        <sys_class_name>sys_data_policy2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-26 16:30:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98d6ccb23bb37650a1e3f65436e45a48</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Bloqueia alteração de Scope pelo usuário</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_data_policy2_98d6ccb23bb37650a1e3f65436e45a48</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-26 17:13:34</sys_updated_on>
+    </sys_data_policy2>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_data_policy2_98d6ccb23bb37650a1e3f65436e45a48</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2"><sys_data_policy2 action="INSERT_OR_UPDATE"><active>true</active><apply_import_set>false</apply_import_set><apply_soap>false</apply_soap><conditions/><description/><enforce_ui>true</enforce_ui><inherit>true</inherit><model_id/><model_table>sn_disco_certmgmt_task</model_table><reverse_if_false>false</reverse_if_false><short_description>Bloqueia alteração de Scope pelo usuário</short_description><sys_class_name>sys_data_policy2</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-03-26 16:30:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>98d6ccb23bb37650a1e3f65436e45a48</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Bloqueia alteração de Scope pelo usuário</sys_name><sys_overrides/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sys_data_policy2_98d6ccb23bb37650a1e3f65436e45a48</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-03-26 17:13:34</sys_updated_on></sys_data_policy2></record_update>]]></payload>
+        <payload_hash>-384019587</payload_hash>
+        <record_name>Bloqueia alteração de Scope pelo usuário</record_name>
+        <reverted_from/>
+        <source>17f52a9b3b93721cbe82c237f4e45a36</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-26 17:13:34</sys_created_on>
+        <sys_id>93d058f63bbfb650a1e3f65436e45aed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d2b231c2c0000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-26 17:13:34</sys_updated_on>
+        <type>Data Policy</type>
+        <update_guid>9bd058f646bfb65041dc659d973681eb</update_guid>
+        <update_guid_history>9bd058f646bfb65041dc659d973681eb:-384019587,370780bab6b37650606a088af401e1af:379026663,b0f60cb631b37650c4db891b8be4cb4d:1561614219</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-26 18:38:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_policy2">sys_data_policy2</sys_db_object>
+        <sys_id>0763f1e438f847dc848e69046b454919</sys_id>
+        <sys_metadata>98d6ccb23bb37650a1e3f65436e45a48</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bloqueia alteração de Scope pelo usuário</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent display_value="">3867350387eba210fa4042630cbb35c6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_data_policy2_98d6ccb23bb37650a1e3f65436e45a48</sys_update_name>
+        <sys_update_version display_value="sys_data_policy2_98d6ccb23bb37650a1e3f65436e45a48">93d058f63bbfb650a1e3f65436e45aed</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-26 18:38:01</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d2fddeca90000001</claim_timestamp>
+        <metadata_update_name>sys_data_policy2_98d6ccb23bb37650a1e3f65436e45a48</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 15:16:06</sys_created_on>
+        <sys_id>d09f7ccb33f7ba106c8432a19e5c7bb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 15:16:06</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="u_ca_issuer_mapping">8d04ee4487aebe90fa4042630cbb35f9</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>u_ca_issuer_mappings</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sn_disco_certmgmt_u_ca_issuer_mapping</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>sn_disco_certmgmt.u_ca_issuer_mapping_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-15 11:34:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d04228487aebe90fa4042630cbb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_ca_issuer_mappings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_app_module_1d04228487aebe90fa4042630cbb3500</sys_update_name>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-15 11:34:43</sys_updated_on>
+        <timeline_page/>
+        <title>u_ca_issuer_mappings</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_app_module_1d04228487aebe90fa4042630cbb3500</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="u_ca_issuer_mapping">8d04ee4487aebe90fa4042630cbb35f9</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>u_ca_issuer_mappings</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sn_disco_certmgmt_u_ca_issuer_mapping</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>sn_disco_certmgmt.u_ca_issuer_mapping_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>lucas.ferreira@extreme.digital</sys_created_by><sys_created_on>2026-01-15 11:34:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1d04228487aebe90fa4042630cbb3500</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_ca_issuer_mappings</sys_name><sys_overrides/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sys_app_module_1d04228487aebe90fa4042630cbb3500</sys_update_name><sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by><sys_updated_on>2026-01-15 11:34:43</sys_updated_on><timeline_page/><title>u_ca_issuer_mappings</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-379163915</payload_hash>
+        <record_name>u_ca_issuer_mappings</record_name>
+        <reverted_from/>
+        <source>e0bee897871afa50fa4042630cbb359e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+        <sys_created_on>2026-01-15 11:34:43</sys_created_on>
+        <sys_id>d904228487aebe90fa4042630cbb3504</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bc16fbbfc0000001</sys_recorded_at>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-01-15 11:34:43</sys_updated_on>
+        <type>Module</type>
+        <update_guid>590422845aaebe901359a5cdd2a40d03</update_guid>
+        <update_guid_history>590422845aaebe901359a5cdd2a40d03:-379163915</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">4ceef08333f7ba106c8432a19e5c7b31</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 15:13:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0a8694f014b34421b942ecb0f7e26a39</sys_id>
+        <sys_metadata>1d04228487aebe90fa4042630cbb3500</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_ca_issuer_mappings</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_app_module_1d04228487aebe90fa4042630cbb3500</sys_update_name>
+        <sys_update_version display_value="sys_app_module_1d04228487aebe90fa4042630cbb3500">d904228487aebe90fa4042630cbb3504</sys_update_version>
+        <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 15:13:05</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683d7e20000001</claim_timestamp>
+        <metadata_update_name>sys_app_module_1d04228487aebe90fa4042630cbb3500</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:17</sys_created_on>
+        <sys_id>07092b9033f37e906c8432a19e5c7b38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
+    </sys_claim>
+</record_update>

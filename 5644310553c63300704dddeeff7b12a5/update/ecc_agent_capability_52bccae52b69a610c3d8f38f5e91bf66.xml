@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_capability">
+    <ecc_agent_capability action="INSERT_OR_UPDATE">
+        <capability>GenerateCSR</capability>
+        <capability_value>GenerateCSR</capability_value>
+        <is_acc_capability>false</is_acc_capability>
+        <sys_class_name>ecc_agent_capability</sys_class_name>
+        <sys_created_by>now.discovery.content</sys_created_by>
+        <sys_created_on>2025-05-16 12:30:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>52bccae52b69a610c3d8f38f5e91bf66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GenerateCSR</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>ecc_agent_capability_52bccae52b69a610c3d8f38f5e91bf66</sys_update_name>
+        <sys_updated_by>now.discovery.content</sys_updated_by>
+        <sys_updated_on>2025-05-16 12:30:02</sys_updated_on>
+        <value/>
+    </ecc_agent_capability>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d0683e0ca0000001</claim_timestamp>
+        <metadata_update_name>ecc_agent_capability_52bccae52b69a610c3d8f38f5e91bf66</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 14:33:19</sys_created_on>
+        <sys_id>6309ab9033f37e906c8432a19e5c7b59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:33:19</sys_updated_on>
+    </sys_claim>
+</record_update>

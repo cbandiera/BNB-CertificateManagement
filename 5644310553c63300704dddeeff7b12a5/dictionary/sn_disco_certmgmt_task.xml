@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="27398e03fb6722502bf1f9685eefdc36" extends="task" label="Tarefa de certificação (fluxo automatizado)" max_length="40" name="sn_disco_certmgmt_task" type="collection">
+        <element attributes="edge_encryption_enabled=true" hint="Nome comum do assunto da certificação" label="Subject common name" mandatory="true" max_length="255" name="subject_common_name" type="string"/>
+        <element choice="1" label="Renewal Flow" max_length="40" name="u_renewal_flow" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Fluxo B - CA Interna / Instalação Manual" sequence="2" value="flow_b"/>
+                <element inactive_on_update="false" label="Fluxo C - CA Interna / Instalação Automática" sequence="3" value="flow_c"/>
+                <element inactive_on_update="false" label="Fluxo A - CA Externa" sequence="1" value="flow_a"/>
+            </choice>
+        </element>
+        <element label="Target CI" max_length="32" name="u_target_ci" reference="cmdb_ci" type="reference"/>
+    </element>
+</database>
