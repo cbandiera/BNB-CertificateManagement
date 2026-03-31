@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_range_item_ip">
+    <discovery_range_item_ip action="DELETE">
+        <exclude_parent/>
+        <ip_address>200.164.107.203</ip_address>
+        <item_parent display_value="">301f70d833480f106c8432a19e5c7bbf</item_parent>
+        <name/>
+        <sys_class_name>discovery_range_item_ip</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-31 13:58:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6c445ddc33804f106c8432a19e5c7b0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_range_item_ip_6c445ddc33804f106c8432a19e5c7b0f</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-31 13:58:54</sys_updated_on>
+    </discovery_range_item_ip>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>discovery_range_item_ip_6c445ddc33804f106c8432a19e5c7b0f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_range_item_ip"><discovery_range_item_ip action="INSERT_OR_UPDATE"><exclude_parent/><ip_address>200.164.107.203</ip_address><item_parent display_value="">301f70d833480f106c8432a19e5c7bbf</item_parent><name/><sys_class_name>discovery_range_item_ip</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-03-31 13:58:54</sys_created_on><sys_domain>global</sys_domain><sys_id>6c445ddc33804f106c8432a19e5c7b0f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>discovery_range_item_ip_6c445ddc33804f106c8432a19e5c7b0f</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-03-31 13:58:54</sys_updated_on></discovery_range_item_ip></record_update>]]></payload>
+        <payload_hash>-557663231</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>17f52a9b3b93721cbe82c237f4e45a36</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-31 13:58:54</sys_created_on>
+        <sys_id>20445ddc33804f106c8432a19e5c7b12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d4430b10d0000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-31 13:58:54</sys_updated_on>
+        <type>Discovery Range Item IP</type>
+        <update_guid>24445ddcf1804f10d638ddf0a8139211</update_guid>
+        <update_guid_history>24445ddcf1804f10d638ddf0a8139211:-557663231</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2655151833c04f106c8432a19e5c7b48</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-31 14:03:41</sys_created_on>
+        <sys_db_object display_value="" name="discovery_range_item_ip">discovery_range_item_ip</sys_db_object>
+        <sys_id>0a4a68d6807e4cf09a0dc77fb010ea19</sys_id>
+        <sys_metadata>6c445ddc33804f106c8432a19e5c7b0f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>discovery_range_item_ip_6c445ddc33804f106c8432a19e5c7b0f</sys_update_name>
+        <sys_update_version display_value="discovery_range_item_ip_6c445ddc33804f106c8432a19e5c7b0f">20445ddc33804f106c8432a19e5c7b12</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-31 14:03:41</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d4445fdb30000001</claim_timestamp>
+        <metadata_update_name>discovery_range_item_ip_6c445ddc33804f106c8432a19e5c7b0f</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-31 14:22:10</sys_created_on>
+        <sys_id>1199959433444f106c8432a19e5c7b9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-31 14:22:10</sys_updated_on>
+    </sys_claim>
+</record_update>

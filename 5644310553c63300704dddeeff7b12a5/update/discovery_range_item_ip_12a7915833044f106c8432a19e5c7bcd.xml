@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_range_item_ip">
+    <discovery_range_item_ip action="INSERT_OR_UPDATE">
+        <exclude_parent/>
+        <ip_address>170.82.174.30</ip_address>
+        <item_parent display_value="IPs Externos">ba8495dc33804f106c8432a19e5c7bea</item_parent>
+        <name/>
+        <sys_class_name>discovery_range_item_ip</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-31 14:13:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>12a7915833044f106c8432a19e5c7bcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_range_item_ip_12a7915833044f106c8432a19e5c7bcd</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-31 14:13:47</sys_updated_on>
+    </discovery_range_item_ip>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d444601940000001</claim_timestamp>
+        <metadata_update_name>discovery_range_item_ip_12a7915833044f106c8432a19e5c7bcd</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-31 14:22:11</sys_created_on>
+        <sys_id>ed99d59433444f106c8432a19e5c7b86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-31 14:22:11</sys_updated_on>
+    </sys_claim>
+</record_update>
