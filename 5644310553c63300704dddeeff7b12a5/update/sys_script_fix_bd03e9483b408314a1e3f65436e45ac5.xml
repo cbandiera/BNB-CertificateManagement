@@ -4,10 +4,7 @@
         <description>Ajusta os metadados dos certificados existentes</description>
         <name>BNB Implantacão Customização certificado</name>
         <record_for_rollback>true</record_for_rollback>
-        <script><![CDATA[var utils = new sn_disco_certmgmt.BNBCertificateManagementUtils();
-utils.updatedAllCertsMetadata();
-
-var grDisco = new GlideRecord('discovery_schedule');
+        <script><![CDATA[var grDisco = new GlideRecord('discovery_schedule');
 grDisco.get('301f70d833480f106c8432a19e5c7bbf');
 
 var grMID = new GlideRecord('ecc_agent_cluster');
@@ -16,19 +13,22 @@ grMID.get('name', 'MID_CAPGV_COM');
 grDisco.mid_select_method = "specific_cluster";
 grDisco.mid_cluster = grMID.sys_id;
 grDisco.update();
+
+var utils = new BNBCertificateMangementUtils();
+utils.updatedAllCertsMetadata();
 ]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-30 20:38:27</sys_created_on>
         <sys_id>bd03e9483b408314a1e3f65436e45ac5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>BNB Implantacão Customização certificado</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_fix_bd03e9483b408314a1e3f65436e45ac5</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-31 14:21:20</sys_updated_on>
+        <sys_updated_on>2026-03-31 16:08:17</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
     <sys_claim action="INSERT_OR_UPDATE">
