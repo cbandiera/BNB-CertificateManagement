@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5773605233a33a506c8432a19e5c7b98</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="api_key_credentials">
+    <api_key_credentials action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_key>﷞﷟﷒07df2d7c3b632610a1e3f65436e45ae5﷬﷔1﷬﷭crmEvr047vg2_d-lZQUmKQ==GvQnCDYENx-umkSUlaAGd5DhtwtgW2vrRPSiAk2ORALwNOdDf5zOu5aVdxTWGQ==﷮﷯</api_key>
+        <api_key_header_name/>
+        <api_key_prefix/>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <applies_to>all</applies_to>
+        <authentication_key>﷞﷟﷒88c27d703be32610a1e3f65436e45a0a﷬﷔1﷬﷭LwLJ4H42_6n3g5TUkVMf8g==Y9PC3NZnEayUgVuhuMk10TP4IlKNXENkART_6sbh3WSloqJMmOmwTrgTqBl20A==﷮﷯</authentication_key>
+        <authentication_protocol/>
+        <classification>api_key</classification>
+        <context_name/>
+        <credential_id/>
+        <credential_storage_vault display_value="CyberArk">2bb9bebab7462010eca29a85de11a96d</credential_storage_vault>
+        <credential_store_type>other</credential_store_type>
+        <lookup_key>credential_id</lookup_key>
+        <mid_list/>
+        <name>AWX Linux Prod Bearer Token</name>
+        <order>100</order>
+        <password/>
+        <privacy_key/>
+        <privacy_protocol/>
+        <ssh_certificate/>
+        <ssh_passphrase/>
+        <ssh_private_key/>
+        <sys_class_name>api_key_credentials</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-12 19:07:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5773605233a33a506c8432a19e5c7b98</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-13 19:05:47</sys_updated_on>
+        <tag/>
+        <type>api_key</type>
+        <use_context>false</use_context>
+        <use_high_security>false</use_high_security>
+        <user_name/>
+    </api_key_credentials>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-01 21:27:44</sys_created_on>
+        <sys_id>459408fc334847906c8432a19e5c7bf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AWX Linux Prod Bearer Token</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_metadata_link_459408fc334847906c8432a19e5c7bf2</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-01 21:27:44</sys_updated_on>
+        <tablename>api_key_credentials</tablename>
+    </sys_metadata_link>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d4af2ff0a0000001</claim_timestamp>
+        <metadata_update_name>sys_metadata_link_459408fc334847906c8432a19e5c7bf2</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-01 21:28:52</sys_created_on>
+        <sys_id>95d48470338847906c8432a19e5c7b86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-01 21:28:52</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Discovered Certificate" section_id="2a04f7e4334047906c8432a19e5c7bf1" sys_domain="global" table="sn_disco_certmgmt_certificate_history" version="3" view="certificate_management">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_ci</element>
+            <position>0</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>c5ec73ac334447906c8432a19e5c7b4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source</element>
+            <position>1</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>c5ec73ac334447906c8432a19e5c7b4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>discovery_method</element>
+            <position>2</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>81ec73ac334447906c8432a19e5c7b4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>3</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>4dec73ac334447906c8432a19e5c7b4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_domain</element>
+            <position>4</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>09ec73ac334447906c8432a19e5c7b50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>port</element>
+            <position>5</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>c1ec73ac334447906c8432a19e5c7b51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>path</element>
+            <position>6</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>8dec73ac334447906c8432a19e5c7b51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dns_name</element>
+            <position>7</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>49ec73ac334447906c8432a19e5c7b52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>payload</element>
+            <position>8</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
+            <sys_id>05ec73ac334447906c8432a19e5c7b53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Discovered Certificate</caption>
+            <header>false</header>
+            <name>sn_disco_certmgmt_certificate_history</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-01 20:15:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a04f7e4334047906c8432a19e5c7bf1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>sn_disco_certmgmt_certificate_history</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_ui_section_2a04f7e4334047906c8432a19e5c7bf1</sys_update_name>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-01 20:30:42</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d4af2ff040000001</claim_timestamp>
+        <metadata_update_name>sys_ui_section_2a04f7e4334047906c8432a19e5c7bf1</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-01 21:28:52</sys_created_on>
+        <sys_id>d9d48470338847906c8432a19e5c7b85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-01 21:28:52</sys_updated_on>
+    </sys_claim>
+</record_update>
