@@ -2,9 +2,9 @@
     <element audit="true" db_object_id="3867350387eba210fa4042630cbb35c6" extends="task" label="Tarefa de certificação (fluxo automatizado)" max_length="40" name="sn_disco_certmgmt_task" text_index="true" type="collection">
         <element choice="1" label="Renewal Flow" max_length="40" name="u_renewal_flow" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Fluxo B - CA Interna / Instalação Manual" sequence="2" value="flow_b"/>
-                <element inactive_on_update="false" label="Fluxo C - CA Interna / Instalação Automática" sequence="3" value="flow_c"/>
                 <element inactive_on_update="false" label="Fluxo A - CA Externa" sequence="1" value="flow_a"/>
+                <element inactive_on_update="false" label="Fluxo C - CA Interna / Instalação Automática" sequence="3" value="flow_c"/>
+                <element inactive_on_update="false" label="Fluxo B - CA Interna / Instalação Manual" sequence="2" value="flow_b"/>
             </choice>
         </element>
         <element label="Target CI" max_length="32" name="u_target_ci" reference="cmdb_ci" type="reference"/>

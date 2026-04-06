@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b317c5eb3bab7e14a1e3f65436e45a36</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>BNB Verifica Status Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b317c5eb3bab7e14a1e3f65436e45a36</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 21:08:27</sys_updated_on>
+        <sys_updated_on>2026-04-06 22:00:27</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -151,34 +151,6 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>54aa5d7f33a3b6106c8432a19e5c7bf8</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-17 14:54:06</sys_created_on>
-        <sys_id>a8aa9d7f33a3b6106c8432a19e5c7bf1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-17 14:54:06</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>54aa5d7f33a3b6106c8432a19e5c7bf8</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-17 14:54:06</sys_created_on>
-        <sys_id>24aadd7f33a3b6106c8432a19e5c7b32</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-17 14:54:06</sys_updated_on>
-        <value/>
-        <variable display_value="">50aa9d7f33a3b6106c8432a19e5c7b22</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>54aa5d7f33a3b6106c8432a19e5c7bf8</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
@@ -219,6 +191,34 @@ function addWorkNotes(taskId, message) {&#13;
 	}&#13;
 }</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>54aa5d7f33a3b6106c8432a19e5c7bf8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-17 14:54:06</sys_created_on>
+        <sys_id>a8aa9d7f33a3b6106c8432a19e5c7bf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-17 14:54:06</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>54aa5d7f33a3b6106c8432a19e5c7bf8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-17 14:54:06</sys_created_on>
+        <sys_id>24aadd7f33a3b6106c8432a19e5c7b32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-17 14:54:06</sys_updated_on>
+        <value/>
+        <variable display_value="">50aa9d7f33a3b6106c8432a19e5c7b22</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=54aa5d7f33a3b6106c8432a19e5c7bf8"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -1000,7 +1000,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-17 14:54:06</sys_created_on>
         <sys_id>60aa9d7f33a3b6106c8432a19e5c7be8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1928,7 +1928,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-16 18:51:25</sys_created_on>
         <sys_id>0f5749ef3bab7e14a1e3f65436e45aa2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job ID</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1951,7 +1951,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-17 14:54:03</sys_created_on>
         <sys_id>bf9ad97f33a3b6106c8432a19e5c7b9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1974,7 +1974,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-17 12:30:10</sys_created_on>
         <sys_id>c0b9743f33e736106c8432a19e5c7ba0</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
+        <sys_name>Certificate Task</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1998,7 +1998,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-16 18:51:26</sys_created_on>
         <sys_id>535789ef3bab7e14a1e3f65436e45a68</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2021,7 +2021,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-19 18:24:31</sys_created_on>
         <sys_id>9efd986833ffbe906c8432a19e5c7b72</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2044,7 +2044,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-16 18:51:26</sys_created_on>
         <sys_id>d75789ef3bab7e14a1e3f65436e45ab6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -3419,7 +3419,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-17 17:38:52</sys_created_on>
         <sys_id>4650cef733effa106c8432a19e5c7b48</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -3982,7 +3982,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-16 18:59:00</sys_created_on>
         <sys_id>46194de73b2f7e14a1e3f65436e45a0f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job ID</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -4005,7 +4005,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-17 17:38:50</sys_created_on>
         <sys_id>65508af733effa106c8432a19e5c7b1a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -4028,7 +4028,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-17 12:30:12</sys_created_on>
         <sys_id>acb9b43f33e736106c8432a19e5c7bac</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
+        <sys_name>Certificate Task</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -4052,7 +4052,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-16 18:59:01</sys_created_on>
         <sys_id>16198de73b2f7e14a1e3f65436e45a01</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -4075,7 +4075,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-16 18:59:01</sys_created_on>
         <sys_id>9e194de73b2f7e14a1e3f65436e45ace</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -4098,7 +4098,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_on>2026-03-19 18:24:46</sys_created_on>
         <sys_id>bd0e90a833ffbe906c8432a19e5c7b49</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
