@@ -324,7 +324,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7c4824f687cfe590fc5febd73cbb3591</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Records in Certificate Management</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -332,21 +332,21 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_ux_screen_7c4824f687cfe590fc5febd73cbb3591</sys_update_name>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 18:01:23</sys_updated_on>
+        <sys_updated_on>2026-04-06 22:16:07</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=7c4824f687cfe590fc5febd73cbb3591"/>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
-        <claim_timestamp>19d4af2ff2a0000001</claim_timestamp>
+        <claim_timestamp>19d64e2e0a20000001</claim_timestamp>
         <metadata_update_name>sys_ux_screen_7c4824f687cfe590fc5febd73cbb3591</metadata_update_name>
         <previous_claim_app_version>4.0.1</previous_claim_app_version>
         <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
         <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-04-01 21:28:52</sys_created_on>
-        <sys_id>6dd48470338847906c8432a19e5c7b89</sys_id>
+        <sys_created_on>2026-04-06 22:21:23</sys_created_on>
+        <sys_id>bbc0c652334c47506c8432a19e5c7b48</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-01 21:28:52</sys_updated_on>
+        <sys_updated_on>2026-04-06 22:21:23</sys_updated_on>
     </sys_claim>
 </record_update>

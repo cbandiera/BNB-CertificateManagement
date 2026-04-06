@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>CONTENT_UPDATED_RELAY_049f799a330c47506c8432a19e5c7b29</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Add parameters to URL Relay (Records in Certificate Management)</label>
+        <props>[
+    {
+        "defaultValue": null,
+        "description": "Add parameters to the URL",
+        "fieldType": "json",
+        "label": "Parameters",
+        "name": "params",
+        "type": "json",
+        "typeMetadata": {
+            "schema": {
+                "properties": {
+                    "selectedIndex": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Add parameters to the URL",
+  "comment" : ""
+}, {
+  "message" : "Parameters",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:15:58</sys_created_on>
+        <sys_id>609f799a330c47506c8432a19e5c7bd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add parameters to URL Relay (Records in Certificate Management)</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_event_609f799a330c47506c8432a19e5c7bd7</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:15:58</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=609f799a330c47506c8432a19e5c7bd7"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d64e2e0b90000001</claim_timestamp>
+        <metadata_update_name>sys_ux_event_609f799a330c47506c8432a19e5c7bd7</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:21:23</sys_created_on>
+        <sys_id>7bc0c652334c47506c8432a19e5c7b4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:21:23</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -2,8 +2,8 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="Records in Certificate Management copy">0d25459633c8c3506c8432a19e5c7bb4</macroponent>
-        <name>OnFailureValidateCSR</name>
+        <macroponent display_value="BNB - Records in Certificate Management ">049f799a330c47506c8432a19e5c7b29</macroponent>
+        <name>OnCSRSelectChange</name>
         <preset/>
         <required_translations>[]</required_translations>
         <script><![CDATA[/**
@@ -15,50 +15,51 @@
 */
 function handler({api, event, helpers, imports}) {
     /**
-     * Sets the CSR validation alert to critical/error state.
+     * Handles CSR option selection change event.
      * 
-     * Updates the alert to display an "Invalid CSR" message, typically
-     * called when CSR validation fails or encounters an error.
+     * Updates the renew_payload state with the newly selected CSR option
+     * while preserving existing payload properties.
+     * 
+     * @param {Object} event - Event object containing the selected value
+     * @param {Object} event.payload.value - The selected CSR option identifier
      */
 
-    // Immutably update alert - avoid direct mutation of state
-    const updatedAlert = [...api.state.validate_csr_alert];
-    updatedAlert[0] = {
-        ...updatedAlert[0],
-        status: 'critical',
-        content: 'Invalid CSR'
-    };
+    const selection = event.payload.value;
 
-    api.setState('validate_csr_alert', updatedAlert);
+    // Immutably update state by spreading existing payload and overwriting selection
+    api.setState('renew_payload', {
+        ...api.state.renew_payload,
+        csr_option_selected: selection
+    });
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-04-06 18:00:43</sys_created_on>
-        <sys_id>55250d9633c8c3506c8432a19e5c7b4f</sys_id>
+        <sys_created_on>2026-04-06 22:15:58</sys_created_on>
+        <sys_id>589f799a330c47506c8432a19e5c7bcf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>OnFailureValidateCSR</sys_name>
+        <sys_name>OnCSRSelectChange</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_update_name>sys_ux_client_script_55250d9633c8c3506c8432a19e5c7b4f</sys_update_name>
+        <sys_update_name>sys_ux_client_script_589f799a330c47506c8432a19e5c7bcf</sys_update_name>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 18:00:43</sys_updated_on>
+        <sys_updated_on>2026-04-06 22:15:58</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
-        <claim_timestamp>19d63facb260000001</claim_timestamp>
-        <metadata_update_name>sys_ux_client_script_55250d9633c8c3506c8432a19e5c7b4f</metadata_update_name>
+        <claim_timestamp>19d64e2e0310000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_589f799a330c47506c8432a19e5c7bcf</metadata_update_name>
         <previous_claim_app_version>4.0.1</previous_claim_app_version>
         <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
         <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-04-06 18:07:53</sys_created_on>
-        <sys_id>dec605de330cc3506c8432a19e5c7b78</sys_id>
+        <sys_created_on>2026-04-06 22:21:23</sys_created_on>
+        <sys_id>77c08652334c47506c8432a19e5c7bd0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 18:07:53</sys_updated_on>
+        <sys_updated_on>2026-04-06 22:21:23</sys_updated_on>
     </sys_claim>
 </record_update>

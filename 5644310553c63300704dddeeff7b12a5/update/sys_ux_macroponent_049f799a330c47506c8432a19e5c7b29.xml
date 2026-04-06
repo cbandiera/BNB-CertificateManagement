@@ -3496,7 +3496,7 @@
                                 "apiVersion": "2.0.0",
                                 "controllerElementId": null,
                                 "inlineScript": null,
-                                "scriptSysId": "4848a0f687cfe590fc5febd73cbb3524",
+                                "scriptSysId": "509f799a330c47506c8432a19e5c7b75",
                                 "target": null
                             },
                             "type": "CLIENT_TRANSFORM_SCRIPT"
@@ -3632,7 +3632,7 @@
                                 "type": "JSON_LITERAL",
                                 "value": {}
                             },
-                            "sysId": "83bf3faa533132109c993a41c0f7b413"
+                            "sysId": "949f799a330c47506c8432a19e5c7b83"
                         },
                         "conditional": null,
                         "declarativeAction": null,
@@ -4821,7 +4821,7 @@
                                                 "conditional": null,
                                                 "declarativeAction": null,
                                                 "event": {
-                                                    "apiName": "sn_disco_certmgmt.CONTENT_UPDATED_RELAY_0048a0f687cfe590fc5febd73cbb3521",
+                                                    "apiName": "sn_disco_certmgmt.CONTENT_UPDATED_RELAY_049f799a330c47506c8432a19e5c7b29",
                                                     "payload": {
                                                         "script": {
                                                             "apiVersion": "1.0.0",
@@ -4832,7 +4832,7 @@
                                                         },
                                                         "type": "CLIENT_TRANSFORM_SCRIPT"
                                                     },
-                                                    "sysId": "8fd1c401534232109c993a41c0f7b480"
+                                                    "sysId": "609f799a330c47506c8432a19e5c7bd7"
                                                 },
                                                 "operation": null,
                                                 "targetId": "tvKYoeehhfWDEhhhjjeekJbUeehhajDnj",
@@ -4844,7 +4844,7 @@
                                                 "conditional": null,
                                                 "declarativeAction": null,
                                                 "event": {
-                                                    "apiName": "sn_disco_certmgmt.MODAL_SELECTED_RELAY_0048a0f687cfe590fc5febd73cbb3521",
+                                                    "apiName": "sn_disco_certmgmt.MODAL_SELECTED_RELAY_049f799a330c47506c8432a19e5c7b29",
                                                     "payload": {
                                                         "type": "JSON_LITERAL",
                                                         "value": {
@@ -4860,7 +4860,7 @@
                                                             "viewportRoute": null
                                                         }
                                                     },
-                                                    "sysId": "abfc3ff4530232109c993a41c0f7b439"
+                                                    "sysId": "ac9f799a330c47506c8432a19e5c7bda"
                                                 },
                                                 "operation": null,
                                                 "targetId": "lIKJWeehhkVBkmcjjccAHKhdfbRjjS",
@@ -4869,10 +4869,10 @@
                                         ]
                                     }
                                 ],
-		                        "isHidden": {
-		                            "type": "JSON_LITERAL",
-		                            "value": true
-		                        },
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": true
+                                },
                                 "preset": null,
                                 "propertyValues": {
                                     "animatedIcon": {
@@ -6061,7 +6061,7 @@
                                 "type": "JSON_LITERAL",
                                 "value": {}
                             },
-                            "sysId": "b3af3d70533132109c993a41c0f7b45c"
+                            "sysId": "509f799a330c47506c8432a19e5c7bc5"
                         },
                         "conditional": null,
                         "declarativeAction": null,
@@ -6855,7 +6855,7 @@
                                                                     "type": "JSON_LITERAL",
                                                                     "value": {}
                                                                 },
-                                                                "sysId": "d8653dc253f132109c993a41c0f7b441"
+                                                                "sysId": "589f799a330c47506c8432a19e5c7bcf"
                                                             },
                                                             "conditional": null,
                                                             "declarativeAction": null,
@@ -7114,7 +7114,7 @@
                                                                     "type": "JSON_LITERAL",
                                                                     "value": {}
                                                                 },
-                                                                "sysId": "d8653dc253f132109c993a41c0f7b441"
+                                                                "sysId": "589f799a330c47506c8432a19e5c7bcf"
                                                             },
                                                             "conditional": null,
                                                             "declarativeAction": null,
@@ -7290,7 +7290,7 @@
                                                                     "type": "JSON_LITERAL",
                                                                     "value": {}
                                                                 },
-                                                                "sysId": "d27767a0530232109c993a41c0f7b4a3"
+                                                                "sysId": "509f799a330c47506c8432a19e5c7bcc"
                                                             },
                                                             "conditional": null,
                                                             "declarativeAction": null,
@@ -7557,7 +7557,7 @@
                                                         "type": "JSON_LITERAL",
                                                         "value": {}
                                                     },
-                                                    "sysId": "5c653dc253f132109c993a41c0f7b441"
+                                                    "sysId": "509f799a330c47506c8432a19e5c7b7c"
                                                 },
                                                 "conditional": null,
                                                 "declarativeAction": null,
@@ -7855,7 +7855,7 @@
                                                         "type": "JSON_LITERAL",
                                                         "value": {}
                                                     },
-                                                    "sysId": "f3af3d70533132109c993a41c0f7b45c"
+                                                    "sysId": "509f799a330c47506c8432a19e5c7bd3"
                                                 },
                                                 "conditional": null,
                                                 "declarativeAction": null,
@@ -8509,7 +8509,7 @@
                                 "type": "JSON_LITERAL",
                                 "value": {}
                             },
-                            "sysId": "4cc24f96ff3132109c99ffffffffff89"
+                            "sysId": "589f799a330c47506c8432a19e5c7b78"
                         },
                         "conditional": null,
                         "declarativeAction": null,
@@ -8540,7 +8540,7 @@
                                 "type": "JSON_LITERAL",
                                 "value": {}
                             },
-                            "sysId": "ccc24f96ff3132109c99ffffffffff89"
+                            "sysId": "589f799a330c47506c8432a19e5c7bc8"
                         },
                         "conditional": null,
                         "declarativeAction": null,
@@ -8588,7 +8588,7 @@
                                 "type": "JSON_LITERAL",
                                 "value": {}
                             },
-                            "sysId": "03bf3faa533132109c993a41c0f7b413"
+                            "sysId": "1c9f799a330c47506c8432a19e5c7b6d"
                         },
                         "conditional": null,
                         "declarativeAction": null,
@@ -8619,7 +8619,7 @@
                                 "type": "JSON_LITERAL",
                                 "value": {}
                             },
-                            "sysId": "43bf3faa533132109c993a41c0f7b413"
+                            "sysId": "589f799a330c47506c8432a19e5c7b71"
                         },
                         "conditional": null,
                         "declarativeAction": null,
@@ -8642,7 +8642,7 @@
 ]</data>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
-        <dispatched_events>abfc3ff4530232109c993a41c0f7b439,8fd1c401534232109c993a41c0f7b480</dispatched_events>
+        <dispatched_events>609f799a330c47506c8432a19e5c7bd7,ac9f799a330c47506c8432a19e5c7bda</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -8659,7 +8659,7 @@
                     "type": "JSON_LITERAL",
                     "value": {}
                 },
-                "sysId": "73af3d70533132109c993a41c0f7b45c"
+                "sysId": "589f799a330c47506c8432a19e5c7b7f"
             },
             "conditional": null,
             "declarativeAction": null,
@@ -8759,7 +8759,7 @@
     "version": "3.0.0"
 }</layout>
         <macroponent_dependencies/>
-        <name>Records in Certificate Management</name>
+        <name>BNB - Records in Certificate Management </name>
         <output_prop_mapping/>
         <props>[
     {
@@ -8845,7 +8845,7 @@
         "description": null,
         "disabled": false,
         "fieldType": "string",
-        "label": "query",
+        "label": "Query",
         "mandatory": false,
         "name": "query",
         "readOnly": false,
@@ -8901,120 +8901,159 @@
 ]</props>
         <required_translations>[ {
   "message" : "Activity",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "After submission renew certificate task would be created",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Agent assist",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Attachment",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Auto generate with private key",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Cancel",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Certificate Details",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Certificate Signing Request(CSR)",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Choose how you want to provide CSR",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Compose",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Continue?",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Custom Close Confirmation",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Editable record form and list of record activities",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Editable record form only",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Email template",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Enter the CSR",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Issuer",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "List of record activities and input fields for posting work notes or comments",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Manually ",
-  "comment" : ""
-}, {
-  "message" : "Record not found",
-  "comment" : ""
-}, {
-  "message" : "RelatedList",
-  "comment" : ""
-}, {
-  "message" : "Renew",
-  "comment" : ""
-}, {
-  "message" : "Renew certificate",
-  "comment" : ""
-}, {
-  "message" : "Renew certificate(Automated flow)",
-  "comment" : ""
-}, {
-  "message" : "Security constraints prevent access to requested page",
-  "comment" : ""
-}, {
-  "message" : "Settings",
-  "comment" : ""
-}, {
-  "message" : "Setup Details",
-  "comment" : ""
-}, {
-  "message" : "Subject common name",
-  "comment" : ""
-}, {
-  "message" : "Submit",
-  "comment" : ""
-}, {
-  "message" : "Submit certificate for auto renewal",
-  "comment" : ""
-}, {
-  "message" : "Submit form",
-  "comment" : ""
-}, {
-  "message" : "Task Details",
-  "comment" : ""
-}, {
-  "message" : "Template",
-  "comment" : ""
-}, {
-  "message" : "Valid to",
-  "comment" : ""
-}, {
-  "message" : "Validity period in days",
-  "comment" : ""
-}, {
-  "message" : "Yes",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Open map",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "Opens Unified Map for the current Record",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Record not found",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "RelatedList",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Renew",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Renew certificate",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Renew certificate(Automated flow)",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Security constraints prevent access to requested page",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Settings",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Setup Details",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Subject common name",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Submit",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Submit certificate for auto renewal",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Submit form",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Task Details",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Template",
+  "code" : "",
   "comment" : ""
 }, {
   "message" : "UnifiedMap",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Valid to",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Validity period in days",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Yes",
+  "code" : "",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -9118,31 +9157,31 @@
         "valueType": "json"
     }
 ]</state_properties>
-        <style_config/>
+        <style_config>{}</style_config>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
-        <sys_created_by>now.discovery.content</sys_created_by>
-        <sys_created_on>2023-05-30 07:12:53</sys_created_on>
-        <sys_id>0048a0f687cfe590fc5febd73cbb3521</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Records in Certificate Management</sys_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:15:57</sys_created_on>
+        <sys_id>049f799a330c47506c8432a19e5c7b29</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>BNB - Records in Certificate Management </sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_update_name>sys_ux_macroponent_0048a0f687cfe590fc5febd73cbb3521</sys_update_name>
-        <sys_updated_by>now.discovery.content</sys_updated_by>
-        <sys_updated_on>2026-01-27 04:13:51</sys_updated_on>
+        <sys_update_name>sys_ux_macroponent_049f799a330c47506c8432a19e5c7b29</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:16:00</sys_updated_on>
     </sys_ux_macroponent>
-    <sys_translated_text action="delete_multiple" query="documentkey=0048a0f687cfe590fc5febd73cbb3521"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=049f799a330c47506c8432a19e5c7b29"/>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
-        <claim_timestamp>19d64e2e0ab0000001</claim_timestamp>
-        <metadata_update_name>sys_ux_macroponent_0048a0f687cfe590fc5febd73cbb3521</metadata_update_name>
+        <claim_timestamp>19d64e2e0e00000001</claim_timestamp>
+        <metadata_update_name>sys_ux_macroponent_049f799a330c47506c8432a19e5c7b29</metadata_update_name>
         <previous_claim_app_version>4.0.1</previous_claim_app_version>
         <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
         <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-04-06 22:21:23</sys_created_on>
-        <sys_id>77c0c652334c47506c8432a19e5c7b49</sys_id>
+        <sys_id>b7c0c652334c47506c8432a19e5c7b4d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-04-06 22:21:23</sys_updated_on>

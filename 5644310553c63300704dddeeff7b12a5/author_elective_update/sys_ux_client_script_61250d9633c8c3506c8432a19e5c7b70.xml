@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Records in Certificate Management copy">0d25459633c8c3506c8432a19e5c7bb4</macroponent>
+        <name>OnSuccessValidateCSR</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+ /**
+     * Handles CSR validation response and updates alert state.
+     * 
+     * Parses the validation output, updates the alert to show success/failure,
+     * and stores decoded CSR data in state on successful validation.
+     * 
+     * @param {Object} event - Event object containing validation response
+     * @param {string|null} event.payload.data.output - JSON string of decoded CSR on success, falsy on failure
+     */
+
+    const validationOutput = event.payload.data.output;
+    const isValidCsr = Boolean(validationOutput);
+
+    // Determine alert properties based on validation result
+    const status = isValidCsr ? 'positive' : 'critical';
+    const content = isValidCsr ? 'Valid CSR' : 'Invalid CSR';
+
+    // Update first alert item while preserving array structure and other properties
+    const updatedAlert = [...api.state.validate_csr_alert];
+    updatedAlert[0] = {
+        ...updatedAlert[0],
+        status,
+        content
+    };
+    api.setState('validate_csr_alert', updatedAlert);
+
+    // Store decoded CSR data on successful validation
+    if (isValidCsr) {
+        try {
+            const decodedCsr = JSON.parse(validationOutput);
+            api.setState('renew_payload', {
+                ...api.state.renew_payload,
+                csr_decoded: decodedCsr
+            });
+        } catch (error) {
+            console.error('[handler] Failed to parse CSR validation output:', error.message);
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 18:00:43</sys_created_on>
+        <sys_id>61250d9633c8c3506c8432a19e5c7b70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnSuccessValidateCSR</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:00:43</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d63facb6a0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 18:07:53</sys_created_on>
+        <sys_id>9ec605de330cc3506c8432a19e5c7b7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:07:53</sys_updated_on>
+    </sys_claim>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;
+    &lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;
+        &lt;controller_preset/&gt;
+        &lt;includes/&gt;
+        &lt;macroponent display_value="Records in Certificate Management copy"&gt;0d25459633c8c3506c8432a19e5c7bb4&lt;/macroponent&gt;
+        &lt;name&gt;OnSuccessValidateCSR&lt;/name&gt;
+        &lt;preset/&gt;
+        &lt;required_translations&gt;[]&lt;/required_translations&gt;
+        &lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+ /**
+     * Handles CSR validation response and updates alert state.
+     * 
+     * Parses the validation output, updates the alert to show success/failure,
+     * and stores decoded CSR data in state on successful validation.
+     * 
+     * @param {Object} event - Event object containing validation response
+     * @param {string|null} event.payload.data.output - JSON string of decoded CSR on success, falsy on failure
+     */
+
+    const validationOutput = event.payload.data.output;
+    const isValidCsr = Boolean(validationOutput);
+
+    // Determine alert properties based on validation result
+    const status = isValidCsr ? 'positive' : 'critical';
+    const content = isValidCsr ? 'Valid CSR' : 'Invalid CSR';
+
+    // Update first alert item while preserving array structure and other properties
+    const updatedAlert = [...api.state.validate_csr_alert];
+    updatedAlert[0] = {
+        ...updatedAlert[0],
+        status,
+        content
+    };
+    api.setState('validate_csr_alert', updatedAlert);
+
+    // Store decoded CSR data on successful validation
+    if (isValidCsr) {
+        try {
+            const decodedCsr = JSON.parse(validationOutput);
+            api.setState('renew_payload', {
+                ...api.state.renew_payload,
+                csr_decoded: decodedCsr
+            });
+        } catch (error) {
+            console.error('[handler] Failed to parse CSR validation output:', error.message);
+        }
+    }
+}]]&gt;&lt;/script&gt;
+        &lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;
+        &lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;suzana.hessel@extreme.digital&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2026-04-06 18:00:43&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;61250d9633c8c3506c8432a19e5c7b70&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;OnSuccessValidateCSR&lt;/sys_name&gt;
+        &lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;suzana.hessel@extreme.digital&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2026-04-06 18:00:43&lt;/sys_updated_on&gt;
+        &lt;target&gt;macroponent&lt;/target&gt;
+        &lt;type&gt;default&lt;/type&gt;
+    &lt;/sys_ux_client_script&gt;
+    &lt;sys_claim action="INSERT_OR_UPDATE"&gt;
+        &lt;claim_owner_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/claim_owner_scope&gt;
+        &lt;claim_timestamp&gt;19d63facb6a0000001&lt;/claim_timestamp&gt;
+        &lt;metadata_update_name&gt;sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70&lt;/metadata_update_name&gt;
+        &lt;previous_claim_app_version&gt;4.0.1&lt;/previous_claim_app_version&gt;
+        &lt;previous_claim_name&gt;Certificate Inventory and Management&lt;/previous_claim_name&gt;
+        &lt;previous_claim_scope&gt;5644310553c63300704dddeeff7b12a5&lt;/previous_claim_scope&gt;
+        &lt;sys_created_by&gt;carlos.paiva@extreme.digital&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2026-04-06 18:07:53&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;9ec605de330cc3506c8432a19e5c7b7f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;carlos.paiva@extreme.digital&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2026-04-06 18:07:53&lt;/sys_updated_on&gt;
+    &lt;/sys_claim&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-2049762590</payload_hash>
+        <record_name>OnSuccessValidateCSR</record_name>
+        <reverted_from/>
+        <source>4e09679033f37e906c8432a19e5c7bed</source>
+        <source_table>sys_app_customization</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:00:44</sys_created_on>
+        <sys_id>4d1cb95233c847506c8432a19e5c7bbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d64cff8020000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:00:44</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>091cb9522ec84750826fd3ee5e9365bb</update_guid>
+        <update_guid_history>091cb9522ec84750826fd3ee5e9365bb:0,88d79916ad880750a5da30d4b4570b08:-340098727,e1c6995a8d480750c4ff264754b9f85d:0,d020d59e4d04075049b9a8ecd9a7fded:-26754453,29250d96d7c8c35001ea5789d7ad7872:233980172</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:14:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2ac21b34c382447e861ed62e5b62ad44</sys_id>
+        <sys_metadata>61250d9633c8c3506c8432a19e5c7b70</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnSuccessValidateCSR</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70">4d1cb95233c847506c8432a19e5c7bbb</sys_update_version>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:14:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

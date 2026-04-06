@@ -10,10 +10,10 @@
         "eventMappingId": "ddWKVKwAgCaajjZjjXABddeeujBaanf",
         "isConfiguration": null,
         "offRowStorageId": null,
-        "sourceEventApiName": "sn_disco_certmgmt.MODAL_SELECTED_RELAY_0d25459633c8c3506c8432a19e5c7bb4",
+        "sourceEventApiName": "sn_disco_certmgmt.MODAL_SELECTED_RELAY_049f799a330c47506c8432a19e5c7b29",
         "sourceEventCorrelationId": null,
         "sourceEventDefinition": {
-            "apiName": "sn_disco_certmgmt.MODAL_SELECTED_RELAY_0d25459633c8c3506c8432a19e5c7bb4",
+            "apiName": "sn_disco_certmgmt.MODAL_SELECTED_RELAY_049f799a330c47506c8432a19e5c7b29",
             "id": null,
             "type": "UXEVENT"
         },
@@ -125,10 +125,10 @@
         "eventMappingId": "sLAWQfloCUsIeeddPoMiiLoVyehhff",
         "isConfiguration": null,
         "offRowStorageId": null,
-        "sourceEventApiName": "sn_disco_certmgmt.CONTENT_UPDATED_RELAY_0d25459633c8c3506c8432a19e5c7bb4",
+        "sourceEventApiName": "sn_disco_certmgmt.CONTENT_UPDATED_RELAY_049f799a330c47506c8432a19e5c7b29",
         "sourceEventCorrelationId": null,
         "sourceEventDefinition": {
-            "apiName": "sn_disco_certmgmt.CONTENT_UPDATED_RELAY_0d25459633c8c3506c8432a19e5c7bb4",
+            "apiName": "sn_disco_certmgmt.CONTENT_UPDATED_RELAY_049f799a330c47506c8432a19e5c7b29",
             "id": null,
             "type": "UXEVENT"
         },
@@ -280,7 +280,7 @@
         ]
     }
 ]</event_mappings>
-        <macroponent display_value="Records in Certificate Management copy">0d25459633c8c3506c8432a19e5c7bb4</macroponent>
+        <macroponent display_value="BNB - Records in Certificate Management ">049f799a330c47506c8432a19e5c7b29</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",
@@ -311,7 +311,7 @@
         "value": "y"
     }
 }</macroponent_config>
-        <name>Records in Certificate Management copy</name>
+        <name>BNB - Records in Certificate Management </name>
         <order>0</order>
         <parent_macroponent display_value="Breadcrumb App Shell">e341e22cc32e2010ea04a5a1d840dd02</parent_macroponent>
         <required_translations>[ ]</required_translations>
@@ -320,33 +320,33 @@
         <screen_type display_value="Record">f0eabce4978b21502dcf75471153af59</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-04-06 18:00:46</sys_created_on>
+        <sys_created_on>2026-04-06 22:15:59</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>42250d9633c8c3506c8432a19e5c7bc1</sys_id>
+        <sys_id>bc9f799a330c47506c8432a19e5c7bef</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Records in Certificate Management copy</sys_name>
+        <sys_name>BNB - Records in Certificate Management </sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_update_name>sys_ux_screen_42250d9633c8c3506c8432a19e5c7bc1</sys_update_name>
+        <sys_update_name>sys_ux_screen_bc9f799a330c47506c8432a19e5c7bef</sys_update_name>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 18:00:46</sys_updated_on>
+        <sys_updated_on>2026-04-06 22:15:59</sys_updated_on>
     </sys_ux_screen>
-    <sys_translated_text action="delete_multiple" query="documentkey=42250d9633c8c3506c8432a19e5c7bc1"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=bc9f799a330c47506c8432a19e5c7bef"/>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
-        <claim_timestamp>19d63facb0a0000001</claim_timestamp>
-        <metadata_update_name>sys_ux_screen_42250d9633c8c3506c8432a19e5c7bc1</metadata_update_name>
+        <claim_timestamp>19d64e2e04f0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_bc9f799a330c47506c8432a19e5c7bef</metadata_update_name>
         <previous_claim_app_version>4.0.1</previous_claim_app_version>
         <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
         <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-04-06 18:07:53</sys_created_on>
-        <sys_id>92c605de330cc3506c8432a19e5c7b76</sys_id>
+        <sys_created_on>2026-04-06 22:21:23</sys_created_on>
+        <sys_id>fbc08652334c47506c8432a19e5c7bd2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 18:07:53</sys_updated_on>
+        <sys_updated_on>2026-04-06 22:21:23</sys_updated_on>
     </sys_claim>
 </record_update>
