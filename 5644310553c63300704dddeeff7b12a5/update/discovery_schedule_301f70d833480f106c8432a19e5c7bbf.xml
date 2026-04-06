@@ -12,6 +12,7 @@
         <condition/>
         <conditional>false</conditional>
         <credential_aliases/>
+        <description/>
         <disco_run_type>on_demand</disco_run_type>
         <discover>CIs</discover>
         <discovery_agent>mid</discovery_agent>
@@ -23,6 +24,7 @@
         <include_endpoint_https_urls>false</include_endpoint_https_urls>
         <location/>
         <log_state_changes>false</log_state_changes>
+        <maintenance_source>manual</maintenance_source>
         <max_drift/>
         <max_idle/>
         <max_run/>
