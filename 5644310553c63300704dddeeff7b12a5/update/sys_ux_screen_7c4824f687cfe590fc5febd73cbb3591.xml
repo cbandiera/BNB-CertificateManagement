@@ -324,7 +324,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7c4824f687cfe590fc5febd73cbb3591</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>Records in Certificate Management</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -332,7 +332,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_ux_screen_7c4824f687cfe590fc5febd73cbb3591</sys_update_name>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-01 21:05:00</sys_updated_on>
+        <sys_updated_on>2026-04-02 20:54:37</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=7c4824f687cfe590fc5febd73cbb3591"/>
     <sys_claim action="INSERT_OR_UPDATE">

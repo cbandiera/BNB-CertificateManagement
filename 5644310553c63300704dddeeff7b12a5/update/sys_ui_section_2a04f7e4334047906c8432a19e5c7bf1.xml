@@ -4,13 +4,13 @@
             <element>cmdb_ci</element>
             <position>0</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>c5ec73ac334447906c8432a19e5c7b4d</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>0648d8c9330447d06c8432a19e5c7b40</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>source</element>
             <position>1</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>c5ec73ac334447906c8432a19e5c7b4e</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>c248d8c9330447d06c8432a19e5c7b41</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>discovery_method</element>
             <position>2</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>81ec73ac334447906c8432a19e5c7b4f</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>8e48d8c9330447d06c8432a19e5c7b41</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>status</element>
             <position>3</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>4dec73ac334447906c8432a19e5c7b4f</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>4a48d8c9330447d06c8432a19e5c7b42</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>sys_domain</element>
             <position>4</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>09ec73ac334447906c8432a19e5c7b50</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>0648d8c9330447d06c8432a19e5c7b43</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>port</element>
             <position>5</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>c1ec73ac334447906c8432a19e5c7b51</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>ce48d8c9330447d06c8432a19e5c7b43</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>path</element>
             <position>6</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>8dec73ac334447906c8432a19e5c7b51</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>8a48d8c9330447d06c8432a19e5c7b44</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>dns_name</element>
             <position>7</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>49ec73ac334447906c8432a19e5c7b52</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>4648d8c9330447d06c8432a19e5c7b45</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,15 +116,29 @@
             <element>payload</element>
             <position>8</position>
             <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-04-01 20:54:10</sys_created_on>
-            <sys_id>05ec73ac334447906c8432a19e5c7b53</sys_id>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>0248d8c9330447d06c8432a19e5c7b46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
             <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-01 20:54:10</sys_updated_on>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>REL.sn_disco_certmgmt_certificate_history.REL:b9edf0ca0a0a0b010035de2d6b579a03</element>
+            <position>9</position>
+            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+            <sys_created_on>2026-04-02 17:32:18</sys_created_on>
+            <sys_id>ca48d8c9330447d06c8432a19e5c7b46</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Discovered Certificate" display_value="Discovered Certificate" name="sn_disco_certmgmt_certificate_history" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">2a04f7e4334047906c8432a19e5c7bf1</sys_ui_section>
+            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-04-02 17:32:18</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Discovered Certificate</caption>
