@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Records in Certificate Management copy">0d25459633c8c3506c8432a19e5c7bb4</macroponent>
+        <name>OnAlertDismiss</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    /**
+     * Handles alert action events (open/dismiss).
+     * 
+     * Hides the renew alert and optionally navigates to the renewal task
+     * record if the action type is 'open'.
+     * 
+     * @param {Object} event - Event object containing action details
+     * @param {string} event.payload.action.type - Action type ('open' or other)
+     * @param {string} event.payload.action.href - Task sys_id for navigation
+     */
+
+    const RENEW_TASK_TABLE = 'sn_disco_certmgmt_renew_task';
+
+    const alertType = event.payload.action.type;
+
+    // Always hide the alert regardless of action type
+    api.setState('renew_alert', {
+        ...api.state.renew_alert,
+        show: false
+    });
+
+    // Navigate to renewal task record only for 'open' action
+    if (alertType === 'open') {
+        helpers.navigate.to('record', {
+            table: RENEW_TASK_TABLE,
+            sysId: event.payload.action.href
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 18:00:43</sys_created_on>
+        <sys_id>29250d9633c8c3506c8432a19e5c7b5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnAlertDismiss</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_client_script_29250d9633c8c3506c8432a19e5c7b5b</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:00:43</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d63facb570000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_29250d9633c8c3506c8432a19e5c7b5b</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 18:07:53</sys_created_on>
+        <sys_id>1ec605de330cc3506c8432a19e5c7b7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:07:53</sys_updated_on>
+    </sys_claim>
+</record_update>

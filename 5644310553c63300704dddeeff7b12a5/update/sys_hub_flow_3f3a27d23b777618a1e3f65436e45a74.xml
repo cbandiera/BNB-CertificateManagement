@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>bnb_dispara_automao_de_certificados</internal_name>
-        <label_cache>[{"name":"Criação em_1.current","label":"Gatilho - Record Criação em➛Tarefa de certificação (fluxo automatizado) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"5f20a787-581d-4a2c-b9b4-11eadb953747":["automated_task"]},"attributes":{}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Tarefa de certificação (fluxo automatizado) Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"f9f24175-5c1c-4448-a3aa-225d56d1e3f8":["task"],"f2d6a091-706f-46ee-9053-03849b15b3e0":["task"]}},{"name":"5f20a787-581d-4a2c-b9b4-11eadb953747.job_status","label":"1 - BNB Processa Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"f9f24175-5c1c-4448-a3aa-225d56d1e3f8":["job_status"],"f2d6a091-706f-46ee-9053-03849b15b3e0":["job_status"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"929552d1-e8fc-4854-81c9-dccbd80fcd20"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Tarefa de certificação (fluxo automatizado) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"f2d6a091-706f-46ee-9053-03849b15b3e0":["task"]},"attributes":{}},{"name":"Created_1.current.parent.sys_id","label":"Trigger - Record Created➛Tarefa de certificação (fluxo automatizado) Record➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"f2d6a091-706f-46ee-9053-03849b15b3e0":["task"]}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.parent.sys_id","label":"Trigger - Record Created➛Tarefa de certificação (fluxo automatizado) Record➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"f2d6a091-706f-46ee-9053-03849b15b3e0":["task"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Tarefa de certificação (fluxo automatizado) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"f2d6a091-706f-46ee-9053-03849b15b3e0":["task"]},"attributes":{}},{"name":"5f20a787-581d-4a2c-b9b4-11eadb953747.job_status","label":"1 - BNB Processa Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"f9f24175-5c1c-4448-a3aa-225d56d1e3f8":["job_status"],"f2d6a091-706f-46ee-9053-03849b15b3e0":["job_status"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"929552d1-e8fc-4854-81c9-dccbd80fcd20"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Tarefa de certificação (fluxo automatizado) Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"f9f24175-5c1c-4448-a3aa-225d56d1e3f8":["task"],"f2d6a091-706f-46ee-9053-03849b15b3e0":["task"]}},{"name":"Criação em_1.current","label":"Gatilho - Record Criação em➛Tarefa de certificação (fluxo automatizado) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"5f20a787-581d-4a2c-b9b4-11eadb953747":["automated_task"]},"attributes":{}}]</label_cache>
         <master_snapshot>77faeb1e3b777618a1e3f65436e45a1b</master_snapshot>
         <master_snapshot_digest/>
         <name>BNB Dispara Automação de Certificados</name>
@@ -28,7 +28,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
@@ -36,19 +36,19 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3f3a27d23b777618a1e3f65436e45a74</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>BNB Dispara Automação de Certificados</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_flow_3f3a27d23b777618a1e3f65436e45a74</sys_update_name>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 11:59:09</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:05:06</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>d9627342334443506c8432a19e5c7bc1</version_record>
+        <version_record>ce26095e33c8c3506c8432a19e5c7b69</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=3f3a27d23b777618a1e3f65436e45a74"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
@@ -409,15 +409,15 @@
         <parent_ui_id/>
         <show_stages>true</show_stages>
         <subflow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</subflow>
-        <subflow_inputs>H4sIAAAAAAAA/+1W227bRhD9FYJPCSAK4lWS31QFLoymSRC7ToEoIPYyKy9MLpnl0rYq6Gv60A/Jj2WW1IWWJdtwm760gCBgZ+dy5uyckT4vXcndEzdKYhAi4CGlIoQ4Ij6EIomjMIEoJkPm9lxFckBPUWgGqciKW7TdkKy2Rs9z3oG6qvNX5LWDB7zisiozsrg87sGuZMY1KPfk85eeWxKNBQxo92S5d2UWJaQZoZBhoulVIRlg+HNxbwJPLXDntAV+qBlbBm1sU6DQ3KLxey7cGVAcsKAgWQU9NyeKE1PoxdaigfD3KtsZrqQymM21zneV/ANTh4H1E4CNMWjvtsd0zVdrbjFU2P5yi98yWChA8jrEd2Cuejvf8yIHZcCZgybamZ5/7ITYblOyCwy6gT9jgPV3wJlUlVR4AG32o+kuOjwYvY4F50xVhmRkPwHbJYi6CdoR6Xgr7HjnG69wGjgIUmdm+j9FRylqx+d9aWSBEnJ9O9yEZms2WJHVuXrXKsDdEnp5P9/a+ua+jLfV6wpHFkorCzvn66EX51fF7cfNTJ9K1WBaX2YFI9n2RIzRktbGPuHSreXFnvpay9t91UMG9t3SnJSlVPO01MWNbKpgX3l/nuGh3xDIoZJz1SfMstBHuZK+Ff+bxnxJtLSM/IppMNiW+03JrzWc2a0yCCDyEya8IU1iL4Ix8cYjNvYi3C8jRhMaC+GuGvWmX2vbVMvjmo60Yd06VEzL0kwQwg2sO7dv2ayuYIjZomQU4u6iMB4kbBSFAfHHELMhDYe7LUVqU+TEAE8Nqa47T79cTrGNb399+7NwIE/9Pqs1Mm9Wq4cL+MULd/ucm537DOCb2MkGuXPRIj/W0Xr36k6tjfYeX79G1y/cvpWyO5cVKUP55vPcbLAc2slW4lJIhpgd6/Zq15kdqtfuA9F1NHe00hNK/IEy6xJ9X2nd5/5XxBZGgtORP/BiwRMv8n3hjUksPDGmPA4YJQGN/77Y6GMzy0lnNG/vUqbBppZYbCe2eDgMk0EchCHBT7yXYjx6KLnJp9+dt1LVd84HXXDnJyAatHNRXKPO/jk1Pt3ZVo2IZ9pt7VjLx9UY/rA/Q6SU6TUsOkCqI1qcfDhzfoFFp5XqUfkdzvyE9pazzWvO3JPZY085c3uzdkgaz6fGpHFvoDXuB8A1HtWiSiV/ZsbV0d/r/8YKiQcDToMh9xgV4EUEv0jCfU/AEH+8gQ3CmL54hXz5Dul/2gEkDQAA</subflow_inputs>
+        <subflow_inputs>H4sIAAAAAAAA/+VW3VLbRhR+lR1dQYoc25JsTK4cICkTGlKgtJ040ax2j+xtpJVYrQDX46fpRR8kL9azK8sWBgNDm95khjGzZ8/5zu93tB9njuDOnuP3AojjLveiKPYg8GkHvLgX+F4P/ID2mbPjSJoCasaZYhDGSXaNsiualEbouuQ9yEmZbtFtgge84qLIEzq92KzBJiLhCqSz9/HTjpNThQ40KGdvtnalpzmECY0gQaD9SSYYoPlT464N35jAyZsq8PuSMW5QxmoHmeImms6OAzcaJAd0GNOkgB0npZJTnanpUqKA8hOZrAQTITWiOUb5phB/IrTXNXoxYGIMqrvlMVzUqxJXMRSY/mwZv6lgJgGLt1b4pbAOeL6zsjrLUpAayBgUVWT/7LRhbPIO6cqw2zR8iwZGnwAZFoWQeACl162jlbV3r/XCFsiRLDRN6DoAWwH4TYBqWBraEtNc6QZznAsOMS0Tvf/UYn2HJaoG6STXIkMyOR0z5jRKFtVgWVKm8n3FBWdZ0IvbeAvpwW1CL72XBQ4v5IYgZuIX4x+fTbLr03q63whpY1pcJhmjyfJEtVYiKrVp4cwpxfkaDyvJ8Tr/IQHTtzCleS7kOMxVdiWsF8wrbY0TPLRsATkUYixblJkqtJC4tGXWwIEVX1AlTEV+Qhg0Nu5+keKyhCOzX9pd8Ds9Frv9qBe4PgyoO9hlA9fHTbPLol4UxLEztzwOL0uTVFXHRTlCW3WjUDAlcj3EEK5gkbnppV1i3T6i+b1dD7dYBIN2j+36Xpd2BhCwfuT1V/uKljpLqQYealp8abR+NtvHNL7+/fWvjEAadlqsVFh5PZ/fXcXPXr3Ldtbb9wmB17bDOnJyXkW+KaPFFlYNXzX3Hl7EWpXP3MOFNNuXZSFD+qbjVNex3LedDcVFLBjGTIza1iozM1Tbzh3SNTi30dMjTPyGNGsW+jbTmu3+X8jm+TGPdjttN4h5z/U7ndgd0CB240HEgy6LaDcK/j3ZoodmltPGaF7fhEyBgRbobEW2oN/3eu2g63kU/4I1iMHuXcoNf/2NHAtZ3pAPKuPkNVAFipxnX5Bn/x0bH89syUaMZ7+Z2qaUN7PR+2bPIpqL8AtMG4EUG7g4/HBE3sG0kUrxIP3uR36Ee7NR3c2Rszd6qJUjZ2dUDYnVfGxMrLoNzarfE5zVKKZFKPgTEecbv9ffxwoJ2m0edfvcZVEMrk/xh/Z4x42hjx9vYG0viJ6xQqpvSyUzqa/xBCUP6TsvX4zkixdDhq/Uwn4lXg5tbsTkRkp8/o2JngCJeWglWfQHMN0iZxaApGWhiQJdKkkosQPWIgbxxFCRyDKN8J8oSBbHBWgSTckPHSIkOVQqU+RHZGViXJxBVVEbzBUViakjySxRCrIYclLmGFiuoLBhjZzWyCE0xn1Uh2fM4YameQJ7GI0ixSRTGrvDyKhstz1eK7ZwWsb4qq4fIy2raNpr80KvrwzWIrMlihG+HEmDPFYratfgEq7JWzMsp8BwF20Zcbd/H3vsxTbCNWFalPNDyTLcWz+XoKZbI7v8jo/eHSK1P1PbwcqV6eLnk9ODw9PXvx8cnu0bJpY5t6+VDNl+B/rSAt4RS1yUVrrItHn5ypnP55/+AcqOmX+HDwAA</subflow_inputs>
         <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-25 19:49:37</sys_created_on>
         <sys_id>e7faab1e3b777618a1e3f65436e45a65</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 17:14:29</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:05:06</sys_updated_on>
         <ui_id>5f20a787-581d-4a2c-b9b4-11eadb953747</ui_id>
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>

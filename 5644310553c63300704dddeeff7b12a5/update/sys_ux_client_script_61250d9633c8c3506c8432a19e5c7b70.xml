@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Records in Certificate Management copy">0d25459633c8c3506c8432a19e5c7bb4</macroponent>
+        <name>OnSuccessValidateCSR</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+ /**
+     * Handles CSR validation response and updates alert state.
+     * 
+     * Parses the validation output, updates the alert to show success/failure,
+     * and stores decoded CSR data in state on successful validation.
+     * 
+     * @param {Object} event - Event object containing validation response
+     * @param {string|null} event.payload.data.output - JSON string of decoded CSR on success, falsy on failure
+     */
+
+    const validationOutput = event.payload.data.output;
+    const isValidCsr = Boolean(validationOutput);
+
+    // Determine alert properties based on validation result
+    const status = isValidCsr ? 'positive' : 'critical';
+    const content = isValidCsr ? 'Valid CSR' : 'Invalid CSR';
+
+    // Update first alert item while preserving array structure and other properties
+    const updatedAlert = [...api.state.validate_csr_alert];
+    updatedAlert[0] = {
+        ...updatedAlert[0],
+        status,
+        content
+    };
+    api.setState('validate_csr_alert', updatedAlert);
+
+    // Store decoded CSR data on successful validation
+    if (isValidCsr) {
+        try {
+            const decodedCsr = JSON.parse(validationOutput);
+            api.setState('renew_payload', {
+                ...api.state.renew_payload,
+                csr_decoded: decodedCsr
+            });
+        } catch (error) {
+            console.error('[handler] Failed to parse CSR validation output:', error.message);
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 18:00:43</sys_created_on>
+        <sys_id>61250d9633c8c3506c8432a19e5c7b70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnSuccessValidateCSR</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:00:43</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d63facb6a0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_client_script_61250d9633c8c3506c8432a19e5c7b70</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 18:07:53</sys_created_on>
+        <sys_id>9ec605de330cc3506c8432a19e5c7b7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 18:07:53</sys_updated_on>
+    </sys_claim>
+</record_update>
