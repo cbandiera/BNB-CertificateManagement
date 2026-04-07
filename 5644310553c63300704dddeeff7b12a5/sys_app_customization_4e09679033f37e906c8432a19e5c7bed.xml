@@ -3,12 +3,12 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 14:33:13</sys_created_on>
         <sys_id>4e09679033f37e906c8432a19e5c7bed</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 22:21:52</sys_updated_on>
+        <sys_updated_on>2026-04-07 00:10:56</sys_updated_on>
         <vendor_app display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</vendor_app>
         <vendor_app_version>4.0.1</vendor_app_version>
-        <version>1.0.7</version>
+        <version>1.0.8</version>
         <war_version>glide-zurich-07-01-2025__patch7-02-19-2026_03-04-2026_1012.zip</war_version>
     </sys_app_customization>
 </record_update>

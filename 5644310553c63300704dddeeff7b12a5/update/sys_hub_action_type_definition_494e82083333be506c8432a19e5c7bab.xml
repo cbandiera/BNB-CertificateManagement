@@ -1119,7 +1119,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB - Obtem Grupos para Gestão de Certificados">494e82083333be506c8432a19e5c7bab</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a1419a8c3373be506c8432a19e5c7bf7","name":"plan","plan_signature":null}}</plan>
-        <snapshot>0ee809713b488310a1e3f65436e45a70</snapshot>
+        <snapshot>6b965a1e330487506c8432a19e5c7b86</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 13:31:19</sys_created_on>
         <sys_domain>global</sys_domain>
