@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>single routing policy is not matched so manual intervention is needed. the approve must choose the proper routing policy for requesting the {0} certificate.</key>
+        <language>pb</language>
+        <message>Fluxo de criação/renovação de certificados customizado para o BNB foi executado.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by/>
+        <sys_created_on/>
+        <sys_id>04e7358787eba210fa4042630cbb3502</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>single routing policy is not matched so manual intervention is needed. the approve must choose the proper routing policy for requesting the {0} certificate.</sys_name>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ui_message_04e7358787eba210fa4042630cbb3502</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 23:40:51</sys_updated_on>
+    </sys_ui_message>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d6544f6440000001</claim_timestamp>
+        <metadata_update_name>sys_ui_message_04e7358787eba210fa4042630cbb3502</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-07 00:08:31</sys_created_on>
+        <sys_id>45595e9e334487506c8432a19e5c7b6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-07 00:08:31</sys_updated_on>
+    </sys_claim>
+</record_update>
