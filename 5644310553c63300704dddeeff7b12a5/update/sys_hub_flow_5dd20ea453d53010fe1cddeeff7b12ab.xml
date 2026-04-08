@@ -48,7 +48,7 @@
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record/>
+        <version_record>8348be6e3380c3906c8432a19e5c7b70</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=5dd20ea453d53010fe1cddeeff7b12ab"/>
     <sys_variable_value action="delete_multiple" query="document_key=5dd20ea453d53010fe1cddeeff7b12ab"/>
