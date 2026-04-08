@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=254653000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1023644000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,10 +15,10 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>bnb__close_change_request</internal_name>
-        <label_cache>[{"name":"subflow.renewtask.number","label":"Input➛renewtask➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"number","usedInstances":{"ded436c2-defe-4e19-887b-e0aa4e2b9eac":["conditions"]}},{"name":"subflow.renewtask.sys_id","label":"Input➛renewtask➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"sys_id","usedInstances":{"3f1dd51a-1352-4a21-a5f3-6583efc2fb85":["conditions"],"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9":["conditions"]}},{"name":"subflow.renewtask.u_renewal_flow","label":"Input➛renewtask➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Fluxo A - CA Externa","image":"","used":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo B - CA Interna / Instalação Manual","image":"","used":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo C - CA Interna / Instalação Automática","image":"","used":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"67614f30-0905-4751-9d4c-577b85283098":["condition"],"72bb7406-5007-447a-aa0b-49f15d8eefb7":["condition"]}},{"name":"subflow.renewtask","label":"Input➛renewtask","reference":"sn_disco_certmgmt_renew_task","reference_display":"Renew certificate task","type":"reference","base_type":"reference","column_name":"","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"378914f3-3872-43b2-a337-c9dd517f92ea","uiTypeLabel":"Reference"}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assignment_group.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assignment_group"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record","label":"3 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"],"b412bd4f-5d5e-45aa-bd35-a57e76a6e636":["conditions"],"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.requested_by","label":"3 - Look Up Record➛Change Request Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"requested_by","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.sys_id","label":"3 - Look Up Record➛Change Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"change_request","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["conditions"],"07202f2b-a3d4-4a68-958d-db66256de89d":["conditions"],"15dea9e4-13a4-4954-82cb-7b8abb059851":["conditions"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record","label":"3 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"4b2a9bcc-f23b-4598-9788-70cc5f72a0b9":["record"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["conditions"],"a34c5c6a-e769-4f3a-8bfa-278cbec51083":["conditions"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task.certificate.sys_id","label":"Input➛task➛Certificate | certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"532a5af7-29dd-41c4-b89b-2ed44e8f775b":["certificate"]}},{"name":"subflow.job_status","label":"Input➛job_status","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"483bef8b-91e9-474e-b247-d997c5c17d09"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"032b5d2d-ba25-411f-bf05-ecbad884204f":["conditions"],"604a7965-1cd6-49f6-85d4-74fc13d26a04":["conditions"],"40a58f45-3cb0-4e53-9f62-c370ea5d201d":["conditions"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assignment_group"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assignment_group","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group","assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record","label":"9 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assignment_group.sys_id","label":"9 - Look Up Record➛Change Request Record➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assignment_group"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assigned_to.sys_id","label":"9 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assigned_to"]}},{"name":"ded436c2-defe-4e19-887b-e0aa4e2b9eac.Record.u_renewal_flow","label":"1➛Renew certificate task Record➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Fluxo A - CA Externa","image":"","used":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo B - CA Interna / Instalação Manual","image":"","used":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo C - CA Interna / Instalação Automática","image":"","used":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"08843983-520a-4612-b8cf-84e55a5fafff":["condition"],"162f5436-9fa2-4b4e-83f9-4e793ed7f052":["condition"]}}]</label_cache>
+        <label_cache>[{"name":"11046cce-4660-407f-a3d1-86a61760ac20.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"26aab4ab-d6c3-4464-8ce8-b48b408a2dd1":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assigned_to.sys_id","label":"8 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assigned_to"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assignment_group.sys_id","label":"8 - Look Up Record➛Change Request Record➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assignment_group"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record","label":"8 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to","label":"2 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assignment_group","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group","assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assignment_group"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"032b5d2d-ba25-411f-bf05-ecbad884204f":["conditions"],"604a7965-1cd6-49f6-85d4-74fc13d26a04":["conditions"],"40a58f45-3cb0-4e53-9f62-c370ea5d201d":["conditions"]}},{"name":"subflow.job_status","label":"Input➛job_status","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"483bef8b-91e9-474e-b247-d997c5c17d09"}},{"name":"subflow.task.certificate.sys_id","label":"Input➛task➛Certificate | certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"532a5af7-29dd-41c4-b89b-2ed44e8f775b":["certificate"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record","label":"3 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"4b2a9bcc-f23b-4598-9788-70cc5f72a0b9":["record"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["conditions"],"a34c5c6a-e769-4f3a-8bfa-278cbec51083":["conditions"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.sys_id","label":"3 - Look Up Record➛Change Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"change_request","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["conditions"],"07202f2b-a3d4-4a68-958d-db66256de89d":["conditions"],"15dea9e4-13a4-4954-82cb-7b8abb059851":["conditions"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.requested_by","label":"3 - Look Up Record➛Change Request Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"requested_by","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record","label":"2 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"],"b412bd4f-5d5e-45aa-bd35-a57e76a6e636":["conditions"],"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assignment_group.sys_id","label":"2 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assignment_group"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to.sys_id","label":"2 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.assigned_to.sys_id","label":"2 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"subflow.renewtask","label":"Input➛renewtask","reference":"sn_disco_certmgmt_renew_task","reference_display":"Renew certificate task","type":"reference","base_type":"reference","column_name":"","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"378914f3-3872-43b2-a337-c9dd517f92ea","uiTypeLabel":"Reference"}},{"name":"subflow.renewtask.u_renewal_flow","label":"Input➛renewtask➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"label":"Fluxo A - CA Externa","used":false,"image":"","reference":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo B - CA Interna / Instalação Manual","used":false,"image":"","reference":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo C - CA Interna / Instalação Automática","used":false,"image":"","reference":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"67614f30-0905-4751-9d4c-577b85283098":["condition"],"72bb7406-5007-447a-aa0b-49f15d8eefb7":["condition"]}},{"name":"subflow.renewtask.sys_id","label":"Input➛renewtask➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"sys_id","usedInstances":{"3f1dd51a-1352-4a21-a5f3-6583efc2fb85":["conditions"],"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9":["conditions"]}},{"name":"subflow.renewtask.number","label":"Input➛renewtask➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"number","usedInstances":{"ded436c2-defe-4e19-887b-e0aa4e2b9eac":["conditions"]}},{"name":"subflow.certificate_task","label":"Input➛Certificate Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"b49b4666-06b6-4a45-87a7-96fd3e5c14f8":["parent"],"11046cce-4660-407f-a3d1-86a61760ac20":["conditions"],"4e00e203-5f47-4201-94b3-9ae984bb4c8c":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"66a13868-f5e2-4c04-8dd4-3bf60d087893","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.certificate_task.cmdb_ci","label":"Input➛Certificate Task➛Configuration item","reference":"cmdb_ci","reference_display":"Configuration Item","type":"reference","base_type":"reference","parent_table_name":"sn_disco_certmgmt_task","column_name":"cmdb_ci","usedInstances":{"b49b4666-06b6-4a45-87a7-96fd3e5c14f8":["cmdb_ci"]}}]</label_cache>
         <master_snapshot>d8b5dd8f33bffa106c8432a19e5c7bb8</master_snapshot>
         <master_snapshot_digest/>
-        <name>BNB - Close Change Request</name>
+        <name>BNB - Create Closed Change Request</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -36,19 +36,19 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cdffc1c7333bfa106c8432a19e5c7bfd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>BNB - Close Change Request</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>BNB - Create Closed Change Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_flow_cdffc1c7333bfa106c8432a19e5c7bfd</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 22:00:42</sys_updated_on>
+        <sys_updated_on>2026-04-08 12:48:28</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record/>
+        <version_record>4bd09ef6334c4f906c8432a19e5c7bc5</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_variable_value action="delete_multiple" query="document_key=cdffc1c7333bfa106c8432a19e5c7bfd"/>
@@ -75,7 +75,7 @@
         <ancestral_if_else_logic/>
         <component_indexes/>
         <duration>1970-01-01 00:00:00</duration>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
+        <flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
         <label>Copy of Change Management Request for Automated Cert Task</label>
         <order>1</order>
         <stage_id>b2084e4a337fbe946c8432a19e5c7b76</stage_id>
@@ -98,7 +98,7 @@
         <ancestral_if_else_logic/>
         <component_indexes/>
         <duration>1970-01-01 00:00:00</duration>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
+        <flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
         <label>Change Management Request for Automated Cert Task</label>
         <order>0</order>
         <stage_id>a012d3ac53913010fe1cddeeff7b1231</stage_id>
@@ -126,12 +126,12 @@
         <sys_updated_on>2026-03-27 16:27:41</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0dff05c7333bfa106c8432a19e5c7b01"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT INec839d8f33fbfa106c8432a19e5c7bd9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT IN8c440e3a334c0f906c8432a19e5c7bd4"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=378914f3-3872-43b2-a337-c9dd517f92ea</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=66a13868-f5e2-4c04-8dd4-3bf60d087893</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -141,7 +141,7 @@
 })(current);]]></calculation>
         <choice/>
         <choice_field/>
-        <choice_table>sn_disco_certmgmt_renew_task</choice_table>
+        <choice_table>sn_disco_certmgmt_task</choice_table>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -155,7 +155,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>renewtask</element>
+        <element>certificate_task</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -164,10 +164,10 @@
         <help/>
         <hint/>
         <internal_type display_value="Reference">reference</internal_type>
-        <label>renewtask</label>
-        <mandatory>false</mandatory>
+        <label>Certificate Task</label>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</model>
+        <model display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</model>
         <model_id>cdffc1c7333bfa106c8432a19e5c7bfd</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_cdffc1c7333bfa106c8432a19e5c7bfd</name>
@@ -176,7 +176,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_disco_certmgmt_renew_task">sn_disco_certmgmt_renew_task</reference>
+        <reference display_value="" name="sn_disco_certmgmt_task">sn_disco_certmgmt_task</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -187,17 +187,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:43:13</sys_created_on>
-        <sys_id>ec839d8f33fbfa106c8432a19e5c7bd9</sys_id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:53:23</sys_created_on>
+        <sys_id>8c440e3a334c0f906c8432a19e5c7bd4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 16:43:13</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 11:53:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -210,11 +210,11 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec839d8f33fbfa106c8432a19e5c7bd9"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8c440e3a334c0f906c8432a19e5c7bd4"/>
     <sys_hub_flow_output action="delete_multiple" query="model=cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT IN1dff45c7333bfa106c8432a19e5c7b31,15ff45c7333bfa106c8432a19e5c7b33,11ff45c7333bfa106c8432a19e5c7b34,59ff45c7333bfa106c8432a19e5c7b2e,95ff45c7333bfa106c8432a19e5c7b2f,d1ff45c7333bfa106c8432a19e5c7b30,11ff45c7333bfa106c8432a19e5c7b31,356b6ec7337332506c8432a19e5c7b9c,19ff45c7333bfa106c8432a19e5c7b32"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT IN5aa546f633cc0f906c8432a19e5c7b38,5844ce3a334c0f906c8432a19e5c7b39,ce4056b2334c4f906c8432a19e5c7b15"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
@@ -222,225 +222,81 @@
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <generation_source/>
-        <order>9</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>1dff45c7333bfa106c8432a19e5c7b31</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>16d7a5e3-0a62-4747-996a-0ebfc6d4bab9</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYzW7jNhB+FUFnx5Xi/9yKBAEKbBMgSXPZLoiRSNnE0qRCUvYmhh+m6KHoA/QJ8mIdipJt2E5ioQ6QoKdAMxzym+H3Dcf5ugg5Dc9COopG2WjUGw6iqNOJon6/k0KcJJ1+mkQJdMNWKGHKcKWFRDD8nIEo3Hc6ATlmRLOHghmLDspNLuDxvvKfl/7gZuVPJ1xQzWR49vVbK8xB476W6fBsseU6FJiAhAlceuf+wi5S+5ivPknp87Yv6zjBgivvUJo6LFErZD8sk5QhiAyEYa1wCpKCVfpxZdEM6LUUa8OES4s7hm7xD8Of8Nxh5NZlDNNKmfetPklVK2/OLsDCrdVFagtdLU0niqfM+IJQlkEh7PmmzS+4zi1X0of4tH20EsVUXvlyhKsN6qtBS2EQBMtdog55lUZ2O1HzmxrlJZdlTSqnUCmI1RdYq3lSWIdnETLBprgRmUKeczkmuVYzXgYjlml7LPCjnQk1x0MNH8s2pA54G+sK7Uu0X5Tme9DcZfErboPBCIgLpAjxV2hUoctSzkgqClM6NEjj9wqXrdA8mnMBxqwzx5KTh8Lh9nWoMia+aC4k1Ty3P+MWM1Ylt2zV4ui9ysHRmnKpkpQ7FGZDIUhxPOr3AoPpYmGKxBWgjTY2t2C+txEt4XS53NVOg8iGqno7o1pV5y6l57+e/2HmhTwrfe3YvmzuUDsqfcVH01c3ij6TwvDwjyew5pLxJXhDNzF9lWV0zSejtCW+lhvC2RVEY6IfAKEm+jUyU4IOcqVfAlYxPeNM0H0vyaVzbL0kp//Pl+RD8hwBUeJvj0vBZTkWIND3EkDvVfYl8RbPSnqt6V/awKS7MoAA7PPfwVNjORwAaDVN8VwFlAVlUXjGU8BH4E+1H3L9BJQU2m7/tbESROdoguicHkcQi1XSG4Xdcwv1bOjut4548hGwHYG03AiJl/tE1/DcuPm5p8tdYXcaKXuThN5z8SIXjzxMvqDV1ns2hwmGVucRr2wy53TM7Pr0ehVVdg7i+z5/xT1SX1aZ3jsMpvGrP46SjcGUZ2SKd8dz4X6qpUgPQ3C4JJkqJCXV5LymkrvJjGtjq8W7LeiGoVzdc2mUuwsWqCDXfMq4VoFmY26sVs1f67fzqUt6y4LZ8x+aK7M6zgSZ0mwabDeqA3Nv0sO6Rxxfj93DLkFMIKAQMAv5Zn9gWpejzb42duB1vsKPAzvdoejid0H33/vhPmXs7YsHYv4UP8CP37lSBkn3FPqDThxHURzRQTQcDOJhP8n6MOhma/USYmSKzRZ3zoAL3J7UVKnvO95tT/dMU6Cu2I2b0AHQal5eYZ8JspLR2HccrINwV50mUUowkFut5g5fkZ8uywdjRdveh2s3n+K/UQW/2660N+2t9XtNFQX/TfKHgv3iyDVk0ekwpunJcBAPTroZ7Z+MKPROYJT0Bh3K0m52zEHh278iJhqL4BUAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1dff45c7333bfa106c8432a19e5c7b31"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <generation_source/>
-        <order>11</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>15ff45c7333bfa106c8432a19e5c7b33</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>19dedab3-3fa1-4687-b01a-4c8ef543b1ad</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VX227jNhD9FVXPlktJFCXlrUgQoMA2AXbTvGx3hRFJxURlUatLdrOGv6YPRT+gX5Af6+jmu1O7tQNs+2RrhkPOHM6ZGb6fmUqYF6YnIHHAd7jv2YTYxHNtx3YpDz3uMOJTc2RmMJW4soI4lVH7MTIfIa0bIZ9A9iCjCspfUSpUmafwdN8rL1ulcdcp+USlopCZefH+w8jMocCdKlmYF7MN1aF+pRDLFJfeNb+wx9HqKd8pe7M0TqVx0yl0IRqH7JEpv1QyExI9SSAt5cicQiag0sWTeVEVNQoKCeI2S58WKyYqq3BDs1n7pVRf8diANOsSiaFx2ekWn1EPVidOrqCCd7gzr+qiX8onWnFZdqAImUCdVpersm7BbV4pnXUmbZi9tU7raXbTQWIuNhjuBiV1iU7IvImz8bwPI3k30Z/fDl5eq6yFpFemmkO6+IKqKlRcV40/M7NWdzuw7qQ70ZapnOLJ0RTyXGUPUV7oR9Wehs5Pxw8pfoyTVH9GL0v1kI2BN5GO8R5gfI3yq1Z8D4Vqtv0Jt0Hj5sifM/Wplj82eURj4gYsplaShNSiLretkDJqxR4QIf3YS2LXnI/M8qm8TKEsl4DhTUWf6ibcDr4eqKjDujHhhcqrH9CpR9ljMh/1tBLhi+m7kq1cZ0I1cZXbtCokhlFWv9SEuGI2s5nwwZOuRYA5FvWpb4UhA4vIOOFM0BjicPxWckzj+fxjWUElv+ts3W1ynuOI4yh+AEYDxS8bkJ5/f/5TlnuQ63m+JXuzusOg6HnunIrnlJBvieldYP+e6GtgrxN9De5XIXroEkpsFltxELoWpVxYwD2wggAId90wjgX7B0RfKWZ/Q/nwxXQOnGXiJkqmImq5vkb6VOM9cS1kx6iy5pgAZVKnHztVpvEGOt2lLCqVKA5CGypDHqbNP0TTQCs00uOOnPvpf9bDjisEByC3KAQwzXW5F8qh28spxlrJTrHZ8Xulcd8r+2rgnqoaMO//WQ62UN/o/Zu4v0pZ4HZAbSJCyxZ2YFEbsPWzJMBxwBcOi7mgNDhrWZAkCbwQMLkdZzu5ib/M5VIXVdTd3kpV2Kbu0fw6wIWBX7fIhQwKI9fFPsd6jnXM2zFRXzeKjYmavsytXvKfG6lPxaw1rNdZtYb260zUAffCxOUWZXbYNFrbwt4aWDZnjPtC2kkSn5VR8HI6i43EbfN1yadWBiXf5hUYUD3/YXw9ml8HOLR4q6pcG0IaLTJtT8Wp9je92+Vhpm1zcnOeHYQ9w7yTMcx1TsOw2SLoFWB33EIfAGnud7D42lnApgWm7YqJPd/F4iPPtY8/15lvVwr3qFKxmoSd5mpvLp7rmb5Iq43JfRC/ztQuA4aTO1i2y8OmPROc2sPEYoQzfGsGAb45z/A8Z47PSBwCMhboFmPBW/IxisqMR0LjzgmoFLePZFG03XHIEHu7lNzLQoCQqtBHF5MDXBuy9QYrh4GBTcCQU6Nx6yC/+7ISa51KyDbqyh22rO+vG7CW+c5OVlvot9S9T8a0JdIbE/Eq1q9CN+Z7AZMOWA7FpzHF3LJiybmFCecmjIQ2cewT0u3DX0EhWZBmFgAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=15ff45c7333bfa106c8432a19e5c7b33"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <generation_source/>
-        <order>12</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>11ff45c7333bfa106c8432a19e5c7b34</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>cd8f839a-15cf-4b78-aa59-d58d7af86b5f</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVUU/bMBD+K1We2yhpSqF9m1ohTWIglYkXxqKLfWktOXawHaCr+t93Sdy0ooyBxB7QnhLf+Tt/9+W++HYTCB5MgxHyKJ7EY5bESTKMouHZKM7GSRYPeQKIcdAPFBRIOw0ybTitH0BWdWCzicf8FE4wGUQwHg5Gp6PTwWQyhkGEWc7GfJRBNgkXDW67JSQXtpSwvvEFKMJWQnKDKpje3vWDEgyd5dAE082z1FvJSshQ0tYFLoV1Rr/A363Les01qwpULhW74IXHzn2m93VOGQLVhOKoH+CTQ8WRqOQgLfaDAhQHp806mDpTUcAg8Csl192OlVCubbWAJyt+0cmjqN6XI/XGvAzdMvUSteF8Dg6uqTJzlekU04KhbVXhmEMl3eww1m64Kp3QqoU4yOQOrWVVqMtWkaArcPBFKksksKz7rJm3beXXK/242JE8F6qRxLcoNQPZrcA5I7LK1XQ2AUpsNC6gLIVapqXRD6IBE5UiXEpahLnUj3SmFUsVAqt5h6QqhOcUnzfhGzCibuIblSHwth/YtZ1JsHbfCmmY3lc1k7Yx30LaqNBIkDaTUIOZEaX7Qkc9oCe+7XtDZCevzRib7AfqoObeFGwFaompwfsKrTue+VmT7y26/Psc8AZ2Owd8r5/wB7reA0exiz1YYu+yTXgHnHyYA84+kwN8G5/eAn8b/Gj46s8V95PUzLo9GHrrwOGPKooSnvxkUpOATHMfsRWjL2PzSvqU0qRMm5uhcSIXDLjuCUVlZP1GsvQIRSAdHjvo3x72Pju+QbOdHWdQlNq+IOLOilhQlw7TVtRndvTJ3o1PdpfSB95K0Wdy5X9zL939BmwmmPSqCQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=11ff45c7333bfa106c8432a19e5c7b34"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <generation_source/>
-        <order>3</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>59ff45c7333bfa106c8432a19e5c7b2e</sys_id>
-        <sys_mod_count>18</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>3f1dd51a-1352-4a21-a5f3-6583efc2fb85</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYzW7jNhB+FUFnx5Xi/9yKBAEKbBMgSXPZLoiRSNnE0qRCUvYmhh+m6KHoA/QJ8mIdipJt2E5ioQ6QoKdAMxzym+H3Dcf5ugg5Dc9COopG2WjUGw6iqNOJon6/k0KcJJ1+mkQJdMNWKGHKcKWFRDD8nIEo3Hc6ATlmRLOHghmLDspNLuDxvvKfl/7gZuVPJ1xQzWR49vVbK8xB476W6fBsseU6FJiAhAlceuf+wi5S+5ivPknp87Yv6zjBgivvUJo6LFErZD8sk5QhiAyEYa1wCpKCVfpxZdEM6LUUa8OES4s7hm7xD8Of8Nxh5NZlDNNKmfetPklVK2/OLsDCrdVFagtdLU0niqfM+IJQlkEh7PmmzS+4zi1X0of4tH20EsVUXvlyhKsN6qtBS2EQBMtdog55lUZ2O1HzmxrlJZdlTSqnUCmI1RdYq3lSWIdnETLBprgRmUKeczkmuVYzXgYjlml7LPCjnQk1x0MNH8s2pA54G+sK7Uu0X5Tme9DcZfErboPBCIgLpAjxV2hUoctSzkgqClM6NEjj9wqXrdA8mnMBxqwzx5KTh8Lh9nWoMia+aC4k1Ty3P+MWM1Ylt2zV4ui9ysHRmnKpkpQ7FGZDIUhxPOr3AoPpYmGKxBWgjTY2t2C+txEt4XS53NVOg8iGqno7o1pV5y6l57+e/2HmhTwrfe3YvmzuUDsqfcVH01c3ij6TwvDwjyew5pLxJXhDNzF9lWV0zSejtCW+lhvC2RVEY6IfAKEm+jUyU4IOcqVfAlYxPeNM0H0vyaVzbL0kp//Pl+RD8hwBUeJvj0vBZTkWIND3EkDvVfYl8RbPSnqt6V/awKS7MoAA7PPfwVNjORwAaDVN8VwFlAVlUXjGU8BH4E+1H3L9BJQU2m7/tbESROdoguicHkcQi1XSG4Xdcwv1bOjut4548hGwHYG03AiJl/tE1/DcuPm5p8tdYXcaKXuThN5z8SIXjzxMvqDV1ns2hwmGVucRr2wy53TM7Pr0ehVVdg7i+z5/xT1SX1aZ3jsMpvGrP46SjcGUZ2SKd8dz4X6qpUgPQ3C4JJkqJCXV5LymkrvJjGtjq8W7LeiGoVzdc2mUuwsWqCDXfMq4VoFmY26sVs1f67fzqUt6y4LZ8x+aK7M6zgSZ0mwabDeqA3Nv0sO6Rxxfj93DLkFMIKAQMAv5Zn9gWpejzb42duB1vsKPAzvdoejid0H33/vhPmXs7YsHYv4UP8CP37lSBkn3FPqDThxHURzRQTQcDOJhP8n6MOhma/USYmSKzRZ3zoAL3J7UVKnvO95tT/dMU6Cu2I2b0AHQal5eYZ8JspLR2HccrINwV50mUUowkFut5g5fkZ8uywdjRdveh2s3n+K/UQW/2660N+2t9XtNFQX/TfKHgv3iyDVk0ekwpunJcBAPTroZ7Z+MKPROYJT0Bh3K0m52zEHh278iJhqL4BUAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=59ff45c7333bfa106c8432a19e5c7b2e"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <generation_source/>
-        <order>4</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>95ff45c7333bfa106c8432a19e5c7b2f</sys_id>
-        <sys_mod_count>18</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>342ed5a9-2295-43b9-8684-0b2b1d06dffa</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VY227jNhD9FVfPlktKlCzlrUgQoMA2AXbTvGy3woiXmKgsaXXJbjbw1/Sh6Af0C/JjHerii+ykduoESPtkaIYznDmcMxz6472lhXVieQKUA1OHTz1KCCWeSx3qMh563PHJlFljK4W5xJUVxImMmo+xdQtJbYR8BumNjCoof0Op0GWewN11pzxtlKOrVslnOhGFTK2Tj5/GVg4FeqpkYZ3cD1T7xpVALBNcemV+4ZFAq7t8p+zdyjiRo4tWkRXCBETHlvxayVRIjERBUsqxNYdUQJUVd9ZJVdQoKCSIyzS5W66Y6bRCh5ZZ+7XU33DbgJh1SmJqXLa65WfUgdWK1RlU8AE986ouuqV8lmkuyxYUIRXUSXW6LmsXXOaVztLWpEmzs86Sep5etJBYSwf92aCkLjEImZs8TeRdGurDLPvyvo/yXKcNJJ0yyTgkyy+oqkLHdWXiubdqfbUD61a6E22ZyDnuHM0hz3V6E+VFdqub3TD4+eQmwY+JSrIvGGWpb9IJcJPpBM8BJucoP2vE11Bo4/YndIPGZsufU/25lj+aOmIxcQM/ZrZSIbOZy6kdMp/ZsQdEyGnsqdi1FmOrvCtPEyjLFWB4UtHn2qTbwtcBFbVYGxNe6Lz6AYO6lR0mi3FHKxE+Wb5r1cqzVGiTV7lNq0JiGmX1S02IK+7vXUWF8CjY1PUcm4FDbfCUa/te4ErFHRUH3uS95FjGi8WvZQWV/K61dbfJ+RJbHEbxPTDqKX5qQHr44+EvWT6CXMfzLdm7dQ+9ouO5cyyeM0LeEtPbxP490TfA3iT6BtyvQvTQJYxQP7bjIHRtxriwgXtgBwEQ7rphHAv/GURfa2b/QPnwyXIOnFXhKi0TETVcXyc9BoVZNkjdFFmdP4OTE+Qc2k+GriaYdaQNZVuNFFGVPcf/mvnS53ZvecOZHNbC9jjzZQuDeZ6VjxZBP6fIOQJZyVYxnFU65ei6U3Z9zD1WH/O9/2cj20J9MLUMcX+VhsZpwCgRoU0FDWxGAYcWXwU4yEyF48dcMBa8aEOTRAVeCFjcjrNd3GS6quUyK6qoPb21frbdFw7m1x4h9Py6RC6kUIzyrHgssI5jLfN2vAXOjWLwFmBPc6uT/OceA8di1gbWm6zaQPt13gIB90Llcpv5NDQjArVxKghsyn2fT4WkSsUvyih4upzFoHCbel3xqZFByXfctyOoHv4cfTuYX3sEtHxl6zwbCTlqkNFKc8B5/Pdsd8j9NN7U5HAS74Udw7yjMcx1jsOw+2XSa8DuOIUuAWLOt7f41lrA0ALLds2ELnax+MB96eH7OovtTuEe1CrWi7DVnD1aiy/1B8OyrAZvjl78Ou8NGfj45jCzJg/N9UzwvREq2yfcjyEOAl+wF/hjwXemPolDQMYC22IseCs+RlGZ8khk6FmBTtB9JIuiuR37CqHbreRaFgKE1EV2cDPZI7S+Wi+wc4wwsRmM5Hxkwtor7q6txFmWSEgHfeUKr6zvzw1Yq3r3j9Zb2Fu6vY/GtBXSg4l4HetXoZs/9QJfOmA7DB/1DGvLjiXnNhacq3wSUuLQI9Lt09+2PBWpIBcAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=95ff45c7333bfa106c8432a19e5c7b2f"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <generation_source/>
-        <order>5</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>d1ff45c7333bfa106c8432a19e5c7b30</sys_id>
-        <sys_mod_count>18</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>b412bd4f-5d5e-45aa-bd35-a57e76a6e636</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VX227bRhD9FZbPosollxTpt8KGgQKpDSSuX9KEGO7FWpTiKrw4cQR9TR+KfkC/wD/WWV50lyu1koG0T7ZmdnZnzp4zO3w/sxW3L+yAg/Rg5LFRQFyXuIFPPOJTFgfMC90RtQd2DhOBKytIM5E0Pwb2I2S1MbIx5A8iqaD8Fa1cldMMnu4752XjtO5aJxurjBcity/efxjYUyhwp0oU9sVsw3VoXhmkIsOld+Yv7Em0eprutL1ZBmfCumkduuAmITKwxZdK5FxgJhKyUgzsCeQcKl082RdVUaOhEMBv8+xpsWKs8go3tM3aL6X6isdGrlknBZbGROtb/Ew6sFqzvIIK3uHOrKqLbikba8VE2YLChYQ6qy5Xbe2C22mldN6GNGV20TqrJ/lNC4m92KC/G7TUJSYhpqZOk3lXhnw31p/f9lleq7yBpHNmmkG2+AVVVai0rkw+M7tWdzuwbq070RaZmODJyQSmU5U/JNNCP6rmNEx+MnzI8MdQZvozZlmqh3wIzFQ6xHuA4TXarxrzPRTKbPsTboPB5sifc/WpFj8aHtHU9aMwpY6UMXWoz4gT05A6aQAuF6M0kKlvzwd2+VReZlCWS8DwppJPtSm3ha8DKmmxNiGsUNPqB0zqUXSYzAedrHj8In1X2Mp0zpWpq9yWVSGwjLL6pXZdn89mviScBwQc4geeQ8EjDgTSd8Ig8oVknkyjYPhWMKTxfP6xrKAS37Wx/rY4z3HEcRI/AKNe4pcGpOffn/8U5R7kOp1v2d6s7tA7Op17p9I5dd1vSeltYf9e6Gtgrwt9De5XEXrsu9QlYeqkUew7lDLuAAvAiSJwme/HacrDfyD0lWb2N5KPX6Rz5C2JK5XIeNJofU30mcZ7YpqLVlFlzZAApayzj60r13gDre9SFJWSigHXlspRh5n5D9G0MAqD9LAV5375n/Ww4xrBAcgtGgFMprrcC2X/2osJ1lqJ1rH54ndO675zdt3AP1U3CIP/ZzvYQn3j7d/E/VXaAiMRJS6PHcJJ5FAC+PSHMsJxYMS9MGWc0uisbUG4MgpiQHJ73ja53dGSy6UuqqS9vZWusC3do/V1QAq9vm5RCzkU1lQX+xLrNNYqb8dEfW0cGxM1fVlbneU/N1KfSllrWK+rag3t15moIxbE0mcODUlsHlri4NsaOYSFIRtxQaRMz6ooeJnOfIO4DV+XempsULJtXYEF1fMf1tej9XVAQotvVTXVFhdWg0zzpuJU+5venXI/0zac3Jxne2OnsOBkCvO90yhstih6Bdgdt9AV4Jr77SO+thGwGYG0XQkh810qPvJccvy53ny7U/hHtYpVEraeq71cPNdn+oJWG5N7b36dqV1EIU7u5nuTxeZ5dnFqj6UTuixMIY2ikNMzfJ6H3ih00xhQsUC3FAvBUo9JUuYs4Rp3lqAy3D4RRdG8jj1DyHYruRcFBy5UoY9uJgek1rP1BjuHhYWNwRITy6R1UN5dW0m1zgTkG33lDp+s768NWEu+hyfrLfRber1PprQl0hsT8SrWryK3cBREofDA8Sh+GlPklpMKxhwknC9DNyauR04otw9/AaZu819mFgAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d1ff45c7333bfa106c8432a19e5c7b30"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <generation_source/>
-        <order>6</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>11ff45c7333bfa106c8432a19e5c7b31</sys_id>
-        <sys_mod_count>18</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>96a7c381-ae12-4e33-a184-74a193f631a0</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVTU/jMBD9K1XObZWPBpXeVq2QVmJBKisuLBtN7ElrybGD7QDdqv99J4mbVsCyILEHtKfEM37jNy/z4pttIHgwCybIw+g0OmFJlCRxGMbTSZSfJHkU8wQQo2AYKCiRdhpk2nBa34Osm8B2mxQR52kEoyhJ49EE4mgEaZGMTtJpggWLi3yajpctbrcjJBe2krC59gUowtZCcoMqmN3cDoMKDJ3l0ASz7ZPUW8lKyFHS1iWuhHVGv8DfbapmzTWrS1QuE/vguccufGbwdUEZAjWEonAY4KNDxZGoFCAtDoMSFAenzSaYOVNTwCDwSyU3/Y61UK5rtYRHK37RyZOw2Vcg9ca8DP0y8xJ14WIBDq6oMnO16RXTgqHtVOFYQC3d/DjWbbisnNCqgzjI5R6tZV2qi06RoC9w9EVqSySwavpsmHdtFVdr/bDckzwTqpXEtyg1A9mvwDkj8to1dLYBSmw1LqGqhFplldH3ogUTlXK8krQYF1I/0JlWrNQYWMN7TKrC+IziizZ8DUY0TXyjMgTeDQO7sXMJ1h5aIQ2zu7ph0jXmW8haFVoJsnYSGjAzonJf6Kh79MR3Q2+IPH1txtjpYaCOah5MwdagVpgZvKvRuuczP2/zg2Wff58D3sBu74DvzRP+QNd74Fns/ACWOLjoEt4B6Yc5YPqZHODb+PQW+Nvgh/GrP1c8TFI76/Zo6K0Dhz/qMEx48pNJTQIyzX3E1oy+jC1q6VNKkzJdbo7GiUIw4HogFJWRzRvJMiAUgfT4uYP+7WHvs+MbNNvbcQ5lpe0LIu6tiCV16TDrRH1iR58cXPtkfyl94K0UfiZX/jf30u1vd4UiXqoJAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=11ff45c7333bfa106c8432a19e5c7b31"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
+        <flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 23:07:15</sys_created_on>
-        <sys_id>356b6ec7337332506c8432a19e5c7b9c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:59:33</sys_created_on>
+        <sys_id>5aa546f633cc0f906c8432a19e5c7b38</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>ded436c2-defe-4e19-887b-e0aa4e2b9eac</ui_id>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:49:43</sys_updated_on>
+        <ui_id>11046cce-4660-407f-a3d1-86a61760ac20</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VYzW7jNhB+FUFnx5Xi/9yKBAEKbBNgk+ayXRAjkbKJpUgtSSWbGH6YooeiD9AnyIt1KEq2YTuOhTpAgp4CcWbIb4bfNxznyzzkNDwL6SSaZJPJYDyKol4viobDXgpxkvSGaRIl0A87oYScoaeFRDD8vAdRum8jCeUmVSRl2ubT3BLNJHsgFsw3dENbIeDxrvb+7GyBc+UZT8GyoPZLZ1xQjAzPvnzthAVoPM0yHZ7NN0yHwhWQMIGut+4vbOO3j8Xyk1Q2v/ZpFSdYcOUNSlOHJeqE7IdlkjIEkYEwrBPmIClYpR+XK5oBvZZitTDj0uKOoXP+YfgTnjuOnF/GMK2Uedvyk9Q188vZBVi4sbpMbalr13SmeMqMLwhlGZTCnq+veYfrwnIlfYhP20crUebyypcjXG7QXBGulAZBsMIl6pDXaWQ3M/XwuUF5yWVVk9ooVApi+QXWap6U1uGZh0ywHDciORQFl1NSaHXPq2DEknenAj+6mVAPeKjhU9mF1AHvYl2he4nrF9XyHWjusvgVt8FgBMQFUoT4KzSq1FUp70kqSlMZNEjj9woXndA8mnMBxqwyx5KT76XD7etQZ0x80VxIqnlhf8Yt7lmd3KLTSGawl4OTFeVSJSl3KMyabmSZJ0z/XmIwnc9NmbgCdCvtOEl0vX2x2NZQi8iWqno9o0ZV5y6l57+e/2HmhTxrfW2tfVrfoTHU+oqPpq9+FH0kheHh709g7SXjS/CKbmK6l2V0xSejtCW+lmvC2RZEa6IfAKEh+jUyU4IOCqVfAlYzPeNM0F0vyaUzbLwkp//Pl+Rd8hwBUeJvj0vBZTUWINC3EsBgL/uSeINnFb3W5i23BibdlgEEYJ//Dp5ay+EAQMtpihcqoCyoilKNcPgI/Kl2Q26egIpCm+2/WawF0TuaIHqnxxHEfJn0WmF33EIzG7r7bSKefARsRiAt10LixS7RtTw3bn/u6WJb2L1Wyl4nobdcvMjFIw+TL2i185bNYYah9XnEK5s8cDpldnV640WVfQDxbZe95h5pLqtK7w0G03jvj6NkbTDlGcnx7niB87NmKdLDENCMZKqUlNST84pK7iYzro2tnXf9vEO5uufSKHcXLFBBoXnOuFaBZlNurFbtX+vX82lKesOC++c/NFdmeZwJMqVZHmw2qgNzb9PD+kccX4/dwy5BzCCgEDALxXp/YFpXo82uNnbgde7hx4Gd7lB08Zug++/9cJcydvbFAzF/iB/gx+9cKYOkfwrDUS+OoyiO6Cgaj0bxeJhkQxj1s5V6CTEyxWaLO2fABW5PGqo09x1vt6c7pilQV+zWTegAaA0vr7DPBFnFaOw7DtZBuOtOkyglGMiNVnOLr8hPl9WDsaTt4N21mw/x36iS325W2i/trPVbTRUl/03y7yX7xZFrzKLTcUzTk/EoHp30Mzo8mVAYnMAkGYx6lKX97JiDwtd/AQawHOf2FQAA</values>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hN307tUJaaW8rtb192VtZju2AtcZObaddivjfbxwnAUEKREelVveYmbH9zcz3TZz8WIechtchnUbTdDodTsZR1O9H0WjUJzhOkv6IJFGCB2EnlHjJINLiRDB4fMYid89kgeWcIc2ecmYsOCg3mcCr76X/pvAH97WfLLigmsnw+sfPTphhDftapsPr9Z7rXGACJ0xA6GOJbA+oXWX1Iyp83vZ1d1nwzTuUpg5K1AnZb8skZYAhxcKwTrjEkmKr9Kq2aIbpnRRbw4JLCzuGLvi34a9w7iRycSmDrAjzvvoRlaXy5vQWW/xgdU5srstQslCcMOPrQVmKc2Fvdm0+4C6zXEm/xKftVyuRL+U3X46w3qDqDFhyAyBY5hJ1yMs00oeFermvUM64LGpSOoUiWNRP2FrNk9w6POuQCbaEjdASZxmXc5Rp9cyLxYBl2Z0LeOimQr3AoYbPZRcTB7wLdcXdGdhvC/N3rLnL4i/YBhYDIC6AIci30KhcF6V8RkTkpnBoLI3fK9x0QrMyNwIbs80cSo6ecofb16HMGPmiuSVE88z+CVs8szK5TafSxvAoBadbyhElKXcozI5AgOFw1D85LKbrtckTV4AuYdrylBNsGeRlfm02h9JpsbKlqE5nVInqZjelpjRLeR3YvjZtUMorvpi8BlH0mQQGh388fbVXjC/BCdnE9CjJ6JZPRmmLfC13dHOoh9Y8PwNCxfM7x8wgWb2FqqR5ypmgTW+RmXPsvUV6/8+3yIckOQCiyHePS8FlcSUAoO/F/uFR6iXxHs8Kem25X9iwIYcawIFVwWtrJZwBp1LCA5wdPHo8DRCreV9QZn/WV8ZSAP2LCaDfu4wA1nWadSEbal7dAl03q/hXF4/344GCOwviTZPAWp0Ztz2ztzkUcL+VgnfJ5j23b3DuwtfFNxTZec8RsICl5XnI6xe9cDpndnt6FUWVfcHiV5O/ZByqGlWk9w5Xz/jo10+yc/XkKVpC53gm3LcYAXIYBNdHlKpcUlTejbdEcp1MuTa2DD4cNPcM9CMDBcIM7IIFRXRQR7d8EZ/OoyrllzSoEilPMwEkEhSJBHUi7dJuM7QGF7ycXnpozTAXRTfgsyfbaSfTWuk3BteJRh5hxJlT7UxQ8UVB/fex1ySBxvF3Auun+Ia+/GgiDCeDHh6N+3EcRXFEx9FkPI4noyQd4fEg3WoUISMJTFPYOQWqwPaookbV5/hw/pTDtt2cOQNUxcBbJd2XdW9sA4cK2htUqE7jLudJopRgWO4NlEdA/seseCPUdB1+uKHyKX4o5fxxv9Le1Fjr97o25PxvyZ9y9sVRbMKi3iSm5GoyjsdXg5SOrqYUD6/wNBmO+5SRQXrJm8DPfwGRkpPwohUAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=356b6ec7337332506c8432a19e5c7b9c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5aa546f633cc0f906c8432a19e5c7b38"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
         <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
+        <flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
         <generation_source/>
-        <order>10</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
+        <order>3</order>
+        <parent_ui_id>26aab4ab-d6c3-4464-8ce8-b48b408a2dd1</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:27:42</sys_created_on>
-        <sys_id>19ff45c7333bfa106c8432a19e5c7b32</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:53:24</sys_created_on>
+        <sys_id>5844ce3a334c0f906c8432a19e5c7b39</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-05 05:02:18</sys_updated_on>
-        <ui_id>1de93de5-5131-4653-b7e8-acaef9d8fa18</ui_id>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:49:43</sys_updated_on>
+        <ui_id>b49b4666-06b6-4a45-87a7-96fd3e5c14f8</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VY227jNhD9FVfPlktJFCXlbZEgQIFtAuymednuCiOSionKklaX7CaGv6YPRT+gX5Af61AXX2QntVMnQNonQzOc4czhnOHQn+aGEsaJ4QqIbfBs7rkWIRZxHcu2HMoDl9uMeNQYGynMJK6sIEpk2HyMjVtIai3kU0hvZFhB+RtKhSrzBO6uO+VpoxxdtUo+VYkoZGqcfPo8NnIo0FMlC+NkPlDtG1cCkUxw6ZX+hUcCre7ynbL3K+NEji5aRVYIHZA1NuT3SqZCYiQxJKUcGzNIBVRZcWecVEWNgkKCuEyTu+WKqUordGjotd9LdY/b+kSviyWmxmWrW36GHVitOD6DCj6iZ17VRbeUTzPFZdmCImQMdVKdrsvaBZd5pbK0NWnS7KyzpJ6lFy0kxtJBfzYoqUsMQuY6Tx15l0b8cZp9+9BHea7SBpJOmWQckuUXVFWhorrS8cyNWl3twLqV7kRbJnKGO4czyHOV3oR5kd2qZjcMfja5SfBjEifZN4yyVDfpBLjOdILnAJNzlJ814msolHb7M7pBY73lL6n6WsufdB3RiDg+i6gZxwE1qcMtM6CMmpELREgvcuPIMRZjo7wrTxMoyxVgeFLh11qn28LXARW2WGsTXqi8eodB3coOk8W4o5UInizftWrlWSqUzqvcplUhMY2y+rUmxBHzucWEB650TALMNqlHPTMIGJhERjFngkYQBZMPkmMZLxZfygoq+UNr62yT8yW2OIzie2DUU/xUg/Twx8NfsnwEuY7nW7L36x56Rcdz+1g8p4S8Jaa3if17om+AvUn0DbhfheiBQyixWGRGfuCYlHJhAnfB9H0g3HGCKBLsGURfa2b/QPngyXL27VXhxkomImy4vk56DAqzbJC6KbI6fwYnJ0MfE0w3VJqrrUaKsMqe77gxX/rcbipvMYXDmtYep7xsWjDLs/LRY+8nEzlDBCvZKobTSaccXXfKrnM5x+pczP1/tq4t1AdzyhD3V2lh3PKpRURgWsLyTWoBjiks9nF08YTNIi4o9V+0hUkS+24AWNy2vV3cxFvVcpkVVdie3loH224IB/NrjxB6fl0iF1IoRnlWPBZYx7GWeTum/3OtGEz/9GludZL/3Ph/LGZtYL3Jqg20X2f697kbxA43KbMCPRRYJs4BvmlxxrgnpBXH0YsyCp4uZzEo3KZeV3xqZFDyHRftCKqHP0f3B/Nrj4CW72qVZyMhRw0yKlYccAL/Pdsdcj9/NzU5nL17Yccw92gMc+zjMGy+THoN2B2n0CVA9Pn2FvetBQwtsGzXTKzFLhYfuK91+L72YrtTOAe1ivUibDVnj9biS/2lsCyrwSujF7/OC0P6DF8ZYFoOD/T1TPCFEcQmI5zhnOn7OG++wF8JzPYYiQJAxgLdYiy4Kz6GYZnyUGToOQaVoPtQFkVzO/YVYm23kmtZCBBSFdnBzWSP0PpqvcDOMcLEpjCSs5EOa6+4u7YSZVkiIR30lSu8sn4812Ct6p0drbfQt3R7H41pK6QHE/E61q9CN+a5PpM2mDbFZzzF2jIjybmJBefEjAQWsa0j0u3z32a5AWYSFwAA</values>
+        <values>H4sIAAAAAAAA/+1W3W7bNhR+FYKXqadIUZLF7sUQuAt2sSVAM+SmagWKPLK5UaRKUk5cw0+ziz1IX2yHlGSncbu22HZRYDc2eH4+fueXerWhUtAZPc8gPZtm5zzP8vwkTU8uTrPqPK+yE5EzgFM6oZo1gJaeVQrKeJjQFVNdEPIl0wsoLbztwHlUCOlaxdZ3g34e9eTlTs+XUgkLms5evZ7QllnE82DpbPNE9aXsFKtAoemvgd4n2Pp1+1HZz499yXWvMFYEPumEwoMHLQCJ1Ew5mNCGacG8sWs687ZDgQUmbrRa7yyWUnsEpMH2wcl3eO1FGuxqwMg49LrdsRzS1YvrF8yzW0TmvrODKV8aycH1ORFQs075+WNZb3DTeml07xLDHLyN6hp93aeE7gDG6qCkc0gC2hBnYD6EUd8uzf3LkeWV1DElg1IZztTuxLy3sup84LOhoKBBoLJhbSv1omytWcnojFyaZKHwkNTK3OOlTi50wnggnmBaWXKF8hdRfMesDFH8gjDovJ1Qt3ZzxZzbx4JJLN92gUkf2RBD2achuHArW3+JF6xgoLudjG0vIJ1+srGyat9IsdPdBy2/KBsjQBVdmuZiU4w9X9BZQedI/P2f7/8wJHS9NqvhJIDMwXpZS86EcQWdFD1i9JpWNctFDXl+mqb1ND3nF6f5CcumcMa/r7KzaB7rGs33FIIcU1NK8YU42zc4c5imgfzGdVUoR8JHch5Kz9zv2+0b3oiq5PJzlslghx5uaawPlY2Zx7r2vrX4rpfgKB1siP/T+c/S+ZUL9fN9Py7UKwlKuI8MwrhNocEyIet+MJ5s1EFJ7gblsFWzf2urYkG+pb3aB/bNr9VHL+jBgu1D7GWB80H3RuHfuNDjo0IfHV1yrIEjgfXxZQyDhDBI5zBy4pdAalFGial+A+4TchsBSNM5TyxgjTVhJHZlQgLiTeg9orumwj/piKlrB55Ua/IsI1KTH601lvyEbajCFbfQJy+SWTGp4teBiTE4MnQW6Vok1lqkGnwKmhSUsBonb6QX3OGB4RzADNlYEhOCheCkn+PRMMFKLxZgE97ZsEuSg8w9D1hDZDuUIDwudECW7hrun6IOC6aUuu28O9wzYc/xUPtYz8F7wMAtqMMMcVMGv2bR+FLDfXQs6PPxVtzI//29Fg5uPshkn4AfyOMHA58Ivn8iUEVm+PPBI2KeWCD8HvrZ18bVxXYscSAbo2NwiHdQNRwqx1Ygdrtiu92+/gs17H2vjgsAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=19ff45c7333bfa106c8432a19e5c7b32"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5844ce3a334c0f906c8432a19e5c7b39"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>26aab4ab-d6c3-4464-8ce8-b48b408a2dd1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 12:45:57</sys_created_on>
+        <sys_id>ce4056b2334c4f906c8432a19e5c7b15</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:49:43</sys_updated_on>
+        <ui_id>4e00e203-5f47-4201-94b3-9ae984bb4c8c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VW0W4TOxD9FctP3DZ3u2laBOGpaqlAAiq1qC8Erbz2bGLw2ovtTRuifA8fwo8x9no3UYt6i8RLdfOy8nhmfM74nN18WlMp6JQegcjHL8fP+WQ8mRzm+eGLo3H5fFKOD8WEAYzpiGpWA2Za4MYKXC+ZakNgvXZtWSlzk3GwXlaSMw+FZ+7rZoNpQrpGsdV1ysYIX0glLGg6/fR5RBtmsbEHS6frO1uPRaZYCQpTL3tod6H6VRPWwvC2Bu0L2QffpcqztEPenuEOFgU443xE4daDFoBAKqYcjGjNtGDe2BWdettiwAITF1qthoyF1L4jWrNbJ7/jyUd5yKsAmfE0hGFZpAF14eqMeXaFnblv7TAvIzm4biYCKtYqf7ob6xIuGi+N7ko8K1VfbVRb6w/dROjQYOc+WocgoAk8A/KOVnW1MDeXPchzqeNIEkVlOFPDinlvZdn6AGdNQUGccc2aRup50VizlLEYodTZXOEiC3LBM52c64zxgDvDqbLsHONnMXzNrAwk3mMbLN6MqFu5U8Wc21LBGRbf2oCkI5YoFHEKcQRFVEIo5lY2/gSPWkICvhkl7ZfHDymMv9wKaqfnVv9Ohyvkpgjyr+e1j9q/r/zTrTtIyHh20npT40qQQPufP3bGI3D3zvgY9fB7Hskc92LvdmvJh24jWeP4r1njxVOyRqLx5L3xX47IDx985+4oKZrA7bjhxtivhTZIeNbm+URU4t/uJBD3LfFw8p+54RGYezecS1DC/YZEbwWoESV+xDpSd+yQNsl12hy+Fn/xc5E/JVf8Dz4YHcUuFjBvhRtWD+XSg72Z3ts74Th8F1/0BycRPwn4SeuQMvELIJUoYsSUX4D7jFzFBqRunScW8HI1YSQKMiOh40WQHdFtXeJDOmKqyoEn5Yrsj4nU5LW1xpI3qD8VjriCbmoRzJJJFd/qJkrAkSQp0jYIrLEINdTMaDajhFVouh5eKIdbhhaAKaKxxC2M9XgDnHQW7hMzvOL5HGzGW4uK8FlMDFcYeeGpr0KvxGzoEoIHM53CM3q6YHoO5BK+oUM9Bsj+cEIxKQqOfkKjdv/0svRIQ9mfaYI/rKmMJHgsE4yE1wjOcy6dtwif4YAF0z9/sBl9hZpwbAlikPpms/n8C37uN3kiCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ce4056b2334c4f906c8432a19e5c7b15"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT INac8d514f337b3e106c8432a19e5c7bd7,748d914f337b3e106c8432a19e5c7b35,82fd194b33bb3e106c8432a19e5c7bfc,8efd194b33bb3e106c8432a19e5c7bff"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT IN56a546f633cc0f906c8432a19e5c7b3b"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">e08d514f337b3e106c8432a19e5c7bd7</block>
+        <block display_value="">56a546f633cc0f906c8432a19e5c7b3a</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
+        <flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -448,121 +304,40 @@
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:26:55</sys_created_on>
-        <sys_id>ac8d514f337b3e106c8432a19e5c7bd7</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:59:33</sys_created_on>
+        <sys_id>56a546f633cc0f906c8432a19e5c7b3b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:54</sys_updated_on>
-        <ui_id>08843983-520a-4612-b8cf-84e55a5fafff</ui_id>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:48:25</sys_updated_on>
+        <ui_id>26aab4ab-d6c3-4464-8ce8-b48b408a2dd1</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy27bMBD8lUCnFpAFPWzX9i1oESBA0wBJkEsbECtqZROlSJWk7LiGv6aHfEh+rEtJdozGQYMix97E4XJ3ZncH2gS6cXXj7I0+tVbMVTD7ehcGQnmMvjeBggqDWcC1KoQTWrEWCIMlyMZflFKvWH7y7lxZBxIeHx5/6ZMLUA3I9xRWCFtLWN++LpovhCwM9ixqMFTLoQlmmz+u3LpGJiFHSUmvnRFqTs9F4UvEUCZTnvAsHWdpHKeTYZKPszxJiwwQMorbPfy4E3XyuUXCF9X6eoTbXSVtCk8ricMA7x2qAql0CdJiGFSgCnDarPeIQSgulXwCFkI5Shf44HsrflLudDTygSWSRo7d5f7I+jZ2MF9owfGy9gQ7xEEu+zdcy6ZSXzodfgBYQiPdbgCENJbyYe1JexY9pfJ6oVdXu4JnQrUC+0upOcj9CRy1IW8cWj8YlFhRIlZBXVNzWG30UrSPiUsVzSUdonbuBfoNi4B74hH1CKIzwj+18C0Y4VVcUBp63NHMwQrO2m2kdM6QhG3bFvaj8YQ6gb0U1nWDAiw3onanVGeJPett+HyVD7Z4s6EJDrMxTwfUMBwMMZkOJpMP+QBjgCGm+RSBR1fIafJRw6hJuALJvK7t9lsTx1nR7fbznX/T3G/hkCmMylESj447ZDg+5pAj3njZFulfbOEH+UpXxHH83xaHthCWdevda2uL/7Mr7rwFugq225sCubBE5MZj57v/gL9Y0wIIfgittPnuJTxh299y2owAUQYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">bc8d914f337b3e106c8432a19e5c7b34</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
-        <order>7</order>
-        <outputs_assigned/>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:26:55</sys_created_on>
-        <sys_id>748d914f337b3e106c8432a19e5c7b35</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:54</sys_updated_on>
-        <ui_id>4e203bd5-3e09-46b6-8a08-1972ec15b839</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">c2fd194b33bb3e106c8432a19e5c7bfb</block>
-        <comment/>
-        <connected_to>08843983-520a-4612-b8cf-84e55a5fafff</connected_to>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>8</order>
-        <outputs_assigned/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:28:56</sys_created_on>
-        <sys_id>82fd194b33bb3e106c8432a19e5c7bfc</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:54</sys_updated_on>
-        <ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1UW2/TMBT+K1OeQEqjXLrS9q0amoQETNqmvcBkndinrYVjB9tpV6r+d45z6Sq2AUKIJ97i79y+71yyj0zj68a7W7NwTq50NP90H0dSB4y+95GGCqN5xI0W0kujWQvE0QZUEwxLZbYMzl5dLM7wwaPV8JqsQrpawe7up058LZWw2NeswVJmMkbz/Q8mv6uRKShRUa4bb6VeUbgUIXMKy2zGM17kkyJP03w6zspJUWa5KAAhJ78h8GKQcPa+ReIXtYV6hLuhkrEi0MrSOAr0tUAqvQTlMI4q0AK8sbsjYhHElVaPwFpqT+mi4Pzg5DfKnZ+fB8clkkaOnfH4ZH33OpivjeR4VQeCHeKhVH0MN6qp9MdOR+g7LqFRfug7IY2jfFgH0oFFT2l5szbb66HgpdStwN6oDAd1fIGnNpSNRxcGgworSsQqqGtqDqut2cg2mLhUyUrRI2nHLTDsUwI8EE+oR5BcEv62he/AyqDiA6Wh4I5mCU5y1u4epfOWJBzatrCvTSDUCeylsK4b5OC4lbVfUJ0N9qwP8dPFPdnZ/Z4mOC4mPB9Rw3A0xmw2mk7flCNMAcaYlzMEnlwjp8knDaMm4RYUC7oOh89NmhaiW+mnq/5Xc/+DC8meu5BnbuPls8h/cRZhkL95FWma/j+L07OQjnXr3Wtri//xVdyHE+gquG5vBHLpiMhtwN4Nf/1g2NECSH4KbY39EiQ8YofvyoN3pD8GAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">c6fd194b33bb3e106c8432a19e5c7bff</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
-        <order>13</order>
-        <outputs_assigned/>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:28:56</sys_created_on>
-        <sys_id>8efd194b33bb3e106c8432a19e5c7bff</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:54</sys_updated_on>
-        <ui_id>4c711be4-7194-4590-a5fd-bc29a67a6cfa</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <values>H4sIAAAAAAAA/+1UTWvbQBD9K0ZnWawkW0l8CymBQttAE3JpgxivRtaS1a6yu7LjGv/3zurDMY1DQ+ixN82br/dmH9oFunVN6+ydvrRWrFSw+PEQBkJ5jL53gYIag0XAtSqEE1rlHRAGa5CtT1xVyB8nopzwCtQKJwafWrRugs/C0ogwKIRtJGzv31vPKyELgwOTBgztc2iCxe6PlNs2mEtYoqSxt84ItaJ2UVBUMijjCx7zNMnShLHkfBYvs3QZJ0UKCCnVjY1Xo7DJlw4J31Ts9xFux03aFJ5WzMIAnx2qAml1CdJiGNSgCnDabA+IQShulHwBKqEcjQt88bMVv2h2Mp/7whJJI8c+eQjz4ZA9zCstON40nmCPOFjKoYdr2dbqW6/DPwGW0Eo3PgEhraV52HjSnsVAqbyt9Ob7uPBaqE7gkJSagzxE4OgMy9ah9Q+DEmsalNfQNHScvDF6Lbpm4lJHK0lBVEq9oaXeZRFwTzyiG0F0TfinDr4HI7yKrzSGmnuaS7CC550jaZwzJGHfnSV/aj2hXuAgJe+vQQWWG9G4S9qzxoH1Pnxt5yMn73ZxzGYZ5zidZRmbzthZOYW0iKfnGWTxWcaAJyyyDlxr9/ufLWOUfO3wD8/5F86/gHk5j9n8tPNn2Snnn/D823ZP/mJ3/0DvdDtj7L/dj+0ubN7bdtDWLf+w2x+8tfsNtvdNgVxYInLnsc/jP94ntmQAwY+hjTaPXsILtv8N9NyFhi0GAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>renewtask</element>
+        <element>certificate_task</element>
         <help/>
         <hint/>
-        <label>renewtask</label>
+        <label>Certificate Task</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_cdffc1c7333bfa106c8432a19e5c7bfd</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:43:13</sys_created_on>
-        <sys_id>ac83dd8f33fbfa106c8432a19e5c7b11</sys_id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:53:23</sys_created_on>
+        <sys_id>04448e3a334c0f906c8432a19e5c7b9f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>renewtask</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 16:43:13</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 11:53:23</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -582,12 +357,12 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>bnb__close_change_request</internal_name>
-        <label_cache>[{"name":"subflow.renewtask.number","label":"Input➛renewtask➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"number","usedInstances":{"ded436c2-defe-4e19-887b-e0aa4e2b9eac":["conditions"]}},{"name":"subflow.renewtask.sys_id","label":"Input➛renewtask➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"sys_id","usedInstances":{"3f1dd51a-1352-4a21-a5f3-6583efc2fb85":["conditions"],"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9":["conditions"]}},{"name":"subflow.renewtask.u_renewal_flow","label":"Input➛renewtask➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Fluxo A - CA Externa","image":"","used":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo B - CA Interna / Instalação Manual","image":"","used":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo C - CA Interna / Instalação Automática","image":"","used":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"67614f30-0905-4751-9d4c-577b85283098":["condition"],"72bb7406-5007-447a-aa0b-49f15d8eefb7":["condition"]}},{"name":"subflow.renewtask","label":"Input➛renewtask","reference":"sn_disco_certmgmt_renew_task","reference_display":"Renew certificate task","type":"reference","base_type":"reference","column_name":"","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"378914f3-3872-43b2-a337-c9dd517f92ea","uiTypeLabel":"Reference"}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assignment_group.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assignment_group"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record","label":"3 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"],"b412bd4f-5d5e-45aa-bd35-a57e76a6e636":["conditions"],"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.requested_by","label":"3 - Look Up Record➛Change Request Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"requested_by","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.sys_id","label":"3 - Look Up Record➛Change Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"change_request","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["conditions"],"07202f2b-a3d4-4a68-958d-db66256de89d":["conditions"],"15dea9e4-13a4-4954-82cb-7b8abb059851":["conditions"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record","label":"3 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"4b2a9bcc-f23b-4598-9788-70cc5f72a0b9":["record"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["conditions"],"a34c5c6a-e769-4f3a-8bfa-278cbec51083":["conditions"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task.certificate.sys_id","label":"Input➛task➛Certificate | certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"532a5af7-29dd-41c4-b89b-2ed44e8f775b":["certificate"]}},{"name":"subflow.job_status","label":"Input➛job_status","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"483bef8b-91e9-474e-b247-d997c5c17d09"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"032b5d2d-ba25-411f-bf05-ecbad884204f":["conditions"],"604a7965-1cd6-49f6-85d4-74fc13d26a04":["conditions"],"40a58f45-3cb0-4e53-9f62-c370ea5d201d":["conditions"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assignment_group"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assignment_group","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group","assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record","label":"9 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assignment_group.sys_id","label":"9 - Look Up Record➛Change Request Record➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assignment_group"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assigned_to.sys_id","label":"9 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assigned_to"]}},{"name":"ded436c2-defe-4e19-887b-e0aa4e2b9eac.Record.u_renewal_flow","label":"1➛Renew certificate task Record➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Fluxo A - CA Externa","image":"","used":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo B - CA Interna / Instalação Manual","image":"","used":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo C - CA Interna / Instalação Automática","image":"","used":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"08843983-520a-4612-b8cf-84e55a5fafff":["condition"],"162f5436-9fa2-4b4e-83f9-4e793ed7f052":["condition"]}}]</label_cache>
+        <label_cache>[{"name":"11046cce-4660-407f-a3d1-86a61760ac20.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"26aab4ab-d6c3-4464-8ce8-b48b408a2dd1":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assigned_to.sys_id","label":"8 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assigned_to"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record.assignment_group.sys_id","label":"8 - Look Up Record➛Change Request Record➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"1de93de5-5131-4653-b7e8-acaef9d8fa18":["assignment_group"]}},{"name":"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9.Record","label":"8 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to","label":"2 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assignment_group","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group","assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assigned_to.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.parent.assignment_group.sys_id","label":"3 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["assignment_group"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assignment_group"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["field_values"]}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"032b5d2d-ba25-411f-bf05-ecbad884204f":["conditions"],"604a7965-1cd6-49f6-85d4-74fc13d26a04":["conditions"],"40a58f45-3cb0-4e53-9f62-c370ea5d201d":["conditions"]}},{"name":"subflow.job_status","label":"Input➛job_status","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"483bef8b-91e9-474e-b247-d997c5c17d09"}},{"name":"subflow.task.certificate.sys_id","label":"Input➛task➛Certificate | certificate➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_certificate","column_name":"sys_id","usedInstances":{"532a5af7-29dd-41c4-b89b-2ed44e8f775b":["certificate"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record","label":"3 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"4b2a9bcc-f23b-4598-9788-70cc5f72a0b9":["record"],"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["conditions"],"a34c5c6a-e769-4f3a-8bfa-278cbec51083":["conditions"],"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.sys_id","label":"3 - Look Up Record➛Change Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"change_request","column_name":"sys_id","usedInstances":{"b98915fa-1f81-4ccb-b46c-89315082aaa5":["conditions"],"07202f2b-a3d4-4a68-958d-db66256de89d":["conditions"],"15dea9e4-13a4-4954-82cb-7b8abb059851":["conditions"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.requested_by","label":"3 - Look Up Record➛Change Request Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"requested_by","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"032b5d2d-ba25-411f-bf05-ecbad884204f.Record.assigned_to","label":"3 - Look Up Record➛Change Request Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"change_request","column_name":"assigned_to","usedInstances":{"3a6cfee3-8d25-4c62-8e22-8bf23cdd8ebe":["assigned_to"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record","label":"2 - Look Up Record➛Change Request Record","reference":"change_request","reference_display":"Change Request","type":"reference","base_type":"reference","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["conditions"],"19dedab3-3fa1-4687-b01a-4c8ef543b1ad":["conditions"],"96a7c381-ae12-4e33-a184-74a193f631a0":["record"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["conditions"],"b412bd4f-5d5e-45aa-bd35-a57e76a6e636":["conditions"],"cd8f839a-15cf-4b78-aa59-d58d7af86b5f":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assignment_group.sys_id","label":"2 - Look Up Record➛Change Request Record➛Parent➛Assignment group➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assignment_group"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.parent.assigned_to.sys_id","label":"2 - Look Up Record➛Change Request Record➛Parent➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"]}},{"name":"3f1dd51a-1352-4a21-a5f3-6583efc2fb85.Record.assigned_to.sys_id","label":"2 - Look Up Record➛Change Request Record➛Assigned to➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"342ed5a9-2295-43b9-8684-0b2b1d06dffa":["assigned_to"],"1de93de5-5131-4653-b7e8-acaef9d8fa18":["field_values"]}},{"name":"subflow.renewtask","label":"Input➛renewtask","reference":"sn_disco_certmgmt_renew_task","reference_display":"Renew certificate task","type":"reference","base_type":"reference","column_name":"","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"378914f3-3872-43b2-a337-c9dd517f92ea","uiTypeLabel":"Reference"}},{"name":"subflow.renewtask.u_renewal_flow","label":"Input➛renewtask➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"label":"Fluxo A - CA Externa","used":false,"image":"","reference":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo B - CA Interna / Instalação Manual","used":false,"image":"","reference":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"label":"Fluxo C - CA Interna / Instalação Automática","used":false,"image":"","reference":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"67614f30-0905-4751-9d4c-577b85283098":["condition"],"72bb7406-5007-447a-aa0b-49f15d8eefb7":["condition"]}},{"name":"subflow.renewtask.sys_id","label":"Input➛renewtask➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"sys_id","usedInstances":{"3f1dd51a-1352-4a21-a5f3-6583efc2fb85":["conditions"],"16d7a5e3-0a62-4747-996a-0ebfc6d4bab9":["conditions"]}},{"name":"subflow.renewtask.number","label":"Input➛renewtask➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_renew_task","column_name":"number","usedInstances":{"ded436c2-defe-4e19-887b-e0aa4e2b9eac":["conditions"]}},{"name":"subflow.certificate_task","label":"Input➛Certificate Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"b49b4666-06b6-4a45-87a7-96fd3e5c14f8":["parent"],"11046cce-4660-407f-a3d1-86a61760ac20":["conditions"],"4e00e203-5f47-4201-94b3-9ae984bb4c8c":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"66a13868-f5e2-4c04-8dd4-3bf60d087893","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.certificate_task.cmdb_ci","label":"Input➛Certificate Task➛Configuration item","reference":"cmdb_ci","reference_display":"Configuration Item","type":"reference","base_type":"reference","parent_table_name":"sn_disco_certmgmt_task","column_name":"cmdb_ci","usedInstances":{"b49b4666-06b6-4a45-87a7-96fd3e5c14f8":["cmdb_ci"]}}]</label_cache>
         <master>true</master>
-        <name>BNB - Close Change Request</name>
+        <name>BNB - Create Closed Change Request</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</parent_flow>
+        <parent_flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -599,15 +374,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d8b5dd8f33bffa106c8432a19e5c7bb8</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:56</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:48:27</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -622,7 +397,7 @@
         <ancestral_if_else_logic/>
         <component_indexes/>
         <duration>1970-01-01 00:00:00</duration>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
+        <flow display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
         <label>Copy of Change Management Request for Automated Cert Task</label>
         <order>1</order>
         <stage_id>b2084e4a337fbe946c8432a19e5c7b76</stage_id>
@@ -645,7 +420,7 @@
         <ancestral_if_else_logic/>
         <component_indexes/>
         <duration>1970-01-01 00:00:00</duration>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
+        <flow display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
         <label>Change Management Request for Automated Cert Task</label>
         <order>0</order>
         <stage_id>a012d3ac53913010fe1cddeeff7b1231</stage_id>
@@ -673,12 +448,12 @@
         <sys_updated_on>2026-03-27 16:52:45</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=54b5dd8f33bffa106c8432a19e5c7bba"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=d8b5dd8f33bffa106c8432a19e5c7bb8^sys_idNOT IN98b5dd8f33bffa106c8432a19e5c7bbc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d8b5dd8f33bffa106c8432a19e5c7bb8^sys_idNOT INf444427a334c0f906c8432a19e5c7b18"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=378914f3-3872-43b2-a337-c9dd517f92ea</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=66a13868-f5e2-4c04-8dd4-3bf60d087893</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -688,7 +463,7 @@
 })(current);]]></calculation>
         <choice/>
         <choice_field/>
-        <choice_table>sn_disco_certmgmt_renew_task</choice_table>
+        <choice_table>sn_disco_certmgmt_task</choice_table>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -702,7 +477,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>renewtask</element>
+        <element>certificate_task</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -711,10 +486,10 @@
         <help/>
         <hint/>
         <internal_type display_value="Reference">reference</internal_type>
-        <label>renewtask</label>
-        <mandatory>false</mandatory>
+        <label>Certificate Task</label>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</model>
+        <model display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</model>
         <model_id>d8b5dd8f33bffa106c8432a19e5c7bb8</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_d8b5dd8f33bffa106c8432a19e5c7bb8</name>
@@ -723,7 +498,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_disco_certmgmt_renew_task">sn_disco_certmgmt_renew_task</reference>
+        <reference display_value="" name="sn_disco_certmgmt_task">sn_disco_certmgmt_task</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -734,17 +509,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:45</sys_created_on>
-        <sys_id>98b5dd8f33bffa106c8432a19e5c7bbc</sys_id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:53:27</sys_created_on>
+        <sys_id>f444427a334c0f906c8432a19e5c7b18</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 16:52:46</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 11:53:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -757,11 +532,35 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=98b5dd8f33bffa106c8432a19e5c7bbc"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f444427a334c0f906c8432a19e5c7b18"/>
     <sys_hub_flow_output action="delete_multiple" query="model=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8^sys_idNOT IN226baec7337332506c8432a19e5c7b97,60b511cf33bffa106c8432a19e5c7be2,6cb511cf33bffa106c8432a19e5c7be2,68b511cf33bffa106c8432a19e5c7be3,64b511cf33bffa106c8432a19e5c7be4,60b511cf33bffa106c8432a19e5c7be5,6cb511cf33bffa106c8432a19e5c7be5,68b511cf33bffa106c8432a19e5c7be6,64b511cf33bffa106c8432a19e5c7be7"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8^sys_idNOT IN8d44827a334c0f906c8432a19e5c7b32,46260a7633004f906c8432a19e5c7bfe,1a4096b2334c4f906c8432a19e5c7bb8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>26aab4ab-d6c3-4464-8ce8-b48b408a2dd1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:53:27</sys_created_on>
+        <sys_id>8d44827a334c0f906c8432a19e5c7b32</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:01:44</sys_updated_on>
+        <ui_id>b49b4666-06b6-4a45-87a7-96fd3e5c14f8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W3W7bNhR+FYKXqadIUZLF7sUQuAt2sSVAM+SmagWKPLK5UaRKUk5cw0+ziz1IX2yHlGSncbu22HZRYDc2eH4+fueXerWhUtAZPc8gPZtm5zzP8vwkTU8uTrPqPK+yE5EzgFM6oZo1gJaeVQrKeJjQFVNdEPIl0wsoLbztwHlUCOlaxdZ3g34e9eTlTs+XUgkLms5evZ7QllnE82DpbPNE9aXsFKtAoemvgd4n2Pp1+1HZz499yXWvMFYEPumEwoMHLQCJ1Ew5mNCGacG8sWs687ZDgQUmbrRa7yyWUnsEpMH2wcl3eO1FGuxqwMg49LrdsRzS1YvrF8yzW0TmvrODKV8aycH1ORFQs075+WNZb3DTeml07xLDHLyN6hp93aeE7gDG6qCkc0gC2hBnYD6EUd8uzf3LkeWV1DElg1IZztTuxLy3sup84LOhoKBBoLJhbSv1omytWcnojFyaZKHwkNTK3OOlTi50wnggnmBaWXKF8hdRfMesDFH8gjDovJ1Qt3ZzxZzbx4JJLN92gUkf2RBD2achuHArW3+JF6xgoLudjG0vIJ1+srGyat9IsdPdBy2/KBsjQBVdmuZiU4w9X9BZQedI/P2f7/8wJHS9NqvhJIDMwXpZS86EcQWdFD1i9JpWNctFDXl+mqb1ND3nF6f5CcumcMa/r7KzaB7rGs33FIIcU1NK8YU42zc4c5imgfzGdVUoR8JHch5Kz9zv2+0b3oiq5PJzlslghx5uaawPlY2Zx7r2vrX4rpfgKB1siP/T+c/S+ZUL9fN9Py7UKwlKuI8MwrhNocEyIet+MJ5s1EFJ7gblsFWzf2urYkG+pb3aB/bNr9VHL+jBgu1D7GWB80H3RuHfuNDjo0IfHV1yrIEjgfXxZQyDhDBI5zBy4pdAalFGial+A+4TchsBSNM5TyxgjTVhJHZlQgLiTeg9orumwj/piKlrB55Ua/IsI1KTH601lvyEbajCFbfQJy+SWTGp4teBiTE4MnQW6Vok1lqkGnwKmhSUsBonb6QX3OGB4RzADNlYEhOCheCkn+PRMMFKLxZgE97ZsEuSg8w9D1hDZDuUIDwudECW7hrun6IOC6aUuu28O9wzYc/xUPtYz8F7wMAtqMMMcVMGv2bR+FLDfXQs6PPxVtzI//29Fg5uPshkn4AfyOMHA58Ivn8iUEVm+PPBI2KeWCD8HvrZ18bVxXYscSAbo2NwiHdQNRwqx1Ygdrtiu92+/gs17H2vjgsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d44827a334c0f906c8432a19e5c7b32"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
@@ -769,225 +568,57 @@
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
+        <flow display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 23:07:17</sys_created_on>
-        <sys_id>226baec7337332506c8432a19e5c7b97</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 12:01:43</sys_created_on>
+        <sys_id>46260a7633004f906c8432a19e5c7bfe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:13:25</sys_updated_on>
-        <ui_id>ded436c2-defe-4e19-887b-e0aa4e2b9eac</ui_id>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:01:43</sys_updated_on>
+        <ui_id>11046cce-4660-407f-a3d1-86a61760ac20</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3NbJDBQoNsATbaXbkFQJGUTpUmVpOI6hv/7DkVJNmzFtrAOkGCPmhmSb2beG1H6vgk5DW9DOo2m6XQ6nIyjqN+PotGoT3CcJP0RSaIED8JOKPGSQaTFiWDw+IxF7p6NRJQbohBh2i7nS4s0k2yFLDY/IQx8mcDrb2X0V+cLXChPOcGWBWUcWXBBYWV4+/1HJ8ywhtMs0+Ht5sB1KVyBEyYg9KnEewDfrrP6ERU+b/u8vyz44h1KUwcl6oTst2WSMsCQYmFYJ1xiSbFVel1bNMP0QYqdYcGlhR1DF/zb8Bc4dxK5uJRBVoR5X/2IypJ5c3qPLX60Oic212UoWShOmPH1oCzFubB3+zYf8JBZrqRf4tP2q5XIl/KLL0dYb1B1CCy5ARAsc4k65GUa6eNCrb5WKGdcFjUpnUIRLOonbK3mSW4dnk3IBFvCRmiJs4zLOcq0eubFYsCy7M4FPHRToVZwqOFz2cXEAe9CXXF3Bvb7wvwNa+6y+Au2gcUAiAtgCPItNCrXRSmfERG5KRwaS+P3Cred0KzNncDG7DKHkqNfucPt61BmjHzR3BKieWb/hC2eWZnctlMpZniSgtMd5YiSlDsUZk82Ml8mTP+Tw2K62Zg8cQXoFtJxiuh6/3Z7LKEWK1uK6nxGlaju9lNqSrOU15Htc9MGpbziq8lrEEUfSWBw+PvTV3vF+BKckU1MT5KM7vhklLbI13JPN8d6aM3zCyBUPH9wzAyS9WuoSpqnnAna9BaZOcfBW6T3/3yLvEuSAyCKfPe4FFwWVwIA+lbsH56kXhIf8Kyg195Vy9mwIccawIFVwUtrJVwAp1LCI5wdPHk8DRCreV9Q5nDWV8ZSAP2rCaDfu44ANnWadSEbal7dAl03q/gXF48P44GCewvibZPAWp0Ztz2ztz0WcL+VgvfJ5j33r3DuytfFVxTZecsRsICl5XnI6xetOJ0zuzu9iqLKrrD42eQvGYeqRhXpvcHVMz759ZPsXT15ipbQOZ7BDVkzAuQwCGuGUpVLisq78Y5IrpMp18aWwU3fb6AfGSgQZmAXLCiigzq65Yv4fB5VKT+lQZVIeZoJIJGgSCSoE2mXdpuhNbji5fTaQ2uGuSi6AZ892V47mdZKvzK4zjTyBCMunGoXgoqvCuq/j70mCTSOvzNYP8Q39PVHE2E4GfTwaNyP4yiKIzqOJuNxPBkl6QiPB+lOowgZSWCaws4pUAW2RxU1qj7Hx/OnHLbt5swFoCoG3ivpvqx7Yxs4VNDeoEJ1Hnc5TxKlBMPyYKA8AfI/ZsUboabr8N0NlQ/xQynnT4eV9qbGWr/VtSHnf0v+K2efHMUmLOpNYkpuJuN4fDNI6ehmSvHwBk+T4bhPGRmk17wJ/PgXbMse9LgVAAA=</values>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hN307tUJaaW8rtb192VtZju2AtcZObaddivjfbxwnAUEKREelVveYmbH9zcz3TZz8WIechtchnUbTdDodTsZR1O9H0WjUJzhOkv6IJFGCB2EnlHjJINLiRDB4fMYid89kgeWcIc2ecmYsOCg3mcCr76X/pvAH97WfLLigmsnw+sfPTphhDftapsPr9Z7rXGACJ0xA6GOJbA+oXWX1Iyp83vZ1d1nwzTuUpg5K1AnZb8skZYAhxcKwTrjEkmKr9Kq2aIbpnRRbw4JLCzuGLvi34a9w7iRycSmDrAjzvvoRlaXy5vQWW/xgdU5srstQslCcMOPrQVmKc2Fvdm0+4C6zXEm/xKftVyuRL+U3X46w3qDqDFhyAyBY5hJ1yMs00oeFermvUM64LGpSOoUiWNRP2FrNk9w6POuQCbaEjdASZxmXc5Rp9cyLxYBl2Z0LeOimQr3AoYbPZRcTB7wLdcXdGdhvC/N3rLnL4i/YBhYDIC6AIci30KhcF6V8RkTkpnBoLI3fK9x0QrMyNwIbs80cSo6ecofb16HMGPmiuSVE88z+CVs8szK5TafSxvAoBadbyhElKXcozI5AgOFw1D85LKbrtckTV4AuYdrylBNsGeRlfm02h9JpsbKlqE5nVInqZjelpjRLeR3YvjZtUMorvpi8BlH0mQQGh388fbVXjC/BCdnE9CjJ6JZPRmmLfC13dHOoh9Y8PwNCxfM7x8wgWb2FqqR5ypmgTW+RmXPsvUV6/8+3yIckOQCiyHePS8FlcSUAoO/F/uFR6iXxHs8Kem25X9iwIYcawIFVwWtrJZwBp1LCA5wdPHo8DRCreV9QZn/WV8ZSAP2LCaDfu4wA1nWadSEbal7dAl03q/hXF4/344GCOwviTZPAWp0Ztz2ztzkUcL+VgnfJ5j23b3DuwtfFNxTZec8RsICl5XnI6xe9cDpndnt6FUWVfcHiV5O/ZByqGlWk9w5Xz/jo10+yc/XkKVpC53gm3LcYAXIYBNdHlKpcUlTejbdEcp1MuTa2DD4cNPcM9CMDBcIM7IIFRXRQR7d8EZ/OoyrllzSoEilPMwEkEhSJBHUi7dJuM7QGF7ycXnpozTAXRTfgsyfbaSfTWuk3BteJRh5hxJlT7UxQ8UVB/fex1ySBxvF3Auun+Ia+/GgiDCeDHh6N+3EcRXFEx9FkPI4noyQd4fEg3WoUISMJTFPYOQWqwPaookbV5/hw/pTDtt2cOQNUxcBbJd2XdW9sA4cK2htUqE7jLudJopRgWO4NlEdA/seseCPUdB1+uKHyKX4o5fxxv9Le1Fjr97o25PxvyZ9y9sVRbMKi3iSm5GoyjsdXg5SOrqYUD6/wNBmO+5SRQXrJm8DPfwGRkpPwohUAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=226baec7337332506c8432a19e5c7b97"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=46260a7633004f906c8432a19e5c7bfe"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <generation_source/>
-        <order>3</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>60b511cf33bffa106c8432a19e5c7be2</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:17</sys_updated_on>
-        <ui_id>3f1dd51a-1352-4a21-a5f3-6583efc2fb85</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhK9C3VSuklfZupba7L7sry4kdsNbYqe2UpYj/vuM4CQhSILpUanUfMzO2z8ycM3HyY+0z4l/7ZBJM0slkOI6CoN8PgtGon+AwjvujJA5iPPA7vsALCpEGx5zC4zPmuX1O5ljMKFL0KafagIMwnXG8+l76bwq/d1/7kznjRFHhX//41fEzrGBfQ5V/vd5znQuM45hyCH0ske0BNausfkSFz9m+7C7zvjqHVMRCCTo+/WOoIBQwpJhr2vEXWBBspFrVFkUxuRN8a5gzYWBH3wb/0ewFzh0HNi6lkFVCna9+RGWpnDm9xQY/GJUnJldlaDKXLKHa1YPQFOfc3OzaXMBdZpgUbolL262WPF+Ir64cfr1B1Rmw5BpA0MwmapGXaaQPc7m8r1BOmShqUjq5TDCvn7AxisW5sXjWPuV0ARuhBc4yJmYoU/KZFYsBy6I74/DQTblcwqGazUQXJxZ4F+qKu1Ow3xbm71gxm8W/sA0sBkCMA0OQa6GWuSpK+YwSnuvCobDQbi9/0/H1St9wrPU2cyg5esotbleHMmPkimaXJIpl5hNs8UzL5DadShvDoxScbCmXSEGYRaF3BAIMh6N+5rCYrNc6j20BumCjS4P17y6gRYxsNofSabGypahOZ1SJ6mY3paY0S3kd2L40bVDKK7yYvAZB8JEEBoe/P321V4wrwQnZhOQoyciWT1oqg1wtd3RzqIfWPD8DQsXzO8tML169hqqkecooJ01vkal17L1Fev/Pt8i7JDkAIsh1jwnORHElAKBvxf7hUerF4R7PCnptuV/YsE4ONYA9I72X1ko4A06lhAc423t0eBogVvO+oMz+rK+MpQD6FxNAv3cZAazrNOtCNtS8ugXablbxLzYe78cDBXcWhJsmgbU6M2x7Zm9zKOB+KwXvks15bl/h3IWvi68osvOWI2AOS8vzkNMvWjIyo2Z7ehVFpFli/rvJXzIOVY0q0nuDq2d49Osn3rl6shQtoHMs4/ZbLAFyaATXR5TKXBBU3o23RLKdTJnSpgw+HDT3FPQjPAnC9MycekW0V0e3fBGfzqMq5efUqxIpT9MeJOIViXh1Iu3SbjO0Bhe8nF56aE0x40U34LMn22knVUqqVwbXiUYeYcSZU+1MUOFFQf33sdckgcbxdwLrh/iGvvxoSiiOBz08ivphGARhQKJgHEXheBSnIxwN0q1GEdIigWkKO6dAFdgeVdSo+hwezp9y2LabM2eAqhh4K4X9su5FxrOooL1eheo07nKexFJyisXeQHkE5P9MizdCTdfhuxsqH+KHUs4e9yvtTI21fqtrQ86+CfaU08+WYmMa9MYhSa7GURhdDVIyupoQPLzCk3gY9QlNBuklbwK//gKi11z/ohUAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60b511cf33bffa106c8432a19e5c7be2"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
+        <flow display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
         <generation_source/>
         <order>4</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
+        <parent_ui_id>26aab4ab-d6c3-4464-8ce8-b48b408a2dd1</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>6cb511cf33bffa106c8432a19e5c7be2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 12:45:59</sys_created_on>
+        <sys_id>1a4096b2334c4f906c8432a19e5c7bb8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:17</sys_updated_on>
-        <ui_id>342ed5a9-2295-43b9-8684-0b2b1d06dffa</ui_id>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:48:27</sys_updated_on>
+        <ui_id>4e00e203-5f47-4201-94b3-9ae984bb4c8c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VY227jNhD9FVfPlktKlCzlrUgQoMB2A2zSvGy3woiXRKgseSUqu47hf9+hLrYsO1k7dQKkfdQMOTxzOGc89OellQjrzPIEKAemDp96lBBKPJc61GU89LjjkymzxlYGM4krNcSpjOqPsfUAaWWM/B6yOxlpKP9Bq0jKeQqL29Z5XjtHN42T3yepKGRmnX3+MrbmUGAkLQvrbDlwHYorhVimuPTGAHsCp17M99o+9PeOPjaOvBAGDx1b8ruWmZAIREFayrE1g0yAzouFdaaLCg2FBHGVpYv1ivsk0xjQMmu/l8kjHhsQs05JzIzLxrf+jFquGrO6AA3XGJnrqmiX8vs84bJsOBFSQZXq876tWXA110meNVvqNNvdeVrNso8NJdY6QHc1aKlKBCHnJk+DvE1DXd/n3z51KC+TrKakdaY5h3T9BVoXSVxpg2dpVcnNHq4b6162ZSpneHI0g/k8ye6ieZE/JPVpCH42uUvxY6LS/BuiLJO7bALcZDrBe4DJJdovavMtFIkJ+weGwc3myD+z5GslfzdlxGLiBn7MbKVCZjOXUztkPrNjD4iQ09hTsWutxla5KM9TKMsNYXhT0dfKpNvQ1xIVNVybLbxI5vo3BPUgW05W41ZVIny2emFTrTzPRGLyKndVVUhMo9R/VYS4Yrl0FRXCo2BT13NsBg61wVOu7XuBKxV3VBx4k0+SYxmvVn+XGrT8pdnr7mrzNY44TuEHcNQp/LxP0j7iWpnv2D7sC9DK3DmVzBkh70noTWL/XudbZG/rfIvuN9F56BJGqB/bcRC6NmNc2MA9sIMACHfdMI6F/wKd93rZTxQfPlvNgbMpXJXIVES11PuaR1CYZc3UXZFX8xdIcoKSw/2TYagJZh0lRrGNR4pI5y+J39u+jrnbWt5xJsd1sAPuvOtgl+bSyyeLoBtT5AyJ1LJxDEeV1jm6bZ1tH3NP1cd87//ZyHZYHwwtQ97fpKFxGjBKRGhTQQObUcCZxVcBzjFT4fgxF4wFr9rQJFGBFwIWt+PsFjeZbmq5zAsdNbfX62e7feFofR0AodPXldHCKF48haoVWCO7Pe+AWp+DdwB7Xlit5T/3EDiVrLa43pbUFttv8w4IuBcql9vMp6GZD6iNI0FgU+77fCokVSp+VTnB87UsBoVb1+tGTLUNSr7nx3ak89Hj0dI6AE4nrWs8e3TT4NkDsRu96xocjt2dsVWUdzJFuc5pFLVcp7kmcg/nLXxibrNb/2jWw3A9lmhvA13tU+xRZ9Jjz3RWux3BPaol9Iut8Vw8UXOv9RfCupgGz4rO/DZPChn4+Kww4yQPzS8wwSdFqGyfcD+GOAh8wV7hrwPfmfokDgGVCWxHmeBtVBhFZcYjkWNkBUmK4SNZFHnRqw+62zBMez+6XRwAqqvRizwzA7kz1SODapRnow7Vz3G3zSTO81RCNugmN4j810tD1qba/ZN1FPaefqNPprQN04Oht8/1m8jNn3qBLx2wHYbvdoYVZseScxvLzlU+CSlx6Anl9uUHCn32bQEXAAA=</values>
+        <values>H4sIAAAAAAAA/+VW0W4TOxD9FctP3DZ3u2laBOGpaqlAAiq1qC8Erbz2bGLw2ovtTRuifA8fwo8x9no3UYt6i8RLdfOy8nhmfM74nN18WlMp6JQegcjHL8fP+WQ8mRzm+eGLo3H5fFKOD8WEAYzpiGpWA2Za4MYKXC+ZakNgvXZtWSlzk3GwXlaSMw+FZ+7rZoNpQrpGsdV1ysYIX0glLGg6/fR5RBtmsbEHS6frO1uPRaZYCQpTL3tod6H6VRPWwvC2Bu0L2QffpcqztEPenuEOFgU443xE4daDFoBAKqYcjGjNtGDe2BWdettiwAITF1qthoyF1L4jWrNbJ7/jyUd5yKsAmfE0hGFZpAF14eqMeXaFnblv7TAvIzm4biYCKtYqf7ob6xIuGi+N7ko8K1VfbVRb6w/dROjQYOc+WocgoAk8A/KOVnW1MDeXPchzqeNIEkVlOFPDinlvZdn6AGdNQUGccc2aRup50VizlLEYodTZXOEiC3LBM52c64zxgDvDqbLsHONnMXzNrAwk3mMbLN6MqFu5U8Wc21LBGRbf2oCkI5YoFHEKcQRFVEIo5lY2/gSPWkICvhkl7ZfHDymMv9wKaqfnVv9Ohyvkpgjyr+e1j9q/r/zTrTtIyHh20npT40qQQPufP3bGI3D3zvgY9fB7Hskc92LvdmvJh24jWeP4r1njxVOyRqLx5L3xX47IDx985+4oKZrA7bjhxtivhTZIeNbm+URU4t/uJBD3LfFw8p+54RGYezecS1DC/YZEbwWoESV+xDpSd+yQNsl12hy+Fn/xc5E/JVf8Dz4YHcUuFjBvhRtWD+XSg72Z3ts74Th8F1/0BycRPwn4SeuQMvELIJUoYsSUX4D7jFzFBqRunScW8HI1YSQKMiOh40WQHdFtXeJDOmKqyoEn5Yrsj4nU5LW1xpI3qD8VjriCbmoRzJJJFd/qJkrAkSQp0jYIrLEINdTMaDajhFVouh5eKIdbhhaAKaKxxC2M9XgDnHQW7hMzvOL5HGzGW4uK8FlMDFcYeeGpr0KvxGzoEoIHM53CM3q6YHoO5BK+oUM9Bsj+cEIxKQqOfkKjdv/0svRIQ9mfaYI/rKmMJHgsE4yE1wjOcy6dtwif4YAF0z9/sBl9hZpwbAlikPpms/n8C37uN3kiCwAA</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6cb511cf33bffa106c8432a19e5c7be2"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <generation_source/>
-        <order>5</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>68b511cf33bffa106c8432a19e5c7be3</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:17</sys_updated_on>
-        <ui_id>b412bd4f-5d5e-45aa-bd35-a57e76a6e636</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VX227bRhD9FZbPorpLLinSb4UNAwXSGIhdv6QJMdyLTZTiKuTSiSzo3zMrkrrbkVrJQNo3aWYvZ8+eMzv8OHNz4V64oQDlw8jno5ASQkkYUJ8GjCch9yMyYu7ALWEscaSBrJDp4s/AfYKisUH+COWDTA3Uf2NU5PWkgOl9l7xcJJ27Nskf80JUsnQvPn4auBOocCUjK/ditpU6FFcBmSxw6J0F9gJOM53sjb1bn+u8bxO6EhYPHbjym5GlkAhEQVHLgTuGUoDR1dS9MFWDgUqCuCmL6XLEY14aXNC1Y7/V+TNuGxM7Tkk8GZdtbvk37bhqw+oKDNziytw0VTeUP+qcy7rlREgFTWEu12PtgJuJyXXZTlkcs5uti2Zcvm8pcZcL9FeDkaZGEHJiz2mRd8dQt4/664ce5XVeLijpkoXmUCz/gTFVnjXG4pm5TX63h+s2updtWcgx7pyOYTLJy4d0UumnfLEbgh8PHwr8M1SF/ooo6/yhHAK3Jx3iPcDwGuNXi/A9VLld9g9cBifbLf8s8y+N/N3KiGUkiKOMeUolzGMBp17CIuZlIRAhR1mossCdD9x6Wl8WUNcrwvCm0i+NPW5LX0dU2nJtp/Aqn5jfENST7DiZDzpXieRV9cJKrVyXIrfnqnddVUk8Rm3+aggJxGwWKCpESMGjQeh7DHzqQagCLwrjQCruqywOhx8kRxnP559rA0b+0s4Ndr15ji2Oc/gBHPUOv1wnaR9xnc13Yu/2LdDZ3D+VzRkhP5PR24P9e59vkL3p8w2638TnSUAYoVHmZXESeIxx4QEPwYtjIDwIkiwT0T/w+Vot+4Hjk1fVHPsr4apcFiJdWH3D84XGe+JayNZQdcNRALVqis9tqtR4A23uUlYmVzkHoZ28RBsW9hey6eAsnKSHrTdfdv9ZNzuuDhzAXF8Hri119YtU9o+9HONZjWwT2w9+l3Tuu2RXDYJTVYMo/H+Wgx3Wt57+bd7fpCxwGjNKROJRQWOPUcCXP1IxdgMj4UcZF4zFZy0Lkqg4TADF7fu74iajlZZrXZm0vb21qrBr3aP9dQCE3l831gtONn0JVWew1nZ7uumFP7e6afa6sbrIf66dPpWtNrjetNQG22/TTcc8TFTAPRbRxL6y1MOHNfYojyI+EpIqlZ3VTvC6lsWWcBd6XZlpEYOa75oKHKOd56OtdQCc3lq3uLdz1+LZA7FvYBca3G5e+2DnqPBkjgr80zhqtjzmksg9nHfwib3NfvyzHQ/b41GiaxPofJ9jj9qTHrunP9+tCMFRJWFdbG3m6gXNnetDfCmmrea8D79NYy7jCJtz+0XJE/sCE2zME+VFhEcZZHEcCXaGD/DIH0UkSwCdCWzHmRCuXJimdclToXFlBXmBy6eyqnS1pg+6WzBseT+6XBwAqtfolS5tP+2PjGNRObp0elQ/xt0Vk0zrQkK5VU3uEPmv15asldqjk1UU9jO90Sdz2orpraZ3nes3sVs0CuNI+uD5DL9+GSrMyyTnHsouUBFJKPHpCe326TuKDVTiRxYAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=68b511cf33bffa106c8432a19e5c7be3"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <generation_source/>
-        <order>6</order>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>64b511cf33bffa106c8432a19e5c7be4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:17</sys_updated_on>
-        <ui_id>96a7c381-ae12-4e33-a184-74a193f631a0</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVTU/jMBD9K1XObZWPBpXeVq2QVmJBKisu7G40sSetJccOtgN0q/73nSROqACxILEHtLd4xm/85nlefLMPBA8WwQx5GJ1GJyyJkiQOw3g+i/KTJI9ingBiFIwDBSXSToNMG07rO5B1E9jvkyLiPI1gEiVpPJlBHE0gLZLJSTpPsGBxkc/T6brFHQ6E5MJWEnbXvgBF2FZIblAFi5uf46ACQ2c5NMFi/yT1VrIScpS0dd2zfcre7apmzTWrS1QuE33w3CNXPjP6uqIMgRo6UTgO8MGh4khECpAWx0EJioPTZhcsnKkpYBD4pZK7YcdWKNc1WsKDFb/p5FnY7CuQOmNehGGZeYG6cLECB1dUmbnaDHppwdB2mnAsoJZueRzrNlxWTmjVQRzkskdrWZfqolMkGAoc3UdtiQRWTZ8N866t4mqr79c9yTOhWkl8i1IzkMMKnDMir11DZx+gxFbjEqpKqE1WGX0nWjBRKacbSYtpIfU9nWnFRk2BNbynpCpMzyi+asPXYETTxDcqQ+DDOLA7u5Rg7WMrpGF2WzdMusZ8C1mrQitB1k5CA2ZGVO4LHXWHnvhh7O2Qp69NGDt9HKijmo+WYFtQG8wM3tZo3fOJX7b50XrIv2/+38Cun//v7a2/zNZb4Fns/Bg7uugS3gDphxlg/pkM4Nv49A7429yH8at/1qNJakfdHs28deDwRx2GCU9+MalJQKa5j9ia0c3YopY+pTQp0+WWaJwoBAOuR0JRGdl8kSwjQhFIT58b6N8e9j43vkGz3o1nAiW3L4jYWxFL6tJh1on6xI4+Obr2yeFN+sBHKfxMrvxvnqWffwAZKBO2pwkAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64b511cf33bffa106c8432a19e5c7be4"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <generation_source/>
-        <order>9</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>60b511cf33bffa106c8432a19e5c7be5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:18</sys_updated_on>
-        <ui_id>16d7a5e3-0a62-4747-996a-0ebfc6d4bab9</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhK9C3VSuklfZupba7L7sry4kdsNbYqe2UpYj/vuM4CQhSILpUanUfMzO2z8ycM3HyY+0z4l/7ZBJM0slkOI6CoN8PgtGon+AwjvujJA5iPPA7vsALCpEGx5zC4zPmuX1O5ljMKFL0KafagIMwnXG8+l76bwq/d1/7kznjRFHhX//41fEzrGBfQ5V/vd5znQuM45hyCH0ske0BNausfkSFz9m+7C7zvjqHVMRCCTo+/WOoIBQwpJhr2vEXWBBspFrVFkUxuRN8a5gzYWBH3wb/0ewFzh0HNi6lkFVCna9+RGWpnDm9xQY/GJUnJldlaDKXLKHa1YPQFOfc3OzaXMBdZpgUbolL262WPF+Ir64cfr1B1Rmw5BpA0MwmapGXaaQPc7m8r1BOmShqUjq5TDCvn7AxisW5sXjWPuV0ARuhBc4yJmYoU/KZFYsBy6I74/DQTblcwqGazUQXJxZ4F+qKu1Ow3xbm71gxm8W/sA0sBkCMA0OQa6GWuSpK+YwSnuvCobDQbi9/0/H1St9wrPU2cyg5esotbleHMmPkimaXJIpl5hNs8UzL5DadShvDoxScbCmXSEGYRaF3BAIMh6N+5rCYrNc6j20BumCjS4P17y6gRYxsNofSabGypahOZ1SJ6mY3paY0S3kd2L40bVDKK7yYvAZB8JEEBoe/P321V4wrwQnZhOQoyciWT1oqg1wtd3RzqIfWPD8DQsXzO8tML169hqqkecooJ01vkal17L1Fev/Pt8i7JDkAIsh1jwnORHElAKBvxf7hUerF4R7PCnptuV/YsE4ONYA9I72X1ko4A06lhAc423t0eBogVvO+oMz+rK+MpQD6FxNAv3cZAazrNOtCNtS8ugXablbxLzYe78cDBXcWhJsmgbU6M2x7Zm9zKOB+KwXvks15bl/h3IWvi68osvOWI2AOS8vzkNMvWjIyo2Z7ehVFpFli/rvJXzIOVY0q0nuDq2d49Osn3rl6shQtoHMs4/ZbLAFyaATXR5TKXBBU3o23RLKdTJnSpgw+HDT3FPQjPAnC9MycekW0V0e3fBGfzqMq5efUqxIpT9MeJOIViXh1Iu3SbjO0Bhe8nF56aE0x40U34LMn22knVUqqVwbXiUYeYcSZU+1MUOFFQf33sdckgcbxdwLrh/iGvvxoSiiOBz08ivphGARhQKJgHEXheBSnIxwN0q1GEdIigWkKO6dAFdgeVdSo+hwezp9y2LabM2eAqhh4K4X9su5FxrOooL1eheo07nKexFJyisXeQHkE5P9MizdCTdfhuxsqH+KHUs4e9yvtTI21fqtrQ86+CfaU08+WYmMa9MYhSa7GURhdDVIyupoQPLzCk3gY9QlNBuklbwK//gKi11z/ohUAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60b511cf33bffa106c8432a19e5c7be5"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <generation_source/>
-        <order>10</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>6cb511cf33bffa106c8432a19e5c7be5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:18</sys_updated_on>
-        <ui_id>1de93de5-5131-4653-b7e8-acaef9d8fa18</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYbW+jOBD+Kzk+h5wNxkC/nVpVOmlvK217/bK3hwbbtOgIZMF0N43y33fMS15I2k16aaXefWTGHj/zeJ5h4PPCSqV1ZnkSEgd8R/geJYQSz6UOdZkIPeFw4jNrbOUwVbhSQ5ypqHkYWw+Q1cYo7iG/U5GG6h+0yrSaZTC/7ZznjXN00zrFfZrJUuXW2ecvY2sGJUbSqrTOFgPXobgyiFWGS28MsCdw6vlsr+3D5t7Rx9ZRlNLgoWNLfdcqlwqBJJBVamxNIZegi3JunemyRkOpQF7l2Xy14j7NNQa0zNrvVfqIxwbErEsUZiZU61s9Rh1XrTm5AA3XGFnouuyWivsiFapqOZEqgTrT55u2dsHVTKdF3m5p0ux2F1k9zT+2lFirAP3VoKWuEISamTwN8i6N5Pq++PapR3mZ5g0lnTMrBGSrJ9C6TONaGzwLq05v9nDdWveyrTI1xZOjKcxmaX4XzcriIW1OQ/DTyV2GD5MkK74hyiq9yycgTKYTvAeYXKL9ojHfQpmasH9gGNxsjvwzT7/W6ndTRiwmbsBjZidJyGzmCmqHjDM79oBI5cdeErvWcmxV8+o8g6paE4Y3FX2tTbotfR1RUcu12SLKdKZ/Q1APquNkOe5UJcNnqxfW1SqKXKYmr2pXVaXCNCr9V02IKxcLyqUPnnJtAtyxmc98Oww52ETFieCSxRCHk09KYBkvl39XGrT6pd3r7mrzNY44TuEHcNQr/HyTpH3EdTLfsX3YF6CTuXMqmTNC3pPQ28T+vc63yN7W+Rbdb6Lz0CWMUB7bcRC6NmNC2iA8sIMAiHDdMI4lf4HON3rZTxQfPlvNgbMu3CRVmYwaqW9qHkFhlg1Td2VRz14gyckwxgTTjVIj1dajZKSLlwdutq9i7vaU95jCcT3rgFvue9aluebqyWvvBxM1RQa1ah3D4aRzjm47Z9e53FN1Lu79P1vXDuuDMWXI+5u0MEEDRokMbSppYDMKOKXwJMDJxZcOj4VkLHjVFqZIEnghYHE7zm5xE39dy1VR6qi9vY0OttsQjtbXARB6fV0ZLYzi+VOoOoG1stsz+Tf6HEz+7HlhdZb/3Oh/Klltcb0tqS2232byD4QXJq6wGaehmQiojUNAYFPBufClokkSv6qc4PlaloPCbep1LabGBpXY85Yd6WL0eLS0DoDTS+sazx7dtHj2QOyH7aYGh4N2b+wU5Z1MUa5zGkUtVmmuiNzDeQefmNvs1z+a9TBcjyW6sYEu9yn2qDPpsWc6y92O4B7VEjaLrfVcPFFzr/XTYFVMgw+J3vw2HxEq4PghATZ1RWjewAQ/IsLE5kRwHCWDAEfKV/hZwB2fkzgEVCawHWWCt1ZhFFW5iGSBkRNIMwwfqbIsyo36oLsNw7T3o9vFAaD6Gr0ocjOQO74eGVSjIh/1qH6Ou2smcVFkCvJBN7lB5L9eGrLW1c5P1lHYe3pHn0xpa6YHQ+8m128iN+57AVcO2A7DL3WGFWbHSggby85NOAkpcegJ5fblB9yaxIbzFgAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6cb511cf33bffa106c8432a19e5c7be5"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
-        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <generation_source/>
-        <order>11</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>68b511cf33bffa106c8432a19e5c7be6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:18</sys_updated_on>
-        <ui_id>19dedab3-3fa1-4687-b01a-4c8ef543b1ad</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VXXW/bNhT9K5qeLY+UKErK25AgwICuAZosL10rXJFUIkyWXIlK6xj+773Uh7+T2psdoNubfS8/Dg/Pubz6OLczaV/YvoTUhcAVgU8JocT3qEs9JiJfuJwEzB7ZBUwUjtSQ5Cpu/4zsJ8gbExSPUDyoWEP9N0ZlVk9zmN33ycs2ad11SfGY5bJShX3x8dPInkKFK2lV2RfzrdShuHJIVI5D7wywF3Dq2XRv7N36XOt9lygrafDQka2+aVVIhUBSyGs1sidQSNBlNbMvdNVgoFIgb4p8thzxmBUaF7TN2G919ozbhsSMSxWeTKgut/wb91x14fQKNNziykI3VT9UPJaZUHXHiVQpNLm+XI91A26mOiuLbkp7zH52mTeT4n1Hib1cYLgajDQ1glBTc06DvD9GevtYfv0woLzOipaSPpmXAvLlP9C6ypJGGzxzu8nu9nDdRfeyrXI1wZ3jCUynWfEQT6vyKWt3Q/CT8UOOf8ZpXn5FlHX2UIxBmJOO8R5gfI3xqzZ8D1Vmlv0Dl8HJZss/i+xLo343MmIJ8UKeMCdNI+YwT1AnYpw5iQ9EqiDx08SzFyO7ntWXOdT1ijC8qfhLY47b0dcTFXdcmymiyqb6NwT1pHpOFqPeVTJ6Vb2wUqsoC5mZc9W7rqoUHqPWfzWEeHI+p1wG4CvPIcBdhwUscKKIg0NUkgouWQJJNP6gBMp4sfhca9Dql26ut+vNc2xxnMMP4Ghw+OU6SfuI622+E3u3b4He5u6pbM4I+ZmM3h3s3/t8g+xNn2/Q/SY+jzzCCOWJk4SR5zAmpAPCBycMgQjPi5JE8n/g87Va9gPHR6+qOXRXwk0zlcu4tfqG5/MS70mUUnWGqhuBAqjTJv/cpYoSb6DLXapKZ2kmQJZWVqANc/ML2bRwFk4qx503X3b/WTc7rg4cwNxQB64NdfWLVA6PvZrgWbXqEtsPfp+07vtkXw28U1UD7v8/y8EO61tP/zbvb1IWBA0ZJTJyqKShwyjgy8/TELuBQLo8EZKx8KxlQZE09CNAcbvurrhJsNJyXVY67m5vrSrsWvdofx0AYfDXjfGClcxeQtUbrLPdnm669edWN81eN1Yf+c+106ey1QbXm5baYPttuulQ+FHqCYdxGplXljr4sIYOFZyLQCqapslZ7QSva1luCbfV68pMbQxqsWsqsHRpPR9trQPgDNa6xb2tuw7PHohDA9tqcLt5HYK9o/yTOcpzT+Oo+fKYSyL3cN7DJ+Y2h/HPZjxsj0eJrk2gi32OPWpPeuye7mK3InhHlYR1sXWZqxc0d64P8aWYtprzIfw2jbkKOTbn4FBPROYFJtiYR6nDieD4NRmG+FV5hg9w7gacJBGgM4HtOBP8lQvjuC5ELEtcOYUsx+VjVVVltaYPulswTHk/ulwcAGrQ6FVZmH7aDbRlUFllYQ2ofoy7LyZJWeYKiq1qcofIf702ZK3Uzk9WUdjP9EafzGkrprea3nWu38RuPPBDrlxwXIZfvwwV5iRKCAdl56WcRJS49IR2+/QdKri7gkcWAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=68b511cf33bffa106c8432a19e5c7be6"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <generation_source/>
-        <order>12</order>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>64b511cf33bffa106c8432a19e5c7be7</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 23:07:18</sys_updated_on>
-        <ui_id>cd8f839a-15cf-4b78-aa59-d58d7af86b5f</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVwU7jMBD9lSrnNkqaUmhvq1ZIK7EglRUXFqKJPWktOXawHaBb9d93kjihAsSCxB7Q3uIZv/Gb53nx9S4QPJgHE+RRPIunLImTZBxF45NJnE2TLB7zBBDjYBgoKJB2GmTacFrfg6zqwG4XT/kxHGEyimA6Hk2OJ8ej2WwKowiznE35JINsFq4a3H5PSC5sKWF75QtQhG2E5AZVML++GQYlGDrLoQnmu2ep95KVkKGkrauO7XP2blvWa65ZVaByqeiCZx659JnB9yVlCFTTiaNhgI8OFUcikoO0OAwKUBycNttg7kxFAYPAL5Tc9js2Qrm20QIerfhNJ0+iel+O1BnzIvTL1AvUhvMlOLikysxVptdLC4a21YRjDpV0i8NYu+GidEKrFuIgkx1ay6pQ560iQV/g4D4qSySwrPusmbdt5Zcb/bDqSJ4K1UjiW5SagexX4JwRWeVqOrsAJTYaF1CWQq3T0uh70YCJShGuJS3CXOoHOtOKtQqB1bxDUhXCU4ovm/AVGFE38YPKEHg/DOzWLiRY+9QKaZjeVTWTtjHfQtqo0EiQNpNQg5kRpftGR92jJ74fejtkR29NGJs9DdRBzSdLsA2oNaYG7yq07uXEL5r8YNXnPzb/72DXzf/P5tZfZ+st8CJ2dogdnLcJb4CjTzPAyVcygG/jyzvgb3Mfjd/8sx5MUjPq9mDmrQOHv6ooSnhyy6QmAZnmPmIrRjdj80r6lNKkTJtboHEiFwy4HghFZWT9RbIMCEUgHb400L897GNufIdmnRtPBUpuXxGxsyIW1KXDtBX1mR19cnDlk/2b9ImPUvSVXPnfPEs3fwC/j1nfpwkAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64b511cf33bffa106c8432a19e5c7be7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1a4096b2334c4f906c8432a19e5c7bb8"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8^sys_idNOT IN5a1e1d0f33bb3e106c8432a19e5c7b06,1a1e1d0f33bb3e106c8432a19e5c7b08,9a1e1d0f33bb3e106c8432a19e5c7b09,d61e1d0f33bb3e106c8432a19e5c7b0b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8^sys_idNOT IN06264a7633004f906c8432a19e5c7b01"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">e08d514f337b3e106c8432a19e5c7bd7</block>
+        <block display_value="">56a546f633cc0f906c8432a19e5c7b3a</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
+        <flow display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -995,121 +626,40 @@
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:29:30</sys_created_on>
-        <sys_id>5a1e1d0f33bb3e106c8432a19e5c7b06</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 12:01:43</sys_created_on>
+        <sys_id>06264a7633004f906c8432a19e5c7b01</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:56</sys_updated_on>
-        <ui_id>08843983-520a-4612-b8cf-84e55a5fafff</ui_id>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:48:27</sys_updated_on>
+        <ui_id>26aab4ab-d6c3-4464-8ce8-b48b408a2dd1</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYOnFpAFPWw39i1wECBA0gBJkEsbCCtqFROlSVUk7biGv6aHfEh+rEtJtoPGRRM0x97M4XJ3ZrQDr5l2tnLW3OhjY8S9YpMvdwETymP0e80UzJFNGNeqEFZolTVAwBYgnb8opV5mee/DmTIWJDw9Pv3UvQtQDuRHKiuEqSSsbl9XzWdCFjV2LCqoaZbFmk3Wv12JwjeLoIzHPOZpMkqTKEqOBnE+SvM4KVJASKmhhBwllU639HvnDRL8UZddVR43thbqvjufd12ut6CuC88qjgKGDxZVgcSnBGkwYHNQBVhdr3ZIjVBcKrkHZkJZasd88YMRP2hgMhz6whJJIsf2cnfMOhdbuDwBC0TFcevqrpTPtOBoWnMKLMFJO32OtQWXlZfaPrGQy+1rLd1cfW4dYbsG249GiDNEAiuv1FPvdJTXM7282rI8FapxpbuUmoPcncCSd7mzns+aocQ5NcrmUFXkaFbVeiGax8RlHt5LOoTNrhTotzIE7omHZCyEp4SfNPAt1MKruKA29LilmYMRPGs2mNqRTcg2ATMrM5VgzF4kuZt9d55iK7kTl7X++Ce8FpU9pskL7HRsgpeBeJaF9ZoWYZCOeNInC7E/wHjcPzr6lPcxAhhgko8ReHiFnBYodBnZhkuQmVe62Xx1UZQWbUJeJudde78tZ2MYlsM4Gh7O2WB0KGcHEvbGcCV/CZf/sq/MVhRF/8P1z+ESJmsj0Wlrhr9jtu58kNqZO6+5METtxmNn2/8kf7Gi5RL8ObTU9Tcvao9tfgHWyDyT3QYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">bc8d914f337b3e106c8432a19e5c7b34</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
-        <order>7</order>
-        <outputs_assigned/>
-        <parent_ui_id>08843983-520a-4612-b8cf-84e55a5fafff</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:29:30</sys_created_on>
-        <sys_id>1a1e1d0f33bb3e106c8432a19e5c7b08</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:56</sys_updated_on>
-        <ui_id>4e203bd5-3e09-46b6-8a08-1972ec15b839</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">c2fd194b33bb3e106c8432a19e5c7bfb</block>
-        <comment/>
-        <connected_to>08843983-520a-4612-b8cf-84e55a5fafff</connected_to>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>8</order>
-        <outputs_assigned/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:29:30</sys_created_on>
-        <sys_id>9a1e1d0f33bb3e106c8432a19e5c7b09</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:56</sys_updated_on>
-        <ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYOnFpAFPRzX9s1wEKBA2gBJkEsbCCtqZROlSFWk7LiC/71LPeygSV+oj72Zs8vlzGgHbpiubVlbc6+Xxoi1YotPjx4TymH0u2EKCmQLxrXKhBVaJS3gsS3I2hVyqXcJjN6sliN8slgpeEvVTJhSwv7hl018I2RWYf9mCRVNpiJbND+UROZmBJCHcx7yOJrGURBEs0mYTuM0jLIYECIaKCFFSa2rgezoukW8n6qw+9LhxlZCrfvzdT/lbgB1lTlWYeAxx15lSHxykAY9VoDKwOpqf0QqhOxGyROwEcrSOOaan4z4Rg9GFxeuMUeSyLErHo9Jb14H55dggajU3NZV38o3WnA0nTkZ5lBLu3qOdQ03pZPaXbGQyuG2lnWhPnaOsOOA4VsRUhsigaVT6qj3OvK7jd7dDiyvhGpd6YtSc5DHE1jyLq2t49MwlFjQoKSAsiRHk7LSW9FeJi6Fv5Z08NsVydDtoA/cEffJWPCvCL9s4QeohFPxgcbQ5Y5mCkbwpN1XGkc2ITt4zOzNSoIxJ5HkbvK1dhQ7yb24pPPHXeGVKO2SXt5ir+PgvVz/Z5vfNLQIk3jKozFZiOMJhvPxbPYuHWMAMMEonSNw/xY5LZBfJ2Qb7kAmTunh8LkOgjjrgvEyMGedfdacha/l7JWE/WW4ot+Ey33ZP8xWEAT/w/XP4RIm6SLRa2sfP2O2Hl2QujePXnNhiNq9w94P/0CusKflEvw5tNPVFyfqhB2+AyXE0X/LBgAA</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">c6fd194b33bb3e106c8432a19e5c7bff</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB - Close Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
-        <order>13</order>
-        <outputs_assigned/>
-        <parent_ui_id>162f5436-9fa2-4b4e-83f9-4e793ed7f052</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 17:29:30</sys_created_on>
-        <sys_id>d61e1d0f33bb3e106c8432a19e5c7b0b</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:56</sys_updated_on>
-        <ui_id>4c711be4-7194-4590-a5fd-bc29a67a6cfa</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <values>H4sIAAAAAAAA/+1VTU8bMRD9K5HPm8i7SRbIDYGQKtEiFcSlRauJdzaxcOzFHyRplP/e8X4EBFSFtsfe4jfjmffe+ik7ZoKvg3c35tQ5udBs9u0uYVJHjH7vmIYVshkTRpfSS6OLBkjYI6gQC2dLFPcDWQ3EEvQCBxYfAjo/wI10NCJhpXS1gu3te/vFUqrSYsekBkv7PFo2270oyZLGVRyq9ESkYpzl44zz7HiSzvPxPM3KMSCMaaCCOaq4uZcwuGyQ5Jfa/LaOuPNW6kV3vuymXPegsWVklfKE4cajLpH4VKAcJmwFugRv7PaAWITySqsnYCm1p3EsNm+c/EELs+k0NlZIEgW2xcOx6Hxs4eocPBCVIHywXatYGinQteaUWEFQ/uw51jZc1VFqe8XDXPW3jQor/aV1hB0G9J+NkOCIBNZRaaTe6aiul2b9tWd5IXXjSldURoA6nMCTd/PgI58dQ4UrGlSsoK7J0aK25lE2l4nLarRQdBhVyqxpaXyZIxCR+IiMhdEF4ecNfAtWRhWfaQxdbmnOwUlRNK+YxpFNyPYJc1t3psC5J5HkbvEQIsVWcieuaP2JV4SVtT+lzY/Y6dgnr0PxLA+7XZrySS4EDid5zocTflQNYVymw+Mc8vQo5yAyPnIefHD7/ffAORVf5+SP53wsPycwraYpn76dn0n+Vn7eSM4HQ5P9JjTxi70zM5zz/6H569BIV7RPvdPWLP+HmbmLAWl3HrwW0hG1m4h96v9vYmFLj0uK59Da2Pso6gnb/wQHAQheuQYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>renewtask</element>
+        <element>certificate_task</element>
         <help/>
         <hint/>
-        <label>renewtask</label>
+        <label>Certificate Task</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_d8b5dd8f33bffa106c8432a19e5c7bb8</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-27 16:52:46</sys_created_on>
-        <sys_id>54b511cf33bffa106c8432a19e5c7b4d</sys_id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:53:27</sys_created_on>
+        <sys_id>0544427a334c0f906c8432a19e5c7bab</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>renewtask</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 16:52:46</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 11:53:27</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1125,17 +675,17 @@
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT IN34b591cf33bffa106c8432a19e5c7b41"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"34b591cf33bffa106c8432a19e5c7b41","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="BNB - Close Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</plan_id>
-        <snapshot>8767de52334487506c8432a19e5c7b7d</snapshot>
+        <plan_id display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</plan_id>
+        <snapshot>15219afa334c4f906c8432a19e5c7b59</snapshot>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-27 16:52:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>34b591cf33bffa106c8432a19e5c7b41</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 15:11:57</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:48:28</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

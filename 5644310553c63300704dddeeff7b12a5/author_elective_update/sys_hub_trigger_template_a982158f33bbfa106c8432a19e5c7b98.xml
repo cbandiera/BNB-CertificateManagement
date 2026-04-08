@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_trigger_template">
+    <sys_hub_trigger_template action="DELETE">
+        <accessible_from>public</accessible_from>
+        <active>false</active>
+        <annotation/>
+        <attributes/>
+        <category display_value="Record">8886dd64c3d322002841b63b12d3aed4</category>
+        <comment/>
+        <description/>
+        <name>BNB - Trigger Close Change from Renew Task</name>
+        <order>0</order>
+        <published_trigger_id/>
+        <source_trigger/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_trigger_template</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 16:38:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a982158f33bbfa106c8432a19e5c7b98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BNB - Trigger Close Change from Renew Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_hub_trigger_template_a982158f33bbfa106c8432a19e5c7b98</sys_update_name>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 16:38:55</sys_updated_on>
+        <template_properties/>
+        <trigger_category/>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_values/>
+        <type>record_update</type>
+    </sys_hub_trigger_template>
+    <sys_translated_text action="DELETE" query="documentkey=a982158f33bbfa106c8432a19e5c7b98"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_hub_trigger_template_a982158f33bbfa106c8432a19e5c7b98</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_trigger_template"><sys_hub_trigger_template action="INSERT_OR_UPDATE"><accessible_from>public</accessible_from><active>false</active><annotation/><attributes/><category display_value="Record">8886dd64c3d322002841b63b12d3aed4</category><comment/><description/><name>BNB - Trigger Close Change from Renew Task</name><order>0</order><published_trigger_id/><source_trigger/><state>draft</state><sys_class_name>sys_hub_trigger_template</sys_class_name><sys_created_by>suzana.hessel@extreme.digital</sys_created_by><sys_created_on>2026-03-27 16:38:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a982158f33bbfa106c8432a19e5c7b98</sys_id><sys_mod_count>0</sys_mod_count><sys_name>BNB - Trigger Close Change from Renew Task</sys_name><sys_overrides/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sys_hub_trigger_template_a982158f33bbfa106c8432a19e5c7b98</sys_update_name><sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by><sys_updated_on>2026-03-27 16:38:55</sys_updated_on><template_properties/><trigger_category/><trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition><trigger_values/><type>record_update</type></sys_hub_trigger_template><sys_translated_text action="delete_multiple" query="documentkey=a982158f33bbfa106c8432a19e5c7b98"/></record_update>]]></payload>
+        <payload_hash>-1595388797</payload_hash>
+        <record_name>BNB - Trigger Close Change from Renew Task</record_name>
+        <reverted_from/>
+        <source>87a0c58b333bba106c8432a19e5c7b85</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-27 16:38:55</sys_created_on>
+        <sys_id>ed82158f33bbfa106c8432a19e5c7b9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d3029c0eb0000001</sys_recorded_at>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-27 16:38:55</sys_updated_on>
+        <type>Trigger Template</type>
+        <update_guid>ed82158ff7bbfa108a4211652c262e9c</update_guid>
+        <update_guid_history>ed82158ff7bbfa108a4211652c262e9c:-1595388797</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 12:10:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_trigger_template">sys_hub_trigger_template</sys_db_object>
+        <sys_id>4c79eba91a5342e6931545b8812069e4</sys_id>
+        <sys_metadata>a982158f33bbfa106c8432a19e5c7b98</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BNB - Trigger Close Change from Renew Task</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_hub_trigger_template_a982158f33bbfa106c8432a19e5c7b98</sys_update_name>
+        <sys_update_version display_value="sys_hub_trigger_template_a982158f33bbfa106c8432a19e5c7b98">ed82158f33bbfa106c8432a19e5c7b9d</sys_update_version>
+        <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:10:20</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d3ef366410000001</claim_timestamp>
+        <metadata_update_name>sys_hub_trigger_template_a982158f33bbfa106c8432a19e5c7b98</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-30 13:33:52</sys_created_on>
+        <sys_id>ccf48cc0330c47d06c8432a19e5c7b68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-03-30 13:33:52</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="chg_model">
+    <chg_model action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced_security>false</advanced_security>
+        <available_in_ui>true</available_in_ui>
+        <color>#cbcbcb</color>
+        <default_change_model>false</default_change_model>
+        <description>Modelo de mudança para registrar criação de certificados</description>
+        <implementation_states/>
+        <name>Criação e Renovação de Certificados</name>
+        <read_roles>itil,sn_change_read</read_roles>
+        <record_preset>state=3^category=certificates^impact=3^backout_plan=N/A^approval=approved^cab_required=false^implementation_plan=Gerar CSR e par de chaves pública / privada&#13;
+Assinar CSR junto à certificadora&#13;
+Instalar certificado no servidor^phase=build^phase_state=complete^risk_impact_analysis=N/A^test_plan=N/A^type=model^urgency=3^EQ</record_preset>
+        <state_field>state</state_field>
+        <sys_class_name>chg_model</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 11:23:53</sys_created_on>
+        <sys_id>9bfa3dfe33400f906c8432a19e5c7b15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Criação e Renovação de Certificados</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>chg_model_9bfa3dfe33400f906c8432a19e5c7b15</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 11:23:53</sys_updated_on>
+        <table_name>change_request</table_name>
+        <write_roles/>
+    </chg_model>
+    <sys_translated_text action="delete_multiple" query="documentkey=9bfa3dfe33400f906c8432a19e5c7b15"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d6d28b04d0000001</claim_timestamp>
+        <metadata_update_name>chg_model_9bfa3dfe33400f906c8432a19e5c7b15</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 12:54:36</sys_created_on>
+        <sys_id>384256ba338c4f906c8432a19e5c7bd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 12:54:36</sys_updated_on>
+    </sys_claim>
+</record_update>
