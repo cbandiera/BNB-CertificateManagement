@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_disco_certmgmt.BNBCertUserUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Funções auxiliares para tratamento de grupos de usuários.&#13;
+Os grupos reponsáveis pelos certificados Internos, Externos e o grupo de operadores que instalam os certificados estão configurados nas propriedades correspondentes.&#13;
+Essa classe expõe os métodos: isMemberOfCertExterno, isMemberOfCertInterno e isMemberOfInstalaCert que verificam se o usuário correntemente logado pertence aos grupos.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>BNBCertUserUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BNBCertUserUtils = Class.create();
+
+BNBCertUserUtils.prototype = {
+
+	grpCertExterno: null,
+	grpCertInterno: null,
+	grpInstalaCert: null,
+	
+	initialize: function(){
+		this.grpCertExterno = this.getSysUserGroup("sn_disco_certmgmt.BNB_certificados_externos");
+		this.grpCertInterno = this.getSysUserGroup("sn_disco_certmgmt.BNB_certificados_internos");
+		this.grpInstalaCert = this.getSysUserGroup("sn_disco_certmgmt.BNB_instalacao_certificados");
+	},
+
+	isMemberOfCertExterno: function () {
+		return this._isMemberOfGroup(this.grpCertExterno);
+	},
+
+	isMemberOfCertInterno: function () {
+		return this._isMemberOfGroup(this.grpCertInterno);
+	},
+
+	isMemberOfInstalaCert: function () {
+		return this._isMemberOfGroup(this.grpInstalaCert);
+	},
+
+	// Obtem registro da sys_user_group a partid do nome de uma property com o nome do grupo
+	getSysUserGroup: function (groupNameProperty) {
+		var groupName = gs.getProperty(groupNameProperty, null);
+
+		if (!groupName) {
+			throw Error("Propriedade não foi configurada corretamente:  " + groupNameProperty);
+		}
+
+		var sysUserGroupGQ = new global.GlideQuery("sys_user_group")
+			.getBy({ name: groupName }, ["sys_id", "name"])
+			.orElse({ sys_id: null });
+
+		if (!sysUserGroupGQ.sys_id) {
+			throw Error("Propriedade <" + groupNameProperty + "> aponta para grupo não existente:  " + groupName);
+		}
+
+		return sysUserGroupGQ;
+	},
+
+	_isMemberOfGroup: function (sysUserGroup) {
+		if (!gs.getUser()) {
+			throw Error("Chamada de função inválida - deve existir usuário logado. Propriedade: " + groupNameProperty);
+		}
+		var isMember = gs.getUser().isMemberOf(sysUserGroup.name);
+		if (!isMember) {
+			throw Error("Essa função só está disponível para usuários do grupo " + sysUserGroup.name);
+		}
+		return true;
+	},
+
+	type: 'BNBCertUserUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 19:53:00</sys_created_on>
+        <sys_id>53ce6f72334843d06c8432a19e5c7b1a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>BNBCertUserUtils</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_include_53ce6f72334843d06c8432a19e5c7b1a</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 23:26:55</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d6f8c9db40000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_53ce6f72334843d06c8432a19e5c7b1a</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-09 00:02:59</sys_created_on>
+        <sys_id>af3ba8873b008310a1e3f65436e45adc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-09 00:02:59</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>53ce6f72334843d06c8432a19e5c7b1a</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-08 19:52:59</sys_created_on>
+        <sys_id>d5023bfa3bcc0310a1e3f65436e45a1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-08 19:52:59</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

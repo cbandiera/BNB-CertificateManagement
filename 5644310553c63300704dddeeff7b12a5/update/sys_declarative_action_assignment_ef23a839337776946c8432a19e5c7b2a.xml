@@ -50,53 +50,48 @@
         <requires_value>false</requires_value>
         <script_condition>current.state == 1 &amp;&amp;  current.assignment_group == "e5eaaa408722fe90fa4042630cbb358b"</script_condition>
         <scripted_client_condition/>
-        <server_script><![CDATA[(function() {
-    try {
-        var result = sn_fd.FlowAPI.getRunner()
-            .action('sn_disco_certmgmt.bnb__obtem_grupos_a_partir_de_propriedades')
-            .inForeground()
-            .run();
+        <server_script><![CDATA[(function () {
+	try {
+		var usrUtils = new sn_disco_certmgmt.BNBCertUserUtils();
+		var grpCertExterno = usrUtils.grpCertExterno;
+		var grpInstalaCert = usrUtils.grpInstalaCert;
 
-        var outputs = result.getOutputs();
-        var grupoExternos = outputs['certificados_externos'];
-        var grupoInstalacao = outputs['instalacao_de_certificados'];
+		if (!gs.getUser().isMemberOf(grpCertExterno.name)) {
+			gs.addErrorMessage("Essa função só está disponível para usuários do grupo " + grpCertExterno.name);
+			return false;
+		}
 
-        if (current.state != '1' || current.assignment_group != grupoExternos) {
-            gs.addErrorMessage('Ação não permitida.');
-            return;
-        }
+		var att = new GlideRecord('sys_attachment');
+		att.addQuery('table_name', current.getTableName());
+		att.addQuery('table_sys_id', current.sys_id);
+		att.query();
 
-        var att = new GlideRecord('sys_attachment');
-        att.addQuery('table_name', current.getTableName());
-        att.addQuery('table_sys_id', current.sys_id);
-        att.query();
+		if (!att.hasNext()) {
+			gs.addErrorMessage('Anexe o certificado antes de solicitar a instalação.');
+			return;
+		}
 
-        if (!att.hasNext()) {
-            gs.addErrorMessage('Anexe o certificado antes de solicitar a instalação.');
-            return;
-        }
+		var usuario = gs.getUserDisplayName();
+		var grupoOrigem = current.assignment_group.getDisplayValue();
 
-        var usuario = gs.getUserDisplayName();
-        var grupoOrigem = current.assignment_group.getDisplayValue();
+		current.assignment_group = grpInstalaCert.sys_id;
 
-        current.assignment_group = grupoInstalacao;
+		current.comments =
+			'Ação executada: Solicitação de instalação de certificado\n' +
+			'Usuário: ' + usuario + '\n' +
+			'Grupo origem: ' + grpCertExterno.name + '\n' +
+			'Grupo destino: ' + grpInstalaCert.name + '\n' +
+			'Tipo de task: ' + current.getTableName() + '\n' +
+			'Anexo verificado: Sim\n' +
+			'Resultado: Solicitação enviada com sucesso';
 
-        current.comments =
-            'Ação executada: Solicitação de instalação de certificado\n' +
-            'Usuário: ' + usuario + '\n' +
-            'Grupo origem: ' + grupoOrigem + '\n' +
-            'Grupo destino: ' + current.assignment_group.getDisplayValue() + '\n' +
-            'Tipo de task: ' + current.getTableName() + '\n' +
-            'Anexo verificado: Sim\n' +
-            'Resultado: Solicitação enviada com sucesso';
+		current.update();
 
-        current.update();
+		gs.addInfoMessage('Solicitação de instalação enviada com sucesso.');
 
-        gs.addInfoMessage('Solicitação de instalação enviada com sucesso.');
-
-    } catch (ex) {
-        gs.addErrorMessage('Erro ao processar solicitação.');
-    }
+	} catch (ex) {
+		gs.addErrorMessage(ex.message);
+	}
 })();]]></server_script>
         <specificity>21</specificity>
         <sys_class_name>sys_declarative_action_assignment</sys_class_name>
@@ -105,7 +100,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef23a839337776946c8432a19e5c7b2a</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>request _installation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -113,7 +108,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_ef23a839337776946c8432a19e5c7b2a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-30 12:21:58</sys_updated_on>
+        <sys_updated_on>2026-04-08 23:58:19</sys_updated_on>
         <table>sn_disco_certmgmt_task</table>
         <tooltip/>
         <ui_component/>
