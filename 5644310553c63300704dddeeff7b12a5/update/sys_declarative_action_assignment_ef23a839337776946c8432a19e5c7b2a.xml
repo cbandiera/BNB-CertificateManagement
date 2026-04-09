@@ -81,7 +81,7 @@
 			'Usuário: ' + usuario + '\n' +
 			'Grupo origem: ' + grpCertExterno.name + '\n' +
 			'Grupo destino: ' + grpInstalaCert.name + '\n' +
-			'Tipo de task: ' + current.getTableName() + '\n' +
+			'Tipo de task: ' + current.getClassDisplayValue() + '\n' +
 			'Anexo verificado: Sim\n' +
 			'Resultado: Solicitação enviada com sucesso';
 
@@ -100,7 +100,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef23a839337776946c8432a19e5c7b2a</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>request _installation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -108,7 +108,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_ef23a839337776946c8432a19e5c7b2a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-08 23:58:19</sys_updated_on>
+        <sys_updated_on>2026-04-09 00:10:39</sys_updated_on>
         <table>sn_disco_certmgmt_task</table>
         <tooltip/>
         <ui_component/>

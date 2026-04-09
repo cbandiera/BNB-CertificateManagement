@@ -56,7 +56,7 @@
 		var grpCertExterno = usrUtils.grpCertExterno;
 		var grpInstalaCert = usrUtils.grpInstalaCert;
 
-		if (!gs.getUser().isMemberOf(grpCertExterno.name)) {
+		if (!gs.getUser().isMemberOf(grpInstalaCert.name)) {
 			gs.addErrorMessage("Essa função só está disponível para usuários do grupo " + grpInstalaCert.name);
 			return false;
 		}
@@ -76,7 +76,7 @@
 			'Ação executada: Conclusão da tarefa\n' +
 			'Usuário: ' + usuario + '\n' +
 			'Grupo: ' + grupo + '\n' +
-			'Tipo de task: ' + current.getTableName() + '\n' +
+			'Tipo de task: ' + current.getClassDisplayValue() + '\n' +
 			'Estado anterior: ' + estadoAnterior + '\n' +
 			'Novo estado: ' + current.state.getDisplayValue() + '\n' +
 			'Resultado: Tarefa marcada como Concluída.';
@@ -96,7 +96,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38efd0783b73f2d0a1e3f65436e45af2</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>complete_task</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -104,7 +104,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_38efd0783b73f2d0a1e3f65436e45af2</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-08 23:48:38</sys_updated_on>
+        <sys_updated_on>2026-04-09 00:09:17</sys_updated_on>
         <table>sn_disco_certmgmt_task</table>
         <tooltip/>
         <ui_component/>
