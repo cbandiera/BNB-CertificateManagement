@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>BNB Gera Alerta Certificados Expirando em 30 dias</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month/>
+        <run_period/>
+        <run_start>2026-04-13 15:42:33</run_start>
+        <run_time>1970-01-01 06:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth/>
+        <script><![CDATA[var today = new GlideDateTime();
+// today.setValue('2018-05-08');
+var beginOfDay = new GlideDateTime(today.getDate() + " 00:00:00");
+var endOfDay = new GlideDateTime(today.getDate() + ' 23:59:59');
+
+var i = 30;
+var expiraInicio = new GlideDateTime(beginOfDay);
+expiraInicio.addDaysLocalTime(i);
+var expiraFim = new GlideDateTime(endOfDay);
+expiraFim.addDaysLocalTime(i);
+// gs.info(i + ' ' + JSON.stringify(expiraInicio) + ' a ' + JSON.stringify(expiraFim));
+
+var ciCertificateGQ = new global.GlideQuery('cmdb_ci_certificate')
+  .where("valid_to", ">=", expiraInicio)
+  .where("valid_to", "<=", expiraFim)
+  .where("is_ca", false)
+  .where("u_ca_scope", "external")
+  .where("state", "installed")
+  .select("sys_id", "subject_common_name", "valid_to")
+  .forEach(function(cert) {
+	var certificateGlideRecord = new GlideRecord("cmdb_ci_certificate");
+	certificateGlideRecord.get(cert.sys_id);
+	var inputs = {};
+	inputs['certificate_ci'] = certificateGlideRecord;
+	inputs['event_type'] = "expiring";
+		try {
+			gs.info(cert.subject_common_name);
+      var flowOutput = sn_fd.FlowAPI.executeSubflow('sn_disco_certmgmt.certificate_event_management', inputs);
+		} catch (ex) {
+			var getErrMsg = (ex.getMessage() || ex.getMessage);
+			gs.error(gs.getMessage('Failed to create certificate task for certificate with sys id {0} : {1}', [certificateGlideRecord.getUniqueValue(), getErrMsg]));
+		}
+}); ]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-13 18:04:49</sys_created_on>
+        <sys_id>6939856833d40f906c8432a19e5c7bb9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BNB Gera Alerta Certificados Expirando em 30 dias</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sysauto_script_6939856833d40f906c8432a19e5c7bb9</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-13 18:42:00</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d882843470000001</claim_timestamp>
+        <metadata_update_name>sysauto_script_6939856833d40f906c8432a19e5c7bb9</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-13 18:43:53</sys_created_on>
+        <sys_id>3d2219e4335c0f906c8432a19e5c7b18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-13 18:43:53</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6939856833d40f906c8432a19e5c7bb9</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-13 18:04:49</sys_created_on>
+        <sys_id>2939856833d40f906c8432a19e5c7bbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-13 18:04:49</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
