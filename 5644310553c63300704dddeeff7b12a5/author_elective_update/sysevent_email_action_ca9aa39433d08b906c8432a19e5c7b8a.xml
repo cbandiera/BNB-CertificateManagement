@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="DELETE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Certificate Notifications" name="Certificate Notifications">97f76c0d2b03621001d5ffc3f291bf4c</category>
+        <collection>cmdb_ci_certificate</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description>Notificação disparada pelo evento gerado a partir do scheduled job que obtém certificados com datas de validade:&#13;
+Hoje - certificado expirado&#13;
+em 30 dias&#13;
+em 60 dias</description>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>multiple</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>sn_disco_certmgmt.certificado_expirando</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p data-end="413" data-start="386">Ol&aacute;,</p>
+<p>O certificado abaixo encontra-se em risco.</p>
+<p>Favor tomar as devidas provid&ecirc;ncias.</p>
+<p>&nbsp;</p>
+<p>${event.parm2}</p>
+<hr data-end="1098" data-start="1095">
+<p data-end="1325" data-start="1236">Essa mensagem foi enviada de forma autom&aacute;tica, e n&atilde;o deve ser respondida.</p>
+<p data-end="1325" data-start="1236">&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>BNB Certificado expirando</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>managed_by_group</recipient_fields>
+        <recipient_groups name="SEGURANÇA - Funcionários da CSI">8b895c1f33444bd06c8432a19e5c7b93</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>${event.parm1}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-13 11:11:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ca9aa39433d08b906c8432a19e5c7b8a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>BNB Certificado expirando</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sysevent_email_action_ca9aa39433d08b906c8432a19e5c7b8a</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-13 11:50:04</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="EDX - CSM Template">e5f2057a3b2e32d0a1e3f65436e45a67</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sysevent_email_action_ca9aa39433d08b906c8432a19e5c7b8a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Certificate Notifications" name="Certificate Notifications"&gt;97f76c0d2b03621001d5ffc3f291bf4c&lt;/category&gt;&lt;collection&gt;cmdb_ci_certificate&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description&gt;Notificação disparada pelo evento gerado a partir do scheduled job que obtém certificados com datas de validade:&amp;#13;
+Hoje - certificado expirado&amp;#13;
+em 30 dias&amp;#13;
+em 60 dias&lt;/description&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;multiple&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;sn_disco_certmgmt.certificado_expirando&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p data-end="413" data-start="386"&gt;Ol&amp;aacute;,&lt;/p&gt;
+&lt;p&gt;O certificado abaixo encontra-se em risco.&lt;/p&gt;
+&lt;p&gt;Favor tomar as devidas provid&amp;ecirc;ncias.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;${event.parm2}&lt;/p&gt;
+&lt;hr data-end="1098" data-start="1095"&gt;
+&lt;p data-end="1325" data-start="1236"&gt;Essa mensagem foi enviada de forma autom&amp;aacute;tica, e n&amp;atilde;o deve ser respondida.&lt;/p&gt;
+&lt;p data-end="1325" data-start="1236"&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;BNB Certificado expirando&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;managed_by_group&lt;/recipient_fields&gt;&lt;recipient_groups name="SEGURANÇA - Funcionários da CSI"&gt;8b895c1f33444bd06c8432a19e5c7b93&lt;/recipient_groups&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;false&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;${event.parm1}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carlos.paiva@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-13 11:11:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ca9aa39433d08b906c8432a19e5c7b8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;BNB Certificado expirando&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_ca9aa39433d08b906c8432a19e5c7b8a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;carlos.paiva@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-13 11:50:04&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="EDX - CSM Template"&gt;e5f2057a3b2e32d0a1e3f65436e45a67&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-7885627</payload_hash>
+        <record_name>BNB Certificado expirando</record_name>
+        <reverted_from/>
+        <source>d2a6e596334047506c8432a19e5c7b1e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-13 11:50:04</sys_created_on>
+        <sys_id>4473fb9833188b906c8432a19e5c7bb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d86ad69240000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-13 11:50:04</sys_updated_on>
+        <type>Notification</type>
+        <update_guid>c073fb98b4188b905ed8798dcfd4e8b3</update_guid>
+        <update_guid_history>c073fb98b4188b905ed8798dcfd4e8b3:-7885627,6780b3d4ced48b90dca701f9584e06ae:978876942,c2ffeb107fd48b90f24e376f83dfdfb8:56887718,704d6f5400548b90764771c63e4134fa:1570680401,c59ce3dca2148b907b4da31d8530870e:70972978,ca9a671c49d08b90ba00c441f2850a3f:-1593973950</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-13 15:49:02</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_email_action">sysevent_email_action</sys_db_object>
+        <sys_id>2dfeabbacff44fa696309d76d74cf891</sys_id>
+        <sys_metadata>ca9aa39433d08b906c8432a19e5c7b8a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BNB Certificado expirando</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent display_value="Unique Certificate">fb29d5883bdfee50a1e3f65436e45a26</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sysevent_email_action_ca9aa39433d08b906c8432a19e5c7b8a</sys_update_name>
+        <sys_update_version display_value="sysevent_email_action_ca9aa39433d08b906c8432a19e5c7b8a">4473fb9833188b906c8432a19e5c7bb4</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:49:02</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19d879a2eda0000001</claim_timestamp>
+        <metadata_update_name>sysevent_email_action_ca9aa39433d08b906c8432a19e5c7b8a</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-13 16:08:41</sys_created_on>
+        <sys_id>acaea860339ccb906c8432a19e5c7b96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-13 16:08:41</sys_updated_on>
+    </sys_claim>
+</record_update>
