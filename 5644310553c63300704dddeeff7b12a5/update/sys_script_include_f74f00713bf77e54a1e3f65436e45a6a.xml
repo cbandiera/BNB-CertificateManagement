@@ -57,26 +57,13 @@ BNBCertificateMangementUtils.prototype = {
 		}
 	},
 
-	getCAScopeFromCN: function (commonName) {
-		if (commonName.endsWith('bnb.gov.br')) {
-			return 'external';
-		} else {
-			if (commonName.endsWith('intra.bnb') ||
-				commonName.endsWith('dmz.bnb') ||
-				commonName.endsWith('dreads.bnb')) {
-				return 'internal';
-			}
-		}
-		return null;
-	},
-
 	determineScopeAndMetadata: function (cert) {
 		try {
 			var now = new GlideDateTime();
 			var daysBeforeExpiry = parseInt(gs.getProperty("glide.discovery.certs.days_before_expiration_to_create_renewal_task", "60"));
 
 			var updatedFields = {
-				u_ca_scope: this.getCAScopeFromCN(cert.subject_common_name),
+				u_ca_scope: BNBCertificateMangementUtils.getCAScopeFromCN(cert.subject_common_name),
 				renewal_tracking: 'none'
 			};
 
@@ -149,19 +136,31 @@ BNBCertificateMangementUtils.prototype = {
 
 	type: 'BNBCertificateMangementUtils'
 };
-]]></script>
+
+BNBCertificateMangementUtils.getCAScopeFromCN = function (commonName) {
+	if (commonName.endsWith('bnb.gov.br')) {
+		return 'external';
+	} else {
+		if (commonName.endsWith('intra.bnb') ||
+			commonName.endsWith('dmz.bnb') ||
+			commonName.endsWith('dreads.bnb')) {
+			return 'internal';
+		}
+	}
+	return null;
+}]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-23 14:52:25</sys_created_on>
         <sys_id>f74f00713bf77e54a1e3f65436e45a6a</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>BNBCertificateMangementUtils</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_f74f00713bf77e54a1e3f65436e45a6a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-16 22:35:37</sys_updated_on>
+        <sys_updated_on>2026-04-17 01:50:52</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
