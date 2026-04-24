@@ -4,37 +4,111 @@
         <description>Ajusta os metadados dos certificados existentes</description>
         <name>BNB Implantacão Customização certificado</name>
         <record_for_rollback>true</record_for_rollback>
-        <script><![CDATA[var grDisco = new GlideRecord('discovery_schedule');
-grDisco.get('301f70d833480f106c8432a19e5c7bbf');
+        <script><![CDATA[var scopeName = gs.getCurrentScopeName();
+var scopeGQ = new global.GlideQuery('sys_store_app').getBy({ scope: scopeName }).orElse({ sys_id: null });
 
-var grMID = new GlideRecord('ecc_agent_cluster');
-grMID.get('name', 'MID_CAPGV_COM');
+// criar as propriedades que inibem a renovação automatica de certificados
+function setProps() {
+	logInfo('Criação / Atualização de Propriedades - Inicio.');
+	var properties = [
+		{ type: 'string', name: "BNB_certificados_internos", value: "INFRA - Linux" },
+		{ type: 'string', name: "BNB_instalacao_certificados", value: "INFRA - Linux" },
+		{ type: 'string', name: "BNB_certificados_externos", value: "SEGURANÇA - Funcionários da CSI" },
+		{ type: 'boolean', name: 'auto_renew.internal_certificates', value: 'true' },
+		{ type: 'boolean', name: 'auto_renew.external_certificates', value: 'true' }
+	];
 
-grDisco.mid_select_method = "specific_cluster";
-grDisco.mid_cluster = grMID.sys_id;
-grDisco.update();
+	properties.forEach(function (prop) {
+		var propName = scopeName + '.' + prop.name;
+		var propGQ = new global.GlideQuery('sys_properties')
+			.getBy({ sys_scope: scopeGQ.sys_id, name: propName })
+			.orElse({ sys_id: null });
 
-var utils = new sn_disco_certmgmt.BNBCertificateMangementUtils();
-utils.updatedAllCertsMetadata();
+		var newProp = new global.GlideQuery('sys_properties')
+			.insertOrUpdate({
+				sys_id: propGQ.sys_id,
+				sys_scope: scopeGQ.sys_id,
+				name: propName,
+				value: prop.value,
+				type: prop.type
+			})
+			.orElse({ sys_id: null });
+		logInfo('Configurada propriedade: ' + prop.name + '=' + prop.value);
+	});
+	logInfo('Criação / Atualização de Propriedades - Fim.');
+}
 
-var grCredential = new GlideRecord('api_key_credentials');
-grCredential.get('5773605233a33a506c8432a19e5c7b98');
-key="zV74yRf8HoUDqLXmO1PLP5vmXvHU24";
-grCredential.authentication_key = grCredential.api_key = key;
-grCredential.update();
-]]></script>
+function setMid() {
+	logInfo('Ajuste MID Server Cluster - Inicio.');
+	// Ajusta MID Server do discovery schedule
+	var clusterName = 'MID_CAPGV_COM';
+	var grMID = new global.GlideQuery('ecc_agent_cluster')
+		.getBy({ name: clusterName })
+		.orElse({ sys_id: null });
+
+	if (!grMID.sys_id) {
+		throw Error("Cluster " + clusterName + ' Not found in environment');
+	}
+
+	var grDisco = new global.GlideQuery('discovery_schedule')
+		.where("sys_scope.scope", scopeName)
+		.select('sys_id', 'name')
+		.forEach(function (sch) {
+			new global.GlideQuery('discovery_schedule')
+				.where("sys_id", sch.sys_id)
+				.update({ mid_select_method: "specific_cluster", mid_cluster: grMID.sys_id });
+			logInfo('Updated Mid Cluster for Discovery Schedule ' + sch.name);
+		});
+	logInfo('Ajuste MID Server Cluster - Fim.');
+}
+
+function setAWXCredential() {
+	logInfo('Ajuste Credencial Ansible - Inicio.');
+	var key = "zV74yRf8HoUDqLXmO1PLP5vmXvHU24";
+	var credGQ = new GlideRecord('api_key_credentials');
+	credGQ.addQuery("name", "AWX API Key");
+	credGQ.query();
+	if (!credGQ.next()) throw Error("Missing [AWX API Key] record in table api_key_credentials");
+
+	var cred = new sn_cc.StandardCredentialsProvider().getCredentialByID(credGQ.sys_id);
+	var token = cred.getAttribute('api_key') || '';
+	if(token != key) {
+    var baseURL = gs.getProperty("instance_name")+'.service-now.com/now/nav/ui/classic/params/target/';
+		throw Error("Verifique Token AWX em \n" + baseURL + credGQ.getLink());
+	}
+	logInfo('Ajuste Credencial Ansible - Fim.');
+}
+
+function updateMetadata() {
+	logInfo("Atualização de Certificate Metadata - Inicio.");
+	var utils = new sn_disco_certmgmt.BNBCertificateMangementUtils();
+	utils.updatedAllCertsMetadata();
+	logInfo("Atualização de Certificate Metadata - Fim.");
+}
+
+function logInfo(ex) { gs.info("EDX - Customização certificados - " + ex); }
+
+function logError(ex) { gs.error("EDX - Customização certificados - " + ex); }
+
+try { setProps(); } catch (ex) { logError(ex); }
+
+try { setMid(); } catch (ex) { logError(ex); }
+
+try { setAWXCredential(); } catch (ex) { logError(ex); }
+
+// try {updateMetadata();} catch (ex) {logError(ex);}]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-30 20:38:27</sys_created_on>
         <sys_id>bd03e9483b408314a1e3f65436e45ac5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>BNB Implantacão Customização certificado</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_fix_bd03e9483b408314a1e3f65436e45ac5</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 15:24:24</sys_updated_on>
+        <sys_updated_on>2026-04-24 19:50:55</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
     <sys_claim action="INSERT_OR_UPDATE">

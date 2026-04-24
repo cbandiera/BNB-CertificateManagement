@@ -62,14 +62,14 @@
         <sys_created_on>2026-03-31 12:31:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>301f70d833480f106c8432a19e5c7bbf</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>IPs Externos</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>discovery_schedule_301f70d833480f106c8432a19e5c7bbf</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-17 02:32:19</sys_updated_on>
+        <sys_updated_on>2026-04-24 18:19:03</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_snmp_version>all</use_snmp_version>
