@@ -72,8 +72,8 @@ function setAWXCredential() {
 
 	var cred = new sn_cc.StandardCredentialsProvider().getCredentialByID(credGQ.sys_id);
 	var token = cred.getAttribute('api_key') || '';
-	if(token != key) {
-    var baseURL = gs.getProperty("instance_name")+'.service-now.com/now/nav/ui/classic/params/target/';
+	if (token != key) {
+		var baseURL = gs.getProperty("instance_name") + '.service-now.com/now/nav/ui/classic/params/target/';
 		throw Error("Verifique Token AWX em \n" + baseURL + credGQ.getLink());
 	}
 	logInfo('Ajuste Credencial Ansible - Fim.');
@@ -90,25 +90,39 @@ function logInfo(ex) { gs.info("EDX - Customização certificados - " + ex); }
 
 function logError(ex) { gs.error("EDX - Customização certificados - " + ex); }
 
-try { setProps(); } catch (ex) { logError(ex); }
+var failures = [];
+try { setProps(); } catch (ex) {
+	failures.push(ex);
+}
 
-try { setMid(); } catch (ex) { logError(ex); }
+try { setMid(); } catch (ex) {
+	failures.push(ex);
+}
 
-try { setAWXCredential(); } catch (ex) { logError(ex); }
+try { setAWXCredential(); } catch (ex) {
+	failures.push(ex);
+}
+try { updateMetadata(); } catch (ex) {
+	failures.push(ex);
+}
 
-// try {updateMetadata();} catch (ex) {logError(ex);}]]></script>
+if (failures.length + 0) {
+	failures.forEach(function (ex) { logError(ex); });
+	throw Error("\nFix script falhou:\n  ##### " + failures.join('\n  ##### '));
+}
+]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-30 20:38:27</sys_created_on>
         <sys_id>bd03e9483b408314a1e3f65436e45ac5</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>BNB Implantacão Customização certificado</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_fix_bd03e9483b408314a1e3f65436e45ac5</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 19:50:55</sys_updated_on>
+        <sys_updated_on>2026-04-25 10:36:06</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
     <sys_claim action="INSERT_OR_UPDATE">
