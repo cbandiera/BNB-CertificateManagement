@@ -18,11 +18,13 @@ BNBCertUserUtils.prototype = {
 	grpCertExterno: null,
 	grpCertInterno: null,
 	grpInstalaCert: null,
-	
-	initialize: function(){
+	grpInstalaCertWin: null,
+
+	initialize: function () {
 		this.grpCertExterno = this.getSysUserGroup("sn_disco_certmgmt.BNB_certificados_externos");
 		this.grpCertInterno = this.getSysUserGroup("sn_disco_certmgmt.BNB_certificados_internos");
 		this.grpInstalaCert = this.getSysUserGroup("sn_disco_certmgmt.BNB_instalacao_certificados");
+		this.grpInstalaCertWin = this.getSysUserGroup("sn_disco_certmgmt.BNB_instalacao_certificados_Windows");
 	},
 
 	isMemberOfCertExterno: function () {
@@ -34,7 +36,12 @@ BNBCertUserUtils.prototype = {
 	},
 
 	isMemberOfInstalaCert: function () {
-		return this._isMemberOfGroup(this.grpInstalaCert);
+		return this._isMemberOfGroup(this.grpInstalaCert) ||
+			this._isMemberOfGroup(this.grpInstalaCertWin);
+	},
+
+	isMemberOfInstalaCertWin: function () {
+		return this._isMemberOfGroup(this.grpInstalaCertWin);
 	},
 
 	// Obtem registro da sys_user_group a partid do nome de uma property com o nome do grupo
@@ -73,14 +80,14 @@ BNBCertUserUtils.prototype = {
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-04-08 19:53:00</sys_created_on>
         <sys_id>53ce6f72334843d06c8432a19e5c7b1a</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>BNBCertUserUtils</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_53ce6f72334843d06c8432a19e5c7b1a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-08 23:26:55</sys_updated_on>
+        <sys_updated_on>2026-04-28 16:25:31</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>

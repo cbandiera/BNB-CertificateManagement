@@ -48,7 +48,7 @@
         <required_translations/>
         <required_user_role_names/>
         <requires_value>false</requires_value>
-        <script_condition>current.state == 1 &amp;&amp;  current.assignment_group == "e5eaaa408722fe90fa4042630cbb358b"</script_condition>
+        <script_condition>current.state == 1 &amp;&amp;  current.assignment_group == (new BNBCertUserUtils()).grpCertExterno.sys_id &amp;&amp; (new BNBCertUserUtils()).isMemberOfCertExterno()</script_condition>
         <scripted_client_condition/>
         <server_script><![CDATA[(function () {
 	try {
@@ -73,6 +73,15 @@
 
 		var usuario = gs.getUserDisplayName();
 		var grupoOrigem = current.assignment_group.getDisplayValue();
+
+		var grRelCi = new GlideRecord('cmdb_rel_ci');
+		grRelCi.addQuery('parent', current.certificate.sys_id);
+		grRelCi.addQuery('parent.sys_class_name', 'cmdb_ci_certificate');
+		grRelCi.addQuery('child.sys_class_name', 'cmdb_ci_win_server');
+		grRelCi.query();
+		if (grRelCi.next()) {
+			grpInstalaCert = usrUtils.grpInstalaCertWin;
+		}
 
 		current.assignment_group = grpInstalaCert.sys_id;
 
@@ -100,7 +109,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef23a839337776946c8432a19e5c7b2a</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>request _installation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -108,7 +117,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_ef23a839337776946c8432a19e5c7b2a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-09 00:10:39</sys_updated_on>
+        <sys_updated_on>2026-04-29 14:19:07</sys_updated_on>
         <table>sn_disco_certmgmt_task</table>
         <tooltip/>
         <ui_component/>
