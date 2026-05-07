@@ -48,7 +48,7 @@
         <omit_price>false</omit_price>
         <order>100</order>
         <ordered_item_link/>
-        <owner display_value="Carlos Bandiera Paiva">6f4c121e87e97210fa4042630cbb3525</owner>
+        <owner display_value="carlos.paiva@extreme.digital Bandiera Paiva">6f4c121e87e97210fa4042630cbb3525</owner>
         <picture/>
         <post_insert_script><![CDATA[/**
 * This script is executed after the record is generated. 
