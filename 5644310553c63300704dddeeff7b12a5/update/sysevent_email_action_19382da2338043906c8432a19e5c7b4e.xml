@@ -7,7 +7,7 @@
         <affected_field_on_event/>
         <category display_value="Certificate Notifications" name="Certificate Notifications">97f76c0d2b03621001d5ffc3f291bf4c</category>
         <collection>sn_disco_certmgmt_renew_task</collection>
-        <condition table="sn_disco_certmgmt_renew_task">assignment_group=e5eaaa408722fe90fa4042630cbb358b^csrVALCHANGES^csrISNOTEMPTY^EQ<item display_table="sys_user_group" display_value="BNB-Certificados-Externos" endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="false" value="e5eaaa408722fe90fa4042630cbb358b"/>
+        <condition table="sn_disco_certmgmt_renew_task">assignment_group=8b895c1f33444bd06c8432a19e5c7b93^csrVALCHANGES^csrISNOTEMPTY^EQ<item display_table="sys_user_group" display_value="SEGURANÇA - Funcionários da CSI" endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="false" value="8b895c1f33444bd06c8432a19e5c7b93"/>
             <item endquery="false" field="csr" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="csr" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
@@ -86,7 +86,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>19382da2338043906c8432a19e5c7b4e</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>BNB Assinatura de Certificado renovado</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -94,7 +94,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sysevent_email_action_19382da2338043906c8432a19e5c7b4e</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-07 18:41:43</sys_updated_on>
+        <sys_updated_on>2026-05-08 16:09:14</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="EDX - CSM Template">e5f2057a3b2e32d0a1e3f65436e45a67</template>
         <type>email</type>

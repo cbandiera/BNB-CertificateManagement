@@ -15,7 +15,10 @@
         <condition/>
         <description>Ajusta Issuer para apontar para emissor válido</description>
         <execute_function>false</execute_function>
-        <filter_condition table="cmdb_ci_certificate">sys_idSAMEASissuer.sys_id^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="SAMEAS" or="false" value="issuer.sys_id"/>
+        <filter_condition table="cmdb_ci_certificate">sys_idSAMEASissuer.sys_id^u_ca_scope!=^is_self_signed=false^is_ca=false^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="SAMEAS" or="false" value="issuer.sys_id"/>
+            <item display_value="-- None --" endquery="false" field="u_ca_scope" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item endquery="false" field="is_self_signed" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="false" field="is_ca" goto="false" newquery="false" operator="=" or="false" value="false"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -31,16 +34,16 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-  var grIssuer = new GlideRecord('cmdb_ci_certificate');
-  grIssuer.addQuery("subject_common_name", current.issuer_common_name);
-  grIssuer.query();
-  if (grIssuer.next()) {
-    current.issuer = grIssuer.sys_id;
-    current.root_issuer = grIssuer.sys_id;
-  } else {
-    current.issuer = null;
-    current.root_issuer = null;
-  }
+	var grIssuer = new GlideRecord('cmdb_ci_certificate');
+	grIssuer.addQuery("subject_common_name", current.issuer_common_name);
+	grIssuer.query();
+	if (grIssuer.next()) {
+		current.issuer = grIssuer.sys_id;
+		current.root_issuer = grIssuer.sys_id;
+	} else {
+		current.issuer = null;
+		current.root_issuer = null;
+	}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -49,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b3fff304337047906c8432a19e5c7b61</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>BNB Ajusta Issuer</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -57,7 +60,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_b3fff304337047906c8432a19e5c7b61</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-05-07 18:33:16</sys_updated_on>
+        <sys_updated_on>2026-05-08 19:47:06</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>BNB_html_expira_certificado</name>
+        <new_lines_to_html>true</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+	// Build record link
+	var instanceURL = gs.getProperty('glide.servlet.uri');
+	var recordLink = instanceURL + "/now/certificate-management/record/cmdb_ci_certificate/" + current.sys_id;
+
+	// Get days left from event.parm2
+	var daysLeft = event.parm2 || "desconhecido";
+	if (daysLeft == "desconhecido") {
+		var validTo = new GlideDateTime(current.valid_to);
+		var now = new GlideDateTime();
+		if (now >= validTo) {
+			daysLeft = 0;
+		} else {
+			var prazo = GlideDateTime.subtract(validTo, now).getRoundedDayPart();
+			if (prazo < 31) {
+				daysLeft = 30;
+			} else {
+				daysLeft = 60;
+			}
+		}
+	}
+	// Start building email in Brazilian Portuguese
+	template.print("<div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;'>");
+
+	// Header
+	template.print("<div style='background-color: #A3193b; padding: 15px; color: white; text-align: center;'>");
+	template.print("<h2>Notificação de Certificado Digital</h2>");
+	template.print("</div>");
+
+	var subject = "Aviso de Expiração do Certificado " + current.subject_common_name;
+	// Alert based on days left
+	if (daysLeft != "desconhecido" && !isNaN(parseInt(daysLeft))) {
+		var days = parseInt(daysLeft);
+		if (days <= 0) {
+			template.print("<div style='background-color: #f44336; padding: 10px; margin: 10px 0; color: white; text-align: center;'>");
+			template.print("<strong>❌ CERTIFICADO EXPIRADO!</strong>");
+			template.print("</div>");
+			subject += " - CERTIFICADO EXPIRADO";
+		} else if (days <= 30) {
+			template.print("<div style='background-color: #ff9800; padding: 10px; margin: 10px 0; color: white; text-align: center;'>");
+			template.print("<strong>⚠ ATENÇÃO: Certificado próximo do vencimento!</strong>");
+			template.print("</div>");
+			subject += " - Certificado expira em até 30 dias";
+		} else {
+			subject += " - Certificado expira dento de 60 dias";
+		}
+	}
+	email.setSubject(subject);
+
+	// Certificate information
+	template.print("<div style='border: 1px solid #ddd; padding: 15px; margin: 15px 0; background-color: #f9f9f9;'>");
+	template.print("<h3 style='color: #333;'>Informações do Certificado</h3>");
+	template.print("<table style='width: 100%; border-collapse: collapse;'>");
+
+	// Certificate name
+	if (current.name) {
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Nome do Certificado:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + current.name + "</td>");
+		template.print("</tr>");
+	}
+
+	if (current.subject_common_name) {
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Nome comum:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + current.subject_common_name + "</td>");
+		template.print("</tr>");
+	}
+
+	// Certificate type
+	if (current.certificate_type) {
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Tipo:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + current.certificate_type.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	}
+
+	// Issuer
+	if (current.issuer_common_name) {
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Emitido por:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + current.issuer_common_name + "</td>");
+		template.print("</tr>");
+	}
+
+	// Subject
+	if (current.subject) {
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Destinatário:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + current.subject + "</td>");
+		template.print("</tr>");
+	}
+
+	// Valid from
+	if (current.valid_from) {
+		var validFrom = new GlideDateTime(current.valid_from);
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Válido de:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + validFrom.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	}
+
+	// Valid to
+	if (current.valid_to) {
+		var validTo = new GlideDateTime(current.valid_to);
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Válido até:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + validTo.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	}
+
+	// Days left
+	template.print("<tr style='background-color: " +
+		(daysLeft <= 30 ? "#fff3cd" : "#e8f5e9") + ";'>");
+	template.print("<td style='padding: 10px;'><strong>]]>📅<![CDATA[ Dias restantes:</strong></td>");
+	template.print("<td style='padding: 10px; font-weight: bold; color: " +
+		(daysLeft <= 0 ? "#d32f2f" : (daysLeft <= 30 ? "#ff9800" : "#4CAF50")) + ";'>" +
+		daysLeft + " dias" + "</td>");
+	template.print("</tr>");
+
+	// Serial number
+	if (current.serialnumber) {
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Número de Série:</strong></td>");
+		template.print("<td style='padding: 10px;'><small>" + current.serialnumber + "</small></td>");
+		template.print("</tr>");
+	}
+
+	// Status
+	var status = current.install_status;
+	if (status) {
+		template.print("<tr style='border-bottom: 1px solid #ddd;'>");
+		template.print("<td style='padding: 10px;'><strong>Status:</strong></td>");
+		template.print("<td style='padding: 10px;'>" + status.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	}
+
+	template.print("</table>");
+	template.print("</div>");
+
+	// Action buttons
+	template.print("<div style='margin: 20px 0; text-align: center;'>");
+	template.print("<a href='" + recordLink + "' style='");
+	template.print("background-color: #A3193b; ");
+	template.print("color: white; ");
+	template.print("padding: 10px 20px; ");
+	template.print("text-decoration: none; ");
+	template.print("border-radius: 5px; ");
+	template.print("display: inline-block;'>");
+	template.print("]]>🔗<![CDATA[ Visualizar Certificado");
+	template.print("</a>");
+	template.print("</div>");
+
+	// Recommendations based on days left
+	if (daysLeft != "desconhecido" && !isNaN(parseInt(daysLeft))) {
+		var days = parseInt(daysLeft);
+		template.print("<div style='background-color: #e3f2fd; padding: 15px; margin: 15px 0; border-left: 4px solid #2196F3;'>");
+		template.print("<strong>]]>📌<![CDATA[ Recomendação:</strong><br>");
+
+		if (days <= 0) {
+			template.print("Este certificado expirou. Por favor, renove-o imediatamente para evitar interrupções nos serviços.");
+		} else if (days <= 7) {
+			template.print("Urgente! Renove este certificado nos próximos " + days + " dias para evitar indisponibilidade.");
+		} else if (days <= 30) {
+			template.print("Providencie a renovação deste certificado nos próximos " + days + " dias.");
+		} else if (days <= 60) {
+			template.print("Planeje a renovação deste certificado. Ainda há " + days + " dias antes do vencimento.");
+		} else {
+			template.print("Certificado em dia. Verifique novamente quando estiver próximo do vencimento.");
+		}
+		template.print("</div>");
+	}
+
+	// Footer
+	template.print("<div style='margin-top: 20px; padding: 10px; background-color: #f0f0f0; text-align: center; font-size: 12px; color: #666;'>");
+	template.print("Este é um e-mail automático. Por favor, não responda.<br>");
+	template.print("<span style='word-break: break-all;'>Link direto: " + recordLink + "</span>");
+	template.print("</div>");
+
+	template.print("</div>");
+
+	// Set plain text version (simpler)
+	var plainText = "NOTIFICAÇÃO DE CERTIFICADO DIGITAL\n";
+	plainText += "================================\n\n";
+	plainText += "Dias restantes para expiração: " + daysLeft + " dias\n\n";
+	plainText += "Informações do Certificado:\n";
+	plainText += "- Nome: " + (current.name || "N/A") + "\n";
+	plainText += "- Tipo: " + (current.certificate_type ? current.certificate_type.getDisplayValue() : "N/A") + "\n";
+	plainText += "- Emitido por: " + (current.issuer.getDisplayValue() || "N/A") + "\n";
+	plainText += "- Válido até: " + (current.valid_to ? new GlideDateTime(current.valid_to).getDisplayValue() : "N/A") + "\n\n";
+	plainText += "Visualizar certificado: " + recordLink + "\n";
+	plainText += "\nEste é um e-mail automático. Por favor, não responda.";
+
+	// Set email body
+	email_msg.setValue("body_html", template.toString());
+	email_msg.setValue("body", plainText);
+
+	email_log.info("E-mail de notificação de certificado enviado: " + current.name + " - Dias restantes: " + daysLeft);
+
+	return true;
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-08 17:11:32</sys_created_on>
+        <sys_id>f077ade833f40f906c8432a19e5c7bcd</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>BNB_html_expira_certificado</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_email_f077ade833f40f906c8432a19e5c7bcd</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-08 18:30:51</sys_updated_on>
+    </sys_script_email>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19e0928b0300000001</claim_timestamp>
+        <metadata_update_name>sys_script_email_f077ade833f40f906c8432a19e5c7bcd</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-08 19:55:22</sys_created_on>
+        <sys_id>ac421ae833b84f906c8432a19e5c7bfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-08 19:55:22</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f077ade833f40f906c8432a19e5c7bcd</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-08 17:11:32</sys_created_on>
+        <sys_id>fccc2d6833780f906c8432a19e5c7b0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-08 17:11:32</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

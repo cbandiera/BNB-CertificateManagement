@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description>Disparado quando limite de tempo para o vencimento de certificado é atingidop</description>
+        <event_name>sn_disco_certmgmt.bnb.certificate.expiry</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>bnb.certificate.expiry</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-08 16:22:43</sys_created_on>
+        <sys_id>4711e92033b40f906c8432a19e5c7b78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_disco_certmgmt.bnb.certificate.expiry</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sysevent_register_4711e92033b40f906c8432a19e5c7b78</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-08 16:22:43</sys_updated_on>
+        <table>cmdb_ci_certificate</table>
+    </sysevent_register>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19e0928b03f0000001</claim_timestamp>
+        <metadata_update_name>sysevent_register_4711e92033b40f906c8432a19e5c7b78</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-08 19:55:22</sys_created_on>
+        <sys_id>68421ae833b84f906c8432a19e5c7bfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-08 19:55:22</sys_updated_on>
+    </sys_claim>
+</record_update>

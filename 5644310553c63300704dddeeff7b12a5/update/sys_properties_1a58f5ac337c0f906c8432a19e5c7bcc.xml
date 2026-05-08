@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>lista separada por vírgula das quantidades de dias a vencer que serão levados em conta para notificar via email os proprietários de certificados</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>sn_disco_certmgmt.prazos_aviso_vencimento</name>
+        <read_roles/>
+        <suffix>prazos_aviso_vencimento</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-08 18:03:58</sys_created_on>
+        <sys_id>1a58f5ac337c0f906c8432a19e5c7bcc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sn_disco_certmgmt.prazos_aviso_vencimento</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_properties_1a58f5ac337c0f906c8432a19e5c7bcc</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-08 19:00:03</sys_updated_on>
+        <type>string</type>
+        <value>0,30,60</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=1a58f5ac337c0f906c8432a19e5c7bcc"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19e0928b0120000001</claim_timestamp>
+        <metadata_update_name>sys_properties_1a58f5ac337c0f906c8432a19e5c7bcc</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-08 19:55:22</sys_created_on>
+        <sys_id>a4421ae833b84f906c8432a19e5c7bf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-08 19:55:22</sys_updated_on>
+    </sys_claim>
+</record_update>
