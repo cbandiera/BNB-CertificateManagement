@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_pattern">
+    <sa_pattern action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ci_type>cmdb_ci_appl_generic</ci_type>
+        <cpattern_type>2</cpattern_type>
+        <description/>
+        <directory>false</directory>
+        <enforce_proc_classy>false</enforce_proc_classy>
+        <invoke_per_account>false</invoke_per_account>
+        <metadata_id>ad623fae3b414b10d0457237f4e45aec</metadata_id>
+        <name>Extract OpenShift Route Certs</name>
+        <ndl>library {&#13;
+	name = "Extract OpenShift Route Certs"&#13;
+	id = "ad623fae3b414b10d0457237f4e45aec"&#13;
+	description = "Extract OpenShift Route Certs"&#13;
+	step {&#13;
+		name = "Untitled Step"&#13;
+		set_attr {&#13;
+			"tmp"&#13;
+			""&#13;
+		}&#13;
+	}&#13;
+}&#13;
+</ndl>
+        <parent/>
+        <serverless>false</serverless>
+        <source/>
+        <sys_class_name>sa_pattern</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-05-27 18:18:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad623fae3b414b10d0457237f4e45aec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Extract OpenShift Route Certs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_replace/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sa_pattern_ad623fae3b414b10d0457237f4e45aec</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-05-27 18:18:57</sys_updated_on>
+        <version/>
+    </sa_pattern>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19eb348191a0000001</claim_timestamp>
+        <metadata_update_name>sa_pattern_ad623fae3b414b10d0457237f4e45aec</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-06-10 20:45:07</sys_created_on>
+        <sys_id>c31adc5f3b1d4710d0457237f4e45a82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-06-10 20:45:07</sys_updated_on>
+    </sys_claim>
+</record_update>

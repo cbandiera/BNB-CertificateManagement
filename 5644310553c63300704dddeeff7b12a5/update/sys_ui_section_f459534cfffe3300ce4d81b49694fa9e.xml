@@ -3,210 +3,224 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>subject_common_name</element>
             <position>0</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>d1215a983bb67210a1e3f65436e45a1a</sys_id>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>e6fef0ba33fcc3106c8432a19e5c7b7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>issuer</element>
             <position>1</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>9d215a983bb67210a1e3f65436e45a1a</sys_id>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>66fef0ba33fcc3106c8432a19e5c7b7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
             <position>2</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>19215a983bb67210a1e3f65436e45a1b</sys_id>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>eefef0ba33fcc3106c8432a19e5c7b7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>valid_from</element>
             <position>3</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>91215a983bb67210a1e3f65436e45a1c</sys_id>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>6afef0ba33fcc3106c8432a19e5c7b7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>valid_to</element>
             <position>4</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>1d215a983bb67210a1e3f65436e45a1c</sys_id>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>e2fef0ba33fcc3106c8432a19e5c7b7e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ic_de_privacidade</element>
+            <position>5</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>6efef0ba33fcc3106c8432a19e5c7b7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>serial_number</element>
-            <position>5</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>95215a983bb67210a1e3f65436e45a1d</sys_id>
+            <position>6</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>e6fef0ba33fcc3106c8432a19e5c7b7f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>environment</element>
-            <position>6</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>11215a983bb67210a1e3f65436e45a1e</sys_id>
+            <position>7</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>62fef0ba33fcc3106c8432a19e5c7b80</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>99215a983bb67210a1e3f65436e45a1e</sys_id>
+            <position>8</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>eafef0ba33fcc3106c8432a19e5c7b80</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sys_updated_on</element>
-            <position>8</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>59215a983bb67210a1e3f65436e45a44</sys_id>
+            <position>9</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>66fef0ba33fcc3106c8432a19e5c7b81</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assigned_to</element>
-            <position>9</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>d1215a983bb67210a1e3f65436e45a45</sys_id>
+            <position>10</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>eefef0ba33fcc3106c8432a19e5c7b81</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>support_group</element>
-            <position>10</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>5d215a983bb67210a1e3f65436e45a45</sys_id>
+            <position>11</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>6afef0ba33fcc3106c8432a19e5c7b82</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>managed_by_group</element>
-            <position>11</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>d5215a983bb67210a1e3f65436e45a46</sys_id>
+            <position>12</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>e2fef0ba33fcc3106c8432a19e5c7b83</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assignment_group</element>
-            <position>12</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>51215a983bb67210a1e3f65436e45a47</sys_id>
+            <position>13</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>6efef0ba33fcc3106c8432a19e5c7b83</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>renewal_tracking</element>
-            <position>13</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>d9215a983bb67210a1e3f65436e45a47</sys_id>
+            <position>14</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>e6fef0ba33fcc3106c8432a19e5c7b84</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_ca_scope</element>
-            <position>14</position>
-            <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
-            <sys_created_on>2026-01-28 15:06:26</sys_created_on>
-            <sys_id>55215a983bb67210a1e3f65436e45a48</sys_id>
+            <position>15</position>
+            <sys_created_by>lucas.ferreira@extreme.digital</sys_created_by>
+            <sys_created_on>2026-05-15 13:37:50</sys_created_on>
+            <sys_id>62fef0ba33fcc3106c8432a19e5c7b85</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">f459534cfffe3300ce4d81b49694fa9e</sys_ui_section>
-            <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-01-28 15:06:26</sys_updated_on>
+            <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-05-15 13:37:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

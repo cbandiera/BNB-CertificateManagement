@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="1ce1e6f83b632210a1e3f65436e45a84" extends="cmdb_ci_kubernetes_component" label="Rota do OpenShift" max_length="40" name="cmdb_ci_openshift_route" type="collection">
+        <element label="Certificate" max_length="65000" name="u_certificate" type="string"/>
+        <element label="CA Certificate" max_length="65000" name="u_ca_certificate" read_only="true" type="string"/>
+    </element>
+</database>

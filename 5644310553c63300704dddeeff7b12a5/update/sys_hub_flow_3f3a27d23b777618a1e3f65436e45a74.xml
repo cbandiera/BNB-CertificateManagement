@@ -111,6 +111,7 @@
         <active>true</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"true"}</data>
         <identifier>3f3a27d23b777618a1e3f65436e45a74</identifier>
+        <identifier_type/>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-04-24 20:07:25</sys_created_on>
@@ -978,7 +979,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>3f3a27d23b777618a1e3f65436e45a74</sys_id>
         <latest_snapshot>77faeb1e3b777618a1e3f65436e45a1b</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch8-03-20-2026_04-02-2026_1528.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch9-04-20-2026_04-30-2026_1910.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT IN480b2f1e3b777618a1e3f65436e45a23"/>
@@ -986,7 +987,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"480b2f1e3b777618a1e3f65436e45a23","name":"plan","plan_signature":null}}</plan>
         <plan_id>3f3a27d23b777618a1e3f65436e45a74</plan_id>
-        <snapshot>4542d5283b284350a1e3f65436e45aa4</snapshot>
+        <snapshot>3ee12db73301c7506c8432a19e5c7b6e</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-25 19:49:39</sys_created_on>
         <sys_domain>global</sys_domain>
