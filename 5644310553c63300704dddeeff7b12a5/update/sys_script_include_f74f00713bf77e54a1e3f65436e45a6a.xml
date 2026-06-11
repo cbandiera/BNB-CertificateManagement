@@ -18,39 +18,11 @@ BNBCertificateMangementUtils.prototype = {
 		try {
 			var grandTotal = { read: 0, absent: 0, remote: 0 };
 			var determineScopeAndMetadata = this.determineScopeAndMetadata;
-			new global.GlideQuery("cmdb_ci_certificate")
-				.where("install_status", "!=", 100)
-				.select("sys_id", "subject_common_name")
-				.forEach(function (cert) {
-					grandTotal.read += 1;
-					var discoCount = { total: 0, remote: 0, trust: 0, other: 0 };
-					new global.GlideQuery('sn_disco_certmgmt_certificate_history')
-						.where("server_certificate", cert.sys_id)
-						.select("sys_id", "discovery_method")
-						.forEach(function (disco) {
-							discoCount.total += 1;
-							if (disco.discovery_method == "trust") {
-								discoCount.trust += 1;
-							} else if (disco.discovery_method == "Remote") {
-								discoCount.remote += 1;
-							} else {
-								discoCount.other += 1;
-							}
-						});
-					var installStatus = 1;
-					if ((discoCount.total > 0) && (discoCount.trust == discoCount.total)) {
-						grandTotal.absent += 1;
-						installStatus = 100;
-					} else {
-						grandTotal.remote += 1;
-						var certGR = new GlideRecord("cmdb_ci_certificate");
-						certGR.get(cert.sys_id);
-						determineScopeAndMetadata(certGR);
-					}
-					new global.GlideQuery("cmdb_ci_certificate")
-						.where("sys_id", cert.sys_id)
-						.update({ install_status: installStatus });
-				});
+			var certGR = new GlideRecord("cmdb_ci_certificate");
+			certGr.addQuery('install_status', '!=', 100)
+			grandTotal.read += 1;
+			grandTotal.remote += 1;
+			determineScopeAndMetadata(certGR);
 			return grandTotal;
 		} catch (ex) {
 			throw new Error("EDX Failed to process updateCertificateInstallStatus " + ex);
@@ -75,39 +47,30 @@ BNBCertificateMangementUtils.prototype = {
 			};
 
 			if (!cert.issuer_common_name || (cert.issuer_common_name == cert.subject_common_name)) {
-				updatedFields.u_ca_scope = null;
+				cert.u_ca_scope = null;
 			} else if (cert.issuer_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste")) {
-				updatedFields.u_ca_scope = "internal";
+				cert.u_ca_scope = "internal";
 			}
 
-			if (updatedFields.u_ca_scope) {
-				if (updatedFields.u_ca_scope == 'external') {
-					updatedFields.renewal_tracking = 'priority1';
+			if (cert.u_ca_scope) {
+				if (cert.u_ca_scope == 'external') {
+					cert.renewal_tracking = 'priority1';
 					updatedMetadata.auto_renew_enabled = true;
 				} else {
 					if (!(cert.is_self_signed || cert.is_ca) && cert.root_issuer != cert.sys_id) {
-						updatedFields.renewal_tracking = 'priority3';
+						cert.renewal_tracking = 'priority3';
 						updatedMetadata.auto_renew_enabled = true;
 					} else {
-						updatedFields.u_ca_scope = null;
+						cert.renewal_tracking = 'none';
+						cert.u_ca_scope = null;
 					}
 				}
 
 			}
-
 			// Atualiza os campos no certificado (CA Scope e prioridade de renovação)
-			var metadataUpdate = 'Ignored';
-			if (!updatedFields.u_ca_scope) {
-				var grCert = new GlideRecord("cmdb_ci_certificate");
-				grCert.get(cert.sys_id);
-				grCert.u_ca_scope = updatedFields.u_ca_scope;
-				grCert.renewal_tracking = updatedFields.renewal_tracking;
-				grCert.update();
-			} else {
-				new global.GlideQuery("cmdb_ci_certificate")
-					.where("sys_id", cert.sys_id)
-					.updateMultiple(updatedFields);
-			}
+			cert.update();
+			cert.service_type = cert.u_ca_scope;
+			cert.update();
 			if (new global.GlideQuery("sn_disco_certmgmt_certificate_metadata")
 				.where("certificate", cert.sys_id)
 				.count() > 0) {
@@ -123,8 +86,8 @@ BNBCertificateMangementUtils.prototype = {
 				}
 			}
 			return "Certificate:" + cert.subject_common_name +
-				" Scope:" + updatedFields.u_ca_scope +
-				" Renewal Tracking:" + updatedFields.renewal_tracking +
+				" Scope:" + cert.u_ca_scope +
+				" Renewal Tracking:" + cert.renewal_tracking +
 				" Metadata Record:" + metadataUpdate +
 				" Auto Renew Enabled:" + updatedMetadata.auto_renew_enabled +
 				" Days before expiry:" + updatedMetadata.auto_renew_days_before_expiry;
@@ -148,19 +111,21 @@ BNBCertificateMangementUtils.getCAScopeFromCN = function (commonName) {
 		}
 	}
 	return null;
-}]]></script>
+};
+
+]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-23 14:52:25</sys_created_on>
         <sys_id>f74f00713bf77e54a1e3f65436e45a6a</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>BNBCertificateMangementUtils</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_f74f00713bf77e54a1e3f65436e45a6a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-17 01:50:52</sys_updated_on>
+        <sys_updated_on>2026-06-11 18:41:05</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
