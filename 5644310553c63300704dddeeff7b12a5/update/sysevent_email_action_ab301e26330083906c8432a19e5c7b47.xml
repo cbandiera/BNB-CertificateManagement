@@ -86,7 +86,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ab301e26330083906c8432a19e5c7b47</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>BNB Assinatura de Certificado novo</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -94,9 +94,9 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sysevent_email_action_ab301e26330083906c8432a19e5c7b47</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-05-08 16:09:38</sys_updated_on>
+        <sys_updated_on>2026-06-12 17:45:06</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="EDX - CSM Template">e5f2057a3b2e32d0a1e3f65436e45a67</template>
+        <template display_value="EDX - SPM - Template v2">505ce09633e73a506c8432a19e5c7b6a</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url_sched_m2m">
     <sn_disco_certmgmt_cert_url_sched_m2m action="INSERT_OR_UPDATE">
         <cert_url display_value="https://api.openfinance.bnb.gov.br">7714ffdf3bd10710d0457237f4e45ae8</cert_url>
-        <last_successful>2026-06-11 22:04:52</last_successful>
+        <last_successful>2026-06-14 22:04:52</last_successful>
         <schedule display_value="Certificados Externos">53d331a23b5d8350d0457237f4e45ae9</schedule>
         <status>true</status>
         <sys_class_name>sn_disco_certmgmt_cert_url_sched_m2m</sys_class_name>
@@ -9,14 +9,14 @@
         <sys_created_on>2026-06-11 12:37:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>5e24b3133b150710d0457237f4e45a7e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Certificados Externos.https://api.openfinance.bnb.gov.br</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sn_disco_certmgmt_cert_url_sched_m2m_5e24b3133b150710d0457237f4e45a7e</sys_update_name>
         <sys_updated_by>mid_capgv_com_dev_01</sys_updated_by>
-        <sys_updated_on>2026-06-11 22:04:56</sys_updated_on>
+        <sys_updated_on>2026-06-14 22:04:57</sys_updated_on>
     </sn_disco_certmgmt_cert_url_sched_m2m>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
