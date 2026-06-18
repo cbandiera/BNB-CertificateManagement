@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="BNB Request New Certificate (Automated)">ddbad1fa33f3fa106c8432a19e5c7bd6</sc_cat_item>
+        <sc_cat_item display_value="Request New Certificate">ddbad1fa33f3fa106c8432a19e5c7bd6</sc_cat_item>
         <sc_category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
