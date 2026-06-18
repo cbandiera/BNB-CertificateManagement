@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>095e9dad3bb40750d0457237f4e45adb</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_connected_content">
+    <m2m_connected_content action="INSERT_OR_UPDATE">
+        <alphabetical_order>582</alphabetical_order>
+        <catalog_item display_value="Solicitar serviço técnico especializado">6eaba1b53b90cb14a1e3f65436e45ae0</catalog_item>
+        <content_display_value>Item do catálogo: Solicitar serviço técnico especializado</content_display_value>
+        <content_type display_value="Catalog Item">98f9a16553622010069addeeff7b1248</content_type>
+        <knowledge/>
+        <order>100</order>
+        <popularity>1.1325</popularity>
+        <quick_link/>
+        <source>category</source>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-05-11 18:42:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>095e9dad3bb40750d0457237f4e45adb</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-18 03:00:12</sys_updated_on>
+        <topic display_value="Specialized Services">4c1ed16533b4cb146c8432a19e5c7bea</topic>
+    </m2m_connected_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=095e9dad3bb40750d0457237f4e45adb"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>095e9dad3bb40750d0457237f4e45adb</documentkey>
+        <fieldname>content_display_value</fieldname>
+        <language>pb</language>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-05-11 18:42:24</sys_created_on>
+        <sys_id>c95e9dad3bb40750d0457237f4e45adc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-05-11 18:42:24</sys_updated_on>
+        <tablename>m2m_connected_content</tablename>
+        <value>Item do catálogo: Solicitar serviço técnico especializado</value>
+    </sys_translated_text>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-06-18 17:31:43</sys_created_on>
+        <sys_id>1c9ab0b93b650b50d0457237f4e45ab8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Item do catálogo: Solicitar serviço técnico especializado</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_metadata_link_1c9ab0b93b650b50d0457237f4e45ab8</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-06-18 17:31:43</sys_updated_on>
+        <tablename>m2m_connected_content</tablename>
+    </sys_metadata_link>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19edbd19e970000001</claim_timestamp>
+        <metadata_update_name>sys_metadata_link_1c9ab0b93b650b50d0457237f4e45ab8</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-06-18 17:40:08</sys_created_on>
+        <sys_id>237c74393ba50b50d0457237f4e45aa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-06-18 17:40:08</sys_updated_on>
+    </sys_claim>
+</record_update>
