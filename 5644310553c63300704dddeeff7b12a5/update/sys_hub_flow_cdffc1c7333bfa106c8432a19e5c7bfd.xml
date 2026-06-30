@@ -668,7 +668,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>cdffc1c7333bfa106c8432a19e5c7bfd</sys_id>
         <latest_snapshot>d8b5dd8f33bffa106c8432a19e5c7bb8</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch9-04-20-2026_04-30-2026_1910.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch9-hotfix3-06-13-2026_06-19-2026_0859.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cdffc1c7333bfa106c8432a19e5c7bfd"/>
@@ -676,7 +676,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"34b591cf33bffa106c8432a19e5c7b41","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</plan_id>
-        <snapshot>d24bdcd73b5d4710d0457237f4e45a61</snapshot>
+        <snapshot>e4598daf3bed8350d0457237f4e45afb</snapshot>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-27 16:52:47</sys_created_on>
         <sys_domain>global</sys_domain>

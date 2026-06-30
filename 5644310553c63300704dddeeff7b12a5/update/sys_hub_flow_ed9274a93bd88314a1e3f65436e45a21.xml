@@ -1066,7 +1066,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>ed9274a93bd88314a1e3f65436e45a21</sys_id>
         <latest_snapshot>2076296d3b5cc314a1e3f65436e45aff</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch9-04-20-2026_04-30-2026_1910.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch9-hotfix3-06-13-2026_06-19-2026_0859.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ed9274a93bd88314a1e3f65436e45a21^sys_idNOT IN4d76696d3b5cc314a1e3f65436e45abc"/>
@@ -1074,7 +1074,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"4d76696d3b5cc314a1e3f65436e45abc","name":"plan","plan_signature":null}}</plan>
         <plan_id>ed9274a93bd88314a1e3f65436e45a21</plan_id>
-        <snapshot>8b59c9a6330583106c8432a19e5c7b7e</snapshot>
+        <snapshot>a64c441733a14f106c8432a19e5c7b70</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-04-16 22:46:30</sys_created_on>
         <sys_domain>global</sys_domain>
