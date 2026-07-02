@@ -27,7 +27,7 @@
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text>Group for which the certificate tasks will be generated to</help_text>
-        <hidden>false</hidden>
+        <hidden>true</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -82,14 +82,14 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-26 22:36:15</sys_created_on>
         <sys_id>82bad13e33f3fa106c8432a19e5c7b24</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Certificate Owner Group</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>item_option_new_82bad13e33f3fa106c8432a19e5c7b24</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 23:49:57</sys_updated_on>
+        <sys_updated_on>2026-07-01 13:27:23</sys_updated_on>
         <table/>
         <tooltip>Owner Group for the Certificate</tooltip>
         <topic_block/>

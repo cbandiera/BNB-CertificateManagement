@@ -81,7 +81,9 @@
 * Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss
 * Avoid `current.setAbortAction()` and generate a separate record
 * Use `producer.var1` to access variables
-*/]]></script>
+*/
+current.short_description = "Solicitação de certificado " + producer.subject_common_name;
+	]]></script>
         <short_description>Request a new certificate.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -90,14 +92,14 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-26 22:36:12</sys_created_on>
         <sys_id>ddbad1fa33f3fa106c8432a19e5c7bd6</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>101</sys_mod_count>
         <sys_name>Request New Certificate</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sc_cat_item_producer_ddbad1fa33f3fa106c8432a19e5c7bd6</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-06-18 17:36:04</sys_updated_on>
+        <sys_updated_on>2026-07-01 18:00:47</sys_updated_on>
         <table_name>sn_disco_certmgmt_new_task</table_name>
         <taxonomy_topic display_value="Automated">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
         <template/>
@@ -105,7 +107,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>68</version>
+        <version>102</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
@@ -113,6 +115,19 @@
         <workflow/>
     </sc_cat_item_producer>
     <sys_translated_text action="delete_multiple" query="documentkey=ddbad1fa33f3fa106c8432a19e5c7bd6"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ddbad1fa33f3fa106c8432a19e5c7bd6</documentkey>
+        <fieldname>description</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-01 14:28:04</sys_created_on>
+        <sys_id>383d8b3933758f906c8432a19e5c7b61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-01 14:28:04</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value/>
+    </sys_translated_text>
     <sys_translated_text action="INSERT_OR_UPDATE">
         <documentkey>ddbad1fa33f3fa106c8432a19e5c7bd6</documentkey>
         <fieldname>name</fieldname>

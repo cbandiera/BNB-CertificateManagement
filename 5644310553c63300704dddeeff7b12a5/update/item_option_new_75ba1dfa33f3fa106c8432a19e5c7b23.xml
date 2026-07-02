@@ -27,7 +27,7 @@
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text>Name of application server this certificate will support</help_text>
-        <hidden>false</hidden>
+        <hidden>true</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -82,14 +82,14 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-26 22:36:13</sys_created_on>
         <sys_id>75ba1dfa33f3fa106c8432a19e5c7b23</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Application Servers</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>item_option_new_75ba1dfa33f3fa106c8432a19e5c7b23</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 23:49:04</sys_updated_on>
+        <sys_updated_on>2026-07-01 14:28:04</sys_updated_on>
         <table/>
         <tooltip>Name of application server supported</tooltip>
         <topic_block/>
@@ -112,6 +112,19 @@
     <sys_translated_text action="delete_multiple" query="documentkey=75ba1dfa33f3fa106c8432a19e5c7b23"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
         <documentkey>75ba1dfa33f3fa106c8432a19e5c7b23</documentkey>
+        <fieldname>conversational_label</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-01 14:28:05</sys_created_on>
+        <sys_id>093dcb3933758f906c8432a19e5c7b78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-01 14:28:05</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>75ba1dfa33f3fa106c8432a19e5c7b23</documentkey>
         <fieldname>help_text</fieldname>
         <language>pb</language>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
@@ -122,6 +135,32 @@
         <sys_updated_on>2026-03-26 22:42:35</sys_updated_on>
         <tablename>item_option_new</tablename>
         <value>Servidor de aplicação a ser suportado por esse certificado</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>75ba1dfa33f3fa106c8432a19e5c7b23</documentkey>
+        <fieldname>instructions</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-01 14:28:05</sys_created_on>
+        <sys_id>013dcb3933758f906c8432a19e5c7b80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-01 14:28:05</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>75ba1dfa33f3fa106c8432a19e5c7b23</documentkey>
+        <fieldname>rich_text</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-01 14:28:05</sys_created_on>
+        <sys_id>013dcb3933758f906c8432a19e5c7b7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-01 14:28:05</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
     </sys_translated_text>
     <fx_price action="delete_multiple" query="id=75ba1dfa33f3fa106c8432a19e5c7b23"/>
     <fx_price action="INSERT_OR_UPDATE">

@@ -37,27 +37,29 @@
 		return false;
 	}
 
+	var newSAN = commonName;
 	var san = g_form.getValue("subject_alternative_name").trim();
-	var regex = /(?:\d+:\s+)?#([a-fA-F0-9\s]{8,})/g;
-	var newSAN = san.replace(regex, function (match, hexWithSpaces) {
-		var hex = (hexWithSpaces || '').replace(/\s+/g, '');
-		if (hex.length === 8) {
-			return hexToIPv4(hex);
-		} else if (hex.length === 32) {
-			return hexToIPv6(hex);
-		}
-		return match;
-	});
-	newSAN = san.split(/[\s,]+/).join(',');
-	sanArr = newSAN.split(',');
-	for (var i in sanArr) {
-		if (!isValidDNSOrIP(sanArr[i])) {
-			g_form.addErrorMessage(sanArr[i] + " Não é válido como nome alternativo.");
-			return false;
+	if (san) {
+		var regex = /(?:\d+:\s+)?#([a-fA-F0-9\s]{8,})/g;
+		newSAN = san.replace(regex, function (match, hexWithSpaces) {
+			var hex = (hexWithSpaces || '').replace(/\s+/g, '');
+			if (hex.length === 8) {
+				return hexToIPv4(hex);
+			} else if (hex.length === 32) {
+				return hexToIPv6(hex);
+			}
+			return match;
+		});
+		var sanArr = newSAN.split(',');
+		for (var i in sanArr) {
+			if (!isValidDNSOrIP(sanArr[i])) {
+				g_form.addErrorMessage(sanArr[i] + " Não é válido como nome alternativo.");
+				return false;
+			}
 		}
 	}
-	g_form.setValue("auto_renew_enabled", true);
 	g_form.setValue("subject_alternative_name", newSAN);
+	g_form.setValue("auto_renew_enabled", true);
 }
 
 
@@ -83,7 +85,7 @@ function isValidDNSOrIP(name) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>92c2e17633bf3e106c8432a19e5c7b63</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Consiste Campos</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -91,7 +93,7 @@ function isValidDNSOrIP(name) {
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>catalog_script_client_92c2e17633bf3e106c8432a19e5c7b63</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-27 12:38:23</sys_updated_on>
+        <sys_updated_on>2026-07-01 17:50:26</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>

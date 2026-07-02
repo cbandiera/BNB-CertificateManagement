@@ -27,7 +27,7 @@
         <global>false</global>
         <help_tag/>
         <help_text/>
-        <hidden>false</hidden>
+        <hidden>true</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -82,14 +82,14 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-26 22:36:15</sys_created_on>
         <sys_id>82ba513e33f3fa106c8432a19e5c7b63</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Application Names</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>item_option_new_82ba513e33f3fa106c8432a19e5c7b63</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 23:48:44</sys_updated_on>
+        <sys_updated_on>2026-07-01 14:28:04</sys_updated_on>
         <table/>
         <tooltip>Name of application supported</tooltip>
         <topic_block/>
@@ -112,6 +112,19 @@
     <sys_translated_text action="delete_multiple" query="documentkey=82ba513e33f3fa106c8432a19e5c7b63"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
         <documentkey>82ba513e33f3fa106c8432a19e5c7b63</documentkey>
+        <fieldname>conversational_label</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-01 14:28:04</sys_created_on>
+        <sys_id>f43d8b3933758f906c8432a19e5c7b84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-01 14:28:04</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>82ba513e33f3fa106c8432a19e5c7b63</documentkey>
         <fieldname>help_text</fieldname>
         <language>pb</language>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
@@ -122,6 +135,32 @@
         <sys_updated_on>2026-03-26 22:42:35</sys_updated_on>
         <tablename>item_option_new</tablename>
         <value>Nome de aplicação que será suportada por esse certificado</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>82ba513e33f3fa106c8432a19e5c7b63</documentkey>
+        <fieldname>instructions</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-01 14:28:04</sys_created_on>
+        <sys_id>383d8b3933758f906c8432a19e5c7bcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-01 14:28:04</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>82ba513e33f3fa106c8432a19e5c7b63</documentkey>
+        <fieldname>rich_text</fieldname>
+        <language>pb</language>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-01 14:28:04</sys_created_on>
+        <sys_id>703d8b3933758f906c8432a19e5c7bc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-01 14:28:04</sys_updated_on>
+        <tablename>item_option_new</tablename>
+        <value/>
     </sys_translated_text>
     <fx_price action="delete_multiple" query="id=82ba513e33f3fa106c8432a19e5c7b63"/>
     <fx_price action="INSERT_OR_UPDATE">
