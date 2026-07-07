@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>Certificados BNB</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-06 13:55:07</sys_created_on>
+        <sys_id>7e9534673bb58350d0457237f4e45a94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Certificados BNB</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_screen_type_7e9534673bb58350d0457237f4e45a94</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-06 13:55:07</sys_updated_on>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=7e9534673bb58350d0457237f4e45a94"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f3d1d02870000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_type_7e9534673bb58350d0457237f4e45a94</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 15:05:39</sys_created_on>
+        <sys_id>6d5f8ef73b79cf50d0457237f4e45a68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 15:05:39</sys_updated_on>
+    </sys_claim>
+</record_update>

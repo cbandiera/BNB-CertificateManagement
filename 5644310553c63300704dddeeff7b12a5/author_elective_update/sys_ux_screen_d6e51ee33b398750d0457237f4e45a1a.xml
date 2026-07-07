@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings/>
+        <macroponent display_value="Bnb default">1ee51ee33b398750d0457237f4e45a0f</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Bnb default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Breadcrumb App Shell">e341e22cc32e2010ea04a5a1d840dd02</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Bnb">92e5dae33b398750d0457237f4e45a9f</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-06 20:55:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d6e51ee33b398750d0457237f4e45a1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bnb default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_screen_d6e51ee33b398750d0457237f4e45a1a</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-06 20:55:53</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=d6e51ee33b398750d0457237f4e45a1a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_ux_screen_d6e51ee33b398750d0457237f4e45a1a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</app_config><description/><disable_auto_reflow>false</disable_auto_reflow><disable_interoperable>false</disable_interoperable><event_mappings/><macroponent display_value="Bnb default">1ee51ee33b398750d0457237f4e45a0f</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Bnb default</name><order>0</order><parent_macroponent display_value="Breadcrumb App Shell">e341e22cc32e2010ea04a5a1d840dd02</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Bnb">92e5dae33b398750d0457237f4e45a9f</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-07-06 20:55:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d6e51ee33b398750d0457237f4e45a1a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Bnb default</sys_name><sys_overrides/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>sys_ux_screen_d6e51ee33b398750d0457237f4e45a1a</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-07-06 20:55:53</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=d6e51ee33b398750d0457237f4e45a1a"/></record_update>]]></payload>
+        <payload_hash>979237108</payload_hash>
+        <record_name>Bnb default</record_name>
+        <reverted_from/>
+        <source>cffb7a393b7dc750d0457237f4e45aee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-06 20:55:53</sys_created_on>
+        <sys_id>56e51ee33b398750d0457237f4e45a2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f39374d790000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-06 20:55:53</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>5ee51ee335398750c842a6f56209be1f</update_guid>
+        <update_guid_history>5ee51ee335398750c842a6f56209be1f:979237108</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 14:06:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>06b890da346a4c9f82ab17f052a2fce9</sys_id>
+        <sys_metadata>d6e51ee33b398750d0457237f4e45a1a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bnb default</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_d6e51ee33b398750d0457237f4e45a1a</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_d6e51ee33b398750d0457237f4e45a1a">56e51ee33b398750d0457237f4e45a2d</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 14:06:19</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f3d1d025e0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_screen_d6e51ee33b398750d0457237f4e45a1a</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 15:05:39</sys_created_on>
+        <sys_id>e55f8ef73b79cf50d0457237f4e45a61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 15:05:39</sys_updated_on>
+    </sys_claim>
+</record_update>

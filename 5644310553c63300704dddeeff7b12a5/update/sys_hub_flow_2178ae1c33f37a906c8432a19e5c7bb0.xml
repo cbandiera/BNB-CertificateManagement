@@ -2956,7 +2956,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>2178ae1c33f37a906c8432a19e5c7bb0</sys_id>
         <latest_snapshot>5f4ad06833bbbe906c8432a19e5c7b98</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch9-hotfix3-06-13-2026_06-19-2026_0859.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch10-hotfix3-07-01-2026_07-02-2026_1215.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2178ae1c33f37a906c8432a19e5c7bb0"/>
@@ -2964,7 +2964,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"445ad46833bbbe906c8432a19e5c7ba2","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</plan_id>
-        <snapshot>451849273bad8350d0457237f4e45aad</snapshot>
+        <snapshot>f7b4c83733f10f106c8432a19e5c7b9d</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 18:08:31</sys_created_on>
         <sys_domain>global</sys_domain>

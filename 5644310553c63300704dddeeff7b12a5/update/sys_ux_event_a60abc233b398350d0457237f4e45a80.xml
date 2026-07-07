@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>NAV_ITEM_SELECTED_RELAY_9a0a7c233b398350d0457237f4e45a4e</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Link to destination Relay (Dashboards default)</label>
+        <props>[
+    {
+        "fieldType": "string",
+        "interfaceApiName": "global.route",
+        "label": "Route type",
+        "name": "route"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "Route fields",
+        "name": "fields"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "Optionals parameters",
+        "name": "params"
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": null,
+        "label": "Remove previous URL from browser history",
+        "name": "redirect"
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": null,
+        "label": "Load in background (advanced)",
+        "name": "passiveNavigation"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Title (advanced)",
+        "name": "title"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Multi-instance field (advanced)",
+        "name": "multiInstField"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Sub-navigation route (advanced)",
+        "name": "targetRoute"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "External URL object",
+        "name": "external"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "External URL object",
+  "comment" : ""
+}, {
+  "message" : "Load in background (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Multi-instance field (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Optionals parameters",
+  "comment" : ""
+}, {
+  "message" : "Remove previous URL from browser history",
+  "comment" : ""
+}, {
+  "message" : "Route fields",
+  "comment" : ""
+}, {
+  "message" : "Route type",
+  "comment" : ""
+}, {
+  "message" : "Sub-navigation route (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Title (advanced)",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-06 14:14:29</sys_created_on>
+        <sys_id>a60abc233b398350d0457237f4e45a80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Link to destination Relay (Dashboards default)</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_event_a60abc233b398350d0457237f4e45a80</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-06 14:14:29</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=a60abc233b398350d0457237f4e45a80"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f3d1d02720000001</claim_timestamp>
+        <metadata_update_name>sys_ux_event_a60abc233b398350d0457237f4e45a80</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 15:05:39</sys_created_on>
+        <sys_id>a15f8ef73b79cf50d0457237f4e45a65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 15:05:39</sys_updated_on>
+    </sys_claim>
+</record_update>

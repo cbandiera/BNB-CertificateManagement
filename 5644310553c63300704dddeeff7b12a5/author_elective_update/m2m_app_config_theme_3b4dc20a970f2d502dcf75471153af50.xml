@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="DELETE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>now.discovery.content</sys_created_by>
+        <sys_created_on>2023-05-28 06:38:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b4dc20a970f2d502dcf75471153af50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>m2m_app_config_theme_3b4dc20a970f2d502dcf75471153af50</sys_update_name>
+        <sys_updated_by>now.discovery.content</sys_updated_by>
+        <sys_updated_on>2023-05-28 06:38:58</sys_updated_on>
+        <theme/>
+        <ux_app_configuration display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</ux_app_configuration>
+    </m2m_app_config_theme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>m2m_app_config_theme_3b4dc20a970f2d502dcf75471153af50</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme"><m2m_app_config_theme action="INSERT_OR_UPDATE"><applicability/><order>0</order><sys_class_name>m2m_app_config_theme</sys_class_name><sys_created_by>now.discovery.content</sys_created_by><sys_created_on>2023-05-28 06:38:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3b4dc20a970f2d502dcf75471153af50</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>m2m_app_config_theme_3b4dc20a970f2d502dcf75471153af50</sys_update_name><sys_updated_by>now.discovery.content</sys_updated_by><sys_updated_on>2023-05-28 06:38:58</sys_updated_on><theme/><ux_app_configuration display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</ux_app_configuration></m2m_app_config_theme></record_update>]]></payload>
+        <payload_hash>760348869</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5644310553c63300704dddeeff7b12a5</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-05-28 06:38:58</sys_created_on>
+        <sys_id>f236f46b3bb58350d0457237f4e45a88</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1886114dfd00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX App Theme</type>
+        <update_guid>b236f46bb6b583501910ca29a10a3a88</update_guid>
+        <update_guid_history>b236f46bb6b583501910ca29a10a3a88:760348869</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3636f46b3bb58350d0457237f4e45a89</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>now.discovery.content</sys_created_by>
+        <sys_created_on>2026-07-06 13:57:51</sys_created_on>
+        <sys_db_object display_value="" name="m2m_app_config_theme">m2m_app_config_theme</sys_db_object>
+        <sys_id>3fb9cad021ab4d209594ec02b57d8810</sys_id>
+        <sys_metadata>3b4dc20a970f2d502dcf75471153af50</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>m2m_app_config_theme_3b4dc20a970f2d502dcf75471153af50</sys_update_name>
+        <sys_update_version display_value="m2m_app_config_theme_3b4dc20a970f2d502dcf75471153af50">f236f46b3bb58350d0457237f4e45a88</sys_update_version>
+        <sys_updated_by>now.discovery.content</sys_updated_by>
+        <sys_updated_on>2026-07-06 13:57:51</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f3d1d01a20000001</claim_timestamp>
+        <metadata_update_name>m2m_app_config_theme_3b4dc20a970f2d502dcf75471153af50</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 15:05:38</sys_created_on>
+        <sys_id>2d5f8ef73b79cf50d0457237f4e45a45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 15:05:38</sys_updated_on>
+    </sys_claim>
+</record_update>

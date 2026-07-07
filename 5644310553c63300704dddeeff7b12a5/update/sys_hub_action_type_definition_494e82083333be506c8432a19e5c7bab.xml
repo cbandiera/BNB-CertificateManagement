@@ -1119,7 +1119,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB - Obtem Grupos para Gestão de Certificados">494e82083333be506c8432a19e5c7bab</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a1419a8c3373be506c8432a19e5c7bf7","name":"plan","plan_signature":null}}</plan>
-        <snapshot>c2180d273bad8350d0457237f4e45abe</snapshot>
+        <snapshot>e0c4cc3733f10f106c8432a19e5c7b97</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 13:31:19</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -2232,6 +2232,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>494e82083333be506c8432a19e5c7bab</sys_id>
         <latest_snapshot>c5411a8c3373be506c8432a19e5c7bcb</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch9-hotfix3-06-13-2026_06-19-2026_0859.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch10-hotfix3-07-01-2026_07-02-2026_1215.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Certificados BNB</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Breadcrumb App Shell">e341e22cc32e2010ea04a5a1d840dd02</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>certificados-bnb</route_type>
+        <screen_type display_value="Certificados BNB">7e9534673bb58350d0457237f4e45a94</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-06 13:55:07</sys_created_on>
+        <sys_id>7a9534673bb58350d0457237f4e45a9a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Certificados BNB</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_app_route_7a9534673bb58350d0457237f4e45a9a</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-06 14:48:22</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=7a9534673bb58350d0457237f4e45a9a"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f3d1d021c0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_app_route_7a9534673bb58350d0457237f4e45a9a</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 15:05:39</sys_created_on>
+        <sys_id>e55f8ef73b79cf50d0457237f4e45a55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 15:05:39</sys_updated_on>
+    </sys_claim>
+</record_update>

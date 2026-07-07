@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>L1 configuration</description>
+        <name>chrome_toolbar</name>
+        <page display_value="Certificate Management">d3223298873e2110fc5febd73cbb359e</page>
+        <required_translations>[ {
+  "message" : "Certificate Inventory",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Certificate Records",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Certificate Tasks",
+  "code" : "",
+  "comment" : ""
+}, {
+  "message" : "Downloads",
+  "code" : "",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix>chrome_toolbar</suffix>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>now.discovery.content</sys_created_by>
+        <sys_created_on>2023-05-10 12:35:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>09623a98873e2110fc5febd73cbb35f4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>chrome_toolbar</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_ux_page_property_09623a98873e2110fc5febd73cbb35f4</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-06 13:57:52</sys_updated_on>
+        <type>json</type>
+        <unique_name>sn_disco_certmgmt.d3223298873e2110fc5febd73cbb359e.root.global.chrome_toolbar</unique_name>
+        <value>[
+    {
+        "id": "inventory",
+        "label": {
+            "translatable": true,
+            "message": "Certificate Inventory"
+        },
+        "icon": "home-outline",
+        "routeInfo": {
+            "route": "inventory",
+            "params": {
+                "selectedIndex": "1"
+            }
+        },
+        "group": "top",
+        "order": 100,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "tasks",
+        "label": {
+            "translatable": true,
+            "message": "Certificate Tasks"
+        },
+        "icon": "component-outline",
+        "routeInfo": {
+            "route": "tasks"
+        },
+        "group": "top",
+        "order": 200,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "certificate-management-nav",
+        "label": {
+            "translatable": true,
+            "message": "Certificate Records"
+        },
+        "icon": "checklist-outline",
+        "routeInfo": {
+            "route": "certificate-management-nav"
+        },
+        "group": "top",
+        "order": 300,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    },
+    {
+        "id": "certificate-management-downloads",
+        "label": {
+            "translatable": true,
+            "message": "Downloads"
+        },
+        "icon": "download-outline",
+        "routeInfo": {
+            "route": "certificate-management-downloads"
+        },
+        "group": "top",
+        "order": 400,
+        "badge": {},
+        "presence": {},
+        "availability": {},
+        "viewportInfo": {}
+    }
+]</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=09623a98873e2110fc5febd73cbb35f4"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>09623a98873e2110fc5febd73cbb35f4</documentkey>
+        <fieldname>description</fieldname>
+        <language>pb</language>
+        <sys_created_by/>
+        <sys_created_on/>
+        <sys_id>48e7358787eba210fa4042630cbb3568</sys_id>
+        <sys_mod_count/>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <tablename>sys_ux_page_property</tablename>
+        <value>Configuração do L1</value>
+    </sys_translated_text>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f3d1d023d0000001</claim_timestamp>
+        <metadata_update_name>sys_ux_page_property_09623a98873e2110fc5febd73cbb35f4</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 15:05:39</sys_created_on>
+        <sys_id>a55f8ef73b79cf50d0457237f4e45a5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 15:05:39</sys_updated_on>
+    </sys_claim>
+</record_update>

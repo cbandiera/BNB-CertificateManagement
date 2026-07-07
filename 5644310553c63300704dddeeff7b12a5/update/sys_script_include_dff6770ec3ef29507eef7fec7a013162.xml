@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_disco_certmgmt.CertificateManagementWorkspaceNavigationUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CertificateManagementWorkspaceNavigationUtil</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CertificateManagementWorkspaceNavigationUtil = Class.create();
+CertificateManagementWorkspaceNavigationUtil.prototype = {
+    initialize: function() {
+    },
+
+	/**
+    	Configure breadcrumbs for different routes if the default is not sufficient. Below is the configuration schema: 
+    	{
+    		label?: string | function,
+			pageTitle?: string | function,
+    		icon?: string | function,
+    		operation?: string | function,
+			routeInfo?: {
+				route: string,
+				fields: Record<string, any>
+				params: Record<string,any>
+ 			} | function,
+			hideBreadcrumb?: function | boolean,
+    		provideItems?: function | object
+    	}
+		
+		- Any function defined will be resolved by passing context as an argument.
+		- If the basic configuration doesn't work for specific route, define provideItems. provideItems can either be the config object or a function that resolves to the config object.
+    **/
+    APP_ROUTES_CONFIG: {
+        'list': {
+            label: function(context) {
+                return gs.getMessage("{0}", context.params.listTitle);
+            }
+        }
+    },
+
+    MENU_ROUTES_CONFIG: {
+        'certificados-bnb': {
+            label: "Dashboard BNB"
+        },
+        'inventory': {
+            label: gs.getMessage("Inventory")
+        },
+        'tasks': {
+            label: gs.getMessage("Tasks")
+        },
+        'certificate-management-nav': {
+            label: gs.getMessage("Certificate records")
+        },
+		'certificate-management-downloads': {
+            label: gs.getMessage("Downloads")
+        }
+    },
+
+    CERTMGMT_WS_APP: {
+        PAGE_REGISTRY_ID: "d3223298873e2110fc5febd73cbb359e",
+        CONFIG_ID: "cb223298873e2110fc5febd73cbb359b",
+        L1_ROUTES: ["certificados-bnb", "inventory", "tasks", "certificate-management-nav", "certificate-management-downloads"]
+    },
+
+    TABLES: {
+        CMDB_DATA_MANAGEMENT_TASK: {
+            NAME: 'cmdb_data_management_task'
+        },
+        SYS_UX_APP_ROUTE: {
+            NAME: 'sys_ux_app_route',
+            COLS: {
+                APP_CONFIG: 'app_config',
+                ROUTE_TYPE: 'route_type',
+                FIELDS: 'fields',
+                SCREEN_TYPE: 'screen_type'
+            }
+        },
+        PA_INDICATORS: {
+            NAME: 'pa_indicators'
+        }
+    },
+
+    BREADCRUMB_OPERATIONS: {
+        REPLACE: "REPLACE",
+        APPEND: "APPEND",
+        REPLACE_LAST_ITEM: "REPLACE_LAST_ITEM",
+        DEFAULT: "APPEND"
+    },
+
+	CUSTOM_BREADCRUMB_LABEL: {
+        EMPTY: "<No name>"
+    },
+	
+    _isFunction: function(input) {
+        return typeof input === 'function';
+    },
+
+    _isObject: function(input) {
+        return typeof input === 'object';
+    },
+
+    _isEmpty: function(input) {
+        return global.JSUtil.nil(input) || (this._isObject(input) && Object.keys(input).length === 0);
+    },
+
+    _findConfigByRoute: function(route) {
+        return this.APP_ROUTES_CONFIG[route] || {};
+    },
+
+    _isL1Route: function(route) {
+        return this.CERTMGMT_WS_APP.L1_ROUTES.indexOf(route) > -1;
+    },
+
+    /**
+    	Gets the default value for given table and sysId.
+    **/
+    _getDisplayValue: function(table, sysId, defaultDisplayValue) {
+        if (table && sysId) {
+            var gr = new GlideRecord(table);
+            if (sysId === "-1") {
+                return gs.getMessage("{0} (New Record)", gr.getClassDisplayValue());
+            }
+            if (gr.get(sysId)) {
+                if (!gr.getDisplayValue()) {
+                    return gs.getMessage("{0}", this.CUSTOM_BREADCRUMB_LABEL.EMPTY);
+                }
+                return gr.getDisplayValue();
+            }
+        }
+        return defaultDisplayValue ? defaultDisplayValue : "UNKNOWN";
+    },
+
+    _getScreenCollectionName: function(context) {
+        var gr = new GlideRecord(this.TABLES.SYS_UX_APP_ROUTE.NAME);
+        gr.addQuery(this.TABLES.SYS_UX_APP_ROUTE.COLS.APP_CONFIG, this.CERTMGMT_WS_APP.CONFIG_ID);
+        gr.addQuery(this.TABLES.SYS_UX_APP_ROUTE.COLS.ROUTE_TYPE, context.route);
+        gr.query();
+        while (gr.next()) {
+            var fields = gr.getValue(this.TABLES.SYS_UX_APP_ROUTE.COLS.FIELDS);
+            // route_type itself is not unique - combination of route_type and no. of fields are unique
+            // so we need to check if the count of fields defined in the route record matches the fields on the context
+            if ((this._isEmpty(fields) && this._isEmpty(context.fields)) ||
+                (Object.keys(context.fields).length === fields.split(",").length)) {
+                var screenCollection = gr.screen_type.getRefRecord();
+                return screenCollection.getDisplayValue();
+            }
+        }
+    },
+
+    _resolveValue: function(context, currValue, defaultValue) {
+        var that = this;
+        if (this._isFunction(currValue)) {
+            return currValue.call(that, context);
+        }
+        if (global.JSUtil.nil(currValue) && global.JSUtil.notNil(defaultValue)) {
+            return this._resolveValue(context, defaultValue);
+        }
+        return currValue;
+    },
+
+    _getLabelDefault: function(context) {
+        var fields = context.fields;
+        var params = context.params;
+
+        // if title is defined as required field use that as label
+        if (fields.title) {
+            return fields.title;
+        }
+
+        // if title is defined as optional params use that as label
+        if (params.title) {
+            return params.title;
+        }
+
+        // if table and sysId are present in the fields, get the displayValue for the record
+        if (fields.table && fields.sysId) {
+            return this._getDisplayValue(fields.table, fields.sysId);
+        }
+
+        return this._getScreenCollectionName(context);
+    },
+
+    _getHideBreadcrumbDefault: function(context) {
+        return this._isL1Route(context.route);
+    },
+
+    _getOperationDefault: function(context) {
+        return this._isL1Route(context.route) ? this.BREADCRUMB_OPERATIONS.REPLACE : this.BREADCRUMB_OPERATIONS.DEFAULT;
+    },
+
+    /**
+     * @param {{
+     * appId: string,
+     * route: string,
+     * fields: Record<string, any>,
+     * params: Record<string, any>,
+     * fetchStaticRoutes: boolean,
+     * selectedToolbarItem: { 
+     *  availability: any, badge: any, group?: string, 
+     * 	icon?: string, id: string,
+     * 	label: string | { message: string, translatable: boolean},
+     * 	order?: number, presence?: any,
+     * 	routeInfo: {route: string, fields: Record<string, any>, params?: Record<string, any>}
+     * }
+     * prevBreadcrumbRoute: { route: string, fields?: Record<string, any>, params?: Record<string, any>},
+     * prevSelectedContent: { route: string, fields?: Record<string, any>, params?: Record<string, any>}
+     * }} context
+     * @returns {{
+     *		operation?: "REPLACE" | "APPEND" | "REPLACE_LAST_ITEM",
+     * 		items: Array<{
+     * 					label: string,
+     * 					icon?: string,
+     *					routeInfo: {
+     *						route: string,
+     *						fields: Record<string, any>
+     *						params: Record<string,any>
+     * 					},
+     *					operation?: "REPLACE" | "APPEND" | "REPLACE_LAST_ITEM"
+     * 				>}}
+     */
+    provideItems: function(context) {
+        var currentRoute = context.route;
+        var config = this._findConfigByRoute(currentRoute);
+        if (config.provideItems) {
+            return this._resolveValue(context, config.provideItems);
+        }
+        var label = this._resolveValue(context, config.label, this._getLabelDefault);
+        // if cannot resolve label default to app shell implementation
+        if (global.JSUtil.nil(label)) return;
+
+        var pageTitle = this._resolveValue(context, config.pageTitle, label);
+        var operation = this._resolveValue(context, config.operation, this._getOperationDefault);
+        var icon = this._resolveValue(context, config.icon, "");
+        var hideBreadcrumb = this._resolveValue(context, config.hideBreadcrumb, this._getHideBreadcrumbDefault);
+        var routeInfo = this._resolveValue(context, config.routeInfo, {
+            route: context.route,
+            fields: context.fields,
+            params: context.params
+        });
+        return {
+            operation: operation,
+            items: [{
+                label: label,
+                pageTitle: pageTitle,
+                icon: icon,
+                hideBreadcrumb: hideBreadcrumb,
+                routeInfo: routeInfo,
+                operation: operation
+            }]
+        };
+    },
+
+    /**
+     * Configure CERTMGMT_WS_APP.L1_ROUTES and MENU_ROUTES_CONFIG to add horizontal menu items
+     * @returns {[{
+     * 			value: {
+     * 				label: string,
+     * 				target: string,
+     * 				type: string,
+     * 				value: {
+     * 					route: string,
+     *					field: Record<string, any> 
+     *              }		
+     * 	        }
+     * }]}
+     */
+    provideMenuItems: function() {
+        var menuItems = [];
+        for (var index in this.CERTMGMT_WS_APP.L1_ROUTES) {
+            var routeValue = this.CERTMGMT_WS_APP.L1_ROUTES[index];
+            var label = this.MENU_ROUTES_CONFIG[routeValue].label;
+            var roles = this.MENU_ROUTES_CONFIG[routeValue].roles;
+            var hasAccess = false;
+
+            // Check if current user has the role when 'roles' is configured in MENU_ROUTES_CONFIG.
+            if (roles) {
+                for (var rIndex in roles) {
+                    if (gs.hasRole(roles[rIndex])) {
+                        hasAccess = true;
+                        break;
+                    }
+                }
+            } else
+                hasAccess = true;
+
+            if (hasAccess && label) {
+                menuItems.push({
+                    value: {
+                        label: label,
+                        target: '',
+                        type: 'route',
+                        value: {
+                            route: routeValue,
+                            fields: {}
+                        }
+                    },
+                    children: {}
+                });
+            }
+        }
+        return menuItems;
+    },
+
+    type: 'CertificateManagementWorkspaceNavigationUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>now.discovery.content</sys_created_by>
+        <sys_created_on>2023-06-22 10:52:44</sys_created_on>
+        <sys_id>dff6770ec3ef29507eef7fec7a013162</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>CertificateManagementWorkspaceNavigationUtil</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_include_dff6770ec3ef29507eef7fec7a013162</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 13:59:28</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f3d1d02800000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_dff6770ec3ef29507eef7fec7a013162</metadata_update_name>
+        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-07 15:05:39</sys_created_on>
+        <sys_id>a95f8ef73b79cf50d0457237f4e45a67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-07 15:05:39</sys_updated_on>
+    </sys_claim>
+</record_update>

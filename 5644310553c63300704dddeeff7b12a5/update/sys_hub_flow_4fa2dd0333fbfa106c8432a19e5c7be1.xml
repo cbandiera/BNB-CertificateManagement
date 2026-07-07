@@ -24,7 +24,7 @@
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id>578f0a76330c4f906c8432a19e5c7b64</remote_trigger_id>
         <run_as>user</run_as>
-        <run_with_roles name="sn_disco_certmgmt.pki_admin">570ded3a0b1233001286836266673ad0,ef4d1b623b6320108774cedf34efc4ee,292d217a0b1233001286836266673a83</run_with_roles>
+        <run_with_roles>570ded3a0b1233001286836266673ad0,ef4d1b623b6320108774cedf34efc4ee,292d217a0b1233001286836266673a83</run_with_roles>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -544,7 +544,7 @@
         <parent_flow display_value="BNB - Trigger Close Change from Renew Task">4fa2dd0333fbfa106c8432a19e5c7be1</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
-        <run_with_roles name="sn_disco_certmgmt.pki_admin">570ded3a0b1233001286836266673ad0,ef4d1b623b6320108774cedf34efc4ee,292d217a0b1233001286836266673a83</run_with_roles>
+        <run_with_roles>570ded3a0b1233001286836266673ad0,ef4d1b623b6320108774cedf34efc4ee,292d217a0b1233001286836266673a83</run_with_roles>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
@@ -983,7 +983,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>4fa2dd0333fbfa106c8432a19e5c7be1</sys_id>
         <latest_snapshot>2ef75d4f33733e106c8432a19e5c7b3a</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch9-hotfix3-06-13-2026_06-19-2026_0859.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch10-hotfix3-07-01-2026_07-02-2026_1215.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT IN3ef79d4f33733e106c8432a19e5c7be1"/>
@@ -991,7 +991,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3ef79d4f33733e106c8432a19e5c7be1","name":"plan","plan_signature":null}}</plan>
         <plan_id>4fa2dd0333fbfa106c8432a19e5c7be1</plan_id>
-        <snapshot>50594daf3bed8350d0457237f4e45af8</snapshot>
+        <snapshot>60058cbf3bbd8b50d0457237f4e45a59</snapshot>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-27 17:02:46</sys_created_on>
         <sys_domain>global</sys_domain>
