@@ -138,7 +138,7 @@
 
             0 – Não especificado (padrão)
             1 – Comprometimento de chave
-            2 – Comprometimento da autoridade certificadora
+            2 – Comprometimento da autoridade de certificação
             3 – Afiliação alterada
             4 – Substituído
             5 – Cessação da operação
@@ -150,9 +150,18 @@
 
             0 – Não especificado
             1 – Comprometimento de chave
-            3 – Afiliação alterada (suporte da Entrust ACME, não da Let's Encrypt)
+            3 – Afiliação alterada (com suporte da Entrust ACME, não da Let's Encrypt)
             4 – Substituído
             5 – Cessação da operação
+
+
+            Para o SaaS da CyberArk Venafi, indique o motivo a partir da lista abaixo:
+
+            SUPERSEDED
+            KEY_COMPROMISE
+            AFFILIATION_CHANGED
+            CESSATION_OF_OPERATION
+            UNSPECIFIED
         </value>
     </sys_translated_text>
     <fx_price action="delete_multiple" query="id=bae248d03b6220108774cedf34efc40e"/>
@@ -192,16 +201,16 @@
     </fx_price>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
-        <claim_timestamp>19d0683d76f0000001</claim_timestamp>
+        <claim_timestamp>000000000000000000</claim_timestamp>
         <metadata_update_name>item_option_new_bae248d03b6220108774cedf34efc40e</metadata_update_name>
-        <previous_claim_app_version>4.0.1</previous_claim_app_version>
+        <previous_claim_app_version>4.2.0</previous_claim_app_version>
         <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
         <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-19 14:33:16</sys_created_on>
-        <sys_id>07092b9033f37e906c8432a19e5c7b08</sys_id>
+        <sys_created_on>2026-07-08 13:30:58</sys_created_on>
+        <sys_id>a84347c03b4acb90d0457237f4e45af1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-19 14:33:16</sys_updated_on>
+        <sys_updated_on>2026-07-08 13:30:58</sys_updated_on>
     </sys_claim>
 </record_update>

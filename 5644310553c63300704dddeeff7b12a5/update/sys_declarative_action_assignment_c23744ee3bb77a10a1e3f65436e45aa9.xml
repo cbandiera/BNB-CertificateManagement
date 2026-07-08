@@ -53,17 +53,16 @@
         <server_script><![CDATA[(function executeAction(current, action, gs) {
 
 	var usrUtils = new sn_disco_certmgmt.BNBCertUserUtils();
-	var grpCertExterno = usrUtils.grpCertExterno;
-	var grpCertInterno = usrUtils.grpCertInterno;
 
-	if (current.u_ca_scope == "external" && !gs.getUser().isMemberOf(grpCertExterno.name)) {
-		gs.addErrorMessage("Essa função só está disponível para usuários do grupo " + grpCertExterno.name);
-		return false;
-	}
-
-	if(current.u_ca_scope == "internal" && !gs.getUser().isMemberOf(grpCertInterno.name)) {
-		gs.addErrorMessage("Essa função só está disponível para usuários do grupo " + grpCertInterno.name);
-		return false;
+	try {
+		// if(!gs.getUser().isMemberOf(usrUtils.grpMudancas.name)) {
+		if (!usrUtils.isMemberOfMudancas()) {
+			gs.addErrorMessage("Essa função só está disponível para usuários do grupo " + usrUtils.grpMudancas.name);
+			return false;
+		}
+	} catch(ex) {
+			gs.addErrorMessage(ex);
+			return false;
 	}
 
 	var certMetadataGr = new GlideRecord("sn_disco_certmgmt_certificate_metadata");
@@ -97,7 +96,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c23744ee3bb77a10a1e3f65436e45aa9</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>renew_certificate</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -105,7 +104,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_declarative_action_assignment_c23744ee3bb77a10a1e3f65436e45aa9</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-08 23:57:07</sys_updated_on>
+        <sys_updated_on>2026-07-08 18:40:06</sys_updated_on>
         <table>cmdb_ci_certificate</table>
         <tooltip/>
         <ui_component/>

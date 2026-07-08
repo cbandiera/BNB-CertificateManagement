@@ -5,7 +5,7 @@
         <commented_message/>
         <key>single routing policy is not matched so manual intervention is needed. the approve must choose the proper routing policy for requesting the {0} certificate.</key>
         <language>pb</language>
-        <message>Fluxo de criação/renovação de certificados customizado para o BNB foi executado.</message>
+        <message>Há uma política de roteamento única não correspondente, portanto, é necessária uma intervenção manual. A aprovação deve escolher a política de roteamento apropriada para solicitar a certificação {0}.</message>
         <sys_class_name>sys_ui_message</sys_class_name>
         <sys_created_by/>
         <sys_created_on/>
