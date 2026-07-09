@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url">
     <sn_disco_certmgmt_cert_url action="INSERT_OR_UPDATE">
-        <certificate display_value="api.bnb.gov.br">52b47717c71507109e53ea05e72e3935</certificate>
+        <certificate/>
         <sys_class_name>sn_disco_certmgmt_cert_url</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-06-11 12:36:54</sys_created_on>
