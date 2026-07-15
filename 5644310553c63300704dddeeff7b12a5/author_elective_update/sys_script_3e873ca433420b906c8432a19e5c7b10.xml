@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>cmdb_ci_certificate</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BNB Ajusta CA Scope</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+var BNBFixScopeAndMetadata = Class.create();
+	new BNBFixScopeAndMetadata().setActiveCertificateScope(current.subject_common_name);
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-09 16:38:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3e873ca433420b906c8432a19e5c7b10</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>BNB Ajusta CA Scope</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_3e873ca433420b906c8432a19e5c7b10</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-10 22:58:17</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=3e873ca433420b906c8432a19e5c7b10"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f47cc55030000001</claim_timestamp>
+        <metadata_update_name>sys_script_3e873ca433420b906c8432a19e5c7b10</metadata_update_name>
+        <previous_claim_app_version>4.2.0</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-09 16:53:21</sys_created_on>
+        <sys_id>c32b38e833060b906c8432a19e5c7bb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-09 16:53:21</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="DELETE">
+        <id>3e873ca433420b906c8432a19e5c7b10</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-09 16:38:10</sys_created_on>
+        <sys_id>24b73ca433420b906c8432a19e5c7b15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-09 16:38:10</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>sys_script_3e873ca433420b906c8432a19e5c7b10</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;cmdb_ci_certificate&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;BNB Ajusta CA Scope&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+var BNBFixScopeAndMetadata = Class.create();
+	new BNBFixScopeAndMetadata().setActiveCertificateScope(current.subject_common_name);
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carlos.paiva@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-09 16:38:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3e873ca433420b906c8432a19e5c7b10&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;BNB Ajusta CA Scope&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_3e873ca433420b906c8432a19e5c7b10&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;carlos.paiva@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-10 22:58:17&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3e873ca433420b906c8432a19e5c7b10"/&gt;&lt;sys_claim action="INSERT_OR_UPDATE"&gt;&lt;claim_owner_scope display_value="Certificate Inventory and Management"&gt;5644310553c63300704dddeeff7b12a5&lt;/claim_owner_scope&gt;&lt;claim_timestamp&gt;19f47cc55030000001&lt;/claim_timestamp&gt;&lt;metadata_update_name&gt;sys_script_3e873ca433420b906c8432a19e5c7b10&lt;/metadata_update_name&gt;&lt;previous_claim_app_version&gt;4.2.0&lt;/previous_claim_app_version&gt;&lt;previous_claim_name&gt;Certificate Inventory and Management&lt;/previous_claim_name&gt;&lt;previous_claim_scope&gt;5644310553c63300704dddeeff7b12a5&lt;/previous_claim_scope&gt;&lt;sys_created_by&gt;carlos.paiva@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-09 16:53:21&lt;/sys_created_on&gt;&lt;sys_id&gt;c32b38e833060b906c8432a19e5c7bb1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;carlos.paiva@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-09 16:53:21&lt;/sys_updated_on&gt;&lt;/sys_claim&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;3e873ca433420b906c8432a19e5c7b10&lt;/id&gt;&lt;sys_created_by&gt;carlos.paiva@extreme.digital&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-09 16:38:10&lt;/sys_created_on&gt;&lt;sys_id&gt;24b73ca433420b906c8432a19e5c7b15&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;carlos.paiva@extreme.digital&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-09 16:38:10&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1262533189</payload_hash>
+        <record_name>BNB Ajusta CA Scope</record_name>
+        <reverted_from/>
+        <source>cffb7a393b7dc750d0457237f4e45aee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-10 22:58:17</sys_created_on>
+        <sys_id>da4853bc33c20b106c8432a19e5c7b7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f4e40ce2e0000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-10 22:58:17</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>5a4853bcc9c20b1000e9a211275ec67a</update_guid>
+        <update_guid_history>5a4853bcc9c20b1000e9a211275ec67a:1262533189,ce8ab8a082060b904b5f3a399281dfbc:-1248343924,567a78ac33c20b9046c5f5b324f27fd7:1204243401,5c3abc2ccec20b903769ae70b43ae5b2:737346716,1cf9b86853c20b9061b1db8b7593633c:1529096863,2eb9bc24eac20b908f0ebf97ca79e595:1508648415,b00930ec51420b90abc8487e7c72c101:822563644,b0b77c28f5420b90f1ffca6bd2c7d27c:-1387033207</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-10 23:09:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>67548b74ba6a404fac7fb4562ceee341</sys_id>
+        <sys_metadata>3e873ca433420b906c8432a19e5c7b10</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BNB Ajusta CA Scope</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent display_value="Unique Certificate">fb29d5883bdfee50a1e3f65436e45a26</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>sys_script_3e873ca433420b906c8432a19e5c7b10</sys_update_name>
+        <sys_update_version display_value="sys_script_3e873ca433420b906c8432a19e5c7b10">da4853bc33c20b106c8432a19e5c7b7b</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-10 23:09:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

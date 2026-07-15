@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="environment" table="sn_disco_certmgmt_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>environment</element>
+            <name>sn_disco_certmgmt_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>charlles.rodrigues@extreme.digital</sys_created_by>
+            <sys_created_on>2025-08-28 12:54:43</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>environment</sys_name>
+            <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+            <sys_update_name>sys_choice_sn_disco_certmgmt_task_environment</sys_update_name>
+            <sys_updated_by>charlles.rodrigues@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-08-28 12:54:43</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Desenvolvimento</label>
+            <language>pb</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count/>
+            <sys_updated_by/>
+            <sys_updated_on/>
+            <value>development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Development</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>charlles.rodrigues@extreme.digital</sys_created_by>
+            <sys_created_on>2025-08-28 12:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charlles.rodrigues@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-08-28 12:54:43</sys_updated_on>
+            <value>development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Disaster recovery</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>charlles.rodrigues@extreme.digital</sys_created_by>
+            <sys_created_on>2025-08-28 12:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charlles.rodrigues@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-08-28 12:54:43</sys_updated_on>
+            <value>disaster_recovery</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Recuperação de desastre</label>
+            <language>pb</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count/>
+            <sys_updated_by/>
+            <sys_updated_on/>
+            <value>disaster_recovery</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Production</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>charlles.rodrigues@extreme.digital</sys_created_by>
+            <sys_created_on>2025-08-28 12:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charlles.rodrigues@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-08-28 12:54:43</sys_updated_on>
+            <value>production</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Produção</label>
+            <language>pb</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count/>
+            <sys_updated_by/>
+            <sys_updated_on/>
+            <value>production</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Homologação</label>
+            <language>pb</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+            <sys_updated_on>2026-07-10 14:33:59</sys_updated_on>
+            <value>sub_production</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sub-Production</label>
+            <language>en</language>
+            <name>sn_disco_certmgmt_task</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>charlles.rodrigues@extreme.digital</sys_created_by>
+            <sys_created_on>2025-08-28 12:54:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>charlles.rodrigues@extreme.digital</sys_updated_by>
+            <sys_updated_on>2025-08-28 12:54:43</sys_updated_on>
+            <value>sub_production</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f68296a480000001</claim_timestamp>
+        <metadata_update_name>sys_choice_sn_disco_certmgmt_task_environment</metadata_update_name>
+        <previous_claim_app_version>4.2.0</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-15 23:42:52</sys_created_on>
+        <sys_id>d472ddea334a0f106c8432a19e5c7b99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-15 23:42:52</sys_updated_on>
+    </sys_claim>
+</record_update>
