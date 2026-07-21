@@ -2,23 +2,23 @@
     <discovery_ptrn_hostless_lchr action="INSERT_OR_UPDATE">
         <active>true</active>
         <cmdb_ci display_value="D001ACP02">d6575de0ff35ba1072499b68f0f1bfc4</cmdb_ci>
-        <name>CAPGV - SubCA</name>
+        <name>CAPGV - 01</name>
         <pattern display_value="Microsoft CA - Certificate Management">15b0c693dbe31010aee26b6d13961911</pattern>
         <run_child_patterns>false</run_child_patterns>
-        <schedule display_value="Microsoft CA - SubCA">bd253b9233ce0b106c8432a19e5c7b5f</schedule>
+        <schedule display_value="Microsoft CA - CAPGV">bd253b9233ce0b106c8432a19e5c7b5f</schedule>
         <sys_class_name>discovery_ptrn_hostless_lchr</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-07-15 16:59:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>d5f5f39a33ce0b106c8432a19e5c7b4d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>CAPGV - SubCA</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CAPGV - 01</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>discovery_ptrn_hostless_lchr_d5f5f39a33ce0b106c8432a19e5c7b4d</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-15 17:07:40</sys_updated_on>
+        <sys_updated_on>2026-07-21 18:42:03</sys_updated_on>
         <use_extended_parameters>false</use_extended_parameters>
     </discovery_ptrn_hostless_lchr>
     <sys_claim action="INSERT_OR_UPDATE">

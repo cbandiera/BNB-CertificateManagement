@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_ptrn_lnch_param">
+    <discovery_ptrn_lnch_param action="DELETE">
+        <param display_value="start_offset">0c10a051c73030108039352927c2602c</param>
+        <pattern_launcher display_value="CAPGV Web01">1e2d339a33c24b106c8432a19e5c7bf4</pattern_launcher>
+        <sys_class_name>discovery_ptrn_lnch_param</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-15 17:31:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>947d3b1e33c24b106c8432a19e5c7b34</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>0</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_ptrn_lnch_param_947d3b1e33c24b106c8432a19e5c7b34</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-15 17:41:20</sys_updated_on>
+        <value>0</value>
+    </discovery_ptrn_lnch_param>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>discovery_ptrn_lnch_param_947d3b1e33c24b106c8432a19e5c7b34</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_ptrn_lnch_param"><discovery_ptrn_lnch_param action="INSERT_OR_UPDATE"><param display_value="start_offset">0c10a051c73030108039352927c2602c</param><pattern_launcher display_value="CAPGV Web01">1e2d339a33c24b106c8432a19e5c7bf4</pattern_launcher><sys_class_name>discovery_ptrn_lnch_param</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-07-15 17:31:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>947d3b1e33c24b106c8432a19e5c7b34</sys_id><sys_mod_count>3</sys_mod_count><sys_name>0</sys_name><sys_overrides/><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>discovery_ptrn_lnch_param_947d3b1e33c24b106c8432a19e5c7b34</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-07-15 17:41:20</sys_updated_on><value>0</value></discovery_ptrn_lnch_param></record_update>]]></payload>
+        <payload_hash>892183216</payload_hash>
+        <record_name>0</record_name>
+        <reverted_from/>
+        <source>cffb7a393b7dc750d0457237f4e45aee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-15 17:41:20</sys_created_on>
+        <sys_id>1cbfbbde33064b106c8432a19e5c7ba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f66de6c610000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-15 17:41:20</sys_updated_on>
+        <type>Discovery Pattern Parameters</type>
+        <update_guid>5cbfbbde16064b107c5ee60ff469dba6</update_guid>
+        <update_guid_history>5cbfbbde16064b107c5ee60ff469dba6:892183216,36de7f96b0064b10a2cca14a05fab379:488144910,ebcd77de99c24b1029f6ce6fcfee109e:-557617243,63cd77de94c24b102a58507e4a37aa9d:2123781559</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="0">664a8750339a07506c8432a19e5c7b24</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-21 18:55:51</sys_created_on>
+        <sys_db_object display_value="" name="discovery_ptrn_lnch_param">discovery_ptrn_lnch_param</sys_db_object>
+        <sys_id>11583ad74a444a3798f161aa12f00491</sys_id>
+        <sys_metadata>947d3b1e33c24b106c8432a19e5c7b34</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>discovery_ptrn_lnch_param_947d3b1e33c24b106c8432a19e5c7b34</sys_update_name>
+        <sys_update_version display_value="discovery_ptrn_lnch_param_947d3b1e33c24b106c8432a19e5c7b34">1cbfbbde33064b106c8432a19e5c7ba7</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-21 18:55:51</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f68296b970000001</claim_timestamp>
+        <metadata_update_name>discovery_ptrn_lnch_param_947d3b1e33c24b106c8432a19e5c7b34</metadata_update_name>
+        <previous_claim_app_version>4.2.0</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-15 23:42:52</sys_created_on>
+        <sys_id>5872ddea334a0f106c8432a19e5c7bf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-15 23:42:52</sys_updated_on>
+    </sys_claim>
+</record_update>

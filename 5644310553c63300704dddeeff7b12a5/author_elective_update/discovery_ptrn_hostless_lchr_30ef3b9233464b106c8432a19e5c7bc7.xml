@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_ptrn_hostless_lchr">
+    <discovery_ptrn_hostless_lchr action="DELETE">
+        <active>false</active>
+        <cmdb_ci display_value="d001acp03">91ad7be33fe6f2507ed21400455a53f4</cmdb_ci>
+        <name>CAPGV_DMZ Web05</name>
+        <pattern display_value="Microsoft CA - Certificate Management">15b0c693dbe31010aee26b6d13961911</pattern>
+        <run_child_patterns>false</run_child_patterns>
+        <schedule display_value="Microsoft CA - WebServer">0fdc77d633c24b106c8432a19e5c7bc3</schedule>
+        <sys_class_name>discovery_ptrn_hostless_lchr</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-15 17:42:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>30ef3b9233464b106c8432a19e5c7bc7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CAPGV_DMZ Web05</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>discovery_ptrn_hostless_lchr_30ef3b9233464b106c8432a19e5c7bc7</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-16 18:22:32</sys_updated_on>
+        <use_extended_parameters>false</use_extended_parameters>
+    </discovery_ptrn_hostless_lchr>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f6829699a0000001</claim_timestamp>
+        <metadata_update_name>discovery_ptrn_hostless_lchr_30ef3b9233464b106c8432a19e5c7bc7</metadata_update_name>
+        <previous_claim_app_version>4.2.0</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-15 23:42:52</sys_created_on>
+        <sys_id>0472ddea334a0f106c8432a19e5c7b55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-15 23:42:52</sys_updated_on>
+    </sys_claim>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</application>
+        <file_path/>
+        <instance_id>8585e3b72b5eae9c3ce2fcd2ce91bf87</instance_id>
+        <instance_name>bnbdev</instance_name>
+        <name>discovery_ptrn_hostless_lchr_30ef3b9233464b106c8432a19e5c7bc7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_ptrn_hostless_lchr"><discovery_ptrn_hostless_lchr action="INSERT_OR_UPDATE"><active>false</active><cmdb_ci display_value="d001acp03">91ad7be33fe6f2507ed21400455a53f4</cmdb_ci><name>CAPGV_DMZ Web05</name><pattern display_value="Microsoft CA - Certificate Management">15b0c693dbe31010aee26b6d13961911</pattern><run_child_patterns>false</run_child_patterns><schedule display_value="Microsoft CA - WebServer">0fdc77d633c24b106c8432a19e5c7bc3</schedule><sys_class_name>discovery_ptrn_hostless_lchr</sys_class_name><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-07-15 17:42:11</sys_created_on><sys_domain>global</sys_domain><sys_id>30ef3b9233464b106c8432a19e5c7bc7</sys_id><sys_mod_count>2</sys_mod_count><sys_name>CAPGV_DMZ Web05</sys_name><sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package><sys_policy/><sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope><sys_update_name>discovery_ptrn_hostless_lchr_30ef3b9233464b106c8432a19e5c7bc7</sys_update_name><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-07-16 18:22:32</sys_updated_on><use_extended_parameters>false</use_extended_parameters></discovery_ptrn_hostless_lchr><sys_claim action="INSERT_OR_UPDATE"><claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope><claim_timestamp>19f6829699a0000001</claim_timestamp><metadata_update_name>discovery_ptrn_hostless_lchr_30ef3b9233464b106c8432a19e5c7bc7</metadata_update_name><previous_claim_app_version>4.2.0</previous_claim_app_version><previous_claim_name>Certificate Inventory and Management</previous_claim_name><previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope><sys_created_by>carlos.paiva@extreme.digital</sys_created_by><sys_created_on>2026-07-15 23:42:52</sys_created_on><sys_id>0472ddea334a0f106c8432a19e5c7b55</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by><sys_updated_on>2026-07-15 23:42:52</sys_updated_on></sys_claim></record_update>]]></payload>
+        <payload_hash>1965399431</payload_hash>
+        <record_name>CAPGV_DMZ Web05</record_name>
+        <reverted_from/>
+        <source>cffb7a393b7dc750d0457237f4e45aee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-16 18:22:32</sys_created_on>
+        <sys_id>25b2ddbe330287506c8432a19e5c7b68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6c2a7f000000001</sys_recorded_at>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-16 18:22:32</sys_updated_on>
+        <type>Serverless Execution Pattern</type>
+        <update_guid>65b2ddbee50287504299303df3903167</update_guid>
+        <update_guid_history>65b2ddbee50287504299303df3903167:1965399431,f09480ea920a4b1088509ed1ffd8dfd1:-1739687577,38ef3b9260464b10749c03555c627bff:1185000508</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CAPGV_DMZ Web05">6e4a8750339a07506c8432a19e5c7b4f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-21 18:55:52</sys_created_on>
+        <sys_db_object display_value="" name="discovery_ptrn_hostless_lchr">discovery_ptrn_hostless_lchr</sys_db_object>
+        <sys_id>3b2f6e379ce74dde92221454e724fcc4</sys_id>
+        <sys_metadata>30ef3b9233464b106c8432a19e5c7bc7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAPGV_DMZ Web05</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_scope_delete display_value="">27e2af128ead460086c45fb62c440000</sys_scope_delete>
+        <sys_update_name>discovery_ptrn_hostless_lchr_30ef3b9233464b106c8432a19e5c7bc7</sys_update_name>
+        <sys_update_version display_value="discovery_ptrn_hostless_lchr_30ef3b9233464b106c8432a19e5c7bc7">25b2ddbe330287506c8432a19e5c7b68</sys_update_version>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-21 18:55:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

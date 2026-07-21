@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_ptrn_lnch_param">
     <discovery_ptrn_lnch_param action="INSERT_OR_UPDATE">
         <param display_value="discover_SAN_for_template">96c8aff8eb902a506426facfcad0cdba</param>
-        <pattern_launcher display_value="CAPGV - SubCA">d5f5f39a33ce0b106c8432a19e5c7b4d</pattern_launcher>
+        <pattern_launcher display_value="CAPGV - 01">d5f5f39a33ce0b106c8432a19e5c7b4d</pattern_launcher>
         <sys_class_name>discovery_ptrn_lnch_param</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-07-15 16:59:43</sys_created_on>

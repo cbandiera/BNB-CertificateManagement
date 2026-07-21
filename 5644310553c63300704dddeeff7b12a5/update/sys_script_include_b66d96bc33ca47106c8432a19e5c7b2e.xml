@@ -43,10 +43,18 @@ BNBFixScopeAndMetadata.prototype = {
 			if (!issuer.subject_common_name || grCert.state == 'revoked' || grCert.state == 'retired' ||
 				(issuer.subject_common_name == grCert.subject_common_name)) {
 				caScope = 'NULL';
-			} else if (grCert.issuer_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste")) {
-				caScope = "internal";
 			} else {
-				caScope = "external";
+				if (grCert.issuer_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste") ||
+					grCert.issuer.subject_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste")) {
+					if (grCert.subject_common_name.toLowerCase().endsWith('bnb') ||
+						grCert.subject_common_name.toLowerCase().endsWith('bnb.gov.br')) {
+						caScope = "internal";
+					} else {
+						caScope = 'NULL';
+					}
+				} else {
+					caScope = "external";
+				}
 			}
 			if (force && caScope != 'NULL') {
 				this.setMetaData(grCert);
@@ -95,7 +103,7 @@ BNBFixScopeAndMetadata.prototype = {
 			certificate.u_ca_scope = caScope;
 			certificate.update();
 		}
-		rtn = certificate.subject_common_name + '| |' + certificate.valid_to.getDisplayValue() + ' scope: |' + caScope + '|';
+		rtn = certificate.subject_common_name + '| |' + certificate.valid_to.getDisplayValue() + ' scope: |' + caScope + '| template: ' + certificate.cert_template;
 		return rtn;
 	},
 
@@ -137,14 +145,14 @@ BNBFixScopeAndMetadata.prototype = {
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-07-10 19:10:03</sys_created_on>
         <sys_id>b66d96bc33ca47106c8432a19e5c7b2e</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>BNBFixScopeAndMetadata</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_b66d96bc33ca47106c8432a19e5c7b2e</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-16 16:59:28</sys_updated_on>
+        <sys_updated_on>2026-07-21 04:11:30</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>

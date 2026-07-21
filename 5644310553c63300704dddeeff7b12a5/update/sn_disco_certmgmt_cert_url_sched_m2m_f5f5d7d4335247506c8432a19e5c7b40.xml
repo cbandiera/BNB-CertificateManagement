@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url_sched_m2m">
+    <sn_disco_certmgmt_cert_url_sched_m2m action="INSERT_OR_UPDATE">
+        <cert_url display_value="https://gateway.api.bnb.gov.br">3f0126d53bb63650a1e3f65436e45a8e</cert_url>
+        <last_successful/>
+        <schedule display_value="Certificados via URL">fa611398335e07506c8432a19e5c7b8b</schedule>
+        <status>false</status>
+        <sys_class_name>sn_disco_certmgmt_cert_url_sched_m2m</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-21 19:46:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f5f5d7d4335247506c8432a19e5c7b40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Certificados via URL.https://gateway.api.bnb.gov.br</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sn_disco_certmgmt_cert_url_sched_m2m_f5f5d7d4335247506c8432a19e5c7b40</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-21 19:46:53</sys_updated_on>
+    </sn_disco_certmgmt_cert_url_sched_m2m>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>19f864f9e230000001</claim_timestamp>
+        <metadata_update_name>sn_disco_certmgmt_cert_url_sched_m2m_f5f5d7d4335247506c8432a19e5c7b40</metadata_update_name>
+        <previous_claim_app_version>4.2.0</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-07-21 20:13:12</sys_created_on>
+        <sys_id>e7fbd3d0339647506c8432a19e5c7b9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-07-21 20:13:12</sys_updated_on>
+    </sys_claim>
+</record_update>
