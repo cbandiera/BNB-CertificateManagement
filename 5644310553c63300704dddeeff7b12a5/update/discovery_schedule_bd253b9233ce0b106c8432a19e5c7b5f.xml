@@ -27,7 +27,7 @@
         <maintenance_source>manual</maintenance_source>
         <max_drift/>
         <max_idle/>
-        <max_run>1970-01-01 01:00:00</max_run>
+        <max_run>1970-01-01 04:00:00</max_run>
         <mid_cluster display_value="MID_CAPGV_COM">2ec0fc6b3b16b690a1e3f65436e45a44</mid_cluster>
         <mid_select_method>specific_cluster</mid_select_method>
         <mid_server/>
@@ -62,14 +62,14 @@
         <sys_created_on>2026-07-15 16:57:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>bd253b9233ce0b106c8432a19e5c7b5f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Microsoft CA - CAPGV</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>discovery_schedule_bd253b9233ce0b106c8432a19e5c7b5f</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-21 18:40:55</sys_updated_on>
+        <sys_updated_on>2026-07-22 17:51:29</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_snmp_version>all</use_snmp_version>

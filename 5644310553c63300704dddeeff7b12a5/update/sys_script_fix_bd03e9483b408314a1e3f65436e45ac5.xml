@@ -47,7 +47,7 @@ function setProps() {
 
 	properties.forEach(function (prop) {
 		var propName = scopeName + '.' + prop.name;
-		if(prop.check) {
+		if (prop.check) {
 			prop.check(prop.value);
 		}
 		var propGQ = new global.GlideQuery('sys_properties')
@@ -116,23 +116,95 @@ function updateMetadata() {
 	logInfo("Atualização de Certificate Metadata - Fim.");
 }
 
+function setMidCluster() {
+	var clusterByInsance = {
+		bnbdev: "MID_CAPGV_COM",
+		bnbhom: "MID_CAPGV_COM",
+		bnbprod: "MID_CAPGV_DIS",
+	};
+	var midClusterName = clusterByInsance[gs.getProperty("instance_name")];
+	var midCluster = new global.GlideQuery("ecc_agent_cluster")
+		.getBy({
+			name: midClusterName
+		}, ["sys_id", "name"])
+		.orElse({
+			sys_id: "",
+			name: ''
+		}).sys_id;
+
+	new global.GlideQuery("discovery_schedule")
+		.where('sys_scope.name', "Certificate Inventory and Management")
+		.where('mid_select_method', 'specific_cluster')
+		.select("name")
+		.forEach(function (disc) {
+			new global.GlideQuery("discovery_schedule")
+				.where("sys_id", disc.sys_id)
+				.update({
+					mid_cluster: midCluster
+				});
+		});
+
+	var D001ACP02gr = new GlideRecord("cmdb_ci_win_server");
+	if (!D001ACP02gr.get('name', 'D001ACP02')) {
+		throw Error("Missing Windows Server for Microsoft CA: d001acp03");
+	}
+	var d001acp03gr = new GlideRecord("cmdb_ci_win_server");
+	if (!d001acp03gr.get('name', 'd001acp03')) {
+		throw Error("Missing Windows Server for Microsoft CA: d001acp03");
+	}
+
+	[{
+		ip: '200.164.107.13',
+		proxy: d001acp03gr
+	},
+	{
+		ip: '128.15.1.242',
+		proxy: D001ACP02gr
+	},
+	].forEach(function (ipProxy) {
+		new global.GlideQuery("discovery_ptrn_lnch_param")
+			.where('sys_scope.name', 'Certificate Inventory and Management')
+			.where('param.key', 'ip')
+			.where('value', ipProxy.ip)
+			.select(["pattern_launcher"])
+			.forEach(function (lnch) {
+				var lnchr = new global.GlideQuery("discovery_ptrn_hostless_lchr")
+					.get(lnch.pattern_launcher, ["name"])
+					.orElse({
+						name: "Não Encontrou"
+					});
+				gs.info(JSON.stringify(lnchr));
+				new global.GlideQuery("discovery_ptrn_hostless_lchr")
+					.where("sys_id", lnch.pattern_launcher)
+					.update({
+						cmdb_ci: ipProxy.proxy.sys_id
+					});
+			});
+	});
+}
+
 function logInfo(ex) { gs.info("EDX - Customização certificados - " + ex); }
 
 function logError(ex) { gs.error("EDX - Customização certificados - " + ex); }
 
 var failures = [];
-try { setProps(); } catch (ex) {
-	failures.push(ex);
-}
+// try { setProps(); } catch (ex) {
+// 	failures.push(ex);
+// }
 
-try { setMid(); } catch (ex) {
-	failures.push(ex);
-}
+// try { setMid(); } catch (ex) {
+// 	failures.push(ex);
+// }
 
 try { setAWXCredential(); } catch (ex) {
 	failures.push(ex);
 }
-try { updateMetadata(); } catch (ex) {
+
+// try { updateMetadata(); } catch (ex) {
+// 	failures.push(ex);
+// }
+
+try { setMidCluster(); } catch (ex) {
 	failures.push(ex);
 }
 
@@ -145,14 +217,14 @@ if (failures.length + 0) {
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-30 20:38:27</sys_created_on>
         <sys_id>bd03e9483b408314a1e3f65436e45ac5</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>BNB Implantacão Customização certificado</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_fix_bd03e9483b408314a1e3f65436e45ac5</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-28 16:19:14</sys_updated_on>
+        <sys_updated_on>2026-07-22 18:10:33</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
     <sys_claim action="INSERT_OR_UPDATE">
