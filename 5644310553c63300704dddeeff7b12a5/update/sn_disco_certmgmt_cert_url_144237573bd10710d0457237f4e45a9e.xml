@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url">
     <sn_disco_certmgmt_cert_url action="INSERT_OR_UPDATE">
-        <certificate display_value="adcms.bnb.gov.br">aee61bd0f792475038ccf158246411c4</certificate>
+        <certificate display_value="adcms.bnb.gov.br">5f9a466e00decf1421e09892906aca40</certificate>
         <sys_class_name>sn_disco_certmgmt_cert_url</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-06-11 12:35:16</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>144237573bd10710d0457237f4e45a9e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>https://adcms.bnb.gov.br</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sn_disco_certmgmt_cert_url_144237573bd10710d0457237f4e45a9e</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-07-21 19:51:01</sys_updated_on>
+        <sys_updated_on>2026-07-28 14:04:00</sys_updated_on>
         <url>https://adcms.bnb.gov.br</url>
     </sn_disco_certmgmt_cert_url>
     <sys_claim action="INSERT_OR_UPDATE">

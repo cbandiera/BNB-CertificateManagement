@@ -134,7 +134,7 @@
             <element>environment</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Homologação</label>
+            <label>Subprodução</label>
             <language>pb</language>
             <name>sn_disco_certmgmt_task</name>
             <sequence>4</sequence>

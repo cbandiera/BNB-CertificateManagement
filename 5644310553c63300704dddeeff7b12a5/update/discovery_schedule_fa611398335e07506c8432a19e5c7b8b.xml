@@ -28,7 +28,7 @@
         <max_drift/>
         <max_idle/>
         <max_run/>
-        <mid_cluster display_value="MID_CAPGV_COM">2ec0fc6b3b16b690a1e3f65436e45a44</mid_cluster>
+        <mid_cluster display_value="MID_CAPGV_DIS">2ec0fc6b3b16b690a1e3f65436e45a44</mid_cluster>
         <mid_select_method>specific_cluster</mid_select_method>
         <mid_server/>
         <name>Certificados via URL</name>
