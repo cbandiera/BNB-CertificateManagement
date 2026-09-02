@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_disco_certmgmt_cert_url">
     <sn_disco_certmgmt_cert_url action="INSERT_OR_UPDATE">
-        <certificate display_value="adcms.bnb.gov.br">04f6150038a68f90321593886ec3c1f8</certificate>
+        <certificate/>
         <sys_class_name>sn_disco_certmgmt_cert_url</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-06-11 12:35:16</sys_created_on>
