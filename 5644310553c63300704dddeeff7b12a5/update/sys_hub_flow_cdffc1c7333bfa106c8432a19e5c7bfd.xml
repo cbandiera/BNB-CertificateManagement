@@ -331,6 +331,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=cdffc1c7333bfa106c8432a19e5c7bfd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>certificate_task</element>
         <help/>
@@ -689,6 +690,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_d8b5dd8f33bffa106c8432a19e5c7bb8"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>certificate_task</element>
         <help/>

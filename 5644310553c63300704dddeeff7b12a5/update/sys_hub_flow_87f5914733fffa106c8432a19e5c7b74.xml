@@ -524,6 +524,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=87f5914733fffa106c8432a19e5c7b74"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=87f5914733fffa106c8432a19e5c7b74"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_87f5914733fffa106c8432a19e5c7b74"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>job_status</element>
         <help/>
@@ -1075,6 +1076,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=6cfb910b33f73e106c8432a19e5c7b65"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=6cfb910b33f73e106c8432a19e5c7b65"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_6cfb910b33f73e106c8432a19e5c7b65"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>task</element>
         <help/>

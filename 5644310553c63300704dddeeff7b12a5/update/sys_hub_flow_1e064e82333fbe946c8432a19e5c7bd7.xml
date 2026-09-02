@@ -1432,6 +1432,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=1e064e82333fbe946c8432a19e5c7bd7"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=1e064e82333fbe946c8432a19e5c7bd7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_1e064e82333fbe946c8432a19e5c7bd7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>priority</element>
         <help/>
@@ -3144,6 +3145,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=b2084e4a337fbe946c8432a19e5c7b76"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=b2084e4a337fbe946c8432a19e5c7b76"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_b2084e4a337fbe946c8432a19e5c7b76"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>requested_by</element>
         <help/>

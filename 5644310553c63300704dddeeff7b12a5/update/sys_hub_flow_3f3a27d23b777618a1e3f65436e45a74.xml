@@ -426,6 +426,7 @@
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3f3a27d23b777618a1e3f65436e45a74"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=3f3a27d23b777618a1e3f65436e45a74"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=3f3a27d23b777618a1e3f65436e45a74"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_3f3a27d23b777618a1e3f65436e45a74"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
         <help/>
@@ -882,6 +883,7 @@
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=77faeb1e3b777618a1e3f65436e45a1b"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=77faeb1e3b777618a1e3f65436e45a1b"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=77faeb1e3b777618a1e3f65436e45a1b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_77faeb1e3b777618a1e3f65436e45a1b"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
         <help/>
