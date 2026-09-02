@@ -11,16 +11,16 @@
         <sys_created_by>now.discovery.content</sys_created_by>
         <sys_created_on>2026-07-06 01:32:18</sys_created_on>
         <sys_id>6e7b029f53f103104fb03a41c0f7b4b8</sys_id>
-        <sys_mod_count>868</sys_mod_count>
+        <sys_mod_count>869</sys_mod_count>
         <sys_name>sn_disco_certmgmt.calc.dashboard.stats</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_properties_6e7b029f53f103104fb03a41c0f7b4b8</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-09-02 17:54:22</sys_updated_on>
+        <sys_updated_on>2026-09-02 18:54:25</sys_updated_on>
         <type>string</type>
-        <value>{"active":1531,"expired":3790,"expired_last_week":3750,"expired_diff":40,"expiring_30":103,"active_last_month":13,"active_diff":1518,"revoked_last_30_days":192,"with_owners":0,"without_owners":1531,"attested":0,"pending_attestation":1531,"rejected":0,"not_set":0,"last_updated":"2026-09-02 17:54:22"}</value>
+        <value>{"active":1531,"expired":3790,"expired_last_week":3750,"expired_diff":40,"expiring_30":103,"active_last_month":13,"active_diff":1518,"revoked_last_30_days":192,"with_owners":0,"without_owners":1531,"attested":0,"pending_attestation":1531,"rejected":0,"not_set":0,"last_updated":"2026-09-02 18:54:25"}</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=6e7b029f53f103104fb03a41c0f7b4b8"/>

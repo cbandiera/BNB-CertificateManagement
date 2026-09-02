@@ -11,145 +11,146 @@
         <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var BNBFixScopeAndMetadata = Class.create();
 BNBFixScopeAndMetadata.prototype = {
-	main: function () {
-		var query = new global.GlideQuery('cmdb_ci_certificate')
-			.groupBy('subject_common_name')
-			.aggregate('count')
-			.select()
-			.forEach(function (aggregate) {
-				var cn = aggregate.group.subject_common_name;
-				this.setActiveCertificateScope(cn);
-			}.bind(this));
-	},
+    main: function() {
+        var query = new global.GlideQuery('cmdb_ci_certificate')
+            .groupBy('subject_common_name')
+            .aggregate('count')
+            .select()
+            .forEach(function(aggregate) {
+                var cn = aggregate.group.subject_common_name;
+                this.setActiveCertificateScope(cn);
+            }.bind(this));
+    },
 
-	/* 
-		seta o escopo do certificado com validade mais recente ou em vigor.
-		Para os demais certificados do mesmo domínio, limpa o escopo e remove metadados
-	*/
-	setActiveCertificateScope: function (commonName) {
-		var now = new GlideDateTime();
-		var force = true;
-		var caScopeDefault = this.getCAScopeFromCN(commonName);
+    /* 
+    	seta o escopo do certificado com validade mais recente ou em vigor.
+    	Para os demais certificados do mesmo domínio, limpa o escopo e remove metadados
+    */
+    setActiveCertificateScope: function(commonName) {
+        var now = new GlideDateTime();
+        var force = true;
+        var caScopeDefault = this.getCAScopeFromCN(commonName);
 
-		var grCert = new GlideRecord('cmdb_ci_certificate');
-		grCert.addQuery('subject_common_name', commonName);
-		grCert.orderByDesc('valid_to');
-		grCert.query();
+        var grCert = new GlideRecord('cmdb_ci_certificate');
+        grCert.addQuery('subject_common_name', commonName);
+        grCert.orderByDesc('valid_to');
+        grCert.query();
 
-		var updates = {};
+        var updates = {};
 
-		while (grCert.next()) {
-			var caScope = caScopeDefault;
-			var issuer = grCert.issuer.getRefRecord();
-			if (!issuer.subject_common_name || grCert.state == 'revoked' || grCert.state == 'retired') {
-				caScope = 'NULL';
-			} else {
-				if (caScope == "external") {
-					if (grCert.issuer_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste") ||
-						grCert.issuer.subject_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste")) {
-						caScope = "internal";
-					} else if (!grCert.subject_organization.toLowerCase().startsWith("banco do nordeste")) {
-						caScope = "NULL";
-					}
-				}
-			}
+        while (grCert.next()) {
+            var caScope = caScopeDefault;
+            var issuer = grCert.issuer.getRefRecord();
+            if (!issuer.subject_common_name || grCert.state == 'revoked' || grCert.state == 'retired' || grCert.is_ca ||
+                (issuer.subject_common_name.getDisplayValue().toLowerCase() == grCert.subject_common_name.getDisplayValue().toLowerCase())) {
+                caScope = 'NULL';
+            } else {
+                if (caScope == "external") {
+                    if (grCert.issuer_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste") ||
+                        grCert.issuer.subject_common_name.getDisplayValue().toLowerCase().startsWith("banco do nordeste")) {
+                        caScope = "internal";
+                    } else if (!grCert.subject_organization.toLowerCase().startsWith("banco do nordeste")) {
+                        caScope = "NULL";
+                    }
+                }
+            }
 
-			if (force && caScope != 'NULL') {
-				this.setMetaData(grCert);
-			} else {
-				var grMetadata = new GlideRecord('sn_disco_certmgmt_certificate_metadata');
-				if (grMetadata.get('certificate', grCert.sys_id)) {
-					grMetadata.deleteRecord();
-				}
-				/* limpa CA Scope para remover entrada do painel se estiver vencido (exceto o primeiro) */
-				if (grCert.valid_to < now) {
-					caScope = 'NULL';
-				}
-			}
-			force = false;
-			var rtn = this.updateCertificate(grCert, caScope);
-			if (rtn) {
-				updates[grCert.sys_id] = rtn;
-			}
-			// var template = grCert.cert_template.getDisplayValue();
-			// if (caScope == 'NULL' && (
-			// 	template.indexOf('Assinatura') > -1 ||
-			// 	template.indexOf('Autentica') > -1 ||
-			// 	template == 'DomainController' ||
-			// 	template == 'CAExchange' ||
-			// 	template == '1.3.6.1.4.1.311.21.8.13852083.15555101.2510744.11777771.3074538.90.9878337.8815824' 
-			// 	)
-			// ) {
-			// 	grCert.deleteRecord();
-			// } 
-		}
-		return updates;
-	},
+            if (force && caScope != 'NULL') {
+                this.setMetaData(grCert);
+            } else {
+                var grMetadata = new GlideRecord('sn_disco_certmgmt_certificate_metadata');
+                if (grMetadata.get('certificate', grCert.sys_id)) {
+                    grMetadata.deleteRecord();
+                }
+                /* limpa CA Scope para remover entrada do painel se estiver vencido (exceto o primeiro) */
+                if (grCert.valid_to < now) {
+                    caScope = 'NULL';
+                }
+            }
+            force = false;
+            var rtn = this.updateCertificate(grCert, caScope);
+            if (rtn) {
+                updates[grCert.sys_id] = rtn;
+            }
+            // var template = grCert.cert_template.getDisplayValue();
+            // if (caScope == 'NULL' && (
+            // 	template.indexOf('Assinatura') > -1 ||
+            // 	template.indexOf('Autentica') > -1 ||
+            // 	template == 'DomainController' ||
+            // 	template == 'CAExchange' ||
+            // 	template == '1.3.6.1.4.1.311.21.8.13852083.15555101.2510744.11777771.3074538.90.9878337.8815824' 
+            // 	)
+            // ) {
+            // 	grCert.deleteRecord();
+            // } 
+        }
+        return updates;
+    },
 
-	updateCertificate: function (certificate, caScope) {
-		var rtn = null;
-		var renewal_tracking = 'NULL';
-		if (caScope == 'internal') {
-			renewal_tracking = 'priority3';
-		} else {
-			if (caScope == 'external') {
-				renewal_tracking = 'priority1';
-			}
-		}
-		if (certificate.renewal_tracking != renewal_tracking || certificate.u_ca_scope != caScope) {
-			certificate.renewal_tracking = renewal_tracking;
-			certificate.u_ca_scope = caScope;
-			certificate.update();
-		}
-		rtn = certificate.subject_common_name + '| |' + certificate.valid_to.getDisplayValue() + ' scope: |' + caScope + '| template: ' + certificate.cert_template;
-		return rtn;
-	},
+    updateCertificate: function(certificate, caScope) {
+        var rtn = null;
+        var renewal_tracking = 'NULL';
+        if (caScope == 'internal') {
+            renewal_tracking = 'priority3';
+        } else {
+            if (caScope == 'external') {
+                renewal_tracking = 'priority1';
+            }
+        }
+        if (certificate.renewal_tracking != renewal_tracking || certificate.u_ca_scope != caScope) {
+            certificate.renewal_tracking = renewal_tracking;
+            certificate.u_ca_scope = caScope;
+            certificate.update();
+        }
+        rtn = certificate.subject_common_name + '| |' + certificate.valid_to.getDisplayValue() + ' scope: |' + caScope + '| template: ' + certificate.cert_template;
+        return rtn;
+    },
 
-	setMetaData: function (cert) {
-		var daysBeforeExpiry = parseInt(gs.getProperty("glide.discovery.certs.days_before_expiration_to_create_renewal_task", "60"));
+    setMetaData: function(cert) {
+        var daysBeforeExpiry = parseInt(gs.getProperty("glide.discovery.certs.days_before_expiration_to_create_renewal_task", "60"));
 
-		var grMetadata = new GlideRecord('sn_disco_certmgmt_certificate_metadata');
-		if (!grMetadata.get('certificate', cert.sys_id)) {
-			grMetadata.initialize();
-		}
-		var renovar = new GlideDateTime(cert.valid_to);
-		renovar.addDaysUTC(60);
+        var grMetadata = new GlideRecord('sn_disco_certmgmt_certificate_metadata');
+        if (!grMetadata.get('certificate', cert.sys_id)) {
+            grMetadata.initialize();
+        }
+        var renovar = new GlideDateTime(cert.valid_to);
+        renovar.addDaysUTC(60);
 
-		grMetadata.certificate = cert.sys_id;
-		grMetadata.auto_renew_days_before_expiry = daysBeforeExpiry;
-		grMetadata.auto_renew_enabled = true;
-		grMetadata.auto_renewal_state = 'ready';
-		grMetadata.auto_renewal_date = renovar;
-		grMetadata.update();
-	},
+        grMetadata.certificate = cert.sys_id;
+        grMetadata.auto_renew_days_before_expiry = daysBeforeExpiry;
+        grMetadata.auto_renew_enabled = true;
+        grMetadata.auto_renewal_state = 'ready';
+        grMetadata.auto_renewal_date = renovar;
+        grMetadata.update();
+    },
 
-	getCAScopeFromCN: function (commonName) {
-		if (commonName.endsWith('bnb.gov.br')) {
-			return 'external';
-		} else {
-			if (commonName.endsWith('intra.bnb') ||
-				commonName.endsWith('intra.bnb.gov.br') ||
-				commonName.endsWith('dmz.bnb') ||
-				commonName.endsWith('dreads.bnb')) {
-				return 'internal';
-			}
-		}
-		return 'NULL';
-	},
-	type: 'BNBFixScopeAndMetadata'
+    getCAScopeFromCN: function(commonName) {
+        if (commonName.endsWith('bnb.gov.br')) {
+            return 'external';
+        } else {
+            if (commonName.endsWith('intra.bnb') ||
+                commonName.endsWith('intra.bnb.gov.br') ||
+                commonName.endsWith('dmz.bnb') ||
+                commonName.endsWith('dreads.bnb')) {
+                return 'internal';
+            }
+        }
+        return 'NULL';
+    },
+    type: 'BNBFixScopeAndMetadata'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-07-10 19:10:03</sys_created_on>
         <sys_id>b66d96bc33ca47106c8432a19e5c7b2e</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>BNBFixScopeAndMetadata</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_b66d96bc33ca47106c8432a19e5c7b2e</sys_update_name>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-02 18:15:53</sys_updated_on>
+        <sys_updated_by>C028123@bnb.gov.br</sys_updated_by>
+        <sys_updated_on>2026-09-02 19:32:15</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
