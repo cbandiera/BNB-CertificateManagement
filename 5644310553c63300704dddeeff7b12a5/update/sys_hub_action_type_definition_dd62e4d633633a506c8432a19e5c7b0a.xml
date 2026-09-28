@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>BNB Dispara Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd62e4d633633a506c8432a19e5c7b0a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:45:30</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:25</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -106,10 +106,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b4f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 12:41:08</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2026-09-28 13:41:18</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">a25f89e63327b2906c8432a19e5c7b20</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=dd62e4d633633a506c8432a19e5c7b0a"/>
@@ -740,10 +740,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>60acf1a233ab36906c8432a19e5c7b74</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-06-10 20:43:51</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:16</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=60acf1a233ab36906c8432a19e5c7b74"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -768,9 +768,9 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>24acf1a233ab36906c8432a19e5c7b9f</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-06-10 20:43:51</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:16</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
   taskConfig = {&#13;
     assignment_group: null,&#13;
@@ -836,6 +836,9 @@
     outputs.assignment_group = taskConfig.assignment_group;&#13;
   } catch (ex) {&#13;
     sendWorkNotes(taskConfig.task, "*** ERRO " + ex);&#13;
+    new global.GlideQuery(taskConfig.task.sys_class_name)&#13;
+      .where('sys_id', taskConfig.task.sys_id)&#13;
+      .update({ state: 3});&#13;
     throw new Error("EDX Dispara Job Ansible ERROR: " + ex);&#13;
   }&#13;
 })(inputs, outputs);&#13;
@@ -880,7 +883,7 @@ function buscaIPPort(certificate, hostTypes) {&#13;
     .where("certificate", certificate)&#13;
     .orderBy("source", "port")&#13;
     .select("source", "port")&#13;
-    .forEach(function(inst) {&#13;
+    .forEach(function (inst) {&#13;
       installedCertificates.push(inst.source + ":" + inst.port);&#13;
     });&#13;
   if (installedCertificates.length == 0) {&#13;
@@ -894,7 +897,7 @@ function buscaIPPort(certificate, hostTypes) {&#13;
     }&#13;
   }&#13;
 &#13;
-  var ipPort = installedCertificates.reduce(function(compat, ipPort) {&#13;
+  var ipPort = installedCertificates.reduce(function (compat, ipPort) {&#13;
     if (!compat) {&#13;
       var ipPortArr = ipPort.split(":");&#13;
       if (["8443", "9443", "443"].includes(ipPortArr[1])) {&#13;
@@ -947,7 +950,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
     .where("ip_address", ipPort.ip)&#13;
     .where("sys_class_name", "IN", hostTypes)&#13;
     .select("sys_id", "sys_class_name")&#13;
-    .forEach(function(ci) {&#13;
+    .forEach(function (ci) {&#13;
       var ix = hostTypes.indexOf(ci.sys_class_name);&#13;
       if (ix &lt; found) {&#13;
         found = ix;&#13;
@@ -5052,14 +5055,14 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b33</sys_id>
-        <sys_mod_count>163</sys_mod_count>
+        <sys_mod_count>165</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:45:22</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5460,17 +5463,17 @@ function addWorkNotes(taskId, message) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8e2db56a33ab36906c8432a19e5c7b2d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>5b141a223b160354d0457237f4e45ad6</snapshot>
+        <snapshot>4908d9e233af0f106c8432a19e5c7bc7</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e2db56a33ab36906c8432a19e5c7b2d</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:45:35</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:29</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5575,10 +5578,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>e12d356a33ab36906c8432a19e5c7b50</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 12:41:16</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2026-09-28 13:41:25</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">652df16a33ab36906c8432a19e5c7bda</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=812d716a33ab36906c8432a19e5c7b0f"/>
@@ -6816,10 +6819,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:27</sys_created_on>
         <sys_id>892d716a33ab36906c8432a19e5c7bd9</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-06-10 20:43:58</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:23</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=892d716a33ab36906c8432a19e5c7bd9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6844,9 +6847,9 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:28</sys_created_on>
         <sys_id>d52db16a33ab36906c8432a19e5c7b59</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-06-10 20:43:58</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:23</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
   taskConfig = {&#13;
     assignment_group: null,&#13;
@@ -6912,6 +6915,9 @@ function addWorkNotes(taskId, message) {&#13;
     outputs.assignment_group = taskConfig.assignment_group;&#13;
   } catch (ex) {&#13;
     sendWorkNotes(taskConfig.task, "*** ERRO " + ex);&#13;
+    new global.GlideQuery(taskConfig.task.sys_class_name)&#13;
+      .where('sys_id', taskConfig.task.sys_id)&#13;
+      .update({ state: 3});&#13;
     throw new Error("EDX Dispara Job Ansible ERROR: " + ex);&#13;
   }&#13;
 })(inputs, outputs);&#13;
@@ -6956,7 +6962,7 @@ function buscaIPPort(certificate, hostTypes) {&#13;
     .where("certificate", certificate)&#13;
     .orderBy("source", "port")&#13;
     .select("source", "port")&#13;
-    .forEach(function(inst) {&#13;
+    .forEach(function (inst) {&#13;
       installedCertificates.push(inst.source + ":" + inst.port);&#13;
     });&#13;
   if (installedCertificates.length == 0) {&#13;
@@ -6970,7 +6976,7 @@ function buscaIPPort(certificate, hostTypes) {&#13;
     }&#13;
   }&#13;
 &#13;
-  var ipPort = installedCertificates.reduce(function(compat, ipPort) {&#13;
+  var ipPort = installedCertificates.reduce(function (compat, ipPort) {&#13;
     if (!compat) {&#13;
       var ipPortArr = ipPort.split(":");&#13;
       if (["8443", "9443", "443"].includes(ipPortArr[1])) {&#13;
@@ -7023,7 +7029,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
     .where("ip_address", ipPort.ip)&#13;
     .where("sys_class_name", "IN", hostTypes)&#13;
     .select("sys_id", "sys_class_name")&#13;
-    .forEach(function(ci) {&#13;
+    .forEach(function (ci) {&#13;
       var ix = hostTypes.indexOf(ci.sys_class_name);&#13;
       if (ix &lt; found) {&#13;
         found = ix;&#13;
@@ -10222,14 +10228,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>252d356a33ab36906c8432a19e5c7b05</sys_id>
-        <sys_mod_count>103</sys_mod_count>
+        <sys_mod_count>105</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:45:30</sys_updated_on>
+        <sys_updated_on>2026-09-28 13:41:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10890,6 +10896,6 @@ function sendWorkNotes(taskId, notes) {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
         <latest_snapshot>812d716a33ab36906c8432a19e5c7b0f</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch10-hotfix3-07-01-2026_07-02-2026_1215.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12-07-16-2026_07-31-2026_1556.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
