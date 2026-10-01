@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2178ae1c33f37a906c8432a19e5c7bb0</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>BNB Processa Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -44,11 +44,11 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_flow_2178ae1c33f37a906c8432a19e5c7bb0</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:35</sys_updated_on>
+        <sys_updated_on>2026-09-28 17:10:39</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>6e0f86403364c7106c8432a19e5c7b1c</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=2178ae1c33f37a906c8432a19e5c7bb0"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
@@ -1166,7 +1166,7 @@
         <sys_created_on>2026-03-25 20:18:15</sys_created_on>
         <sys_id>3681771a3bb73210a1e3f65436e45acc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>AWX Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1189,7 +1189,7 @@
         <sys_created_on>2026-03-19 18:34:45</sys_created_on>
         <sys_id>485068ec3373fe906c8432a19e5c7be9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>AWX Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1212,7 +1212,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>647ac318333ffa906c8432a19e5c7bc3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Next Page</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1235,7 +1235,7 @@
         <sys_created_on>2026-03-25 20:18:15</sys_created_on>
         <sys_id>f681771a3bb73210a1e3f65436e45ace</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Next Page</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1259,7 +1259,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>907a8318333ffa906c8432a19e5c7bf1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Automated Task</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1282,7 +1282,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>987ac318333ffa906c8432a19e5c7b29</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>AWX Credential</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1374,7 +1374,7 @@
         <sys_created_on>2026-03-23 13:18:36</sys_created_on>
         <sys_id>d05ef72d3bbf3e54a1e3f65436e45aa1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Force Flow</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1546,7 +1546,7 @@
         <sys_created_on>2026-03-19 18:10:22</sys_created_on>
         <sys_id>47ba94a433fbbe906c8432a19e5c7b0f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Message</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1569,7 +1569,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>e87ac318333ffa906c8432a19e5c7ba9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2725,7 +2725,7 @@
         <sys_created_on>2026-03-25 20:18:23</sys_created_on>
         <sys_id>30913fda3bb73210a1e3f65436e45a4d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Next Page</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2748,7 +2748,7 @@
         <sys_created_on>2026-03-19 18:08:30</sys_created_on>
         <sys_id>774a946833bbbe906c8432a19e5c7b07</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Next Page</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2771,7 +2771,7 @@
         <sys_created_on>2026-03-19 20:02:03</sys_created_on>
         <sys_id>8f44b028337332d06c8432a19e5c7b14</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>AWX Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2794,7 +2794,7 @@
         <sys_created_on>2026-03-25 20:18:23</sys_created_on>
         <sys_id>f891bbda3bb73210a1e3f65436e45a40</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>AWX Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2841,7 +2841,7 @@
         <sys_created_on>2026-03-19 18:08:30</sys_created_on>
         <sys_id>674a546833bbbe906c8432a19e5c7b48</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>AWX Credential</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2864,7 +2864,7 @@
         <sys_created_on>2026-03-19 18:08:29</sys_created_on>
         <sys_id>6f4a146833bbbe906c8432a19e5c7bd6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Automated Task</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2910,7 +2910,7 @@
         <sys_created_on>2026-03-23 13:18:44</sys_created_on>
         <sys_id>ca5eff2d3bbf3e54a1e3f65436e45aac</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Force Flow</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -3105,7 +3105,7 @@
         <sys_created_on>2026-03-19 18:10:26</sys_created_on>
         <sys_id>c0ca10e433fbbe906c8432a19e5c7b3f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Message</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -3128,7 +3128,7 @@
         <sys_created_on>2026-03-19 18:08:30</sys_created_on>
         <sys_id>f34a546833bbbe906c8432a19e5c7b94</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Job Status</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -3142,7 +3142,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>2178ae1c33f37a906c8432a19e5c7bb0</sys_id>
         <latest_snapshot>5f4ad06833bbbe906c8432a19e5c7b98</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch10-hotfix3-07-01-2026_07-02-2026_1215.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12-07-16-2026_07-31-2026_1556.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2178ae1c33f37a906c8432a19e5c7bb0"/>
@@ -3150,7 +3150,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"445ad46833bbbe906c8432a19e5c7ba2","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</plan_id>
-        <snapshot>46d334de3b924714d0457237f4e45a9f</snapshot>
+        <snapshot>a60f02aa33e78f106c8432a19e5c7b40</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 18:08:31</sys_created_on>
         <sys_domain>global</sys_domain>
