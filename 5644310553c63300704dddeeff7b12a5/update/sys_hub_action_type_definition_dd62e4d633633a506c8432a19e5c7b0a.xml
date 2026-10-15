@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name>BNB Dispara Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd62e4d633633a506c8432a19e5c7b0a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:25</sys_updated_on>
+        <sys_updated_on>2026-10-15 19:09:40</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -106,10 +106,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b4f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:18</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <sys_updated_on>2026-10-13 18:40:08</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">a25f89e63327b2906c8432a19e5c7b20</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=dd62e4d633633a506c8432a19e5c7b0a"/>
@@ -740,10 +740,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>60acf1a233ab36906c8432a19e5c7b74</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:16</sys_updated_on>
+        <sys_updated_on>2026-10-15 19:09:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=60acf1a233ab36906c8432a19e5c7b74"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -768,34 +768,62 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>24acf1a233ab36906c8432a19e5c7b9f</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:16</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
-  taskConfig = {&#13;
-    assignment_group: null,&#13;
-    body: {&#13;
-      extra_vars: {&#13;
-        change_order: inputs.task.number + "",&#13;
-      },&#13;
-    },&#13;
-    certificate_task: inputs.task,&#13;
-    description: null,&#13;
-    force_host: null,&#13;
-    ip_address: null,&#13;
-    port: null,&#13;
-    ansible_flow: null,&#13;
-    resource_path: null,&#13;
-    short_description: null,&#13;
-    target_ci: null,&#13;
-    task: inputs.task,&#13;
-    target_ci: null,&#13;
-  };&#13;
+        <sys_updated_on>2026-10-15 19:09:30</sys_updated_on>
+        <value>/**&#13;
+ * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
+ * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
+ * @category Workflow Studio Action&#13;
+ * @version 1.0.0&#13;
+ * @author Carlos Paiva&#13;
+ * @updated 2024-06-10&#13;
+ */&#13;
+&#13;
+/**&#13;
+ * @typedef {Object} Inputs&#13;
+ * @property {GlideRecord} task - Certificate task(Automated Flow) - sn_disco_certmgmt_task.&#13;
+ * @property {string} force_flow - Forçar fluxo do Ansible Tower (flow_a, flow_b, flow_c).&#13;
+ * @property {string} external_group - Grupo de atribuição para certificados externos.&#13;
+ * @property {string} internal_group - Grupo de atribuição para certificados internos.&#13;
+ * @property {string} install_group - Grupo de atribuição para instalação de certificados.&#13;
+ */&#13;
+&#13;
+/**&#13;
+ * @typedef {Object} Outputs&#13;
+ * @property {GlideRecord} certificate_task - Registro da task de certificado.&#13;
+ * @property {string} resource_path - Caminho do recurso do job template no Ansible Tower.&#13;
+ * @property {string} post_body - Corpo da requisição POST para o Ansible Tower.&#13;
+ * @property {string} renewal_flow - Fluxo de renovação do Ansible Tower (flow_a, flow_b, flow_c).&#13;
+ * @property {string} target_ci - CI alvo para a instalação do certificado.&#13;
+ * @property {string} ip_address - Endereço IP do CI alvo.&#13;
+ * @property {string} port - Porta do CI alvo.&#13;
+ * @property {string} assignment_group - Grupo de atribuição da task.&#13;
+ * @property {string} short_description - Descrição resumida da task.&#13;
+ * @property {string} description - Descrição detalhada da task.&#13;
+ */&#13;
+(function execute(inputs, outputs) {&#13;
   try {&#13;
+    var taskConfig = {&#13;
+      assignment_group: null,&#13;
+      body: {&#13;
+        extra_vars: {&#13;
+          change_order: inputs.task.number + "",&#13;
+        },&#13;
+      },&#13;
+      certificate_task: inputs.task,&#13;
+      description: null,&#13;
+      force_host: null,&#13;
+      ip_address: null,&#13;
+      port: null,&#13;
+      ansible_flow: null,&#13;
+      resource_path: null,&#13;
+      short_description: null,&#13;
+      task: inputs.task,&#13;
+      target_ci: null,&#13;
+    };&#13;
     if (["flow_a", "flow_b", "flow_c"].includes(inputs.force_flow)) {&#13;
       taskConfig.ansible_flow = inputs.force_flow;&#13;
-    } else if (inputs.force_flow) {&#13;
-      sendWorkNotes("Ignorando forçar fluxo inválido - " + inputs.force_flow);&#13;
     }&#13;
 &#13;
     // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
@@ -806,7 +834,6 @@
       );&#13;
       taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
     }&#13;
-&#13;
     var ixTaskType = [&#13;
       "sn_disco_certmgmt_new_task",&#13;
       "sn_disco_certmgmt_renew_task",&#13;
@@ -819,13 +846,12 @@
       throw new Error(&#13;
         "Task de certificado de classe não suportada: " +&#13;
         taskConfig.task.number +&#13;
+        " - " +&#13;
         taskConfig.task.sys_class_name,&#13;
       );&#13;
     }&#13;
-&#13;
     outputs.description = taskConfig.description;&#13;
     outputs.short_description = taskConfig.short_description;&#13;
-&#13;
     outputs.certificate_task = taskConfig.certificate_task;&#13;
     outputs.resource_path = taskConfig.resource_path;&#13;
     outputs.post_body = JSON.stringify(taskConfig.body);&#13;
@@ -835,20 +861,20 @@
     outputs.port = taskConfig.port;&#13;
     outputs.assignment_group = taskConfig.assignment_group;&#13;
   } catch (ex) {&#13;
-    sendWorkNotes(taskConfig.task, "*** ERRO " + ex);&#13;
-    new global.GlideQuery(taskConfig.task.sys_class_name)&#13;
-      .where('sys_id', taskConfig.task.sys_id)&#13;
-      .update({ state: 3});&#13;
+    sendWorkNotes(inputs.task, "*** ERRO " + ex);&#13;
+    new global.GlideQuery(inputs.task.sys_class_name + "")&#13;
+      .where("sys_id", inputs.task.sys_id + "")&#13;
+      .update({ state: 3 });&#13;
     throw new Error("EDX Dispara Job Ansible ERROR: " + ex);&#13;
   }&#13;
 })(inputs, outputs);&#13;
 &#13;
 function newCertificate(taskConfig, inputs) {&#13;
-  taskConfig.commonName = taskConfig.task.subject_common_name;&#13;
+  taskConfig.commonName = taskConfig.task.subject_common_name + "";&#13;
 &#13;
-  var ansibleCommonName = taskConfig.force_host ?&#13;
-    taskConfig.force_host :&#13;
-    taskConfig.commonName;&#13;
+  var ansibleCommonName = taskConfig.force_host&#13;
+    ? taskConfig.force_host&#13;
+    : taskConfig.commonName;&#13;
 &#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (taskConfig.task.certificate_purpose == "external") {&#13;
@@ -856,36 +882,44 @@ function newCertificate(taskConfig, inputs) {&#13;
     } else {&#13;
       taskConfig.ansible_flow = "flow_b";&#13;
     }&#13;
-    var san = taskConfig.task.subject_alternative_name.split(",");&#13;
-    if (taskConfig.ansible_flow == "flow_a") {&#13;
-      taskConfig.body.extra_vars.common_name = ansibleCommonName;&#13;
-      taskConfig.body.extra_vars.urls = san;&#13;
-      taskConfig.resource_path = "job_templates/13/launch/";&#13;
-      taskConfig.assignment_group = inputs.external_group;&#13;
-      taskConfig.short_description =&#13;
-        "Criação de Certificado Externo Novo " + taskConfig.commonName;&#13;
-    } else {&#13;
-      taskConfig.body.extra_vars.certificado = ansibleCommonName;&#13;
-      taskConfig.body.extra_vars.key_size = 2048;&#13;
-      taskConfig.body.extra_vars.san = san;&#13;
-      taskConfig.resource_path = "job_templates/254/launch/";&#13;
-      taskConfig.assignment_group = inputs.install_group;&#13;
-      taskConfig.short_description =&#13;
-        "Criação de Certificado Interno Novo " + taskConfig.commonName;&#13;
-    }&#13;
-    taskConfig.description = taskConfig.short_description;&#13;
   }&#13;
+  var san = (taskConfig.task.subject_alternative_name + "")&#13;
+    .split(",")&#13;
+    .map(function (s) {&#13;
+      return s.trim();&#13;
+    })&#13;
+    .filter(Boolean);&#13;
+&#13;
+  if (taskConfig.ansible_flow == "flow_a") {&#13;
+    taskConfig.body.extra_vars.common_name = ansibleCommonName;&#13;
+    taskConfig.body.extra_vars.urls = san;&#13;
+    taskConfig.resource_path = "job_templates/13/launch/";&#13;
+    taskConfig.assignment_group = inputs.external_group;&#13;
+    taskConfig.short_description =&#13;
+      "Criação de Certificado Externo Novo " + taskConfig.commonName;&#13;
+  } else {&#13;
+    taskConfig.body.extra_vars.certificado = ansibleCommonName;&#13;
+    taskConfig.body.extra_vars.key_size = 2048;&#13;
+    taskConfig.body.extra_vars.san = san;&#13;
+    taskConfig.resource_path = "job_templates/254/launch/";&#13;
+    taskConfig.assignment_group = inputs.install_group;&#13;
+    taskConfig.short_description =&#13;
+      "Criação de Certificado Interno Novo " + taskConfig.commonName;&#13;
+  }&#13;
+  taskConfig.description = taskConfig.short_description;&#13;
 }&#13;
 &#13;
-function buscaIPPort(certificate, hostTypes) {&#13;
+function buscaIPPort(certificate) {&#13;
   var installedCertificates = [];&#13;
   new global.GlideQuery("sn_disco_certmgmt_cmdb_installed_certificate")&#13;
-    .where("certificate", certificate)&#13;
-    .orderBy("source", "port")&#13;
+    .where("certificate", certificate.sys_id + "")&#13;
     .select("source", "port")&#13;
     .forEach(function (inst) {&#13;
-      installedCertificates.push(inst.source + ":" + inst.port);&#13;
+      if (inst.source &amp;&amp; inst.port) {&#13;
+        installedCertificates.push(inst.source + ":" + inst.port);&#13;
+      }&#13;
     });&#13;
+&#13;
   if (installedCertificates.length == 0) {&#13;
     var grRelCi = new GlideRecord("cmdb_rel_ci");&#13;
     grRelCi.addQuery("type.name", "Uses::Used by");&#13;
@@ -893,7 +927,9 @@ function buscaIPPort(certificate, hostTypes) {&#13;
     grRelCi.query();&#13;
 &#13;
     while (grRelCi.next()) {&#13;
-      installedCertificates.push(grRelCi.parent.ip_address + '' + ":" + "443");&#13;
+      installedCertificates.push(&#13;
+        grRelCi.parent.ip_address + "" + ":" + "443",&#13;
+      );&#13;
     }&#13;
   }&#13;
 &#13;
@@ -904,7 +940,7 @@ function buscaIPPort(certificate, hostTypes) {&#13;
         compat = {&#13;
           ip: ipPortArr[0],&#13;
           port: parseInt(ipPortArr[1]),&#13;
-          installedCertificates: installedCertificates&#13;
+          installedCertificates: installedCertificates,&#13;
         };&#13;
       }&#13;
     }&#13;
@@ -931,51 +967,66 @@ function renewCertificate(taskConfig, inputs) {&#13;
 &#13;
   var certificate = taskConfig.task.certificate;&#13;
   taskConfig.commonName = certificate.subject_common_name;&#13;
-  var ansibleCommonName = taskConfig.force_host ?&#13;
-    taskConfig.force_host :&#13;
-    taskConfig.commonName;&#13;
+  var ansibleCommonName = taskConfig.force_host&#13;
+    ? taskConfig.force_host&#13;
+    : taskConfig.commonName;&#13;
 &#13;
-  var ipPort = buscaIPPort(certificate, hostTypes);&#13;
-  if (!ipPort) {&#13;
-    throw new Error(&#13;
-      "Não foi possível encontrar IP e Porta para o certificado: " +&#13;
-      taskConfig.commonName&#13;
-    );&#13;
-  }&#13;
+  var ipPort = buscaIPPort(certificate);&#13;
 &#13;
-  var hostCI;&#13;
-  var F5Host;&#13;
-  var found = 999;&#13;
-  new global.GlideQuery("cmdb_ci")&#13;
-    .where("ip_address", ipPort.ip)&#13;
-    .where("sys_class_name", "IN", hostTypes)&#13;
-    .select("sys_id", "sys_class_name")&#13;
-    .forEach(function (ci) {&#13;
-      var ix = hostTypes.indexOf(ci.sys_class_name);&#13;
-      if (ix &lt; found) {&#13;
-        found = ix;&#13;
-        hostCI = ci.sys_id;&#13;
-        if (ix == 0 || ix == 1) {&#13;
-          F5Host = hostCI;&#13;
+  var hostCI = null;&#13;
+  var F5Host = null;&#13;
+  if (ipPort) {&#13;
+    var found = 999;&#13;
+    new global.GlideQuery("cmdb_ci")&#13;
+      .where("ip_address", ipPort.ip)&#13;
+      .where("sys_class_name", "IN", hostTypes)&#13;
+      .select("sys_id", "sys_class_name")&#13;
+      .forEach(function (ci) {&#13;
+        var ix = hostTypes.indexOf(ci.sys_class_name);&#13;
+        if (ix &lt; found) {&#13;
+          found = ix;&#13;
+          hostCI = ci.sys_id;&#13;
+          if (ix == 0 || ix == 1) {&#13;
+            F5Host = hostCI;&#13;
+          }&#13;
         }&#13;
-      }&#13;
-    });&#13;
-  if (!hostCI) {&#13;
-    hostCi = new global.GlideQuery("cmdb_ci")&#13;
-      .getBy({&#13;
-        ip_address: ipPort.ip&#13;
-      }, ["sys_id"])&#13;
-      .orElse({&#13;
-        sys_id: null&#13;
-      }).sys_id;&#13;
+      });&#13;
+    if (!hostCI) {&#13;
+      hostCI = new global.GlideQuery("cmdb_ci")&#13;
+        .getBy(&#13;
+          {&#13;
+            ip_address: ipPort.ip,&#13;
+          },&#13;
+          ["sys_id"],&#13;
+        )&#13;
+        .orElse({&#13;
+          sys_id: null,&#13;
+        }).sys_id;&#13;
+    }&#13;
+  } else {&#13;
+    var requireIp = gs.getProperty("sn_disco_certmgmt.require_ip_address_for_renewal", "false") == "true";&#13;
+    if (requireIp) {&#13;
+      throw new Error(&#13;
+        "Não foi possível encontrar IP e Porta para o certificado: " +&#13;
+        taskConfig.commonName&#13;
+      );&#13;
+    } else {&#13;
+      sendWorkNotes(&#13;
+        taskConfig.task,&#13;
+        "IP e Porta não encontrados para o certificado " +&#13;
+        taskConfig.commonName +&#13;
+        " - não foi possível verificar instalação em Load Balancer",&#13;
+      );&#13;
+    }&#13;
   }&#13;
   taskConfig.short_description =&#13;
     "Renovação de Certificado " + taskConfig.commonName;&#13;
-  taskConfig.description =&#13;
-    "Certificado " +&#13;
+  taskConfig.description = ipPort&#13;
+    ? "Certificado " +&#13;
     taskConfig.commonName +&#13;
     " Instalado em:\n" +&#13;
-    ipPort.installedCertificates.join("\n");&#13;
+    ipPort.installedCertificates.join("\n")&#13;
+    : taskConfig.short_description;&#13;
 &#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (certificate.u_ca_scope == "external") {&#13;
@@ -991,11 +1042,12 @@ function renewCertificate(taskConfig, inputs) {&#13;
 &#13;
   if (taskConfig.ansible_flow == "flow_c") {&#13;
     // Cenario C - Renovação Completa - Certificado F5 - Job 65&#13;
-    if (!ipPort) {&#13;
-      throw new Error("Missing Target CI for 'C' Flow");&#13;
-    }&#13;
-    ipPort.ip = "10.6.0.10";&#13;
-    taskConfig.body.extra_vars.f5_host = ipPort.ip;&#13;
+    var f5Ip = gs.getProperty(&#13;
+      "sn_disco_certmgmt.BNB_F5LB_IP_Address",&#13;
+      "10.6.0.10",&#13;
+    );&#13;
+    taskConfig.ip_address = f5Ip;&#13;
+    taskConfig.body.extra_vars.f5_host = f5Ip;&#13;
     taskConfig.body.extra_vars.profile_name_client =&#13;
       "Client_" + ansibleCommonName;&#13;
     taskConfig.body.extra_vars.profile_name_server =&#13;
@@ -1004,14 +1056,14 @@ function renewCertificate(taskConfig, inputs) {&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
   } else {&#13;
     taskConfig.body.extra_vars.url =&#13;
-      "https://" + ansibleCommonName + ":" + ipPort.port;&#13;
+      "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
     if (taskConfig.ansible_flow == "flow_b") {&#13;
       // Cenario B - GERAR PKEY, CSR, Assinar CA e Exportar - Job 19&#13;
       taskConfig.resource_path = "job_templates/19/launch/";&#13;
       taskConfig.assignment_group = inputs.install_group;&#13;
     } else {&#13;
       // Cenario A - GERAR apenas PKEY e CSR - Job 15&#13;
-      taskConfig.resource_path = "job_templates/15/launch";&#13;
+      taskConfig.resource_path = "job_templates/15/launch/";&#13;
       if (certificate.u_ca_scope == "internal") {&#13;
         taskConfig.assignment_group = inputs.internal_group;&#13;
       } else {&#13;
@@ -1021,8 +1073,10 @@ function renewCertificate(taskConfig, inputs) {&#13;
   }&#13;
 &#13;
   taskConfig.target_ci = hostCI;&#13;
-  taskConfig.ip_address = ipPort.ip;&#13;
-  taskConfig.port = parseInt(ipPort.port) + "";&#13;
+  if (ipPort) {&#13;
+    taskConfig.ip_address = taskConfig.ip_address || ipPort.ip;&#13;
+    taskConfig.port = ipPort.port + "";&#13;
+  }&#13;
 }&#13;
 &#13;
 function sendWorkNotes(taskId, notes) {&#13;
@@ -1036,7 +1090,8 @@ function sendWorkNotes(taskId, notes) {&#13;
     .inBackground()&#13;
     .withInputs(params)&#13;
     .run();&#13;
-}</value>
+}&#13;
+</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=60acf1a233ab36906c8432a19e5c7b74"/>
@@ -5055,14 +5110,14 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b33</sys_id>
-        <sys_mod_count>165</sys_mod_count>
+        <sys_mod_count>177</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:18</sys_updated_on>
+        <sys_updated_on>2026-10-15 19:09:31</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5463,17 +5518,17 @@ function addWorkNotes(taskId, message) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8e2db56a33ab36906c8432a19e5c7b2d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>4908d9e233af0f106c8432a19e5c7bc7</snapshot>
+        <snapshot>8726464c3b8cd7d0d0457237f4e45a85</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e2db56a33ab36906c8432a19e5c7b2d</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:29</sys_updated_on>
+        <sys_updated_on>2026-10-15 19:09:43</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5578,10 +5633,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>e12d356a33ab36906c8432a19e5c7b50</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:25</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <sys_updated_on>2026-10-13 18:40:16</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">652df16a33ab36906c8432a19e5c7bda</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=812d716a33ab36906c8432a19e5c7b0f"/>
@@ -6819,10 +6874,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:27</sys_created_on>
         <sys_id>892d716a33ab36906c8432a19e5c7bd9</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:23</sys_updated_on>
+        <sys_updated_on>2026-10-15 19:09:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=892d716a33ab36906c8432a19e5c7bd9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6847,34 +6902,62 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:28</sys_created_on>
         <sys_id>d52db16a33ab36906c8432a19e5c7b59</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:23</sys_updated_on>
-        <value>(function execute(inputs, outputs) {&#13;
-  taskConfig = {&#13;
-    assignment_group: null,&#13;
-    body: {&#13;
-      extra_vars: {&#13;
-        change_order: inputs.task.number + "",&#13;
-      },&#13;
-    },&#13;
-    certificate_task: inputs.task,&#13;
-    description: null,&#13;
-    force_host: null,&#13;
-    ip_address: null,&#13;
-    port: null,&#13;
-    ansible_flow: null,&#13;
-    resource_path: null,&#13;
-    short_description: null,&#13;
-    target_ci: null,&#13;
-    task: inputs.task,&#13;
-    target_ci: null,&#13;
-  };&#13;
+        <sys_updated_on>2026-10-15 19:09:38</sys_updated_on>
+        <value>/**&#13;
+ * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
+ * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
+ * @category Workflow Studio Action&#13;
+ * @version 1.0.0&#13;
+ * @author Carlos Paiva&#13;
+ * @updated 2024-06-10&#13;
+ */&#13;
+&#13;
+/**&#13;
+ * @typedef {Object} Inputs&#13;
+ * @property {GlideRecord} task - Certificate task(Automated Flow) - sn_disco_certmgmt_task.&#13;
+ * @property {string} force_flow - Forçar fluxo do Ansible Tower (flow_a, flow_b, flow_c).&#13;
+ * @property {string} external_group - Grupo de atribuição para certificados externos.&#13;
+ * @property {string} internal_group - Grupo de atribuição para certificados internos.&#13;
+ * @property {string} install_group - Grupo de atribuição para instalação de certificados.&#13;
+ */&#13;
+&#13;
+/**&#13;
+ * @typedef {Object} Outputs&#13;
+ * @property {GlideRecord} certificate_task - Registro da task de certificado.&#13;
+ * @property {string} resource_path - Caminho do recurso do job template no Ansible Tower.&#13;
+ * @property {string} post_body - Corpo da requisição POST para o Ansible Tower.&#13;
+ * @property {string} renewal_flow - Fluxo de renovação do Ansible Tower (flow_a, flow_b, flow_c).&#13;
+ * @property {string} target_ci - CI alvo para a instalação do certificado.&#13;
+ * @property {string} ip_address - Endereço IP do CI alvo.&#13;
+ * @property {string} port - Porta do CI alvo.&#13;
+ * @property {string} assignment_group - Grupo de atribuição da task.&#13;
+ * @property {string} short_description - Descrição resumida da task.&#13;
+ * @property {string} description - Descrição detalhada da task.&#13;
+ */&#13;
+(function execute(inputs, outputs) {&#13;
   try {&#13;
+    var taskConfig = {&#13;
+      assignment_group: null,&#13;
+      body: {&#13;
+        extra_vars: {&#13;
+          change_order: inputs.task.number + "",&#13;
+        },&#13;
+      },&#13;
+      certificate_task: inputs.task,&#13;
+      description: null,&#13;
+      force_host: null,&#13;
+      ip_address: null,&#13;
+      port: null,&#13;
+      ansible_flow: null,&#13;
+      resource_path: null,&#13;
+      short_description: null,&#13;
+      task: inputs.task,&#13;
+      target_ci: null,&#13;
+    };&#13;
     if (["flow_a", "flow_b", "flow_c"].includes(inputs.force_flow)) {&#13;
       taskConfig.ansible_flow = inputs.force_flow;&#13;
-    } else if (inputs.force_flow) {&#13;
-      sendWorkNotes("Ignorando forçar fluxo inválido - " + inputs.force_flow);&#13;
     }&#13;
 &#13;
     // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
@@ -6885,7 +6968,6 @@ function addWorkNotes(taskId, message) {&#13;
       );&#13;
       taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
     }&#13;
-&#13;
     var ixTaskType = [&#13;
       "sn_disco_certmgmt_new_task",&#13;
       "sn_disco_certmgmt_renew_task",&#13;
@@ -6898,13 +6980,12 @@ function addWorkNotes(taskId, message) {&#13;
       throw new Error(&#13;
         "Task de certificado de classe não suportada: " +&#13;
         taskConfig.task.number +&#13;
+        " - " +&#13;
         taskConfig.task.sys_class_name,&#13;
       );&#13;
     }&#13;
-&#13;
     outputs.description = taskConfig.description;&#13;
     outputs.short_description = taskConfig.short_description;&#13;
-&#13;
     outputs.certificate_task = taskConfig.certificate_task;&#13;
     outputs.resource_path = taskConfig.resource_path;&#13;
     outputs.post_body = JSON.stringify(taskConfig.body);&#13;
@@ -6914,20 +6995,20 @@ function addWorkNotes(taskId, message) {&#13;
     outputs.port = taskConfig.port;&#13;
     outputs.assignment_group = taskConfig.assignment_group;&#13;
   } catch (ex) {&#13;
-    sendWorkNotes(taskConfig.task, "*** ERRO " + ex);&#13;
-    new global.GlideQuery(taskConfig.task.sys_class_name)&#13;
-      .where('sys_id', taskConfig.task.sys_id)&#13;
-      .update({ state: 3});&#13;
+    sendWorkNotes(inputs.task, "*** ERRO " + ex);&#13;
+    new global.GlideQuery(inputs.task.sys_class_name + "")&#13;
+      .where("sys_id", inputs.task.sys_id + "")&#13;
+      .update({ state: 3 });&#13;
     throw new Error("EDX Dispara Job Ansible ERROR: " + ex);&#13;
   }&#13;
 })(inputs, outputs);&#13;
 &#13;
 function newCertificate(taskConfig, inputs) {&#13;
-  taskConfig.commonName = taskConfig.task.subject_common_name;&#13;
+  taskConfig.commonName = taskConfig.task.subject_common_name + "";&#13;
 &#13;
-  var ansibleCommonName = taskConfig.force_host ?&#13;
-    taskConfig.force_host :&#13;
-    taskConfig.commonName;&#13;
+  var ansibleCommonName = taskConfig.force_host&#13;
+    ? taskConfig.force_host&#13;
+    : taskConfig.commonName;&#13;
 &#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (taskConfig.task.certificate_purpose == "external") {&#13;
@@ -6935,36 +7016,44 @@ function newCertificate(taskConfig, inputs) {&#13;
     } else {&#13;
       taskConfig.ansible_flow = "flow_b";&#13;
     }&#13;
-    var san = taskConfig.task.subject_alternative_name.split(",");&#13;
-    if (taskConfig.ansible_flow == "flow_a") {&#13;
-      taskConfig.body.extra_vars.common_name = ansibleCommonName;&#13;
-      taskConfig.body.extra_vars.urls = san;&#13;
-      taskConfig.resource_path = "job_templates/13/launch/";&#13;
-      taskConfig.assignment_group = inputs.external_group;&#13;
-      taskConfig.short_description =&#13;
-        "Criação de Certificado Externo Novo " + taskConfig.commonName;&#13;
-    } else {&#13;
-      taskConfig.body.extra_vars.certificado = ansibleCommonName;&#13;
-      taskConfig.body.extra_vars.key_size = 2048;&#13;
-      taskConfig.body.extra_vars.san = san;&#13;
-      taskConfig.resource_path = "job_templates/254/launch/";&#13;
-      taskConfig.assignment_group = inputs.install_group;&#13;
-      taskConfig.short_description =&#13;
-        "Criação de Certificado Interno Novo " + taskConfig.commonName;&#13;
-    }&#13;
-    taskConfig.description = taskConfig.short_description;&#13;
   }&#13;
+  var san = (taskConfig.task.subject_alternative_name + "")&#13;
+    .split(",")&#13;
+    .map(function (s) {&#13;
+      return s.trim();&#13;
+    })&#13;
+    .filter(Boolean);&#13;
+&#13;
+  if (taskConfig.ansible_flow == "flow_a") {&#13;
+    taskConfig.body.extra_vars.common_name = ansibleCommonName;&#13;
+    taskConfig.body.extra_vars.urls = san;&#13;
+    taskConfig.resource_path = "job_templates/13/launch/";&#13;
+    taskConfig.assignment_group = inputs.external_group;&#13;
+    taskConfig.short_description =&#13;
+      "Criação de Certificado Externo Novo " + taskConfig.commonName;&#13;
+  } else {&#13;
+    taskConfig.body.extra_vars.certificado = ansibleCommonName;&#13;
+    taskConfig.body.extra_vars.key_size = 2048;&#13;
+    taskConfig.body.extra_vars.san = san;&#13;
+    taskConfig.resource_path = "job_templates/254/launch/";&#13;
+    taskConfig.assignment_group = inputs.install_group;&#13;
+    taskConfig.short_description =&#13;
+      "Criação de Certificado Interno Novo " + taskConfig.commonName;&#13;
+  }&#13;
+  taskConfig.description = taskConfig.short_description;&#13;
 }&#13;
 &#13;
-function buscaIPPort(certificate, hostTypes) {&#13;
+function buscaIPPort(certificate) {&#13;
   var installedCertificates = [];&#13;
   new global.GlideQuery("sn_disco_certmgmt_cmdb_installed_certificate")&#13;
-    .where("certificate", certificate)&#13;
-    .orderBy("source", "port")&#13;
+    .where("certificate", certificate.sys_id + "")&#13;
     .select("source", "port")&#13;
     .forEach(function (inst) {&#13;
-      installedCertificates.push(inst.source + ":" + inst.port);&#13;
+      if (inst.source &amp;&amp; inst.port) {&#13;
+        installedCertificates.push(inst.source + ":" + inst.port);&#13;
+      }&#13;
     });&#13;
+&#13;
   if (installedCertificates.length == 0) {&#13;
     var grRelCi = new GlideRecord("cmdb_rel_ci");&#13;
     grRelCi.addQuery("type.name", "Uses::Used by");&#13;
@@ -6972,7 +7061,9 @@ function buscaIPPort(certificate, hostTypes) {&#13;
     grRelCi.query();&#13;
 &#13;
     while (grRelCi.next()) {&#13;
-      installedCertificates.push(grRelCi.parent.ip_address + '' + ":" + "443");&#13;
+      installedCertificates.push(&#13;
+        grRelCi.parent.ip_address + "" + ":" + "443",&#13;
+      );&#13;
     }&#13;
   }&#13;
 &#13;
@@ -6983,7 +7074,7 @@ function buscaIPPort(certificate, hostTypes) {&#13;
         compat = {&#13;
           ip: ipPortArr[0],&#13;
           port: parseInt(ipPortArr[1]),&#13;
-          installedCertificates: installedCertificates&#13;
+          installedCertificates: installedCertificates,&#13;
         };&#13;
       }&#13;
     }&#13;
@@ -7010,51 +7101,66 @@ function renewCertificate(taskConfig, inputs) {&#13;
 &#13;
   var certificate = taskConfig.task.certificate;&#13;
   taskConfig.commonName = certificate.subject_common_name;&#13;
-  var ansibleCommonName = taskConfig.force_host ?&#13;
-    taskConfig.force_host :&#13;
-    taskConfig.commonName;&#13;
+  var ansibleCommonName = taskConfig.force_host&#13;
+    ? taskConfig.force_host&#13;
+    : taskConfig.commonName;&#13;
 &#13;
-  var ipPort = buscaIPPort(certificate, hostTypes);&#13;
-  if (!ipPort) {&#13;
-    throw new Error(&#13;
-      "Não foi possível encontrar IP e Porta para o certificado: " +&#13;
-      taskConfig.commonName&#13;
-    );&#13;
-  }&#13;
+  var ipPort = buscaIPPort(certificate);&#13;
 &#13;
-  var hostCI;&#13;
-  var F5Host;&#13;
-  var found = 999;&#13;
-  new global.GlideQuery("cmdb_ci")&#13;
-    .where("ip_address", ipPort.ip)&#13;
-    .where("sys_class_name", "IN", hostTypes)&#13;
-    .select("sys_id", "sys_class_name")&#13;
-    .forEach(function (ci) {&#13;
-      var ix = hostTypes.indexOf(ci.sys_class_name);&#13;
-      if (ix &lt; found) {&#13;
-        found = ix;&#13;
-        hostCI = ci.sys_id;&#13;
-        if (ix == 0 || ix == 1) {&#13;
-          F5Host = hostCI;&#13;
+  var hostCI = null;&#13;
+  var F5Host = null;&#13;
+  if (ipPort) {&#13;
+    var found = 999;&#13;
+    new global.GlideQuery("cmdb_ci")&#13;
+      .where("ip_address", ipPort.ip)&#13;
+      .where("sys_class_name", "IN", hostTypes)&#13;
+      .select("sys_id", "sys_class_name")&#13;
+      .forEach(function (ci) {&#13;
+        var ix = hostTypes.indexOf(ci.sys_class_name);&#13;
+        if (ix &lt; found) {&#13;
+          found = ix;&#13;
+          hostCI = ci.sys_id;&#13;
+          if (ix == 0 || ix == 1) {&#13;
+            F5Host = hostCI;&#13;
+          }&#13;
         }&#13;
-      }&#13;
-    });&#13;
-  if (!hostCI) {&#13;
-    hostCi = new global.GlideQuery("cmdb_ci")&#13;
-      .getBy({&#13;
-        ip_address: ipPort.ip&#13;
-      }, ["sys_id"])&#13;
-      .orElse({&#13;
-        sys_id: null&#13;
-      }).sys_id;&#13;
+      });&#13;
+    if (!hostCI) {&#13;
+      hostCI = new global.GlideQuery("cmdb_ci")&#13;
+        .getBy(&#13;
+          {&#13;
+            ip_address: ipPort.ip,&#13;
+          },&#13;
+          ["sys_id"],&#13;
+        )&#13;
+        .orElse({&#13;
+          sys_id: null,&#13;
+        }).sys_id;&#13;
+    }&#13;
+  } else {&#13;
+    var requireIp = gs.getProperty("sn_disco_certmgmt.require_ip_address_for_renewal", "false") == "true";&#13;
+    if (requireIp) {&#13;
+      throw new Error(&#13;
+        "Não foi possível encontrar IP e Porta para o certificado: " +&#13;
+        taskConfig.commonName&#13;
+      );&#13;
+    } else {&#13;
+      sendWorkNotes(&#13;
+        taskConfig.task,&#13;
+        "IP e Porta não encontrados para o certificado " +&#13;
+        taskConfig.commonName +&#13;
+        " - não foi possível verificar instalação em Load Balancer",&#13;
+      );&#13;
+    }&#13;
   }&#13;
   taskConfig.short_description =&#13;
     "Renovação de Certificado " + taskConfig.commonName;&#13;
-  taskConfig.description =&#13;
-    "Certificado " +&#13;
+  taskConfig.description = ipPort&#13;
+    ? "Certificado " +&#13;
     taskConfig.commonName +&#13;
     " Instalado em:\n" +&#13;
-    ipPort.installedCertificates.join("\n");&#13;
+    ipPort.installedCertificates.join("\n")&#13;
+    : taskConfig.short_description;&#13;
 &#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (certificate.u_ca_scope == "external") {&#13;
@@ -7070,11 +7176,12 @@ function renewCertificate(taskConfig, inputs) {&#13;
 &#13;
   if (taskConfig.ansible_flow == "flow_c") {&#13;
     // Cenario C - Renovação Completa - Certificado F5 - Job 65&#13;
-    if (!ipPort) {&#13;
-      throw new Error("Missing Target CI for 'C' Flow");&#13;
-    }&#13;
-    ipPort.ip = "10.6.0.10";&#13;
-    taskConfig.body.extra_vars.f5_host = ipPort.ip;&#13;
+    var f5Ip = gs.getProperty(&#13;
+      "sn_disco_certmgmt.BNB_F5LB_IP_Address",&#13;
+      "10.6.0.10",&#13;
+    );&#13;
+    taskConfig.ip_address = f5Ip;&#13;
+    taskConfig.body.extra_vars.f5_host = f5Ip;&#13;
     taskConfig.body.extra_vars.profile_name_client =&#13;
       "Client_" + ansibleCommonName;&#13;
     taskConfig.body.extra_vars.profile_name_server =&#13;
@@ -7083,14 +7190,14 @@ function renewCertificate(taskConfig, inputs) {&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
   } else {&#13;
     taskConfig.body.extra_vars.url =&#13;
-      "https://" + ansibleCommonName + ":" + ipPort.port;&#13;
+      "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
     if (taskConfig.ansible_flow == "flow_b") {&#13;
       // Cenario B - GERAR PKEY, CSR, Assinar CA e Exportar - Job 19&#13;
       taskConfig.resource_path = "job_templates/19/launch/";&#13;
       taskConfig.assignment_group = inputs.install_group;&#13;
     } else {&#13;
       // Cenario A - GERAR apenas PKEY e CSR - Job 15&#13;
-      taskConfig.resource_path = "job_templates/15/launch";&#13;
+      taskConfig.resource_path = "job_templates/15/launch/";&#13;
       if (certificate.u_ca_scope == "internal") {&#13;
         taskConfig.assignment_group = inputs.internal_group;&#13;
       } else {&#13;
@@ -7100,8 +7207,10 @@ function renewCertificate(taskConfig, inputs) {&#13;
   }&#13;
 &#13;
   taskConfig.target_ci = hostCI;&#13;
-  taskConfig.ip_address = ipPort.ip;&#13;
-  taskConfig.port = parseInt(ipPort.port) + "";&#13;
+  if (ipPort) {&#13;
+    taskConfig.ip_address = taskConfig.ip_address || ipPort.ip;&#13;
+    taskConfig.port = ipPort.port + "";&#13;
+  }&#13;
 }&#13;
 &#13;
 function sendWorkNotes(taskId, notes) {&#13;
@@ -7115,7 +7224,8 @@ function sendWorkNotes(taskId, notes) {&#13;
     .inBackground()&#13;
     .withInputs(params)&#13;
     .run();&#13;
-}</value>
+}&#13;
+</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=892d716a33ab36906c8432a19e5c7bd9"/>
@@ -10228,14 +10338,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>252d356a33ab36906c8432a19e5c7b05</sys_id>
-        <sys_mod_count>105</sys_mod_count>
+        <sys_mod_count>117</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 13:41:25</sys_updated_on>
+        <sys_updated_on>2026-10-15 19:09:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10896,6 +11006,6 @@ function sendWorkNotes(taskId, notes) {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
         <latest_snapshot>812d716a33ab36906c8432a19e5c7b0f</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12-07-16-2026_07-31-2026_1556.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

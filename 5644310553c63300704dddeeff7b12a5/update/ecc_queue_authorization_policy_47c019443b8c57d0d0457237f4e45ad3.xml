@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_queue_authorization_policy">
+    <ecc_queue_authorization_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <current_executor>3f3a27d23b777618a1e3f65436e45a74</current_executor>
+        <current_executor_table>sys_hub_flow</current_executor_table>
+        <initiator>3f3a27d23b777618a1e3f65436e45a74</initiator>
+        <initiator_package>sn_disco_certmgmt</initiator_package>
+        <initiator_table>sys_hub_flow</initiator_table>
+        <registered_application/>
+        <result>track</result>
+        <scope>sn_disco_certmgmt</scope>
+        <script_type>Scripted</script_type>
+        <sys_class_name>ecc_queue_authorization_policy</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-10-15 15:16:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>47c019443b8c57d0d0457237f4e45ad3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3f3a27d23b777618a1e3f65436e45a74</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>ecc_queue_authorization_policy_47c019443b8c57d0d0457237f4e45ad3</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-10-15 15:16:28</sys_updated_on>
+        <transaction_type>REST</transaction_type>
+    </ecc_queue_authorization_policy>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>1a1414f678e0000001</claim_timestamp>
+        <metadata_update_name>ecc_queue_authorization_policy_47c019443b8c57d0d0457237f4e45ad3</metadata_update_name>
+        <previous_claim_app_version>4.2.4</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:44:45</sys_created_on>
+        <sys_id>4cfb12803b4c1bd0d0457237f4e45a44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:44:45</sys_updated_on>
+    </sys_claim>
+</record_update>

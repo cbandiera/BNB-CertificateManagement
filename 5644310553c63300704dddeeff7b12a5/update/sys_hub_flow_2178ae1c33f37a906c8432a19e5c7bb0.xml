@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3147440000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=18181533000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>bnb_obtem_resultado_job_ansible</internal_name>
-        <label_cache>[{"name":"subflow.force_flow","label":"Input➛Force Flow","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Somente gerar CSR","value":"flow_a","order":1.0},{"label":"Gera CSR e Assina Cert","value":"flow_b","order":2.0},{"label":"Gera CSR Assina e Instala","value":"flow_c","order":3.0},{"label":"Nenhum","value":"none","order":4.0}],"usedInstances":{"1df103e9-0b9a-457f-aa70-4704b0867d8f":["force_flow"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"02e416cf-7b65-4e9a-98c9-44a18cb6b5ff"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr_path","label":"9 - BNB Obtem Resultado Job Ansible➛CSR Path","reference_display":"CSR Path","type":"string","base_type":"string","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"],"c0fe8cd3-1db7-487b-b220-5480e68fd2c2":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"597c2199-57c2-4726-9877-44dc7d22f05e"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr","label":"9 - BNB Obtem Resultado Job Ansible➛CSR","reference_display":"CSR","type":"string","base_type":"string","usedInstances":{"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"],"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"subflow.automated_task.description","label":"Input➛Automated Task➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"description","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"]}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.csr","label":"8 - BNB Obtem Resultado Job Ansible➛csr","reference_display":"csr","type":"string","base_type":"string","usedInstances":{"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"f8be20e5-bd63-441b-aee4-49f0429da6ca.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"209d8edd-b16b-4635-ae4a-ef6fb44777a8.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.job_id","label":"Input➛Job ID","type":"string","base_type":"string","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["job_id"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"09db55f8-08c8-46dd-b925-870c550a4983"}},{"name":"subflow.automated_task","label":"Input➛Automated Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["renewal_task"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["renewal_task"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["renewal_task"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["task"],"e7615fff-66dd-4cfc-abd5-31141a929123":["renewal_task"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["renewal_task"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["renewal_task"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["record"],"27816523-e88c-473f-8b2e-18ab58b204f9":["renewal_task"],"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["record"],"10368e10-86c1-40a2-b0a1-a9aaa7f2cb82":["record"],"8aa28081-6164-4a93-9731-a26e05aaa595":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"34fdb810-5fd6-411f-9a5f-f9bd52cba2b5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f.job_status","label":"1 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.job_id","label":"1 - BNB Dispara Job Ansible➛Job ID","reference_display":"Job ID","type":"string","base_type":"string","usedInstances":{"e7615fff-66dd-4cfc-abd5-31141a929123":["job_id"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["job_id"],"27816523-e88c-473f-8b2e-18ab58b204f9":["job_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fad10e8-ff81-4586-b38f-e93f9095f2ce"}},{"name":"e7615fff-66dd-4cfc-abd5-31141a929123.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"flow_variable.next_page","label":"Flow Variables➛Next Page","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["next_page_link"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["next_page_link"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"],"27816523-e88c-473f-8b2e-18ab58b204f9":["next_page_link"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a7513e64-332c-4a26-8fc2-2d3eba1d93de","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.next_page_url","label":"9 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.automated_task.sys_id","label":"Input➛Automated Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"21ae93ee-2453-42bb-bb73-7fee918f752a":["conditions"]}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record.u_renewal_flow","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"Fluxo A - CA Externa","used":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"image":"","label":"Fluxo B - CA Interna / Instalação Manual","used":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"image":"","label":"Fluxo C - CA Interna / Instalação Automática","used":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"]}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.job_status","label":"9 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"],"540c24d6-bf47-44a1-9f85-b1a287291998":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2933a4fe-183a-4613-97da-87963063da2e"}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"2616a207-762b-4ecf-b399-def380774902":["record"],"22376c6e-e001-4eea-b7f1-233ea16611d1":["record"],"d0c8d9f5-7eb2-47d9-9472-108b03ab534a":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"033fb99d-55ee-448e-96a9-faf0cbdcd88e":["condition"]},"attributes":{}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8aa28081-6164-4a93-9731-a26e05aaa595":["work_notes"]},"attributes":{}},{"name":"subflow.awx_credential","label":"Input➛AWX Credential","reference":"api_key_credentials","reference_display":"API Key Credentials","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["credential"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["credential"],"e7615fff-66dd-4cfc-abd5-31141a929123":["credential"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["credential"],"27816523-e88c-473f-8b2e-18ab58b204f9":["credential"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"500db27d-cbfe-4afe-a6d1-fe74e9ec035b","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"subflow.force_flow","label":"Input➛Force Flow","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Somente gerar CSR","value":"flow_a","order":1.0},{"label":"Gera CSR e Assina Cert","value":"flow_b","order":2.0},{"label":"Gera CSR Assina e Instala","value":"flow_c","order":3.0},{"label":"Nenhum","value":"none","order":4.0}],"usedInstances":{"1df103e9-0b9a-457f-aa70-4704b0867d8f":["force_flow"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"02e416cf-7b65-4e9a-98c9-44a18cb6b5ff"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr_path","label":"9 - BNB Obtem Resultado Job Ansible➛CSR Path","reference_display":"CSR Path","type":"string","base_type":"string","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"],"c0fe8cd3-1db7-487b-b220-5480e68fd2c2":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"597c2199-57c2-4726-9877-44dc7d22f05e"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr","label":"9 - BNB Obtem Resultado Job Ansible➛CSR","reference_display":"CSR","type":"string","base_type":"string","usedInstances":{"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"],"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"subflow.automated_task.description","label":"Input➛Automated Task➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"description","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"]}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.csr","label":"8 - BNB Obtem Resultado Job Ansible➛csr","reference_display":"csr","type":"string","base_type":"string","usedInstances":{"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"f8be20e5-bd63-441b-aee4-49f0429da6ca.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"209d8edd-b16b-4635-ae4a-ef6fb44777a8.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.job_id","label":"Input➛Job ID","type":"string","base_type":"string","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["job_id"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"09db55f8-08c8-46dd-b925-870c550a4983"}},{"name":"subflow.automated_task","label":"Input➛Automated Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["renewal_task"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["renewal_task"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["renewal_task"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["task"],"e7615fff-66dd-4cfc-abd5-31141a929123":["renewal_task"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["renewal_task"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["renewal_task"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["record"],"27816523-e88c-473f-8b2e-18ab58b204f9":["renewal_task"],"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["record"],"10368e10-86c1-40a2-b0a1-a9aaa7f2cb82":["record"],"8aa28081-6164-4a93-9731-a26e05aaa595":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"34fdb810-5fd6-411f-9a5f-f9bd52cba2b5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f.job_status","label":"1 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.job_id","label":"1 - BNB Dispara Job Ansible➛Job ID","reference_display":"Job ID","type":"string","base_type":"string","usedInstances":{"e7615fff-66dd-4cfc-abd5-31141a929123":["job_id"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["job_id"],"27816523-e88c-473f-8b2e-18ab58b204f9":["job_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fad10e8-ff81-4586-b38f-e93f9095f2ce"}},{"name":"e7615fff-66dd-4cfc-abd5-31141a929123.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"flow_variable.next_page","label":"Flow Variables➛Next Page","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["next_page_link"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["next_page_link"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"],"27816523-e88c-473f-8b2e-18ab58b204f9":["next_page_link"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a7513e64-332c-4a26-8fc2-2d3eba1d93de","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.next_page_url","label":"9 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"],"f40b59b8-ca78-48ec-81fc-165f2ba36fb1":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.automated_task.sys_id","label":"Input➛Automated Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"21ae93ee-2453-42bb-bb73-7fee918f752a":["conditions"]}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record.u_renewal_flow","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Fluxo A - CA Externa","rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"image":"","reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"used":false,"label":"Fluxo B - CA Interna / Instalação Manual","rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"image":"","reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"used":false,"label":"Fluxo C - CA Interna / Instalação Automática","rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"image":"","reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"]}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.job_status","label":"9 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"],"540c24d6-bf47-44a1-9f85-b1a287291998":["condition"],"27396ac8-2309-4fbb-9261-4cbebb74bd08":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2933a4fe-183a-4613-97da-87963063da2e"}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"2616a207-762b-4ecf-b399-def380774902":["record"],"22376c6e-e001-4eea-b7f1-233ea16611d1":["record"],"d0c8d9f5-7eb2-47d9-9472-108b03ab534a":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"033fb99d-55ee-448e-96a9-faf0cbdcd88e":["condition"]},"attributes":{}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8aa28081-6164-4a93-9731-a26e05aaa595":["work_notes"]},"attributes":{}},{"name":"subflow.awx_credential","label":"Input➛AWX Credential","reference":"api_key_credentials","reference_display":"API Key Credentials","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["credential"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["credential"],"e7615fff-66dd-4cfc-abd5-31141a929123":["credential"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["credential"],"27816523-e88c-473f-8b2e-18ab58b204f9":["credential"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"500db27d-cbfe-4afe-a6d1-fe74e9ec035b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.job_message","label":"9 - BNB Obtem Resultado Job Ansible➛Job Message","type":"string","base_type":"string","usedInstances":{"22376c6e-e001-4eea-b7f1-233ea16611d1":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c8497d05-be3e-41f8-91aa-78f0e1ac5bc2"}}]</label_cache>
         <master_snapshot>5f4ad06833bbbe906c8432a19e5c7b98</master_snapshot>
         <master_snapshot_digest/>
         <name>BNB Processa Job Ansible</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2178ae1c33f37a906c8432a19e5c7bb0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>BNB Processa Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -44,11 +44,11 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_flow_2178ae1c33f37a906c8432a19e5c7bb0</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-09-28 17:10:39</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:50</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record/>
+        <version_record>0c95d2883b481bd0d0457237f4e45ab5</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=2178ae1c33f37a906c8432a19e5c7bb0"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
@@ -242,14 +242,14 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-23 13:18:36</sys_created_on>
         <sys_id>545ef72d3bbf3e54a1e3f65436e45a97</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:25</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -520,7 +520,31 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c3ba94a433fbbe906c8432a19e5c7b0b"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2178ae1c33f37a906c8432a19e5c7bb0"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2178ae1c33f37a906c8432a19e5c7bb0"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2178ae1c33f37a906c8432a19e5c7bb0^sys_idNOT IN5380a0a433b3fe906c8432a19e5c7b83,9de23dbc33fbbed06c8432a19e5c7b84,f406e9bc33ff7ed06c8432a19e5c7bea,29821dbc33377ed06c8432a19e5c7be6,99e27dbc33fbbed06c8432a19e5c7b5e,51e27dbc33fbbed06c8432a19e5c7b61,99e669c533f7ba146c8432a19e5c7b16,c380a0a433b3fe906c8432a19e5c7b27"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2178ae1c33f37a906c8432a19e5c7bb0^sys_idNOT INc380a0a433b3fe906c8432a19e5c7b27,5380a0a433b3fe906c8432a19e5c7b83,9de23dbc33fbbed06c8432a19e5c7b84,f406e9bc33ff7ed06c8432a19e5c7bea,51e27dbc33fbbed06c8432a19e5c7b61,29821dbc33377ed06c8432a19e5c7be6,99e27dbc33fbbed06c8432a19e5c7b5e,99e669c533f7ba146c8432a19e5c7b16"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action_type>
+        <action_type_parent display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>812d716a33ab36906c8432a19e5c7b0f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 18:35:46</sys_created_on>
+        <sys_id>c380a0a433b3fe906c8432a19e5c7b27</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
+        <ui_id>1df103e9-0b9a-457f-aa70-4704b0867d8f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WV22vbMBTG/5Wipw3s4EviS95KSqDsytr1pRRzLB8novKlstw2C/nfJ8Wu42RJ10LaMfCLjj7pfPqkH75eEpaQMbFsJ/FtD1wXYtcLLY8GQ9cBO8QR9WN7RAySQ4ZKKaG6VaN74LUeLpdVHae8eBhALYsMJCaRlqxWSpSwquSwuGq1qkLnjCcCczK+vjFICUJtKlGQ8XJn6qWuOMTIlXSCQrKUUWXg5LKxuG1YLko9EpiiakKxLX1u1//o1QuRaEu2QfBRYp6g8pICr9AgGeQJyEIsyFiKWhUEQvIt54tOMWe5bM6awWPFfqmmrmP0+o5JlUcqGVpEVJnOZpmMWo+dKGqT2zmYln04fcr5ZKpi/6iWpWcg4UL5obIWXdAFo1g1YSaYQs3lpF9rBN9KyYq8WSIh5s/aowWvs/xrEyvptu1db10p61jqzHQKbSTpxbx46AKesnwdbzvJCwq8J0UQdD5lyPUDyOssVlqDgJSCxbXU7pekZpd/3mZT3HefyDFTfqIMypLls6gUxT1be1BHygYzrgYD/YaV94rN8gFQncpA3TQMdMhn6/IVCKYj+qK2WZuq2c+c3dV4rq0ijjzbHnqm7SUjc+ingRlY6JsxYDAKbJpanktWBqkW1YRDVW1iVIeI7modQhNqG1/U3IteQgUr5akydY9tUiujBXf4LCLgbTigAvW2TDXai+/DY7SRHAXfF3jr8O2b22f49fg6b4UvlCy6xUUvreoAu6ffz08+4eJksqU8Mq777fwDVnWv/4HUIHaSEaBrJikNTfVIXTO2Ac2QuoFvgxWElvMWpAaJ7wx933U99dk7NNDeLzYthHpG+ph7Sd1M76P0oO6V7P7d7RO7U91n/TM6cISW3Uo9jHy2A+7FU7Gl1n2e2rbyEmwDy7K2wT1A6fGRfB/+DpDWxbyNWRf0uzBmYeiF6q2YsTek5tDD1Iwxdsx4lIDv+F4YW3BExm5+A1I0BSDICgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c380a0a433b3fe906c8432a19e5c7b27"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="BNB Verifica Status Job Ansible">c2190de73b2f7e14a1e3f65436e45aac</action_type>
         <action_type_parent display_value="BNB Verifica Status Job Ansible">b317c5eb3bab7e14a1e3f65436e45a36</action_type_parent>
@@ -536,10 +560,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 18:35:46</sys_created_on>
         <sys_id>5380a0a433b3fe906c8432a19e5c7b83</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
         <ui_id>f8be20e5-bd63-441b-aee4-49f0429da6ca</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/9WV227bOBCGX8Xg1S5gGZR1zl2QIED21EXT9qYohBE5jLmlDpWoJK6Rd+/Qkk9ZBz3AbdFLjmY4//ycD3q7YlqyMybQz7jEJCjmKkE/BB8DFUdhEGMYQeGzKaugRMr8ry5yKpmyOzC9C6xWvlQ+DzDzeJGBF0aJ8gAS7oUJDwuexolM1Wyoe3ykSqm7xsDyzTdfIBbayBYrdvb23ZQ10JI0iy07Wz359KWzGSjQUOofdTG5vjwyrF027tzZVle34/mvsehmE6xb6UT4U4YPFiuJ1F2B6XDKSqgk2LpdsjPb9hRoEeSLyiy3GQtdWbqMudyHTn+kdinn3GUqpIEEDl+3x3y0cQirS7BASnph+3ZMFYtaC+wGKyQq6I292I8NCS8aq+tqKLFQmE11bfqy+mcwgm0v2LwaRfqORGDjJnXax0HUzaK+f7lReaWrtSnjR1MLMNsTWLKu6K3Ts2K9fvXE5SHyP5/RYEkd8xKahiJ509Z3et2FRJezW0OHmTL1Panr9G01A+EmnNELwOyK4pfr8BtotRv3b7qGil2715X+0OO12xrJ0ySLgHvzTNFOBjzw0pi2M5MimmdCyjRL2OOUdcvuwkDX7YyiF8o/9G7MwbbRoHzw2JWIVjf2nETd4ejF43QEEdIiK8JABQEtbOzzWKRhMAc/w0gkBSS73SR78R5MbqF7f4Bj1xdu+Bn0ti7BolynHCPvq1H6AnUblC6wtVppQQImrwaJx4WPaO3W/JCul3vxEbD5qQAL5od4dZWDStS5IPHlbWk3Go9Btz+gS/vtfOP3xO3Y76eH8ll5PwBVdYPQisWVRuMWoerLYs3MMwjvv+Yhxfvv+UNATn0/gSDMvHTuh16Y8ogYRvrDpEks6Q/jK55+D5CjiHNQCaGiFDxFRcU7HkSL7lpNjY5ifP+Q71JOg/HntW0x3hd3TPDX4xt8L3yh0fl7XO651T3D7vm/15M/cTm5OMg8Ma7H5fwEVl2vX4FUhfMkkSryYiGEFwoZe2ngJ55IohB4EfuZCE9I6rtPxfJmCP0KAAA=</values>
@@ -560,10 +584,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 19:14:01</sys_created_on>
         <sys_id>9de23dbc33fbbed06c8432a19e5c7b84</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
         <ui_id>21ae93ee-2453-42bb-bb73-7fee918f752a</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VYTW/bOBD9K4JOu4Djlfzt3IoEBgp0G6DJ9tItCIqkbKIUqZJUUsfwf+9QlGzBdmwL6wAJ9sjhkHwz896Q0rdVyGl4HdJpNE2n0+FkHEX9fhSNRn2C4yTpj0gSJXgQdkKJMwaeFieCwfARi8KNjUSUG6IQYdpm88wii80PcABrLvDya+V3A9M85QRbFjiPPz4UVmUwosFMqKc/YQVZcEE1k+H1t++dMMcaTrRMh9ernalzIQucMAGuDxXmnRDsMt8MUTnnbZ+ay4LPfkJp6qBEnZD9skxSBhhSLAzrhBmWFFullxuLZpjeSbE1LLi0sGPonH8Z/gznTiLnlzKIijA/txmiKnnenN5ii++tLogtdOVKFooTZnw+KEtxIexN0+Yd7nLLlfRLfNh+tRJFJj/7dISbDepagaUwAILlLlCHvAojvV+opy81yhmXZU6qSaEIFpsRtlbzpLAOzypkgmWwEcpwnnM5R7lWj7xcDFiy7lzAoJsCD+BQw+eyi4kD3oW84q7jx21p/oo1d1H8DdvAYgDEBTAE+RIaVegylY+IiMKUExpL4/cK153QLM2NwMZsI4eUo5+Fw+3zUEWMfNLcEqJ5bj/AFo+sCm7dqVUzPErB6ZZyREnKHQrTlM7SIE7/LWAxXa1MkbgEdHGti1JIXe+0Xu8rqu3ylvI6HVstr5tmcIcCroS2Z/t0aINKaPHFhDaIovckNTj87SmtvXZ8Ck4IKKZHSUa3fDJKW+Rz2VDQviha8/wMCDXP7xwzg2T5EqqK5ilngh66T2ZuYuc+6f0/75M3SXIARJGvHpeCy/JxAEBfi/3Do9RL4h2elfRq3B7Ohg3Z1wAOrAqeWyvhDDi1Eu7h7ODB4zkAse73JWV2e31trATQv5gA+r3LCGC1CXOTyAM5r9+Drpq1/7Pzx7v+QMHGgnh9SGCtzozbntlb7wu430rBTbL5mdsXOHfhh+MLiuy8ZgtYwNLqPOT1i544nTO7Pb32oso+YfHj0HzFOFQXqgzvFR6h8dHvoKTxCOUpyqByPIe3smYEyGEQ1gylqpAUVa/kLZFcJVOuja2c9xvNFwb6kYECYQZ2wYLSO9h4t7yIT8dRp/JjGtSBVKeZAAIJykCCTSDtwm7TtAYXfJxeumnNMBdlNeADKG+Uk2mt9AuN60QhjzDizK52Jqj4oqD+e9s7JIGD7e8E1nfxNX351kQYTgY9PBr34ziK4oiOo8l4HE9GSTrC40G61ShCRhLoprBzClSB7VFNjbrO0X7/8S21baM5A1VNwVsl3fd1b2wDBwvqG9SwTgOvGkqilGBY7nSUB7gn/ppV+Cu+Dt9cV3kX/5YK/rCbaW86mOvXejcU/B/Jfxbso6PYhEW9SUzJ1WQcj68GKR1dTSkeXuFpMhz3KSOD9JJPge+/ARAbzsTHFQAA</values>
@@ -584,10 +608,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 18:17:45</sys_created_on>
         <sys_id>f406e9bc33ff7ed06c8432a19e5c7bea</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
         <ui_id>27816523-e88c-473f-8b2e-18ab58b204f9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2W227bRhCGX0XgVQOIwvJM+s6QYcBtmgR2mpsgIGZP8jbLQ8ilbVXwu3dWJHVwZccu5LQFeiXscGbnn9n5MPq8chR3Thw/igIiKQ2COAniiMQsDQMfvExELKFp5EydEgqBnr9XNMeQqXMDurOG1crj0iOByFxCM3DDKJEuQELcMCEhJWmc8FTO+rj7e4zkqq01LD/97QvYtdK8EaVz8vnL1KmhQWlGNM7J6sGn59amgQqNrj9XdHJxdqBYs6ztuTWNKhfD+e0QdDUaq4ZbEd7UEXdGlFxgdgm6FVOngJKDqZqlc2KaDg2NAP6+1MuNx7UqDV7mWN+7Vv2B6VJCiPWUAgtiov+6OeZDG3uzPAMDqKRjpmsGV3ZdKSbavhVcSOi0me/aeof3tVFV2YcYoHqMrnRXlO/6RjibC8ZXQ0vXoghR20qt9qEQeXVd3V6OKs9VuW7K8FFXDPTmBAZbRztj9aycTn180OXe8pc+Cy0KzJgXUNdoyeumulHrLCi6mC00HmZSV7eorlWLcgbMVjjDF4DZOdrP1uZP0Chb7q94DQbbdL+V6lsnLuzUcJImWQTE9TOJMxmQwE1jnM6Ms8jPGOdpljj3U6ddtnMNbbttFL5Q/q2zZfZtGxqU9z22IaxRtTlFUTdi6MX9dATRe2pYJdnOJrZX3ILODbRf93BsO2qLn0FnqgKM4GuXQ+S9HKXvqxtRuuzlTT728g6LHrDajvg+WZc79gEu/1hwBf4+Wm1pgWJVzkRjikVhRo2HgJujj5KKYXcn1u2n07HXEztfb44P5KPyfgCm8kpAw67PldB2CMquoGteHsF39zX3Cd59zx8Ccep5CQRh5qa+F7phSiLkV+B2SZOY43bxJElfAeLYl5KKKA0C/IXsASZAtzyUOMx5DQuRa1XuY7yu/WYob7ZxPLxBn3J+GeLP0D4i/g7TTD5gmsnbXvxjRb1ke4ZPAz5Y/l+f//L1mfGQRH7q4b+5IEHyAupSiKgLfhilURYJkrFXIE9kTy6oeDukrBH2WoWJDi7P27t863KU5fkMbSNZ811xhwS/fHEGr7U4oVb5V7Hc6Vb7CGenHy4mv4jlZL7neWT0Dsv5B7akzfVf2JFS+EnCZeTGjDE3ZDx208BLXJZEIRAaexkLj0jqlz8BNCxorHMOAAA=</values>
@@ -597,21 +621,45 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
+        <comment>Set Step Status to Failed</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>27396ac8-2309-4fbb-9261-4cbebb74bd08</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-20 19:14:02</sys_created_on>
+        <sys_id>51e27dbc33fbbed06c8432a19e5c7b61</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
+        <ui_id>22376c6e-e001-4eea-b7f1-233ea16611d1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmJ8lWa9g1RIU1iIMHEC2OR49wUD8fObAfoqv73XeejVIBYkdgD2lvvl33OyT311ZrwgsxJAkUQzsIDFodxHAVBlCZhfhDnYVTEFCAkYyJpBdipgSldYHxHReMS63UUUpjFAF6UTGIvifLcy/Np7E1LgFmYltNJRP3zdm6zwcmCm1rQ1WV/AGbYDReFBknmV9djUlONd1nQZL5+UtoXrKA5CGw9H9A+RW9XtYsLxZoKpM34kDzpJxd9ZfRlgRUccnDCYEzgwYIsAIGUVBgYk4rKglqlV2RudYMJDbQ4k2K17bjh0nZEK/pg+G+8OQlcXwnIjPUibMOsF6hLlwtq6QWezGyjt3opzsB0mhRQ0kbYo91c13BWW65kN2JpLoZpJZpKnnaKkO0BO9+jMQgCasfTIe9olRc36v58AHnMZStJT1EoRsU2otZqnjfWwVkTENBqXNG65nKZ1Vrd8XYYoVT+UmDgl0Ld452GL6VPmcPto6rUP8b8ok1fUs0dia94DA5vxsSszJGgxjxSQQ2zX41D0hHrKWStCq0EWbsJbphpXttDvOoOeuCbcW+HfPLahrHZ40LtnPloCSPdJ2QqY6BttaxsZqm5fb75R1jmJWfUwsh1fDpsrKowKkaO9uc3O2MP3IMzvrX78DKP3hzPcie7s6PTrtBbY/Ju1kg/kjV6Gh/eG39zRBC9+p+7s0mtCcyuGyxu9PcmCOIi/nGv9G0mFbLvMvh6TNPwYBLFHqQp85JpXHppHoEXpjSf4K8gKWf+T5VnFRhDl/DSE/Ivrnib8/bQZ3DeMQdRmBcEG2wHFXKzkHUCPrFeXxxd9sXty/SOT1PwkRz43zxO138AAoZ44q0JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=51e27dbc33fbbed06c8432a19e5c7b61"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Atualiza o CSR na Task</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
         <generation_source/>
-        <order>12</order>
+        <order>14</order>
         <parent_ui_id>22c992a5-d4ee-4415-8c80-cf5ee99db684</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 16:52:36</sys_created_on>
         <sys_id>29821dbc33377ed06c8432a19e5c7be6</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
         <ui_id>493b4455-0d38-4386-89e4-f7b0510de6b9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmN8tFC6BtqhTSJgQQTL4Aix74p1hwnsx2gi/rfd504pQLEysQL2lt9v3zOyT31dUsEJ3MyBR5GR9EBS6IkicMwTqdRfpDkUcwTChCRMVG0BKzUwCrN8XxPZeMCbWuavJDVQ0AbW5XUAs8sNT83GyziwtSSrq98LUbYnZBcgyLz69sxqanGsRY0mbfPUvvikjQHiaUXA7DnQO26dmdesaYEZTMxBE9959JnRt+WmMEmBycKxwQeLSgOCKSg0sCYlFRxaiu9JnOrGwxooPxcyfW24k4o2xMt6aMRv/HmaejqCkBmzIuwPWZeoD5cLKmllziZ2UZv9aoEA9NrwqGgjbSL3VhfcF5bUam+xdJcDt2VbEp11itCtgN2vkdjEATUjqdD3tMqLu+qh4sB5IlQnSSeoqwYldsTtVaLvLEOTktAQqdxSetaqFVW6+pedM0IpQxWEg+BWxa804iVCihzuANUlQYnGF924SuqhSPxHcdg82ZMzNosJDXmiQpqmP1qHJKemKeQdSp0EmTdJrhmpkVtj/Gqe/DAN2O/+fnsrQ1jR08LtTPzafuNcp+QVRkDbctVabvdf7n5C0yLQjC0x8hVfDkezDJytL++2xl74B6c8aPbh9d5eHO8iJ3u9o7O+oS3xuzDrJF+Jmt4Gp/eG39zRBi/+Z+7s0mdCcyOG5jRN00YJrxt48M0OpjFyQTSlE2mh0kxSfMYJlFK8xn+CqfFUYD1rz0T/zrmfQ7ag+fgoBMBkptXiA/2gRLxW8h6IZ5ZyCdHVz65fWE+8IkJP5OT/ptH5vYPTM7KgWAJAAA=</values>
@@ -626,16 +674,16 @@
         <display_text/>
         <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
         <generation_source/>
-        <order>14</order>
-        <parent_ui_id>69314a19-d294-422f-988a-abca6c1c9239</parent_ui_id>
+        <order>16</order>
+        <parent_ui_id>f40b59b8-ca78-48ec-81fc-165f2ba36fb1</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 19:14:02</sys_created_on>
         <sys_id>99e27dbc33fbbed06c8432a19e5c7b5e</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
         <ui_id>2616a207-762b-4ecf-b399-def380774902</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmt8tEC7RuiQprEQIKJF4aiG/umWHOczHaArup/33XilKogBhIvaI/3yz7n5pz4Zs2kYHM2QRHFs/iAp3GaJlGUHE3i/CDN40SkgBizIdNQInUa5JURFN+DanxivU5iwFmKOEom03Q0SfJ8lOeH6eiwQJzFR8XhNIHxZTu32dCkkLZWsLoOB1CG30klDGo2v7kdshoM3eXQsPl6r/RWsApyVNR62aPdR+9WtY9FxZsStctknzwLk4tQGXxbUIWGPJw4GjJ8dKgFEpAClMUhK0ELcJVZsbkzDSUMgrjQarXtuJPadURLeLTyD908iXxfgcSMhyVswywsqEsXC3BwRSdz15jtvirJ0XY7EVhAo9zJbq5ruKidrHQ34iBX/XSlmlKfdxth2wN2vkdjCQTWnqdH3tEqru6qh8se5KnU7UoCRVVxUNsInDMyb5yHs2aosN1xCXUt9TKrTXUv22GCUo6XioJxoaoHutPKpR4D97jHtFUYn1J+0aavwUhP4jsdQ8ObIbMre6LA2icqtMPsd+ORdMQChazdQruCrFWCH+ZG1u6YrrrHAHwzDHbIp68pjM+eBLVz5pMlrPafkFcZR+PKZekyB/bXc+WfUFkWkoPDge/4cty4qqRIDDztr+92xhtw98740erhZR7BHM9yZ7uzg/OuEKwx/TBrHH0mawQan94b/3JElLz6z91RUmsCu+sGR4r+2URRKpLnHtirvk/vb0DV6/1UohL2BZi92LEkWA6zDvae4ENxcB2K2/fgAx+E6DPp/r95Em7/AjCyEGkjCQAA</values>
@@ -645,238 +693,28 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
-        <comment>Set Step Status to Failed</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <generation_source/>
-        <order>16</order>
-        <parent_ui_id>540c24d6-bf47-44a1-9f85-b1a287291998</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-20 19:14:02</sys_created_on>
-        <sys_id>51e27dbc33fbbed06c8432a19e5c7b61</sys_id>
-        <sys_mod_count>28</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
-        <ui_id>22376c6e-e001-4eea-b7f1-233ea16611d1</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmt8tEC7RuiQprEQIKJF4aiG/umWHOczHaArup/33XilKogBhIvaI/3yz7n5pz4Zs2kYHM2QRHFs/iAp3GaJlGUHE3i/CDN40SkgBizIdNQInUa5JURFN+DanxivU5iwFmKOEom03Q0SfJ8lOeH6eiwQJzFR8XhNIHxZTu32dCkkLZWsLoOB1CG30klDGo2v7kdshoM3eXQsPl6r/RWsApyVNR62aPdR+9WtY9FxZsStctknzwLk4tQGXxbUIWGPJw4GjJ8dKgFEpAClMUhK0ELcJVZsbkzDSUMgrjQarXtuJPadURLeLTyD908iXxfgcSMhyVswywsqEsXC3BwRSdz15jtvirJ0XY7EVhAo9zJbq5ruKidrHQ34iBX/XSlmlKfdxth2wN2vkdjCQTWnqdH3tEqru6qh8se5KnU7UoCRVVxUNsInDMyb5yHs2aosN1xCXUt9TKrTXUv22GCUo6XioJxoaoHutPKpR4D97jHtFUYn1J+0aavwUhP4jsdQ8ObIbMre6LA2icqtMPsd+ORdMQChazdQruCrFWCH+ZG1u6YrrrHAHwzDHbIp68pjM+eBLVz5pMlrPafkFcZR+PKZekyB/bXc+WfUFkWkoPDge/4cty4qqRIDDztr+92xhtw98740erhZR7BHM9yZ7uzg/OuEKwx/TBrHH0mawQan94b/3JElLz6z91RUmsCu+sGR4r+2URRKtLnHtirvk/vb0DV6/1UohL2BZi92LEkWA6zDvae4ENxcB2K2/fgAx+E6DPp/r95Em7/ArxNjYUjCQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=51e27dbc33fbbed06c8432a19e5c7b61"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
         <generation_source/>
-        <order>19</order>
+        <order>20</order>
         <parent_ui_id>7c280e0a-7813-46e6-a143-eef355af2653</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-21 13:00:05</sys_created_on>
         <sys_id>99e669c533f7ba146c8432a19e5c7b16</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
-        <ui_id>10368e10-86c1-40a2-b0a1-a9aaa7f2cb82</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVXW/bNhT9K6yeWsw15DgtmvQpjRdgQ5cAyZCXuiWuyCuHLUVqJOXYM/zfdylKjpekbprlJZjeeL94ztU50qdVpmR2mO2jzEcHo7diPBqP9/J8793+qHg7LkZ7cgyIo2yQGaiQKh0K6ySd56CbGFitfFOU2l4PoQm2goCSB/Df1msqksrXGpaXXS1FxJXS0qHJDj99HmQ1OBob0GWHq1uph+LSUKCm0vMe2G2gYVnHs7SiqdAErvrgx65z0mXYbxPKUFOEM8oHGS4CGokEpATtcZBVYCQE65bZYXANBRyCPDN6uam4UiYkohUsvPqbbt7PY12JxEx0S9gcebegFC4nEOCCJovQuM2+rBLo004kltDocLwdSwVndVDWpJYAhe67rW4qc5o2km0GbL2PxhMIrCPPiDzRKi+u7PV5D/JEmXYlHUVtBejNCUJwqmhChLPKUGO74wrqWpkZr52dq7aZoFTDmabDMIqF7vRqZoYgIu4hbRWGJxSftOFLcCqS+IPGUPN6kPmlP9bg/Q0V2iH/q4lIErGOAm+30K6At0qIzcKpOhzRVXPsgK8HnfKLN7sUJg5uBLU180b93sRXKCwX6EI1q0Kr/bvKP6a0KpUge7BY8fKoNwuLtF/9tDMegLt3xp+tHu7n0ZnjTuzjdi87TYnOGm+ezBrvnpM1OhrP3hs/ckS+t/Obu6Wk1gR+2w2BFD1t8nwsx1+IVOTrOSmDX1v3jRtLq0jpUr5OGFDeNctjx/ycgx7As3fQiUIt/T3Ee/tgRfgD8rSIWxbqkuyyS27+ME/4i8mfk5P+Bz+ZRDHFWv3dr+KY2tWYqZK9LCVvofMR5ygXXFxBBRI4XC94qZuF5ZTjiSSP3mk850NhJbIXySYsf8VWU8PocUiv3bBp9qtzlhlgR20fm5BGyDDsd1uwI+NV/Oy/pjL2C3vc/RV6DzN8PzXrqfkXjXEaM0dHf8Rl3/HVFrSc9uL/zuaynS2AXbQDdrJ6DJzvkztI02xB3wTu0JMRQNqnZffh9AM7ixew8/6C3RQfBWqLI2nfwxzlxtLr9frzP7qZMR08DAAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99e669c533f7ba146c8432a19e5c7b16"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action_type>
-        <action_type_parent display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>812d716a33ab36906c8432a19e5c7b0f</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <generation_source/>
-        <order>1</order>
-        <parent_ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-19 18:35:46</sys_created_on>
-        <sys_id>c380a0a433b3fe906c8432a19e5c7b27</sys_id>
-        <sys_mod_count>32</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:06:27</sys_updated_on>
-        <ui_id>1df103e9-0b9a-457f-aa70-4704b0867d8f</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/9WV22vbMBTG/5Wipw3s4EviS95KSqDsytr1pRRzLB8novKlstw2C/nfJ8Wu42RJ10LaMfCLjj7pfPqkH75eEpaQMbFsJ/FtD1wXYtcLLY8GQ9cBO8QR9WN7RAySQ4ZKKaG6VaN74LUeLpdVHae8eBhALYsMJCaRlqxWSpSwquSwuGq1qkLnjCcCczK+vjFICUJtKlGQ8XJn6qWuOMTIlXSCQrKUUWXg5LKxuG1YLko9EpiiakKxLX1u1//o1QuRaEu2QfBRYp6g8pICr9AgGeQJyEIsyFiKWhUEQvIt54tOMWe5bM6awWPFfqmmrmP0+o5JlUcqGVpEVJnOZpmMWo+dKGqT2zmYln04fcr5ZKpi/6iWpWcg4UL5obIWXdAFo1g1YSaYQs3lpF9rBN9KyYq8WSIh5s/aowWvs/xrEyvptu1db10p61jqzHQKbSTpxbx46AKesnwdbzvJCwq8J0UQdD5lyPUDyOssVlqDgJSCxbXU7pekZpd/3mZT3HefyDFTfqIMypLls6gUxT1be1BHygYzrgYD/YaV94rN8gFQncpA3TQMdMhn6/IVCKYj+qK2WZuq2c+c3dV4rq0ijjzbHnqm7SUjc+ingRlY6JsxYDAKbJpanktWBqkW1YRDVW1iVIeI7modQhNqG1/U3IteQgUr5akydY9tUiujBXf4LCLgbTigAvW2TDXai+/DY7SRHAXfF3jr8O2b22f49fg6b4UvlCy6xUUvreoAu6ffz08+4eJksqU8Mq777fwDVnWv/4HUIHaSEaBrJikNTfVIXTO2Ac2QuoFvgxWElvMWpAaJ7wx933U99dk7NNDeLzYthHpG+ph7Sd1M76P0oO6V7P7d7RO7U91n/TM6cISW3Uo9jHy2A+7FU7Gl1n2e2rbyEmwDy7K2wT1A6fGRfB/+DpDWxbyNWRf0uzBmYeiF6q2YsTek5tDD1Iwxdsx4lIDv+F4YW3BExm5+A1I0BSDICgAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c380a0a433b3fe906c8432a19e5c7b27"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2178ae1c33f37a906c8432a19e5c7bb0"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2178ae1c33f37a906c8432a19e5c7bb0^sys_idNOT IN5780a0a433b3fe906c8432a19e5c7b84,5380a0a433b3fe906c8432a19e5c7b86,a47ac318333ffa906c8432a19e5c7be4,e5821dbc33377ed06c8432a19e5c7be4,d1e669c533f7ba146c8432a19e5c7b15,9de27dbc33fbbed06c8432a19e5c7b5d,45e629c533f7ba146c8432a19e5c7be9,5380a0a433b3fe906c8432a19e5c7b29,1de27dbc33fbbed06c8432a19e5c7b5f,1780a0a433b3fe906c8432a19e5c7b8d"/>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">9f80a0a433b3fe906c8432a19e5c7b83</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
-        <order>4</order>
-        <outputs_assigned/>
-        <parent_ui_id>b85dc530-7ef0-46d5-863f-bb4080252390</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-19 18:35:46</sys_created_on>
-        <sys_id>5780a0a433b3fe906c8432a19e5c7b84</sys_id>
-        <sys_mod_count>23</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:25</sys_updated_on>
-        <ui_id>28256d1e-e645-4fda-842a-65d896b71c0f</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1YWW/bOBD+K4Keva6oM/Zb0WyBPuy2aIy8LAqBIkc2sbSkpaikbpD/XpKiZMWWncvpsS1gwOYMNec3oxnfuGUjq0bWi/J1XbNl4c7/+TRxWaFp6veNW+A1uHOXNgJLVhap3FTgTtwrzBtNh88VZ4TJtLugeJTVFcebS3vlT3vFGVwhK8apAKuuwkJpkSDc+c0OS6tLOc6AK0lvViUjWjuj6hTOkiA6Q2ESeAEKPC+LEcRxmMRZHuPkLFL3ugfPrWZn0Vp/wCnzNVcWWDWloNom5HkT5aiEgoJSnGNew8Rd44JiWYpNTxGA6fuCbwkrVkglz9WXP9fsixIeevpeDspBAi2vP6Y2cC25taJNQufHWCiPZcI64N1OtjI+AlfsKxiTISxvRAYayvgAgkAh8XJUStVzR+T4tyqrFHLccPnmdC6iE7jon8jFQLvYpu99ZVhzN9Dwwhm3OSclb9bF3y0M3T4gl8eqqr1yfn9xNbWyCioNV40/C8b8YlVef+yw9pYVxlbL5CXBvD9hKQXLGqlTc+MCh7USlK5xVbFimVaivGLmYeXGerrk6jDNeXmtlOoWMsVEGzJV1YGnbxX93JAvsWA6AH8pMerhWwP89L9G621DYC1OTcD0hZoIVsnXROfLGqdTZKt3kAPJ1iBS07VSpRb0eZCt/Z705BZ0rqS/WrTiTRfKckRjFKMsCWJfdaEgJDGBeAaAEJ753qALDSBlDHaMwY422LEWP9g126pM8A09tYwX6FlG1mOaVo/6R4H+Z0GuSnydttC0vhnlJ0B0m+tt8l8Gwu8KCcvWDw3gMy8IAm9GoiDpAUwpQJ4nGfIBjQJ4C9URmy02Wa/nNyZ/dkyOvALRLPH+8JD6OJ43159wH6ShcwGkLGj99Ia71WzgCjkKI3Jo6stgZOrbBevAmbttdH8i+I6T32/APgewe2NeWiq1OmsDCONcGlN2QNuRT7GkUIJD5EUH4OrHA7guzEwgdmdXZ2D4w108sMoEP8wq0wV5NxdjK0sGeSmGb8Oe0E//x5eKe5ShRynznz3e97gbHek77k4dS9H8iGXcWUg26bEVa3DNQnMLuvtq/u6a/uQG8I0XA5T7ET1Y+UlwpPL3F4IH+HTfRhD+D95lz6yB8VfO5JerjZqsgDb8hSqhz0xXCXkWRWpoO1AJsX93ZFMJcOQKnLzkKrL6NDD3kBs2bmKg2sI+OiHsA/8u7Mm6GBoxVgIXW/avMNY9dXz7pJHYSqpbSFEgrFYKF5r2rvs/WjM2CgSMDEnXpfhXm7ql3X4FdsxQcdkWAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">9b80a0a433b3fe906c8432a19e5c7b85</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <flow_variables_assigned>next_page</flow_variables_assigned>
-        <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>7</order>
-        <outputs_assigned/>
-        <parent_ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-19 18:35:46</sys_created_on>
-        <sys_id>5380a0a433b3fe906c8432a19e5c7b86</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:26</sys_updated_on>
-        <ui_id>72a4fca0-b85c-43f7-9ff1-9720322d2494</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1Uy27bMBD8lYJnW5Alx69bgCJAgDYpGjeXIhBW5MomSpEMSdlxDf97l3rYgdFDz0Vu2iF3d2Y40JGZJtgm+LW59V5uNFv9fBkxqSNG30emoUa2YhrfQmFhg2zEdqCaiNGnkN4qODxfEL6VSjjsB1lw1B/QsdXx6igcLBYKSlTU+BSc1Btql4IqSOfA88kiz/OqgmU644tpnsFkiTd8XpYTujc0PhCvT986Xn+hGpcQ5IfxxonIJRsxuoRaIK2rQHkcsRq0gGDc4Yw4BPGo1QXYSh06lTW8efmbRi/SNI03KyRhvPfgXBa9P4M1RnJ8tEEa3SEBSjX4ZlRT64dOQnQWK2hUeOds42ke2sg60ug5VU9bs/8+LLyTuhXYHyrDQZ0rCGRD2QT08TUaub4yp0O+XD8JKqxpY1GDtYQU1pmdbLcQ6TrZKCqSSpk9sYsRSoBHhQm5Cckd4Z9b+BmcjHK/0hhqjut+aPna4H375PObSY6z6TjPMz6eQjYbLyqejTORYwkTscwFslNrbfHaRFGdSb0dRecoXfDcSRtuicIOe+Wnl5jZbnsX6n9N2Uf4P8L/H4RfIJeeWK0jhfvh3x4PDhQbyd9De+N+RT0X7PQHAq3++yUGAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">207ac318333ffa906c8432a19e5c7bcb</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
-        <order>8</order>
-        <outputs_assigned/>
-        <parent_ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-19 12:19:35</sys_created_on>
-        <sys_id>a47ac318333ffa906c8432a19e5c7be4</sys_id>
         <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:26</sys_updated_on>
-        <ui_id>e9396a52-23a1-4540-8583-1765b9655a71</ui_id>
+        <sys_updated_on>2026-10-15 20:18:10</sys_updated_on>
+        <ui_id>10368e10-86c1-40a2-b0a1-a9aaa7f2cb82</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1UTWsbMRD9K8uel2Vt13HwLbQNBJq62CZQSlhmpVlbVCupktaOa/xjeuxf6NV/rKP9SEIT0xB6rE+rJ82892Ye3se69qb2bqkvnBMrFU+/3CaxUAGj732soMJ4GjOtuPBCq7wBkngDsg4XczToMZoVHm00R1dLD1y7CPzxZ3T85UUFkTn+WAkFVMWFMxJ2N68qZmshucVOowFLSqgwnu7/uPI7g7mEAiVxLLwVakXlgtOp4DBkRfZmMspGg1GWnQ2GbDgZlfQ7g8k4o3d94dvecvShQZKTswh8hLueSVseZA2yLInxzqPiSNwlSIdJXIHi4LXd3SMWgc+UfADWQnnqF4fHd058p+bD8Tg8LJFMMmwv7495N9YWZmstGM5MUNgiHgrZ1TAt60p9bI2EhWAJNPV+IYTUjvrRXkh0UNFJKhdrvZ33hJdCNQ67S6kZyPsTeJpDUXt0YTMosaJGeQXG0HRyY/VGNMWkpUpXkg5pKfWWSEMAU2BBeEozgvSS8HcNfANWBBfX1IaKD437/FsdeFsfneK8NU0PHLPC+Atqt8FO3CF5GuhHWd7vGyGbjitVtLzcwAoPh6vF++tPy89PI/yimn+RXD4ZjM7LU8k9Z88l95nMno7r8G9x9bZ+aVqz0Ot/XPu40gpd3uax89aQvzrGtyGzLYNrg8ORCUdClgG76v++w8WOEiDYY2ir7ddg4QE7/Aa2xm6uCAYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">2d821dbc33377ed06c8432a19e5c7be3</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>11</order>
-        <outputs_assigned/>
-        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-20 16:52:36</sys_created_on>
-        <sys_id>e5821dbc33377ed06c8432a19e5c7be4</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:26</sys_updated_on>
-        <ui_id>22c992a5-d4ee-4415-8c80-cf5ee99db684</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPjvFHnDp5GaVbRmFtRhMKYxQjy9eJmCx5kpw0C/nvvfJHGtaEjbLHvfme+3XO1cF7R9amqo1eymut2Uo40+9PrsOExfB77whSgjN1qBQ5M0yKtAFcZ0N4bRM3i4fBTLLBZ1Aklx8wkzNdcbJ7vFhA14znCrpdFVE40YBypvvfUmZXQcpJBhznLIxiYoXtLMeo8EkRTGhAo3Achb4fJqMgG0dZEOYRARJhXd9401MffGkQ96Imuw9x3W+SKre0At914NmAyAFXF4RrcJ2SiJwYqXZHRAHJ54K/AmsmDI5zbPGzZr9wdhjHtrAA1EihTR7DtLtcC9O1ZBTmlSXYIoZkvOuhkteluG912JtDQWpu+psjUmucB5UlbVl0lIrFWm4f+oUzJhqBXZJLSvgxIgbPkNUGtH0Y4FDioLQkVYXHSSslN6xpRi6lt+IYeAWXW1xqfeQRaol7eCPizRD/2MCPRDGr4g7HYHNLMyOa0bTxHI4zCiUcmrOkP2tLqBXYSUnba2CBpopV5hr3bKBjfXDfGvbEq/t9eJUE4ziMhpAkdDi6iophkoUwDBKSxfjlj4qJR7U6HG4X9/Plp7uvy29vLf3uOf/C+RMSF3Hgx+edPxqfc/4Zz1+2e/gHu9sH+ku3+77/3+6ndmc6bW3baWuWv9vtT9ba7Qbd+iYHyjQSWVrstv+L28QODcDoKbSV6oeV8IodXgAf+qrBDwYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">1de669c533f7ba146c8432a19e5c7b14</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
-        <order>18</order>
-        <outputs_assigned/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-21 13:00:05</sys_created_on>
-        <sys_id>d1e669c533f7ba146c8432a19e5c7b15</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:26</sys_updated_on>
-        <ui_id>7c280e0a-7813-46e6-a143-eef355af2653</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1Y32+jOBD+V06ojy0HCWnavFXtRerp2kiXbF+OChlsEu85NgsmbTfK/37jHxAg6e62m+3LRYoimBnGM/N9njGsHVHKrJTFTFwVBZ1zZ/TP46lDuZLB9drhaEmckRNFhUSyLKLIOXVWiJVKuA6dFckLKnjojELHd73QOQ2dRCwzRp4n8WeSSNCslQgTc3WSrKoL/dBntEIuQ3zuTmVO+Vx7OFlpXehsNnC3JEWB5u98ftMNaJosyBIZH2Mmnm6Iypvko/HN1fXsdnI/nV3NPk1bcYfOLZdkTnKbHybuSUoJw1GKEiILYzylapk7lI2VUD+2DsPQKensJSN/oZgwdTtSf5W/UHmEv5wgHAnOXmqLFLGC1PoF5bJW1VLjuZbTjlNMUlQyGWm8dp9mrYiuVaqVCiUSUI1Inos8MhSpDWVebg2XiGMkRf5a3CLHJiCt8xvPPUeM8Llc1MrAU/8b+LUwh7pugbXin62+9XjQ4hdtn2+q/Z3N9heXv/ft8ns1AAqBb+wN90RC5j9U/TeV4Uqn/dtUd5rDF6Oknzj9UpJbXBsML4M46Qe9s8vkEp8FQRCfoX7aO8M4iM/RAHn+sN8BvM0k2+Qqk0REujSqa9Y2ncZS2RJGloTLaImyDJgTZblY0SZc0LbcOQORmwIWEdZguKYcLmSK3C1GDyinKNYIZO9pK7xkbB+rRTu/N2zn80GHUAWBEBn9ilT8Y5EvkeHJn9PJPZjAXMG0yBh6eTiOl+N4OY6X43g5jpfjeDngeEkWlOGccP1eQzFMGBDa9xvVdBtvNm1reCMqkpxmUjFoBXqdZSUEgkIAOx5tL/kZp2CSoRzcSZKDoJ2AblF6OwAoStvgDyxmJwCsuYfgoFfUhlbYDO474XSjL+mNmddqWfBA6xU1R9lOIFWBKs21qXkbAdl1pjnhjPxThzxLwjHBdWz1jqwlipAT4GMtUAw0qwKHCvoVfAeesksJJJLYzOvbyB5BKrQETcgkU/UzEqk2gVUKVi75vQleHV5MK3rY1tNKbtqnGlCUBSxEMpWMis6Gmk4X4unvKpIx5Tpvq2QiQay+QxKmQVxKUhhgIP7oS6kMzLrWdWTCVuT8DlvMxPpAshTVgi2u1GF0qXJXb6ad3SU7Di1fegfki/e/Y8xjBxgzhypgvHTYg+nVG8R+v+f5XnzuEwQX/eGFnwyDywZwfygi2ZG7Ra/1NckCKKolqg2vqn4gCC8+DsLDImW3abM87Y1bA9M8GoC8fSgA/WvHAd1533sQcH6g9+zrFKoj2UAJV+5wY0z6u2+Cuv90W8pro7HL3Rk8/PtYLVvxF+Oh518Mk6R/ThR/B4NBPx4GHsKBhzFOGvzdhrcTr+VtLAQjiP8a4n7MrEptcfa3n0r74VNrL3MeFVEMBwsDNiYJVR8JZkp2W325VooXwIwmTdGTyP9VJN/KNv8BikeGZgMXAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">d1e27dbc33fbbed06c8432a19e5c7b5d</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>13</order>
-        <outputs_assigned/>
-        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-20 19:14:02</sys_created_on>
-        <sys_id>9de27dbc33fbbed06c8432a19e5c7b5d</sys_id>
-        <sys_mod_count>16</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:26</sys_updated_on>
-        <ui_id>69314a19-d294-422f-988a-abca6c1c9239</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy27bMBD8FUNnS9DDsuVciiBFgAJtAyRBL20qLKllzJYSVZGM4xj+9y71SIImQYOihx56E4f7mFnuQPtAO9s6ay71sTHyugmOPl/NA9l4jL73QQM1BkcB100lrdRN2QPz4AaU8xenyt3q2cnsVDag5J12M67rmXEcjdFvKLCSplWw+/TaeL6RqupwZNJCR/0sdsHR/pcru2uxVMBQUdkL28nmmtJlRScRg0jWPOFZuszSOE6LRcKWGUvSKgOEjOKmxJNJ2Ox9j8xfVOz7EW6mTrqrPK0kngd4a7GpkFoLUAbnQQ1NBVZ3u3ukQ6jOGvUAbGRjqVzgg2+NvKPaaZ77QIGkkeNweX8sx0EOMN9oyfGs9QQHxAJTYw7XytXNx0GHfwIU4JSdnoAQZ6getp60ZzFSEhcbvT2fGtIL9QLHS6U5qPsTWBoDcxaNfxhUWFOhsoa2peGUbadvZJ9MXOroWtEhEkpvqanfsgi4Jx7RjCA6JfxtD3+CTnoVH6gMJQ80GRjJy34jqZztSMKhH0v5w3lCg8BRSjlMgwIM72Rrj6nPDY6sD/On6/xok/f7NAFcZ4hhusizcJEyFjK2ysKVQFwnhVjlKUTnyOnlI1fSkHALqvS6DocvLo6zqtfIv1KpVZEs8zQLsSh4uFhlIixYimFSAMvpK16IdfRNs9JYsM5M+eQDbwTh1FPn/HP8/oZT15CLPInz5526WD7n1Gc8+rI909/Y0y/UK90Zx/F/ez62pzTlYLNRW9/8j9155a04dDDD3lTIpSEilx57N/2T/MWOFkDyx9BWd9+9hAfs8BP1tevU3QYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
+        <values>H4sIAAAAAAAA/+VVy24bNxT9FZarBFWEkeQYsbNyrBpokdqAXXgTJQSHvCOz4ZBTkiNLEfQ1XfRD8mO9HM7Iiu2olpCNUS8M8L54ztE9ww9LqiQ9pgcgs8HR4FCMBqPRMMuGbw4G+eEoHwzliAMMaI8aXgJWOhDWSTzPuK5jYLn0dV5oe9vndbAlDyBZ4P7zaoVFUvlK88V1W4sRcaO0dGDo8YePPVpxh2MDOHq8vJd6Ki7Nc9BYetkBuw80LKp4llbUJZjAVBd833aO2wz5dYwZbIpwBlmPwjyAkYBACq499GjJjeTBugU9Dq7GgAMuL4xerCtulAmJaMnnXn3Bmw+yWFcAMhOtCOsjawVK4WLMA7/CySLUbq2XVQJ80kRCwWsdTjdjqeCiCsqa1BJ4rrtuq+vSnCdF6HrAxu9RewQBVeQZkSdaxdWNvb3sQJ4p00jSUtRWcL0+8RCcyusQ4SwpaGg0LnlVKTNllbMz1TQjlLI/1Xjox2XBO72amj4XEXcfVeX9M4yPm/A1dyqS+B3HYPOqR/3Cn2ru/R0V1JD9VUckiVhLgTUqNBKwZhNis3CqCid41Qxa4Kteu/n5620bJo7uFmpj5t32exN/QmGZABfKaRma3X+4+aeYVoUSaA8SK16cdGYhkfbLnZ3xBNydM/5o9uFxHq05HsTeb/aS85RorfH6h1njzXOyRkvj2XvjvxyRDbd+czc2qTGB33RDwI2e1Fk2kqNPSCry9Qw3g91a95kZi1KkdCFfJQwgH5pl3zG7OegJPDsHnSnQ0j9CvLMPlIg/AEtC3LNQmyTXbXL9wvzAJyZ7Tk76HzwyiWKKNfv3+BbH1LZGqgryopCsgc4GjIGcM3HDSy4547dzVuh6bhnmWCLJondqzxiJBhketv8Nwb+95vSFlUB+SnYj2UuyTMMc4PoYMqG/OGeJ4eSk6SNj3DU0HvnN5uTEeBWfj1dYRn7e8/4SvOdTeDsxq4n5Ro5RGjMDhy/rouv40+YocnPxbqrsMW5Xca6b2YKTq2bAVpH2gfN9rY7SNJvjp4o58OhPLu3+Yu0zb1e13p2/IxfxAnLZXbBdsr1AfaPZAygwB1F//efr35ZIu3n5hL7FL4LnM5DrD91qtfr4LzuowRJSDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99e669c533f7ba146c8432a19e5c7b16"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2178ae1c33f37a906c8432a19e5c7bb0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2178ae1c33f37a906c8432a19e5c7bb0^sys_idNOT IN45e629c533f7ba146c8432a19e5c7be9,5380a0a433b3fe906c8432a19e5c7b29,e5821dbc33377ed06c8432a19e5c7be4,5780a0a433b3fe906c8432a19e5c7b84,5380a0a433b3fe906c8432a19e5c7b86,a47ac318333ffa906c8432a19e5c7be4,feb0d46b33b70b906c8432a19e5c7b48,b2b0d46b33b70b906c8432a19e5c7b8a,7ab0d46b33b70b906c8432a19e5c7b8d,1780a0a433b3fe906c8432a19e5c7b8d,d1e669c533f7ba146c8432a19e5c7b15"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">8de629c533f7ba146c8432a19e5c7be8</block>
@@ -895,10 +733,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-21 13:00:04</sys_created_on>
         <sys_id>45e629c533f7ba146c8432a19e5c7be9</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:25</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:38</sys_updated_on>
         <ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -922,10 +760,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 18:35:46</sys_created_on>
         <sys_id>5380a0a433b3fe906c8432a19e5c7b29</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:25</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:38</sys_updated_on>
         <ui_id>b85dc530-7ef0-46d5-863f-bb4080252390</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1V227TQBD9leBnx3Js59K8RaBKIKASrfoCxRrvrpOF9a7ZS9I0ytf0gQ/pjzHrS1qVRkDFAw/kKXtmduac2TnyLlDO1s6aC7Uwhi9lMP94FQZcegz/7wIJFQvmAVGScsuVzBsgDNYgnA8slg40hUHJJQh+A3ff727VgKrBG1UMFtLwQvh0yk0tYHv5Z7fIiguqWceqBo29LdPBfPcoZLc1ywUUTGDxc6u5XOJ1TvFUUEhIEWfTNE5HaRxPRglJpmmJvwlMxzHm9Rdf9iIHbxskPKre90Pc9J2Upp7WKI7DgF1bJinD3iUIw8KgAknBKr09IJoBPZPiHlhxabFe4JOvDb/B4sl47BNLhiIJa4OHY97Ns4XJSnHCzmrPsEUs+AG2QSVcJd+3QvxLsBKcsP1LIOIM1mO1J+1ZdJTK85XafOgbnnLZKOyCQhEQhxNYnEPhLDP+ZZhgFRbKK6hrnE5ea7XmzWXkUkVLgYeoFGqDTf3KRUA88QhnBNEp4q8a+BI09yreYRm8vG/U59+c79vq6BjnrWhMMETz2i6w3Jp15Pbhzyv8YHt3u3JWsCRm42FBJ+kwy0bFEBjLhtlJGWfJCYUJgeiLKnJjwTqz37/45OI4pb45qvv8/AraSdluzyNz/Buk/ob36HSUzspj3puRp7z3hOuOGy75leGsdr/rt9jX+m+43nD4hCZvHdVpa5o/24hX3nVtB9MuDmWEGyRy4bHX/SfHB7a4AZw8hDZKf/US7rH9D9Riily8BgAA</values>
@@ -933,29 +771,191 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">55e27dbc33fbbed06c8432a19e5c7b5f</block>
+        <block display_value="">2d821dbc33377ed06c8432a19e5c7be3</block>
         <comment/>
-        <connected_to>69314a19-d294-422f-988a-abca6c1c9239</connected_to>
+        <connected_to/>
         <decision_table/>
         <display_text/>
         <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>15</order>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>3d7a4be7-bf0c-4172-982d-d517ddddf543</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-20 16:52:36</sys_created_on>
+        <sys_id>e5821dbc33377ed06c8432a19e5c7be4</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:39</sys_updated_on>
+        <ui_id>22c992a5-d4ee-4415-8c80-cf5ee99db684</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPjvFHnDp5GaVbRmFtRhMKYxQjy9eJmCx5kpw0C/nvvfJHGtaEjbLHvfme+3XO1cF7R9amqo1eymut2Uo40+9PrsOExfB77whSgjN1qBQ5M0yKtAFcZ0N4bRM3i4fBTLLBZ1Aklx8wkzNdcbJ7vFhA14znCrpdFVE40YBypvvfUmZXQcpJBhznLIxiYoXtLMeo8EkRTGhAo3Achb4fJqMgG0dZEOYRARJhXd9401MffGkQ96Imuw9x3W+SKre0At914NmAyAFXF4RrcJ2SiJwYqXZHRAHJ54K/AmsmDI5zbPGzZr9wdhjHtrAA1EihTR7DtLtcC9O1ZBTmlSXYIoZkvOuhkteluG912JtDQWpu+psjUmucB5UlbVl0lIrFWm4f+oUzJhqBXZJLSvgxIgbPkNUGtH0Y4FDioLQkVYXHSSslN6xpRi6lt+IYeAWXW1xqfeQRaol7eCPizRD/2MCPRDGr4g7HYHNLMyOa0bTxHI4zCiUcmrOkP2tLqBXYSUnba2CBpopV5hr3bKBjfXDfGvbEq/t9eJUE4ziMhpAkdDi6iophkoUwDBKSxfjlj4qJR7U6HG4X9/Plp7uvy29vLf3uOf/C+RMSF3Hgx+edPxqfc/4Zz1+2e/gHu9sH+ku3+77/3+6ndmc6bW3baWuWv9vtT9ba7Qbd+iYHyjQSWVrstv+L28QODcDoKbSV6oeV8IodXgAf+qrBDwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9f80a0a433b3fe906c8432a19e5c7b83</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>b85dc530-7ef0-46d5-863f-bb4080252390</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 18:35:46</sys_created_on>
+        <sys_id>5780a0a433b3fe906c8432a19e5c7b84</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:38</sys_updated_on>
+        <ui_id>28256d1e-e645-4fda-842a-65d896b71c0f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YWW/bOBD+K4Keva6oM/Zb0WyBPuy2aIy8LAqBIkc2sbSkpaikbpD/XpKiZMWWncvpsS1gwOYMNec3oxnfuGUjq0bWi/J1XbNl4c7/+TRxWaFp6veNW+A1uHOXNgJLVhap3FTgTtwrzBtNh88VZ4TJtLugeJTVFcebS3vlT3vFGVwhK8apAKuuwkJpkSDc+c0OS6tLOc6AK0lvViUjWjuj6hTOkiA6Q2ESeAEKPC+LEcRxmMRZHuPkLFL3ugfPrWZn0Vp/wCnzNVcWWDWloNom5HkT5aiEgoJSnGNew8Rd44JiWYpNTxGA6fuCbwkrVkglz9WXP9fsixIeevpeDspBAi2vP6Y2cC25taJNQufHWCiPZcI64N1OtjI+AlfsKxiTISxvRAYayvgAgkAh8XJUStVzR+T4tyqrFHLccPnmdC6iE7jon8jFQLvYpu99ZVhzN9Dwwhm3OSclb9bF3y0M3T4gl8eqqr1yfn9xNbWyCioNV40/C8b8YlVef+yw9pYVxlbL5CXBvD9hKQXLGqlTc+MCh7USlK5xVbFimVaivGLmYeXGerrk6jDNeXmtlOoWMsVEGzJV1YGnbxX93JAvsWA6AH8pMerhWwP89L9G621DYC1OTcD0hZoIVsnXROfLGqdTZKt3kAPJ1iBS07VSpRb0eZCt/Z705BZ0rqS/WrTiTRfKckRjFKMsCWJfdaEgJDGBeAaAEJ753qALDSBlDHaMwY422LEWP9g126pM8A09tYwX6FlG1mOaVo/6R4H+Z0GuSnydttC0vhnlJ0B0m+tt8l8Gwu8KCcvWDw3gMy8IAm9GoiDpAUwpQJ4nGfIBjQJ4C9URmy02Wa/nNyZ/dkyOvALRLPH+8JD6OJ43159wH6ShcwGkLGj99Ia71WzgCjkKI3Jo6stgZOrbBevAmbttdH8i+I6T32/APgewe2NeWiq1OmsDCONcGlN2QNuRT7GkUIJD5EUH4OrHA7guzEwgdmdXZ2D4w108sMoEP8wq0wV5NxdjK0sGeSmGb8Oe0E//x5eKe5ShRynznz3e97gbHek77k4dS9H8iGXcWUg26bEVa3DNQnMLuvtq/u6a/uQG8I0XA5T7ET1Y+UlwpPL3F4IH+HTfRhD+D95lz6yB8VfO5JerjZqsgDb8hSqhz0xXCXkWRWpoO1AJsX93ZFMJcOQKnLzkKrL6NDD3kBs2bmKg2sI+OiHsA/8u7Mm6GBoxVgIXW/avMNY9dXz7pJHYSqpbSFEgrFYKF5r2rvs/WjM2CgSMDEnXpfhXm7ql3X4FdsxQcdkWAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9b80a0a433b3fe906c8432a19e5c7b85</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <flow_variables_assigned>next_page</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 18:35:46</sys_created_on>
+        <sys_id>5380a0a433b3fe906c8432a19e5c7b86</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:38</sys_updated_on>
+        <ui_id>72a4fca0-b85c-43f7-9ff1-9720322d2494</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lYJnW5Alx69bgCJAgDYpGjeXIhBW5MomSpEMSdlxDf97l3rYgdFDz0Vu2iF3d2Y40JGZJtgm+LW59V5uNFv9fBkxqSNG30emoUa2YhrfQmFhg2zEdqCaiNGnkN4qODxfEL6VSjjsB1lw1B/QsdXx6igcLBYKSlTU+BSc1Btql4IqSOfA88kiz/OqgmU644tpnsFkiTd8XpYTujc0PhCvT986Xn+hGpcQ5IfxxonIJRsxuoRaIK2rQHkcsRq0gGDc4Yw4BPGo1QXYSh06lTW8efmbRi/SNI03KyRhvPfgXBa9P4M1RnJ8tEEa3SEBSjX4ZlRT64dOQnQWK2hUeOds42ke2sg60ug5VU9bs/8+LLyTuhXYHyrDQZ0rCGRD2QT08TUaub4yp0O+XD8JKqxpY1GDtYQU1pmdbLcQ6TrZKCqSSpk9sYsRSoBHhQm5Cckd4Z9b+BmcjHK/0hhqjut+aPna4H375PObSY6z6TjPMz6eQjYbLyqejTORYwkTscwFslNrbfHaRFGdSb0dRecoXfDcSRtuicIOe+Wnl5jZbnsX6n9N2Uf4P8L/H4RfIJeeWK0jhfvh3x4PDhQbyd9De+N+RT0X7PQHAq3++yUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">207ac318333ffa906c8432a19e5c7bcb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 12:19:35</sys_created_on>
+        <sys_id>a47ac318333ffa906c8432a19e5c7be4</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:38</sys_updated_on>
+        <ui_id>e9396a52-23a1-4540-8583-1765b9655a71</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTWsbMRD9K8uel2Vt13HwLbQNBJq62CZQSlhmpVlbVCupktaOa/xjeuxf6NV/rKP9SEIT0xB6rE+rJ82892Ye3se69qb2bqkvnBMrFU+/3CaxUAGj732soMJ4GjOtuPBCq7wBkngDsg4XczToMZoVHm00R1dLD1y7CPzxZ3T85UUFkTn+WAkFVMWFMxJ2N68qZmshucVOowFLSqgwnu7/uPI7g7mEAiVxLLwVakXlgtOp4DBkRfZmMspGg1GWnQ2GbDgZlfQ7g8k4o3d94dvecvShQZKTswh8hLueSVseZA2yLInxzqPiSNwlSIdJXIHi4LXd3SMWgc+UfADWQnnqF4fHd058p+bD8Tg8LJFMMmwv7495N9YWZmstGM5MUNgiHgrZ1TAt60p9bI2EhWAJNPV+IYTUjvrRXkh0UNFJKhdrvZ33hJdCNQ67S6kZyPsTeJpDUXt0YTMosaJGeQXG0HRyY/VGNMWkpUpXkg5pKfWWSEMAU2BBeEozgvSS8HcNfANWBBfX1IaKD437/FsdeFsfneK8NU0PHLPC+Atqt8FO3CF5GuhHWd7vGyGbjitVtLzcwAoPh6vF++tPy89PI/yimn+RXD4ZjM7LU8k9Z88l95nMno7r8G9x9bZ+aVqz0Ot/XPu40gpd3uax89aQvzrGtyGzLYNrg8ORCUdClgG76v++w8WOEiDYY2ir7ddg4QE7/Aa2xm6uCAYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">36b0d46b33b70b906c8432a19e5c7b48</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
         <outputs_assigned/>
         <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-20 19:14:02</sys_created_on>
-        <sys_id>1de27dbc33fbbed06c8432a19e5c7b5f</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_created_on>2026-10-13 21:19:34</sys_created_on>
+        <sys_id>feb0d46b33b70b906c8432a19e5c7b48</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:26</sys_updated_on>
-        <ui_id>540c24d6-bf47-44a1-9f85-b1a287291998</ui_id>
+        <sys_updated_on>2026-10-15 20:16:39</sys_updated_on>
+        <ui_id>27396ac8-2309-4fbb-9261-4cbebb74bd08</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1U227TQBD9lcrPjuVLkrp5QRUoEhJQiVZ9gcoar8fNwnrX7CUXovw7s76kEW0EAokn3rxndmbOmT3jfaCcbZ01d+raGP4og8WnhzDg0mP0vQ8kNBgsAqZkxS1XsuiAMFiDcD6wFG6rLpYgVsq9IrziphWwuz8TZisuKo1DnxY0VbOog8X+p5DdtVgIKFFQlVuruXykdF7RqY6hTq5YwrJ0nqVxnObTpJxnZZJWGSCkdG9MfD3SvnjXIeFZPb4f4WbspHTlaSVxGODWoqyQWtcgDIZBA7ICq/TuiGiE6kaKJ2DFpaVygb+8Nfw71U5nM3+xRtLIsA8ej8Uwtx5mK8UZ3rSeYI9YKMWQw5RwjfzQ6/ATxxqcsOPECXGG6mHrSXsWA6X6dqU2H8eGSy47gUNQKAbieAJLYyidReMfBgU2VKhooG1pOEWr1Zp3ycSliR4FHaJaqA019R6KgHniEc0IoiXhbzr4HjT3Kt5TGUruaZZgOCs6v1E5q0nCoRtL8c15Qr3AQUrRT4MuGKZ5a6+pzxoH1ofwuVlPfLrfp5d5Mp+l2QTznE2ml1k9ycsUJ0kO5Yy+4ml9FX1RZWEsWGcOh88ujrOqBi7o7Z85++8L/oNdSF7ahRe24PwCpL9YAP9kv+n/OI7/L8DpAnBT9EYetHXN/9j/D97sfQfT+6ZCxg0RufPY2/Gf7gM7MgBnp9BG6a9ewhN2+AFYeMTeHQYAAA==</values>
+        <values>H4sIAAAAAAAA/+1UyW7bMBD9lUBnWdBiObJvQQsDBdoGaIJc2kAYkZTNliJVLl5q+N871OIYiYMWbY+9iW84M+8N3+gQKGdbZ829ujGGr2Sw+PwYBlx6DL8PgYSGBYuAKEm55UqWHRAGGxDOB5bC7dTVEsRaOYQpN62A/cPlKFlzQTUburSgsZZlOlgcnoXsvmWlgIoJLHJnNZcrTOcUT3UMdTInCcnSWZbGcVpMk2qWVUlKM2CQ4b0x8c1I+up9h4SvqvH9EDdjJ6Wpp5XEYcB2lknKsHUNwrAwaEBSsErvT4hmQG+leALWXFosF/jLO8N/YO00z/3FmqFGwvrg6VgOY+thslacsNvWE+wRC5UYcogSrpEfex1+4KwGJ+w4cEScwXqs9aQ9i4FSfbdW209jwyWXncAhKBQBcTqBxTFUzjLjH4YJ1mChsoG2xeGUrVYb3iUjlyZaCTxEtVBbbOodFAHxxCOcEURLxN928ANo7lV8wDKY3NOswHBSdm7DclajhGM3lvK784R6gYOUsp8GXjBE89beYJ8NG1gfw5dWPXPp4ZBeF8ksT7MJKwoymV5n9aSoUjZJCqhy/Iqn9Tz6qqrSWLDOHI9fXBxntAYu8O1fGPvvC/6LXZhDXudJnF/ehens0i5c2ILXFyD9xQL4J/tN/8dx/H8BzheAm7I38qCta/7H/n/0Zu87mN43lBFukMi9x96Nf3Qf2KMBODmHtkp/8xKesONPvNjjbBsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fab0d46b33b70b906c8432a19e5c7b89</block>
+        <comment/>
+        <connected_to>27396ac8-2309-4fbb-9261-4cbebb74bd08</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-13 21:19:34</sys_created_on>
+        <sys_id>b2b0d46b33b70b906c8432a19e5c7b8a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:39</sys_updated_on>
+        <ui_id>3d7a4be7-bf0c-4172-982d-d517ddddf543</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b2b0d46b33b70b906c8432a19e5c7b8d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>3d7a4be7-bf0c-4172-982d-d517ddddf543</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-13 21:19:34</sys_created_on>
+        <sys_id>7ab0d46b33b70b906c8432a19e5c7b8d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:39</sys_updated_on>
+        <ui_id>f40b59b8-ca78-48ec-81fc-165f2ba36fb1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U3W7TMBh9lSnXaZSfpkt7NwGTJjGGaDUJoSn64jithWMb22lXqr4IdzzLXozP+ekq1goEXHIXn+/vnM/H2XmysaqxZiGvjGFL4c0+PfgeEw7D750noKbezCNSlMwyKfIW8L018MYFnr5xy2q4UE/fl0wARkpmFIft/dkEsmK81LSfpUBjR0u1N9v9FLJbRXMOBeXYZ241E0ssZyWeqhCqaEoiksSTJA7DOBtHxSQporhMgEKCeUPhq4H6xdsW8c9qcvMQN8MkqUtHKwp9jz5aKkqKoyvghvpeDaIEK/X2gGgK5Z3gz8CKCYvtPJf8aNhX7B2nqUusKGoktAsejnm/uQ4mK8kIvVOOYIdYKHhfQyRvavGu0+F2TitouB12jkhjsB9VjrRj0VOq5iu5+TAMvGaiFdgHuSTADyewuIaisdS4i6Gc1tgor0EpXE6utFyzthi51MGS4yGouNzgUOejAIgjHuCOILhG/HUL34NmTsUttsHijmYBhpG89Ry2sxol7Nu15F8aR6gT2EvJu21ggiGaKXuFc9a0Z733Xxr2yKu7XXyZRZM0TkY0y8hofJlUo6yI6SjKoEjxKxxX00DgZecKljRvNN/vb+Zvbt8vPr509t+2+xfvYApplUZhevodjCen3sGJF3De/PEvzO+u6ze9H4bhf/Mfm5+ZvDNxr60d/sfef3BG7yaYzjclJcwgkYXDboZ/ugts0QCMHEMbqT87Cc/Y/gcq3cjJHQYAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -969,20 +969,47 @@
         <flow_variables_assigned>next_page</flow_variables_assigned>
         <generation_source/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>10</order>
+        <order>17</order>
         <outputs_assigned/>
         <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 18:35:47</sys_created_on>
         <sys_id>1780a0a433b3fe906c8432a19e5c7b8d</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:26</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:39</sys_updated_on>
         <ui_id>804ebc48-2151-4eca-8f10-ad61b3ef8da7</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VTW/bMAz9K4POsWFb+XByKzAUKNC1w5r1MhQGLdOJMFlSZTlpFuS/j4qddAh62LBrbubj1+OjCO+Z6bztfLs0N20rV5otfryMmNQBo+8909AgWzCNb76wsEI2YhtQXcD2+2yWp9NJxiPMcxGNZ7yO8jLDKM2hnNBXMq7n8Tm16Jw6HKhAJVurYPf8v3XEWqrK4UDagiOuHh1b7C9cfmexUFCionZP3km9onRZkQXJDARPc855XcM8mYp8zDNI5zgRs7JMKe6U+EAEPn3tNfhAltCEoPZU3rgqcMlGjIJQV0jtalAtjlgDugJv3O6MOITqUat3YC21p2osBL+18heVzpMkCZE10mACe+/ZLAZVe1isjRT4aL00ukc8lGrIEUZ1jX7oRwj7wBo65U/7IKRrqR7awDrQGDjVT2uz/XZqeCv1ccDBqYwAdbbAkwxl57EN2+jk8kKcHrm/XAkqbKhj0YC1hBTWmY08diHSTbxSZMS1MltiF55rDCJMGJOaEN8S/vkIP4OTYdwvVIaSQ7vvWr52eHdc+WyScpyOI84zem2QTaO8FlmUVRxLSKs5r5AdjtIWr10YqhdpkKPoFaWAVjhp/Q1R2OAw+eEl3EffvT+gv31l10O7Htr10P7p0CoUsiVWy0Dh7vTPCo4dPRsp/oS2xv0M87xjh9+W1xBa/QYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1de669c533f7ba146c8432a19e5c7b14</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>19</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-21 13:00:05</sys_created_on>
+        <sys_id>d1e669c533f7ba146c8432a19e5c7b15</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:39</sys_updated_on>
+        <ui_id>7c280e0a-7813-46e6-a143-eef355af2653</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32+jOBD+V06ojy0HCWnavFXtRerp2kiXbF+OChlsEu85NgsmbTfK/37jHxAg6e62m+3LRYoimBnGM/N9njGsHVHKrJTFTFwVBZ1zZ/TP46lDuZLB9drhaEmckRNFhUSyLKLIOXVWiJVKuA6dFckLKnjojELHd73QOQ2dRCwzRp4n8WeSSNCslQgTc3WSrKoL/dBntEIuQ3zuTmVO+Vx7OFlpXehsNnC3JEWB5u98ftMNaJosyBIZH2Mmnm6Iypvko/HN1fXsdnI/nV3NPk1bcYfOLZdkTnKbHybuSUoJw1GKEiILYzylapk7lI2VUD+2DsPQKensJSN/oZgwdTtSf5W/UHmEv5wgHAnOXmqLFLGC1PoF5bJW1VLjuZbTjlNMUlQyGWm8dp9mrYiuVaqVCiUSUI1Inos8MhSpDWVebg2XiGMkRf5a3CLHJiCt8xvPPUeM8Llc1MrAU/8b+LUwh7pugbXin62+9XjQ4hdtn2+q/Z3N9heXv/ft8ns1AAqBb+wN90RC5j9U/TeV4Uqn/dtUd5rDF6Oknzj9UpJbXBsML4M46Qe9s8vkEp8FQRCfoX7aO8M4iM/RAHn+sN8BvM0k2+Qqk0REujSqa9Y2ncZS2RJGloTLaImyDJgTZblY0SZc0LbcOQORmwIWEdZguKYcLmSK3C1GDyinKNYIZO9pK7xkbB+rRTu/N2zn80GHUAWBEBn9ilT8Y5EvkeHJn9PJPZjAXMG0yBh6eTiOl+N4OY6X43g5jpfjeDngeEkWlOGccP1eQzFMGBDa9xvVdBtvNm1reCMqkpxmUjFoBXqdZSUEgkIAOx5tL/kZp2CSoRzcSZKDoJ2AblF6OwAoStvgDyxmJwCsuYfgoFfUhlbYDO474XSjL+mNmddqWfBA6xU1R9lOIFWBKs21qXkbAdl1pjnhjPxThzxLwjHBdWz1jqwlipAT4GMtUAw0qwKHCvoVfAeesksJJJLYzOvbyB5BKrQETcgkU/UzEqk2gVUKVi75vQleHV5MK3rY1tNKbtqnGlCUBSxEMpWMis6Gmk4X4unvKpIx5Tpvq2QiQay+QxKmQVxKUhhgIP7oS6kMzLrWdWTCVuT8DlvMxPpAshTVgi2u1GF0qXJXb6ad3SU7Di1fegfki/e/Y8xjBxgzhypgvHTYg+nVG8R+v+f5XnzuEwQX/eGFnwyDywZwfygi2ZG7Ra/1NckCKKolqg2vqn4gCC8+DsLDImW3abM87Y1bA9M8GoC8fSgA/WvHAd1533sQcH6g9+zrFKoj2UAJV+5wY0z6u2+Cuv90W8pro7HL3Rk8/PtYLVvxF+Oh518Mk6R/ThR/B4NBPx4GHsKBhzFOGvzdhrcTr+VtLAQjiP8a4n7MrEptcfa3n0r74VNrL3MeFVEMBwsDNiYJVR8JZkp2W325VooXwIwmTdGTyP9VJN/KNv8BikeGZgMXAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=2178ae1c33f37a906c8432a19e5c7bb0"/>
@@ -1189,7 +1216,7 @@
         <sys_created_on>2026-03-19 18:34:45</sys_created_on>
         <sys_id>485068ec3373fe906c8432a19e5c7be9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>AWX Job Status</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1212,7 +1239,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>647ac318333ffa906c8432a19e5c7bc3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Next Page</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1259,7 +1286,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>907a8318333ffa906c8432a19e5c7bf1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Automated Task</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1282,7 +1309,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>987ac318333ffa906c8432a19e5c7b29</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>AWX Credential</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1374,7 +1401,7 @@
         <sys_created_on>2026-03-23 13:18:36</sys_created_on>
         <sys_id>d05ef72d3bbf3e54a1e3f65436e45aa1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Force Flow</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1546,7 +1573,7 @@
         <sys_created_on>2026-03-19 18:10:22</sys_created_on>
         <sys_id>47ba94a433fbbe906c8432a19e5c7b0f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Message</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1569,7 +1596,7 @@
         <sys_created_on>2026-03-19 12:19:34</sys_created_on>
         <sys_id>e87ac318333ffa906c8432a19e5c7ba9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Job Status</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -1594,7 +1621,7 @@
         <description>Chama a action para buscar o resultado do Job ansible de apoio ao processo de gerenciamento de certificados, com suporte à paginação desses resultados.</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>bnb_obtem_resultado_job_ansible</internal_name>
-        <label_cache>[{"name":"subflow.force_flow","label":"Input➛Force Flow","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Somente gerar CSR","value":"flow_a","order":1.0},{"label":"Gera CSR e Assina Cert","value":"flow_b","order":2.0},{"label":"Gera CSR Assina e Instala","value":"flow_c","order":3.0},{"label":"Nenhum","value":"none","order":4.0}],"usedInstances":{"1df103e9-0b9a-457f-aa70-4704b0867d8f":["force_flow"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"02e416cf-7b65-4e9a-98c9-44a18cb6b5ff"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr_path","label":"9 - BNB Obtem Resultado Job Ansible➛CSR Path","reference_display":"CSR Path","type":"string","base_type":"string","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"],"c0fe8cd3-1db7-487b-b220-5480e68fd2c2":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"597c2199-57c2-4726-9877-44dc7d22f05e"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr","label":"9 - BNB Obtem Resultado Job Ansible➛CSR","reference_display":"CSR","type":"string","base_type":"string","usedInstances":{"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"],"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"subflow.automated_task.description","label":"Input➛Automated Task➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"description","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"]}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.csr","label":"8 - BNB Obtem Resultado Job Ansible➛csr","reference_display":"csr","type":"string","base_type":"string","usedInstances":{"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"f8be20e5-bd63-441b-aee4-49f0429da6ca.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"209d8edd-b16b-4635-ae4a-ef6fb44777a8.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.job_id","label":"Input➛Job ID","type":"string","base_type":"string","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["job_id"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"09db55f8-08c8-46dd-b925-870c550a4983"}},{"name":"subflow.automated_task","label":"Input➛Automated Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["renewal_task"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["renewal_task"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["renewal_task"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["task"],"e7615fff-66dd-4cfc-abd5-31141a929123":["renewal_task"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["renewal_task"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["renewal_task"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["record"],"27816523-e88c-473f-8b2e-18ab58b204f9":["renewal_task"],"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["record"],"10368e10-86c1-40a2-b0a1-a9aaa7f2cb82":["record"],"8aa28081-6164-4a93-9731-a26e05aaa595":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"34fdb810-5fd6-411f-9a5f-f9bd52cba2b5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f.job_status","label":"1 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.job_id","label":"1 - BNB Dispara Job Ansible➛Job ID","reference_display":"Job ID","type":"string","base_type":"string","usedInstances":{"e7615fff-66dd-4cfc-abd5-31141a929123":["job_id"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["job_id"],"27816523-e88c-473f-8b2e-18ab58b204f9":["job_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fad10e8-ff81-4586-b38f-e93f9095f2ce"}},{"name":"e7615fff-66dd-4cfc-abd5-31141a929123.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"flow_variable.next_page","label":"Flow Variables➛Next Page","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["next_page_link"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["next_page_link"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"],"27816523-e88c-473f-8b2e-18ab58b204f9":["next_page_link"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a7513e64-332c-4a26-8fc2-2d3eba1d93de","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.next_page_url","label":"9 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.automated_task.sys_id","label":"Input➛Automated Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"21ae93ee-2453-42bb-bb73-7fee918f752a":["conditions"]}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record.u_renewal_flow","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","image":"","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"image":"","label":"Fluxo A - CA Externa","used":false,"rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"image":"","label":"Fluxo B - CA Interna / Instalação Manual","used":false,"rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"image":"","label":"Fluxo C - CA Interna / Instalação Automática","used":false,"rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"]}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.job_status","label":"9 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"],"540c24d6-bf47-44a1-9f85-b1a287291998":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2933a4fe-183a-4613-97da-87963063da2e"}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"2616a207-762b-4ecf-b399-def380774902":["record"],"22376c6e-e001-4eea-b7f1-233ea16611d1":["record"],"d0c8d9f5-7eb2-47d9-9472-108b03ab534a":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"033fb99d-55ee-448e-96a9-faf0cbdcd88e":["condition"]},"attributes":{}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8aa28081-6164-4a93-9731-a26e05aaa595":["work_notes"]},"attributes":{}},{"name":"subflow.awx_credential","label":"Input➛AWX Credential","reference":"api_key_credentials","reference_display":"API Key Credentials","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["credential"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["credential"],"e7615fff-66dd-4cfc-abd5-31141a929123":["credential"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["credential"],"27816523-e88c-473f-8b2e-18ab58b204f9":["credential"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"500db27d-cbfe-4afe-a6d1-fe74e9ec035b","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"subflow.force_flow","label":"Input➛Force Flow","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Somente gerar CSR","value":"flow_a","order":1.0},{"label":"Gera CSR e Assina Cert","value":"flow_b","order":2.0},{"label":"Gera CSR Assina e Instala","value":"flow_c","order":3.0},{"label":"Nenhum","value":"none","order":4.0}],"usedInstances":{"1df103e9-0b9a-457f-aa70-4704b0867d8f":["force_flow"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"02e416cf-7b65-4e9a-98c9-44a18cb6b5ff"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr_path","label":"9 - BNB Obtem Resultado Job Ansible➛CSR Path","reference_display":"CSR Path","type":"string","base_type":"string","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"],"c0fe8cd3-1db7-487b-b220-5480e68fd2c2":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"597c2199-57c2-4726-9877-44dc7d22f05e"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.csr","label":"9 - BNB Obtem Resultado Job Ansible➛CSR","reference_display":"CSR","type":"string","base_type":"string","usedInstances":{"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"],"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"subflow.automated_task.description","label":"Input➛Automated Task➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"description","usedInstances":{"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["description"]}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.csr","label":"8 - BNB Obtem Resultado Job Ansible➛csr","reference_display":"csr","type":"string","base_type":"string","usedInstances":{"22c992a5-d4ee-4415-8c80-cf5ee99db684":["condition"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["csr"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"f8be20e5-bd63-441b-aee4-49f0429da6ca.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"209d8edd-b16b-4635-ae4a-ef6fb44777a8.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.job_id","label":"Input➛Job ID","type":"string","base_type":"string","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["job_id"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"09db55f8-08c8-46dd-b925-870c550a4983"}},{"name":"subflow.automated_task","label":"Input➛Automated Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["renewal_task"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["renewal_task"],"d1989d1d-8d14-4075-bd66-7bf5db075fde":["renewal_task"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["task"],"e7615fff-66dd-4cfc-abd5-31141a929123":["renewal_task"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["renewal_task"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["renewal_task"],"493b4455-0d38-4386-89e4-f7b0510de6b9":["record"],"27816523-e88c-473f-8b2e-18ab58b204f9":["renewal_task"],"fd73a6d4-6fe7-4955-ba9b-1dd1df9f610c":["record"],"10368e10-86c1-40a2-b0a1-a9aaa7f2cb82":["record"],"8aa28081-6164-4a93-9731-a26e05aaa595":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"34fdb810-5fd6-411f-9a5f-f9bd52cba2b5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f.job_status","label":"1 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"e9396a52-23a1-4540-8583-1765b9655a71":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.job_id","label":"1 - BNB Dispara Job Ansible➛Job ID","reference_display":"Job ID","type":"string","base_type":"string","usedInstances":{"e7615fff-66dd-4cfc-abd5-31141a929123":["job_id"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["job_id"],"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["job_id"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["job_id"],"27816523-e88c-473f-8b2e-18ab58b204f9":["job_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fad10e8-ff81-4586-b38f-e93f9095f2ce"}},{"name":"e7615fff-66dd-4cfc-abd5-31141a929123.job_status","label":"3 - BNB Verifica Status Job Ansible➛Job Status","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0}],"usedInstances":{"b85dc530-7ef0-46d5-863f-bb4080252390":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"flow_variable.next_page","label":"Flow Variables➛Next Page","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"209d8edd-b16b-4635-ae4a-ef6fb44777a8":["next_page_link"],"fc55394e-defe-44f0-bd8a-c5cd5fb9809c":["next_page_link"],"e9396a52-23a1-4540-8583-1765b9655a71":["condition"],"27816523-e88c-473f-8b2e-18ab58b204f9":["next_page_link"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a7513e64-332c-4a26-8fc2-2d3eba1d93de","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"fc55394e-defe-44f0-bd8a-c5cd5fb9809c.next_page_url","label":"8 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.next_page_url","label":"9 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"804ebc48-2151-4eca-8f10-ad61b3ef8da7":["next_page-0"],"f40b59b8-ca78-48ec-81fc-165f2ba36fb1":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}},{"name":"subflow.automated_task.sys_id","label":"Input➛Automated Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"21ae93ee-2453-42bb-bb73-7fee918f752a":["conditions"]}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record.u_renewal_flow","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record➛Renewal Flow","reference":"","reference_display":"Renewal Flow","type":"choice","base_type":"choice","parent_table_name":"sn_disco_certmgmt_task","column_name":"u_renewal_flow","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Fluxo A - CA Externa","rawLabel":"Fluxo A - CA Externa","selected":false,"missing":false,"image":"","reference":false,"value":"flow_a","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"used":false,"label":"Fluxo B - CA Interna / Instalação Manual","rawLabel":"Fluxo B - CA Interna / Instalação Manual","selected":false,"missing":false,"image":"","reference":false,"value":"flow_b","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}},{"used":false,"label":"Fluxo C - CA Interna / Instalação Automática","rawLabel":"Fluxo C - CA Interna / Instalação Automática","selected":false,"missing":false,"image":"","reference":false,"value":"flow_c","parameters":{"name":"sn_disco_certmgmt_task","dependent_values":[""]}}],"usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"]}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.job_status","label":"9 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"69314a19-d294-422f-988a-abca6c1c9239":["condition"],"540c24d6-bf47-44a1-9f85-b1a287291998":["condition"],"27396ac8-2309-4fbb-9261-4cbebb74bd08":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2933a4fe-183a-4613-97da-87963063da2e"}},{"name":"21ae93ee-2453-42bb-bb73-7fee918f752a.Record","label":"6 - Look Up Record➛Certificate task(Automated Flow) Record","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","usedInstances":{"2616a207-762b-4ecf-b399-def380774902":["record"],"22376c6e-e001-4eea-b7f1-233ea16611d1":["record"],"d0c8d9f5-7eb2-47d9-9472-108b03ab534a":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"033fb99d-55ee-448e-96a9-faf0cbdcd88e":["condition"]},"attributes":{}},{"name":"1df103e9-0b9a-457f-aa70-4704b0867d8f.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8aa28081-6164-4a93-9731-a26e05aaa595":["work_notes"]},"attributes":{}},{"name":"subflow.awx_credential","label":"Input➛AWX Credential","reference":"api_key_credentials","reference_display":"API Key Credentials","type":"reference","base_type":"reference","column_name":"","usedInstances":{"82cdd16c-33d1-41c3-9096-fd0e4d2c4a1f":["credential"],"1df103e9-0b9a-457f-aa70-4704b0867d8f":["credential"],"e7615fff-66dd-4cfc-abd5-31141a929123":["credential"],"f8be20e5-bd63-441b-aee4-49f0429da6ca":["credential"],"27816523-e88c-473f-8b2e-18ab58b204f9":["credential"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"500db27d-cbfe-4afe-a6d1-fe74e9ec035b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"27816523-e88c-473f-8b2e-18ab58b204f9.job_message","label":"9 - BNB Obtem Resultado Job Ansible➛Job Message","type":"string","base_type":"string","usedInstances":{"22376c6e-e001-4eea-b7f1-233ea16611d1":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c8497d05-be3e-41f8-91aa-78f0e1ac5bc2"}}]</label_cache>
         <master>true</master>
         <name>BNB Processa Job Ansible</name>
         <natlang/>
@@ -1611,7 +1638,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5f4ad06833bbbe906c8432a19e5c7b98</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1619,7 +1646,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -1885,14 +1912,14 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-23 13:18:44</sys_created_on>
         <sys_id>465eff2d3bbf3e54a1e3f65436e45a7c</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:31</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2079,7 +2106,55 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ef4a546833bbbe906c8432a19e5c7b4e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=5f4ad06833bbbe906c8432a19e5c7b98"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5f4ad06833bbbe906c8432a19e5c7b98"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5f4ad06833bbbe906c8432a19e5c7b98^sys_idNOT IN4049c90d33bb3a146c8432a19e5c7bcf,0003157033777ed06c8432a19e5c7b46,6ae6e9c533f7ba146c8432a19e5c7b92,4744b028337332d06c8432a19e5c7b36,48490d0d33bb3a146c8432a19e5c7b2a,44490d0d33bb3a146c8432a19e5c7b2b,0449c90d33bb3a146c8432a19e5c7bd1,0744b028337332d06c8432a19e5c7b38"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5f4ad06833bbbe906c8432a19e5c7b98^sys_idNOT IN0003157033777ed06c8432a19e5c7b46,48490d0d33bb3a146c8432a19e5c7b2a,4049c90d33bb3a146c8432a19e5c7bcf,4744b028337332d06c8432a19e5c7b36,0449c90d33bb3a146c8432a19e5c7bd1,0744b028337332d06c8432a19e5c7b38,44490d0d33bb3a146c8432a19e5c7b2b,6ae6e9c533f7ba146c8432a19e5c7b92"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Atualiza o CSR na Task</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>22c992a5-d4ee-4415-8c80-cf5ee99db684</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-20 16:54:41</sys_created_on>
+        <sys_id>0003157033777ed06c8432a19e5c7b46</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-13 21:19:43</sys_updated_on>
+        <ui_id>493b4455-0d38-4386-89e4-f7b0510de6b9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmN8tFC6BtqhTSJgQQTL4Aix74p1hwnsx2gi/rfd504pQLEysQL2lt9v3zOyT31dUsEJ3MyBR5GR9EBS6IkicMwTqdRfpDkUcwTChCRMVG0BKzUwCrN8XxPZeMCbWuavJDVQ0AbW5XUAs8sNT83GyziwtSSrq98LUbYnZBcgyLz69sxqanGsRY0mbfPUvvikjQHiaUXA7DnQO26dmdesaYEZTMxBE9959JnRt+WmMEmBycKxwQeLSgOCKSg0sCYlFRxaiu9JnOrGwxooPxcyfW24k4o2xMt6aMRv/HmaejqCkBmzIuwPWZeoD5cLKmllziZ2UZv9aoEA9NrwqGgjbSL3VhfcF5bUam+xdJcDt2VbEp11itCtgN2vkdjEATUjqdD3tMqLu+qh4sB5IlQnSSeoqwYldsTtVaLvLEOTktAQqdxSetaqFVW6+pedM0IpQxWEg+BWxa804iVCihzuANUlQYnGF924SuqhSPxHcdg82ZMzNosJDXmiQpqmP1qHJKemKeQdSp0EmTdJrhmpkVtj/Gqe/DAN2O/+fnsrQ1jR08LtTPzafuNcp+QVRkDbctVabvdf7n5C0yLQjC0x8hVfDkezDJytL++2xl74B6c8aPbh9d5eHO8iJ3u9o7O+oS3xuzDrJF+Jmt4Gp/eG39zRBi/+Z+7s0mdCcyOG5jRN00YJrxt48M0OpjFyQTSlE2mh0kxSfMYJlFK8xn+CqfFUYD1rz0T/zrmfQ7ag+fgoBMBkptXiA/2gRLxW8h6IZ5ZyCdHVz65fWE+8IkJP5OT/ptH5vYPTM7KgWAJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0003157033777ed06c8432a19e5c7b46"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set Task Status to Complete</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>f40b59b8-ca78-48ec-81fc-165f2ba36fb1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-21 10:50:34</sys_created_on>
+        <sys_id>48490d0d33bb3a146c8432a19e5c7b2a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-13 21:19:43</sys_updated_on>
+        <ui_id>2616a207-762b-4ecf-b399-def380774902</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmt8tEC7RuiQprEQIKJF4aiG/umWHOczHaArup/33XilKogBhIvaI/3yz7n5pz4Zs2kYHM2QRHFs/iAp3GaJlGUHE3i/CDN40SkgBizIdNQInUa5JURFN+DanxivU5iwFmKOEom03Q0SfJ8lOeH6eiwQJzFR8XhNIHxZTu32dCkkLZWsLoOB1CG30klDGo2v7kdshoM3eXQsPl6r/RWsApyVNR62aPdR+9WtY9FxZsStctknzwLk4tQGXxbUIWGPJw4GjJ8dKgFEpAClMUhK0ELcJVZsbkzDSUMgrjQarXtuJPadURLeLTyD908iXxfgcSMhyVswywsqEsXC3BwRSdz15jtvirJ0XY7EVhAo9zJbq5ruKidrHQ34iBX/XSlmlKfdxth2wN2vkdjCQTWnqdH3tEqru6qh8se5KnU7UoCRVVxUNsInDMyb5yHs2aosN1xCXUt9TKrTXUv22GCUo6XioJxoaoHutPKpR4D97jHtFUYn1J+0aavwUhP4jsdQ8ObIbMre6LA2icqtMPsd+ORdMQChazdQruCrFWCH+ZG1u6YrrrHAHwzDHbIp68pjM+eBLVz5pMlrPafkFcZR+PKZekyB/bXc+WfUFkWkoPDge/4cty4qqRIDDztr+92xhtw98740erhZR7BHM9yZ7uzg/OuEKwx/TBrHH0mawQan94b/3JElLz6z91RUmsCu+sGR4r+2URRKpLnHtirvk/vb0DV6/1UohL2BZi92LEkWA6zDvae4ENxcB2K2/fgAx+E6DPp/r95Em7/AjCyEGkjCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=48490d0d33bb3a146c8432a19e5c7b2a"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
@@ -2105,54 +2180,6 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4049c90d33bb3a146c8432a19e5c7bcf"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment>Atualiza o CSR na Task</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
-        <generation_source/>
-        <order>12</order>
-        <parent_ui_id>22c992a5-d4ee-4415-8c80-cf5ee99db684</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-20 16:54:41</sys_created_on>
-        <sys_id>0003157033777ed06c8432a19e5c7b46</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 10:33:53</sys_updated_on>
-        <ui_id>493b4455-0d38-4386-89e4-f7b0510de6b9</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmN8tFC6BtqhTSJgQQTL4Aix74p1hwnsx2gi/rfd504pQLEysQL2lt9v3zOyT31dUsEJ3MyBR5GR9EBS6IkicMwTqdRfpDkUcwTChCRMVG0BKzUwCrN8XxPZeMCbWuavJDVQ0AbW5XUAs8sNT83GyziwtSSrq98LUbYnZBcgyLz69sxqanGsRY0mbfPUvvikjQHiaUXA7DnQO26dmdesaYEZTMxBE9959JnRt+WmMEmBycKxwQeLSgOCKSg0sCYlFRxaiu9JnOrGwxooPxcyfW24k4o2xMt6aMRv/HmaejqCkBmzIuwPWZeoD5cLKmllziZ2UZv9aoEA9NrwqGgjbSL3VhfcF5bUam+xdJcDt2VbEp11itCtgN2vkdjEATUjqdD3tMqLu+qh4sB5IlQnSSeoqwYldsTtVaLvLEOTktAQqdxSetaqFVW6+pedM0IpQxWEg+BWxa804iVCihzuANUlQYnGF924SuqhSPxHcdg82ZMzNosJDXmiQpqmP1qHJKemKeQdSp0EmTdJrhmpkVtj/Gqe/DAN2O/+fnsrQ1jR08LtTPzafuNcp+QVRkDbctVabvdf7n5C0yLQjC0x8hVfDkezDJytL++2xl74B6c8aPbh9d5eHO8iJ3u9o7O+oS3xuzDrJF+Jmt4Gp/eG39zRBi/+Z+7s0mdCcyOG5jRN00YJrxt48M0OpjFyQTSlE2mh0kxSfMYJlFK8xn+CqfFUYD1rz0T/zrmfQ7ag+fgoBMBkptXiA/2gRLxW8h6IZ5ZyCdHVz65fWE+8IkJP5OT/ptH5vYPTM7KgWAJAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0003157033777ed06c8432a19e5c7b46"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
-        <generation_source/>
-        <order>19</order>
-        <parent_ui_id>7c280e0a-7813-46e6-a143-eef355af2653</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-21 13:00:10</sys_created_on>
-        <sys_id>6ae6e9c533f7ba146c8432a19e5c7b92</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 10:33:53</sys_updated_on>
-        <ui_id>10368e10-86c1-40a2-b0a1-a9aaa7f2cb82</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVXW/bNhT9K6yeWsw15DgtmvQpjRdgQ5cAyZCXuiWuyCuHLUVqJOXYM/zfdylKjpekbprlJZjeeL94ztU50qdVpmR2mO2jzEcHo7diPBqP9/J8793+qHg7LkZ7cgyIo2yQGaiQKh0K6ySd56CbGFitfFOU2l4PoQm2goCSB/Df1msqksrXGpaXXS1FxJXS0qHJDj99HmQ1OBob0GWHq1uph+LSUKCm0vMe2G2gYVnHs7SiqdAErvrgx65z0mXYbxPKUFOEM8oHGS4CGokEpATtcZBVYCQE65bZYXANBRyCPDN6uam4UiYkohUsvPqbbt7PY12JxEx0S9gcebegFC4nEOCCJovQuM2+rBLo004kltDocLwdSwVndVDWpJYAhe67rW4qc5o2km0GbL2PxhMIrCPPiDzRKi+u7PV5D/JEmXYlHUVtBejNCUJwqmhChLPKUGO74wrqWpkZr52dq7aZoFTDmabDMIqF7vRqZoYgIu4hbRWGJxSftOFLcCqS+IPGUPN6kPmlP9bg/Q0V2iH/q4lIErGOAm+30K6At0qIzcKpOhzRVXPsgK8HnfKLN7sUJg5uBLU180b93sRXKCwX6EI1q0Kr/bvKP6a0KpUge7BY8fKoNwuLtF/9tDMegLt3xp+tHu7n0ZnjTuzjdi87TYnOGm+ezBrvnpM1OhrP3hs/ckS+t/Obu6Wk1gR+2w2BFD1t8nwsx1+IVOTrOSmDX1v3jRtLq0jpUr5OGFDeNctjx/ycgx7As3fQiUIt/T3Ee/tgRfgD8rSIWxbqkuyyS27+ME/4i8mfk5P+Bz+ZRDHFWv3dr+KY2tWYqZK9LCVvofMR5ygXXFxBBRI4XC94qZuF5ZTjiSSP3mk850NhJbIXySYsf8VWU8PocUiv3bBp9qtzlhlgR20fm5BGyDDsd1uwI+NV/Oy/pjL2C3vc/RV6DzN8PzXrqfkXjXEaM0dHf8Rl3/HVFrSc9uL/zuaynS2AXbQDdrJ6DJzvkztI02xB3wTu0JMRQNqnZffh9AM7ixew8/6C3RQfBWqLI2nfwxzlxtLr9frzP7qZMR08DAAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6ae6e9c533f7ba146c8432a19e5c7b92"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action_type>
         <action_type_parent display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_type_parent>
         <attributes/>
@@ -2176,54 +2203,6 @@
         <values>H4sIAAAAAAAA/9WV22vbMBTG/5Wipw3s4EviS95KSqDsytr1pRRzLB8novKlstw2C/nfJ8Wu42RJ10LaMfCLjj7pfPqkH75eEpaQMbFsJ/FtD1wXYtcLLY8GQ9cBO8QR9WN7RAySQ4ZKKaG6VaN74LUeLpdVHae8eBhALYsMJCaRlqxWSpSwquSwuGq1qkLnjCcCczK+vjFICUJtKlGQ8XJn6qWuOMTIlXSCQrKUUWXg5LKxuG1YLko9EpiiakKxLX1u1//o1QuRaEu2QfBRYp6g8pICr9AgGeQJyEIsyFiKWhUEQvIt54tOMWe5bM6awWPFfqmmrmP0+o5JlUcqGVpEVJnOZpmMWo+dKGqT2zmYln04fcr5ZKpi/6iWpWcg4UL5obIWXdAFo1g1YSaYQs3lpF9rBN9KyYq8WSIh5s/aowWvs/xrEyvptu1db10p61jqzHQKbSTpxbx46AKesnwdbzvJCwq8J0UQdD5lyPUDyOssVlqDgJSCxbXU7pekZpd/3mZT3HefyDFTfqIMypLls6gUxT1be1BHygYzrgYD/YaV94rN8gFQncpA3TQMdMhn6/IVCKYj+qK2WZuq2c+c3dV4rq0ijjzbHnqm7SUjc+ingRlY6JsxYDAKbJpanktWBqkW1YRDVW1iVIeI7modQhNqG1/U3IteQgUr5akydY9tUiujBXf4LCLgbTigAvW2TDXai+/DY7SRHAXfF3jr8O2b22f49fg6b4UvlCy6xUUvreoAu6ffz08+4eJksqU8Mq777fwDVnWv/4HUIHaSEaBrJikNTfVIXTO2Ac2QuoFvgxWElvMWpAaJ7wx933U99dk7NNDeLzYthHpG+ph7Sd1M76P0oO6V7P7d7RO7U91n/TM6cISW3Uo9jHy2A+7FU7Gl1n2e2rbyEmwDy7K2wT1A6fGRfB/+DpDWxbyNWRf0uzBmYeiF6q2YsTek5tDD1Iwxdsx4lIDv+F4YW3BExm5+A1I0BSDICgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4744b028337332d06c8432a19e5c7b36"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment>Set Task Status to Complete</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
-        <generation_source/>
-        <order>14</order>
-        <parent_ui_id>69314a19-d294-422f-988a-abca6c1c9239</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-21 10:50:34</sys_created_on>
-        <sys_id>48490d0d33bb3a146c8432a19e5c7b2a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 10:33:53</sys_updated_on>
-        <ui_id>2616a207-762b-4ecf-b399-def380774902</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmt8tEC7RuiQprEQIKJF4aiG/umWHOczHaArup/33XilKogBhIvaI/3yz7n5pz4Zs2kYHM2QRHFs/iAp3GaJlGUHE3i/CDN40SkgBizIdNQInUa5JURFN+DanxivU5iwFmKOEom03Q0SfJ8lOeH6eiwQJzFR8XhNIHxZTu32dCkkLZWsLoOB1CG30klDGo2v7kdshoM3eXQsPl6r/RWsApyVNR62aPdR+9WtY9FxZsStctknzwLk4tQGXxbUIWGPJw4GjJ8dKgFEpAClMUhK0ELcJVZsbkzDSUMgrjQarXtuJPadURLeLTyD908iXxfgcSMhyVswywsqEsXC3BwRSdz15jtvirJ0XY7EVhAo9zJbq5ruKidrHQ34iBX/XSlmlKfdxth2wN2vkdjCQTWnqdH3tEqru6qh8se5KnU7UoCRVVxUNsInDMyb5yHs2aosN1xCXUt9TKrTXUv22GCUo6XioJxoaoHutPKpR4D97jHtFUYn1J+0aavwUhP4jsdQ8ObIbMre6LA2icqtMPsd+ORdMQChazdQruCrFWCH+ZG1u6YrrrHAHwzDHbIp68pjM+eBLVz5pMlrPafkFcZR+PKZekyB/bXc+WfUFkWkoPDge/4cty4qqRIDDztr+92xhtw98740erhZR7BHM9yZ7uzg/OuEKwx/TBrHH0mawQan94b/3JElLz6z91RUmsCu+sGR4r+2URRKpLnHtirvk/vb0DV6/1UohL2BZi92LEkWA6zDvae4ENxcB2K2/fgAx+E6DPp/r95Em7/AjCyEGkjCQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=48490d0d33bb3a146c8432a19e5c7b2a"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment>Set Step Status to Failed</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
-        <generation_source/>
-        <order>16</order>
-        <parent_ui_id>540c24d6-bf47-44a1-9f85-b1a287291998</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-21 10:50:34</sys_created_on>
-        <sys_id>44490d0d33bb3a146c8432a19e5c7b2b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 10:33:53</sys_updated_on>
-        <ui_id>22376c6e-e001-4eea-b7f1-233ea16611d1</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmt8tEC7RuiQprEQIKJF4aiG/umWHOczHaArup/33XilKogBhIvaI/3yz7n5pz4Zs2kYHM2QRHFs/iAp3GaJlGUHE3i/CDN40SkgBizIdNQInUa5JURFN+DanxivU5iwFmKOEom03Q0SfJ8lOeH6eiwQJzFR8XhNIHxZTu32dCkkLZWsLoOB1CG30klDGo2v7kdshoM3eXQsPl6r/RWsApyVNR62aPdR+9WtY9FxZsStctknzwLk4tQGXxbUIWGPJw4GjJ8dKgFEpAClMUhK0ELcJVZsbkzDSUMgrjQarXtuJPadURLeLTyD908iXxfgcSMhyVswywsqEsXC3BwRSdz15jtvirJ0XY7EVhAo9zJbq5ruKidrHQ34iBX/XSlmlKfdxth2wN2vkdjCQTWnqdH3tEqru6qh8se5KnU7UoCRVVxUNsInDMyb5yHs2aosN1xCXUt9TKrTXUv22GCUo6XioJxoaoHutPKpR4D97jHtFUYn1J+0aavwUhP4jsdQ8ObIbMre6LA2icqtMPsd+ORdMQChazdQruCrFWCH+ZG1u6YrrrHAHwzDHbIp68pjM+eBLVz5pMlrPafkFcZR+PKZekyB/bXc+WfUFkWkoPDge/4cty4qqRIDDztr+92xhtw98740erhZR7BHM9yZ7uzg/OuEKwx/TBrHH0mawQan94b/3JElLz6z91RUmsCu+sGR4r+2URRKtLnHtirvk/vb0DV6/1UohL2BZi92LEkWA6zDvae4ENxcB2K2/fgAx+E6DPp/r95Em7/ArxNjYUjCQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=44490d0d33bb3a146c8432a19e5c7b2b"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="BNB Obtem Resultado Job Ansible">a1530fbb336736506c8432a19e5c7b66</action_type>
         <action_type_parent display_value="BNB Obtem Resultado Job Ansible">829236bb33a7f2506c8432a19e5c7b25</action_type_parent>
@@ -2272,8 +2251,56 @@
         <values>H4sIAAAAAAAA/9WV227bOBCGX8Xg1S5gGZR1zl2QIED21EXT9qYohBE5jLmlDpWoJK6Rd+/Qkk9ZBz3AbdFLjmY4//ycD3q7YlqyMybQz7jEJCjmKkE/BB8DFUdhEGMYQeGzKaugRMr8ry5yKpmyOzC9C6xWvlQ+DzDzeJGBF0aJ8gAS7oUJDwuexolM1Wyoe3ykSqm7xsDyzTdfIBbayBYrdvb23ZQ10JI0iy07Wz359KWzGSjQUOofdTG5vjwyrF027tzZVle34/mvsehmE6xb6UT4U4YPFiuJ1F2B6XDKSqgk2LpdsjPb9hRoEeSLyiy3GQtdWbqMudyHTn+kdinn3GUqpIEEDl+3x3y0cQirS7BASnph+3ZMFYtaC+wGKyQq6I292I8NCS8aq+tqKLFQmE11bfqy+mcwgm0v2LwaRfqORGDjJnXax0HUzaK+f7lReaWrtSnjR1MLMNsTWLKu6K3Ts2K9fvXE5SHyP5/RYEkd8xKahiJ509Z3et2FRJezW0OHmTL1Panr9G01A+EmnNELwOyK4pfr8BtotRv3b7qGil2715X+0OO12xrJ0ySLgHvzTNFOBjzw0pi2M5MimmdCyjRL2OOUdcvuwkDX7YyiF8o/9G7MwbbRoHzw2JWIVjf2nETd4ejF43QEEdIiK8JABQEtbOzzWKRhMAc/w0gkBSS73SR78R5MbqF7f4Bj1xdu+Bn0ti7BolynHCPvq1H6AnUblC6wtVppQQImrwaJx4WPaO3W/JCul3vxEbD5qQAL5od4dZWDStS5IPHlbWk3Go9Btz+gS/vtfOP3xO3Y76eH8ll5PwBVdYPQisWVRuMWoerLYs3MMwjvv+Yhxfvv+UNATn0/gSDMvHTuh16Y8ogYRvrDpEks6Q/jK55+D5CjiHNQCaGiFDxFRcU7HkSL7lpNjY5ifP+Q71JOg/HntW0x3hd3TPDX4xt8L3yh0fl7XO651T3D7vm/15M/cTm5OMg8Ma7H5fwEVl2vX4FUhfMkkSryYiGEFwoZe2ngJ55IohB4EfuZCE9I6rtPxfJmCP0KAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0744b028337332d06c8432a19e5c7b38"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set Step Status to Failed</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>27396ac8-2309-4fbb-9261-4cbebb74bd08</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-21 10:50:34</sys_created_on>
+        <sys_id>44490d0d33bb3a146c8432a19e5c7b2b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
+        <ui_id>22376c6e-e001-4eea-b7f1-233ea16611d1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmJ8lWa9g1RIU1iIMHEC2OR49wUD8fObAfoqv73XeejVIBYkdgD2lvvl33OyT311ZrwgsxJAkUQzsIDFodxHAVBlCZhfhDnYVTEFCAkYyJpBdipgSldYHxHReMS63UUUpjFAF6UTGIvifLcy/Np7E1LgFmYltNJRP3zdm6zwcmCm1rQ1WV/AGbYDReFBknmV9djUlONd1nQZL5+UtoXrKA5CGw9H9A+RW9XtYsLxZoKpM34kDzpJxd9ZfRlgRUccnDCYEzgwYIsAIGUVBgYk4rKglqlV2RudYMJDbQ4k2K17bjh0nZEK/pg+G+8OQlcXwnIjPUibMOsF6hLlwtq6QWezGyjt3opzsB0mhRQ0kbYo91c13BWW65kN2JpLoZpJZpKnnaKkO0BO9+jMQgCasfTIe9olRc36v58AHnMZStJT1EoRsU2otZqnjfWwVkTENBqXNG65nKZ1Vrd8XYYoVT+UmDgl0Ld452GL6VPmcPto6rUP8b8ok1fUs0dia94DA5vxsSszJGgxjxSQQ2zX41D0hHrKWStCq0EWbsJbphpXttDvOoOeuCbcW+HfPLahrHZ40LtnPloCSPdJ2QqY6BttaxsZqm5fb75R1jmJWfUwsh1fDpsrKowKkaO9uc3O2MP3IMzvrX78DKP3hzPcie7s6PTrtBbY/Ju1kg/kjV6Gh/eG39zRBC9+p+7s0mtCcyuGyxu9PcmCOIi/nGv9G0mFbLvMvh6TNPwYBLFHqQp85JpXHppHoEXpjSf4K8gKWf+T5VnFRhDl/DSE/Ivrnib8/bQZ3DeMQdRmBcEG2wHFXKzkHUCPrFeXxxd9sXty/SOT1PwkRz43zxO138AAoZ44q0JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=44490d0d33bb3a146c8432a19e5c7b2b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
+        <generation_source/>
+        <order>20</order>
+        <parent_ui_id>7c280e0a-7813-46e6-a143-eef355af2653</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-21 13:00:10</sys_created_on>
+        <sys_id>6ae6e9c533f7ba146c8432a19e5c7b92</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
+        <ui_id>10368e10-86c1-40a2-b0a1-a9aaa7f2cb82</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy24bNxT9FZarBFWEkeQYsbNyrBpokdqAXXgTJQSHvCOz4ZBTkiNLEfQ1XfRD8mO9HM7Iiu2olpCNUS8M8L54ztE9ww9LqiQ9pgcgs8HR4FCMBqPRMMuGbw4G+eEoHwzliAMMaI8aXgJWOhDWSTzPuK5jYLn0dV5oe9vndbAlDyBZ4P7zaoVFUvlK88V1W4sRcaO0dGDo8YePPVpxh2MDOHq8vJd6Ki7Nc9BYetkBuw80LKp4llbUJZjAVBd833aO2wz5dYwZbIpwBlmPwjyAkYBACq499GjJjeTBugU9Dq7GgAMuL4xerCtulAmJaMnnXn3Bmw+yWFcAMhOtCOsjawVK4WLMA7/CySLUbq2XVQJ80kRCwWsdTjdjqeCiCsqa1BJ4rrtuq+vSnCdF6HrAxu9RewQBVeQZkSdaxdWNvb3sQJ4p00jSUtRWcL0+8RCcyusQ4SwpaGg0LnlVKTNllbMz1TQjlLI/1Xjox2XBO72amj4XEXcfVeX9M4yPm/A1dyqS+B3HYPOqR/3Cn2ru/R0V1JD9VUckiVhLgTUqNBKwZhNis3CqCid41Qxa4Kteu/n5620bJo7uFmpj5t32exN/QmGZABfKaRma3X+4+aeYVoUSaA8SK16cdGYhkfbLnZ3xBNydM/5o9uFxHq05HsTeb/aS85RorfH6h1njzXOyRkvj2XvjvxyRDbd+czc2qTGB33RDwI2e1Fk2kqNPSCry9Qw3g91a95kZi1KkdCFfJQwgH5pl3zG7OegJPDsHnSnQ0j9CvLMPlIg/AEtC3LNQmyTXbXL9wvzAJyZ7Tk76HzwyiWKKNfv3+BbH1LZGqgryopCsgc4GjIGcM3HDSy4547dzVuh6bhnmWCLJondqzxiJBhketv8Nwb+95vSFlUB+SnYj2UuyTMMc4PoYMqG/OGeJ4eSk6SNj3DU0HvnN5uTEeBWfj1dYRn7e8/4SvOdTeDsxq4n5Ro5RGjMDhy/rouv40+YocnPxbqrsMW5Xca6b2YKTq2bAVpH2gfN9rY7SNJvjp4o58OhPLu3+Yu0zb1e13p2/IxfxAnLZXbBdsr1AfaPZAygwB1F//efr35ZIu3n5hL7FL4LnM5DrD91qtfr4LzuowRJSDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6ae6e9c533f7ba146c8432a19e5c7b92"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5f4ad06833bbbe906c8432a19e5c7b98"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5f4ad06833bbbe906c8432a19e5c7b98^sys_idNOT INeee6e9c533f7ba146c8432a19e5c7b93,0344b028337332d06c8432a19e5c7b3a,0344b028337332d06c8432a19e5c7b3c,4f44b028337332d06c8432a19e5c7b3d,bf4a946833bbbe906c8432a19e5c7b3e,5c490d0d33bb3a146c8432a19e5c7b9f,dc490d0d33bb3a146c8432a19e5c7ba0,cf44b028337332d06c8432a19e5c7b41,4003157033777ed06c8432a19e5c7b53,f2e6e9c533f7ba146c8432a19e5c7be8"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5f4ad06833bbbe906c8432a19e5c7b98^sys_idNOT INeee6e9c533f7ba146c8432a19e5c7b93,0344b028337332d06c8432a19e5c7b3a,0344b028337332d06c8432a19e5c7b3c,4f44b028337332d06c8432a19e5c7b3d,bf4a946833bbbe906c8432a19e5c7b3e,a4c0d86b33b70b906c8432a19e5c7b5a,e0c0d86b33b70b906c8432a19e5c7b5c,4003157033777ed06c8432a19e5c7b53,a0c0d86b33b70b906c8432a19e5c7b91,cf44b028337332d06c8432a19e5c7b41,f2e6e9c533f7ba146c8432a19e5c7be8"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">8de629c533f7ba146c8432a19e5c7be8</block>
@@ -2292,10 +2319,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-21 13:00:10</sys_created_on>
         <sys_id>eee6e9c533f7ba146c8432a19e5c7b93</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
         <ui_id>c0ec1a5e-3671-4442-88d5-922843dafc67</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -2319,10 +2346,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 20:02:03</sys_created_on>
         <sys_id>0344b028337332d06c8432a19e5c7b3a</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
         <ui_id>b85dc530-7ef0-46d5-863f-bb4080252390</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Vy24TMRT9leD1JJrM5NFmF6WqBCpUolU3UEZ3bE9icOzBj6RplK/pgg/pj3E9M3motIIACxZkFR/fxzknPsqaaO9K7+y1HlsrpoqMPtxGRKiA4fc1UTDnZESoVkw4oVVWARFZgPThYjz1YBi0CqFAint4/Pb4oFtMt97ovDVWVuQylDNhSwmrm+O66ExIZnjDqgSDux03ZLR+ciUYDs0ZJDSPe8M0TrtpHA+6CU2GaYGfAQz7MQ6UkHOJpZOtnNZFhUQv6nSrMuDWGaGmzfmimXK1BbVhgVU3jiPC7xxXjCOhAqTlEZmDYuC0We0Qw4FdKrkHZkI5nEdC8Z0V97gx6fdDYcFRI+X15e6YNXbWcHEGDpCLp86bppTOtKDc1u4wXoCXbnKI1QWXZdBatzgIptfdWvq5eldbQnYDtr8eIt4iCV4GpYF6o6O4munl+y3Lc6EqW5pLqSnI3Qkcmpd7F/isCZd8joOyOZQlWpqVRi9E1Yxc5p2pxEOnkHqJS8Mz7QANxDtoLHTOET+r4BswIqh4i2OweRMRu7ITCdbutaCJ2VcfmNTKGg1ZbUNooUaUbowLFryhu4l+DMJBBtbr4iTnScz77ZwN0nav183bwHmv3Tst4l5yymBAofNZ55l14LzdbF599HGcsrAc9X76/QnGK1U/wicR+zdIHZdgNuymJ8VLCT6hzyX4meweGdvkZ7HFaP1qauMw639s/yi2+BhsVqew0VYt/4txvg3ZrXfuvKbCIrXrgL3e/v2FixW+LkEPoaU2X4KoPbb5DloHGwJIBwAA</values>
@@ -2346,10 +2373,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 20:02:03</sys_created_on>
         <sys_id>0344b028337332d06c8432a19e5c7b3c</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
         <ui_id>28256d1e-e645-4fda-842a-65d896b71c0f</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Z227bOBD9FUHPXq+om2O/FckGKNDdLmIjL0UhUNTIJkpLKkUl9Qb59yUp6mJbduPWKVwggIGEQ2p4ZuacEWk/2XklikqUi/xdWdJlZs8+fR7ZNFM2+f+TneE12DM7qTgWNM8isSnAHtkPmFXKDt8KRgkVUbNAziW0LBje3Jslf5klVm8JWVGWcDDbFZjLXQRwe/a0M0UT6cGfTrzgCvkTz/GQ5zhxiCAM/UkYpyGeXAXSIcMxMLn0xuxhLWqcB+DrPzO5V05JM/5gXFw3xpwnChJynJGMU0CWgESTYlbCyF7jLMEi55vWwgEnHzPWGVY0E9KfrRZ/K+l/ckffUetSkPERqOfaYWTyVpvTGyzwXPCKiIqbpTXcui5NwEPZPVYcE5TzPOp83AGT0w8w5IObuQEfqO/jX+AEMoGXg16KdnbAj/ssC51Aiismrs8XIjpDiO6ZQvRUiHX5PhZ6amZ7inc4Zk1xc1ats39qvtptQu6PCa1ecvN9vVWlRAWForDipCFoOl/lj3cN/25pprGaSZYTzNoRFoLTuBKqNE82MFhLR9EaFwXNllHB8weqH5ZhrMdLJgfjlOWPclPVVcaYKCBjqRg8vpX2G22+x5yqBPwt3ciHn0d2uSmvGS7LLg1SHtHXSiGpk2JiiHQK9SOE00K8I6qCBq4qmhF+ryqCroFHurVFEgioca9++43r5D4VpygJUYjiiRe6sk95PgkJhFMAhPDUdXp9qscljcvSuCyFyzLAXhyBaWY669oe9SaaribbCfy5qO2v0Ni0r3N0tqFWsK+dk6Tzu/BfsqiMajqb2PTmr6KLmkodt84rhCvH8zxnSgJv0gohSQDSdBIjF9CgEDrKD4AzHJfEg6VOVZ/b71vrG7PfmK3JM/CCRtOJ84eD5MdynJn6+PtU9605kDxLypM5DynyA3LokBrDwCF1l/E90Ns9fdv+Yd9Nc1y5wKPqG+1/Ie33jrJRLoGo4veEgFOhwe1QvzGfRvuEYB85wQHau2GP9gt90OG7J3GrB/HlwZxyg/MuUBbdtaLJ+255hm5qMaQ577+sW0N76Tl+l/rOZuikzdyfvtW0VBy8yTSzO2KXKb1ErTcIySY6drPsLTMc7oh4emPY/mLjh7vE69yHUOoGycHeMPGO9Ib9e9ALoP/oRci/wP7wS16bP6mk4bfb6E1hMi0rSCp2Zj2lcRDIQ+YBPYXu9hFTZt4SK7DSnMmUqlEP1SG0JmEdg7fFc9ezG/EEZxSP526Lh6yzPrghIc276QsQ1Onn0HQOmJPVLQWmSqzr8rt93fZZsbz23Waa0FJCWCjb++bXBDWxkRFS0jc95vyLAt/Znv8H6sAozJcYAAA=</values>
@@ -2373,10 +2400,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 20:02:03</sys_created_on>
         <sys_id>4f44b028337332d06c8432a19e5c7b3d</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
         <ui_id>72a4fca0-b85c-43f7-9ff1-9720322d2494</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2VyW7bMBCGX6Xg2TZsyfF2CxIECJClaNxcikAYkSObKEUyXOy4ht+9Q0tekPZQ9Oyb+JPD+ebnDLRlJgYbg5+ba+/lQrPZj7cOkzpp9L1lUrAZg/4YeD6Y5HleVTDtj/hkmGcwmOIVH5flgHWYhhrppMaPUFhYIEkrUDFp9Cmktwo2ryeFL6USDtuEFhzFB3Rstv209a8ACkpUdPSJCL58bQj+AhU2Nkk+OKkX7fqhDX05iMaJhJJ1GEWiFkgMFSiPHVaDFhCM2xwVhyCetToJS6lDU2QNH17+onyTfr+fTlZIdfHWguOyaO1p5OoWAhBK5CG6o1tGcvSNIwIriCrcnGvNgWcbpNFNSIBSHaKNirV+asxgxwvOXiN6gkCbSk3sbSHVy9Ksvx0o76Teu9JuKsNBHVcQyLsyhsSzZVHOP9ncKH8YjQpryljUYC0phXVmJfdZCLruLRQtepUya6JL7dkDnirs0RNA74702738Ck6mch/pGgpO6b5r+R7xft8846tBjqNhN88z3h1CNupOKp51M5FjCQMxzQWyXYf5jb9R4P3JKHqh4j2mMhvbWoOKxuMUwp204ZqgVth6sXtLnd/wXEboMkKXEfqvERLIpSfOeYK6P/yP0saGWlLyc2lt3M9U4Unb/QaqPGnD2QYAAA==</values>
@@ -2400,10 +2427,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 18:08:30</sys_created_on>
         <sys_id>bf4a946833bbbe906c8432a19e5c7b3e</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
         <ui_id>e9396a52-23a1-4540-8583-1765b9655a71</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXWvbMBT9K0bPxjjJ0pS8lXSFQruMJBTGKOZakhMxWdIsOWlm8mP2uL+w1/yxXvkjCWvL2m2P85N1pHvvOcdHuCK6dKZ0dqEvrBVLRcaf70MilMfwvSIKck7GhGrFhBNaJTUQkjXI0m/MuOGOB9PU8SKYcVtKB0zbANz+R7D/6UQOgdl/XwoFWMWENRK2d39UTFdCsoK3HA0UyAQLybj6ZUsw7J0y6NM0fjcaxIPeII7Pen3aHw0yfM5gNIyxoYSUSzw66cQFNzUSvqjabY3HrSuEWrbrm7bLvAN1wTyrXhyHhD84rhhHQhlIy0OSg2LgdLE9IAUHNlXyCKyEctiP+MMPVnzDif3h0B/MOGqkvNk8LJPW1QbOLsEBcimpK4v2KF1pQblt3GE8AzR6coo1B6bGa21KHKSyq9ayzNWHxhJyaNB9RERKiyTwW6JST73Vkc1XejPrWF4JVdvSbkpNQR5W4NC8tHSeT0W45Dk2SnIwBi1NTKHXoi5GLnm0lLiIMqk3ONSHNgLqiUdoLERXiF/W8B0Uwqu4xTZYvAuJ3dqJBGuPWtDE5GvpmTTKWg1JY4MvoYUw7gIHrHlLdxc+vRYnN6KqamrrdnqkMAOJgSXf7a7n728/Lj49vQivqnlb/tmoNzjPXsr/OX0u/88k/42h7/8u9BjM12Y+9r3+h/6vQo9hsEmT4VZbPfwfXoZ7n/xm5sFrKixSW3jsuvuV+I0tpkvQU2ijiy9e1BHbPQLiEODvlAYAAA==</values>
@@ -2411,7 +2438,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">d1e27dbc33fbbed06c8432a19e5c7b5d</block>
+        <block display_value="">36b0d46b33b70b906c8432a19e5c7b48</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -2420,74 +2447,47 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>13</order>
-        <outputs_assigned/>
-        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-21 10:50:34</sys_created_on>
-        <sys_id>5c490d0d33bb3a146c8432a19e5c7b9f</sys_id>
-        <sys_mod_count>28</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
-        <ui_id>69314a19-d294-422f-988a-abca6c1c9239</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5WfmygfTZvyMqEipElsSIB42Vh049xQb06cxTalVP3vu85HQYNpoO1hD3urj+/HOSc+6o4paxpr9JU61lrc1uzo082Uidph9HvHaqiQHTGu6kIYoeqsA6bsDqR1F6fS3qvJanIqapDiQdkJV9VEW45aq3dUWAjdSNhev7aer4UsWhyYNNDSPoMtO9r9dCUKGlcGUIZLHvI4msdREETpLMzncR5GRQwIMQ2UkKOk0tUoYXLWIdNfajPbxuHatKK+Hc5nw5TLEVRt4ViFwZThvcG6QOJTgtQ4ZRXUBRjVbg9Ii1Cc1/IRWIva0Djmiu+1eKCFUZK4whJJIsf+8nDMBh97uDwBA0TFcmPboZSvlSAXe3MKLMFKs3qK9QXnjZPatxjI5ditpK3qj70j7DBg/GyEWE0ksHFKHfVBR3m5VpuLkSV91c6V4VIqDvJwAkPe5dY4PjuGEisalFXQNORo1rTqTnTNxKXybyUd/FKqDS11L9MH7oj7ZCz4p4SfdPA1tMKp+EBjqLmnmYMWPOteMY0jm5Dtp0xv9UqC1o8iyd3su3UUe8mDuKz3x7XwVjTmmDbf4aBjP30eiid52O2iEHAZI3rRLIm9WZTnXp4vYm9RIi7DtFwkEfgXyOkB+TYj23ADMnNK9/vPNgjiolPNv9CoRRrOkyj2ME25N1vEpZfmEXphCnlCv4JZufS/qjzTBozVYz+lycWptPJ5/v45fm/L+xKSMgmD5OW8z+Yv5f2FpL8x5NFvQu5e2CszHgTB/5D/cciFzvpoDtq65X8x4zcu0P3Og9dcaKJ25bD34/+ju9jS4xL8KbRR7Tcn6hHb/wA8UGvmaQcAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">55e27dbc33fbbed06c8432a19e5c7b5f</block>
-        <comment/>
-        <connected_to>69314a19-d294-422f-988a-abca6c1c9239</connected_to>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>15</order>
-        <outputs_assigned/>
-        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-21 10:50:34</sys_created_on>
-        <sys_id>dc490d0d33bb3a146c8432a19e5c7ba0</sys_id>
-        <sys_mod_count>28</sys_mod_count>
-        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
-        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
-        <ui_id>540c24d6-bf47-44a1-9f85-b1a287291998</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBnWdBiO4ovReDAQIG0AZoglyYQRhQVs6VIlYuXGv73DrXYRpOgLZJjb+Ibzsybx3nQjihnG2fNnbo0hj9JMvv6GBAuPYbfOyKhZmRGqJIlt1zJvAUCsgLhfGAh3EadLUAslfuAeMlNI2B7/0qYLrkoNev7NKCxmmWazHa/hXiJ2VUEVXxBY5om0zSJoiQbx8U0LeKkTIFBggUFFEzg1flA8Oy6RYJXmdtt43FjNZdP/fm6r3I7gEqXnlUcBYRtLJMlQz4VCMMCUoMswSq9PSCaQXkjxRFYcmmxHPGXN4b/xIbJZOIvVgxHpKwLHo55L1sHV1dgAak4ap3ur9Kl4pSZTpySVeCEnZ9i3YWbxo/apVgoxJCthKvl504RcigwvBIiziAJ1vhJPfV+jup2qdZfBpYLLltV+qBQFMThBBa1K5z1fHaECVZjobyGpkFF80arFW+TkUsdPgk8hJVQa2zq9y4E6omHKCyEC8SvWvgeNPdTfMIymNzRLMBwmrc7iuVQJkb2ATFbMxdgzHFIVDf/4TzFbuR+uLzTx6dQzRt7iZ1XrJ9jHzxf+ZNt3+2S8yyeTpJ0xLKMjsbnaTXKioSN4gyKCX5F4+oi/KaK3Fiwzuz3Dy6K0rICLnCFnvnj7QXf1VHxS456wUv/aKPkDzbyb/iXLoqi6L+N3mwjbvJu+fvZ2ubv6KJHb5mu50Fryg1Su/PYx+H/4gNbXC5OT6G10t/9UEds/wsNOA7CqQYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">5f80a0a433b3fe906c8432a19e5c7b8c</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
-        <flow_variables_assigned>next_page</flow_variables_assigned>
-        <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>10</order>
         <outputs_assigned/>
         <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-03-19 20:02:03</sys_created_on>
-        <sys_id>cf44b028337332d06c8432a19e5c7b41</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_created_on>2026-10-13 21:19:41</sys_created_on>
+        <sys_id>a4c0d86b33b70b906c8432a19e5c7b5a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
-        <ui_id>804ebc48-2151-4eca-8f10-ad61b3ef8da7</ui_id>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
+        <ui_id>27396ac8-2309-4fbb-9261-4cbebb74bd08</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYJnS9DiRfYtSBAgQJsUjZtLEAgjamQTpSiFix1X8L93aMl2kPZQoJcefBPfbO89cqCONc62zpplc2WMWCm2eH4ZMaE8Rt8dEyVbMIhmwNM4S9O0qmAeTXk2ThOI5zjhs6KI2YgpqJEyFb7ZvIUVErQB6TzWdcksi6eTJA0wy3gwnqVVkBUJBnEGxYS+onE1D0+ludNyv6cGpTCthN3Tv/bhayFLjYO4FjRxtajZovsQ+luxEgqUlHpPoz597dX+wQC7az1krBZqNZw/D6WPR7DRpaeSjBhVoiqROFQgDY5YDaoE2+jdCdEI5YOSZ2AtlKVuzCe/GfGT5mVRFPnMCkkXxz56OuaDqT1c3YAFouK4dXpI5etGcDS9IyVW4KS9fo/1CQ+tFY3qSywU8ljdSFer+94MdmpwvENCnCES2HqpnvsgpHpcN9tvR5a3Qh1cGYKy4SBPJ7DkXeGs59MxJ5YfbO6R34xGiTVNzGtoW0LyVjcbcZhCpOtwJekQVrLZEju/CiFwrzCkK4DwlvCbA/wEWni5X6gNFftx35V4dXh3eDyzSZzidBykaUIvFJJpkFU8CZIyxQLicp6WyPYjZnbmWoIxZ6PohvJX52X2tg0G5b3HvoRr0dorIrXBwYv9i9+yns9lXS/relnX/35dS+TCEM+lJ3V3/M/6wI6epODvoW2jf3iFZ2z/C24MQmuxBwAA</values>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWdDDcmTfAgcGCqQN0AS5tIGwoiibLUWqIulHDf97l3rYRuKiDdJjb+Isd3d2uAPtibKmtkY/qhut+VKS2Zdnj3DpMPzeEwkVIzNClSy44UpmLeCRNQjrAgtht+pqAWKlLMIF17WA3dPlKF1xUTSs71JDg7UMa8hs/yLEC0wuAyjDKQ1pHE3iKAiidBzmkzgPoyIGBjEWFJAzgVfnA72ruxbxfsvb7GqHa9NwuezPd32VhwFUTeFYhYFH2NYwWTDkU4LQzCMVyAKManZHpGFQ3EtxAlZcGixH3OWt5j+xYZQk7mLJcETKuuDxmPWqdXB5CwaQiqXGNv1VulKcMt2JU7ASrDDzc6y7cF+7UbsUA7kYspWwlfzUKUKOBYZHQsRqJMFqN6mj3s9RPqzU5vPAcsFlq0ofFIqCOJ7AoHa5NY7PnjDBKiyUVVDXqGhWN2rN22TkUvlLgQe/FGqDTd3W+UAdcR+FBX+B+G0LP0HD3RQfsQwmdzRz0Jxm7YZiOZSJkYNH9E7PBWh9GhLVzX5YR7EbuR8u6/RxKbThtbnBzmvWz3HwXi/82a7v99F1Gk6SKB6xNKWj8XVcjtI8YqMwhTzBr2BcTv1vKs+0AWP14fDVBkFclMAFrtAre7y/4NscNYWkTMIgueyo8eSSoy546Y02iv5gI/eGf+miIAj+2+jdNuI665a/n61t/g9d9Ows0/U8ak25RmqPDvsw/F1cYIfLxek5tFHNdzfUCTv8As+1wc2nBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fab0d46b33b70b906c8432a19e5c7b89</block>
+        <comment/>
+        <connected_to>27396ac8-2309-4fbb-9261-4cbebb74bd08</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-13 21:19:41</sys_created_on>
+        <sys_id>e0c0d86b33b70b906c8432a19e5c7b5c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
+        <ui_id>3d7a4be7-bf0c-4172-982d-d517ddddf543</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -2501,20 +2501,74 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>11</order>
+        <order>13</order>
         <outputs_assigned/>
-        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
+        <parent_ui_id>3d7a4be7-bf0c-4172-982d-d517ddddf543</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 16:54:41</sys_created_on>
         <sys_id>4003157033777ed06c8432a19e5c7b53</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
         <ui_id>22c992a5-d4ee-4415-8c80-cf5ee99db684</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPIcoHoZSXqaJjqtSWqaBK01RFN44D1pw4sx0oQ/z3XucD0Eq1ddvj3uJzfe899/geZUdkZcrK6IW80povCzL++uQQXlgMv3ekgJyRMaGySLnhsohrwCFrEJUNTOYPvankvU9MQSo/YCTluhSwfXzzAl1xkSrW9ipBYUXDFBnvfgrxFPMzDzL/kvo0DIZh4HnBaOAnwzDxgzQEBiEWFJAwYVt1JHu3NeK8yd5sS4tro3ixbM+3bZV5B0qVWla+5xD2bFiRMuSTgdDMITkUKRiptgdEMUhnhTgCK14YLEfs5WfNf2DDIIrsxYzhiJQ1wcMxboVr4OwaDCCVippKtVfpSnLKdCNOyjKohJmcYs2FWWlHbVIMJKLLlqLKi/tGEXIo0L0TIpVGEqy0k1rq7RzZfCU3Dx3LKS9qVdqgkBTE4QQGtUsqY/nsCBMsx0JxDmWJisalkmteJyOX3F0KPLiZkBtsanfPBWqJuygsuFPEr2v4ERS3U9xhGUxuaCagOY3rPcVyKBMje4forZ4I0Po4JKobf68sxWbkdri40cemUMVLc4Wd16ydY++8XvuTjd/tgouRP4yCsM9GI9ofXIRZf5QErO+PIInwyxtkly7Var+/md/PFh/vPi++vDbGH9d5n38uIcoi34vO+2cwPOefM855p2mCX5jGvthvesbzvP+m+WvTcB03q97OVjf/h555sgZpeh60plwjtYXFbro/ig1scbk4PYU2Un2zQx2x/QuZmLwumwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b2b0d46b33b70b906c8432a19e5c7b8d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>3d7a4be7-bf0c-4172-982d-d517ddddf543</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-13 21:19:41</sys_created_on>
+        <sys_id>a0c0d86b33b70b906c8432a19e5c7b91</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
+        <ui_id>f40b59b8-ca78-48ec-81fc-165f2ba36fb1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27aQBT9lWjWBvmBCbCLSCNFSpqqoEhVFVnX4zGMOp5xZ8YQiviR7vIt+bHe8QNQQ9RG6bI75tzXOdf3iC1RlS0ra+bqwhi+kGTy9cEjXDoMf2+JhIKRCaFKZtxyJZMa8MgKROUCzz+F5QWclc9PCy4BIxk3pYDN/asJdMlFplk7qwSNHS3TZLL9LcQzrM99yIMxDWgUDqPQ98PRIEiHURqEWQQMImwoIGUCU6cdybObGvFeZW83pcON1Vwu2vdN22XWgUpnjlXge4Q9WiYzhnxyEIZ5pACZgVV6s0c0g+xOigOw5NJiO+KSHw3/gQPDOHaJOUOJlDXB/TNpF9fA+SVYQCoVtZVuU+lSccpMs5yM5VAJOz3GmoS70kltSiykoqtWoirkx2YjZN+g+06IVAZJsNIpddRbHflsqdafO5ZXXNZbaYNCURD7F1jcXVpZx2dLmGAFNkoKKEvcaFJqteJ1MXIp+guBj34u1BqHutvrA3XE+7hY6F8hflnD96C5U3GLbbC4oZmC4TSp7xTb4ZoY2XnEbMxUgDEHkbjd5HvlKDaSW3FJsx9XQjUv7QVOXrFWx857efZHF7/dhuejYBiHUY+NRrQ3OI/y3igNWS8YQRrjL3+Qj/sSbyYpYcGSSovd7nr24fbT/MtLf7y33dvcNIY4jwM/Pu2mwfCUm0746I0WCv9gIff9/tJBvu//t9C7LcRN0hx+q60e/g8d9ODs0szc75pyg9TmDrvu/l9cYIPHxekxtFb6mxN1wHa/ADddk46pBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5f80a0a433b3fe906c8432a19e5c7b8c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Processa Job Ansible">5f4ad06833bbbe906c8432a19e5c7b98</flow>
+        <flow_variables_assigned>next_page</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>e9396a52-23a1-4540-8583-1765b9655a71</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-03-19 20:02:03</sys_created_on>
+        <sys_id>cf44b028337332d06c8432a19e5c7b41</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
+        <ui_id>804ebc48-2151-4eca-8f10-ad61b3ef8da7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYJnS9DiRfYtSBAgQJsUjZtLEAgjamQTpSiFix1X8L93aMl2kPZQoJcefBPfbO89cqCONc62zpplc2WMWCm2eH4ZMaE8Rt8dEyVbMIhmwNM4S9O0qmAeTXk2ThOI5zjhs6KI2YgpqJEyFb7ZvIUVErQB6TzWdcksi6eTJA0wy3gwnqVVkBUJBnEGxYS+onE1D0+ludNyv6cGpTCthN3Tv/bhayFLjYO4FjRxtajZovsQ+luxEgqUlHpPoz597dX+wQC7az1krBZqNZw/D6WPR7DRpaeSjBhVoiqROFQgDY5YDaoE2+jdCdEI5YOSZ2AtlKVuzCe/GfGT5mVRFPnMCkkXxz56OuaDqT1c3YAFouK4dXpI5etGcDS9IyVW4KS9fo/1CQ+tFY3qSywU8ljdSFer+94MdmpwvENCnCES2HqpnvsgpHpcN9tvR5a3Qh1cGYKy4SBPJ7DkXeGs59MxJ5YfbO6R34xGiTVNzGtoW0LyVjcbcZhCpOtwJekQVrLZEju/CiFwrzCkK4DwlvCbA/wEWni5X6gNFftx35V4dXh3eDyzSZzidBykaUIvFJJpkFU8CZIyxQLicp6WyPYjZnbmWoIxZ6PohvJX52X2tg0G5b3HvoRr0dorIrXBwYv9i9+yns9lXS/relnX/35dS+TCEM+lJ3V3/M/6wI6epODvoW2jf3iFZ2z/C24MQmuxBwAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -2528,17 +2582,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
-        <order>18</order>
+        <order>19</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-21 13:00:10</sys_created_on>
         <sys_id>f2e6e9c533f7ba146c8432a19e5c7be8</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:47</sys_updated_on>
         <ui_id>7c280e0a-7813-46e6-a143-eef355af2653</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1ZUU/jOBD+K6eIx9JL25RC3xBcJU4Lla7dfbmgyLGd4l3XycZOga36328cO27SltXCFh0PkVCVzNjOzHyfv4nJ2ksLlRVKztNLKdlCeON/7zseE9oG12tPoCX1xl4USYVUIaPI63grxAttXIfeiuaSpSL0xqHX6/qh1wk9nC4zTp+m8VeKFXjW2kSouTrBq+qinPQVrVCXI7HozlTOxKJc4WRV+kJvs4G7JZUSLd44f7Mb0Aw/0CUya0x4+nhNdd40H0+uL6/mN9O72fxy/nnWiDv0boSiC5rb/AjtniSMchIlCFMlzeAZ04+5RdlEG8tp6zAMvYLNnzP6CcWU69ux/qnWC/WK8JNTRKJU8Gc3IkFcUud/YEI5l7OalZ2d7SxKaIIKrqISr/3ZvBHRlU61ciGsANWI5nmaR4YibqDKi+3AJRIEqTR/Ke40Jyag0terzXuKOBUL9eCcga9/N/DXwBzqugXWmn+3+nbFoxZfNtd8Ve1vbbbvXP7+z8vvOwA0Aj/ZG90TBZn/UvVfVYbLMu0/ZqXSHL8YBfss2PeC3hA3YHQRxHgQ9E8v8AU5DYIgPkWDpH9KSBCfoSHye6PBDuBNJlmRq4bgNCpLo1XTjdkRlmos5XRJhYqWKMuAOVGWpytWhwtkq7vgYOomgEVESjC6phxdyBR1txh9QTlDcYlA9hZZEQXnh1idNvN7xXY+G+4QSlIIkbMfSMc/SfMlMjz5eza9gyHQVwiTGUfPX9r20raXtr207aVtL217OWJ7wQ+Mk5yK+rlGiy24MpTDvaI5sM0rN39JNEhXG2rIwBSrrTDrAHXAr0kDIuNOSfuNDSwS5yxTmpErsJRVq4zwxE2nFNtcIP6JiW9mSi18OKIV7NosqkODAcxFVTKE7wXLiFmm8lyZzJt1UIcW20+8xMkb9zoefVJUEEpcDm6XOIsmyRQ44gyaFSYWwFWyH/DEwNfjEgrpYVshdxvZ6hlzcg3MBIEtsCpyWlUmZZhKUxhzM800NMatNHPtyJQXS3FnctbAGP2oAWMt13uIFRIioZnOVodvc0lmD+njP1WoEybKwlgnTzHi7g4pkPC4UDpQjbB8llccSbmNBlKOvhd6ionEPiwyiWwOsmbTcVy23euVdDbN6oOxWVZBNcjsQt3l8q3LfK8U6sCCe6lbPvePyGe/ZfRbGX2/Q+CGbrfi3Irzh6RyK7St0H5Ydt5bKP1k1IdzR38Y9wZ9v+fHZz2K4GIwOu/hUXBRg/ovTU97WNri3fgOYCE3L/E7kE8rYyVHGqcjgX5+TNAtaldHJMJx8bYyUi90U1hcqevHQ7A3D4bgf+lIWLaYtx4Gvfd4laVCP4DUvjX19vWwVMxdgXvpzaHaAYSM/N75COPBGdU7YDgcDuJR4CMS+IQQXNsB2yD2orLMj9OUUyR2qD+HuP6c6Izeh/5H7MfHJn9isz4shZX3/9fDF188V5bbrj6Y6X9Az7Xtpvoqqh3PwAmG66bHNP+mN8/WtvkPhRC4wF8dAAA=</values>
@@ -2748,7 +2802,7 @@
         <sys_created_on>2026-03-19 18:08:30</sys_created_on>
         <sys_id>774a946833bbbe906c8432a19e5c7b07</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Next Page</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2771,7 +2825,7 @@
         <sys_created_on>2026-03-19 20:02:03</sys_created_on>
         <sys_id>8f44b028337332d06c8432a19e5c7b14</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>AWX Job Status</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2841,7 +2895,7 @@
         <sys_created_on>2026-03-19 18:08:30</sys_created_on>
         <sys_id>674a546833bbbe906c8432a19e5c7b48</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>AWX Credential</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2864,7 +2918,7 @@
         <sys_created_on>2026-03-19 18:08:29</sys_created_on>
         <sys_id>6f4a146833bbbe906c8432a19e5c7bd6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Automated Task</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2910,7 +2964,7 @@
         <sys_created_on>2026-03-23 13:18:44</sys_created_on>
         <sys_id>ca5eff2d3bbf3e54a1e3f65436e45aac</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Force Flow</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -2960,9 +3014,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>0e5eff2d3bbf3e54a1e3f65436e45aa9</sys_id>
-            <sys_mod_count>21</sys_mod_count>
+            <sys_mod_count>25</sys_mod_count>
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-24 20:08:31</sys_updated_on>
+            <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
             <value>flow_b</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -2980,9 +3034,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>382237d63bbb3210a1e3f65436e45af3</sys_id>
-            <sys_mod_count>15</sys_mod_count>
+            <sys_mod_count>19</sys_mod_count>
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-24 20:08:31</sys_updated_on>
+            <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
             <value>none</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3000,9 +3054,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8a5eff2d3bbf3e54a1e3f65436e45aa6</sys_id>
-            <sys_mod_count>20</sys_mod_count>
+            <sys_mod_count>24</sys_mod_count>
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-24 20:08:31</sys_updated_on>
+            <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
             <value/>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3020,9 +3074,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8a5eff2d3bbf3e54a1e3f65436e45aa8</sys_id>
-            <sys_mod_count>21</sys_mod_count>
+            <sys_mod_count>25</sys_mod_count>
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-24 20:08:31</sys_updated_on>
+            <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
             <value>flow_a</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3040,9 +3094,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8e5eff2d3bbf3e54a1e3f65436e45aaa</sys_id>
-            <sys_mod_count>21</sys_mod_count>
+            <sys_mod_count>25</sys_mod_count>
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-            <sys_updated_on>2026-04-24 20:08:31</sys_updated_on>
+            <sys_updated_on>2026-10-15 20:16:46</sys_updated_on>
             <value>flow_c</value>
         </sys_choice>
     </sys_choice>
@@ -3105,7 +3159,7 @@
         <sys_created_on>2026-03-19 18:10:26</sys_created_on>
         <sys_id>c0ca10e433fbbe906c8432a19e5c7b3f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Message</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -3128,7 +3182,7 @@
         <sys_created_on>2026-03-19 18:08:30</sys_created_on>
         <sys_id>f34a546833bbbe906c8432a19e5c7b94</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Job Status</sys_name>
+        <sys_name/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
@@ -3142,7 +3196,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>2178ae1c33f37a906c8432a19e5c7bb0</sys_id>
         <latest_snapshot>5f4ad06833bbbe906c8432a19e5c7b98</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12-07-16-2026_07-31-2026_1556.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2178ae1c33f37a906c8432a19e5c7bb0"/>
@@ -3150,16 +3204,16 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"445ad46833bbbe906c8432a19e5c7ba2","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="BNB Processa Job Ansible">2178ae1c33f37a906c8432a19e5c7bb0</plan_id>
-        <snapshot>a60f02aa33e78f106c8432a19e5c7b40</snapshot>
+        <snapshot>418b9a8c3b0c1bd0d0457237f4e45a15</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 18:08:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>445ad46833bbbe906c8432a19e5c7ba2</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-24 20:08:35</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:16:50</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

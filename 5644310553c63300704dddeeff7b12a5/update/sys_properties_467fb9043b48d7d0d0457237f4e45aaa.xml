@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>true</is_private>
+        <name>sn_disco_certmgmt.require_ip_address_for_renewal</name>
+        <read_roles/>
+        <suffix>require_ip_address_for_renewal</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 18:40:22</sys_created_on>
+        <sys_id>467fb9043b48d7d0d0457237f4e45aaa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>sn_disco_certmgmt.require_ip_address_for_renewal</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_properties_467fb9043b48d7d0d0457237f4e45aaa</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 19:37:24</sys_updated_on>
+        <type>boolean</type>
+        <value>false</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=467fb9043b48d7d0d0457237f4e45aaa"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>1a1414f67a30000001</claim_timestamp>
+        <metadata_update_name>sys_properties_467fb9043b48d7d0d0457237f4e45aaa</metadata_update_name>
+        <previous_claim_app_version>4.2.4</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:44:45</sys_created_on>
+        <sys_id>88fb12803b4c1bd0d0457237f4e45a54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:44:45</sys_updated_on>
+    </sys_claim>
+</record_update>

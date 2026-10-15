@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>true</ih_action>
         <internal_name>edx_obtem_resultado_job_ansible</internal_name>
-        <label_cache>[{"name":"{{action.job_id}}","label":"action➛Job ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d08795a0-29fa-4303-869a-9dc529cdd897"}},{"name":"{{action.renewal_task}}","label":"action➛Renewal Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"8117a349-8214-4805-9def-a876d4701f08"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"fe277df5-6ccc-4cd6-8317-c754a0b619c4"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.next_page_link}}","label":"action➛Next Page Link","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.code}}","label":"step➛REST AWX GET Results➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.message}}","label":"step➛REST AWX GET Results➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].status_code}}","label":"step➛REST AWX GET Results➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].error_message}}","label":"step➛REST AWX GET Results➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].response_body}}","label":"step➛REST AWX GET Results➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5dec72c1-ba48-4b4e-89a2-429138071d4e"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].next_page}}","label":"step➛Check Return➛Next Page","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr}}","label":"step➛Check Return➛CSR","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"c761752b-ec14-44b1-9b55-25de0380b29f"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr_path}}","label":"step➛Check Return➛CSR Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.job_id}}","label":"action➛Job ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d08795a0-29fa-4303-869a-9dc529cdd897"}},{"name":"{{action.renewal_task}}","label":"action➛Renewal Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"8117a349-8214-4805-9def-a876d4701f08"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"fe277df5-6ccc-4cd6-8317-c754a0b619c4"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.next_page_link}}","label":"action➛Next Page Link","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.code}}","label":"step➛REST AWX GET Results➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.message}}","label":"step➛REST AWX GET Results➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].status_code}}","label":"step➛REST AWX GET Results➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].error_message}}","label":"step➛REST AWX GET Results➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].response_body}}","label":"step➛REST AWX GET Results➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5dec72c1-ba48-4b4e-89a2-429138071d4e"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].next_page}}","label":"step➛Check Return➛Next Page","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr}}","label":"step➛Check Return➛CSR","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"c761752b-ec14-44b1-9b55-25de0380b29f"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr_path}}","label":"step➛Check Return➛CSR Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_message}}","label":"step➛Check Return➛Job Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>a1530fbb336736506c8432a19e5c7b66</master_snapshot>
         <master_snapshot_digest/>
         <name>BNB Obtem Resultado Job Ansible</name>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>829236bb33a7f2506c8432a19e5c7b25</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>BNB Obtem Resultado Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_829236bb33a7f2506c8432a19e5c7b25</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:44:37</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:16</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -67,10 +67,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 21:18:29</sys_created_on>
         <sys_id>4f92babb33a7f2506c8432a19e5c7b37</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 19:40:18</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e15d6175-5e1b-4fed-b4e4-910ad5e82412\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD47927abbeba7f250b21b7a342d024ab8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"5\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2026-10-15 20:12:47</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e15d6175-5e1b-4fed-b4e4-910ad5e82412\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD47927abbeba7f250b21b7a342d024ab8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"6\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">8f927abb33a7f2506c8432a19e5c7bb9</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=829236bb33a7f2506c8432a19e5c7b25"/>
@@ -97,6 +97,18 @@
         <sys_updated_on>2026-03-20 17:27:10</sys_updated_on>
         <table>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</table>
         <value>{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr_path}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>job_message</field>
+        <id>829236bb33a7f2506c8432a19e5c7b25</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:47</sys_created_on>
+        <sys_id>fb9416803b481bd0d0457237f4e45a96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</table>
+        <value>{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_message}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>job_status</field>
@@ -595,10 +607,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 21:18:26</sys_created_on>
         <sys_id>ae92b6bb33a7f2506c8432a19e5c7bf7</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 23:54:02</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:11</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ae92b6bb33a7f2506c8432a19e5c7bf7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -637,89 +649,129 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 21:18:27</sys_created_on>
         <sys_id>f6923abb33a7f2506c8432a19e5c7b38</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 23:54:02</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:11</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-	try {&#13;
-		// verifica erro HTTP no REST&#13;
-		if (![200, 201].includes(inputs.status_code)) {&#13;
-			throw new Error('Status code da chamada Ansible = ' + inputs.status_code + ' mensagem=' + inputs.status_message);&#13;
-		}&#13;
-		if (inputs.error_code != 0) {&#13;
-			throw new Error('Error code da chamada Ansible=' + inputs.error_code + ' mensagem=' + inputs.error_message);&#13;
-		}&#13;
-		// parse REST return - set output vars&#13;
-		var body = JSON.parse(inputs.response_body);&#13;
-		var results = body.results;&#13;
-		var job_template = results[0].summary_fields.job.job_template_id;&#13;
-		gs.info("EDX DEBUG Processing next page:" + body.next);&#13;
-		for (i in results) {&#13;
-			var event_data = results[i].event_data;&#13;
+  try {&#13;
+    // verifica erro HTTP no REST&#13;
+    if (![200, 201].includes(inputs.status_code)) {&#13;
+      throw new Error(&#13;
+        "Status code da chamada Ansible = " +&#13;
+          inputs.status_code +&#13;
+          " mensagem=" +&#13;
+          inputs.status_message,&#13;
+      );&#13;
+    }&#13;
+    if (inputs.error_code != 0) {&#13;
+      throw new Error(&#13;
+        "Error code da chamada Ansible=" +&#13;
+          inputs.error_code +&#13;
+          " mensagem=" +&#13;
+          inputs.error_message,&#13;
+      );&#13;
+    }&#13;
+    // parse REST return - set output vars&#13;
+    var body = JSON.parse(inputs.response_body);&#13;
+    var results = body.results;&#13;
+    var job_template = results[0].summary_fields.job.job_template_id;&#13;
 &#13;
-			if (results[i].event.startsWith("runner_on") || results[i].event.startsWith("runner_item_on")) {&#13;
-				if (results[i].failed) {&#13;
-					var err = 'AWX event failed:' + results[i].event_display + " " + JSON.stringify(results[i]);&#13;
-					addWorkNotes(err);&#13;
-					gs.error('EDX ' + err);&#13;
-				}&#13;
-				if (results[i].event_data &amp;&amp;&#13;
-					results[i].event_data.task == "Copy CSR" &amp;&amp;&#13;
-					results[i].event_data.res &amp;&amp;&#13;
-					results[i].event_data.res.dest) {&#13;
-					outputs.csr_path = results[i].event_data.host + ": " + results[i].event_data.res.dest;&#13;
-					var msg = "Arquivo CSR Foi Gerado em "&#13;
-						+ event_data.host + ":" + outputs.csr_path;&#13;
-					addWorkNotes(msg);&#13;
-					gs.info('EDX ' + msg);&#13;
-				}&#13;
-				if (results[i].event_data &amp;&amp; results[i].event_data.res &amp;&amp; results[i].event_data.res.csr) {&#13;
-					outputs.csr = results[i].event_data.res.csr;&#13;
-				}&#13;
-				if (results[i].event_data &amp;&amp; results[i].event_data.res &amp;&amp; results[i].event_data.res.csr) {&#13;
-					outputs.csr = results[i].event_data.res.csr;&#13;
-				}&#13;
-			}&#13;
-		}&#13;
-		if (body.next) {&#13;
-			outputs.next_page = body.next;&#13;
-			outputs.job_status = "processing";&#13;
-		} else {&#13;
-			outputs.job_status = results[0].summary_fields.job.status;&#13;
-			if (outputs.job_status != "successful") {&#13;
-				addWorkNotes("Job Ansible " + inputs.job_id + " Falhou");&#13;
-				new global.GlideQuery("sn_disco_certmgmt_task")&#13;
-					.where("sys_id", inputs.renewal_task.sys_id)&#13;
-					.update({ state: 3 });&#13;
-			} else {&#13;
-				if (job_template == 13 || job_template == 15) { // flow a &#13;
-					addWorkNotes("A tarefa foi direcionada para o time de Segurança Corporativa para assinatura junto à Autoridade Certificadora competente.");&#13;
-				} else if (job_template == 254 || job_template == 19) { // flow b&#13;
-					addWorkNotes("O certificado foi assinado pela certificadora interna do BNB. A tarefa foi direcionada para o Operador proceder com a instalação do certificado.");&#13;
-				} else if (job_template == 65) { // flow c&#13;
-					addWorkNotes("Fluxo Completou com sucesso. O certificado foi gerado e instalado automaticamente.");&#13;
-				}&#13;
-			}&#13;
-		}&#13;
-	} catch (err) {&#13;
-		addWorkNotes(err);&#13;
-		throw 'EDX ' + err;&#13;
-	}&#13;
+    for (i in results) {&#13;
+      var event_data = results[i].event_data;&#13;
+      if (&#13;
+        results[i].event.startsWith("runner_on") ||&#13;
+        results[i].event.startsWith("runner_item_on")&#13;
+      ) {&#13;
+        if (results[i].failed) {&#13;
+          var err =&#13;
+            "AWX job failed:" +&#13;
+            results[i].event_display +&#13;
+            " " +&#13;
+            JSON.stringify(results[i]);&#13;
+          throw new Error(err);&#13;
+        }&#13;
+        if (&#13;
+          results[i].event_data &amp;&amp;&#13;
+          results[i].event_data.task == "Copy CSR" &amp;&amp;&#13;
+          results[i].event_data.res &amp;&amp;&#13;
+          results[i].event_data.res.dest&#13;
+        ) {&#13;
+          outputs.csr_path =&#13;
+            results[i].event_data.host + ": " + results[i].event_data.res.dest;&#13;
+          var msg =&#13;
+            "Arquivo CSR Foi Gerado em " +&#13;
+            event_data.host +&#13;
+            ":" +&#13;
+            outputs.csr_path;&#13;
+          addWorkNotes(msg);&#13;
+          gs.info("EDX " + msg);&#13;
+        }&#13;
+        if (&#13;
+          results[i].event_data &amp;&amp;&#13;
+          results[i].event_data.res &amp;&amp;&#13;
+          results[i].event_data.res.csr&#13;
+        ) {&#13;
+          outputs.csr = results[i].event_data.res.csr;&#13;
+        }&#13;
+        if (&#13;
+          results[i].event_data &amp;&amp;&#13;
+          results[i].event_data.res &amp;&amp;&#13;
+          results[i].event_data.res.csr&#13;
+        ) {&#13;
+          outputs.csr = results[i].event_data.res.csr;&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+    if (body.next) {&#13;
+      outputs.next_page = body.next;&#13;
+      outputs.job_status = "processing";&#13;
+    } else {&#13;
+      outputs.job_status = results[0].summary_fields.job.status;&#13;
+      if (outputs.job_status != "successful") {&#13;
+        throw new Error("Job Ansible " + inputs.job_id + " Falhou");&#13;
+      }&#13;
+      if (job_template == 13 || job_template == 15) {&#13;
+        // flow a&#13;
+        outputs.job_message =&#13;
+          "CSR Gerado, Renovação deve ser solicitada à entidade certificadora externa.";&#13;
+        addWorkNotes(outputs.job_message);&#13;
+      } else if (job_template == 254 || job_template == 19) {&#13;
+        // flow b&#13;
+        outputs.job_message =&#13;
+          "Certificado renovado pela certificadora interna. Certificado deve ser instalado no(s) servidor(es)";&#13;
+        addWorkNotes(outputs.job_message);&#13;
+      } else if (job_template == 65) {&#13;
+        // flow c&#13;
+        addWorkNotes(&#13;
+          "Certificado renovado pela certificadora interna e instalado no F5.",&#13;
+        );&#13;
+      }&#13;
+    }&#13;
+  } catch (err) {&#13;
+    gs.error("EDX " + err);&#13;
+    outputs.job_status = "failed";&#13;
+    outputs.job_message = err;&#13;
+  }&#13;
 })(inputs, outputs);&#13;
 &#13;
 function addWorkNotes(message) {&#13;
-	var workNoteInputs = {&#13;
-		task_id: inputs.renewal_task,&#13;
-		work_notes: ""&#13;
-	};&#13;
+  var workNoteInputs = {&#13;
+    task_id: inputs.renewal_task,&#13;
+    work_notes: "",&#13;
+  };&#13;
 &#13;
-	try {&#13;
-		workNoteInputs.work_notes = message;&#13;
-		sn_fd.FlowAPI.getRunner().action('sn_disco_certmgmt.update_cert_task_work_notes').inBackground().withInputs(workNoteInputs).run();&#13;
-	} catch (ex) {&#13;
-		throw ex;&#13;
-	}&#13;
-}</value>
+  try {&#13;
+    workNoteInputs.work_notes = message;&#13;
+    sn_fd.FlowAPI.getRunner()&#13;
+      .action("sn_disco_certmgmt.update_cert_task_work_notes")&#13;
+      .inBackground()&#13;
+      .withInputs(workNoteInputs)&#13;
+      .run();&#13;
+  } catch (ex) {&#13;
+    throw ex;&#13;
+  }&#13;
+}&#13;
+</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=ae92b6bb33a7f2506c8432a19e5c7bf7"/>
@@ -782,6 +834,18 @@ function addWorkNotes(message) {&#13;
         <sys_updated_on>2026-03-17 21:18:27</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_ae92b6bb33a7f2506c8432a19e5c7bf7</table>
         <value>{{step[df481ccc-5421-4e18-b850-05ac05547e8a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>ae92b6bb33a7f2506c8432a19e5c7bf7</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-13 20:16:07</sys_created_on>
+        <sys_id>55320ceb33ffc7906c8432a19e5c7b0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-13 20:16:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status_code</field>
@@ -1392,7 +1456,90 @@ function addWorkNotes(message) {&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=ae92b6bb33a7f2506c8432a19e5c7bf7^sys_idNOT IN69ffba5833ffba906c8432a19e5c7b49,776ad9b8337b7ed06c8432a19e5c7b78,be923abb33a7f2506c8432a19e5c7b10,fd1115b033377ed06c8432a19e5c7bb8"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ae92b6bb33a7f2506c8432a19e5c7bf7^sys_idNOT IN2794d2803b481bd0d0457237f4e45a9b,69ffba5833ffba906c8432a19e5c7b49,776ad9b8337b7ed06c8432a19e5c7b78,be923abb33a7f2506c8432a19e5c7b10,fd1115b033377ed06c8432a19e5c7bb8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a7703b14-ae30-4bfd-88e3-7a98f81ff2fd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>job_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Job Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Check Return">ae92b6bb33a7f2506c8432a19e5c7bf7</model>
+        <model_id>ae92b6bb33a7f2506c8432a19e5c7bf7</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ae92b6bb33a7f2506c8432a19e5c7bf7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:46</sys_created_on>
+        <sys_id>2794d2803b481bd0d0457237f4e45a9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1438,7 +1585,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_ae92b6bb33a7f2506c8432a19e5c7bf7</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1456,14 +1603,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 11:33:46</sys_created_on>
         <sys_id>69ffba5833ffba906c8432a19e5c7b49</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-19 11:33:46</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1521,7 +1668,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_ae92b6bb33a7f2506c8432a19e5c7bf7</name>
         <next_element/>
-        <order>4</order>
+        <order>5</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1539,14 +1686,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 17:27:09</sys_created_on>
         <sys_id>776ad9b8337b7ed06c8432a19e5c7b78</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:09</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1687,7 +1834,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_ae92b6bb33a7f2506c8432a19e5c7bf7</name>
         <next_element/>
-        <order>3</order>
+        <order>4</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1705,14 +1852,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 16:46:19</sys_created_on>
         <sys_id>fd1115b033377ed06c8432a19e5c7bb8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 16:46:19</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1746,6 +1893,29 @@ function addWorkNotes(message) {&#13;
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-20 16:46:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>job_message</element>
+        <help/>
+        <hint/>
+        <label>Job Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_ae92b6bb33a7f2506c8432a19e5c7bf7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:46</sys_created_on>
+        <sys_id>6394d2803b481bd0d0457237f4e45aa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:46</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2155,7 +2325,7 @@ function addWorkNotes(message) {&#13;
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c1ff3a5833ffba906c8432a19e5c7b3e"/>
-    <sys_hub_action_output action="delete_multiple" query="model=829236bb33a7f2506c8432a19e5c7b25^sys_idNOT IN0392babb33a7f2506c8432a19e5c7b10,31fffa5833ffba906c8432a19e5c7bd3,71fffa5833ffba906c8432a19e5c7b58,8f927abb33a7f2506c8432a19e5c7bb9,c47a1db8337b7ed06c8432a19e5c7b38,e0c19df433377ed06c8432a19e5c7b7d"/>
+    <sys_hub_action_output action="delete_multiple" query="model=829236bb33a7f2506c8432a19e5c7b25^sys_idNOT IN0392babb33a7f2506c8432a19e5c7b10,31fffa5833ffba906c8432a19e5c7bd3,71fffa5833ffba906c8432a19e5c7b58,8f927abb33a7f2506c8432a19e5c7bb9,c47a1db8337b7ed06c8432a19e5c7b38,e0c19df433377ed06c8432a19e5c7b7d,f79416803b481bd0d0457237f4e45a14"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2203,7 +2373,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</name>
         <next_element/>
-        <order>6</order>
+        <order>7</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2221,14 +2391,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 21:18:29</sys_created_on>
         <sys_id>0392babb33a7f2506c8432a19e5c7b10</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:44:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2422,14 +2592,14 @@ function addWorkNotes(message) {&#13;
         <name>FD47927abbeba7f250b21b7a342d024ab8</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>5644310553c63300704dddeeff7b12a5</scope_name>
-        <serialized_content>{"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e15d6175-5e1b-4fed-b4e4-910ad5e82412\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD47927abbeba7f250b21b7a342d024ab8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"5\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD47927abbeba7f250b21b7a342d024ab8.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e15d6175-5e1b-4fed-b4e4-910ad5e82412\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD47927abbeba7f250b21b7a342d024ab8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"6\",\"max_length\":\"65000\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 21:18:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8b927abb33a7f2506c8432a19e5c7bb8</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2437,7 +2607,7 @@ function addWorkNotes(message) {&#13;
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:44:32</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:11</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -2487,7 +2657,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</name>
         <next_element/>
-        <order>5</order>
+        <order>6</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2505,14 +2675,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 21:18:28</sys_created_on>
         <sys_id>8f927abb33a7f2506c8432a19e5c7bb9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:10</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2574,7 +2744,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</name>
         <next_element/>
-        <order>4</order>
+        <order>5</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2592,14 +2762,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 17:27:10</sys_created_on>
         <sys_id>c47a1db8337b7ed06c8432a19e5c7b38</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:10</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2661,7 +2831,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</name>
         <next_element/>
-        <order>3</order>
+        <order>4</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2679,14 +2849,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 16:49:15</sys_created_on>
         <sys_id>e0c19df433377ed06c8432a19e5c7b7d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:10</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2701,6 +2871,93 @@ function addWorkNotes(message) {&#13;
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e0c19df433377ed06c8432a19e5c7b7d"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e0c19df433377ed06c8432a19e5c7b7d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=c8497d05-be3e-41f8-91aa-78f0e1ac5bc2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>job_message</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Job Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Obtem Resultado Job Ansible">829236bb33a7f2506c8432a19e5c7b25</model>
+        <model_id>829236bb33a7f2506c8432a19e5c7b25</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:47</sys_created_on>
+        <sys_id>f79416803b481bd0d0457237f4e45a14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f79416803b481bd0d0457237f4e45a14"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f79416803b481bd0d0457237f4e45a14"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=829236bb33a7f2506c8432a19e5c7b25"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=829236bb33a7f2506c8432a19e5c7b25^sys_idNOT IN8792babb33a7f2506c8432a19e5c7b3a"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
@@ -2968,6 +3225,29 @@ function addWorkNotes(message) {&#13;
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>job_message</element>
+        <help/>
+        <hint/>
+        <label>Job Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_829236bb33a7f2506c8432a19e5c7b25</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:47</sys_created_on>
+        <sys_id>b79416803b481bd0d0457237f4e45a19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>csr</element>
         <help/>
         <hint/>
@@ -2995,17 +3275,17 @@ function addWorkNotes(message) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB Obtem Resultado Job Ansible">829236bb33a7f2506c8432a19e5c7b25</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"7a5303fb336736506c8432a19e5c7b12","name":"plan","plan_signature":null}}</plan>
-        <snapshot>eae3daae3bd20354d0457237f4e45afb</snapshot>
+        <snapshot>923a9ec03b0c1bd0d0457237f4e45a5b</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 22:31:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7a5303fb336736506c8432a19e5c7b12</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:44:40</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:18</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -3022,7 +3302,7 @@ function addWorkNotes(message) {&#13;
         <description/>
         <flow_priority/>
         <internal_name>edx_obtem_resultado_job_ansible</internal_name>
-        <label_cache>[{"name":"{{action.job_id}}","label":"action➛Job ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d08795a0-29fa-4303-869a-9dc529cdd897"}},{"name":"{{action.renewal_task}}","label":"action➛Renewal Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"8117a349-8214-4805-9def-a876d4701f08"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"fe277df5-6ccc-4cd6-8317-c754a0b619c4"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.next_page_link}}","label":"action➛Next Page Link","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.code}}","label":"step➛REST AWX GET Results➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.message}}","label":"step➛REST AWX GET Results➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].status_code}}","label":"step➛REST AWX GET Results➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].error_message}}","label":"step➛REST AWX GET Results➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].response_body}}","label":"step➛REST AWX GET Results➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5dec72c1-ba48-4b4e-89a2-429138071d4e"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].next_page}}","label":"step➛Check Return➛Next Page","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr}}","label":"step➛Check Return➛CSR","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"c761752b-ec14-44b1-9b55-25de0380b29f"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr_path}}","label":"step➛Check Return➛CSR Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.job_id}}","label":"action➛Job ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d08795a0-29fa-4303-869a-9dc529cdd897"}},{"name":"{{action.renewal_task}}","label":"action➛Renewal Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"8117a349-8214-4805-9def-a876d4701f08"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"fe277df5-6ccc-4cd6-8317-c754a0b619c4"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.next_page_link}}","label":"action➛Next Page Link","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.code}}","label":"step➛REST AWX GET Results➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].__step_status__.message}}","label":"step➛REST AWX GET Results➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].status_code}}","label":"step➛REST AWX GET Results➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].error_message}}","label":"step➛REST AWX GET Results➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[df481ccc-5421-4e18-b850-05ac05547e8a].response_body}}","label":"step➛REST AWX GET Results➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5dec72c1-ba48-4b4e-89a2-429138071d4e"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].next_page}}","label":"step➛Check Return➛Next Page","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr}}","label":"step➛Check Return➛CSR","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"c761752b-ec14-44b1-9b55-25de0380b29f"}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr_path}}","label":"step➛Check Return➛CSR Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_message}}","label":"step➛Check Return➛Job Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
         <name>BNB Obtem Resultado Job Ansible</name>
         <natlang/>
@@ -3035,7 +3315,7 @@ function addWorkNotes(message) {&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a1530fbb336736506c8432a19e5c7b66</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3043,7 +3323,7 @@ function addWorkNotes(message) {&#13;
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 21:08:59</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:50</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -3101,6 +3381,18 @@ function addWorkNotes(message) {&#13;
         <sys_updated_on>2026-03-20 17:27:15</sys_updated_on>
         <table>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</table>
         <value>{{step[2b4cfca0-44da-4864-9d80-595d59401f52].csr_path}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>job_message</field>
+        <id>a1530fbb336736506c8432a19e5c7b66</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:52</sys_created_on>
+        <sys_id>89a4d6803b481bd0d0457237f4e45a4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</table>
+        <value>{{step[2b4cfca0-44da-4864-9d80-595d59401f52].job_message}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>job_status</field>
@@ -3168,10 +3460,10 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 22:31:35</sys_created_on>
         <sys_id>46534fbb336736506c8432a19e5c7bcd</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 23:54:06</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:15</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=46534fbb336736506c8432a19e5c7bcd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3210,89 +3502,129 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 22:31:36</sys_created_on>
         <sys_id>06538fbb336736506c8432a19e5c7b44</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-04-06 23:54:06</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:15</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-	try {&#13;
-		// verifica erro HTTP no REST&#13;
-		if (![200, 201].includes(inputs.status_code)) {&#13;
-			throw new Error('Status code da chamada Ansible = ' + inputs.status_code + ' mensagem=' + inputs.status_message);&#13;
-		}&#13;
-		if (inputs.error_code != 0) {&#13;
-			throw new Error('Error code da chamada Ansible=' + inputs.error_code + ' mensagem=' + inputs.error_message);&#13;
-		}&#13;
-		// parse REST return - set output vars&#13;
-		var body = JSON.parse(inputs.response_body);&#13;
-		var results = body.results;&#13;
-		var job_template = results[0].summary_fields.job.job_template_id;&#13;
-		gs.info("EDX DEBUG Processing next page:" + body.next);&#13;
-		for (i in results) {&#13;
-			var event_data = results[i].event_data;&#13;
+  try {&#13;
+    // verifica erro HTTP no REST&#13;
+    if (![200, 201].includes(inputs.status_code)) {&#13;
+      throw new Error(&#13;
+        "Status code da chamada Ansible = " +&#13;
+          inputs.status_code +&#13;
+          " mensagem=" +&#13;
+          inputs.status_message,&#13;
+      );&#13;
+    }&#13;
+    if (inputs.error_code != 0) {&#13;
+      throw new Error(&#13;
+        "Error code da chamada Ansible=" +&#13;
+          inputs.error_code +&#13;
+          " mensagem=" +&#13;
+          inputs.error_message,&#13;
+      );&#13;
+    }&#13;
+    // parse REST return - set output vars&#13;
+    var body = JSON.parse(inputs.response_body);&#13;
+    var results = body.results;&#13;
+    var job_template = results[0].summary_fields.job.job_template_id;&#13;
 &#13;
-			if (results[i].event.startsWith("runner_on") || results[i].event.startsWith("runner_item_on")) {&#13;
-				if (results[i].failed) {&#13;
-					var err = 'AWX event failed:' + results[i].event_display + " " + JSON.stringify(results[i]);&#13;
-					addWorkNotes(err);&#13;
-					gs.error('EDX ' + err);&#13;
-				}&#13;
-				if (results[i].event_data &amp;&amp;&#13;
-					results[i].event_data.task == "Copy CSR" &amp;&amp;&#13;
-					results[i].event_data.res &amp;&amp;&#13;
-					results[i].event_data.res.dest) {&#13;
-					outputs.csr_path = results[i].event_data.host + ": " + results[i].event_data.res.dest;&#13;
-					var msg = "Arquivo CSR Foi Gerado em "&#13;
-						+ event_data.host + ":" + outputs.csr_path;&#13;
-					addWorkNotes(msg);&#13;
-					gs.info('EDX ' + msg);&#13;
-				}&#13;
-				if (results[i].event_data &amp;&amp; results[i].event_data.res &amp;&amp; results[i].event_data.res.csr) {&#13;
-					outputs.csr = results[i].event_data.res.csr;&#13;
-				}&#13;
-				if (results[i].event_data &amp;&amp; results[i].event_data.res &amp;&amp; results[i].event_data.res.csr) {&#13;
-					outputs.csr = results[i].event_data.res.csr;&#13;
-				}&#13;
-			}&#13;
-		}&#13;
-		if (body.next) {&#13;
-			outputs.next_page = body.next;&#13;
-			outputs.job_status = "processing";&#13;
-		} else {&#13;
-			outputs.job_status = results[0].summary_fields.job.status;&#13;
-			if (outputs.job_status != "successful") {&#13;
-				addWorkNotes("Job Ansible " + inputs.job_id + " Falhou");&#13;
-				new global.GlideQuery("sn_disco_certmgmt_task")&#13;
-					.where("sys_id", inputs.renewal_task.sys_id)&#13;
-					.update({ state: 3 });&#13;
-			} else {&#13;
-				if (job_template == 13 || job_template == 15) { // flow a &#13;
-					addWorkNotes("A tarefa foi direcionada para o time de Segurança Corporativa para assinatura junto à Autoridade Certificadora competente.");&#13;
-				} else if (job_template == 254 || job_template == 19) { // flow b&#13;
-					addWorkNotes("O certificado foi assinado pela certificadora interna do BNB. A tarefa foi direcionada para o Operador proceder com a instalação do certificado.");&#13;
-				} else if (job_template == 65) { // flow c&#13;
-					addWorkNotes("Fluxo Completou com sucesso. O certificado foi gerado e instalado automaticamente.");&#13;
-				}&#13;
-			}&#13;
-		}&#13;
-	} catch (err) {&#13;
-		addWorkNotes(err);&#13;
-		throw 'EDX ' + err;&#13;
-	}&#13;
+    for (i in results) {&#13;
+      var event_data = results[i].event_data;&#13;
+      if (&#13;
+        results[i].event.startsWith("runner_on") ||&#13;
+        results[i].event.startsWith("runner_item_on")&#13;
+      ) {&#13;
+        if (results[i].failed) {&#13;
+          var err =&#13;
+            "AWX job failed:" +&#13;
+            results[i].event_display +&#13;
+            " " +&#13;
+            JSON.stringify(results[i]);&#13;
+          throw new Error(err);&#13;
+        }&#13;
+        if (&#13;
+          results[i].event_data &amp;&amp;&#13;
+          results[i].event_data.task == "Copy CSR" &amp;&amp;&#13;
+          results[i].event_data.res &amp;&amp;&#13;
+          results[i].event_data.res.dest&#13;
+        ) {&#13;
+          outputs.csr_path =&#13;
+            results[i].event_data.host + ": " + results[i].event_data.res.dest;&#13;
+          var msg =&#13;
+            "Arquivo CSR Foi Gerado em " +&#13;
+            event_data.host +&#13;
+            ":" +&#13;
+            outputs.csr_path;&#13;
+          addWorkNotes(msg);&#13;
+          gs.info("EDX " + msg);&#13;
+        }&#13;
+        if (&#13;
+          results[i].event_data &amp;&amp;&#13;
+          results[i].event_data.res &amp;&amp;&#13;
+          results[i].event_data.res.csr&#13;
+        ) {&#13;
+          outputs.csr = results[i].event_data.res.csr;&#13;
+        }&#13;
+        if (&#13;
+          results[i].event_data &amp;&amp;&#13;
+          results[i].event_data.res &amp;&amp;&#13;
+          results[i].event_data.res.csr&#13;
+        ) {&#13;
+          outputs.csr = results[i].event_data.res.csr;&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+    if (body.next) {&#13;
+      outputs.next_page = body.next;&#13;
+      outputs.job_status = "processing";&#13;
+    } else {&#13;
+      outputs.job_status = results[0].summary_fields.job.status;&#13;
+      if (outputs.job_status != "successful") {&#13;
+        throw new Error("Job Ansible " + inputs.job_id + " Falhou");&#13;
+      }&#13;
+      if (job_template == 13 || job_template == 15) {&#13;
+        // flow a&#13;
+        outputs.job_message =&#13;
+          "CSR Gerado, Renovação deve ser solicitada à entidade certificadora externa.";&#13;
+        addWorkNotes(outputs.job_message);&#13;
+      } else if (job_template == 254 || job_template == 19) {&#13;
+        // flow b&#13;
+        outputs.job_message =&#13;
+          "Certificado renovado pela certificadora interna. Certificado deve ser instalado no(s) servidor(es)";&#13;
+        addWorkNotes(outputs.job_message);&#13;
+      } else if (job_template == 65) {&#13;
+        // flow c&#13;
+        addWorkNotes(&#13;
+          "Certificado renovado pela certificadora interna e instalado no F5.",&#13;
+        );&#13;
+      }&#13;
+    }&#13;
+  } catch (err) {&#13;
+    gs.error("EDX " + err);&#13;
+    outputs.job_status = "failed";&#13;
+    outputs.job_message = err;&#13;
+  }&#13;
 })(inputs, outputs);&#13;
 &#13;
 function addWorkNotes(message) {&#13;
-	var workNoteInputs = {&#13;
-		task_id: inputs.renewal_task,&#13;
-		work_notes: ""&#13;
-	};&#13;
+  var workNoteInputs = {&#13;
+    task_id: inputs.renewal_task,&#13;
+    work_notes: "",&#13;
+  };&#13;
 &#13;
-	try {&#13;
-		workNoteInputs.work_notes = message;&#13;
-		sn_fd.FlowAPI.getRunner().action('sn_disco_certmgmt.update_cert_task_work_notes').inBackground().withInputs(workNoteInputs).run();&#13;
-	} catch (ex) {&#13;
-		throw ex;&#13;
-	}&#13;
-}</value>
+  try {&#13;
+    workNoteInputs.work_notes = message;&#13;
+    sn_fd.FlowAPI.getRunner()&#13;
+      .action("sn_disco_certmgmt.update_cert_task_work_notes")&#13;
+      .inBackground()&#13;
+      .withInputs(workNoteInputs)&#13;
+      .run();&#13;
+  } catch (ex) {&#13;
+    throw ex;&#13;
+  }&#13;
+}&#13;
+</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=46534fbb336736506c8432a19e5c7bcd"/>
@@ -3355,6 +3687,18 @@ function addWorkNotes(message) {&#13;
         <sys_updated_on>2026-03-17 22:31:36</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_46534fbb336736506c8432a19e5c7bcd</table>
         <value>{{step[df481ccc-5421-4e18-b850-05ac05547e8a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>46534fbb336736506c8432a19e5c7bcd</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-13 20:16:12</sys_created_on>
+        <sys_id>a632cceb33ffc7906c8432a19e5c7b09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-13 20:16:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status_code</field>
@@ -3965,7 +4309,7 @@ function addWorkNotes(message) {&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=46534fbb336736506c8432a19e5c7bcd^sys_idNOT IN3e11d5b033377ed06c8432a19e5c7ba3,b6fffe5833ffba906c8432a19e5c7bd6,c6538fbb336736506c8432a19e5c7b2b,cd7a51f8337b7ed06c8432a19e5c7be1"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=46534fbb336736506c8432a19e5c7bcd^sys_idNOT IN3e11d5b033377ed06c8432a19e5c7ba3,b4a496803b481bd0d0457237f4e45aa6,b6fffe5833ffba906c8432a19e5c7bd6,c6538fbb336736506c8432a19e5c7b2b,cd7a51f8337b7ed06c8432a19e5c7be1"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4011,7 +4355,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_46534fbb336736506c8432a19e5c7bcd</name>
         <next_element/>
-        <order>3</order>
+        <order>4</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -4029,6 +4373,89 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 16:46:24</sys_created_on>
         <sys_id>3e11d5b033377ed06c8432a19e5c7ba3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a7703b14-ae30-4bfd-88e3-7a98f81ff2fd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>job_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Job Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Check Return">46534fbb336736506c8432a19e5c7bcd</model>
+        <model_id>46534fbb336736506c8432a19e5c7bcd</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_46534fbb336736506c8432a19e5c7bcd</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:51</sys_created_on>
+        <sys_id>b4a496803b481bd0d0457237f4e45aa6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -4036,7 +4463,7 @@ function addWorkNotes(message) {&#13;
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 16:46:24</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4094,7 +4521,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_46534fbb336736506c8432a19e5c7bcd</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -4112,14 +4539,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-19 11:33:51</sys_created_on>
         <sys_id>b6fffe5833ffba906c8432a19e5c7bd6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-19 11:33:51</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4260,7 +4687,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_46534fbb336736506c8432a19e5c7bcd</name>
         <next_element/>
-        <order>4</order>
+        <order>5</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -4278,14 +4705,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 17:27:14</sys_created_on>
         <sys_id>cd7a51f8337b7ed06c8432a19e5c7be1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:14</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4365,6 +4792,29 @@ function addWorkNotes(message) {&#13;
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-20 16:46:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>job_message</element>
+        <help/>
+        <hint/>
+        <label>Job Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_46534fbb336736506c8432a19e5c7bcd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:51</sys_created_on>
+        <sys_id>b8a496803b481bd0d0457237f4e45aa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:51</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -5145,7 +5595,7 @@ function addWorkNotes(message) {&#13;
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e9530fbb336736506c8432a19e5c7bf6"/>
-    <sys_hub_action_output action="delete_multiple" query="model=a1530fbb336736506c8432a19e5c7b66^sys_idNOT IN1e538fbb336736506c8432a19e5c7b56,43ff329833ffba906c8432a19e5c7bf2,43ff729833ffba906c8432a19e5c7b2d,457a91f8337b7ed06c8432a19e5c7bcc,82538fbb336736506c8432a19e5c7b4b,91c1113833377ed06c8432a19e5c7b3c"/>
+    <sys_hub_action_output action="delete_multiple" query="model=a1530fbb336736506c8432a19e5c7b66^sys_idNOT IN1e538fbb336736506c8432a19e5c7b56,43ff329833ffba906c8432a19e5c7bf2,43ff729833ffba906c8432a19e5c7b2d,457a91f8337b7ed06c8432a19e5c7bcc,82538fbb336736506c8432a19e5c7b4b,91c1113833377ed06c8432a19e5c7b3c,c5a4d6803b481bd0d0457237f4e45a0a"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -5193,7 +5643,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</name>
         <next_element/>
-        <order>6</order>
+        <order>7</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -5211,14 +5661,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 22:31:36</sys_created_on>
         <sys_id>1e538fbb336736506c8432a19e5c7b56</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:44:37</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:37:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5454,7 +5904,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</name>
         <next_element/>
-        <order>4</order>
+        <order>5</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -5472,14 +5922,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 17:27:14</sys_created_on>
         <sys_id>457a91f8337b7ed06c8432a19e5c7bcc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:14</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5541,7 +5991,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</name>
         <next_element/>
-        <order>5</order>
+        <order>6</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -5559,14 +6009,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-17 22:31:36</sys_created_on>
         <sys_id>82538fbb336736506c8432a19e5c7b4b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:15</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5628,7 +6078,7 @@ function addWorkNotes(message) {&#13;
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</name>
         <next_element/>
-        <order>3</order>
+        <order>4</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -5646,14 +6096,14 @@ function addWorkNotes(message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-20 16:49:18</sys_created_on>
         <sys_id>91c1113833377ed06c8432a19e5c7b3c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-20 17:27:14</sys_updated_on>
+        <sys_updated_on>2026-10-15 20:12:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5668,6 +6118,93 @@ function addWorkNotes(message) {&#13;
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=91c1113833377ed06c8432a19e5c7b3c"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=91c1113833377ed06c8432a19e5c7b3c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=c8497d05-be3e-41f8-91aa-78f0e1ac5bc2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>job_message</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Job Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Obtem Resultado Job Ansible">a1530fbb336736506c8432a19e5c7b66</model>
+        <model_id>a1530fbb336736506c8432a19e5c7b66</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:52</sys_created_on>
+        <sys_id>c5a4d6803b481bd0d0457237f4e45a0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c5a4d6803b481bd0d0457237f4e45a0a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c5a4d6803b481bd0d0457237f4e45a0a"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=a1530fbb336736506c8432a19e5c7b66"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=a1530fbb336736506c8432a19e5c7b66^sys_idNOT IN16538fbb336736506c8432a19e5c7b7f"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
@@ -5773,6 +6310,29 @@ function addWorkNotes(message) {&#13;
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_a1530fbb336736506c8432a19e5c7b66"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>job_message</element>
+        <help/>
+        <hint/>
+        <label>Job Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a1530fbb336736506c8432a19e5c7b66</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-15 20:12:52</sys_created_on>
+        <sys_id>09a4d6803b481bd0d0457237f4e45a0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-15 20:12:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
@@ -5915,6 +6475,6 @@ function addWorkNotes(message) {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>829236bb33a7f2506c8432a19e5c7b25</sys_id>
         <latest_snapshot>a1530fbb336736506c8432a19e5c7b66</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch10-hotfix3-07-01-2026_07-02-2026_1215.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

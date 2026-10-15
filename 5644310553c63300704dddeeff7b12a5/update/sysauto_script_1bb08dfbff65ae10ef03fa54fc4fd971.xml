@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
     <sysauto_script action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <advanced>false</advanced>
         <business_calendar/>
         <condition/>
@@ -49,14 +49,14 @@ while(certMetadataGr.next()) {
         <sys_created_by>now.discovery.content</sys_created_by>
         <sys_created_on>2025-05-23 06:44:14</sys_created_on>
         <sys_id>1bb08dfbff65ae10ef03fa54fc4fd971</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Auto Renew Certificates</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sysauto_script_1bb08dfbff65ae10ef03fa54fc4fd971</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-27 13:08:57</sys_updated_on>
+        <sys_updated_on>2026-10-14 19:24:02</sys_updated_on>
         <time_zone>floating</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
