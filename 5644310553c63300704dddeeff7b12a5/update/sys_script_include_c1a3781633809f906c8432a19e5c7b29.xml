@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_disco_certmgmt.BNB_Verifica_Duplicidade_Certificado</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BNB_Verifica_Duplicidade_Certificado</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BNB_Verifica_Duplicidade_Certificado = Class.create();
+BNB_Verifica_Duplicidade_Certificado.prototype = Object.extendsObject(
+  global.AbstractAjaxProcessor,
+  {
+    checkDuplicate: function () {
+      var grCertificate = new GlideRecord("cmdb_ci_certificate");
+
+      var serial = this.getParameter("sysparm_serial_number");
+      var fingerprint = this.getParameter("sysparm_fingerprint");
+      var result = {
+        type: "",
+        serial_number: serial ? serial + "" : "",
+        fingerprint: fingerprint ? fingerprint + "" : "",
+        formatted: "",
+        status: "ERROR",
+        message: "BNB_VerificaDuplicidade_Certificado - Parâmetro inválido.",
+      };
+
+      result = this.formatNumber(result);
+      if (result.status == "OK") {
+        var field =
+          result.type == "Serial Number" ? "serial_number" : "fingerprint";
+        if (grCertificate.get(field, result.formatted)) {
+          result.status = "ERROR";
+          result.message = "Certificado com esse " + result.type + " já existe";
+        }
+      }
+      return JSON.stringify(result);
+    },
+
+    // Verifica validade e formata numero
+    formatNumber: function (result) {
+      result.status = "ERROR";
+      var number;
+      var regexp;
+      if (result.serial_number) {
+        number = result.serial_number;
+        result.type = "Serial Number";
+        regexp = /^[A-F0-9]{2,40}$/;
+      } else if (result.fingerprint) {
+        number = result.fingerprint;
+        result.type = "Fingerprint";
+        regexp = /^[A-F0-9]{64}$/;
+      }
+      if (!number) {
+        result.message = "inválido. Não pode ser vazio.";
+        return result;
+      }
+      var normalized = number.replace(/[\s:]/g, "").toUpperCase();
+      if (normalized.length % 2 != 0) {
+        result.message =
+          result.type + " inválido. Deve ter um número par de caracteres.";
+      } else if (!regexp.test(normalized)) {
+        result.message =
+          result.type == "Fingerprint"
+            ? "Fingerprint inválido. Deve ter 64 caracteres hexadecimais (SHA-256)."
+            : "Serial Number inválido. Deve ter até 40 caracteres hexadecimais.";
+      } else {
+        result.formatted = normalized.match(/.{2}/g).join(" ");
+        result.status = "OK";
+      }
+      return result;
+    },
+
+    type: "BNB_Verifica_Duplicidade_Certificado",
+  },
+);
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-22 12:55:24</sys_created_on>
+        <sys_id>c1a3781633809f906c8432a19e5c7b29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BNB_Verifica_Duplicidade_Certificado</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_script_include_c1a3781633809f906c8432a19e5c7b29</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-22 14:29:57</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>1a179f8bffb0000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_c1a3781633809f906c8432a19e5c7b29</metadata_update_name>
+        <previous_claim_app_version>4.2.4</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-26 20:48:27</sys_created_on>
+        <sys_id>2546c76733ccd7106c8432a19e5c7b98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-26 20:48:27</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c1a3781633809f906c8432a19e5c7b29</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-22 12:55:25</sys_created_on>
+        <sys_id>8da3b81633809f906c8432a19e5c7b12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-22 12:55:25</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

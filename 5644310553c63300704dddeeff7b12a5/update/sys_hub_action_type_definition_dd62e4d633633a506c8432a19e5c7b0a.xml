@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>BNB Dispara Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd62e4d633633a506c8432a19e5c7b0a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:40</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:26</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -740,10 +740,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>60acf1a233ab36906c8432a19e5c7b74</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:30</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:16</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=60acf1a233ab36906c8432a19e5c7b74"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -768,9 +768,9 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>24acf1a233ab36906c8432a19e5c7b9f</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>53</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:30</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:16</sys_updated_on>
         <value>/**&#13;
  * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
  * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
@@ -829,7 +829,7 @@
     // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
     if (gs.getProperty("instance_name") != "bnbprod") {&#13;
       sendWorkNotes(&#13;
-        taskConfig.task,&#13;
+        taskConfig.task.getUniqueValue(),&#13;
         "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***",&#13;
       );&#13;
       taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
@@ -845,9 +845,9 @@
     } else {&#13;
       throw new Error(&#13;
         "Task de certificado de classe não suportada: " +&#13;
-        taskConfig.task.number +&#13;
-        " - " +&#13;
-        taskConfig.task.sys_class_name,&#13;
+          taskConfig.task.number +&#13;
+          " - " +&#13;
+          taskConfig.task.sys_class_name,&#13;
       );&#13;
     }&#13;
     outputs.description = taskConfig.description;&#13;
@@ -861,7 +861,7 @@
     outputs.port = taskConfig.port;&#13;
     outputs.assignment_group = taskConfig.assignment_group;&#13;
   } catch (ex) {&#13;
-    sendWorkNotes(inputs.task, "*** ERRO " + ex);&#13;
+    sendWorkNotes(inputs.task.getUniqueValue(), "*** ERRO " + ex);&#13;
     new global.GlideQuery(inputs.task.sys_class_name + "")&#13;
       .where("sys_id", inputs.task.sys_id + "")&#13;
       .update({ state: 3 });&#13;
@@ -927,9 +927,10 @@ function buscaIPPort(certificate) {&#13;
     grRelCi.query();&#13;
 &#13;
     while (grRelCi.next()) {&#13;
-      installedCertificates.push(&#13;
-        grRelCi.parent.ip_address + "" + ":" + "443",&#13;
-      );&#13;
+      var ip = grRelCi.parent.ip_address + "";&#13;
+      if (ip) {&#13;
+        installedCertificates.push(ip + ":443");&#13;
+      }&#13;
     }&#13;
   }&#13;
 &#13;
@@ -966,7 +967,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
   ];&#13;
 &#13;
   var certificate = taskConfig.task.certificate;&#13;
-  taskConfig.commonName = certificate.subject_common_name;&#13;
+  taskConfig.commonName = certificate.subject_common_name + "";&#13;
   var ansibleCommonName = taskConfig.force_host&#13;
     ? taskConfig.force_host&#13;
     : taskConfig.commonName;&#13;
@@ -1003,30 +1004,15 @@ function renewCertificate(taskConfig, inputs) {&#13;
           sys_id: null,&#13;
         }).sys_id;&#13;
     }&#13;
-  } else {&#13;
-    var requireIp = gs.getProperty("sn_disco_certmgmt.require_ip_address_for_renewal", "false") == "true";&#13;
-    if (requireIp) {&#13;
-      throw new Error(&#13;
-        "Não foi possível encontrar IP e Porta para o certificado: " +&#13;
-        taskConfig.commonName&#13;
-      );&#13;
-    } else {&#13;
-      sendWorkNotes(&#13;
-        taskConfig.task,&#13;
-        "IP e Porta não encontrados para o certificado " +&#13;
-        taskConfig.commonName +&#13;
-        " - não foi possível verificar instalação em Load Balancer",&#13;
-      );&#13;
-    }&#13;
   }&#13;
   taskConfig.short_description =&#13;
     "Renovação de Certificado " + taskConfig.commonName;&#13;
-  taskConfig.description = ipPort&#13;
-    ? "Certificado " +&#13;
+  taskConfig.description =&#13;
+    "Certificado " +&#13;
     taskConfig.commonName +&#13;
-    " Instalado em:\n" +&#13;
-    ipPort.installedCertificates.join("\n")&#13;
-    : taskConfig.short_description;&#13;
+    (ipPort&#13;
+      ? " Instalado em:\n" + ipPort.installedCertificates.join("\n")&#13;
+      : " Sem informação de IP e Porta encontrados para o certificado");&#13;
 &#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (certificate.u_ca_scope == "external") {&#13;
@@ -1039,8 +1025,34 @@ function renewCertificate(taskConfig, inputs) {&#13;
       }&#13;
     }&#13;
   }&#13;
-&#13;
+  taskConfig.body.extra_vars.san = [];&#13;
+  var dom = new GlideRecord("certificate_domain");&#13;
+  dom.addQuery("sys_id", "IN", certificate.subject_alternative_name + "");&#13;
+  dom.query();&#13;
+  while (dom.next()) {&#13;
+    taskConfig.body.extra_vars.san.push(dom.getDisplayValue().trim());&#13;
+  }&#13;
+  &#13;
+  if (certificate.u_ca_scope == "internal") {&#13;
+    var dn = certificate.issuer_distinguished_name + "";&#13;
+    if (!dn &amp;&amp; certificate.root_issuer) {&#13;
+      dn = certificate.root_issuer.issuer_distinguished_name + "";&#13;
+    }&#13;
+    if (!dn &amp;&amp; certificate.issuer) {&#13;
+      dn = certificate.issuer.issuer_distinguished_name + "";&#13;
+    }&#13;
+    if (dn) {&#13;
+      if (/DC=DMZ/i.test(dn)) {&#13;
+        taskConfig.body.extra_vars.dc = "DMZ";&#13;
+      } else {&#13;
+        taskConfig.body.extra_vars.dc = "capgv";&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+  &#13;
   if (taskConfig.ansible_flow == "flow_c") {&#13;
+    taskConfig.body.extra_vars.url =&#13;
+      "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
     // Cenario C - Renovação Completa - Certificado F5 - Job 65&#13;
     var f5Ip = gs.getProperty(&#13;
       "sn_disco_certmgmt.BNB_F5LB_IP_Address",&#13;
@@ -1232,7 +1244,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1315,7 +1327,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Char">char</internal_type>
+        <internal_type display_value="Caractere">char</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1398,7 +1410,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1481,7 +1493,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1564,7 +1576,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1648,7 +1660,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Post Body</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1731,7 +1743,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Assignment Group</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1814,7 +1826,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Target CI</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1897,7 +1909,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Resource Path</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1980,7 +1992,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>IP Address</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2063,7 +2075,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Port</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2146,7 +2158,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Description</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2229,7 +2241,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Short Description</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2312,7 +2324,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificate Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -2395,7 +2407,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Renewal Flow</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3014,7 +3026,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Grupo Certificados Externos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -3097,7 +3109,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Grupo Certificados Internos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -3180,7 +3192,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Grupo Instalação de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -3592,7 +3604,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -3675,7 +3687,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3758,7 +3770,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3841,7 +3853,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -3924,7 +3936,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4007,7 +4019,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4091,7 +4103,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4174,7 +4186,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>Job ID</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -4257,7 +4269,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job URL</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4480,7 +4492,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificate Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -4564,7 +4576,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Credential</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -4648,7 +4660,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Force Flow</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4735,7 +4747,7 @@ function addWorkNotes(taskId, message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job URL</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4822,7 +4834,7 @@ function addWorkNotes(taskId, message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4909,7 +4921,7 @@ function addWorkNotes(taskId, message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4996,7 +5008,7 @@ function addWorkNotes(taskId, message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -5110,14 +5122,14 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b33</sys_id>
-        <sys_mod_count>177</sys_mod_count>
+        <sys_mod_count>179</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:31</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5518,17 +5530,17 @@ function addWorkNotes(taskId, message) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8e2db56a33ab36906c8432a19e5c7b2d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>8726464c3b8cd7d0d0457237f4e45a85</snapshot>
+        <snapshot>766ae32a3b40d314d0457237f4e45a91</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e2db56a33ab36906c8432a19e5c7b2d</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:43</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:30</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5915,7 +5927,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>status_message</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5998,7 +6010,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>status_code</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -6081,7 +6093,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>response_body</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -6164,7 +6176,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error_message</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -6247,7 +6259,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -6330,7 +6342,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>error_code</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -6414,7 +6426,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job URL</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -6497,7 +6509,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>Job ID</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -6580,7 +6592,7 @@ function addWorkNotes(taskId, message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -6874,10 +6886,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:27</sys_created_on>
         <sys_id>892d716a33ab36906c8432a19e5c7bd9</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:38</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:24</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=892d716a33ab36906c8432a19e5c7bd9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6902,9 +6914,9 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:28</sys_created_on>
         <sys_id>d52db16a33ab36906c8432a19e5c7b59</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:38</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:24</sys_updated_on>
         <value>/**&#13;
  * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
  * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
@@ -6963,7 +6975,7 @@ function addWorkNotes(taskId, message) {&#13;
     // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
     if (gs.getProperty("instance_name") != "bnbprod") {&#13;
       sendWorkNotes(&#13;
-        taskConfig.task,&#13;
+        taskConfig.task.getUniqueValue(),&#13;
         "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***",&#13;
       );&#13;
       taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
@@ -6979,9 +6991,9 @@ function addWorkNotes(taskId, message) {&#13;
     } else {&#13;
       throw new Error(&#13;
         "Task de certificado de classe não suportada: " +&#13;
-        taskConfig.task.number +&#13;
-        " - " +&#13;
-        taskConfig.task.sys_class_name,&#13;
+          taskConfig.task.number +&#13;
+          " - " +&#13;
+          taskConfig.task.sys_class_name,&#13;
       );&#13;
     }&#13;
     outputs.description = taskConfig.description;&#13;
@@ -6995,7 +7007,7 @@ function addWorkNotes(taskId, message) {&#13;
     outputs.port = taskConfig.port;&#13;
     outputs.assignment_group = taskConfig.assignment_group;&#13;
   } catch (ex) {&#13;
-    sendWorkNotes(inputs.task, "*** ERRO " + ex);&#13;
+    sendWorkNotes(inputs.task.getUniqueValue(), "*** ERRO " + ex);&#13;
     new global.GlideQuery(inputs.task.sys_class_name + "")&#13;
       .where("sys_id", inputs.task.sys_id + "")&#13;
       .update({ state: 3 });&#13;
@@ -7061,9 +7073,10 @@ function buscaIPPort(certificate) {&#13;
     grRelCi.query();&#13;
 &#13;
     while (grRelCi.next()) {&#13;
-      installedCertificates.push(&#13;
-        grRelCi.parent.ip_address + "" + ":" + "443",&#13;
-      );&#13;
+      var ip = grRelCi.parent.ip_address + "";&#13;
+      if (ip) {&#13;
+        installedCertificates.push(ip + ":443");&#13;
+      }&#13;
     }&#13;
   }&#13;
 &#13;
@@ -7100,7 +7113,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
   ];&#13;
 &#13;
   var certificate = taskConfig.task.certificate;&#13;
-  taskConfig.commonName = certificate.subject_common_name;&#13;
+  taskConfig.commonName = certificate.subject_common_name + "";&#13;
   var ansibleCommonName = taskConfig.force_host&#13;
     ? taskConfig.force_host&#13;
     : taskConfig.commonName;&#13;
@@ -7137,30 +7150,15 @@ function renewCertificate(taskConfig, inputs) {&#13;
           sys_id: null,&#13;
         }).sys_id;&#13;
     }&#13;
-  } else {&#13;
-    var requireIp = gs.getProperty("sn_disco_certmgmt.require_ip_address_for_renewal", "false") == "true";&#13;
-    if (requireIp) {&#13;
-      throw new Error(&#13;
-        "Não foi possível encontrar IP e Porta para o certificado: " +&#13;
-        taskConfig.commonName&#13;
-      );&#13;
-    } else {&#13;
-      sendWorkNotes(&#13;
-        taskConfig.task,&#13;
-        "IP e Porta não encontrados para o certificado " +&#13;
-        taskConfig.commonName +&#13;
-        " - não foi possível verificar instalação em Load Balancer",&#13;
-      );&#13;
-    }&#13;
   }&#13;
   taskConfig.short_description =&#13;
     "Renovação de Certificado " + taskConfig.commonName;&#13;
-  taskConfig.description = ipPort&#13;
-    ? "Certificado " +&#13;
+  taskConfig.description =&#13;
+    "Certificado " +&#13;
     taskConfig.commonName +&#13;
-    " Instalado em:\n" +&#13;
-    ipPort.installedCertificates.join("\n")&#13;
-    : taskConfig.short_description;&#13;
+    (ipPort&#13;
+      ? " Instalado em:\n" + ipPort.installedCertificates.join("\n")&#13;
+      : " Sem informação de IP e Porta encontrados para o certificado");&#13;
 &#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (certificate.u_ca_scope == "external") {&#13;
@@ -7173,8 +7171,34 @@ function renewCertificate(taskConfig, inputs) {&#13;
       }&#13;
     }&#13;
   }&#13;
-&#13;
+  taskConfig.body.extra_vars.san = [];&#13;
+  var dom = new GlideRecord("certificate_domain");&#13;
+  dom.addQuery("sys_id", "IN", certificate.subject_alternative_name + "");&#13;
+  dom.query();&#13;
+  while (dom.next()) {&#13;
+    taskConfig.body.extra_vars.san.push(dom.getDisplayValue().trim());&#13;
+  }&#13;
+  &#13;
+  if (certificate.u_ca_scope == "internal") {&#13;
+    var dn = certificate.issuer_distinguished_name + "";&#13;
+    if (!dn &amp;&amp; certificate.root_issuer) {&#13;
+      dn = certificate.root_issuer.issuer_distinguished_name + "";&#13;
+    }&#13;
+    if (!dn &amp;&amp; certificate.issuer) {&#13;
+      dn = certificate.issuer.issuer_distinguished_name + "";&#13;
+    }&#13;
+    if (dn) {&#13;
+      if (/DC=DMZ/i.test(dn)) {&#13;
+        taskConfig.body.extra_vars.dc = "DMZ";&#13;
+      } else {&#13;
+        taskConfig.body.extra_vars.dc = "capgv";&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+  &#13;
   if (taskConfig.ansible_flow == "flow_c") {&#13;
+    taskConfig.body.extra_vars.url =&#13;
+      "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
     // Cenario C - Renovação Completa - Certificado F5 - Job 65&#13;
     var f5Ip = gs.getProperty(&#13;
       "sn_disco_certmgmt.BNB_F5LB_IP_Address",&#13;
@@ -7354,7 +7378,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Char">char</internal_type>
+        <internal_type display_value="Caractere">char</internal_type>
         <label>force_flow</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -7437,7 +7461,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>external_group</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -7520,7 +7544,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>internal_group</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -7603,7 +7627,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -7686,7 +7710,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>install_group</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -7770,7 +7794,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Port</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -7853,7 +7877,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificate Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -7936,7 +7960,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>IP Address</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -8019,7 +8043,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Short Description</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -8102,7 +8126,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Description</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -8185,7 +8209,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Post Body</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -8268,7 +8292,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Target CI</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -8351,7 +8375,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Resource Path</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -8434,7 +8458,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Assignment Group</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -8517,7 +8541,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Renewal Flow</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -9580,7 +9604,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Grupo Instalação de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -9663,7 +9687,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Grupo Certificados Internos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -9746,7 +9770,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Grupo Certificados Externos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -9969,7 +9993,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificate Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -10053,7 +10077,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Credential</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -10137,7 +10161,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Force Flow</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -10224,7 +10248,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -10338,14 +10362,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>252d356a33ab36906c8432a19e5c7b05</sys_id>
-        <sys_mod_count>117</sys_mod_count>
+        <sys_mod_count>119</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-15 19:09:39</sys_updated_on>
+        <sys_updated_on>2026-10-23 20:52:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10398,7 +10422,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -10485,7 +10509,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job URL</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -10572,7 +10596,7 @@ function sendWorkNotes(taskId, notes) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -11006,6 +11030,6 @@ function sendWorkNotes(taskId, notes) {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
         <latest_snapshot>812d716a33ab36906c8432a19e5c7b0f</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w42-10-09-2026_10-13-2026_1237.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
