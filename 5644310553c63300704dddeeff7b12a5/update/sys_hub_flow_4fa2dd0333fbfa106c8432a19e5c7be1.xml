@@ -183,7 +183,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -417,7 +417,7 @@
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-04-08 12:42:43</sys_updated_on>
-        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_definition display_value="Criado ou atualizado">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create_or_update</trigger_type>
@@ -726,7 +726,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
@@ -876,7 +876,7 @@
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-04-08 12:42:45</sys_updated_on>
-        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_definition display_value="Criado ou atualizado">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create_or_update</trigger_type>
@@ -985,7 +985,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>4fa2dd0333fbfa106c8432a19e5c7be1</sys_id>
         <latest_snapshot>2ef75d4f33733e106c8432a19e5c7b3a</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w43-10-15-2026_10-19-2026_1115.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4fa2dd0333fbfa106c8432a19e5c7be1^sys_idNOT IN3ef79d4f33733e106c8432a19e5c7be1"/>
@@ -993,7 +993,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3ef79d4f33733e106c8432a19e5c7be1","name":"plan","plan_signature":null}}</plan>
         <plan_id>4fa2dd0333fbfa106c8432a19e5c7be1</plan_id>
-        <snapshot>ec9bb3db33fbc7906c8432a19e5c7b5b</snapshot>
+        <snapshot>ea07f47f3b04db10d0457237f4e45a0e</snapshot>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-27 17:02:46</sys_created_on>
         <sys_domain>global</sys_domain>

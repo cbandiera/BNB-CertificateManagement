@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="cmdb_ci_certificate" version="2" view="certificate_management">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
+            <list_id display_value="Certificado Exclusivo - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
             <order_by/>
             <position>0</position>
             <related_list>sn_disco_certmgmt_cmdb_installed_certificate.certificate</related_list>
@@ -16,7 +16,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
+            <list_id display_value="Certificado Exclusivo - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
             <order_by/>
             <position>1</position>
             <related_list>REL:4e6fcad553513010fe1cddeeff7b1274</related_list>
@@ -30,7 +30,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
+            <list_id display_value="Certificado Exclusivo - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
             <order_by/>
             <position>2</position>
             <related_list>sn_disco_certmgmt_cert_url.certificate</related_list>
@@ -44,7 +44,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
+            <list_id display_value="Certificado Exclusivo - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
             <order_by/>
             <position>3</position>
             <related_list>REL:ba1a099007211110d4aa782a9cd3008c</related_list>
@@ -58,7 +58,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Unique Certificate - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
+            <list_id display_value="Certificado Exclusivo - Certificate Management" name="cmdb_ci_certificate" related_list="NULL" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">a1aa0cec3b068b10d0457237f4e45aff</list_id>
             <order_by/>
             <position>4</position>
             <related_list>sn_disco_certmgmt_certificate_metadata.certificate</related_list>
@@ -71,7 +71,7 @@
             <sys_updated_on>2026-07-09 13:21:22</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Unique Certificate - Certificate Management</calculated_name>
+            <calculated_name>Certificado Exclusivo - Certificate Management</calculated_name>
             <filter/>
             <name>cmdb_ci_certificate</name>
             <order_by/>
@@ -92,7 +92,7 @@
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
             <sys_updated_on>2026-07-09 13:21:22</sys_updated_on>
             <sys_user/>
-            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view display_value="Gestão de certificados" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
             <view_name/>
         </sys_ui_related_list>
     </sys_ui_related>

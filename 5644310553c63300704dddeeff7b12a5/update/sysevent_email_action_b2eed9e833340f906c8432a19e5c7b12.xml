@@ -5,7 +5,7 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Certificate Notifications" name="Certificate Notifications">97f76c0d2b03621001d5ffc3f291bf4c</category>
+        <category display_value="Notificações de certificado" name="Notificações de certificado">97f76c0d2b03621001d5ffc3f291bf4c</category>
         <collection>cmdb_ci_certificate</collection>
         <condition/>
         <content_type>text/html</content_type>

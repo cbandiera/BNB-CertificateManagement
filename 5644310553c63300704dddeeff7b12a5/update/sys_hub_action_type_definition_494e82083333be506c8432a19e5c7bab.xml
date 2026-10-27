@@ -266,7 +266,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Externos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -349,7 +349,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Instalacao de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -432,7 +432,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Internos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -589,7 +589,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -763,7 +763,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Externos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -850,7 +850,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Instalação de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -937,7 +937,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Internos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1119,7 +1119,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB - Obtem Grupos para Gestão de Certificados">494e82083333be506c8432a19e5c7bab</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a1419a8c3373be506c8432a19e5c7bf7","name":"plan","plan_signature":null}}</plan>
-        <snapshot>1d5d321f333747906c8432a19e5c7b1b</snapshot>
+        <snapshot>09d6b83b33481f106c8432a19e5c7bc6</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 13:31:19</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -1380,7 +1380,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Instalacao de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1463,7 +1463,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Internos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1546,7 +1546,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Externos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1790,7 +1790,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Externos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1877,7 +1877,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Instalação de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1964,7 +1964,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificados Internos</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -2051,7 +2051,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2232,6 +2232,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>494e82083333be506c8432a19e5c7bab</sys_id>
         <latest_snapshot>c5411a8c3373be506c8432a19e5c7bcb</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w43-10-15-2026_10-19-2026_1115.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

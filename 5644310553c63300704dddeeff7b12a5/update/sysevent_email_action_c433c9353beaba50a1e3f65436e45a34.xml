@@ -5,7 +5,7 @@
         <active>false</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <category display_value="Sem Categoria" name="Sem Categoria">c97d83137f4432005f58108c3ffa917a</category>
         <collection>sn_disco_certmgmt_renew_task</collection>
         <condition table="sn_disco_certmgmt_renew_task">priorityIN1,3,5^EQ<item display_value="1,3,5" endquery="false" field="priority" goto="false" newquery="false" operator="IN" or="false" value="1,3,5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>

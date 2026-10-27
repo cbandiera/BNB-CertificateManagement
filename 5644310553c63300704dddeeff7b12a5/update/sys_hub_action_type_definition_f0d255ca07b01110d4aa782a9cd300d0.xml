@@ -198,7 +198,7 @@
     </sys_claim>
     <sys_hub_step_instance action="delete_multiple" query="action=f0d255ca07b01110d4aa782a9cd300d0^sys_idNOT IN08d32d1a07301110d4aa782a9cd30092,ec18dd0a07f01110d4aa782a9cd30062"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</action>
+        <action display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</action>
         <cid>6251e53a-49d9-4959-98f4-b5cdf27e1047</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -330,11 +330,11 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Populate Certificate Task">08d32d1a07301110d4aa782a9cd30092</model>
+        <model display_value="Preencher tarefa de certificação">08d32d1a07301110d4aa782a9cd30092</model>
         <model_id>08d32d1a07301110d4aa782a9cd30092</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_08d32d1a07301110d4aa782a9cd30092</name>
@@ -411,11 +411,11 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Populate Certificate Task">08d32d1a07301110d4aa782a9cd30092</model>
+        <model display_value="Preencher tarefa de certificação">08d32d1a07301110d4aa782a9cd30092</model>
         <model_id>08d32d1a07301110d4aa782a9cd30092</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_08d32d1a07301110d4aa782a9cd30092</name>
@@ -493,11 +493,11 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Request ID</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Populate Certificate Task">08d32d1a07301110d4aa782a9cd30092</model>
+        <model display_value="Preencher tarefa de certificação">08d32d1a07301110d4aa782a9cd30092</model>
         <model_id>08d32d1a07301110d4aa782a9cd30092</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_08d32d1a07301110d4aa782a9cd30092</name>
@@ -588,7 +588,7 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</action>
+        <action display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</action>
         <cid>58001b61-3562-4cb6-984a-42429fd19542</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -963,7 +963,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <label>Credential Value</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Submit Request to CA">ec18dd0a07f01110d4aa782a9cd30062</model>
+        <model display_value="Enviar solicitação à CA">ec18dd0a07f01110d4aa782a9cd30062</model>
         <model_id>ec18dd0a07f01110d4aa782a9cd30062</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_ec18dd0a07f01110d4aa782a9cd30062</name>
@@ -1088,11 +1088,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CA Template Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1170,11 +1170,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mid Server</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1252,11 +1252,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CA Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1334,11 +1334,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Credential Alias</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1416,11 +1416,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CA Host IP</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1498,11 +1498,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1574,7 +1574,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>error_message</element>
-        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">1d8196c7e703030007a64caac2f6a999</element_prototype>
+        <element_prototype display_value="Mensagem de erro" element="error_message" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">1d8196c7e703030007a64caac2f6a999</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -1583,11 +1583,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error_message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1668,11 +1668,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>request_id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1753,11 +1753,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1842,7 +1842,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1914,7 +1914,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>windows_error_code</element>
-        <element_prototype display_value="Windows error code" element="windows_error_code" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">8ec362673702030003a08fb77e41f1b6</element_prototype>
+        <element_prototype display_value="Código de erro do Windows" element="windows_error_code" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">8ec362673702030003a08fb77e41f1b6</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -1923,11 +1923,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>windows_error_code</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</model>
         <model_id>f0d255ca07b01110d4aa782a9cd300d0</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_f0d255ca07b01110d4aa782a9cd300d0</name>
@@ -1975,7 +1975,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=f0d255ca07b01110d4aa782a9cd300d0"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f0d255ca07b01110d4aa782a9cd300d0^sys_idNOT INe005d10207f01110d4aa782a9cd30091"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</action_type_id>
+        <action_type_id display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</action_type_id>
         <sys_created_by>now.discovery.content</sys_created_by>
         <sys_created_on>2022-07-21 10:00:34</sys_created_on>
         <sys_id>e005d10207f01110d4aa782a9cd30091</sys_id>
@@ -2494,7 +2494,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f0d255ca07b01110d4aa782a9cd300d0"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=f0d255ca07b01110d4aa782a9cd300d0^sys_idNOT IN8b4d5d5e07f41110d4aa782a9cd300ea"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</action_id>
+        <action_id display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8b4d5d5e07f41110d4aa782a9cd300ea","name":"plan","plan_signature":null}}</plan>
         <snapshot>df9a30713bdbb2d4a1e3f65436e45afb</snapshot>
         <sys_created_by>now.discovery.content</sys_created_by>
@@ -2529,7 +2529,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="Request/Renew Microsoft Certificate">f0d255ca07b01110d4aa782a9cd300d0</parent_action>
+        <parent_action display_value="Solicitar/renovar certificado da Microsoft">f0d255ca07b01110d4aa782a9cd300d0</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>now.discovery.content</sys_created_by>
         <sys_created_on>2022-07-22 05:15:14</sys_created_on>
@@ -2715,7 +2715,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=664d5d5e07f41110d4aa782a9cd30048^sys_idNOT IN7604255a07301110d4aa782a9cd300af,f24d5d5e07f41110d4aa782a9cd3005f"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</action>
+        <action display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</action>
         <cid>6251e53a-49d9-4959-98f4-b5cdf27e1047</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -2847,11 +2847,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>status_message</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Populate Certificate Task">7604255a07301110d4aa782a9cd300af</model>
+        <model display_value="Preencher tarefa de certificação">7604255a07301110d4aa782a9cd300af</model>
         <model_id>7604255a07301110d4aa782a9cd300af</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_7604255a07301110d4aa782a9cd300af</name>
@@ -2928,11 +2928,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ps_output</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Populate Certificate Task">7604255a07301110d4aa782a9cd300af</model>
+        <model display_value="Preencher tarefa de certificação">7604255a07301110d4aa782a9cd300af</model>
         <model_id>7604255a07301110d4aa782a9cd300af</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_input_7604255a07301110d4aa782a9cd300af</name>
@@ -3010,11 +3010,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Request ID</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Populate Certificate Task">7604255a07301110d4aa782a9cd300af</model>
+        <model display_value="Preencher tarefa de certificação">7604255a07301110d4aa782a9cd300af</model>
         <model_id>7604255a07301110d4aa782a9cd300af</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_7604255a07301110d4aa782a9cd300af</name>
@@ -3105,7 +3105,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</action>
+        <action display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</action>
         <cid>58001b61-3562-4cb6-984a-42429fd19542</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -3480,7 +3480,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <label>Credential Value</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="Submit Request to CA">f24d5d5e07f41110d4aa782a9cd3005f</model>
+        <model display_value="Enviar solicitação à CA">f24d5d5e07f41110d4aa782a9cd3005f</model>
         <model_id>f24d5d5e07f41110d4aa782a9cd3005f</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_f24d5d5e07f41110d4aa782a9cd3005f</name>
@@ -3605,11 +3605,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CA Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -3687,11 +3687,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -3769,11 +3769,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CA Template Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -3851,11 +3851,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Credential Alias</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -3933,11 +3933,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Mid Server</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -4015,11 +4015,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CA Host IP</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -4091,7 +4091,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>windows_error_code</element>
-        <element_prototype display_value="Windows error code" element="windows_error_code" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">8ec362673702030003a08fb77e41f1b6</element_prototype>
+        <element_prototype display_value="Código de erro do Windows" element="windows_error_code" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">8ec362673702030003a08fb77e41f1b6</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -4100,11 +4100,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>windows_error_code</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -4176,7 +4176,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>error_message</element>
-        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">1d8196c7e703030007a64caac2f6a999</element_prototype>
+        <element_prototype display_value="Mensagem de erro" element="error_message" name="var__m_sys_flow_step_definition_output_486f577a3721030003a08fb77e41f1d6">1d8196c7e703030007a64caac2f6a999</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -4185,11 +4185,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error_message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -4270,11 +4270,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -4359,7 +4359,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -4440,11 +4440,11 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>request_id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</model>
+        <model display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</model>
         <model_id>664d5d5e07f41110d4aa782a9cd30048</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_664d5d5e07f41110d4aa782a9cd30048</name>
@@ -4492,7 +4492,7 @@ Invoke-Command -ComputerName $computer -Credential $cred -Authentication Negotia
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=664d5d5e07f41110d4aa782a9cd30048"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=664d5d5e07f41110d4aa782a9cd30048^sys_idNOT IN324d5d5e07f41110d4aa782a9cd30081"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Request/Renew Microsoft Certificate">664d5d5e07f41110d4aa782a9cd30048</action_type_id>
+        <action_type_id display_value="Solicitar/renovar certificado da Microsoft">664d5d5e07f41110d4aa782a9cd30048</action_type_id>
         <sys_created_by>now.discovery.content</sys_created_by>
         <sys_created_on>2022-07-22 05:15:15</sys_created_on>
         <sys_id>324d5d5e07f41110d4aa782a9cd30081</sys_id>

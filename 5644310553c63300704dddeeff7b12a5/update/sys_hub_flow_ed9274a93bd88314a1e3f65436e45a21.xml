@@ -87,7 +87,7 @@
         <sys_updated_on>2026-04-16 22:46:30</sys_updated_on>
         <time>1970-01-01 06:00:00</time>
         <timer_type>11</timer_type>
-        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_definition display_value="Diário">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
     </sys_flow_timer_trigger>
     <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:8d76696d3b5cc314a1e3f65436e45aa0^sys_idNOT IN4576696d3b5cc314a1e3f65436e45aa1"/>
     <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
@@ -167,7 +167,7 @@
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-04-16 22:46:26</sys_updated_on>
-        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_definition display_value="Diário">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs>H4sIAAAAAAAA/21SXWvcMBD8K0XPVyOfk7T1W6Ec9KEJJEdeQjBraX0nWH1Uli9xQ/57V7ZytGmFXnZWOzsz6OFFEPRIohV7Y1FshHEJowPazwEZPZDR2KW1Z8FpSD7Ook1xwo0Yord7tIEg8eMBaGTQR41RtLWUG3ECmvBuHr9r5mIGBzazFr6ly2X95ZP8KGu+H2TTSsmXu+poSEd0on143IgAkWdTZn551zKZvAF9gVpJ1Wz5SLn9fFH3V01fb3UDiJdM+M7p31rSf/z+6QSfEzqN+mzznzAigr5xNJ9fHDnL1baF59H8wkIVcUAWr3BtnstOm5GjnFdYHb1ReBOS8W5FEvRUZpSnybrr1QHXGgeYKN2XQBmZRubDkDVnFUXScHf0T7dvC3fGLQZLk7wCOleQUjT9lHDMiSOhZaLOQgjGHboQ/cksw6zFVkts1UD+iZeO5uAqUFl4xRFBtWP82wLfQzTZxQ+m4eHXxX33c8p7Vx9Fcbea5gcllJ1BKp9oVNGE9JUXnN5+3evjb9TxPmzKAgAA</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>daily</trigger_type>
@@ -281,7 +281,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">ed9274a93bd88314a1e3f65436e45a21</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <logic_definition display_value="Para cada">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
         <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -308,7 +308,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">ed9274a93bd88314a1e3f65436e45a21</flow>
         <flow_variables_assigned>max_records</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <logic_definition display_value="Definir variáveis de fluxo">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>1</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -335,7 +335,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">ed9274a93bd88314a1e3f65436e45a21</flow>
         <flow_variables_assigned>ranges_alarm_json</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <logic_definition display_value="Definir variáveis de fluxo">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>6</order>
         <outputs_assigned/>
         <parent_ui_id>5b5dba1c-f5e1-4ebd-aa82-97fabf8b7b0b</parent_ui_id>
@@ -362,7 +362,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">ed9274a93bd88314a1e3f65436e45a21</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>7</order>
         <outputs_assigned/>
         <parent_ui_id>5b5dba1c-f5e1-4ebd-aa82-97fabf8b7b0b</parent_ui_id>
@@ -389,7 +389,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">ed9274a93bd88314a1e3f65436e45a21</flow>
         <flow_variables_assigned>max_records</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <logic_definition display_value="Definir variáveis de fluxo">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>9</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -444,7 +444,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ranges alarm JSON</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -527,7 +527,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>max records</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -701,7 +701,7 @@
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-04-16 22:46:29</sys_updated_on>
-        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_definition display_value="Diário">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs>H4sIAAAAAAAA/21SXWvcMBD8K0XPVyOfk7T1W6Ec9KEJJEdeQjBraX0nWH1Uli9xQ/57V7ZytGmFXnZWOzsz6OFFEPRIohV7Y1FshHEJowPazwEZPZDR2KW1Z8FpSD7Ook1xwo0Yord7tIEg8eMBaGTQR41RtLWUG3ECmvBuHr9r5mIGBzazFr6ly2X95ZP8KGu+H2TTSsmXu+poSEd0on143IgAkWdTZn551zKZvAF9gVpJ1Wz5SLn9fFH3V01fb3UDiJdM+M7p31rSf/z+6QSfEzqN+mzznzAigr5xNJ9fHDnL1baF59H8wkIVcUAWr3BtnstOm5GjnFdYHb1ReBOS8W5FEvRUZpSnybrr1QHXGgeYKN2XQBmZRubDkDVnFUXScHf0T7dvC3fGLQZLk7wCOleQUjT9lHDMiSOhZaLOQgjGHboQ/cksw6zFVkts1UD+iZeO5uAqUFl4xRFBtWP82wLfQzTZxQ+m4eHXxX33c8p7Vx9Fcbea5gcllJ1BKp9oVNGE9JUXnN5+3evjb9TxPmzKAgAA</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>daily</trigger_type>
@@ -815,7 +815,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">2076296d3b5cc314a1e3f65436e45aff</flow>
         <flow_variables_assigned>max_records</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <logic_definition display_value="Definir variáveis de fluxo">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>1</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -842,7 +842,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">2076296d3b5cc314a1e3f65436e45aff</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <logic_definition display_value="Para cada">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
         <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -869,7 +869,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">2076296d3b5cc314a1e3f65436e45aff</flow>
         <flow_variables_assigned>ranges_alarm_json</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <logic_definition display_value="Definir variáveis de fluxo">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>6</order>
         <outputs_assigned/>
         <parent_ui_id>5b5dba1c-f5e1-4ebd-aa82-97fabf8b7b0b</parent_ui_id>
@@ -896,7 +896,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">2076296d3b5cc314a1e3f65436e45aff</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>7</order>
         <outputs_assigned/>
         <parent_ui_id>5b5dba1c-f5e1-4ebd-aa82-97fabf8b7b0b</parent_ui_id>
@@ -923,7 +923,7 @@
         <flow display_value="BNB Verifica escopo e vencimento de certificados">2076296d3b5cc314a1e3f65436e45aff</flow>
         <flow_variables_assigned>max_records</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <logic_definition display_value="Definir variáveis de fluxo">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>9</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -978,7 +978,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>ranges alarm JSON</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1061,7 +1061,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>max records</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -1160,7 +1160,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>ed9274a93bd88314a1e3f65436e45a21</sys_id>
         <latest_snapshot>2076296d3b5cc314a1e3f65436e45aff</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w43-10-15-2026_10-19-2026_1115.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ed9274a93bd88314a1e3f65436e45a21^sys_idNOT IN4d76696d3b5cc314a1e3f65436e45abc"/>
@@ -1168,7 +1168,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"4d76696d3b5cc314a1e3f65436e45abc","name":"plan","plan_signature":null}}</plan>
         <plan_id>ed9274a93bd88314a1e3f65436e45a21</plan_id>
-        <snapshot>7f2baa623bb70b10d0457237f4e45afb</snapshot>
+        <snapshot>d961fa0b334c1b106c8432a19e5c7b34</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-04-16 22:46:30</sys_created_on>
         <sys_domain>global</sys_domain>

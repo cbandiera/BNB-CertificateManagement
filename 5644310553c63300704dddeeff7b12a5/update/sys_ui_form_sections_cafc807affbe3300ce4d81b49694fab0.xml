@@ -38,7 +38,7 @@
             <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="cmdb_ci_certificate" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">cafc807affbe3300ce4d81b49694fab0</sys_ui_form>
-            <sys_ui_section caption="Additional certificate details" display_value="Additional certificate details" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d0a9f0cfffe3300ce4d81b49694fa18</sys_ui_section>
+            <sys_ui_section caption="Additional certificate details" display_value="Detalhes adicionais da certificação" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">9d0a9f0cfffe3300ce4d81b49694fa18</sys_ui_section>
             <sys_updated_by>lucas.ferreira@extreme.digital</sys_updated_by>
             <sys_updated_on>2025-10-24 18:15:00</sys_updated_on>
         </sys_ui_form_section>
@@ -52,7 +52,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="cmdb_ci_certificate" name="cmdb_ci_certificate" sys_domain="global" view="3459534cfffe3300ce4d81b49694fa98">cafc807affbe3300ce4d81b49694fab0</sys_ui_form>
-            <sys_ui_section caption="Attestation details" display_value="Attestation details" name="cmdb_ci_certificate" sys_domain="global" view="&#10;&#9;&#9;&#9;&#9;3459534cfffe3300ce4d81b4969">3b3bee913b6afa50039b53e643e45a75</sys_ui_section>
+            <sys_ui_section caption="Attestation details" display_value="Detalhes da certificação" name="cmdb_ci_certificate" sys_domain="global" view="&#10;&#9;&#9;&#9;&#9;3459534cfffe3300ce4d81b4969">3b3bee913b6afa50039b53e643e45a75</sys_ui_section>
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
             <sys_updated_on>2026-03-19 13:42:16</sys_updated_on>
         </sys_ui_form_section>
@@ -75,7 +75,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2019-07-25 21:39:56</sys_updated_on>
             <sys_user/>
-            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view display_value="Gestão de certificados" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
             <view_name/>
         </sys_ui_form>
     </sys_ui_form_sections>

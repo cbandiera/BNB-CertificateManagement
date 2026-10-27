@@ -3,7 +3,7 @@
         <choices/>
         <description>L1 configuration</description>
         <name>chrome_toolbar</name>
-        <page display_value="Certificate Management">d3223298873e2110fc5febd73cbb359e</page>
+        <page display_value="Gestão de certificados">d3223298873e2110fc5febd73cbb359e</page>
         <required_translations>[ {
   "message" : "Certificate Inventory",
   "code" : "",

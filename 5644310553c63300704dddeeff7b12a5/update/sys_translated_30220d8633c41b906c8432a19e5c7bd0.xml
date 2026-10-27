@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>question_text</element>
+        <id/>
+        <label>Renovação</label>
+        <language>pb</language>
+        <name>question</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-21 19:20:16</sys_created_on>
+        <sys_id>30220d8633c41b906c8432a19e5c7bd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Renovação</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_translated_30220d8633c41b906c8432a19e5c7bd0</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-21 19:20:16</sys_updated_on>
+        <value>Renovação</value>
+    </sys_translated>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>1a17d40226f0000001</claim_timestamp>
+        <metadata_update_name>sys_translated_30220d8633c41b906c8432a19e5c7bd0</metadata_update_name>
+        <previous_claim_app_version>4.2.4</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-27 12:05:17</sys_created_on>
+        <sys_id>ab1896bb338013506c8432a19e5c7b8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-27 12:05:17</sys_updated_on>
+    </sys_claim>
+</record_update>

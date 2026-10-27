@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="BNB - Cadastro Manual de Certificados">2701058233c41b906c8432a19e5c7b94</catalog_item>
+        <catalog_variable>IO:c5b2cd4a33c41b906c8432a19e5c7b26</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-21 21:14:06</sys_created_on>
+        <sys_id>a43c51c233cc1b906c8432a19e5c7b88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>certificado</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a43c51c233cc1b906c8432a19e5c7b88</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-21 21:14:06</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Renovação ou Novo Certificado">736bd5ce338c1b906c8432a19e5c7baf</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>certificado</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=a43c51c233cc1b906c8432a19e5c7b88"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>1a17d4021c20000001</claim_timestamp>
+        <metadata_update_name>catalog_ui_policy_action_a43c51c233cc1b906c8432a19e5c7b88</metadata_update_name>
+        <previous_claim_app_version>4.2.4</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-27 12:05:17</sys_created_on>
+        <sys_id>ab1856bb338013506c8432a19e5c7bd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-27 12:05:17</sys_updated_on>
+    </sys_claim>
+</record_update>

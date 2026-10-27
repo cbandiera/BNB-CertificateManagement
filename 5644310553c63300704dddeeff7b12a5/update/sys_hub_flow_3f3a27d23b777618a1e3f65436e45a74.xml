@@ -392,7 +392,7 @@
         <sys_scope/>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-27 17:04:39</sys_updated_on>
-        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_definition display_value="Criação em">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs>H4sIAAAAAAAA/9VYy27jNhT9FUGrDuCFHnYcZzdIPGiA6QyaeNpFkApX0qVNjER6SEqJZ5CPKbroF/QL8mMlJfkly46fbbIyRFLkuUfnnnvpux92AiEm9oU9ML9gt2zKFAoGyWAyRj2uIEwwYJCinkuBxaC4mNgXSmTYsong6QDTcQJKLyaQSD3IRYzCvnBbdg5JhrcTeR3rnfT7xTbVnnY1rZ8lC2IqIx5EKFQ6TFWgQH7VC/So3nryW7VuAAIJWDFaZiElNILnv5//4tZPJMkeuQWZ4iko+h1i/k6/Ho1oEgtk9sXdfcseg9DHKwPtR22KGnwRiaDnoRP5ru95juOdt93wzA9dL/YBHUdvuEJWLSDVwNmcDXxUyGKMZ0St0CkQ4s8smcxWjPTXKKlL4VHS73r3c8esI6jBR1jOzR6DirByOBpxGuHnsaKclSMlznKSJ1nKPpX4DdWa2SxRU6r1SCb1fjg2kA2IChG5HfGHm+mBHygroqsmEx5BMnsCpQQNM4XSME5oorkPSm4kz0SB/qZ/+fnmKvj9/eDy5/5NcNO/HdxcXw76V/ZTEVfwLTM7lggrLEEZztNMHx8oJuYLsiwNNZqWLSNBx+p9pGg+leVTa671S85iWihnVe+RmTOMyWW9T8PfJHjHWSv52bYLsv+j/+uqxsvB3ZR7dgYQI6xRbkgWlLsUegM21cDCYnibNFyNbCPituP8TzKufGtfFac8xuRqvp2tJ4dDrWvKxpkybD0AUzJQPIA4DhZ4NEs1ppdkXcb29KKGRcb0C8Hse6wKuaBtxt9HKjXcO52HU26KLfU8+Vht2X/EKFMgLMlTjQctBpYqnM4CZfDqtdcpDCtiyS0mGKkFLZAvcvHpFyolZcMF8LOzCyqajmYgqzNlcSiVFlooTZA0BnkghPtjpvTqF8iXo9stiV2XkBCJ53RNCruOHxLX6TodILHvOJG3kMSrJ6+FpGpiOEku75bJspBhsr3o8ppgqxicxXTYQUC1rzRlxIijco/Lo+J0j4rTMzhrlujv5IlTeNXw1XL92SLOIzcGEOeg34i3dciGwv9yyTeZQRL+oH16D6sMIfo6FDxjcaNpld0nppbEoV7DLY2N6a50DLHQlfbdEY2TcIHbIBkLmiIVFZTXZpvzLzEVObDJai+0s4f6xA172EZHW6evXTPs9HphBB4h3bMuem7NQ+cwGrG9He/cQoB5k5Q3Oul6LeVNYtzVRw/E3Oyq+2E+3FMr+TY6ajn3CkxzC4t8GCELNFQRJMYEV5xymNAYp3PH9YSVo/O5CxzqC+S8F3Xcbjfq6suR9gXSxhDctteBXvfMP+/UfGEFyiaYqoGZ/+TGJCeyALLGM77I7PlPQbmlU0tqWJjCq/tP4JQqlqiUqWF7VHuuRo3V1chM25WUz/+gtIptQcMA07ox8z/UwtARa365axnwpuvaHN4SFCOArBLDEVExfdHYC1mNqdfWm9TEky+L4lAncrF93ukRv9mJSK/JieZg1sN8O73KjklU439jx7JbIuSN6bWxvdhSz/naFFlsOLZpko5C1g6x7EeWd1Ky/IO7s2nubr7w7sj1GyqFRbuyfz0sG9g15dAA/JahOEWJ4QwDTjZWFokWRFoTYC4QmHA5wyEtKK4WVBy16Bn666g+GXXgDNrpIZ2m6NVkctyrOcZd6HT8NS14r341bwL0At43VgKbEmeZ8q1q3ZZqy+sp1VQb9tJx3pQae9W5rRnZXNAOZMQ7KSOHF7NNfzW8zOcrrVr3/wJhShrViiAAAA==</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
@@ -849,7 +849,7 @@
         <sys_scope/>
         <sys_updated_by>suzana.hessel@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-27 17:04:42</sys_updated_on>
-        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_definition display_value="Criação em">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs>H4sIAAAAAAAA/9VYy27jNhT9FUGrDuCFHnYcZzdIPGiA6QyaeNpFkApX0qVNjER6SEqJZ5CPKbroF/QL8mMlJfkly46fbbIyRFLkuUfnnnvpux92AiEm9oU9ML9gt2zKFAoGyWAyRj2uIEwwYJCinkuBxaC4mNgXSmTYsong6QDTcQJKLyaQSD3IRYzCvnBbdg5JhrcTeR3rnfT7xTbVnnY1rZ8lC2IqIx5EKFQ6TFWgQH7VC/So3nryW7VuAAIJWDFaZiElNILnv5//4tZPJMkeuQWZ4iko+h1i/k6/Ho1oEgtk9sXdfcseg9DHKwPtR22KGnwRiaDnoRP5ru95juOdt93wzA9dL/YBHUdvuEJWLSDVwNmcDXxUyGKMZ0St0CkQ4s8smcxWjPTXKKlL4VHS73r3c8esI6jBR1jOzR6DirByOBpxGuHnsaKclSMlznKSJ1nKPpX4DdWa2SxRU6r1SCb1fjg2kA2IChG5HfGHm+mBHygroqsmEx5BMnsCpQQNM4XSME5oorkPSm4kz0SB/qZ/+fnmKvj9/eDy5/5NcNO/HdxcXw76V/ZTEVfwLTM7lggrLEEZztNMHx8oJuYLsiwNNZqWLSNBx+p9pGg+leVTa671S85iWihnVe+RmTOMyWW9T8PfJHjHWSv52bYLsv+j/+uqxsvB3ZR7dgYQI6xRbkgWlLsUegM21cDCYnibNFyNbCPituP8TzKufGtfFac8xuRqvp2tJ4dDrWvKxpkybD0AUzJQPIA4DhZ4NEs1ppdkXcb29KKGRcb0C8Hse6wKuaBtxt9HKjXcO52HU26KLfU8+Vht2X/EKFMgLMlTjQctBpYqnM4CZfDqtdcpDCtiyS0mGKkFLZAvcvHpFyolZcMF8LOzCyqajmYgqzNlcSiVFlooTZA0BnkghPtjpvTqF8iXo9stiV2XkBCJ53RNCruOHxLX6TodILHvOJG3kMSrJ6+FpGpiOEku75bJspBhsr3o8ppgqxicxXTYQUC1rzRlxIijco/Lo+J0j4rTMzhrlujv5IlTeNXw1XL92SLOIzcGEOeg34i3dciGwv9yyTeZQRL+oH16D6sMIfo6FDxjcaNpld0nppbEoV7DLY2N6a50DLHQlfbdEY2TcIHbIBkLmiIVFZTXZpvzLzEVObDJai+0s4f6xA172EZHW6evXTPs9HphBB4h3bMuem7NQ+cwGrG9He/cQoB5k5Q3Oul6LeVNYtzVRw/E3Oyq+2E+3FMr+TY6ajn3CkxzC4t8GCELNFQRJMYEV5xymNAYp3PH9YSVo/O5CxzqC+S8F3Xcbjfq6suR9gXSxhDctteBXvfMP+/UfGEFyiaYqoGZ/+TGJCeyALLGM77I7PlPQbmlU0tqWJjCq/tP4JQqlqiUqWF7VHuuRo3V1chM25WUz/+gtIptQcMA07ox8z/UwtARa365axnwpuvaHN4SFCOArBLDEVExfdHYC1mNqdfWm9TEky+L4lAncrF93ukRv9mJSK/JieZg1sN8O73KjklU439jx7JbIuSN6bWxvdhSz/naFFlsOLZpko5C1g6x7EeWd1Ky/IO7s2nubr7w7sj1GyqFRbuyfz0sG9g15dAA/JahOEWJ4QwDTjZWFokWRFoTYC4QmHA5wyEtKK4WVBy16Bn666g+GXXgDNrpIZ2m6NVkctyrOcZd6HT8NS14r341bwL0At43VgKbEmeZ8q1q3ZZqy+sp1VQb9tJx3pQae9W5rRnZXNAOZMQ7KSOHF7NNfzW8zOcrrVr3/wJhShrViiAAAA==</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
@@ -981,7 +981,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>3f3a27d23b777618a1e3f65436e45a74</sys_id>
         <latest_snapshot>77faeb1e3b777618a1e3f65436e45a1b</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w43-10-15-2026_10-19-2026_1115.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3f3a27d23b777618a1e3f65436e45a74^sys_idNOT IN480b2f1e3b777618a1e3f65436e45a23"/>
@@ -989,7 +989,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"480b2f1e3b777618a1e3f65436e45a23","name":"plan","plan_signature":null}}</plan>
         <plan_id>3f3a27d23b777618a1e3f65436e45a74</plan_id>
-        <snapshot>fa39335733bbc7906c8432a19e5c7bd0</snapshot>
+        <snapshot>bbc6343b33481f106c8432a19e5c7bab</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-25 19:49:39</sys_created_on>
         <sys_domain>global</sys_domain>

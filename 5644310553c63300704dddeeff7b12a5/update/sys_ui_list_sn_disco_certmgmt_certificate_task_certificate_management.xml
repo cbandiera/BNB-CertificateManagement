@@ -115,7 +115,7 @@
             <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
             <sys_updated_on>2026-03-12 23:13:04</sys_updated_on>
             <sys_user/>
-            <view display_value="Certificate Management" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
+            <view display_value="Gestão de certificados" name="certificate_management">3459534cfffe3300ce4d81b49694fa98</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

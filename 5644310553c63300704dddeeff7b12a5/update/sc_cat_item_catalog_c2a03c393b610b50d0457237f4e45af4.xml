@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Request New Certificate">ddbad1fa33f3fa106c8432a19e5c7bd6</sc_cat_item>
-        <sc_catalog display_value="IT services">8d65008787727610fa4042630cbb35ee</sc_catalog>
+        <sc_cat_item display_value="Solicitar novo certificado digital para domínio Interno ou Externo">ddbad1fa33f3fa106c8432a19e5c7bd6</sc_cat_item>
+        <sc_catalog display_value="Serviços de TI">8d65008787727610fa4042630cbb35ee</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-06-18 16:48:26</sys_created_on>

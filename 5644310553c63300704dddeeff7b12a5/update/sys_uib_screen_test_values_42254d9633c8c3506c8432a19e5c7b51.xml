@@ -2,7 +2,7 @@
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
         <macroponent display_value="">org.mozilla.javascript.NativeArr</macroponent>
         <macroponent_config>{ }</macroponent_config>
-        <screen display_value="Analyst Workbench default">b43186a053c22010e7cdddeeff7b1204</screen>
+        <screen display_value="Padrão de Workbench do analista">b43186a053c22010e7cdddeeff7b1204</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-04-06 18:00:46</sys_created_on>

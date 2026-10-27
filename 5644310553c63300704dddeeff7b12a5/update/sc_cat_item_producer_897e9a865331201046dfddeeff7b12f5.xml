@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</category>
+        <category display_value="Fluxo automatizado">ea54604a53553010fe1cddeeff7b12c9</category>
         <cc_render_type/>
         <checked_out/>
         <cost>0</cost>
@@ -82,7 +82,7 @@
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-26 22:50:36</sys_updated_on>
         <table_name>sn_disco_certmgmt_renew_task</table_name>
-        <taxonomy_topic display_value="Automated">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
+        <taxonomy_topic display_value="Automatizado">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
         <template/>
         <template_manager_roles/>
         <type>item</type>
@@ -100,12 +100,12 @@
         <documentkey>897e9a865331201046dfddeeff7b12f5</documentkey>
         <fieldname>name</fieldname>
         <language>pb</language>
-        <sys_created_by/>
-        <sys_created_on/>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:00:21</sys_created_on>
         <sys_id>44e7358787eba210fa4042630cbb3551</sys_id>
-        <sys_mod_count/>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:00:21</sys_updated_on>
         <tablename>sc_cat_item_producer</tablename>
         <value>Renovar certificado (automatizado)</value>
     </sys_translated_text>
@@ -113,12 +113,12 @@
         <documentkey>897e9a865331201046dfddeeff7b12f5</documentkey>
         <fieldname>short_description</fieldname>
         <language>pb</language>
-        <sys_created_by/>
-        <sys_created_on/>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:00:21</sys_created_on>
         <sys_id>cce7358787eba210fa4042630cbb3551</sys_id>
-        <sys_mod_count/>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:00:21</sys_updated_on>
         <tablename>sc_cat_item_producer</tablename>
         <value>Solicite a renovação de um certificado e recupere automaticamente os certificados de uma aplicação.</value>
     </sys_translated_text>

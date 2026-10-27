@@ -18,7 +18,7 @@
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-07-07 13:45:33</sys_updated_on>
         <theme/>
-        <ux_app_configuration display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</ux_app_configuration>
+        <ux_app_configuration display_value="Gestão de certificados">cb223298873e2110fc5febd73cbb359b</ux_app_configuration>
     </m2m_app_config_theme>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>

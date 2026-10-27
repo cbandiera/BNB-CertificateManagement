@@ -911,7 +911,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -994,7 +994,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1077,7 +1077,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1160,7 +1160,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -1243,7 +1243,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1326,7 +1326,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1409,7 +1409,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1493,7 +1493,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1576,7 +1576,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Next Page</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1659,7 +1659,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR Path</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -1742,7 +1742,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -1825,7 +1825,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2025,7 +2025,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2109,7 +2109,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Renewal Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -2193,7 +2193,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Credential</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -2277,7 +2277,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Next Page Link</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2451,7 +2451,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2538,7 +2538,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Next Page URL</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -2648,7 +2648,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -2735,7 +2735,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR Path</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2822,7 +2822,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -2909,7 +2909,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -3764,7 +3764,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>job_id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3847,7 +3847,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>error_message</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -3930,7 +3930,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>error_code</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -4013,7 +4013,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>response_body</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4096,7 +4096,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>status_message</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4179,7 +4179,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>status_code</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4262,7 +4262,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>renewal_task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -4346,7 +4346,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4429,7 +4429,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4512,7 +4512,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Next Page</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -4595,7 +4595,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -4678,7 +4678,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR Path</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5295,7 +5295,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Renewal Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -5379,7 +5379,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5463,7 +5463,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Next Page Link</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5547,7 +5547,7 @@ function addWorkNotes(message) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Credential</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -5721,7 +5721,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Next Page URL</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5808,7 +5808,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Status</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
@@ -5895,7 +5895,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR Path</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -5982,7 +5982,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -6069,7 +6069,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>CSR</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -6156,7 +6156,7 @@ function addWorkNotes(message) {&#13;
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Job Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>

@@ -216,7 +216,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>status</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -299,7 +299,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>variable</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
@@ -520,7 +520,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>

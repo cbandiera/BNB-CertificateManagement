@@ -270,7 +270,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>Max Records</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -348,7 +348,7 @@
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>quantidade_certificados</element>
-        <element_prototype display_value="Count" element="count" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">f6700274c32b32002841b63b12d3ae37</element_prototype>
+        <element_prototype display_value="Contagem" element="count" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">f6700274c32b32002841b63b12d3ae37</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -357,7 +357,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>Quantidade de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -522,7 +522,7 @@
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>certificados_renovaveis</element>
-        <element_prototype display_value="Records" element="records" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">5db8f721c36a32002841b63b12d3aeb7</element_prototype>
+        <element_prototype display_value="Registros" element="records" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">5db8f721c36a32002841b63b12d3aeb7</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -531,7 +531,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Records">records</internal_type>
+        <internal_type display_value="Registros">records</internal_type>
         <label>Certificados Renovaveis</label>
         <mandatory>true</mandatory>
         <max_length>1024</max_length>
@@ -618,7 +618,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1065,7 +1065,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>Max Records</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -1152,7 +1152,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Cadeia de caracteres">string</internal_type>
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
@@ -1230,7 +1230,7 @@
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>quantidade_certificados</element>
-        <element_prototype display_value="Count" element="count" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">f6700274c32b32002841b63b12d3ae37</element_prototype>
+        <element_prototype display_value="Contagem" element="count" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">f6700274c32b32002841b63b12d3ae37</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -1239,7 +1239,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Integer">integer</internal_type>
+        <internal_type display_value="Número inteiro">integer</internal_type>
         <label>Quantidade de Certificados</label>
         <mandatory>true</mandatory>
         <max_length>40</max_length>
@@ -1404,7 +1404,7 @@
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <element>certificados_renovaveis</element>
-        <element_prototype display_value="Records" element="records" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">5db8f721c36a32002841b63b12d3aeb7</element_prototype>
+        <element_prototype display_value="Registros" element="records" name="var__m_sys_flow_step_definition_output_48526b2dc32a32002841b63b12d3ae72">5db8f721c36a32002841b63b12d3aeb7</element_prototype>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -1413,7 +1413,7 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Records">records</internal_type>
+        <internal_type display_value="Registros">records</internal_type>
         <label>Certificados Renovaveis</label>
         <mandatory>true</mandatory>
         <max_length>1024</max_length>

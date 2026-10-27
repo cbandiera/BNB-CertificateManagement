@@ -176,7 +176,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificate Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -229,8 +229,8 @@
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd"/>
     <sys_hub_action_instance_v2 action="delete_multiple" query="flow=cdffc1c7333bfa106c8432a19e5c7bfd^sys_idNOT IN5844ce3a334c0f906c8432a19e5c7b39,ce4056b2334c4f906c8432a19e5c7b15,5aa546f633cc0f906c8432a19e5c7b38"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
-        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <action_type display_value="Criar registro">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Criar registro">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
@@ -253,8 +253,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=5844ce3a334c0f906c8432a19e5c7b39"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -277,8 +277,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ce4056b2334c4f906c8432a19e5c7b15"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
@@ -312,7 +312,7 @@
         <flow display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>2</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -535,7 +535,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <label>Certificate Task</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -588,8 +588,8 @@
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8"/>
     <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d8b5dd8f33bffa106c8432a19e5c7bb8^sys_idNOT IN1a4096b2334c4f906c8432a19e5c7bb8,8d44827a334c0f906c8432a19e5c7b32,46260a7633004f906c8432a19e5c7bfe"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <action_type display_value="Atualizar registro">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Atualizar registro">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
@@ -612,8 +612,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=1a4096b2334c4f906c8432a19e5c7bb8"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
-        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <action_type display_value="Criar registro">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Criar registro">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
@@ -636,8 +636,8 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d44827a334c0f906c8432a19e5c7b32"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_type display_value="Pesquisar registro">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Pesquisar registro">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
@@ -671,7 +671,7 @@
         <flow display_value="BNB - Create Closed Change Request">d8b5dd8f33bffa106c8432a19e5c7bb8</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="Se">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>2</order>
         <outputs_assigned/>
         <parent_ui_id/>
@@ -742,7 +742,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>cdffc1c7333bfa106c8432a19e5c7bfd</sys_id>
         <latest_snapshot>d8b5dd8f33bffa106c8432a19e5c7bb8</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w41-10-02-2026_10-06-2026_0230.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12w43-10-15-2026_10-19-2026_1115.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cdffc1c7333bfa106c8432a19e5c7bfd"/>
@@ -750,7 +750,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"34b591cf33bffa106c8432a19e5c7b41","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="BNB - Create Closed Change Request">cdffc1c7333bfa106c8432a19e5c7bfd</plan_id>
-        <snapshot>0a0051333b338f90d0457237f4e45a27</snapshot>
+        <snapshot>b607387f3b04db10d0457237f4e45a3d</snapshot>
         <sys_created_by>suzana.hessel@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-27 16:52:47</sys_created_on>
         <sys_domain>global</sys_domain>

@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</category>
+        <category display_value="Fluxo automatizado">ea54604a53553010fe1cddeeff7b12c9</category>
         <cc_render_type/>
         <checked_out>false</checked_out>
         <cost>0</cost>
@@ -96,7 +96,7 @@ else
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-26 22:50:37</sys_updated_on>
         <table_name>sn_disco_certmgmt_revoke_task</table_name>
-        <taxonomy_topic display_value="Automated">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
+        <taxonomy_topic display_value="Automatizado">d6a249aa07211110d4aa782a9cd30068</taxonomy_topic>
         <template/>
         <template_manager_roles/>
         <type>item</type>
@@ -127,12 +127,12 @@ else
         <documentkey>f707bb4c3b2220108774cedf34efc49b</documentkey>
         <fieldname>name</fieldname>
         <language>pb</language>
-        <sys_created_by/>
-        <sys_created_on/>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:00:22</sys_created_on>
         <sys_id>4ce7358787eba210fa4042630cbb3551</sys_id>
-        <sys_mod_count/>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:00:22</sys_updated_on>
         <tablename>sc_cat_item_producer</tablename>
         <value>Revogar certificado (automatizado)</value>
     </sys_translated_text>
@@ -140,12 +140,12 @@ else
         <documentkey>f707bb4c3b2220108774cedf34efc49b</documentkey>
         <fieldname>short_description</fieldname>
         <language>pb</language>
-        <sys_created_by/>
-        <sys_created_on/>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-04-06 22:00:22</sys_created_on>
         <sys_id>c4e7358787eba210fa4042630cbb3552</sys_id>
-        <sys_mod_count/>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:00:22</sys_updated_on>
         <tablename>sc_cat_item_producer</tablename>
         <value>Revoga o certificado de uma aplicação.</value>
     </sys_translated_text>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
         <active>false</active>
-        <app_config display_value="Certificate Management">cb223298873e2110fc5febd73cbb359b</app_config>
+        <app_config display_value="Gestão de certificados">cb223298873e2110fc5febd73cbb359b</app_config>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <disable_interoperable>false</disable_interoperable>
@@ -317,7 +317,7 @@
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
         <screen_condition/>
-        <screen_type display_value="Record">f0eabce4978b21502dcf75471153af59</screen_type>
+        <screen_type display_value="Registro">f0eabce4978b21502dcf75471153af59</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
         <sys_created_by>now.discovery.content</sys_created_by>
         <sys_created_on>2023-05-30 07:12:56</sys_created_on>

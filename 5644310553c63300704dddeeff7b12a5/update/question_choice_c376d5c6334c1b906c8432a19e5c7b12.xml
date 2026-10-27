@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Ambiente">9e16d946334c1b906c8432a19e5c7b1f</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-21 20:50:28</sys_created_on>
+        <sys_id>c376d5c6334c1b906c8432a19e5c7b12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Produção</sys_name>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>question_choice_c376d5c6334c1b906c8432a19e5c7b12</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-21 20:50:28</sys_updated_on>
+        <text>Produção</text>
+        <value>Production</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=c376d5c6334c1b906c8432a19e5c7b12"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>misc</field>
+        <id>c376d5c6334c1b906c8432a19e5c7b12</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="BRL">BRL</reference_currency>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-21 20:50:28</sys_created_on>
+        <sys_id>1ec6190a334c1b906c8432a19e5c7b9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-21 20:50:28</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="BRL">BRL</currency>
+        <field>rec_misc</field>
+        <id>c376d5c6334c1b906c8432a19e5c7b12</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="BRL">BRL</reference_currency>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-21 20:50:28</sys_created_on>
+        <sys_id>d2c6190a334c1b906c8432a19e5c7b9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-21 20:50:28</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>1a17d4021fe0000001</claim_timestamp>
+        <metadata_update_name>question_choice_c376d5c6334c1b906c8432a19e5c7b12</metadata_update_name>
+        <previous_claim_app_version>4.2.4</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-10-27 12:05:17</sys_created_on>
+        <sys_id>ef1896bb338013506c8432a19e5c7b10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-27 12:05:17</sys_updated_on>
+    </sys_claim>
+</record_update>
