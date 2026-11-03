@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
-        <catalog_item display_value="BNB - Cadastro Manual de Certificados">2701058233c41b906c8432a19e5c7b94</catalog_item>
+        <catalog_item display_value="Cadastro Manual de Certificados">2701058233c41b906c8432a19e5c7b94</catalog_item>
         <catalog_variable>IO:c5b2cd4a33c41b906c8432a19e5c7b26</catalog_variable>
         <cleared>false</cleared>
         <disabled>ignore</disabled>

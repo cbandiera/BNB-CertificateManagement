@@ -72,6 +72,7 @@ BNBFixScopeAndMetadata.prototype = {
 
 			if (isFirst && caScope != 'NULL') {
 				this.setMetaData(grCert);
+				this._checkSAN(grCert);
 			} else {
 				this._deleteMetadata(grCert);
 				/* limpa CA Scope para remover entrada do painel se estiver vencido (exceto o primeiro) */
@@ -103,10 +104,11 @@ BNBFixScopeAndMetadata.prototype = {
 			return 'external';
 		}
 		var issuerCN = '';
-		if (!grCert.issuer.nil()) {
-			var issuer = grCert.issuer.getRefRecord();
-			if (issuer && issuer.isValidRecord()) {
-				issuerCN = this._lc(issuer.getValue('subject_common_name'));
+		var issuer = grCert.issuer.nil() ? grCert.root_issuer : grCert.issuer;
+		if (!issuer.nil()) {
+			var grIssuer = issuer.getRefRecord();
+			if (grIssuer && grIssuer.isValidRecord()) {
+				issuerCN = this._lc(grIssuer.getValue('subject_common_name'));
 			}
 		}
 
@@ -133,7 +135,7 @@ BNBFixScopeAndMetadata.prototype = {
 		Retorna uma descrição da alteração, ou null se nada mudou.
 	*/
 	updateCertificate: function (certificate, caScope) {
-		var renewalTracking = 'NULL';
+		var renewalTracking = 'none';
 		if (caScope == 'internal') {
 			renewalTracking = 'priority3';
 		} else if (caScope == 'external') {
@@ -145,8 +147,8 @@ BNBFixScopeAndMetadata.prototype = {
 		}
 
 		// Empty fields come back as null/'' - normalize to 'NULL' so unchanged records are not rewritten
-		var curTracking = certificate.getValue('renewal_tracking') || 'NULL';
-		var curScope = certificate.getValue('u_ca_scope') || 'NULL';
+		var curTracking = certificate.getValue('renewal_tracking') || 'none';
+		var curScope = certificate.getValue('u_ca_scope') || '';
 
 		if (curTracking == renewalTracking && curScope == caScope) {
 			this.stats.unchanged++;
@@ -211,6 +213,17 @@ BNBFixScopeAndMetadata.prototype = {
 		while (grMetadata.next()) {
 			grMetadata.deleteRecord();
 			this.stats.metadataDeleted++;
+		}
+	},
+
+	_checkSAN: function (grCert) {
+		if ((grCert.subject_alternative_name + "").length > 0) {
+			return;
+		}
+		var grCertDomain = new GlideRecord('certificate_domain');
+		if (grCertDomain.get("domain", grCert.subject_common_name + "")) {
+			grCert.subject_alternative_name = grCertDomain.sys_id + "";
+			grCert.update();
 		}
 	},
 
@@ -312,14 +325,14 @@ BNBFixScopeAndMetadata.prototype = {
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-07-10 19:10:03</sys_created_on>
         <sys_id>b66d96bc33ca47106c8432a19e5c7b2e</sys_id>
-        <sys_mod_count>83</sys_mod_count>
+        <sys_mod_count>89</sys_mod_count>
         <sys_name>BNBFixScopeAndMetadata</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_script_include_b66d96bc33ca47106c8432a19e5c7b2e</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-10-26 15:53:07</sys_updated_on>
+        <sys_updated_on>2026-10-28 18:26:31</sys_updated_on>
     </sys_script_include>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>

@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category display_value="Serviços Especializados">787b99e13334cb146c8432a19e5c7b8a</category>
+        <category display_value="Automated Flow">ea54604a53553010fe1cddeeff7b12c9</category>
         <cc_render_type/>
         <checked_out>false</checked_out>
         <cost>0</cost>
@@ -35,7 +35,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>TBNB - Cadastro Manual de Certificados</name>
+        <name>Cadastro Manual de Certificados</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -74,7 +74,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></save_script>
-        <sc_catalogs>8d65008787727610fa4042630cbb35ee</sc_catalogs>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4,8d65008787727610fa4042630cbb35ee</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
@@ -102,22 +102,22 @@ current.discovery_source = "Manual Entry";]]></script>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-10-21 19:15:32</sys_created_on>
         <sys_id>2701058233c41b906c8432a19e5c7b94</sys_id>
-        <sys_mod_count>88</sys_mod_count>
-        <sys_name>TBNB - Cadastro Manual de Certificados</sys_name>
+        <sys_mod_count>90</sys_mod_count>
+        <sys_name>Cadastro Manual de Certificados</sys_name>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sc_cat_item_producer_2701058233c41b906c8432a19e5c7b94</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-10-23 12:42:33</sys_updated_on>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-10-27 16:16:17</sys_updated_on>
         <table_name>cmdb_ci_certificate</table_name>
-        <taxonomy_topic display_value="Serviços Especializados">4c1ed16533b4cb146c8432a19e5c7bea</taxonomy_topic>
+        <taxonomy_topic display_value="Specialized Services">4c1ed16533b4cb146c8432a19e5c7bea</taxonomy_topic>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>217</version>
+        <version>220</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
