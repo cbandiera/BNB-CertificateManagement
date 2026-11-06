@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
-        <sys_mod_count>77</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>BNB Dispara Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd62e4d633633a506c8432a19e5c7b0a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:39</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:21</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -740,10 +740,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>60acf1a233ab36906c8432a19e5c7b74</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:29</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:10</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=60acf1a233ab36906c8432a19e5c7b74"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -768,9 +768,9 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>24acf1a233ab36906c8432a19e5c7b9f</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:29</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:10</sys_updated_on>
         <value>/**&#13;
  * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
  * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
@@ -827,13 +827,13 @@
     }&#13;
 &#13;
     // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
-    if (gs.getProperty("instance_name") != "bnbprod") {&#13;
-      sendWorkNotes(&#13;
-        taskConfig.task.getUniqueValue(),&#13;
-        "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***",&#13;
-      );&#13;
-      taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
-    }&#13;
+    // if (gs.getProperty("instance_name") != "bnbprod") {&#13;
+    //   sendWorkNotes(&#13;
+    //     taskConfig.task.getUniqueValue(),&#13;
+    //     "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***",&#13;
+    //   );&#13;
+    //   taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
+    // }&#13;
     var ixTaskType = [&#13;
       "sn_disco_certmgmt_new_task",&#13;
       "sn_disco_certmgmt_renew_task",&#13;
@@ -860,6 +860,13 @@
     outputs.ip_address = taskConfig.ip_address;&#13;
     outputs.port = taskConfig.port;&#13;
     outputs.assignment_group = taskConfig.assignment_group;&#13;
+&#13;
+    if (gs.getProperty("instance_name") != "bnbprod") {&#13;
+      delete taskConfig["certificate_task"];&#13;
+      delete taskConfig["task"];&#13;
+      throw new Error("Inibida a chamada do Ansible em ambiente Sub Produção \n" + JSON.stringify(taskConfig, null,"\t"));&#13;
+    }&#13;
+&#13;
   } catch (ex) {&#13;
     sendWorkNotes(inputs.task.getUniqueValue(), "*** ERRO " + ex);&#13;
     new global.GlideQuery(inputs.task.sys_class_name + "")&#13;
@@ -1023,7 +1030,9 @@ function renewCertificate(taskConfig, inputs) {&#13;
     } else {&#13;
       if (F5Host) {&#13;
         taskConfig.ansible_flow = "flow_c";&#13;
-        throw new Error("Certificado com instalacão automática inibido por solicitação.")&#13;
+        if (gs.getProperty("instance_name") == "bnbprod") {&#13;
+          throw new Error("Certificado com instalacão automática inibido por solicitação.");&#13;
+        }&#13;
       } else {&#13;
         taskConfig.ansible_flow = "flow_b";&#13;
       }&#13;
@@ -1055,8 +1064,9 @@ function renewCertificate(taskConfig, inputs) {&#13;
   }&#13;
 &#13;
   if (taskConfig.ansible_flow == "flow_c") {&#13;
-    taskConfig.body.extra_vars.url =&#13;
-      "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
+    taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
+    // taskConfig.body.extra_vars.url =&#13;
+    //   "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
     // Cenario C - Renovação Completa - Certificado F5 - Job 65&#13;
     var f5Ip = gs.getProperty(&#13;
       "sn_disco_certmgmt.BNB_F5LB_IP_Address",&#13;
@@ -1079,6 +1089,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
       taskConfig.assignment_group = inputs.install_group;&#13;
     } else {&#13;
       // Cenario A - GERAR apenas PKEY e CSR - Job 15&#13;
+      taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
       taskConfig.body.extra_vars.url =&#13;
         "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
       taskConfig.resource_path = "job_templates/15/launch/";&#13;
@@ -5128,14 +5139,14 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b33</sys_id>
-        <sys_mod_count>187</sys_mod_count>
+        <sys_mod_count>189</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:30</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5536,17 +5547,17 @@ function addWorkNotes(taskId, message) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8e2db56a33ab36906c8432a19e5c7b2d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>d3fec2cb3bd05b14d0457237f4e45a17</snapshot>
+        <snapshot>2f67768b3b189b14d0457237f4e45aef</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e2db56a33ab36906c8432a19e5c7b2d</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:43</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:25</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -6892,10 +6903,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:27</sys_created_on>
         <sys_id>892d716a33ab36906c8432a19e5c7bd9</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:37</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:19</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=892d716a33ab36906c8432a19e5c7bd9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6920,9 +6931,9 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:28</sys_created_on>
         <sys_id>d52db16a33ab36906c8432a19e5c7b59</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>53</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:37</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:19</sys_updated_on>
         <value>/**&#13;
  * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
  * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
@@ -6979,13 +6990,13 @@ function addWorkNotes(taskId, message) {&#13;
     }&#13;
 &#13;
     // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
-    if (gs.getProperty("instance_name") != "bnbprod") {&#13;
-      sendWorkNotes(&#13;
-        taskConfig.task.getUniqueValue(),&#13;
-        "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***",&#13;
-      );&#13;
-      taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
-    }&#13;
+    // if (gs.getProperty("instance_name") != "bnbprod") {&#13;
+    //   sendWorkNotes(&#13;
+    //     taskConfig.task.getUniqueValue(),&#13;
+    //     "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***",&#13;
+    //   );&#13;
+    //   taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
+    // }&#13;
     var ixTaskType = [&#13;
       "sn_disco_certmgmt_new_task",&#13;
       "sn_disco_certmgmt_renew_task",&#13;
@@ -7012,6 +7023,13 @@ function addWorkNotes(taskId, message) {&#13;
     outputs.ip_address = taskConfig.ip_address;&#13;
     outputs.port = taskConfig.port;&#13;
     outputs.assignment_group = taskConfig.assignment_group;&#13;
+&#13;
+    if (gs.getProperty("instance_name") != "bnbprod") {&#13;
+      delete taskConfig["certificate_task"];&#13;
+      delete taskConfig["task"];&#13;
+      throw new Error("Inibida a chamada do Ansible em ambiente Sub Produção \n" + JSON.stringify(taskConfig, null,"\t"));&#13;
+    }&#13;
+&#13;
   } catch (ex) {&#13;
     sendWorkNotes(inputs.task.getUniqueValue(), "*** ERRO " + ex);&#13;
     new global.GlideQuery(inputs.task.sys_class_name + "")&#13;
@@ -7175,7 +7193,9 @@ function renewCertificate(taskConfig, inputs) {&#13;
     } else {&#13;
       if (F5Host) {&#13;
         taskConfig.ansible_flow = "flow_c";&#13;
-        throw new Error("Certificado com instalacão automática inibido por solicitação.")&#13;
+        if (gs.getProperty("instance_name") == "bnbprod") {&#13;
+          throw new Error("Certificado com instalacão automática inibido por solicitação.");&#13;
+        }&#13;
       } else {&#13;
         taskConfig.ansible_flow = "flow_b";&#13;
       }&#13;
@@ -7207,8 +7227,9 @@ function renewCertificate(taskConfig, inputs) {&#13;
   }&#13;
 &#13;
   if (taskConfig.ansible_flow == "flow_c") {&#13;
-    taskConfig.body.extra_vars.url =&#13;
-      "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
+    taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
+    // taskConfig.body.extra_vars.url =&#13;
+    //   "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
     // Cenario C - Renovação Completa - Certificado F5 - Job 65&#13;
     var f5Ip = gs.getProperty(&#13;
       "sn_disco_certmgmt.BNB_F5LB_IP_Address",&#13;
@@ -7231,6 +7252,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
       taskConfig.assignment_group = inputs.install_group;&#13;
     } else {&#13;
       // Cenario A - GERAR apenas PKEY e CSR - Job 15&#13;
+      taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
       taskConfig.body.extra_vars.url =&#13;
         "https://" + ansibleCommonName + ":" + (ipPort ? ipPort.port : 443);&#13;
       taskConfig.resource_path = "job_templates/15/launch/";&#13;
@@ -10374,14 +10396,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>252d356a33ab36906c8432a19e5c7b05</sys_id>
-        <sys_mod_count>127</sys_mod_count>
+        <sys_mod_count>129</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-06 13:45:38</sys_updated_on>
+        <sys_updated_on>2026-11-06 16:42:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
