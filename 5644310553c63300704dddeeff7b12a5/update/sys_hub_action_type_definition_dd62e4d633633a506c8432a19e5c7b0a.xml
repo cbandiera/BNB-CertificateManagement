@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>true</ih_action>
         <internal_name>edx_chamada_awx_fluxo_a</internal_name>
-        <label_cache>[{"name":"{{action.task}}","label":"action➛Certificate Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"ee561146-16d5-47f8-80e7-bae8581cf063"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"8b2d5ae3-dfc9-4123-b1ae-9c3871a08902"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.task.number}}","label":"action➛Certificate Task➛Number","type":"action","ref":"","reference_display":"Number","base_type":"string","parent_table_name":"task","column_name":"number","choices":null,"attributes":{}},{"name":"{{action.for_ar_fluxo}}","label":"action➛ForçaR FLUXO","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.force_flow}}","label":"action➛Force Flow","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Char","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"char","uiUniqueId":"0e9699e5-b64c-46ef-beb2-b5da72769b0a"}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.code}}","label":"step➛REST AWX POST Job➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].response_body}}","label":"step➛REST AWX POST Job➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_code}}","label":"step➛REST AWX POST Job➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_message}}","label":"step➛REST AWX POST Job➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.message}}","label":"step➛REST AWX POST Job➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.code}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_id}}","label":"step➛Check Return➛Job ID","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"30503983-25a9-4783-94e0-f79ca3304625"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e7e1380b-36fc-40d8-9767-937efdd976ed"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_url}}","label":"step➛Check Return➛Job URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ebab3bce-af41-400d-b351-1929d62e3b5a"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].resource_path}}","label":"step➛Obtain AWX Job Template URL➛Resource Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"581a43f6-2782-46b4-ad09-f91e7f99f865"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].post_body}}","label":"step➛Obtain AWX Job Template URL➛Post Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e96451c-df0f-4846-aef2-9e2d12807dd3"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].status_code}}","label":"step➛REST AWX POST Job➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task","type":"step","ref":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task.subject_common_name}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task➛Subject common name","type":"step","ref":"","reference_display":"Subject common name","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"subject_common_name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}","label":"step➛Obtain AWX Job Template URL➛Renewal Flow","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci}}","label":"step➛Obtain AWX Job Template URL➛Target CI","type":"step","ref":"cmdb_ci","reference_display":"Configuration Item","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].ip_address}}","label":"step➛Obtain AWX Job Template URL➛IP Address","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].port}}","label":"step➛Obtain AWX Job Template URL➛Port","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_externos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Externos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_internos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Internos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].instalacao_de_certificados}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Instalação de Certificados","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}","label":"step➛Obtain AWX Job Template URL➛Assignment Group","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci.name}}","label":"step➛Obtain AWX Job Template URL➛Target CI➛Name","type":"step","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"cmdb_ci","column_name":"name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}","label":"step➛Obtain AWX Job Template URL➛Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4b7bfcf8-78bf-42e2-9787-6d2dd9ba0f9c"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}","label":"step➛Obtain AWX Job Template URL➛Short Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"21feeac5-5e5f-4a7d-a234-d9a6979faa37"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}","label":"step➛Obtain AWX Job Template URL➛Skip AWX","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3eff9a5a-8d0f-494c-9acc-db405816c4c3"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.message}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.task}}","label":"action➛Certificate Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"ee561146-16d5-47f8-80e7-bae8581cf063"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"8b2d5ae3-dfc9-4123-b1ae-9c3871a08902"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.task.number}}","label":"action➛Certificate Task➛Number","type":"action","ref":"","reference_display":"Number","base_type":"string","parent_table_name":"task","column_name":"number","choices":null,"attributes":{}},{"name":"{{action.for_ar_fluxo}}","label":"action➛ForçaR FLUXO","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.force_flow}}","label":"action➛Force Flow","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Char","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"char","uiUniqueId":"0e9699e5-b64c-46ef-beb2-b5da72769b0a"}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.code}}","label":"step➛REST AWX POST Job➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].response_body}}","label":"step➛REST AWX POST Job➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_code}}","label":"step➛REST AWX POST Job➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_message}}","label":"step➛REST AWX POST Job➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.message}}","label":"step➛REST AWX POST Job➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.code}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_id}}","label":"step➛Check Return➛Job ID","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"30503983-25a9-4783-94e0-f79ca3304625"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e7e1380b-36fc-40d8-9767-937efdd976ed"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_url}}","label":"step➛Check Return➛Job URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ebab3bce-af41-400d-b351-1929d62e3b5a"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].resource_path}}","label":"step➛Obtain AWX Job Template URL➛Resource Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"581a43f6-2782-46b4-ad09-f91e7f99f865"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].post_body}}","label":"step➛Obtain AWX Job Template URL➛Post Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e96451c-df0f-4846-aef2-9e2d12807dd3"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].status_code}}","label":"step➛REST AWX POST Job➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task","type":"step","ref":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task.subject_common_name}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task➛Subject common name","type":"step","ref":"","reference_display":"Subject common name","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"subject_common_name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}","label":"step➛Obtain AWX Job Template URL➛Renewal Flow","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci}}","label":"step➛Obtain AWX Job Template URL➛Target CI","type":"step","ref":"cmdb_ci","reference_display":"Configuration Item","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].ip_address}}","label":"step➛Obtain AWX Job Template URL➛IP Address","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].port}}","label":"step➛Obtain AWX Job Template URL➛Port","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_externos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Externos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_internos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Internos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].instalacao_de_certificados}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Instalação de Certificados","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}","label":"step➛Obtain AWX Job Template URL➛Assignment Group","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci.name}}","label":"step➛Obtain AWX Job Template URL➛Target CI➛Name","type":"step","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"cmdb_ci","column_name":"name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}","label":"step➛Obtain AWX Job Template URL➛Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4b7bfcf8-78bf-42e2-9787-6d2dd9ba0f9c"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}","label":"step➛Obtain AWX Job Template URL➛Short Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"21feeac5-5e5f-4a7d-a234-d9a6979faa37"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}","label":"step➛Obtain AWX Job Template URL➛Skip AWX","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3eff9a5a-8d0f-494c-9acc-db405816c4c3"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.message}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8c917ab5-b5a0-452e-97ce-2d0fc8118555].__step_status__.code}}","label":"step➛Skip AWX in subprod instance➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>812d716a33ab36906c8432a19e5c7b0f</master_snapshot>
         <master_snapshot_digest/>
         <name>BNB Dispara Job Ansible</name>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
-        <sys_mod_count>111</sys_mod_count>
+        <sys_mod_count>123</sys_mod_count>
         <sys_name>BNB Dispara Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd62e4d633633a506c8432a19e5c7b0a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:30</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:48:56</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -187,7 +187,7 @@
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-19 14:33:17</sys_updated_on>
     </sys_claim>
-    <sys_hub_step_instance action="delete_multiple" query="action=dd62e4d633633a506c8432a19e5c7b0a^sys_idNOT IN2e5f49e63327b2906c8432a19e5c7b7f,4c6cab40337772906c8432a19e5c7b91,60acf1a233ab36906c8432a19e5c7b74,6f5c6b40337772906c8432a19e5c7bca,e767612233e3f2906c8432a19e5c7b3c"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=dd62e4d633633a506c8432a19e5c7b0a^sys_idNOT IN2e5f49e63327b2906c8432a19e5c7b7f,40a8a758336813906c8432a19e5c7ba4,4c6cab40337772906c8432a19e5c7b91,60acf1a233ab36906c8432a19e5c7b74,6f5c6b40337772906c8432a19e5c7bca,e767612233e3f2906c8432a19e5c7b3c"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action>
         <cid>4dd61761-56e0-43ee-a38c-5ec5bdab2565</cid>
@@ -198,17 +198,17 @@
         <inputs/>
         <inputs/>
         <label>REST AWX POST Job</label>
-        <order>4</order>
+        <order>5</order>
         <outputs/>
         <section/>
         <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:23</sys_created_on>
         <sys_id>2e5f49e63327b2906c8432a19e5c7b7f</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:45:21</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2e5f49e63327b2906c8432a19e5c7b7f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -585,13 +585,13 @@
         <input_name>mid_cluster</input_name>
         <instance>2e5f49e63327b2906c8432a19e5c7b7f</instance>
         <referenced_table>sys_hub_step_instance</referenced_table>
-        <script>{"mid_cluster":{"scriptActive":true,"script":"if (fd_data._2__obtain_awx_job_template_url.skip_awx) {\n    var csr \u003d fd_data._2__obtain_awx_job_template_url.post_body +\n        \u0027\\nResource Path:\u0027 + fd_data._2__obtain_awx_job_template_url.resource_path;\n    new global.GlideQuery(\u0027sn_disco_certmgmt_renew_task\u0027)\n        .where(\u0027sys_id\u0027, fd_data.action_inputs.task.sys_id)\n        .update({ csr: csr })\n    throw new Error(\"Bypass na chamada do ansible em ambiente SUb-Prod\");\n}\nvar mid \u003d new global.GlideQuery(\"ecc_agent_cluster\")\n    .where(\"name\", \"MID_CAPGV_DIS\")\n    .limit(1)\n    .selectOne([\"sys_id\", \"name\"])\n    .orElse({ sys_id: null })\nreturn mid.sys_id"}}</script>
+        <script>{"mid_cluster":{"scriptActive":true,"script":"var mid \u003d new global.GlideQuery(\"ecc_agent_cluster\")\n    .where(\"name\", \"MID_CAPGV_DIS\")\n    .limit(1)\n    .selectOne([\"sys_id\", \"name\"])\n    .orElse({ sys_id: null })\nreturn mid.sys_id"}}</script>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-07-28 14:45:21</sys_created_on>
         <sys_id>1d1492223b160354d0457237f4e45abe</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 14:07:47</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_input_scripts action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -634,6 +634,201 @@
     </sys_hub_input_scripts>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action>
+        <cid>8c917ab5-b5a0-452e-97ce-2d0fc8118555</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Skip AWX in subprod instance</label>
+        <order>4</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:41</sys_created_on>
+        <sys_id>40a8a758336813906c8432a19e5c7ba4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:12</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=40a8a758336813906c8432a19e5c7ba4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>40a8a758336813906c8432a19e5c7ba4</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:41</sys_created_on>
+        <sys_id>5ca8a758336813906c8432a19e5c7be0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>40a8a758336813906c8432a19e5c7ba4</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:41</sys_created_on>
+        <sys_id>50a8a758336813906c8432a19e5c7be1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:12</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    if (inputs.skip_awx) {&#13;
+        throw new Error("Bypass na chamada do ansible em ambiente SUb-Prod");&#13;
+    }&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>40a8a758336813906c8432a19e5c7ba4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:45:12</sys_created_on>
+        <sys_id>a32c2710332c13906c8432a19e5c7b53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:12</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">272ce310332c13906c8432a19e5c7bee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=40a8a758336813906c8432a19e5c7ba4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>40a8a758336813906c8432a19e5c7ba4</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:41</sys_created_on>
+        <sys_id>94a8a758336813906c8432a19e5c7be0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>40a8a758336813906c8432a19e5c7ba4</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:41</sys_created_on>
+        <sys_id>98a8a758336813906c8432a19e5c7be0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>skip_awx</field>
+        <id>40a8a758336813906c8432a19e5c7ba4</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:45:12</sys_created_on>
+        <sys_id>eb2c2710332c13906c8432a19e5c7b52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:12</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_40a8a758336813906c8432a19e5c7ba4</table>
+        <value>{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=40a8a758336813906c8432a19e5c7ba4"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=40a8a758336813906c8432a19e5c7ba4"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=40a8a758336813906c8432a19e5c7ba4^sys_idNOT IN272ce310332c13906c8432a19e5c7bee"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skip_awx</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Skip AWX in subprod instance">40a8a758336813906c8432a19e5c7ba4</model>
+        <model_id>40a8a758336813906c8432a19e5c7ba4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_40a8a758336813906c8432a19e5c7ba4</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:45:12</sys_created_on>
+        <sys_id>272ce310332c13906c8432a19e5c7bee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=40a8a758336813906c8432a19e5c7ba4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=40a8a758336813906c8432a19e5c7ba4"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action>
         <cid>f2055f5f-b197-49d8-9c90-6c73d60627f2</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -649,10 +844,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 20:09:20</sys_created_on>
         <sys_id>4c6cab40337772906c8432a19e5c7b91</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 12:39:11</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4c6cab40337772906c8432a19e5c7b91"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -700,11 +895,11 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 20:09:20</sys_created_on>
         <sys_id>cc6cab40337772906c8432a19e5c7b9c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 12:39:11</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>u_renewal_flow={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}^assignment_group={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}^description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}^short_description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}^state=1</value>
+        <value>u_renewal_flow={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}^assignment_group={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}^description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}^short_description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}^state=fd-scripted^csr=fd-scripted</value>
     </sys_element_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=4c6cab40337772906c8432a19e5c7b91"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
@@ -722,7 +917,20 @@
     </sys_translated_text>
     <sys_hub_step_ext_input action="delete_multiple" query="model=4c6cab40337772906c8432a19e5c7b91"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=4c6cab40337772906c8432a19e5c7b91"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=4c6cab40337772906c8432a19e5c7b91"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4c6cab40337772906c8432a19e5c7b91^sys_idNOT IN00a8a758336813906c8432a19e5c7ba2"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>update_record_field_values</input_name>
+        <instance>4c6cab40337772906c8432a19e5c7b91</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"csr":{"scriptActive":true,"script":"var csr \u003d \"\";\nif (fd_data._2__obtain_awx_job_template_url.skip_awx) {\n    csr +\u003d \"Geração de CSR através do Ansible playbook inibida em instâncias Subprod\\n\" +\n        \"Parâmetros para a chamada Ansible/AWX:\\n\" +\n        \"Resource Path: \" + fd_data._2__obtain_awx_job_template_url.resource_path + \"\\n\";\n    try {\n        csr +\u003d JSON.stringify(\n            JSON.parse(fd_data._2__obtain_awx_job_template_url.post_body),\n            null, 2);\n    } catch (ex) {\n        csr +\u003d \"Erro: \" + ex;\n    }\n}\nreturn csr;","savedValue":""},"state":{"scriptActive":true,"script":"if(fd_data._2__obtain_awx_job_template_url.skip_awx) {\n    return 2;\n}\nreturn 1;","savedValue":"1"}}</script>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:41</sys_created_on>
+        <sys_id>00a8a758336813906c8432a19e5c7ba2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:48:46</sys_updated_on>
+    </sys_hub_input_scripts>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action>
         <cid>e39204e5-f554-49e0-8f0d-c1b43654fb7a</cid>
@@ -2373,14 +2581,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-11-09 12:27:15</sys_created_on>
         <sys_id>d8d9158033e053506c8432a19e5c7bd6</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:20</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:48:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3516,17 +3724,17 @@ function sendWorkNotes(taskId, notes) {&#13;
         <icon/>
         <inputs/>
         <label>Check Return</label>
-        <order>5</order>
+        <order>6</order>
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 18:37:36</sys_created_on>
         <sys_id>e767612233e3f2906c8432a19e5c7b3c</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:21</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:41</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e767612233e3f2906c8432a19e5c7b3c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5265,14 +5473,14 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b33</sys_id>
-        <sys_mod_count>205</sys_mod_count>
+        <sys_mod_count>211</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:21</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:48:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5301,7 +5509,7 @@ function addWorkNotes(taskId, message) {&#13;
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e25f89e63327b2906c8432a19e5c7b52^sys_idNOT IN6dcdef033b545f14d0457237f4e45a47"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 13/03/2026 13:52:24">e25f89e63327b2906c8432a19e5c7b52</action_status_metadata_id>
-        <condition>{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}=true</condition>
+        <condition>{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}=true^{{step[8c917ab5-b5a0-452e-97ce-2d0fc8118555].__step_status__.code}}!=0</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label>AWX Skipped</label>
         <order>1</order>
@@ -5309,9 +5517,9 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-11-06 20:39:46</sys_created_on>
         <sys_id>6dcdef033b545f14d0457237f4e45a47</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 12:27:17</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:42</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>task</element>
@@ -5687,17 +5895,17 @@ function addWorkNotes(taskId, message) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8e2db56a33ab36906c8432a19e5c7b2d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>a115725433e89f506c8432a19e5c7b09</snapshot>
+        <snapshot>8a0d6358332c13906c8432a19e5c7bcb</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e2db56a33ab36906c8432a19e5c7b2d</sys_id>
-        <sys_mod_count>71</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:34</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:49:00</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -5714,7 +5922,7 @@ function addWorkNotes(taskId, message) {&#13;
         <description>Chama API Restful para Ansible gerar o CSR para o certificado</description>
         <flow_priority/>
         <internal_name>edx_chamada_awx_fluxo_a</internal_name>
-        <label_cache>[{"name":"{{action.task}}","label":"action➛Certificate Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"ee561146-16d5-47f8-80e7-bae8581cf063"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"8b2d5ae3-dfc9-4123-b1ae-9c3871a08902"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.task.number}}","label":"action➛Certificate Task➛Number","type":"action","ref":"","reference_display":"Number","base_type":"string","parent_table_name":"task","column_name":"number","choices":null,"attributes":{}},{"name":"{{action.for_ar_fluxo}}","label":"action➛ForçaR FLUXO","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.force_flow}}","label":"action➛Force Flow","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Char","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"char","uiUniqueId":"0e9699e5-b64c-46ef-beb2-b5da72769b0a"}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.code}}","label":"step➛REST AWX POST Job➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].response_body}}","label":"step➛REST AWX POST Job➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_code}}","label":"step➛REST AWX POST Job➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_message}}","label":"step➛REST AWX POST Job➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.message}}","label":"step➛REST AWX POST Job➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.code}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_id}}","label":"step➛Check Return➛Job ID","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"30503983-25a9-4783-94e0-f79ca3304625"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e7e1380b-36fc-40d8-9767-937efdd976ed"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_url}}","label":"step➛Check Return➛Job URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ebab3bce-af41-400d-b351-1929d62e3b5a"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].resource_path}}","label":"step➛Obtain AWX Job Template URL➛Resource Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"581a43f6-2782-46b4-ad09-f91e7f99f865"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].post_body}}","label":"step➛Obtain AWX Job Template URL➛Post Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e96451c-df0f-4846-aef2-9e2d12807dd3"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].status_code}}","label":"step➛REST AWX POST Job➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task","type":"step","ref":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task.subject_common_name}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task➛Subject common name","type":"step","ref":"","reference_display":"Subject common name","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"subject_common_name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}","label":"step➛Obtain AWX Job Template URL➛Renewal Flow","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci}}","label":"step➛Obtain AWX Job Template URL➛Target CI","type":"step","ref":"cmdb_ci","reference_display":"Configuration Item","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].ip_address}}","label":"step➛Obtain AWX Job Template URL➛IP Address","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].port}}","label":"step➛Obtain AWX Job Template URL➛Port","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_externos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Externos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_internos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Internos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].instalacao_de_certificados}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Instalação de Certificados","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}","label":"step➛Obtain AWX Job Template URL➛Assignment Group","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci.name}}","label":"step➛Obtain AWX Job Template URL➛Target CI➛Name","type":"step","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"cmdb_ci","column_name":"name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}","label":"step➛Obtain AWX Job Template URL➛Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4b7bfcf8-78bf-42e2-9787-6d2dd9ba0f9c"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}","label":"step➛Obtain AWX Job Template URL➛Short Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"21feeac5-5e5f-4a7d-a234-d9a6979faa37"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}","label":"step➛Obtain AWX Job Template URL➛Skip AWX","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3eff9a5a-8d0f-494c-9acc-db405816c4c3"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.message}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.task}}","label":"action➛Certificate Task","type":"action","ref":"","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"ee561146-16d5-47f8-80e7-bae8581cf063"}},{"name":"{{action.credential}}","label":"action➛Credential","type":"action","ref":"","reference_display":"API Key Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"8b2d5ae3-dfc9-4123-b1ae-9c3871a08902"}},{"name":"{{action.credential.authentication_key}}","label":"action➛Credential➛Authentication Key","type":"action","ref":"","reference_display":"Authentication Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"authentication_key","choices":null,"attributes":{}},{"name":"{{action.task.number}}","label":"action➛Certificate Task➛Number","type":"action","ref":"","reference_display":"Number","base_type":"string","parent_table_name":"task","column_name":"number","choices":null,"attributes":{}},{"name":"{{action.for_ar_fluxo}}","label":"action➛ForçaR FLUXO","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.force_flow}}","label":"action➛Force Flow","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Char","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"char","uiUniqueId":"0e9699e5-b64c-46ef-beb2-b5da72769b0a"}},{"name":"{{action.credential.api_key}}","label":"action➛Credential➛API Key","type":"action","ref":"","reference_display":"API Key","base_type":"password2","parent_table_name":"api_key_credentials","column_name":"api_key","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.code}}","label":"step➛REST AWX POST Job➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].response_body}}","label":"step➛REST AWX POST Job➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_code}}","label":"step➛REST AWX POST Job➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].error_message}}","label":"step➛REST AWX POST Job➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].__step_status__.message}}","label":"step➛REST AWX POST Job➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.code}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_id}}","label":"step➛Check Return➛Job ID","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"30503983-25a9-4783-94e0-f79ca3304625"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_status}}","label":"step➛Check Return➛Job Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e7e1380b-36fc-40d8-9767-937efdd976ed"}},{"name":"{{step[c2c60d81-8075-4c00-a31c-b863a9023dbc].job_url}}","label":"step➛Check Return➛Job URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ebab3bce-af41-400d-b351-1929d62e3b5a"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].resource_path}}","label":"step➛Obtain AWX Job Template URL➛Resource Path","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"581a43f6-2782-46b4-ad09-f91e7f99f865"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].post_body}}","label":"step➛Obtain AWX Job Template URL➛Post Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e96451c-df0f-4846-aef2-9e2d12807dd3"}},{"name":"{{step[4dd61761-56e0-43ee-a38c-5ec5bdab2565].status_code}}","label":"step➛REST AWX POST Job➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task","type":"step","ref":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].certificate_task.subject_common_name}}","label":"step➛Obtain AWX Job Template URL➛Certificate Task➛Subject common name","type":"step","ref":"","reference_display":"Subject common name","base_type":"string","parent_table_name":"sn_disco_certmgmt_task","column_name":"subject_common_name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}","label":"step➛Obtain AWX Job Template URL➛Renewal Flow","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci}}","label":"step➛Obtain AWX Job Template URL➛Target CI","type":"step","ref":"cmdb_ci","reference_display":"Configuration Item","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].ip_address}}","label":"step➛Obtain AWX Job Template URL➛IP Address","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].port}}","label":"step➛Obtain AWX Job Template URL➛Port","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_externos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Externos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].certificados_internos}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Certificados Internos","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a579fbbc-d362-41ae-bd4c-611ba78afaad].instalacao_de_certificados}}","label":"step➛Obtem Grupos para gestão de Certificados➛Grupo Instalação de Certificados","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}","label":"step➛Obtain AWX Job Template URL➛Assignment Group","type":"step","ref":"sys_user_group","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].target_ci.name}}","label":"step➛Obtain AWX Job Template URL➛Target CI➛Name","type":"step","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"cmdb_ci","column_name":"name","choices":null,"attributes":{}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}","label":"step➛Obtain AWX Job Template URL➛Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4b7bfcf8-78bf-42e2-9787-6d2dd9ba0f9c"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}","label":"step➛Obtain AWX Job Template URL➛Short Description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"21feeac5-5e5f-4a7d-a234-d9a6979faa37"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}","label":"step➛Obtain AWX Job Template URL➛Skip AWX","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"3eff9a5a-8d0f-494c-9acc-db405816c4c3"}},{"name":"{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].__step_status__.message}}","label":"step➛Obtain AWX Job Template URL➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8c917ab5-b5a0-452e-97ce-2d0fc8118555].__step_status__.code}}","label":"step➛Skip AWX in subprod instance➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
         <name>BNB Dispara Job Ansible</name>
         <natlang/>
@@ -5727,7 +5935,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>812d716a33ab36906c8432a19e5c7b0f</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -5735,7 +5943,7 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 12:39:16</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:47</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -5869,7 +6077,7 @@ function addWorkNotes(taskId, message) {&#13;
         <table>var__m_sys_hub_action_output_812d716a33ab36906c8432a19e5c7b0f</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=812d716a33ab36906c8432a19e5c7b0f^sys_idNOT IN5d2db16a33ab36906c8432a19e5c7bf8,696caf40337772906c8432a19e5c7b0d,892d716a33ab36906c8432a19e5c7bd9,9d2db16a33ab36906c8432a19e5c7b82,c56c2f40337772906c8432a19e5c7ba8"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=812d716a33ab36906c8432a19e5c7b0f^sys_idNOT IN5d2db16a33ab36906c8432a19e5c7bf8,696caf40337772906c8432a19e5c7b0d,892d716a33ab36906c8432a19e5c7bd9,9d2db16a33ab36906c8432a19e5c7b82,c2a8af58336813906c8432a19e5c7bfc,c56c2f40337772906c8432a19e5c7ba8"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action>
         <cid>c2c60d81-8075-4c00-a31c-b863a9023dbc</cid>
@@ -5880,17 +6088,17 @@ function addWorkNotes(taskId, message) {&#13;
         <icon/>
         <inputs/>
         <label>Check Return</label>
-        <order>5</order>
+        <order>6</order>
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:28</sys_created_on>
         <sys_id>5d2db16a33ab36906c8432a19e5c7bf8</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:29</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5d2db16a33ab36906c8432a19e5c7bf8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6967,10 +7175,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 20:09:26</sys_created_on>
         <sys_id>696caf40337772906c8432a19e5c7b0d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 16:59:11</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=696caf40337772906c8432a19e5c7b0d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7018,11 +7226,11 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-18 20:09:26</sys_created_on>
         <sys_id>a56caf40337772906c8432a19e5c7b16</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-03-26 16:59:11</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_b51f683667003200553fafb49585ef3f</table>
-        <value>u_renewal_flow={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}^assignment_group={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}^description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}^short_description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}^state=1</value>
+        <value>u_renewal_flow={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].renewal_flow}}^assignment_group={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].assignment_group}}^description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].description}}^short_description={{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].short_description}}^state=fd-scripted^csr=fd-scripted</value>
     </sys_element_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=696caf40337772906c8432a19e5c7b0d"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
@@ -7040,7 +7248,20 @@ function addWorkNotes(taskId, message) {&#13;
     </sys_translated_text>
     <sys_hub_step_ext_input action="delete_multiple" query="model=696caf40337772906c8432a19e5c7b0d"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=696caf40337772906c8432a19e5c7b0d"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=696caf40337772906c8432a19e5c7b0d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=696caf40337772906c8432a19e5c7b0d^sys_idNOT IN0aa8af58336813906c8432a19e5c7bfa"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>update_record_field_values</input_name>
+        <instance>696caf40337772906c8432a19e5c7b0d</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"csr":{"scriptActive":true,"script":"var csr \u003d \"\";\nif (fd_data._2__obtain_awx_job_template_url.skip_awx) {\n    csr +\u003d \"Geração de CSR através do Ansible playbook inibida em instâncias Subprod\\n\" +\n        \"Parâmetros para a chamada Ansible/AWX:\\n\" +\n        \"Resource Path: \" + fd_data._2__obtain_awx_job_template_url.resource_path + \"\\n\";\n    try {\n        csr +\u003d JSON.stringify(\n            JSON.parse(fd_data._2__obtain_awx_job_template_url.post_body),\n            null, 2);\n    } catch (ex) {\n        csr +\u003d \"Erro: \" + ex;\n    }\n}\nreturn csr;","savedValue":""},"state":{"scriptActive":true,"script":"if(fd_data._2__obtain_awx_job_template_url.skip_awx) {\n    return 2;\n}\nreturn 1;","savedValue":"1"}}</script>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:49</sys_created_on>
+        <sys_id>0aa8af58336813906c8432a19e5c7bfa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:48:54</sys_updated_on>
+    </sys_hub_input_scripts>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action>
         <cid>e39204e5-f554-49e0-8f0d-c1b43654fb7a</cid>
@@ -8596,14 +8817,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-11-09 12:39:18</sys_created_on>
         <sys_id>b09c5504332453506c8432a19e5c7b3f</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:28</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:48:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9359,17 +9580,17 @@ function sendWorkNotes(taskId, notes) {&#13;
         <inputs/>
         <inputs/>
         <label>REST AWX POST Job</label>
-        <order>4</order>
+        <order>5</order>
         <outputs/>
         <section/>
         <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:28</sys_created_on>
         <sys_id>9d2db16a33ab36906c8432a19e5c7b82</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-07-28 14:45:29</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9d2db16a33ab36906c8432a19e5c7b82"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -9772,13 +9993,13 @@ function sendWorkNotes(taskId, notes) {&#13;
         <input_name>mid_cluster</input_name>
         <instance>9d2db16a33ab36906c8432a19e5c7b82</instance>
         <referenced_table>sys_hub_step_instance</referenced_table>
-        <script>{"mid_cluster":{"scriptActive":true,"script":"if (fd_data._2__obtain_awx_job_template_url.skip_awx) {\n    var csr \u003d fd_data._2__obtain_awx_job_template_url.post_body +\n        \u0027\\nResource Path:\u0027 + fd_data._2__obtain_awx_job_template_url.resource_path;\n    new global.GlideQuery(\u0027sn_disco_certmgmt_renew_task\u0027)\n        .where(\u0027sys_id\u0027, fd_data.action_inputs.task.sys_id)\n        .update({ csr: csr })\n    throw new Error(\"Bypass na chamada do ansible em ambiente SUb-Prod\");\n}\nvar mid \u003d new global.GlideQuery(\"ecc_agent_cluster\")\n    .where(\"name\", \"MID_CAPGV_DIS\")\n    .limit(1)\n    .selectOne([\"sys_id\", \"name\"])\n    .orElse({ sys_id: null })\nreturn mid.sys_id"}}</script>
+        <script>{"mid_cluster":{"scriptActive":true,"script":"var mid \u003d new global.GlideQuery(\"ecc_agent_cluster\")\n    .where(\"name\", \"MID_CAPGV_DIS\")\n    .limit(1)\n    .selectOne([\"sys_id\", \"name\"])\n    .orElse({ sys_id: null })\nreturn mid.sys_id"}}</script>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-07-28 14:45:29</sys_created_on>
         <sys_id>8b141a223b160354d0457237f4e45a51</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 14:07:54</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_input_scripts action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -9793,6 +10014,201 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-07-27 12:41:15</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action>
+        <cid>8c917ab5-b5a0-452e-97ce-2d0fc8118555</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Skip AWX in subprod instance</label>
+        <order>4</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:49</sys_created_on>
+        <sys_id>c2a8af58336813906c8432a19e5c7bfc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:20</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c2a8af58336813906c8432a19e5c7bfc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c2a8af58336813906c8432a19e5c7bfc</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:49</sys_created_on>
+        <sys_id>92a8ef58336813906c8432a19e5c7b45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c2a8af58336813906c8432a19e5c7bfc</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:49</sys_created_on>
+        <sys_id>96a8ef58336813906c8432a19e5c7b45</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:20</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    if (inputs.skip_awx) {&#13;
+        throw new Error("Bypass na chamada do ansible em ambiente SUb-Prod");&#13;
+    }&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c2a8af58336813906c8432a19e5c7bfc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:45:20</sys_created_on>
+        <sys_id>a13c6b10332c13906c8432a19e5c7b47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:20</sys_updated_on>
+        <value>0</value>
+        <variable display_value="skip_awx">293c6b10332c13906c8432a19e5c7b2e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c2a8af58336813906c8432a19e5c7bfc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c2a8af58336813906c8432a19e5c7bfc</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:49</sys_created_on>
+        <sys_id>daa8ef58336813906c8432a19e5c7b44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>c2a8af58336813906c8432a19e5c7bfc</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:29:49</sys_created_on>
+        <sys_id>dea8ef58336813906c8432a19e5c7b44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:29:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>skip_awx</field>
+        <id>c2a8af58336813906c8432a19e5c7bfc</id>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:45:20</sys_created_on>
+        <sys_id>ed3c6b10332c13906c8432a19e5c7b46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:20</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c2a8af58336813906c8432a19e5c7bfc</table>
+        <value>{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=c2a8af58336813906c8432a19e5c7bfc"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c2a8af58336813906c8432a19e5c7bfc"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c2a8af58336813906c8432a19e5c7bfc^sys_idNOT IN293c6b10332c13906c8432a19e5c7b2e"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skip_awx</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>skip_awx</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Skip AWX in subprod instance">c2a8af58336813906c8432a19e5c7bfc</model>
+        <model_id>c2a8af58336813906c8432a19e5c7bfc</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c2a8af58336813906c8432a19e5c7bfc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 17:45:20</sys_created_on>
+        <sys_id>293c6b10332c13906c8432a19e5c7b2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 17:45:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c2a8af58336813906c8432a19e5c7bfc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c2a8af58336813906c8432a19e5c7bfc"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action>
         <cid>a579fbbc-d362-41ae-bd4c-611ba78afaad</cid>
@@ -10662,14 +11078,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>252d356a33ab36906c8432a19e5c7b05</sys_id>
-        <sys_mod_count>143</sys_mod_count>
+        <sys_mod_count>149</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:29</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:48:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10956,20 +11372,20 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-13 20:12:30</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2d2d356a33ab36906c8432a19e5c7b51^sys_idNOT INa115725433e89f506c8432a19e5c7b07"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2d2d356a33ab36906c8432a19e5c7b51^sys_idNOT IN8a0d6358332c13906c8432a19e5c7bc9"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 13/03/2026 17:12:30">2d2d356a33ab36906c8432a19e5c7b51</action_status_metadata_id>
-        <condition>{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}=true</condition>
+        <condition>{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}=true^{{step[8c917ab5-b5a0-452e-97ce-2d0fc8118555].__step_status__.code}}!=0</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label>AWX Skipped</label>
         <order>1</order>
         <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"10"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Ambiente SubProd no roda Ansible"}}},"serializationFormat":"JSON"}</status>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-11-10 13:44:30</sys_created_on>
-        <sys_id>a115725433e89f506c8432a19e5c7b07</sys_id>
+        <sys_created_on>2026-11-10 17:48:55</sys_created_on>
+        <sys_id>8a0d6358332c13906c8432a19e5c7bc9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 13:44:30</sys_updated_on>
+        <sys_updated_on>2026-11-10 17:48:55</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>force_flow</element>
