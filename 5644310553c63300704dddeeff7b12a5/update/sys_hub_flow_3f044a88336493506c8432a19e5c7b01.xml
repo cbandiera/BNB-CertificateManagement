@@ -1,0 +1,2353 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=12283000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>bnb_renovao_certificado__ansible</internal_name>
+        <label_cache>[{"name":"subflow.force_flow","label":"Input➛Force Flow","type":"string","base_type":"string","usedInstances":{"cfefeab5-fa0d-4af9-b0f0-4d164405ae91":["force_flow"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c1a56437-7953-4507-9349-ab849c4c468e"}},{"name":"subflow.awx_credential","label":"Input➛AWX Credential","reference":"api_key_credentials","reference_display":"API Key Credentials","type":"reference","base_type":"reference","column_name":"","usedInstances":{"cfefeab5-fa0d-4af9-b0f0-4d164405ae91":["credential"],"94887246-bd9e-4895-a576-4507ef804872":["credential"],"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["credential"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ce83f4f1-c7bf-4ea9-9828-620943398534","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.automated_task","label":"Input➛Automated Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"cfefeab5-fa0d-4af9-b0f0-4d164405ae91":["task"],"5ad15c43-5880-4ffe-8eb1-a4c604b499d8":["record"],"94887246-bd9e-4895-a576-4507ef804872":["renewal_task"],"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["renewal_task"],"9b47b8fb-f16c-4e5e-82f6-d0cac769eefd":["record"],"fcf05e14-13a1-4424-8f1a-66ba5d51d461":["record"],"abfe4ad4-fd2f-473c-879d-3b8089398beb":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"65fc7834-8982-4329-bcfd-2763fd858742","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"cfefeab5-fa0d-4af9-b0f0-4d164405ae91.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"10f745c7-0328-4437-ada6-cc3c9e123f1a":["condition"]},"attributes":{}},{"name":"cfefeab5-fa0d-4af9-b0f0-4d164405ae91.job_id","label":"1 - BNB Dispara Job Ansible➛Job ID","reference_display":"Job ID","type":"string","base_type":"string","usedInstances":{"94887246-bd9e-4895-a576-4507ef804872":["job_id"],"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["job_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fad10e8-ff81-4586-b38f-e93f9095f2ce"}},{"name":"94887246-bd9e-4895-a576-4507ef804872.job_status","label":"6 - BNB Verifica Status Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"c0a00af0-f2f1-4b24-9cc8-5d2bce417abc":["condition"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"subflow.automated_task.sys_id","label":"Input➛Automated Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"acc8705d-f79c-4874-ab68-a67cbf8c3dab":["conditions"]}},{"name":"flow_variable.next_page","label":"Flow Variables➛Next Page","type":"string","base_type":"string","usedInstances":{"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["next_page_link"],"310d378b-e6ed-4cb4-81e4-b649529969f8":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"3cd63c98-1acb-4a0d-a46f-e81e9bfe4a8f"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.csr","label":"11 - BNB Obtem Resultado Job Ansible➛CSR","reference_display":"CSR","type":"string","base_type":"string","usedInstances":{"26bc1198-ac7e-49e1-bdf8-67cfcc5179dd":["condition"],"9b47b8fb-f16c-4e5e-82f6-d0cac769eefd":["csr"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.job_status","label":"11 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"4b6cf7a0-7edb-4070-9c5d-139e1880529a":["condition"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2933a4fe-183a-4613-97da-87963063da2e"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.job_message","label":"11 - BNB Obtem Resultado Job Ansible➛Job Message","reference_display":"Job Message","type":"string","base_type":"string","usedInstances":{"fcf05e14-13a1-4424-8f1a-66ba5d51d461":["work_notes"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c8497d05-be3e-41f8-91aa-78f0e1ac5bc2"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.next_page_url","label":"11 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"84a79957-cde5-45b9-9f34-d2a4f9604801":["next_page-0"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}}]</label_cache>
+        <master_snapshot>9be272c4332817506c8432a19e5c7be7</master_snapshot>
+        <master_snapshot_digest/>
+        <name>BNB Renovação Certificado - Ansible</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 15:31:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f044a88336493506c8432a19e5c7b01</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>BNB Renovação Certificado - Ansible</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name>sys_hub_flow_3f044a88336493506c8432a19e5c7b01</sys_update_name>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:39</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>11f23ac4332817506c8432a19e5c7bed</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_3f044a88336493506c8432a19e5c7b01^id=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</claim_owner_scope>
+        <claim_timestamp>1a1c5b922f60000001</claim_timestamp>
+        <metadata_update_name>sys_hub_flow_3f044a88336493506c8432a19e5c7b01</metadata_update_name>
+        <previous_claim_app_version>4.2.4</previous_claim_app_version>
+        <previous_claim_name>Certificate Inventory and Management</previous_claim_name>
+        <previous_claim_scope>5644310553c63300704dddeeff7b12a5</previous_claim_scope>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-10 13:50:07</sys_created_on>
+        <sys_id>f356f2dc33e89f506c8432a19e5c7b3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-10 13:50:07</sys_updated_on>
+    </sys_claim>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3f044a88336493506c8432a19e5c7b01^sys_idNOT IN3f044a88336493506c8432a19e5c7b02"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3f044a88336493506c8432a19e5c7b01</id>
+        <name>BNB Renovação Certificado - Ansible</name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 15:31:48</sys_created_on>
+        <sys_id>3f044a88336493506c8432a19e5c7b02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 15:31:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3f044a88336493506c8432a19e5c7b02"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3f044a88336493506c8432a19e5c7b01^sys_idNOT IN3154e24c332cd3506c8432a19e5c7b4c,8a54e24c332cd3506c8432a19e5c7b90,f1542a0c332cd3506c8432a19e5c7bb6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ce83f4f1-c7bf-4ea9-9828-620943398534</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>api_key_credentials</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>awx_credential</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>AWX Credential</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</model>
+        <model_id>3f044a88336493506c8432a19e5c7b01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3f044a88336493506c8432a19e5c7b01</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="api_key_credentials">api_key_credentials</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:51</sys_created_on>
+        <sys_id>3154e24c332cd3506c8432a19e5c7b4c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3154e24c332cd3506c8432a19e5c7b4c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c1a56437-7953-4507-9349-ab849c4c468e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>force_flow</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Force Flow</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</model>
+        <model_id>3f044a88336493506c8432a19e5c7b01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3f044a88336493506c8432a19e5c7b01</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:51</sys_created_on>
+        <sys_id>8a54e24c332cd3506c8432a19e5c7b90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8a54e24c332cd3506c8432a19e5c7b90"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=65fc7834-8982-4329-bcfd-2763fd858742</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_disco_certmgmt_task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>automated_task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Automated Task</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</model>
+        <model_id>3f044a88336493506c8432a19e5c7b01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3f044a88336493506c8432a19e5c7b01</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_disco_certmgmt_task">sn_disco_certmgmt_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:51</sys_created_on>
+        <sys_id>f1542a0c332cd3506c8432a19e5c7bb6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f1542a0c332cd3506c8432a19e5c7bb6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3f044a88336493506c8432a19e5c7b01^sys_idNOT IN4254264c332cd3506c8432a19e5c7b39,4e54264c332cd3506c8432a19e5c7b57"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b0789010-bd6c-4dce-8dc6-bcc41862b3f3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</model>
+        <model_id>3f044a88336493506c8432a19e5c7b01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_3f044a88336493506c8432a19e5c7b01</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:52</sys_created_on>
+        <sys_id>4254264c332cd3506c8432a19e5c7b39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4254264c332cd3506c8432a19e5c7b39"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0e48314f-28ef-4032-857e-b6168f646aa3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>job_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Job Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</model>
+        <model_id>3f044a88336493506c8432a19e5c7b01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_3f044a88336493506c8432a19e5c7b01</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:52</sys_created_on>
+        <sys_id>4e54264c332cd3506c8432a19e5c7b57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e54264c332cd3506c8432a19e5c7b57"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3f044a88336493506c8432a19e5c7b01^sys_idNOT IN5a54264c332cd3506c8432a19e5c7bbb,2ae2fe84332817506c8432a19e5c7b48,e6e2fe84332817506c8432a19e5c7b66,2ae2fe84332817506c8432a19e5c7b6c,a6e2fe84332817506c8432a19e5c7b6e,66e2fe84332817506c8432a19e5c7b71,2ae2fe84332817506c8432a19e5c7b98"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action_type>
+        <action_type_parent display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>812d716a33ab36906c8432a19e5c7b0f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:52</sys_created_on>
+        <sys_id>5a54264c332cd3506c8432a19e5c7bbb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 20:05:30</sys_updated_on>
+        <ui_id>cfefeab5-fa0d-4af9-b0f0-4d164405ae91</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WV22vbMBTG/5Wipw3s4EviS95KSqDsytr1pRRzLB8novKlstw2C/nfJ8Wu42RJ10LaMfCLjj7pfPqkH75eEpaQMbFsJ/FtD1wXYtcLLY8GQ9cBO8QR9WN7RAySQ4ZKKaG6VaN74LUeLpdVHae8eBhALYsMJCaRlqxWSpSwquSwuGq1qkLnjCcCczK+vjFICUJtKlGQ8XJn6qWuOMTIlXSCQrKUUWXg5LKxuG1YLko9EpiiakKxLX1u1//o1QuRaEu2QfBRYp6g8pICr9AgGeQJyEIsyFiKWhUEQvIt54tOMWe5bM6awWPFfqmmrmP0+o5JlUcqGVpEVJnOZpmMWo+dKGqT2zmYln04fcr5ZKpi/6iWpWcg4UL5obIWXdAFo1g1YSaYQs3lpF9rBN9KyYq8WSIh5s/aowWvs/xrEyvptu1db10p61jqzHQKbSTpxbx46AKesnwdbzvJCwq8J0UQdD5lyPUDyOssVlqDgJSCxbXU7pekZpd/3mZT3HefyDFTfqIMypLls6gUxT1be1BHygYzrgYD/YaV94rN8gFQncpA3TQMdMhn6/IVCKYj+qK2WZuq2c+c3dV4rq0ijjzbHnqm7SUjc+ingRlY6JsxYDAKbJpanktWBqkW1YRDVW1iVIeI7modQhNqG1/U3IteQgUr5akydY9tUiujBXf4LCLgbTigAvW2TDXai+/DY7SRHAXfF3jr8O2b22f49fg6b4UvlCy6xUUvreoAu6ffz08+4eJksqU8Mq777fwDVnWv/4HUIHaSEaBrJikNTfVIXTO2Ac2QuoFvgxWElvMWpAaJ7wx933U99dk7NNDeLzYthHpG+ph7Sd1M76P0oO6V7P7d7RO7U91n/TM6cISW3Uo9jHy2A+7FU7Gl1n2e2rbyEmwDy7K2wT1A6fGRfB/+DpDWxbyNWRf0uzBmYeiF6q2YsTek5tDD1Iwxdsx4lIDv+F4YW3BExm5+A1I0BSDICgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5a54264c332cd3506c8432a19e5c7bbb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>10f745c7-0328-4437-ada6-cc3c9e123f1a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>2ae2fe84332817506c8432a19e5c7b48</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 20:05:30</sys_updated_on>
+        <ui_id>5ad15c43-5880-4ffe-8eb1-a4c604b499d8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8hPm4RQArRqeatASJO6VmonXroqurFvwJrjZLZDyxD/fdeJAwiqjkp9QXv0/fI5N+fET2smBRuxIYoovo4v+SAeDPpR1L8axunlII37YgCIMesyDTlSpUFeGEHnJajKB9ZrW6WZKl56ULkiB4cicWB/bTZUJKQtFaxmoZYifCGVMKjZ6Om5y0owNNahYaP1QepUXApSVFT60AI7BOpWpT+Lglc5apfINngbOich0/k2oQw1eThx1GX46lALJCAZKItdloMW4AqzYiNnKgoYBHGv1WpbsZDaNURzeLXyD908jHxdhsSMhyVsj0lYUBPOJuDgkSZzV5ntvgrJ0TY7EZhBpdx4P9YU3JdOFrppcZCqtrtQVa7vmo2w7YC971FZAoGl5+mRN7Syx0Xx8tCCnEpdryRQVAUHtT2Bc0amlfNw1gwV1jvOoSylnielKZaybiYoeW+u6NDzYqE7rZzrHnCPu0dbhd6U4pM6PAMjPYnvNIaaN11mV3aswNodFdph8rvySBpigUJSb6FeQVIrwTdzI0t3Q1ctMQDfdIPy04v3FMavd4Lam7lTv9X+E/Ii4WhcPs9drf1j5Y8pLTPJyR4dX/HlpjVLx9P++mFnnIC7dcaPWg9v8wjmOIrd7vd27ppEsMbFp1nj6pysEWicvTf+5Yio/+4/d09JtQnsvhscKfpnFUUD0T/2wEH2Y3o/AVWr96lEJewbMFuxY06wHCYN7APBh2RnFpLb9+ATH4TonHT/3zwJz38BnYuCsA4JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ae2fe84332817506c8432a19e5c7b48"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="BNB Verifica Status Job Ansible">c2190de73b2f7e14a1e3f65436e45aac</action_type>
+        <action_type_parent display_value="BNB Verifica Status Job Ansible">b317c5eb3bab7e14a1e3f65436e45a36</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c2190de73b2f7e14a1e3f65436e45aac</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>c0a00af0-f2f1-4b24-9cc8-5d2bce417abc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>e6e2fe84332817506c8432a19e5c7b66</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 20:05:30</sys_updated_on>
+        <ui_id>94887246-bd9e-4895-a576-4507ef804872</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WT227UMBCGX2XlK5A2K2fjnHpXtapUzqKFG1RFE3vcNTgHEqftsuq7Y2+yp7IVBS0gLj2e8fzze75PC6IEOSIc/ZQKjIN8KmP0GfgYyChkQYQshNwnY1JCgTbzc5VntmRMbkB3LrBYcIkSIQ89CVR4DGTq5VRSjwk/YoyGgKk/6evu722lUG2tYf7xtx/gM6VFgyU5+nQ1JjU0VprBhhwtHlw9dTYNOWqb+qLKR+ene4Y189qdW9Oo8no4vxqKLlbBqhFOhD8meGewFGi7S9AtjkkBpQBTNXNyZJrOBhoE8bbU83XGTJXGPkZc7l2rvtl2CaXUZUq0A3Hsb9fHbLCxD8tTMGCVdNx0zZDKZ5Xi2PZWCJTQaXOyHesT3tZGVWVfYiDXq+pKd0X5pjeCrB9Y/ZqNdK0VgbWb1GkfBpEXs+r2/UrlmSqXpgyXuuKg1ycw1rq8M07PgnTq8oHLfeQHn1FjYTtmBdS1jWR1U92oZRcruphca3uYSF3dWnWtui4nwN2EE/sDMDmz8dNl+CM0yo372j5ji127D6X62uG52xpBkzgNgXrTVILHAhp4SZSClwoeTlMuRJLG5H5M2nl7oqFtN0bZH8q+dm7M3rbBoKz32JXwRtXm2Iq6wcGL+/EAIiR5mrNABoFd2MinEU9YMAU/xZDHOcSb3bT24i3ozED7ZQfHtsvd8BPoTFWAQbFM2UfeL6P0BHUrlE6wMUoqbgWMLnuJ+4UPaG3WfJeu91vxAbDpoQALprt4taWDilcZt+KL68KsNO6DbntAl/bseOX3yO3Y88ND+ai8v4CqvEBo+OxMoXaLUHZFvmTmEYS3f3OX4u3//CsgJ74fQ8BSL5n6zGMJDS3DKD1I4kiwmPqSJn8C5DCkFGRsUZESHqIiow0PvEH3rLKN9mJ8e5dtUg6D8c+1rTHeFrdP8K/jG/wpfKFW2Recb7nVPsLu8bvz0Uucj052Mg+M6345/4BV1+t/IFXiNI6FDL2Ic+4xLiIvCfzY43HIgOaRn3J2QFKvvgNxGO9G/QoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e6e2fe84332817506c8432a19e5c7b66"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="BNB Obtem Resultado Job Ansible">a1530fbb336736506c8432a19e5c7b66</action_type>
+        <action_type_parent display_value="BNB Obtem Resultado Job Ansible">829236bb33a7f2506c8432a19e5c7b25</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a1530fbb336736506c8432a19e5c7b66</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>2ae2fe84332817506c8432a19e5c7b6c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 20:05:30</sys_updated_on>
+        <ui_id>22b9be4f-befd-41c6-9d8f-6c0a4e155348</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XW2/bNhTHv4qhpxUwDepCXfIWOAiQrWuLpOtLUQiHN4crdalEJfGMfPeRluRL5qTJ4HQbsCeDR+fw/M+f/EHy55WnuHfiBYSEWFIahnESxgTHLI3CAPxMEJbQlHhTr4RC2MzfK5rbkql3A7pzgdWKSSEFUIIkYI4ikBmiWGIUcT+OIkxAZP6sr7u/t5VctbWG5ae/vQG7Vpo3ovROPn+ZejU0VpoRjXeyevDoubNpoELb1J8rOrk4OzCsWdZu3ZpGlYth/XYouhqDVcOdCH/qiTsjSi5sdwm6FVOvgJKDqZqld2KazgYaAfx9qZebjGtVGruZ53LvWvWHbZdijF2mFHYgJvqnm2U+2NiH5RkYsEo6ZrpmSGXXlWKi7a3gQkKnzXw31ie8r42qyr7EANVjdaW7onzXG+FtNhhPzUa61ooQtZvUaR8GkVfX1e3lqPJclWtThoe6YqA3KzDWOtoZp2flderjA5f7yF98FloUtmNeQF3bSF431Y1ad7Gii9lC28VM6urWqmvVopwBcxPO7AnA7NzGz9bhT9AoN+6vdhtb7Nr9Vqpvnbhwt4bjNMkIYBRkElAU4hClcQYo44wEGeM8zRLvfuq1y3auoW23RtkTyr91bszetsGgvPfYlbBG1ebUiroRgxf30xFE/6nLKvH2blp7xS3o3ED7dQ/HtqNu+Bl0pirACL5OOUTey1H6vroRpcte3uRjL++w6AGr7RXfJ+tyJz7AFRwLrjDYR6stHVCsyploTLEozKjxEHBzm6OkYtbdiUv76XT0euLu15vjA/movB+AqbwS0LDrcyW0uwRlV9A1L4/gu3ua+wTvnucPgTj1/QTCKENp4EcoSjGx/AqJIE1iHiXYlzh9BYhF9iQm8ZYH1gi3rbKNDiJ8e5dvU46C8DO0jQjPd8UdEvxyfMPXwhdqlX8Vyx232kfYPf1wMflFLCfzvcwj43pYzj/Aquv1XyBViiBJuCQoZoyhiPEYpaGfIJaQCDCN/YxFr0BqHEhJBUnD0P5C9oAGoNuLX9p7m9ewELlW5f4Ldz37zTDebJN4+Fv3qeSXkfwM7SPJ72ybyQfbZvK2F//YUC/5zo2eZnmI/P+h+y//0M24/YcVpD6KSJjYd2RIEQVCEQQRSUlGBM7YEcn78iecFJdmcw4AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ae2fe84332817506c8432a19e5c7b6c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>4b6cf7a0-7edb-4070-9c5d-139e1880529a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>a6e2fe84332817506c8432a19e5c7b6e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 20:05:30</sys_updated_on>
+        <ui_id>fcf05e14-13a1-4424-8f1a-66ba5d51d461</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmtkiat2r4hKqRJDCSYeGEscuyb4uHYme0AXdT/vuvEKRUgBhJ7QHv0/fI5J/fElw0RnCxJCjyKF/GMJXGSTKJoMk/jfJbk8YQnFCAmQ6JoCVhpgGnD8XxLZe0DTWPrvJD6bkxrp0vqgGeO2pvtFou4sJWkm4tQixF2LSQ3oMjy8mpIKmpwrANDls2j1GtxSZqDxNKzHthjoG5T+TPXrC5BuUz0wePQuQqZwZcVZrDJw4mjIYF7B4oDAimotDAkJVWcOm02ZOlMjQEDlJ8qudlVXAvlOqIlvbfiN96cRr6uAGTGggi7YxYE6sLFijp6jpOZq81OLy0Y2E4TDgWtpTvcj3UFp5UTWnUtjuay79ayLtVJpwjZDdj7HrVFEFB5nh55R6s4v9Z3Zz3II6FaSQJFqRmVuxN1zoi8dh5OQ0BCq3FJq0qodVYZfSvaZoRSjtcSD2O/LHinFWs1pszjHqOqdHyE8VUbvqBGeBJfcQw2b4fEbuyhpNY+UEENs1+1R9IRCxSyVoVWgqzdBN/MjKjcAV51CwH4dhg2P5++tGFs8bBQezMftt8q/wmZzhgYV65L1+7+080/xLQoBEN7DHzFp4PeLANP+/ObnfEK3L0zvrX78DyPYI4nseP93sFJlwjWmL6bNeYfyRqBxof3xt8cEU1e/OfubVJrArvvBocb/b2OooQnP+60ucmURvZdpGkmk3yRQ1qMcij4KI3ZbLTg82I0YxFNIZ5Ok3Q+/qnzrARr6Rqee0L+xRVvc94r9OmddyRAcvuMYL3toERuDrJOwEfWC8nBRUjuXqZ3fJqij+TA/+ZxuvoD2sZA/ZgJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a6e2fe84332817506c8432a19e5c7b6e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>26bc1198-ac7e-49e1-bdf8-67cfcc5179dd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>66e2fe84332817506c8432a19e5c7b71</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 20:05:30</sys_updated_on>
+        <ui_id>9b47b8fb-f16c-4e5e-82f6-d0cac769eefd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K8ZPGyTGjp2Q5K0kBAZdC+3oS9sZWbpORWXJk+S2Wch/35Utp6EtXQtlUPao+6Vzju+xLrchZ+E8zIDFySyZ0DRJ01Ecj6ZZUkzSIhmxlAAk4SCUpAKs1ECVZni+I6Jxge3WNEUp1H1EGqsqYoHllpjb3Q6LGDe1IJsLX4sResMF0yDD+eX1IKyJxrEWdDjfPkm9FZcgBQgsPeuBPQVqN7U7M0WbCqTNeR889p1Lnwm+LTGDTQ5OEg9CeLAgGSCQkggDg7AikhGr9CacW91gQANhp1Js9hU3XNqOaEUeDP+NN2exqysBmVEvwv6Ye4G6cLkklpzjZGobvddLcQqm04RBSRphF4exruC0tlzJrsWSQvTdSjSVPOkUCfcDDr5HYxAE1I6nQ97RKs9v1P1ZD3LFZSuJpygUJWJ/ItZqXjTWwdmGIKDVuCJ1zeU6r7W6420zQqmitcBD5JYF7zR8LSNCHe4IVSXRCuPLNnxBNHckvuMYbN4NQrMxC0GMeaSCGua/GoekI+Yp5K0KrQR5uwmumWpe2yO86g488N3Ab34xfm3D6OxxoQ5mPm6/ke4TUpVT0LZaV7bd/eebv8A0LzlFewSu4stRb5bA0f76bme8AXfvjB/tPrzMw5vjWez4sDc46RLeGuMPs8b0M1nD0/j03vibI+LRq//cg01qTWAO3ECNvmriOGXb7WhUzArIymEBJRtmCZ0MZ2xaDic0Jhkk43GaTSOs3+1+3it9m0uFMnXNi/OzYKV4sAZNmAqcEwIV0N5BTD2317+7+H0ufYOWvUtXHAQzL4jbWxQqZGwh78R+YlOfDC58cv+KfeAzFn8mt/43D9n1H/gfPL3ECQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=66e2fe84332817506c8432a19e5c7b71"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <generation_source/>
+        <order>19</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>2ae2fe84332817506c8432a19e5c7b98</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 20:05:30</sys_updated_on>
+        <ui_id>abfe4ad4-fd2f-473c-879d-3b8089398beb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8hPm4RQArRqeatASJO6VmonXroqurFvwJrjZLZDyxD/fdeJAwiqjkp9QXv0/fI5N+fET2smBRuxIYoovo4v+SAeDPpR1L8axunlII37YgCIMesyDTlSpUFeGEHnJajKB9ZrW6WZKl56ULkiB4cicWB/bTZUJKQtFaxmoZYifCGVMKjZ6Om5y0owNNahYaP1QepUXApSVFT60AI7BOpWpT+Lglc5apfINngbOich0/k2oQw1eThx1GX46lALJCAZKItdloMW4AqzYiNnKgoYBHGv1WpbsZDaNURzeLXyD908jHxdhsSMhyVsj0lYUBPOJuDgkSZzV5ntvgrJ0TY7EZhBpdx4P9YU3JdOFrppcZCqtrtQVa7vmo2w7YC971FZAoGl5+mRN7Syx0Xx8tCCnEpdryRQVAUHtT2Bc0amlfNw1gwV1jvOoSylnielKZaybiYoeW+u6NDzYqE7rZzrHnCPu0dbhd6U4pM6PAMjPYnvNIaaN11mV3aswNodFdph8rvySBpigUJSb6FeQVIrwTdzI0t3Q1ctMQDfdIPy04v3FMavd4Lam7lTv9X+E/Ii4WhcPs9drf1j5Y8pLTPJyR4dX/HlpjVLx9P++mFnnIC7dcaPWg9v8wjmOIrd7vd27ppEsMbFp1nj6pysEWicvTf+5Yio/+4/d09JtQnsvhscKfpnFUUD0T/2wEH2Y3o/AVWr96lEJewbMFuxY06wHCYN7APBh2RnFpLb9+ATH4TonHT/3zwJz38BnYuCsA4JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ae2fe84332817506c8432a19e5c7b98"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3f044a88336493506c8432a19e5c7b01^sys_idNOT IN5ee2fe84332817506c8432a19e5c7b45,22e2fe84332817506c8432a19e5c7b4a,62e2fe84332817506c8432a19e5c7b4b,aae2fe84332817506c8432a19e5c7b67,a6e2fe84332817506c8432a19e5c7b69,eae2fe84332817506c8432a19e5c7b6a,eae2fe84332817506c8432a19e5c7b6d,6ae2fe84332817506c8432a19e5c7b6f,aae2fe84332817506c8432a19e5c7b70,6ee2fe84332817506c8432a19e5c7b97"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92e2fe84332817506c8432a19e5c7b45</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>5ee2fe84332817506c8432a19e5c7b45</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>10f745c7-0328-4437-ada6-cc3c9e123f1a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V72vbMBD9V4I+J0Z24rD0W9goDLYVltINtiLO+pGIypYnyUmzkP99J9tJw5rSMPpx36x3p7v3nu7wjtgm1E3wt3buvV5W5OrH/ZDoKmL4vSNakCuiKKh0xlM+zqbjjNLs3SQtpuMizcQYJIzJkFRQSszkthI6aFuxFhiSNZgmBubfvg8WD7qupRgo6waLpqidFZghtK8NbO9eTeQrbYSTPccaHHYI0pGr3V+hsK0lM1BIg/UWwelqidcvVXK4+P4gZfCpRV7WGPsh7g+drBORVkqHRD4GWQmJrRUYL4ekhEpAsG57RJwEcVOZJ2Clq4DlSEx+9Po31s7yPCYqiRq57ILHI+sd7GC+sprLmzoS7JAAhenvcGuasvrS6YjeSwWNCQfvEWk81pN1JB1Z9JTUYmU3Xw8Nr3XVCuyDxnIwxxMEtKFogvTxYaSRJRZiJdQ1msPwKde6vYxcymRp8JAoYzfYNM5fAjwST9AjSK4R/9DCd+B0VPEZy+DljmYBXnPWziqWCw4l7Ftb2K8mEuoE9lJY5wYmeO50HebYZy171vthP+gzyFWe0vz8eEymZ4bgZMZ3O67QIyjykQIqRhNQs1FBFR1NRDqdTGgOcpYmjHUimQ8QGs9Ywq2Q+/3PhtKxSOnznXi7wm+xQxeY9GyHzhv3wuJkryxOfOoL94ZS+n9xThdHe9YtQK+tbf7Pe3Mfh7/r4Lu5EZJrj0RuI/bx8B+JgS0OgOan0Ma6hyjhCdv/AcoCa9+RBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6ae2fe84332817506c8432a19e5c7b49</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>10f745c7-0328-4437-ada6-cc3c9e123f1a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>22e2fe84332817506c8432a19e5c7b4a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>b8b1311a-6ca0-4d17-b3a2-e460a91f6624</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">aae2fe84332817506c8432a19e5c7b4a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>62e2fe84332817506c8432a19e5c7b4b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>c0a00af0-f2f1-4b24-9cc8-5d2bce417abc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FZdn2ZD1sGTfjBYBWrQN0AS5tKlAkZTNliJVPuw4hv+9Sz2cII0RI+ihh/pkzpK7M7s70B4pZxtnzbVaGsNXEi2+3gaIS4/B/z3iFC1QSXFEyjDJ4jCexmE4m0YkyuIKfjOcpSEKkMQ1g5tEScotV7JogQBtsHA+8EGVo6U0vBRsVHGJBb9XDuKUm0bg3c0L18iaC6pZz6/BGrJbptFi/yRkdw0rBC6ZgGxXVnO5gufnqhgevh1kjD62yGl9vh7gZqikNPW0pmEYIHZnmaQMaldYGBagGkuKrdK7I6IZppdSPABrLi3kQ/7yneH3kDxKU3+xYiCSsC54PBZ9AzuYrBUn7LLxDDvEYmhlH1TC1fJzJ8S3nlXYCTu0HhBnIB9rPGnPoqdUXa3V9stQ8ILLVmEfFIpgcTxhC30onWXGT4YJVkOiosZNA90pGq02vH0MXOrJSsBhUgm1haJ++SaYeOIT6BGeXAD+roVvsOZexSdIA48Prfril/N1Ox0946ITDRcM0byxS0i3YT25Q9AvM82mcV6dWoOcPDPsR3u838+TPM+iZDYu6ZyNk3yejnGazcZJGmasysMEopMfqiyMxdaZw+HNNxeGMfUkoQvfX59BOym7LXvimn+D1N/w6BnD+cOjzw/shDGjl4xptTvXl6HP9d+YgzFhhKbonNdra4u/2rC33nVdBdMtDmWEGyBy7bH3w0fKB3awAZw8hrZK//QSHrDDb7iuCG/uBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e2e2fe84332817506c8432a19e5c7b67</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c0a00af0-f2f1-4b24-9cc8-5d2bce417abc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>aae2fe84332817506c8432a19e5c7b67</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>a746db83-30f2-4480-93a2-6f402c4ccd69</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUHPXlfUNfZb0WyBPuy2aIy8LAqBokY2sbSkpaikbpB/LylRl9iSrSROL9sCBmzNkDNnOGdGHN+ZWSnyUhSr7HVR0HVqLv/5NDNpqmTy951JY3NpuovA8S6QGziWgxzLinwEvu8GfpT4OLjwzJmZ4i3IlXHJsaBZGopdDlJ8g1mp5PA5Z5RQETYLpC6mRc7w7lov+VMvMXpLyIaymIOGlWMuvQjg5vJuT6XchQxHwKSlN5uMEuV9Kvhm46X2bKxq9CNBVV9LiUC7yXisMCHLmslABaQxSMcJZgXMzC1OYywyvmslHHD8PmWdYENTIe2ZavHngn6Rxl1LrUtABkig1rWPoT64WlyjqJPVxDF0lMcyoQOw7medjY/ApPoGhmxwrRuwgfo2PgAnkAq8HrSSt9oBO/a9zGoMCS6ZeHO+ENEZQrTPFKKjQqzT9z6vVEvTUfTCEdM5Jxkrt+nfNQ3N9kCuj1VVveTydHGVhUQFuaKr4p8mY3K1yW4/Nlx7S9MKq1ayjGDWPmEhOI1KoVJzZwKDrTQUbnGe03Qd5jy7odVmGcZ2vmbyYZ6w7FY6Va1mjokCMpfVgedvpfyyEl9jTtUB/CXNyM33FfHD/0rltz4CjTisDkwtKAinuXhNVL40OJWiqvqjBMU+8lEUOL4tq99xiU/AXwAghBe21VV5L1eCboGHVRcMJTxQz72sHvauJ7eqS2n91ao2PxXvAPUqwEYF2FCADY14cmi6pVVJquShVrxAb6tsPaa5tdXxqOL4WRguE1+ENYV1bJXzZzP/wnIcx1oQzwlaJsUxQJIEEbIBdfSoOdGR5GWo/i4VsK7jnQjvkOhHMWsO09bPb+7+rNyFBLkeGbuzRQc8GHj1okVg/WEh+TEsa6k+7iGZXeMKSJbGxdMbeOd5KvKBrWPBPGzLhzeR73jj/E3spxA7JthFljdCD9vf58LBNTTMJDyV3R7VcSIqyHvkbsTnGKIm4G42rqq7CN+/Wxs94NNDHBm1nB9m1GoOeT8XQyNVBEnG+2/XVtBOJ8eHnhPO0KOc2c8eP1reDY4cjXav3gUvf8RybxCSXXhsBOwt09TsSHeqNzz8G+FEo0CJ7cWjBRc4p6voGw8uEwCPdYjDgWVCTKcmFvd/8G58Zq0Mv8Jmv0wNJZHnydvYCCV9e59vBdlAXLIXqpg2g03FTIDXuyrKRBliA0aSMZkB9dSDOxaGPl/ec63LwztjeTj2w/Ig27QPYqhUrjr1r3CdfOq18ZNiYm2pqCkVA6GFdLhSsnfN//RKsZMkoKQvus34vwpqJ7v/Cl1uNifxFwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">eee2fe84332817506c8432a19e5c7b68</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned>next_page</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>a6e2fe84332817506c8432a19e5c7b69</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>dbe39029-fde3-4369-8bf3-c826a42eec12</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5WPuw7CMAxF/8Vzv6BbR/aKBVXIJG6xMEkUpy9V/XcSAYK129W5to+8gR9TGJO2vlHlwUF96SpgV1jOG7CFGqACh0/KydGSrgEHymhCGendmjuLjfRZVxM5pMYknnLfoyjtXZmPjDehI4ctaxBczwdVlgwre9cW3+n7TSnW7GPzj2YfH734+cf2FxZMIakXAQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">26e2fe84332817506c8432a19e5c7b6a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>eae2fe84332817506c8432a19e5c7b6a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V22obMRD9FaPnZVnbdRz8FtoGAklTapO2lLBopVlbVCupktaOa/zvndmLHZqYmtLH+ml15nbOzAHvmK2jq2NY2KsQ1NKw2bfHhClDGH7vmJJsxgrJR6LI3kzH2Xg4zrKL4UiMpuMSfxd8OslYwgyvADOFNVJFZU3eAAlbc11T4JaHOHB8CQMP0StYgxyU3laDq89fME2q4DTfPpyXLVZKSw8dW8c9zorg2Wz3WyhuHeSaF6Cx6Rw7mSWWn6upL3zbixrcNshptTQP8dBPsl4SrWGWJQyeIhgJOLvkOkDCKm4kj9ZvD4gHLu+NPgIrZSL2Y5T8FNRPbD6aTCixBBQpoA0ennm3xxYWK6sE3Dti2CKRF7qrEVbXlfnQCqELQMlrHfsLIFIH7AeOSBOLjlI5X9nNp37gtTKNwi6oreD68OIR91DUEQJdBjRU2CivuHO4ndx5u1ZNMXKp0qXGR1pqu8GhZMWUCyKe4o54eo34uwZ+4F6Rijtsg8UtzYIHJfLGttguepSwb9aS/6iJUCuwk5K328CEILxy8QrnrKFjvU86z8vpcHxZnvLHpXjFBc/svts1StYd2dTg9XMy9H5/M39/93Hx9aXpz6r5F9Y/Q9oL678u94TfR3/yO13oTLtn1Ou/349+VyFvfdtpa4b/td0fybPthNAaR4JQAYksCLvp/wkosEUHKPEc2lj/nSQcsf0vQrR8kVMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">26e2fe84332817506c8432a19e5c7b6d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>eae2fe84332817506c8432a19e5c7b6d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>4b6cf7a0-7edb-4070-9c5d-139e1880529a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWdDTsH0LWhgo0DZAE+TSBsKKD5stJaoi6UcN/3uXejhG46BG22Nv5iy5OzOahQ9EO9s4ax70rTFyVZPF56eAyNpj+PtAJCMLIiIQ8ZzGNE2maRJFySyLy2laxglLgUNKAlJDxfEm1TWTVuq66ICAbEA5X1gqt9M3AtRaO4SZNI2C/ePlKl1LxVo+sGmgxV6Wt2Rx+KVk9w0vFJRcYZN728p6hc+v5Tw+fDOSvnnfIa+r8fMQN+Mk3TJPK44CwneW14zjaJRheEAqqBlY3e5PSMuB3dXqGVjL2mI74i/vjPyBvZM89xcFR42U98XTsRhs62G61pLyu8YT7BELpRreUK1cVX/sdXjDuQCn7Gg4Is5gP9540p7FQEncr/X20zhwKetO4FBUmoI6ncCiDaWz3PgPwxWvsFFRQdOgOUXT6o3sHiOXKlwpPIRC6S0O9UkLgXriIXoE4RLxtx38CK30Kj5gG3zc0yzBSFp0qcR2tkUJx86W4rvzhHqBg5SidwMvGNrKxt7inA0fWB+DIdJzyEUeR/nleGTTCyE4S/PhkCTlvOSZmJRcsEkW0+lkzmZiMqURZDzO8zSbhV91WRgL1pnj8YuLopQJkAoz8mIB/r7hv9iZK0x5sTOXjXplUZLfLIr/tFfuSRRF/xflfFGkKfrAD9q64X+8J08+7P0E0+eGcSoNEnnw2LvxH8IX9hgASc+hrW6/eQnP2PEnmadws2sGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a2e2fe84332817506c8432a19e5c7b6f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id>4b6cf7a0-7edb-4070-9c5d-139e1880529a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>6ae2fe84332817506c8432a19e5c7b6f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>6114fe1d-7a16-4ce5-9945-476c02ec54cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e2e2fe84332817506c8432a19e5c7b70</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>aae2fe84332817506c8432a19e5c7b70</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>26bc1198-ac7e-49e1-bdf8-67cfcc5179dd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW8aMRD8K8jPx+k+EeQtSosUqQlVQJGqKjr57D2was5X2wehiP/e9X0Q1ICKoj72Dc/auzNzs2JPVG2r2pqFujVGLEty8/3FI6J0GP7eE8HJDSkCWoQTFrI4GsVREETjJMxHcR5GPKZAY+KRkq4BbzJVcmGFKrMG8MiGytoV7uZPg6kSgyVoyhUWuDCVpLvnS3W2EpJr6BhVVGM/C5rc7P8o2V0FmaQ5SGwzt1qUS3x+Le/+4V1PfPClQS4rcvMQN/0kpbmjFQYegVcLJQccXVBpwCNrWnJqld4dEQ2Uz0r5BqxEabEdcZdfjfiFvaM0dRcLQI0M2uLxmHXGtTBbKcFgVjmCLWJpLrs3TMl6XT62OpzlUNBa2t5yRGqD/aBypB2LjlIxX6ntUz9wKspGYFeUilF5PFGLNuS1BeM+DEhYY6NsTasKzckqrTaieYxc1v5S4sEvpNriUJc2nzJH3EePqD9F/FMDP1MtnIoHbIOPW5o5NYJlTTKxndUo4dDYkv2sHaFWYCcla93AC4ZpUdlbnLOBjvXB62I9oWmRhkF6Ph7J6EwIThK930dRPskhKYY5FHyYhGw0nPBxMRyxgCYQpmmcjH1m9OFwP3+cLT4/fF18e5/8D/f5FxtyhQXvNuS8LRfWIvrLWrgPeeVWBEHwfy1O10KYrI13p60Z/uGteHHRbieYNjccmDBIZOGw+/4/wRV2GADBTqGt0j+chDfs8BuEqXkwXQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a6e2fe84332817506c8432a19e5c7b97</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</flow>
+        <flow_variables_assigned>next_page</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:31</sys_created_on>
+        <sys_id>6ee2fe84332817506c8432a19e5c7b97</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:31</sys_updated_on>
+        <ui_id>84a79957-cde5-45b9-9f34-d2a4f9604801</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/72RzQ6CMBCE36VnMKJAhJtH78SLMaS0W9xYW9IWkRDe3Tbx72g8eNt8k52dyU5E967rna301lpsFSkPx4igCszPE0FOSkIiougF/KTg5uqOtuDRlco+sGlarZqigVTEDQgepwnL44JvRJyzJU0hybJ1ulm8VuveyHn2BhxtJ+m4f/h4wk4ouYFHDMsMdm7LHF69Lqi0MB/DXYO0kfD3gD/7fFWLA0OLWlWh2+75gSCMvhuyTzRocxZSD2823wHioituywEAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3f044a88336493506c8432a19e5c7b01^sys_idNOT IN4654264c332cd3506c8432a19e5c7b99"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3cd63c98-1acb-4a0d-a46f-e81e9bfe4a8f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>next_page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Next Page</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</model>
+        <model_id>3f044a88336493506c8432a19e5c7b01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_3f044a88336493506c8432a19e5c7b01</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:52</sys_created_on>
+        <sys_id>4654264c332cd3506c8432a19e5c7b99</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:49:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>next_page</element>
+        <help/>
+        <hint/>
+        <label>Next Page</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_variable_3f044a88336493506c8432a19e5c7b01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:52</sys_created_on>
+        <sys_id>0a54264c332cd3506c8432a19e5c7b9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_3f044a88336493506c8432a19e5c7b01"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>force_flow</element>
+        <help/>
+        <hint/>
+        <label>Force Flow</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3f044a88336493506c8432a19e5c7b01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:51</sys_created_on>
+        <sys_id>0654e24c332cd3506c8432a19e5c7b94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>awx_credential</element>
+        <help/>
+        <hint/>
+        <label>AWX Credential</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3f044a88336493506c8432a19e5c7b01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:51</sys_created_on>
+        <sys_id>8254e24c332cd3506c8432a19e5c7b51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>automated_task</element>
+        <help/>
+        <hint/>
+        <label>Automated Task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3f044a88336493506c8432a19e5c7b01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:51</sys_created_on>
+        <sys_id>f954e24c332cd3506c8432a19e5c7b4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3f044a88336493506c8432a19e5c7b01"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>job_status</element>
+        <help/>
+        <hint/>
+        <label>Job Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_3f044a88336493506c8432a19e5c7b01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:52</sys_created_on>
+        <sys_id>0254264c332cd3506c8432a19e5c7b5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>message</element>
+        <help/>
+        <hint/>
+        <label>Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_3f044a88336493506c8432a19e5c7b01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 17:52:52</sys_created_on>
+        <sys_id>8a54264c332cd3506c8432a19e5c7b3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:52:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3f044a88336493506c8432a19e5c7b01"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>bnb_renovao_certificado__ansible</internal_name>
+        <label_cache>[{"name":"subflow.force_flow","label":"Input➛Force Flow","type":"string","base_type":"string","usedInstances":{"cfefeab5-fa0d-4af9-b0f0-4d164405ae91":["force_flow"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c1a56437-7953-4507-9349-ab849c4c468e"}},{"name":"subflow.awx_credential","label":"Input➛AWX Credential","reference":"api_key_credentials","reference_display":"API Key Credentials","type":"reference","base_type":"reference","column_name":"","usedInstances":{"cfefeab5-fa0d-4af9-b0f0-4d164405ae91":["credential"],"94887246-bd9e-4895-a576-4507ef804872":["credential"],"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["credential"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ce83f4f1-c7bf-4ea9-9828-620943398534","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.automated_task","label":"Input➛Automated Task","reference":"sn_disco_certmgmt_task","reference_display":"Certificate task(Automated Flow)","type":"reference","base_type":"reference","column_name":"","usedInstances":{"cfefeab5-fa0d-4af9-b0f0-4d164405ae91":["task"],"5ad15c43-5880-4ffe-8eb1-a4c604b499d8":["record"],"94887246-bd9e-4895-a576-4507ef804872":["renewal_task"],"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["renewal_task"],"9b47b8fb-f16c-4e5e-82f6-d0cac769eefd":["record"],"fcf05e14-13a1-4424-8f1a-66ba5d51d461":["record"],"abfe4ad4-fd2f-473c-879d-3b8089398beb":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"65fc7834-8982-4329-bcfd-2763fd858742","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"cfefeab5-fa0d-4af9-b0f0-4d164405ae91.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"10f745c7-0328-4437-ada6-cc3c9e123f1a":["condition"]},"attributes":{}},{"name":"cfefeab5-fa0d-4af9-b0f0-4d164405ae91.job_id","label":"1 - BNB Dispara Job Ansible➛Job ID","reference_display":"Job ID","type":"string","base_type":"string","usedInstances":{"94887246-bd9e-4895-a576-4507ef804872":["job_id"],"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["job_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9fad10e8-ff81-4586-b38f-e93f9095f2ce"}},{"name":"94887246-bd9e-4895-a576-4507ef804872.job_status","label":"6 - BNB Verifica Status Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"c0a00af0-f2f1-4b24-9cc8-5d2bce417abc":["condition"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"d3251d14-486a-48f4-8e25-6a17be62e03e"}},{"name":"subflow.automated_task.sys_id","label":"Input➛Automated Task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_disco_certmgmt_task","column_name":"sys_id","usedInstances":{"acc8705d-f79c-4874-ab68-a67cbf8c3dab":["conditions"]}},{"name":"flow_variable.next_page","label":"Flow Variables➛Next Page","type":"string","base_type":"string","usedInstances":{"22b9be4f-befd-41c6-9d8f-6c0a4e155348":["next_page_link"],"310d378b-e6ed-4cb4-81e4-b649529969f8":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"3cd63c98-1acb-4a0d-a46f-e81e9bfe4a8f"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.csr","label":"11 - BNB Obtem Resultado Job Ansible➛CSR","reference_display":"CSR","type":"string","base_type":"string","usedInstances":{"26bc1198-ac7e-49e1-bdf8-67cfcc5179dd":["condition"],"9b47b8fb-f16c-4e5e-82f6-d0cac769eefd":["csr"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"9fe270bb-56ee-4490-b674-c5b91246f2c8"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.job_status","label":"11 - BNB Obtem Resultado Job Ansible➛Job Status","reference_display":"Job Status","type":"string","base_type":"string","usedInstances":{"4b6cf7a0-7edb-4070-9c5d-139e1880529a":["condition"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"2933a4fe-183a-4613-97da-87963063da2e"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.job_message","label":"11 - BNB Obtem Resultado Job Ansible➛Job Message","reference_display":"Job Message","type":"string","base_type":"string","usedInstances":{"fcf05e14-13a1-4424-8f1a-66ba5d51d461":["work_notes"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c8497d05-be3e-41f8-91aa-78f0e1ac5bc2"}},{"name":"22b9be4f-befd-41c6-9d8f-6c0a4e155348.next_page_url","label":"11 - BNB Obtem Resultado Job Ansible➛Next Page URL","reference_display":"Next Page URL","type":"string","base_type":"string","usedInstances":{"84a79957-cde5-45b9-9f34-d2a4f9604801":["next_page-0"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"76ae7091-4628-4b78-83a9-e20c07a09034"}}]</label_cache>
+        <master>true</master>
+        <name>BNB Renovação Certificado - Ansible</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9be272c4332817506c8432a19e5c7be7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:34</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9be272c4332817506c8432a19e5c7be7^id=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9be272c4332817506c8432a19e5c7be7^sys_idNOT IN5be272c4332817506c8432a19e5c7be8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9be272c4332817506c8432a19e5c7be7</id>
+        <name>BNB Renovação Certificado - Ansible</name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:34</sys_created_on>
+        <sys_id>5be272c4332817506c8432a19e5c7be8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:34</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5be272c4332817506c8432a19e5c7be8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9be272c4332817506c8432a19e5c7be7^sys_idNOT IN5fe272c4332817506c8432a19e5c7bea,93e2b2c4332817506c8432a19e5c7b77,e3e2b2c4332817506c8432a19e5c7b91"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=65fc7834-8982-4329-bcfd-2763fd858742</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_disco_certmgmt_task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>automated_task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Automated Task</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</model>
+        <model_id>9be272c4332817506c8432a19e5c7be7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9be272c4332817506c8432a19e5c7be7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_disco_certmgmt_task">sn_disco_certmgmt_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:34</sys_created_on>
+        <sys_id>5fe272c4332817506c8432a19e5c7bea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5fe272c4332817506c8432a19e5c7bea"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ce83f4f1-c7bf-4ea9-9828-620943398534</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>api_key_credentials</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>awx_credential</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>AWX Credential</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</model>
+        <model_id>9be272c4332817506c8432a19e5c7be7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9be272c4332817506c8432a19e5c7be7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="api_key_credentials">api_key_credentials</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:35</sys_created_on>
+        <sys_id>93e2b2c4332817506c8432a19e5c7b77</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=93e2b2c4332817506c8432a19e5c7b77"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c1a56437-7953-4507-9349-ab849c4c468e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>force_flow</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Force Flow</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</model>
+        <model_id>9be272c4332817506c8432a19e5c7be7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9be272c4332817506c8432a19e5c7be7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:35</sys_created_on>
+        <sys_id>e3e2b2c4332817506c8432a19e5c7b91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e3e2b2c4332817506c8432a19e5c7b91"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9be272c4332817506c8432a19e5c7be7^sys_idNOT INa3e2b2c4332817506c8432a19e5c7bcf,afe2f2c4332817506c8432a19e5c7b0a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b0789010-bd6c-4dce-8dc6-bcc41862b3f3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</model>
+        <model_id>9be272c4332817506c8432a19e5c7be7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_9be272c4332817506c8432a19e5c7be7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:35</sys_created_on>
+        <sys_id>a3e2b2c4332817506c8432a19e5c7bcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a3e2b2c4332817506c8432a19e5c7bcf"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0e48314f-28ef-4032-857e-b6168f646aa3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>job_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Job Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</model>
+        <model_id>9be272c4332817506c8432a19e5c7be7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_9be272c4332817506c8432a19e5c7be7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>afe2f2c4332817506c8432a19e5c7b0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=afe2f2c4332817506c8432a19e5c7b0a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9be272c4332817506c8432a19e5c7be7^sys_idNOT IN3fe236c4332817506c8432a19e5c7b2b,37e236c4332817506c8432a19e5c7b2d,73e236c4332817506c8432a19e5c7b2f,bfe236c4332817506c8432a19e5c7b30,bbe236c4332817506c8432a19e5c7b31,b7e236c4332817506c8432a19e5c7b32,b3e236c4332817506c8432a19e5c7b33"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="BNB Dispara Job Ansible">812d716a33ab36906c8432a19e5c7b0f</action_type>
+        <action_type_parent display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>812d716a33ab36906c8432a19e5c7b0f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>3fe236c4332817506c8432a19e5c7b2b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>cfefeab5-fa0d-4af9-b0f0-4d164405ae91</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WV22vbMBTG/5Wipw3s4EviS95KSqDsytr1pRRzLB8novKlstw2C/nfJ8Wu42RJ10LaMfCLjj7pfPqkH75eEpaQMbFsJ/FtD1wXYtcLLY8GQ9cBO8QR9WN7RAySQ4ZKKaG6VaN74LUeLpdVHae8eBhALYsMJCaRlqxWSpSwquSwuGq1qkLnjCcCczK+vjFICUJtKlGQ8XJn6qWuOMTIlXSCQrKUUWXg5LKxuG1YLko9EpiiakKxLX1u1//o1QuRaEu2QfBRYp6g8pICr9AgGeQJyEIsyFiKWhUEQvIt54tOMWe5bM6awWPFfqmmrmP0+o5JlUcqGVpEVJnOZpmMWo+dKGqT2zmYln04fcr5ZKpi/6iWpWcg4UL5obIWXdAFo1g1YSaYQs3lpF9rBN9KyYq8WSIh5s/aowWvs/xrEyvptu1db10p61jqzHQKbSTpxbx46AKesnwdbzvJCwq8J0UQdD5lyPUDyOssVlqDgJSCxbXU7pekZpd/3mZT3HefyDFTfqIMypLls6gUxT1be1BHygYzrgYD/YaV94rN8gFQncpA3TQMdMhn6/IVCKYj+qK2WZuq2c+c3dV4rq0ijjzbHnqm7SUjc+ingRlY6JsxYDAKbJpanktWBqkW1YRDVW1iVIeI7modQhNqG1/U3IteQgUr5akydY9tUiujBXf4LCLgbTigAvW2TDXai+/DY7SRHAXfF3jr8O2b22f49fg6b4UvlCy6xUUvreoAu6ffz08+4eJksqU8Mq777fwDVnWv/4HUIHaSEaBrJikNTfVIXTO2Ac2QuoFvgxWElvMWpAaJ7wx933U99dk7NNDeLzYthHpG+ph7Sd1M76P0oO6V7P7d7RO7U91n/TM6cISW3Uo9jHy2A+7FU7Gl1n2e2rbyEmwDy7K2wT1A6fGRfB/+DpDWxbyNWRf0uzBmYeiF6q2YsTek5tDD1Iwxdsx4lIDv+F4YW3BExm5+A1I0BSDICgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3fe236c4332817506c8432a19e5c7b2b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>10f745c7-0328-4437-ada6-cc3c9e123f1a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>37e236c4332817506c8432a19e5c7b2d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>5ad15c43-5880-4ffe-8eb1-a4c604b499d8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8hPm4RQArRqeatASJO6VmonXroqurFvwJrjZLZDyxD/fdeJAwiqjkp9QXv0/fI5N+fET2smBRuxIYoovo4v+SAeDPpR1L8axunlII37YgCIMesyDTlSpUFeGEHnJajKB9ZrW6WZKl56ULkiB4cicWB/bTZUJKQtFaxmoZYifCGVMKjZ6Om5y0owNNahYaP1QepUXApSVFT60AI7BOpWpT+Lglc5apfINngbOich0/k2oQw1eThx1GX46lALJCAZKItdloMW4AqzYiNnKgoYBHGv1WpbsZDaNURzeLXyD908jHxdhsSMhyVsj0lYUBPOJuDgkSZzV5ntvgrJ0TY7EZhBpdx4P9YU3JdOFrppcZCqtrtQVa7vmo2w7YC971FZAoGl5+mRN7Syx0Xx8tCCnEpdryRQVAUHtT2Bc0amlfNw1gwV1jvOoSylnielKZaybiYoeW+u6NDzYqE7rZzrHnCPu0dbhd6U4pM6PAMjPYnvNIaaN11mV3aswNodFdph8rvySBpigUJSb6FeQVIrwTdzI0t3Q1ctMQDfdIPy04v3FMavd4Lam7lTv9X+E/Ii4WhcPs9drf1j5Y8pLTPJyR4dX/HlpjVLx9P++mFnnIC7dcaPWg9v8wjmOIrd7vd27ppEsMbFp1nj6pysEWicvTf+5Yio/+4/d09JtQnsvhscKfpnFUUD0T/2wEH2Y3o/AVWr96lEJewbMFuxY06wHCYN7APBh2RnFpLb9+ATH4TonHT/3zwJz38BnYuCsA4JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=37e236c4332817506c8432a19e5c7b2d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="BNB Verifica Status Job Ansible">c2190de73b2f7e14a1e3f65436e45aac</action_type>
+        <action_type_parent display_value="BNB Verifica Status Job Ansible">b317c5eb3bab7e14a1e3f65436e45a36</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c2190de73b2f7e14a1e3f65436e45aac</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>c0a00af0-f2f1-4b24-9cc8-5d2bce417abc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>73e236c4332817506c8432a19e5c7b2f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>94887246-bd9e-4895-a576-4507ef804872</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WT227UMBCGX2XlK5A2K2fjnHpXtapUzqKFG1RFE3vcNTgHEqftsuq7Y2+yp7IVBS0gLj2e8fzze75PC6IEOSIc/ZQKjIN8KmP0GfgYyChkQYQshNwnY1JCgTbzc5VntmRMbkB3LrBYcIkSIQ89CVR4DGTq5VRSjwk/YoyGgKk/6evu722lUG2tYf7xtx/gM6VFgyU5+nQ1JjU0VprBhhwtHlw9dTYNOWqb+qLKR+ene4Y189qdW9Oo8no4vxqKLlbBqhFOhD8meGewFGi7S9AtjkkBpQBTNXNyZJrOBhoE8bbU83XGTJXGPkZc7l2rvtl2CaXUZUq0A3Hsb9fHbLCxD8tTMGCVdNx0zZDKZ5Xi2PZWCJTQaXOyHesT3tZGVWVfYiDXq+pKd0X5pjeCrB9Y/ZqNdK0VgbWb1GkfBpEXs+r2/UrlmSqXpgyXuuKg1ycw1rq8M07PgnTq8oHLfeQHn1FjYTtmBdS1jWR1U92oZRcruphca3uYSF3dWnWtui4nwN2EE/sDMDmz8dNl+CM0yo372j5ji127D6X62uG52xpBkzgNgXrTVILHAhp4SZSClwoeTlMuRJLG5H5M2nl7oqFtN0bZH8q+dm7M3rbBoKz32JXwRtXm2Iq6wcGL+/EAIiR5mrNABoFd2MinEU9YMAU/xZDHOcSb3bT24i3ozED7ZQfHtsvd8BPoTFWAQbFM2UfeL6P0BHUrlE6wMUoqbgWMLnuJ+4UPaG3WfJeu91vxAbDpoQALprt4taWDilcZt+KL68KsNO6DbntAl/bseOX3yO3Y88ND+ai8v4CqvEBo+OxMoXaLUHZFvmTmEYS3f3OX4u3//CsgJ74fQ8BSL5n6zGMJDS3DKD1I4kiwmPqSJn8C5DCkFGRsUZESHqIiow0PvEH3rLKN9mJ8e5dtUg6D8c+1rTHeFrdP8K/jG/wpfKFW2Recb7nVPsLu8bvz0Uucj052Mg+M6345/4BV1+t/IFXiNI6FDL2Ic+4xLiIvCfzY43HIgOaRn3J2QFKvvgNxGO9G/QoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=73e236c4332817506c8432a19e5c7b2f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="BNB Obtem Resultado Job Ansible">a1530fbb336736506c8432a19e5c7b66</action_type>
+        <action_type_parent display_value="BNB Obtem Resultado Job Ansible">829236bb33a7f2506c8432a19e5c7b25</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a1530fbb336736506c8432a19e5c7b66</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>bfe236c4332817506c8432a19e5c7b30</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>22b9be4f-befd-41c6-9d8f-6c0a4e155348</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XW2/bNhTHv4qhpxUwDepCXfIWOAiQrWuLpOtLUQiHN4crdalEJfGMfPeRluRL5qTJ4HQbsCeDR+fw/M+f/EHy55WnuHfiBYSEWFIahnESxgTHLI3CAPxMEJbQlHhTr4RC2MzfK5rbkql3A7pzgdWKSSEFUIIkYI4ikBmiWGIUcT+OIkxAZP6sr7u/t5VctbWG5ae/vQG7Vpo3ovROPn+ZejU0VpoRjXeyevDoubNpoELb1J8rOrk4OzCsWdZu3ZpGlYth/XYouhqDVcOdCH/qiTsjSi5sdwm6FVOvgJKDqZqld2KazgYaAfx9qZebjGtVGruZ53LvWvWHbZdijF2mFHYgJvqnm2U+2NiH5RkYsEo6ZrpmSGXXlWKi7a3gQkKnzXw31ie8r42qyr7EANVjdaW7onzXG+FtNhhPzUa61ooQtZvUaR8GkVfX1e3lqPJclWtThoe6YqA3KzDWOtoZp2flderjA5f7yF98FloUtmNeQF3bSF431Y1ad7Gii9lC28VM6urWqmvVopwBcxPO7AnA7NzGz9bhT9AoN+6vdhtb7Nr9Vqpvnbhwt4bjNMkIYBRkElAU4hClcQYo44wEGeM8zRLvfuq1y3auoW23RtkTyr91bszetsGgvPfYlbBG1ebUiroRgxf30xFE/6nLKvH2blp7xS3o3ED7dQ/HtqNu+Bl0pirACL5OOUTey1H6vroRpcte3uRjL++w6AGr7RXfJ+tyJz7AFRwLrjDYR6stHVCsyploTLEozKjxEHBzm6OkYtbdiUv76XT0euLu15vjA/movB+AqbwS0LDrcyW0uwRlV9A1L4/gu3ua+wTvnucPgTj1/QTCKENp4EcoSjGx/AqJIE1iHiXYlzh9BYhF9iQm8ZYH1gi3rbKNDiJ8e5dvU46C8DO0jQjPd8UdEvxyfMPXwhdqlX8Vyx232kfYPf1wMflFLCfzvcwj43pYzj/Aquv1XyBViiBJuCQoZoyhiPEYpaGfIJaQCDCN/YxFr0BqHEhJBUnD0P5C9oAGoNuLX9p7m9ewELlW5f4Ldz37zTDebJN4+Fv3qeSXkfwM7SPJ72ybyQfbZvK2F//YUC/5zo2eZnmI/P+h+y//0M24/YcVpD6KSJjYd2RIEQVCEQQRSUlGBM7YEcn78iecFJdmcw4AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bfe236c4332817506c8432a19e5c7b30"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>4b6cf7a0-7edb-4070-9c5d-139e1880529a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>bbe236c4332817506c8432a19e5c7b31</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>fcf05e14-13a1-4424-8f1a-66ba5d51d461</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfNqmtkiat2r4hKqRJDCSYeGEscuyb4uHYme0AXdT/vuvEKRUgBhJ7QHv0/fI5J/fElw0RnCxJCjyKF/GMJXGSTKJoMk/jfJbk8YQnFCAmQ6JoCVhpgGnD8XxLZe0DTWPrvJD6bkxrp0vqgGeO2pvtFou4sJWkm4tQixF2LSQ3oMjy8mpIKmpwrANDls2j1GtxSZqDxNKzHthjoG5T+TPXrC5BuUz0wePQuQqZwZcVZrDJw4mjIYF7B4oDAimotDAkJVWcOm02ZOlMjQEDlJ8qudlVXAvlOqIlvbfiN96cRr6uAGTGggi7YxYE6sLFijp6jpOZq81OLy0Y2E4TDgWtpTvcj3UFp5UTWnUtjuay79ayLtVJpwjZDdj7HrVFEFB5nh55R6s4v9Z3Zz3II6FaSQJFqRmVuxN1zoi8dh5OQ0BCq3FJq0qodVYZfSvaZoRSjtcSD2O/LHinFWs1pszjHqOqdHyE8VUbvqBGeBJfcQw2b4fEbuyhpNY+UEENs1+1R9IRCxSyVoVWgqzdBN/MjKjcAV51CwH4dhg2P5++tGFs8bBQezMftt8q/wmZzhgYV65L1+7+080/xLQoBEN7DHzFp4PeLANP+/ObnfEK3L0zvrX78DyPYI4nseP93sFJlwjWmL6bNeYfyRqBxof3xt8cEU1e/OfubVJrArvvBocb/b2OooQnP+60ucmURvZdpGkmk3yRQ1qMcij4KI3ZbLTg82I0YxFNIZ5Ok3Q+/qnzrARr6Rqee0L+xRVvc94r9OmddyRAcvuMYL3toERuDrJOwEfWC8nBRUjuXqZ3fJqij+TA/+ZxuvoD2sZA/ZgJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bbe236c4332817506c8432a19e5c7b31"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>26bc1198-ac7e-49e1-bdf8-67cfcc5179dd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>b7e236c4332817506c8432a19e5c7b32</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>9b47b8fb-f16c-4e5e-82f6-d0cac769eefd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K8ZPGyTGjp2Q5K0kBAZdC+3oS9sZWbpORWXJk+S2Wch/35Utp6EtXQtlUPao+6Vzju+xLrchZ+E8zIDFySyZ0DRJ01Ecj6ZZUkzSIhmxlAAk4SCUpAKs1ECVZni+I6Jxge3WNEUp1H1EGqsqYoHllpjb3Q6LGDe1IJsLX4sResMF0yDD+eX1IKyJxrEWdDjfPkm9FZcgBQgsPeuBPQVqN7U7M0WbCqTNeR889p1Lnwm+LTGDTQ5OEg9CeLAgGSCQkggDg7AikhGr9CacW91gQANhp1Js9hU3XNqOaEUeDP+NN2exqysBmVEvwv6Ye4G6cLkklpzjZGobvddLcQqm04RBSRphF4exruC0tlzJrsWSQvTdSjSVPOkUCfcDDr5HYxAE1I6nQ97RKs9v1P1ZD3LFZSuJpygUJWJ/ItZqXjTWwdmGIKDVuCJ1zeU6r7W6420zQqmitcBD5JYF7zR8LSNCHe4IVSXRCuPLNnxBNHckvuMYbN4NQrMxC0GMeaSCGua/GoekI+Yp5K0KrQR5uwmumWpe2yO86g488N3Ab34xfm3D6OxxoQ5mPm6/ke4TUpVT0LZaV7bd/eebv8A0LzlFewSu4stRb5bA0f76bme8AXfvjB/tPrzMw5vjWez4sDc46RLeGuMPs8b0M1nD0/j03vibI+LRq//cg01qTWAO3ECNvmriOGXb7WhUzArIymEBJRtmCZ0MZ2xaDic0Jhkk43GaTSOs3+1+3it9m0uFMnXNi/OzYKV4sAZNmAqcEwIV0N5BTD2317+7+H0ufYOWvUtXHAQzL4jbWxQqZGwh78R+YlOfDC58cv+KfeAzFn8mt/43D9n1H/gfPL3ECQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b7e236c4332817506c8432a19e5c7b32"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <generation_source/>
+        <order>19</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>b3e236c4332817506c8432a19e5c7b33</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>abfe4ad4-fd2f-473c-879d-3b8089398beb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8hPm4RQArRqeatASJO6VmonXroqurFvwJrjZLZDyxD/fdeJAwiqjkp9QXv0/fI5N+fET2smBRuxIYoovo4v+SAeDPpR1L8axunlII37YgCIMesyDTlSpUFeGEHnJajKB9ZrW6WZKl56ULkiB4cicWB/bTZUJKQtFaxmoZYifCGVMKjZ6Om5y0owNNahYaP1QepUXApSVFT60AI7BOpWpT+Lglc5apfINngbOich0/k2oQw1eThx1GX46lALJCAZKItdloMW4AqzYiNnKgoYBHGv1WpbsZDaNURzeLXyD908jHxdhsSMhyVsj0lYUBPOJuDgkSZzV5ntvgrJ0TY7EZhBpdx4P9YU3JdOFrppcZCqtrtQVa7vmo2w7YC971FZAoGl5+mRN7Syx0Xx8tCCnEpdryRQVAUHtT2Bc0amlfNw1gwV1jvOoSylnielKZaybiYoeW+u6NDzYqE7rZzrHnCPu0dbhd6U4pM6PAMjPYnvNIaaN11mV3aswNodFdph8rvySBpigUJSb6FeQVIrwTdzI0t3Q1ctMQDfdIPy04v3FMavd4Lam7lTv9X+E/Ii4WhcPs9drf1j5Y8pLTPJyR4dX/HlpjVLx9P++mFnnIC7dcaPWg9v8wjmOIrd7vd27ppEsMbFp1nj6pysEWicvTf+5Yio/+4/d09JtQnsvhscKfpnFUUD0T/2wEH2Y3o/AVWr96lEJewbMFuxY06wHCYN7APBh2RnFpLb9+ATH4TonHT/3zwJz38BnYuCsA4JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b3e236c4332817506c8432a19e5c7b33"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9be272c4332817506c8432a19e5c7be7^sys_idNOT IN73e2f2c4332817506c8432a19e5c7bec,33e2f2c4332817506c8432a19e5c7bee,73e2f2c4332817506c8432a19e5c7bef,7fe2f2c4332817506c8432a19e5c7bf0,7be2f2c4332817506c8432a19e5c7bf2,7fe2f2c4332817506c8432a19e5c7bf3,bfe2f2c4332817506c8432a19e5c7bf4,ffe2f2c4332817506c8432a19e5c7bf5,3fe236c4332817506c8432a19e5c7b28,7fe236c4332817506c8432a19e5c7b29"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92e2fe84332817506c8432a19e5c7b45</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>73e2f2c4332817506c8432a19e5c7bec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>10f745c7-0328-4437-ada6-cc3c9e123f1a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPjpGTOCx9Cy2FQbfCUrrBVsS1PhpRxfL00TYL+e+7sp2krBltWR/3Zh1d3XvOkQ7eEBtDE4O/snPv9W1NTr7fZETXCcPvDdGCnBBFQRUzXvDxaDoeUTr6MCmq6bgqRmIMEsYkIzWsJFZyWwsdtK1ZC2TkHkxMG/Ov3waLO900UgyUdYNFrBpnBVYI7RsD6+sXC/lSG+Fkz7EBhxOCdORk88fWazkbqKTB0tMd6cFFi/xdTVg3CffB6fq2X1/0XRY70DqRWBU0I/IxyFpI5KPAeJmRFdQCgnXrPeIkiMvaHIClrgO2I6n40etfOHBUlqlQSZTIZbe5X7LewA5WZxAAqUQeoutL+dJqLn1njpAKogmnT7Gu4LJJUrsjASqzO21NXNWfO0fIvsHuvhCJHknIJilN1HsdarG0D192LM913brSbxrLwexXENC7KobEZ0OkkStsxFbQNOgow+u/1+1h5LLKbw0ucmXsAw5NbzYHnojnaCzk54iftfA1OJ1UfMI2eLijWYHXnLXvG9uhTZJsM+LX/tSA9weR6C77GRPFTnIvjnX+pCPc6SbMcfK97HVssz4uMyhVWdDy+NObTI88sCdJ2Wy4QtegKocKqBhOQM2GFVV0OBHFdDKhJchZkTPWyWY+QIiesZxbIbfbH5HSsSjo82S9X+O3JfEVdjxL4nGL3hK/0QvxS3f/yvRRSv/H75/jpz3rQtNra4e/Y/puUoS6mXuvufZI7SphH3f/tLSxxsel+VPowbq7JOqAbX8DbMQ7/B0HAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6ae2fe84332817506c8432a19e5c7b49</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>10f745c7-0328-4437-ada6-cc3c9e123f1a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>33e2f2c4332817506c8432a19e5c7bee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>b8b1311a-6ca0-4d17-b3a2-e460a91f6624</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">aae2fe84332817506c8432a19e5c7b4a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>73e2f2c4332817506c8432a19e5c7bef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>c0a00af0-f2f1-4b24-9cc8-5d2bce417abc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW8aMRD9K9TnBS0ssMANEUVqlTZSE+XSpqtZ2wtujb31BwlB/PeMd5cPpYlC2h56KCf8Zjzz5nmedkO0d6V39lpPrRVzRSZfbiMiVMDw/4YIRiYkZ9CjedxPkzjpJnE87PZoL00K/A0hHcQkIgqWHDOpVkw4oVVWARFZgfQh8EHnramyIpe8VQgFUjxoj3EmbClhffNKGl0IyQxv+JVgsLrjhkw2T0Kn8pWQc4mpsx3h1kWFvDyJW5cBt84INW/OF02Vqx2oDQusunEcEX7vuGIcCRUgLY/IEhQDp816jxgO7FLJA7AQymE9EpLvrXjAjr3BICQWHGekvA7uj1mjXw0XZ+AAuXjqvGlS6UILym2tDuMFeOlmx1idcFmGWesrDlD+5raWfqk+1ZKQfYHdcyHiLZLgZZg0UG/mKK4W+u7zjuW5UJUsTVBqCnJ/Aofi5d4FPhvCJV9ioWwJZYmSZqXRK1FdRi7LzlzioVNIfYdNw8J2gAbiHRQWOueIn1XwDRgRpviIZfDyNiJ2bWcSrD3MgiJmP31gUk/WzJDVMoQr1IjSTbHBijd0t1FjCZZ2k1Hx0oqN6DOLdOSGzWbcH43SXn/YztmYt/uj8aANg3TY7g/ilBejuI/RznedZ9aB83a7fffVx3HCAknU5dvvVzBeqXpZn3jv3yD1Nqef8Ay/OP35p3mLvXuv2RsteKq741Drv73/yN64DDar3drMVjX/i7a/Dd6te+61psIiteuAvd99MENgjdsl6DF0p82PMNQB2z4Ce1JG0noHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e2e2fe84332817506c8432a19e5c7b67</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c0a00af0-f2f1-4b24-9cc8-5d2bce417abc</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>7fe2f2c4332817506c8432a19e5c7bf0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>a746db83-30f2-4480-93a2-6f402c4ccd69</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1ZbW/bNhD+K4I+e54oyXLsb0XSAAW6dYiDfBkKgaJONjFa0igqqRfkv4+kqBfbsiO3TuGiBQwkPFLH5+6e50Taz3ZWirwUxX32rijoMrXnf38e2TRVNvn/s01je277s6k3uUL+1HM85DlOFCAIAn8aREmAp1cTe2SneA1yZVxyLGiWhmKTgzQ/YlYqO3zJGSVUhPUCORfTImd482CWvDdLrM4SsqIs5mBg5ZjLXQRwe/68MzUUJsMRMLn0xuxh3Vc4D8DXf+Zyr4ySevzRuLiujRmPFSTkOCMZp4A0BokmwayAkb3GaYxFxjeNhQOOP6WsNaxoKqQ/Wy3+UtD/5I6+o9YlIOMjUM01w9DkrTInN1jgheAlESU3Syu4Vf3qgPuye6w4JijnZdT6uAMmpx+hzwc3cz0+UNfHX8AJpAIve73kzWyPH/dFFjqGBJdMXJ8vRHSGEN0zheipEKvyfcr11Nz2FO9wxOriZqxcp39WfLWbhDwcE1q15OZ1vZWFRAW5orDipCFoslhlT3c1/25pqrGaSZYRzJoRFoLTqBSqNM82MFhLR+Ea5zlNl2HOs0eqH5ZhrMdLJgfjhGVPclPVfcaYKCBjqRg8vpX2G21+wJyqBPwh3ciHX0Z2sSmuGS6KNg1SHuG/pUJSJcXEEOoU6kcIp7l4R1QFDVxVNN04ogTFAQpQNPUCVzYOzycBgWAGgBCeuU7bIDrVE3QNPNStMpSAQY07dd5vcCf3swGwejincVkal6VwWQbY4AhM09PV0fawM1F3P9l24Pf7yv4GDVD7OkcH7GsZ+xo7SWI/ik4ki4qwor2JTW/+Bvq5cjzPc2Zk4k0bosYxQJJMI+QCatlXUa7l4HkFMwDHvmCOgjNakASFpU5pVwMfGusvBfzkCoAE+RNy6OgZ7ZGs52CAZlPnNwfJj+U4c/Xx9yXhWwsgWRoXJ2tjAMLdw/ER0NvviG37x3039THpAo/Iv+TxHeQRE+wjZ3KAfG6wy7S9o3aYScCKJB3B4EToIHYkUptPk8cAhLU87vUBi+/eFKwOxOHBnHLD9C5QPu21p877bnn6bpIRJBnvvvwbQ3MpO37Xe2UzdNJm7jffuhoq9t606tmdpiBTeok9oUZINuGxm29nmeFwS8TTG8j2Fy+vdBOUuJP4oFan3usCfJv72gBch3rI/j1tAPSvvaj5F9hHvstr+BsV1/+2HP3ESkyiyUQeKw8wPnB36VyQFcQlO7PuBqDoHG1lhSyxAivJmEy9GnVQHUJrEtsyfVtkdx27EdnkjCLz3G2RkXXaBdcnuEU7fQHCO/38mywAc7K6pcBUiXVdfrSvFz8rlle+m0wTWkgI98r2of6VRU1sZISUdE1PGf9HgW9tL/8DNA+Km68ZAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">eee2fe84332817506c8432a19e5c7b68</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned>next_page</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>7be2f2c4332817506c8432a19e5c7bf2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>dbe39029-fde3-4369-8bf3-c826a42eec12</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V224aMRD9lcrPgIBdKMtblChSpDapGpqXKlrN2rNg1WtvfIFQxL93jJeL0nwCbztnPJ5zjme0O2aCb4N3C3PjnFxqNv/92mNSR4y+d0wKNmesxzQ0SF8a333ZwhIJWoMKmLJCulbB9uWM8JVUwmJ3YQuW6j1aNt99SB0a5NNJPp7mPMvGXGST4ZTP8mwMowIn/GtVFHShggoVHX0kBl9+JAafkPLbNkLOW6mXXfytK30+gsaKSGXUY1SJWiBxqEE57LEGtABv7PaEWATxpNUZWEntk8gG3p38S/1mw+EwnqyRdPHOglNYdvYkuL4DD0QlcB/syS0jObrkiMAagvK3l1g68NR6aXQq8VCpY7VRodGPyQx2uuDiNYIjEthGqZF7J6R+XpnNzyPLe6kPrnRJZTioUwSevKuCj3x2LMjFB5sT8p/RqLChjmUDbUtI2VqzlocuRLoZLBUFg1qZDbGL4zcAHhUO6AlgcE/43QF+ASuj3O90DRXHdr+0fAv4EIcn42Ka8WLWHwGv+jkMRR/yad3H2QiLqsYcZjXb95jbulsFzp2Nohcq30KUmWzrDCqTx7GEW9n6GyK1xs6L/Wuc/MTnuiLXFbmuyKcrIpBLRzwXkdTD8X8SE1saSckvoY2xf6LCM7b/B8wxpgWZBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">26e2fe84332817506c8432a19e5c7b6a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>7fe2f2c4332817506c8432a19e5c7bf3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPURRglIq3iq5SJbpOA3Wbpiq62A5Yc2zPdqAs4r/vOnEAra1GtT2OJ3zu1zmXe0RNdOVN5d1CXzknVopMvj0mRKiA4feaCEYmZMlgQJfZu/EwG/aHWXbRH9DBeFjg5wLGo4wkREHJMZNqxYQXWuUNkJANyCoEZuB8z8CK9yz3VvANZ73C6rJ39fkLpjHhjITdw3nZdC0kszyyNWBxlueWTOrfQueyl7DkElOnHf3erEFe1+V3JuAO2alVfM9il3kHassCq36WJYQ/ea4YR0IFSMcTUoJi4LXdHRDLgd0reQTWQnnsR0LykxM/ceJgNAqJBUeNlLfBwzOPa2zh4ho8IJeK+srGVLrWgnLXbofxAirpp6dYm3Bvgta2xMNSdtVaVqX60K6EHBp0vxoilUMS3ASlgXrUUczXevupY3kjVLOWGJSagjy8wOPylpUPfGrCJS+xUV6CMbjS3Fi9EU0xcinTlcRHWki9xaHhfFOggXiKi4X0BvHrBn4AK4KKO2yDxfuEuJ2bSnDuqAWXmP+oApNWWdSQt2sIJdQK469wwIZHuvskGoSN+8PL4rUTu6QvHNKJN+q6kbCJLFOFt5KH69/vb+fv7z4uvj53yFk1b/PJGSKe+eRlYW8xx+BP5sADPtcbWej13xx/ZQ48Bpe3tx61NcP/oWkew+W3Mw+7psIhtUXAbrs/nxDY4XUJegpttf0eRB2x/S9rYnmQxgYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">26e2fe84332817506c8432a19e5c7b6d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>bfe2f2c4332817506c8432a19e5c7bf4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>4b6cf7a0-7edb-4070-9c5d-139e1880529a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBn2dDTsH0LHBgokDZAE+TSBsKKD5stJaoi6UcN/3uXkvxA46IO0mNv5uxyOTPagXdEO1s7a570rTFyUZHpl5eAyMpj+HtHJCNTIkIQ0YRGNIlHSRyG8TiNilFSRDFLgENCAlJBybGT6opJK3WVt0BAVqCcL8yV2+gbAWqpHcJMmlrB9vlylS6lYg3v2dTQ4CzLGzLd/Va6lp2CgitsnR3o3dy3yJ95223tcWMbWS36830/5fEA6oZ5VlEYEL6xvGIc+aAKwwNSQsXA6mZ7RBoO7KFSJ2ApK4vjiG/eGPkTH4yzzDcKjhIp74rHY9671sHiDiwgFUeta/pWutSSctOZw7gAp+zsHOsaHmovtbtioVCH21q5svrUOUKOAw4fCRFnkASvvVJPvdchHpd6/fnAci6r1pW+qDQFdTyBRe8KZz2fHeGKlzgoL6Gu0dG8bvRKtpeRSzlcKDwMhdJrfNRv5xCoJz5EY2E4R/yuhZ+hkV7FRxyDlzuaBRhJ83aTcRzaxMk+IGZrZgqMOYlEd/MfzlPsJPfi8s4ff4U2sra3+PKK9zr2QR+MCWQii8Ls8uqlowsLdpaJ3S6Oi0nBUzEouGCDNKKjwYSNxWBEQ0h5lGVJOh5+00VuLFhn9vuvLgwTJkAqXLVXMXr/wLcl7wr5r5J32ZK3xC3+S9z8t74ybWEY/o/bu+MmTd6FpNfWPv4P0/biI9O9efSaSoPUnjz24fBv5QtbXC5Jz6G1br57USds/wsbXlJq9wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a2e2fe84332817506c8432a19e5c7b6f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id>4b6cf7a0-7edb-4070-9c5d-139e1880529a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>ffe2f2c4332817506c8432a19e5c7bf5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>6114fe1d-7a16-4ce5-9945-476c02ec54cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e2e2fe84332817506c8432a19e5c7b70</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>3fe236c4332817506c8432a19e5c7b28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <ui_id>26bc1198-ac7e-49e1-bdf8-67cfcc5179dd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPASWBIOCtokOq1JapoErTVEU3tgPWTJzZDpRF/Pdd5wPQSjW67XFv+Nzre8858RElUYXNC2uW6sYYscrI5OuLR0TmMPxdEsHIhKQ+pMGYBrQfDvuh74ejQZAM+0kQsj5w6BOPZLDh2ElVxoQVKosrwCNbkIUrTBdPnZkSnRXXwBQWmDC5hP3ze3W6FpJp3jDKQeM8yzWZlL+UrmUoIeHSbWopdu4r5H3udp873FgtslVzvm+mLFpQaeZYBb5H+KvlGePIJwVpuEc2kDGwSu+PiObA5pk8AWuRWRxHXPOrET9wYRhFrjHlKJHyung8xo1vNZzeggWkUlBb6KaVrpWg3NTmMJ5CIe30HKsb5rmTWl+xkMj2tpLFJnusHSHHAe1nQqQwSILnTqmj3uhIF2u1e2pZzkRWudIUpaIgjyew6F1SWMenJFzyDQ6KN5Dn6Gica7UV1WXksumtJB56qVQ7XOpeaA+oI95DY6E3Q/y2gp9BC6fiAcfg5ZpmAkbQuHrNOA5t4uTgEbM3UwnGnESiu/H3wlGsJTfi4tofd4Vqkdsb3LzljY6D14RjDFEaBX50+ekNhhce2FkuyjIMk3HCB2k34SnrDgI67I7ZKO0OqQ8DHkRRfzDqUaMPh7vF43z56eHz8svb/PzxnI/l7Aqxb3J22YCPhCv8Tbjcl70yW77v/w/XX4dLmLiORKOtWv4Ps/XiAlLvPHpNhUFqS4fdtf9PrrDHxyXoObRT+psTdcIOPwHqDooq6QYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a6e2fe84332817506c8432a19e5c7b97</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</flow>
+        <flow_variables_assigned>next_page</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>310d378b-e6ed-4cb4-81e4-b649529969f8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:37</sys_created_on>
+        <sys_id>7fe236c4332817506c8432a19e5c7b29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:37</sys_updated_on>
+        <ui_id>84a79957-cde5-45b9-9f34-d2a4f9604801</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4POcRDHjmfnVrQoUGBrhzXrpSgMWqITYbLs6iNpFuS/j4qdpOh222GX3MwnkXzvUYR3rPWu884u2itr5VKz+fPLiEkdMPreMSnYnLER09AgfWl8c2UHSyRoDcoHbLebTquiwrSOKqxFlMY8iwqR11HGJ5BiPJslaT4+pZbeqP2eCghpOwXbp3+tw1dSCYMD+Q4McXVo2Hz34eggJs1m6TRLeZJMuUhmk4znaTKFuMAZ/1wVBRVUUKGiq/fU6tO3Xu1fDHDbLkDWGamXQ/xlSH08gq0RgUo8YpSJWiBxqEFZHLEGtADXmu0JMQjiQaszsJLa9QNo4M3KX9Qvn0wm4WaNpItjf3oKy8HUHq5vwAFR8dx5M1zlq1ZytL0jAmvwyl2/x/oLD52Tre5THFTqmN0q3+j73gx2KnCcISHeEgnsgtTAfRBSP67azfcjy1upD64Mh6rloE4ROPKu8i7w2TEvFx9s7pE/jEaFDXUsG+g6QsrOtGt56EKkm/FSUTCuVbshduGpj4EHhWMaAYxvCb85wE9gZJD7lcpQcmj3Q8tXj3fh8SRcZAkv8igGXkUpTEQEaVZHmMdYVDWmkNdsP2J2a68VWHs2iiZUvvogs7dtMKjsPQ4p3MjOXRGpNQ5e7F/ClvV8Lut4WcfLOv73dRTIpSWei0Dq7vifDAdbepKSv4c2rfkZFJ6x/W84vVLEcQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9be272c4332817506c8432a19e5c7be7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9be272c4332817506c8432a19e5c7be7^sys_idNOT INb7e2f2c4332817506c8432a19e5c7bbe"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3cd63c98-1acb-4a0d-a46f-e81e9bfe4a8f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>next_page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Next Page</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="BNB Renovação Certificado - Ansible">9be272c4332817506c8432a19e5c7be7</model>
+        <model_id>9be272c4332817506c8432a19e5c7be7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9be272c4332817506c8432a19e5c7be7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>b7e2f2c4332817506c8432a19e5c7bbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>next_page</element>
+        <help/>
+        <hint/>
+        <label>Next Page</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_variable_9be272c4332817506c8432a19e5c7be7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>bfe2f2c4332817506c8432a19e5c7bc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_9be272c4332817506c8432a19e5c7be7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>force_flow</element>
+        <help/>
+        <hint/>
+        <label>Force Flow</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9be272c4332817506c8432a19e5c7be7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:35</sys_created_on>
+        <sys_id>6fe2b2c4332817506c8432a19e5c7b96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>awx_credential</element>
+        <help/>
+        <hint/>
+        <label>AWX Credential</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9be272c4332817506c8432a19e5c7be7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:35</sys_created_on>
+        <sys_id>abe2b2c4332817506c8432a19e5c7b8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>automated_task</element>
+        <help/>
+        <hint/>
+        <label>Automated Task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9be272c4332817506c8432a19e5c7be7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:35</sys_created_on>
+        <sys_id>dbe2b2c4332817506c8432a19e5c7b41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9be272c4332817506c8432a19e5c7be7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>message</element>
+        <help/>
+        <hint/>
+        <label>Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9be272c4332817506c8432a19e5c7be7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>6be2b2c4332817506c8432a19e5c7bd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>job_status</element>
+        <help/>
+        <hint/>
+        <label>Job Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9be272c4332817506c8432a19e5c7be7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:36</sys_created_on>
+        <sys_id>6be2f2c4332817506c8432a19e5c7b10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9be272c4332817506c8432a19e5c7be7"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3f044a88336493506c8432a19e5c7b01</sys_id>
+        <latest_snapshot>9be272c4332817506c8432a19e5c7be7</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch12w45-10-28-2026_11-03-2026_2221.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3f044a88336493506c8432a19e5c7b01"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3f044a88336493506c8432a19e5c7b01^sys_idNOT INd0f276c4332817506c8432a19e5c7b7e"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"d0f276c4332817506c8432a19e5c7b7e","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</plan_id>
+        <snapshot>f464badc33a89f506c8432a19e5c7b31</snapshot>
+        <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
+        <sys_created_on>2026-11-09 18:56:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d0f276c4332817506c8432a19e5c7b7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
+        <sys_updated_on>2026-11-09 18:56:39</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
