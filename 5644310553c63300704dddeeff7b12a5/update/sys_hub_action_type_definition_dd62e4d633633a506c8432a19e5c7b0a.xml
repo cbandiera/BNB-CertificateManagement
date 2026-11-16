@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
-        <sys_mod_count>127</sys_mod_count>
+        <sys_mod_count>167</sys_mod_count>
         <sys_name>BNB Dispara Job Ansible</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Inventory and Management" source="sn_disco_certmgmt">5644310553c63300704dddeeff7b12a5</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd62e4d633633a506c8432a19e5c7b0a</sys_update_name>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:26</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:57</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -106,10 +106,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b4f</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 12:27:17</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2026-11-16 17:42:18</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">a25f89e63327b2906c8432a19e5c7b20</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=dd62e4d633633a506c8432a19e5c7b0a"/>
@@ -948,10 +948,10 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>60acf1a233ab36906c8432a19e5c7b74</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:15</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:47</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=60acf1a233ab36906c8432a19e5c7b74"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -976,9 +976,9 @@
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:10:14</sys_created_on>
         <sys_id>24acf1a233ab36906c8432a19e5c7b9f</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:15</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:47</sys_updated_on>
         <value>/**&#13;
  * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
  * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
@@ -1022,7 +1022,7 @@
       // Certificado (registro referenciado por task.certificate). Só preenchido na renovação.&#13;
       certificate: null,&#13;
       description: null,&#13;
-      force_host: null,&#13;
+      force_host: "autocert.capgv.intra.bnb",&#13;
       ip_address: null,&#13;
       port: null,&#13;
       ansible_flow: null,&#13;
@@ -1032,24 +1032,27 @@
       task: inputs.task,&#13;
       target_ci: null,&#13;
     };&#13;
-    if (["flow_a", "flow_b", "flow_c"].includes(inputs.force_flow)) {&#13;
-      taskConfig.ansible_flow = inputs.force_flow;&#13;
-    }&#13;
 &#13;
     outputs.skip_awx = false;&#13;
-&#13;
-    // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
+    // Tratamento de ambiente SubProd: somente invocar Ansible/AWX, quando solicita forçar flow.&#13;
     if (gs.getProperty("instance_name") != "bnbprod") {&#13;
-      var msg = "*** Ansible/AWX não será invocado em ambientes SubProd ***";&#13;
-      if (inputs.force_flow) {&#13;
+      var msg;&#13;
+      if (&#13;
+        inputs.force_flow &amp;&amp;&#13;
+        ["flow_a", "flow_b", "flow_c"].includes(inputs.force_flow)&#13;
+      ) {&#13;
         msg =&#13;
-          "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***";&#13;
-        taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
+          "*** Utilizando URL para ambiente de testes: " +&#13;
+          taskConfig.force_host +&#13;
+          " ***";&#13;
+        taskConfig.ansible_flow = inputs.force_flow;&#13;
         taskConfig.commonName = taskConfig.force_host;&#13;
       } else {&#13;
-        sendWorkNotes(taskConfig.task.getUniqueValue(), msg);&#13;
+        taskConfig.commonName = inputs.task.subject_common_name + "";&#13;
         outputs.skip_awx = true;&#13;
+        msg = "*** Ansible/AWX não será invocado em ambientes SubProd ***";&#13;
       }&#13;
+      sendWorkNotes(taskConfig.task.getUniqueValue(), msg);&#13;
     }&#13;
 &#13;
     var ixTaskType = [&#13;
@@ -1088,12 +1091,6 @@
 })(inputs, outputs);&#13;
 &#13;
 function newCertificate(taskConfig, inputs) {&#13;
-  taskConfig.commonName = taskConfig.task.subject_common_name + "";&#13;
-&#13;
-  var ansibleCommonName = taskConfig.force_host&#13;
-    ? taskConfig.force_host&#13;
-    : taskConfig.commonName;&#13;
-&#13;
   var san = (taskConfig.task.subject_alternative_name + "")&#13;
     .split(",")&#13;
     .map(function (s) {&#13;
@@ -1101,22 +1098,17 @@ function newCertificate(taskConfig, inputs) {&#13;
     })&#13;
     .filter(Boolean);&#13;
 &#13;
-  taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
-  taskConfig.body.extra_vars.san = san;&#13;
-  // taskConfig.body.extra_vars.key_size = 2048;&#13;
-&#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (taskConfig.task.certificate_purpose == "external") {&#13;
       taskConfig.ansible_flow = "flow_a";&#13;
     } else {&#13;
       taskConfig.ansible_flow = "flow_b";&#13;
-      taskConfig.body.extra_vars.dc = ansibleCommonName&#13;
-        .toLowerCase()&#13;
-        .includes("dmz")&#13;
-        ? "DMZ"&#13;
-        : "capgv";&#13;
     }&#13;
   }&#13;
+&#13;
+  taskConfig.body.extra_vars.cn = taskConfig.commonName;&#13;
+  taskConfig.body.extra_vars.san = san;&#13;
+  // taskConfig.body.extra_vars.key_size = 2048;&#13;
   if (taskConfig.ansible_flow == "flow_a") {&#13;
     taskConfig.resource_path = "job_templates/13/launch/";&#13;
     taskConfig.assignment_group = inputs.external_group;&#13;
@@ -1124,6 +1116,11 @@ function newCertificate(taskConfig, inputs) {&#13;
       "Criação de Certificado Externo Novo " + taskConfig.commonName;&#13;
   } else {&#13;
     taskConfig.resource_path = "job_templates/254/launch/";&#13;
+    taskConfig.body.extra_vars.dc = taskConfig.commonName&#13;
+      .toLowerCase()&#13;
+      .includes("dmz")&#13;
+      ? "DMZ"&#13;
+      : "capgv";&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
     taskConfig.short_description =&#13;
       "Criação de Certificado Interno Novo " + taskConfig.commonName;&#13;
@@ -1194,13 +1191,8 @@ function renewCertificate(taskConfig, inputs) {&#13;
 &#13;
   taskConfig.certificate = taskConfig.task.certificate.getRefRecord();&#13;
   var certificate = taskConfig.certificate;&#13;
-  taskConfig.commonName = certificate.subject_common_name + "";&#13;
-  var ansibleCommonName = taskConfig.force_host&#13;
-    ? taskConfig.force_host&#13;
-    : taskConfig.commonName;&#13;
 &#13;
   var ipPort = buscaIPPort(certificate);&#13;
-&#13;
   var hostCI = null;&#13;
   var F5Host = null;&#13;
   if (ipPort) {&#13;
@@ -1252,7 +1244,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
       }&#13;
     }&#13;
   }&#13;
-  taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
+  taskConfig.body.extra_vars.cn = taskConfig.commonName;&#13;
   taskConfig.body.extra_vars.san = [];&#13;
   var dom = new GlideRecord("certificate_domain");&#13;
   dom.addQuery("sys_id", "IN", certificate.subject_alternative_name + "");&#13;
@@ -1296,9 +1288,9 @@ function renewCertificate(taskConfig, inputs) {&#13;
     taskConfig.ip_address = f5Ip;&#13;
     // taskConfig.body.extra_vars.f5_host = f5Ip;&#13;
     // taskConfig.body.extra_vars.profile_name_client =&#13;
-    //   "Client_" + ansibleCommonName;&#13;
+    //   "Client_" + taskConfig.commonName;&#13;
     // taskConfig.body.extra_vars.profile_name_server =&#13;
-    //   "Server_" + ansibleCommonName;&#13;
+    //   "Server_" + taskConfig.commonName;&#13;
     taskConfig.resource_path = "job_templates/65/launch/";&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
     // Removido o else para que o fluxo_c seja tratado como fluxo_b porque essa determinação&#13;
@@ -1314,7 +1306,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
   } else {&#13;
     // Cenario A - GERAR apenas PKEY e CSR - Job 15&#13;
-    taskConfig.resource_path = "job_templates/15/launch/";&#13;
+    taskConfig.resource_path = "job_templates/345/launch/";&#13;
     if (certificate.u_ca_scope == "internal") {&#13;
       taskConfig.assignment_group = inputs.internal_group;&#13;
     } else {&#13;
@@ -2592,14 +2584,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-11-09 12:27:15</sys_created_on>
         <sys_id>d8d9158033e053506c8432a19e5c7bd6</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:15</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5484,14 +5476,14 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 16:52:24</sys_created_on>
         <sys_id>ae5f89e63327b2906c8432a19e5c7b33</sys_id>
-        <sys_mod_count>213</sys_mod_count>
+        <sys_mod_count>233</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:16</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5524,13 +5516,13 @@ function addWorkNotes(taskId, message) {&#13;
         <dont_treat_as_error>true</dont_treat_as_error>
         <label>AWX Skipped</label>
         <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"10"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Ambiente SubProd no roda Ansible"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"10"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Ambiente SubProd no roda Ansible"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-11-06 20:39:46</sys_created_on>
         <sys_id>6dcdef033b545f14d0457237f4e45a47</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-10 17:29:42</sys_updated_on>
+        <sys_updated_on>2026-11-16 17:42:18</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>task</element>
@@ -5906,17 +5898,17 @@ function addWorkNotes(taskId, message) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="BNB Dispara Job Ansible">dd62e4d633633a506c8432a19e5c7b0a</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8e2db56a33ab36906c8432a19e5c7b2d","name":"plan","plan_signature":null}}</plan>
-        <snapshot>1539721d336c97146c8432a19e5c7b27</snapshot>
+        <snapshot>c4704f9a33e813506c8432a19e5c7bad</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e2db56a33ab36906c8432a19e5c7b2d</sys_id>
-        <sys_mod_count>75</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:30</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:42:00</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -6021,10 +6013,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>e12d356a33ab36906c8432a19e5c7b50</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-09 12:39:20</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2026-11-16 17:42:26</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">652df16a33ab36906c8432a19e5c7bda</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=812d716a33ab36906c8432a19e5c7b0f"/>
@@ -7290,10 +7282,10 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:27</sys_created_on>
         <sys_id>892d716a33ab36906c8432a19e5c7bd9</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:24</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:55</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=892d716a33ab36906c8432a19e5c7bd9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7318,9 +7310,9 @@ function addWorkNotes(taskId, message) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:28</sys_created_on>
         <sys_id>d52db16a33ab36906c8432a19e5c7b59</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:24</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:55</sys_updated_on>
         <value>/**&#13;
  * @name EDX Dispara Job Ansible &gt; Obtain AWX Job Template&#13;
  * @description Dispara job do Ansible Tower para criação/renovação de certificados.&#13;
@@ -7364,7 +7356,7 @@ function addWorkNotes(taskId, message) {&#13;
       // Certificado (registro referenciado por task.certificate). Só preenchido na renovação.&#13;
       certificate: null,&#13;
       description: null,&#13;
-      force_host: null,&#13;
+      force_host: "autocert.capgv.intra.bnb",&#13;
       ip_address: null,&#13;
       port: null,&#13;
       ansible_flow: null,&#13;
@@ -7374,24 +7366,27 @@ function addWorkNotes(taskId, message) {&#13;
       task: inputs.task,&#13;
       target_ci: null,&#13;
     };&#13;
-    if (["flow_a", "flow_b", "flow_c"].includes(inputs.force_flow)) {&#13;
-      taskConfig.ansible_flow = inputs.force_flow;&#13;
-    }&#13;
 &#13;
     outputs.skip_awx = false;&#13;
-&#13;
-    // EDX Carlos Paiva - Em DEV o HOMO só foi liberada pelo Kleber/Lucas a URL autocert.capgv.intra.bnb&#13;
+    // Tratamento de ambiente SubProd: somente invocar Ansible/AWX, quando solicita forçar flow.&#13;
     if (gs.getProperty("instance_name") != "bnbprod") {&#13;
-      var msg = "*** Ansible/AWX não será invocado em ambientes SubProd ***";&#13;
-      if (inputs.force_flow) {&#13;
+      var msg;&#13;
+      if (&#13;
+        inputs.force_flow &amp;&amp;&#13;
+        ["flow_a", "flow_b", "flow_c"].includes(inputs.force_flow)&#13;
+      ) {&#13;
         msg =&#13;
-          "*** Utilizando URL para ambiente de testes: autocert.capgv.intra.bnb ***";&#13;
-        taskConfig.force_host = "autocert.capgv.intra.bnb";&#13;
+          "*** Utilizando URL para ambiente de testes: " +&#13;
+          taskConfig.force_host +&#13;
+          " ***";&#13;
+        taskConfig.ansible_flow = inputs.force_flow;&#13;
         taskConfig.commonName = taskConfig.force_host;&#13;
       } else {&#13;
-        sendWorkNotes(taskConfig.task.getUniqueValue(), msg);&#13;
+        taskConfig.commonName = inputs.task.subject_common_name + "";&#13;
         outputs.skip_awx = true;&#13;
+        msg = "*** Ansible/AWX não será invocado em ambientes SubProd ***";&#13;
       }&#13;
+      sendWorkNotes(taskConfig.task.getUniqueValue(), msg);&#13;
     }&#13;
 &#13;
     var ixTaskType = [&#13;
@@ -7430,12 +7425,6 @@ function addWorkNotes(taskId, message) {&#13;
 })(inputs, outputs);&#13;
 &#13;
 function newCertificate(taskConfig, inputs) {&#13;
-  taskConfig.commonName = taskConfig.task.subject_common_name + "";&#13;
-&#13;
-  var ansibleCommonName = taskConfig.force_host&#13;
-    ? taskConfig.force_host&#13;
-    : taskConfig.commonName;&#13;
-&#13;
   var san = (taskConfig.task.subject_alternative_name + "")&#13;
     .split(",")&#13;
     .map(function (s) {&#13;
@@ -7443,22 +7432,17 @@ function newCertificate(taskConfig, inputs) {&#13;
     })&#13;
     .filter(Boolean);&#13;
 &#13;
-  taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
-  taskConfig.body.extra_vars.san = san;&#13;
-  // taskConfig.body.extra_vars.key_size = 2048;&#13;
-&#13;
   if (!taskConfig.ansible_flow) {&#13;
     if (taskConfig.task.certificate_purpose == "external") {&#13;
       taskConfig.ansible_flow = "flow_a";&#13;
     } else {&#13;
       taskConfig.ansible_flow = "flow_b";&#13;
-      taskConfig.body.extra_vars.dc = ansibleCommonName&#13;
-        .toLowerCase()&#13;
-        .includes("dmz")&#13;
-        ? "DMZ"&#13;
-        : "capgv";&#13;
     }&#13;
   }&#13;
+&#13;
+  taskConfig.body.extra_vars.cn = taskConfig.commonName;&#13;
+  taskConfig.body.extra_vars.san = san;&#13;
+  // taskConfig.body.extra_vars.key_size = 2048;&#13;
   if (taskConfig.ansible_flow == "flow_a") {&#13;
     taskConfig.resource_path = "job_templates/13/launch/";&#13;
     taskConfig.assignment_group = inputs.external_group;&#13;
@@ -7466,6 +7450,11 @@ function newCertificate(taskConfig, inputs) {&#13;
       "Criação de Certificado Externo Novo " + taskConfig.commonName;&#13;
   } else {&#13;
     taskConfig.resource_path = "job_templates/254/launch/";&#13;
+    taskConfig.body.extra_vars.dc = taskConfig.commonName&#13;
+      .toLowerCase()&#13;
+      .includes("dmz")&#13;
+      ? "DMZ"&#13;
+      : "capgv";&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
     taskConfig.short_description =&#13;
       "Criação de Certificado Interno Novo " + taskConfig.commonName;&#13;
@@ -7536,13 +7525,8 @@ function renewCertificate(taskConfig, inputs) {&#13;
 &#13;
   taskConfig.certificate = taskConfig.task.certificate.getRefRecord();&#13;
   var certificate = taskConfig.certificate;&#13;
-  taskConfig.commonName = certificate.subject_common_name + "";&#13;
-  var ansibleCommonName = taskConfig.force_host&#13;
-    ? taskConfig.force_host&#13;
-    : taskConfig.commonName;&#13;
 &#13;
   var ipPort = buscaIPPort(certificate);&#13;
-&#13;
   var hostCI = null;&#13;
   var F5Host = null;&#13;
   if (ipPort) {&#13;
@@ -7594,7 +7578,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
       }&#13;
     }&#13;
   }&#13;
-  taskConfig.body.extra_vars.cn = ansibleCommonName;&#13;
+  taskConfig.body.extra_vars.cn = taskConfig.commonName;&#13;
   taskConfig.body.extra_vars.san = [];&#13;
   var dom = new GlideRecord("certificate_domain");&#13;
   dom.addQuery("sys_id", "IN", certificate.subject_alternative_name + "");&#13;
@@ -7638,9 +7622,9 @@ function renewCertificate(taskConfig, inputs) {&#13;
     taskConfig.ip_address = f5Ip;&#13;
     // taskConfig.body.extra_vars.f5_host = f5Ip;&#13;
     // taskConfig.body.extra_vars.profile_name_client =&#13;
-    //   "Client_" + ansibleCommonName;&#13;
+    //   "Client_" + taskConfig.commonName;&#13;
     // taskConfig.body.extra_vars.profile_name_server =&#13;
-    //   "Server_" + ansibleCommonName;&#13;
+    //   "Server_" + taskConfig.commonName;&#13;
     taskConfig.resource_path = "job_templates/65/launch/";&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
     // Removido o else para que o fluxo_c seja tratado como fluxo_b porque essa determinação&#13;
@@ -7656,7 +7640,7 @@ function renewCertificate(taskConfig, inputs) {&#13;
     taskConfig.assignment_group = inputs.install_group;&#13;
   } else {&#13;
     // Cenario A - GERAR apenas PKEY e CSR - Job 15&#13;
-    taskConfig.resource_path = "job_templates/15/launch/";&#13;
+    taskConfig.resource_path = "job_templates/345/launch/";&#13;
     if (certificate.u_ca_scope == "internal") {&#13;
       taskConfig.assignment_group = inputs.internal_group;&#13;
     } else {&#13;
@@ -8839,14 +8823,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-11-09 12:39:18</sys_created_on>
         <sys_id>b09c5504332453506c8432a19e5c7b3f</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:23</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -11100,14 +11084,14 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-03-13 20:12:29</sys_created_on>
         <sys_id>252d356a33ab36906c8432a19e5c7b05</sys_id>
-        <sys_mod_count>151</sys_mod_count>
+        <sys_mod_count>171</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Certificate Inventory and Management">5644310553c63300704dddeeff7b12a5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:25</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -11394,20 +11378,20 @@ function sendWorkNotes(taskId, notes) {&#13;
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
         <sys_updated_on>2026-03-13 20:12:30</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2d2d356a33ab36906c8432a19e5c7b51^sys_idNOT IN1539721d336c97146c8432a19e5c7b25"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2d2d356a33ab36906c8432a19e5c7b51^sys_idNOT INc4704f9a33e813506c8432a19e5c7bab"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 13/03/2026 17:12:30">2d2d356a33ab36906c8432a19e5c7b51</action_status_metadata_id>
         <condition>{{step[e39204e5-f554-49e0-8f0d-c1b43654fb7a].skip_awx}}=true^{{step[8c917ab5-b5a0-452e-97ce-2d0fc8118555].__step_status__.code}}!=0</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label>AWX Skipped</label>
         <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"10"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Ambiente SubProd no roda Ansible"}}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"10"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Ambiente SubProd no roda Ansible"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
-        <sys_created_on>2026-11-13 16:36:25</sys_created_on>
-        <sys_id>1539721d336c97146c8432a19e5c7b25</sys_id>
+        <sys_created_on>2026-11-16 19:41:57</sys_created_on>
+        <sys_id>c4704f9a33e813506c8432a19e5c7bab</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>carlos.paiva@extreme.digital</sys_updated_by>
-        <sys_updated_on>2026-11-13 16:36:25</sys_updated_on>
+        <sys_updated_on>2026-11-16 19:41:57</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>force_flow</element>
@@ -11782,6 +11766,6 @@ function sendWorkNotes(taskId, notes) {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>dd62e4d633633a506c8432a19e5c7b0a</sys_id>
         <latest_snapshot>812d716a33ab36906c8432a19e5c7b0f</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w45-10-28-2026_11-03-2026_2221.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12aw46-11-06-2026_11-11-2026_0116.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

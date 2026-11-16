@@ -2330,7 +2330,7 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>3f044a88336493506c8432a19e5c7b01</sys_id>
         <latest_snapshot>9be272c4332817506c8432a19e5c7be7</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch12w45-10-28-2026_11-03-2026_2221.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch12aw46-11-06-2026_11-11-2026_0116.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3f044a88336493506c8432a19e5c7b01"/>
@@ -2338,7 +2338,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"d0f276c4332817506c8432a19e5c7b7e","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="BNB Renovação Certificado - Ansible">3f044a88336493506c8432a19e5c7b01</plan_id>
-        <snapshot>f2facf193328d7146c8432a19e5c7b38</snapshot>
+        <snapshot>0265cf5633ac13506c8432a19e5c7b0f</snapshot>
         <sys_created_by>carlos.paiva@extreme.digital</sys_created_by>
         <sys_created_on>2026-11-09 18:56:39</sys_created_on>
         <sys_domain>global</sys_domain>
